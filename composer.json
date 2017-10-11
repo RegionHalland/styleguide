@@ -1,4 +1,6 @@
 {
     "name": "region-halland/styleguide",
-    "require": {}
+    "require": {
+        "philo/laravel-blade": "^3.1"
+    }
 }
