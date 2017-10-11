@@ -1,0 +1,74 @@
+{
+ "nav": {
+  "components": [
+   "component"
+  ],
+  "config": [
+   "margin"
+  ]
+ },
+ "pages": {
+  "components": {
+   "component": [
+    {
+     "name": "Component",
+     "description": "<p>A really good component, fitting all your needs.</p>\n",
+     "page": [
+      {
+       "nav": "Components",
+       "section": "Component"
+      }
+     ],
+     "state": [
+      {
+       "name": ":hover",
+       "escaped": ":hover",
+       "description": "Highlights when hovering."
+      }
+     ],
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<div class=\"component\">This is a component</div>",
+       "path": "~/src/components/_component.scss",
+       "example": "\n<div class=\"component\">This is a component</div>",
+       "escaped": "\n&lt;div class=\"component\"&gt;This is a component&lt;/div&gt;"
+      }
+     ]
+    }
+   ]
+  },
+  "config": {
+   "margin": [
+    {
+     "name": "Margin",
+     "description": "<p>A really good component, fitting all your needs.</p>\n",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Margin"
+      }
+     ],
+     "state": [
+      {
+       "name": ":hover",
+       "escaped": ":hover",
+       "description": "Highlights when hovering."
+      }
+     ],
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<div class=\"mb1\"></div>",
+       "path": "~/src/config/_margin.scss",
+       "example": "\n<div class=\"mb1\"></div>",
+       "escaped": "\n&lt;div class=\"mb1\"&gt;&lt;/div&gt;"
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
