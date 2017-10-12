@@ -1,0 +1,66 @@
+//
+// @name Vertical Navigation
+// @description A really good component, fitting all your needs.
+// 
+// @page Components/Navigation
+//
+// @state :hover - Highlights when hovering.
+// 
+// @markup
+//   <div class="component">This is a component</div>
+// 
+
+.vertical-nav {
+	border: 1px solid orange;
+	padding: 0;
+}
+
+.vertical-nav__item {
+	display: block;
+	border-bottom: 1px solid orange;
+	//background: white;
+
+	&.has-children {
+		position: relative;
+
+		&:after {
+			content: '';
+			position: absolute;
+			right: 16px;
+			top:   16px;
+			width: 0; 
+			height: 0; 
+			border-left:  5px solid transparent;
+			border-right: 5px solid transparent;
+			border-top:   5px solid blue;
+		}
+	}
+
+	&.static {
+		padding: $space-1;
+		border-bottom: 1px solid orange;
+	}
+
+	&.active {
+		background: orange;
+	}
+
+	&:last-of-type {
+		border-bottom: none;
+	}
+}
+
+.vertical-nav__link {
+	display: block;
+	padding: $space-1;
+
+	&:hover,
+	&:active {
+		background: orange;
+	}
+}
+
+.vertical-nav__sub-menu {
+	border-top: 1px solid orange;
+	border-left: $space-1 solid orange;
+}

@@ -1,16 +1,18 @@
 @extends('master')
 
 @section('content')
-<article>
-	<h1>Hello Worl Sectiond</h1>
-    
-    @foreach ($section as $key => $value)
-        <h1>{{$value->name}}</h1>
-        {!! $value->description !!}
-        @foreach ($value->markup as $key => $value)
-            {!! $value->example !!}
-            <code>{{$value->example}}</code>
-        @endforeach
-    @endforeach
+<article class="col col-12 sm-col-9 px2">
+	@foreach ($section as $key => $value)
+		<h2>{{$value->name}}</h2>
+		{!! $value->description !!}
+		@foreach ($value->markup as $key => $value)
+			{!! $value->example !!}
+			<pre>
+				<code class="code">{{$value->example}}</code>
+			</pre>
+
+		@endforeach
+		<small><strong>Source file:</strong> {{ $value->path }}</small>
+	@endforeach
 </article>
 @stop

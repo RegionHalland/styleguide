@@ -2,21 +2,74 @@
 <html>
 <head>
 	<title>Styleguide</title>
+	<link rel="stylesheet" type="text/css" href="../dist/css/main.css">
 </head>
 <body>
-	<nav>
-    <ul class="nav-aside">
-        @foreach ($nav as $item => $subitems)
-            <li>{{$item}}</li>
-            
-            @foreach ($subitems as $subitem)
-            	<li><a href="/{{$item}}/{{$subitem}}">{{$subitem}}</a></li>
-            @endforeach
+	<div class="mx-auto max-width-4">
+		<div class="col col-12 sm-col-3 md-col-3 px2">
+			<nav class="mb4">
+			<ul class="vertical-nav">
+				@foreach ($nav as $item => $subitems)
+					<li class="vertical-nav__item static">{{$item}}</li>
+					
+					@foreach ($subitems as $subitem)
+						<li class="vertical-nav__item"><a class="vertical-nav__link" href="/{{$item}}/{{$subitem}}">{{$subitem}}</a></li>
+					@endforeach
 
-        @endforeach
-    </ul>
-	</nav>
-
-	 @yield('content')
+				@endforeach
+			</ul>
+			</nav>
+			<nav>
+			<ul class="vertical-nav">
+				<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+				<li class="vertical-nav__item active"><a class="vertical-nav__link" href="#">Alternativ (active)</a></li>
+				<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+				<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+				<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+				<li class="vertical-nav__item has-children">
+					<a class="vertical-nav__link" href="#">Alternativ</a>
+					<ul class="vertical-nav__sub-menu">
+						<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+						<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+						<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+						<li class="vertical-nav__item has-children">
+							<a class="vertical-nav__link" href="#">Alternativ</a>
+							<ul class="vertical-nav__sub-menu">
+								<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Världens längsta alternativ</a></li>
+								<li class="vertical-nav__item static">Alternativ</li>
+								<li class="vertical-nav__item active"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+								<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+								<li class="vertical-nav__item has-children">
+									<a class="vertical-nav__link" href="#">Världens längsta alternativ</a>
+									<ul class="vertical-nav__sub-menu">
+										<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+										<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+										<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+										<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+										<li class="vertical-nav__item has-children">
+											<a class="vertical-nav__link" href="#">Alternativ</a>
+											<ul class="vertical-nav__sub-menu">
+												<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+												<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+												<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+												<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+												<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+												<li class="vertical-nav__item static">Alternativ</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+					</ul>
+				</li>
+				<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+				<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+			</ul>
+			</nav>
+		</div>
+		@yield('content')
+	</div>
 </body>
 </html>
