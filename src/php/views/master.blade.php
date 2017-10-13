@@ -4,7 +4,7 @@
 	<title>Styleguide</title>
 	<link rel="stylesheet" type="text/css" href="../dist/css/main.css">
 </head>
-<body>
+<body class="pt3">
 	<div class="mx-auto max-width-4">
 		<div class="col col-12 sm-col-3 md-col-3 px2">
 			<nav class="mb4">

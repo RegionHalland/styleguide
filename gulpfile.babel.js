@@ -19,7 +19,12 @@ gulp.task('css:dist', () => {
 		cssnano()
 	];
 	return gulp.src('./src/scss/**/*.scss')
-		.pipe(plumber({ errorHandler: reportError }))
+		.pipe(plumber({
+			errorHandler: error => {
+				gutil.beep();
+				console.log(error)
+			}
+		}))
 		.pipe(sourcemaps.init())
 		.pipe(sass())
 		.pipe(postcss(plugins))
@@ -68,10 +73,3 @@ gulp.task('watch', ['css:dist', 'docs', 'browsersync'], () => {
 	gulp.watch('./src/scss/**/*.scss', ['css:dist', 'docs', 'bs-reload']);
 	gulp.watch('./demo/*.html', ['bs-reload']);
 })
-
-// Error reporter
-let reportError = function (error) {
-    console.error(error);
-    gutil.beep(); 
-	this.emit('end');
-}
