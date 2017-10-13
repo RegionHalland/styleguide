@@ -36,7 +36,7 @@ gulp.task('docs', () => {
 			fileName: 'docs',
 			parsers: {
                 // @state :hover - When the button is hovered over.
-                state: function(i, line, block, file, endOfBlock) {
+				state: function(i, line, block, file, endOfBlock) {
                     var values = line.split(' - '),
                     states = (values[0]) ? (values[0].replace(":::", ":").replace("::", ":")) : "";
 
@@ -45,7 +45,7 @@ gulp.task('docs', () => {
                         escaped: states.replace(":", " :").replace(".", " ").trim(),
                         description: (values[1]) ? values[1].trim() : ""
                     };
-                }
+            	}
             }
 		}))
 		.pipe(gulp.dest('./docs/'));

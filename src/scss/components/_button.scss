@@ -1,0 +1,39 @@
+//
+// @name Button
+// @description A really good component, fitting all your needs.
+// 
+// @page Components/Button
+//
+// @state :hover - Highlights when hovering.
+// @markup
+// <button class="btn">Button</button>
+// 
+// 
+
+
+.btn {
+	font-weight: $bold-font-weight;
+	font-size: 1rem;
+	text-decoration: none;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 1.125rem;
+	padding: $space-1 $space-2;
+	margin: 0;
+	height: auto;
+	border: 1px solid transparent;
+	vertical-align: middle;
+	-webkit-appearance: none;
+	color: inherit;
+	background-color: transparent;
+
+	&:hover {
+		text-decoration: none;
+	}
+	
+	&:focus {
+		outline: none;
+		border-color: rgba(0, 0, 0, .125);
+		box-shadow: 0 0 0 3px rgba(0, 0, 0, .25);
+	}
+}

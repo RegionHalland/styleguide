@@ -5,7 +5,7 @@
 @import 'mixins/spacing';
 
 // Base
-@import 'base/normalize';
+@import 'base/reset';
 @import 'base/base';
 
 // Config
@@ -21,5 +21,6 @@
 
 // Components
 @import 'components/component';
-@import 'components/component2';
 @import 'components/vertical-nav';
+@import 'components/button';
+@import 'components/button-primary';

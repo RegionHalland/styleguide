@@ -1,6 +1,7 @@
 {
  "nav": {
   "components": [
+   "button",
    "component",
    "navigation"
   ],
@@ -18,6 +19,62 @@
  },
  "pages": {
   "components": {
+   "button": [
+    {
+     "name": "Button Primary",
+     "description": "<p>Solid button color style for use with the .btn base style.</p>\n",
+     "page": [
+      {
+       "nav": "Components",
+       "section": "Button"
+      }
+     ],
+     "state": [
+      {
+       "name": ":hover",
+       "escaped": ":hover",
+       "description": "Highlights when hovering."
+      }
+     ],
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<button class=\"btn btn-primary\">Button</button>",
+       "path": "~/src/scss/components/_button-primary.scss",
+       "example": "\n<button class=\"btn btn-primary\">Button</button>",
+       "escaped": "\n&lt;button class=\"btn btn-primary\"&gt;Button&lt;/button&gt;"
+      }
+     ]
+    },
+    {
+     "name": "Button",
+     "description": "<p>A really good component, fitting all your needs.</p>\n",
+     "page": [
+      {
+       "nav": "Components",
+       "section": "Button"
+      }
+     ],
+     "state": [
+      {
+       "name": ":hover",
+       "escaped": ":hover",
+       "description": "Highlights when hovering."
+      }
+     ],
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<button class=\"btn\">Button</button>",
+       "path": "~/src/scss/components/_button.scss",
+       "example": "\n<button class=\"btn\">Button</button>",
+       "escaped": "\n&lt;button class=\"btn\"&gt;Button&lt;/button&gt;"
+      }
+     ]
+    }
+   ],
    "component": [
     {
      "name": "Component",
@@ -41,33 +98,6 @@
        "description": "",
        "modifier": "\n<div class=\"component\">This is a component</div>",
        "path": "~/src/scss/components/_component.scss",
-       "example": "\n<div class=\"component\">This is a component</div>",
-       "escaped": "\n&lt;div class=\"component\"&gt;This is a component&lt;/div&gt;"
-      }
-     ]
-    },
-    {
-     "name": "Component2",
-     "description": "<p>A really good component, fitting all your needs.</p>\n",
-     "page": [
-      {
-       "nav": "Components",
-       "section": "Component"
-      }
-     ],
-     "state": [
-      {
-       "name": ":hover",
-       "escaped": ":hover",
-       "description": "Highlights when hovering."
-      }
-     ],
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<div class=\"component\">This is a component</div>",
-       "path": "~/src/scss/components/_component2.scss",
        "example": "\n<div class=\"component\">This is a component</div>",
        "escaped": "\n&lt;div class=\"component\"&gt;This is a component&lt;/div&gt;"
       }
@@ -119,10 +149,10 @@
       {
        "lang": "markup",
        "description": "",
-       "modifier": "\n<span>TBA</span>",
+       "modifier": "\n<div class=\"table\">\n   <div class=\"table-cell\"><h1>Halland</h1></div>\n   <div class=\"table-cell align-baseline\">TBA</div>\n   <div class=\"table-cell align-top\">TBA</div>\n   <div class=\"table-cell align-middle\">TBA</div>\n   <div class=\"table-cell align-bottom\">TBA</div>\n</div>",
        "path": "~/src/scss/config/_align.scss",
-       "example": "\n<span>TBA</span>",
-       "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
+       "example": "\n<div class=\"table\">\n   <div class=\"table-cell\"><h1>Halland</h1></div>\n   <div class=\"table-cell align-baseline\">TBA</div>\n   <div class=\"table-cell align-top\">TBA</div>\n   <div class=\"table-cell align-middle\">TBA</div>\n   <div class=\"table-cell align-bottom\">TBA</div>\n</div>",
+       "escaped": "\n&lt;div class=\"table\"&gt;\n   &lt;div class=\"table-cell\"&gt;&lt;h1&gt;Halland&lt;/h1&gt;&lt;/div&gt;\n   &lt;div class=\"table-cell align-baseline\"&gt;TBA&lt;/div&gt;\n   &lt;div class=\"table-cell align-top\"&gt;TBA&lt;/div&gt;\n   &lt;div class=\"table-cell align-middle\"&gt;TBA&lt;/div&gt;\n   &lt;div class=\"table-cell align-bottom\"&gt;TBA&lt;/div&gt;\n&lt;/div&gt;"
       }
      ]
     }

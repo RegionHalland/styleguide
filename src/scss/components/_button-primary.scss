@@ -1,0 +1,41 @@
+//
+// @name Button Primary
+// @description Solid button color style for use with the .btn base style.
+// 
+// @page Components/Button
+//
+// @state :hover - Highlights when hovering.
+// @markup
+// <button class="btn btn-primary">Button</button>
+// 
+// 
+
+.btn-primary {
+	color: $color-white;
+	background-color: $color-primary;
+	border-radius: $border-radius;
+
+	&:hover {
+		box-shadow: inset 0 0 0 20rem var(--darken-1);
+	}
+
+
+	&:active {
+		box-shadow: inset 0 0 0 20rem var(--darken-2),
+		inset 0 3px 4px 0 var(--darken-3),
+		0 0 1px var(--darken-2);
+	}
+
+	&:disabled,
+	&.is-disabled {
+		opacity: .5;
+	}
+}
+
+
+:root {
+  --darken-1: rgba(0, 0, 0, .0625);
+  --darken-2: rgba(0, 0, 0, .125);
+  --darken-3: rgba(0, 0, 0, .25);
+}
+

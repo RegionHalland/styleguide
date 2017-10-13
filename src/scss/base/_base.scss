@@ -1,5 +1,6 @@
 html {
 	box-sizing: border-box;
+	text-size-adjust: 100%;
 
 	@media (min-width: $breakpoint-md) {
 		font-size: 112.5%; /* 18px */
@@ -16,5 +17,30 @@ body {
 
 a {
 	text-decoration: none;
-	color: $color-primary;	
+	color: $color-primary;
 }
+
+pre,
+code,
+kbd,
+samp {
+	font-family: $code-font-family;
+	font-size: 1rem;
+}
+
+pre {
+	margin-top: 0;
+	overflow: auto;
+	background: orange;
+	padding: $space-2;
+}
+
+sub,
+sup {
+	position: relative;
+	font-size: 75%;
+	line-height: 0;
+}
+
+sub { bottom: -0.25em }
+sup { top: -0.5em }
