@@ -7,7 +7,7 @@
 		{!! $value->description !!}
 		@foreach ($value->markup as $key => $value)
 			{!! $value->example !!}
-			<pre><code class="code">{{$value->example}}</code></pre>
+			<pre><code class="code">{{ trim($value->example) }}</code></pre>
 
 		@endforeach
 		<small><strong>Source file:</strong> {{ $value->path }}</small>
