@@ -1,17 +1,18 @@
 //
 // @name Align
-// @description Adjust vertical alignment with these utilities.
-// 
 // @page Config/Align
 // 
-//@markup
-//<div class="table">
+// @description 
+// Adjust vertical alignment with these utilities.
+//
+// @markup
+// <div class="table">
 //   <div class="table-cell"><h1>Halland</h1></div>
-//   <div class="table-cell align-baseline">TBA</div>
-//   <div class="table-cell align-top">TBA</div>
-//   <div class="table-cell align-middle">TBA</div>
-//   <div class="table-cell align-bottom">TBA</div>
-//</div>
+//   <div class="table-cell align-baseline">baseline</div>
+//   <div class="table-cell align-top">top</div>
+//   <div class="table-cell align-middle">middle</div>
+//   <div class="table-cell align-bottom">bottom</div>
+// </div>
 
 .align-baseline { vertical-align: baseline }
 .align-top      { vertical-align: top }

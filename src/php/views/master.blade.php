@@ -144,7 +144,7 @@
 	}		
 	</style>
 </head>
-<body class="pt3 language-html">
+<body class="pt3">
 	<div class="mx-auto max-width-4">
 		<div class="col col-12 sm-col-3 md-col-3 px2">
 			<nav class="mb4">
