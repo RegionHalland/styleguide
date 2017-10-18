@@ -38,7 +38,7 @@
 	}
 
 	&.static {
-		padding: $space-1;
+		padding: $space-1 $space-2;
 		border-bottom: 1px solid orange;
 	}
 
@@ -53,7 +53,7 @@
 
 .vertical-nav__link {
 	display: block;
-	padding: $space-1;
+	padding: $space-1 $space-2;
 
 	&:hover,
 	&:active {
@@ -63,5 +63,5 @@
 
 .vertical-nav__sub-menu {
 	border-top: 1px solid orange;
-	border-left: $space-1 solid orange;
+	border-left: $space-2 solid orange;
 }

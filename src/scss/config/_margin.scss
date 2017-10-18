@@ -23,10 +23,12 @@
 //       <tr><td>y</td><td>Y-axis (top and bottom)</td></tr>
 //       <tr><td>n</td><td>Negative</td> </tr>
 //       <tr><td>0</td><td>0 reset</td> </tr>
-//       <tr><td>1</td><td>$space-1 (.5rem)</td></tr>
-//       <tr><td>2</td><td>$space-2 (1rem)</td></tr>
-//       <tr><td>3</td><td>$space-3 (2rem)</td></tr>
-//       <tr><td>4</td><td>$space-4 (4rem)</td></tr>
+//       <tr><td>1</td><td>$space-1 (.25rem)</td></tr>
+//       <tr><td>2</td><td>$space-2 (.5rem)</td></tr>
+//       <tr><td>3</td><td>$space-3 (1rem)</td></tr>
+//       <tr><td>4</td><td>$space-4 (2rem)</td></tr>
+//		 <tr><td>4</td><td>$space-5 (4rem)</td></tr>
+//		 <tr><td>4</td><td>$space-6 (8rem)</td></tr>
 //     </tbody>
 //   </table>
 // 
@@ -73,10 +75,27 @@
 .mx4 { margin-left:   $space-4; margin-right:  $space-4 }
 .my4 { margin-top:    $space-4; margin-bottom: $space-4 }
 
+.m5  { margin:        $space-5 }
+.mt5 { margin-top:    $space-5 }
+.mr5 { margin-right:  $space-5 }
+.mb5 { margin-bottom: $space-5 }
+.ml5 { margin-left:   $space-5 }
+.mx5 { margin-left:   $space-5; margin-right:  $space-5 }
+.my5 { margin-top:    $space-5; margin-bottom: $space-5 }
+
+.m6  { margin:        $space-6 }
+.mt6 { margin-top:    $space-6 }
+.mr6 { margin-right:  $space-6 }
+.mb6 { margin-bottom: $space-6 }
+.ml6 { margin-left:   $space-6 }
+.mx6 { margin-left:   $space-6; margin-right:  $space-6 }
+.my6 { margin-top:    $space-6; margin-bottom: $space-6 }
+
 .mxn1 { margin-left: -$space-1; margin-right: -$space-1; }
 .mxn2 { margin-left: -$space-2; margin-right: -$space-2; }
 .mxn3 { margin-left: -$space-3; margin-right: -$space-3; }
 .mxn4 { margin-left: -$space-4; margin-right: -$space-4; }
+.mxn5 { margin-left: -$space-5; margin-right: -$space-5; }
 
 .ml-auto { margin-left: auto }
 .mr-auto { margin-right: auto }

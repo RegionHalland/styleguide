@@ -1,0 +1,67 @@
+//
+// @name Table
+// @page Components/Table
+//
+// @description A table
+//
+// @markup
+// <table class="table">
+//     <thead>
+//         <tr>
+//             <th>Yummie</th>
+//             <th>Much</th>
+//         </tr>
+//     </thead>
+//     <tbody>
+//         <tr>
+//             <td>Gingerbread</td>
+//             <td>9</td>
+//         </tr>
+//         <tr>
+//             <td>Jelly-o</td>
+//             <td>8</td>
+//         </tr>
+//         <tr>
+//             <td>Apple pie</td>
+//             <td>10</td>
+//         </tr>
+//         <tr>
+//             <td>Apple pie</td>
+//             <td>10</td>
+//         </tr>
+//         <tr>
+//             <td>Apple pie</td>
+//             <td>10</td>
+//         </tr>
+//     </tbody>
+//     <tfoot>
+//         <tr>
+//             <td colspan="3">Table foot</td>
+//         </tr>
+//     </tfoot>
+// </table>
+//
+
+
+.table {
+	border: 1px solid orange;
+	// Workaround for border-collapse bug.
+	// https://stackoverflow.com/questions/25591499/chrome-bug-with-colspan-and-border
+	box-shadow: 1px 0 0 0 orange;
+
+	thead {
+		border-bottom: 1px solid orange;
+	}
+
+	td, th {
+		padding: $space-1 $space-2;	
+	}
+
+	tbody tr:nth-child(even) {
+		background: orange;
+	}
+
+    tbody + tfoot {
+        border-top: 1px solid orange;
+    }
+}

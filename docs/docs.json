@@ -1,5 +1,11 @@
 {
  "nav": {
+  "components": [
+   "button",
+   "component",
+   "table",
+   "navigation"
+  ],
   "config": [
    "align",
    "flexbox",
@@ -10,14 +16,147 @@
    "position",
    "typescale",
    "typography"
-  ],
-  "components": [
-   "button",
-   "component",
-   "navigation"
   ]
  },
  "pages": {
+  "components": {
+   "button": [
+    {
+     "name": "Button Primary",
+     "page": [
+      {
+       "nav": "Components",
+       "section": "Button"
+      }
+     ],
+     "description": "<p>Solid button color style for use with the .btn base style.</p>\n",
+     "state": [
+      {
+       "name": ":hover",
+       "escaped": ":hover",
+       "description": "Highlights when hovering."
+      }
+     ],
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<button class=\"btn btn-primary\">Button</button>",
+       "path": "~/src/scss/components/_button-primary.scss",
+       "example": "\n<button class=\"btn btn-primary\">Button</button>",
+       "escaped": "\n&lt;button class=\"btn btn-primary\"&gt;Button&lt;/button&gt;"
+      }
+     ]
+    },
+    {
+     "name": "Button",
+     "page": [
+      {
+       "nav": "Components",
+       "section": "Button"
+      }
+     ],
+     "description": "<p>A really good component, fitting all your needs.</p>\n",
+     "state": [
+      {
+       "name": ":hover",
+       "escaped": ":hover",
+       "description": "Highlights when hovering."
+      }
+     ],
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<button class=\"btn\">Button</button>",
+       "path": "~/src/scss/components/_button.scss",
+       "example": "\n<button class=\"btn\">Button</button>",
+       "escaped": "\n&lt;button class=\"btn\"&gt;Button&lt;/button&gt;"
+      }
+     ]
+    }
+   ],
+   "component": [
+    {
+     "name": "Component",
+     "page": [
+      {
+       "nav": "Components",
+       "section": "Component"
+      }
+     ],
+     "description": "<p>A really good component, fitting all your needs.</p>\n",
+     "state": [
+      {
+       "name": ":hover",
+       "escaped": ":hover",
+       "description": "Highlights when hovering."
+      }
+     ],
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<div class=\"component\">This is a component</div>",
+       "path": "~/src/scss/components/_component.scss",
+       "example": "\n<div class=\"component\">This is a component</div>",
+       "escaped": "\n&lt;div class=\"component\"&gt;This is a component&lt;/div&gt;"
+      }
+     ]
+    }
+   ],
+   "table": [
+    {
+     "name": "Table",
+     "page": [
+      {
+       "nav": "Components",
+       "section": "Table"
+      }
+     ],
+     "description": "<p>A table</p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<table class=\"table\">\n    <thead>\n        <tr>\n            <th>Yummie</th>\n            <th>Much</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>Gingerbread</td>\n            <td>9</td>\n        </tr>\n        <tr>\n            <td>Jelly-o</td>\n            <td>8</td>\n        </tr>\n        <tr>\n            <td>Apple pie</td>\n            <td>10</td>\n        </tr>\n        <tr>\n            <td>Apple pie</td>\n            <td>10</td>\n        </tr>\n        <tr>\n            <td>Apple pie</td>\n            <td>10</td>\n        </tr>\n    </tbody>\n    <tfoot>\n        <tr>\n            <td colspan=\"3\">Table foot</td>\n        </tr>\n    </tfoot>\n</table>",
+       "path": "~/src/scss/components/_table.scss",
+       "example": "\n<table class=\"table\">\n    <thead>\n        <tr>\n            <th>Yummie</th>\n            <th>Much</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>Gingerbread</td>\n            <td>9</td>\n        </tr>\n        <tr>\n            <td>Jelly-o</td>\n            <td>8</td>\n        </tr>\n        <tr>\n            <td>Apple pie</td>\n            <td>10</td>\n        </tr>\n        <tr>\n            <td>Apple pie</td>\n            <td>10</td>\n        </tr>\n        <tr>\n            <td>Apple pie</td>\n            <td>10</td>\n        </tr>\n    </tbody>\n    <tfoot>\n        <tr>\n            <td colspan=\"3\">Table foot</td>\n        </tr>\n    </tfoot>\n</table>",
+       "escaped": "\n&lt;table class=\"table\"&gt;\n    &lt;thead&gt;\n        &lt;tr&gt;\n            &lt;th&gt;Yummie&lt;/th&gt;\n            &lt;th&gt;Much&lt;/th&gt;\n        &lt;/tr&gt;\n    &lt;/thead&gt;\n    &lt;tbody&gt;\n        &lt;tr&gt;\n            &lt;td&gt;Gingerbread&lt;/td&gt;\n            &lt;td&gt;9&lt;/td&gt;\n        &lt;/tr&gt;\n        &lt;tr&gt;\n            &lt;td&gt;Jelly-o&lt;/td&gt;\n            &lt;td&gt;8&lt;/td&gt;\n        &lt;/tr&gt;\n        &lt;tr&gt;\n            &lt;td&gt;Apple pie&lt;/td&gt;\n            &lt;td&gt;10&lt;/td&gt;\n        &lt;/tr&gt;\n        &lt;tr&gt;\n            &lt;td&gt;Apple pie&lt;/td&gt;\n            &lt;td&gt;10&lt;/td&gt;\n        &lt;/tr&gt;\n        &lt;tr&gt;\n            &lt;td&gt;Apple pie&lt;/td&gt;\n            &lt;td&gt;10&lt;/td&gt;\n        &lt;/tr&gt;\n    &lt;/tbody&gt;\n    &lt;tfoot&gt;\n        &lt;tr&gt;\n            &lt;td colspan=\"3\"&gt;Table foot&lt;/td&gt;\n        &lt;/tr&gt;\n    &lt;/tfoot&gt;\n&lt;/table&gt;"
+      }
+     ]
+    }
+   ],
+   "navigation": [
+    {
+     "name": "Vertical Navigation",
+     "page": [
+      {
+       "nav": "Components",
+       "section": "Navigation"
+      }
+     ],
+     "description": "<p>A really good component, fitting all your needs.</p>\n",
+     "state": [
+      {
+       "name": ":hover",
+       "escaped": ":hover",
+       "description": "Highlights when hovering."
+      }
+     ],
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<div class=\"component\">This is a component</div>",
+       "path": "~/src/scss/components/_vertical-nav.scss",
+       "example": "\n<div class=\"component\">This is a component</div>",
+       "escaped": "\n&lt;div class=\"component\"&gt;This is a component&lt;/div&gt;"
+      }
+     ]
+    }
+   ]
+  },
   "config": {
    "align": [
     {
@@ -116,7 +255,7 @@
        "section": "Margin"
       }
      ],
-     "description": "<p>Immutable margin utilities are based on a global white space scale defined with custom properties.</p>\n<p><h3>Naming Convention</h3>\nDue to the ubiquitous nature of setting margin, these utilities use a shorthand naming convention:</p>\n<table>\n  <thead>\n    <tr>\n        <th>Shorthand</th> \n        <th>Description</th>\n     </tr>\n    </thead>\n    <tbody>\n      <tr><td>m</td><td>Margin</td></tr>\n      <tr><td>t</td><td>Top</td></tr>\n      <tr><td>r</td><td>Right</td></tr>\n      <tr><td>b</td><td>Bottom</td></tr>\n      <tr><td>l</td><td>Left</td></tr>\n      <tr><td>x</td><td>X-axis (left and right)</td></tr>\n      <tr><td>y</td><td>Y-axis (top and bottom)</td></tr>\n      <tr><td>n</td><td>Negative</td> </tr>\n      <tr><td>0</td><td>0 reset</td> </tr>\n      <tr><td>1</td><td>$space-1 (.5rem)</td></tr>\n      <tr><td>2</td><td>$space-2 (1rem)</td></tr>\n      <tr><td>3</td><td>$space-3 (2rem)</td></tr>\n      <tr><td>4</td><td>$space-4 (4rem)</td></tr>\n    </tbody>\n  </table>\n",
+     "description": "<p>Immutable margin utilities are based on a global white space scale defined with custom properties.</p>\n<p><h3>Naming Convention</h3>\nDue to the ubiquitous nature of setting margin, these utilities use a shorthand naming convention:</p>\n<table>\n  <thead>\n    <tr>\n        <th>Shorthand</th> \n        <th>Description</th>\n     </tr>\n    </thead>\n    <tbody>\n      <tr><td>m</td><td>Margin</td></tr>\n      <tr><td>t</td><td>Top</td></tr>\n      <tr><td>r</td><td>Right</td></tr>\n      <tr><td>b</td><td>Bottom</td></tr>\n      <tr><td>l</td><td>Left</td></tr>\n      <tr><td>x</td><td>X-axis (left and right)</td></tr>\n      <tr><td>y</td><td>Y-axis (top and bottom)</td></tr>\n      <tr><td>n</td><td>Negative</td> </tr>\n      <tr><td>0</td><td>0 reset</td> </tr>\n      <tr><td>1</td><td>$space-1 (.25rem)</td></tr>\n      <tr><td>2</td><td>$space-2 (.5rem)</td></tr>\n      <tr><td>3</td><td>$space-3 (1rem)</td></tr>\n      <tr><td>4</td><td>$space-4 (2rem)</td></tr>\n     <tr><td>4</td><td>$space-5 (4rem)</td></tr>\n     <tr><td>4</td><td>$space-6 (8rem)</td></tr>\n    </tbody>\n  </table>\n",
      "markup": [
       {
        "lang": "markup",
@@ -138,7 +277,7 @@
        "section": "Padding"
       }
      ],
-     "description": "<p>Immutable padding utilities are based on a global white space scale defined with custom properties. </p>\n<p><h3>Naming Convention</h3>\nDue to the ubiquitous nature of setting padding, these utilities use a shorthand naming convention:</p>\n<table class=\"mb2 table-flush table-light\">\n    <thead>\n      <tr>\n        <th>Shorthand</th>\n        <th>Description</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr><td>p</td><td>Padding</td></tr>\n      <tr><td>t</td><td>Top</td></tr>\n      <tr><td>r</td><td>Right</td></tr>\n      <tr><td>b</td><td>Bottom</td></tr>\n      <tr><td>l</td><td>Left</td></tr>\n      <tr><td>x</td><td>X-axis (left and right)</td></tr>\n      <tr><td>y</td><td>Y-axis (top and bottom)</td></tr>\n      <tr><td>n</td><td>Negative (margin only)</td></tr>\n      <tr><td>0</td><td>0 reset</td> </tr>\n      <tr><td>1</td><td>$space-1 (.5rem)</td></tr>\n      <tr><td>2</td><td>$space-2 (1rem)</td></tr>\n      <tr><td>3</td><td>$space-3 (2rem)</td></tr>\n      <tr><td>4</td><td>$space-4 (4rem)</td></tr>\n    </tbody>\n  </table>\n",
+     "description": "<p>Immutable padding utilities are based on a global white space scale defined with custom properties. </p>\n<p><h3>Naming Convention</h3>\nDue to the ubiquitous nature of setting padding, these utilities use a shorthand naming convention:</p>\n<table class=\"mb2 table-flush table-light\">\n    <thead>\n      <tr>\n        <th>Shorthand</th>\n        <th>Description</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr><td>p</td><td>Padding</td></tr>\n      <tr><td>t</td><td>Top</td></tr>\n      <tr><td>r</td><td>Right</td></tr>\n      <tr><td>b</td><td>Bottom</td></tr>\n      <tr><td>l</td><td>Left</td></tr>\n      <tr><td>x</td><td>X-axis (left and right)</td></tr>\n      <tr><td>y</td><td>Y-axis (top and bottom)</td></tr>\n      <tr><td>n</td><td>Negative (margin only)</td></tr>\n      <tr><td>0</td><td>0 reset</td> </tr>\n      <tr><td>1</td><td>$space-1 (.25rem)</td></tr>\n      <tr><td>2</td><td>$space-2 (.5rem)</td></tr>\n      <tr><td>3</td><td>$space-3 (1rem)</td></tr>\n      <tr><td>4</td><td>$space-4 (2rem)</td></tr>\n     <tr><td>4</td><td>$space-5 (4rem)</td></tr>\n     <tr><td>4</td><td>$space-6 (6rem)</td></tr>\n    </tbody>\n  </table>\n",
      "markup": [
       {
        "lang": "markup",
@@ -213,122 +352,6 @@
        "path": "~/src/scss/config/_typography.scss",
        "example": "\n<span>TBA</span>",
        "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
-      }
-     ]
-    }
-   ]
-  },
-  "components": {
-   "button": [
-    {
-     "name": "Button Primary",
-     "page": [
-      {
-       "nav": "Components",
-       "section": "Button"
-      }
-     ],
-     "description": "<p>Solid button color style for use with the .btn base style.</p>\n",
-     "state": [
-      {
-       "name": ":hover",
-       "escaped": ":hover",
-       "description": "Highlights when hovering."
-      }
-     ],
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<button class=\"btn btn-primary\">Button</button>",
-       "path": "~/src/scss/components/_button-primary.scss",
-       "example": "\n<button class=\"btn btn-primary\">Button</button>",
-       "escaped": "\n&lt;button class=\"btn btn-primary\"&gt;Button&lt;/button&gt;"
-      }
-     ]
-    },
-    {
-     "name": "Button",
-     "page": [
-      {
-       "nav": "Components",
-       "section": "Button"
-      }
-     ],
-     "description": "<p>A really good component, fitting all your needs.</p>\n",
-     "state": [
-      {
-       "name": ":hover",
-       "escaped": ":hover",
-       "description": "Highlights when hovering."
-      }
-     ],
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<button class=\"btn\">Button</button>",
-       "path": "~/src/scss/components/_button.scss",
-       "example": "\n<button class=\"btn\">Button</button>",
-       "escaped": "\n&lt;button class=\"btn\"&gt;Button&lt;/button&gt;"
-      }
-     ]
-    }
-   ],
-   "component": [
-    {
-     "name": "Component",
-     "page": [
-      {
-       "nav": "Components",
-       "section": "Component"
-      }
-     ],
-     "description": "<p>A really good component, fitting all your needs.</p>\n",
-     "state": [
-      {
-       "name": ":hover",
-       "escaped": ":hover",
-       "description": "Highlights when hovering."
-      }
-     ],
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<div class=\"component\">This is a component</div>",
-       "path": "~/src/scss/components/_component.scss",
-       "example": "\n<div class=\"component\">This is a component</div>",
-       "escaped": "\n&lt;div class=\"component\"&gt;This is a component&lt;/div&gt;"
-      }
-     ]
-    }
-   ],
-   "navigation": [
-    {
-     "name": "Vertical Navigation",
-     "page": [
-      {
-       "nav": "Components",
-       "section": "Navigation"
-      }
-     ],
-     "description": "<p>A really good component, fitting all your needs.</p>\n",
-     "state": [
-      {
-       "name": ":hover",
-       "escaped": ":hover",
-       "description": "Highlights when hovering."
-      }
-     ],
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<div class=\"component\">This is a component</div>",
-       "path": "~/src/scss/components/_vertical-nav.scss",
-       "example": "\n<div class=\"component\">This is a component</div>",
-       "escaped": "\n&lt;div class=\"component\"&gt;This is a component&lt;/div&gt;"
       }
      ]
     }
