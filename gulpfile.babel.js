@@ -9,6 +9,8 @@ import sass from 'gulp-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import cssnano from 'cssnano';
+import svgmin from 'gulp-svgmin';
+import svgSprite from 'gulp-svg-sprite';
 import docs from 'gulp-docs';
 
 // Build css
@@ -34,7 +36,7 @@ gulp.task('css:dist', () => {
 		.pipe(gulp.dest('./dist/css/'))
 });
 
-// Generate docs.json-filer
+// Generate docs.json
 gulp.task('docs', () => {
 	return gulp.src(['./src/scss/**/*.scss'])
 		.pipe(docs({
@@ -54,6 +56,38 @@ gulp.task('docs', () => {
             }
 		}))
 		.pipe(gulp.dest('./docs/'));
+});
+
+// Build SVG sprite
+// More complex configuration example
+var config					= {
+	mode				: {
+		view			: {			// Activate the «view» mode
+			layout: 'horizontal',
+			bust		: false,
+			render		: {
+				css	: true		// Activate Sass output (with default options)
+			}
+		},
+		symbol			: true		// Activate the «symbol» mode
+	}
+};
+
+gulp.task('sprite', () => {
+	return gulp.src('./src/icons/**/*.svg')
+		.pipe(svgSprite(config))
+		.pipe(gulp.dest('out'));
+});
+
+// SVG-min
+gulp.task('svg-min', () => {
+	return gulp.src('./src/icons/**/*.svg')
+		.pipe(svgmin({
+			plugins: [{
+				removeDimensions: true
+			}]
+		}))
+		.pipe(gulp.dest('./src/icons'))
 });
 
 // Browsersync

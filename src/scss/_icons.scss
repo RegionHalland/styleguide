@@ -1,0 +1,1226 @@
+.icon {
+    font-size: 14px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../assets/icon-sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 71.42857142857143em 9511.42857142857em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../assets/icon-sprite.png");
+}
+
+
+
+  .icon.icon-apple:before {
+      background-position: 0em 0em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-archive:before {
+      background-position: 0em -71.42857142857143em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-back:before {
+      background-position: 0em -142.85714285714286em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-bag:before {
+      background-position: 0em -214.28571428571428em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-balloon:before {
+      background-position: 0em -285.7142857142857em;
+      width: 11.428571428571429em;
+      height: 11.428571428571429em;
+  }
+
+
+
+
+  .icon.icon-bike:before {
+      background-position: 0em -297.14285714285717em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-boat:before {
+      background-position: 0em -368.57142857142856em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-breifcase:before {
+      background-position: 0em -440em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-budget:before {
+      background-position: 0em -511.42857142857144em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-bus:before {
+      background-position: 0em -582.8571428571429em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-cake:before {
+      background-position: 0em -654.2857142857143em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-calendar:before {
+      background-position: 0em -725.7142857142857em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-calendar-check:before {
+      background-position: 0em -797.1428571428571em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-car:before {
+      background-position: 0em -868.5714285714286em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-caret-down:before {
+      background-position: 0em -940em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-caret-right:before {
+      background-position: 0em -1011.4285714285714em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-caret-up:before {
+      background-position: 0em -1082.857142857143em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-check:before {
+      background-position: 0em -1154.2857142857142em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-check-o:before {
+      background-position: 0em -1225.7142857142858em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-clipboard:before {
+      background-position: 0em -1297.142857142857em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-clock:before {
+      background-position: 0em -1368.5714285714287em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-close:before {
+      background-position: 0em -1440em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-closo:before {
+      background-position: 0em -1511.4285714285713em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-coffee:before {
+      background-position: 0em -1582.857142857143em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-comments:before {
+      background-position: 0em -1654.2857142857142em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-commute:before {
+      background-position: 0em -1725.7142857142858em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-compass:before {
+      background-position: 0em -1797.142857142857em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-construction:before {
+      background-position: 0em -1868.5714285714287em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-diagram-increase:before {
+      background-position: 0em -1940em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-discuss:before {
+      background-position: 0em -2011.4285714285713em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-dog:before {
+      background-position: 0em -2082.8571428571427em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-down:before {
+      background-position: 0em -2154.285714285714em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-easy-read:before {
+      background-position: 0em -2225.714285714286em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-edit:before {
+      background-position: 0em -2297.1428571428573em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-email:before {
+      background-position: 0em -2368.5714285714284em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-external-link:before {
+      background-position: 0em -2440em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-facebook:before {
+      background-position: 0em -2511.4285714285716em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-facebook-square:before {
+      background-position: 0em -2582.8571428571427em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-filarchive:before {
+      background-position: 0em -2654.285714285714em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-filaudio:before {
+      background-position: 0em -2725.714285714286em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-file:before {
+      background-position: 0em -2797.1428571428573em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-filimage:before {
+      background-position: 0em -2868.5714285714284em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-filpdf:before {
+      background-position: 0em -2940em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-filtext:before {
+      background-position: 0em -3011.4285714285716em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-filvideo:before {
+      background-position: 0em -3082.8571428571427em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-forbidden:before {
+      background-position: 0em -3154.285714285714em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-forbidden-circle:before {
+      background-position: 0em -3225.714285714286em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-github:before {
+      background-position: 0em -3297.1428571428573em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-globe:before {
+      background-position: 0em -3368.5714285714284em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-handshake:before {
+      background-position: 0em -3440em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-healthcare:before {
+      background-position: 0em -3511.4285714285716em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-heart:before {
+      background-position: 0em -3582.8571428571427em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-heart-minus:before {
+      background-position: 0em -3654.285714285714em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-heart-plus:before {
+      background-position: 0em -3725.714285714286em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-home:before {
+      background-position: 0em -3797.1428571428573em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-house:before {
+      background-position: 0em -3868.5714285714284em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-info:before {
+      background-position: 0em -3940em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-info-o:before {
+      background-position: 0em -4011.4285714285716em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-instagram:before {
+      background-position: 0em -4082.8571428571427em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-language:before {
+      background-position: 0em -4154.285714285715em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-left-fat-arrow:before {
+      background-position: 0em -4225.714285714285em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-left-skinny-arrow:before {
+      background-position: 0em -4297.142857142857em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-lightbulb:before {
+      background-position: 0em -4368.571428571428em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-link-item:before {
+      background-position: 0em -4440em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-linkedin:before {
+      background-position: 0em -4511.428571428572em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-linkedin-square:before {
+      background-position: 0em -4582.857142857143em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-listen-ear:before {
+      background-position: 0em -4654.285714285715em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-loading-o:before {
+      background-position: 0em -4725.714285714285em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-location-pin:before {
+      background-position: 0em -4797.142857142857em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-man:before {
+      background-position: 0em -4868.571428571428em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-minus-o:before {
+      background-position: 0em -4940em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-money:before {
+      background-position: 0em -5011.428571428572em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-music:before {
+      background-position: 0em -5082.857142857143em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-next:before {
+      background-position: 0em -5154.285714285715em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-noticdanger:before {
+      background-position: 0em -5225.714285714285em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-noticinfo:before {
+      background-position: 0em -5297.142857142857em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-noticwarning:before {
+      background-position: 0em -5368.571428571428em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-paintbrush:before {
+      background-position: 0em -5440em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-park:before {
+      background-position: 0em -5511.428571428572em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-people:before {
+      background-position: 0em -5582.857142857143em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-phone:before {
+      background-position: 0em -5654.285714285715em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-picturadd:before {
+      background-position: 0em -5725.714285714285em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-picture:before {
+      background-position: 0em -5797.142857142857em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-picturuser:before {
+      background-position: 0em -5868.571428571428em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-play-o:before {
+      background-position: 0em -5940em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-plus:before {
+      background-position: 0em -6011.428571428572em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-plus-o:before {
+      background-position: 0em -6082.857142857143em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-presentation:before {
+      background-position: 0em -6154.285714285715em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-previous:before {
+      background-position: 0em -6225.714285714285em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-print:before {
+      background-position: 0em -6297.142857142857em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-question-o:before {
+      background-position: 0em -6368.571428571428em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-recycling:before {
+      background-position: 0em -6440em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-reload:before {
+      background-position: 0em -6511.428571428572em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-reply:before {
+      background-position: 0em -6582.857142857143em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-right-fat-arrow:before {
+      background-position: 0em -6654.285714285715em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-right-skinny-arrow:before {
+      background-position: 0em -6725.714285714285em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-run:before {
+      background-position: 0em -6797.142857142857em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-search:before {
+      background-position: 0em -6868.571428571428em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-settings:before {
+      background-position: 0em -6940em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-share:before {
+      background-position: 0em -7011.428571428572em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-sign-language:before {
+      background-position: 0em -7082.857142857143em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-smartphone:before {
+      background-position: 0em -7154.285714285715em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-smiley-angry:before {
+      background-position: 0em -7225.714285714285em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-smiley-cool:before {
+      background-position: 0em -7297.142857142857em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-smiley-cry:before {
+      background-position: 0em -7368.571428571428em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-smiley-flirty:before {
+      background-position: 0em -7440em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-smiley-oh:before {
+      background-position: 0em -7511.428571428572em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-smiley-sad:before {
+      background-position: 0em -7582.857142857143em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-smiley-smile:before {
+      background-position: 0em -7654.285714285715em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-smiley-super-happy:before {
+      background-position: 0em -7725.714285714285em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-smiley-thounge:before {
+      background-position: 0em -7797.142857142857em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-sort:before {
+      background-position: 0em -7868.571428571428em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-sort-asc:before {
+      background-position: 0em -7940em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-sort-desc:before {
+      background-position: 0em -8011.428571428572em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-sports:before {
+      background-position: 0em -8082.857142857143em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-sprite:before {
+      background-position: 0em -8154.285714285715em;
+      width: 0.5330490405117271em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-standby:before {
+      background-position: 0em -8225.714285714286em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-star:before {
+      background-position: 0em -8297.142857142857em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-sun:before {
+      background-position: 0em -8368.57142857143em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-swim:before {
+      background-position: 0em -8440em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-target:before {
+      background-position: 0em -8511.42857142857em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-tent:before {
+      background-position: 0em -8582.857142857143em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-text-size:before {
+      background-position: 0em -8654.285714285714em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-twitter:before {
+      background-position: 0em -8725.714285714286em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-twitter-square:before {
+      background-position: 0em -8797.142857142857em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-union-jack:before {
+      background-position: 0em -8868.57142857143em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-up:before {
+      background-position: 0em -8940em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-usb:before {
+      background-position: 0em -9011.42857142857em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-user:before {
+      background-position: 0em -9082.857142857143em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-user-o:before {
+      background-position: 0em -9154.285714285714em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-volume:before {
+      background-position: 0em -9225.714285714286em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-vote:before {
+      background-position: 0em -9297.142857142857em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-wifi:before {
+      background-position: 0em -9368.57142857143em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+  .icon.icon-woman:before {
+      background-position: 0em -9440em;
+      width: 71.42857142857143em;
+      height: 71.42857142857143em;
+  }
+
+
+
+
+
