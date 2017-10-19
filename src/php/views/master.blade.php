@@ -145,7 +145,8 @@
 	}		
 	</style>
 </head>
-<body class="pt3">
+<body class="">
+	<nav class="py4 mb4" style="background: blue;"></nav>
 	<div class="mx-auto max-width-4">
 		<div class="col col-12 sm-col-3 md-col-3 px3">
 			<nav class="mb4">
