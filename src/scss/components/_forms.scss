@@ -1,0 +1,65 @@
+//
+// @name Forms
+// @page Components/Forms
+//
+// @description 
+// A really good component, fitting all your needs.
+//
+// @state :hover - Highlights when hovering.
+//
+// @markup
+// <form>
+// 	<label class="label" for="name">Name</label>
+// 	<input class="input" name="name" type="text" placeholder="Anton Hübner">	
+// 	<label class="label" for="name">Phone</label>
+// 	<input class="input" name="name" type="text" placeholder="+46701234567">
+// 	<label class="label" for="name">E-mail</label>
+// 	<input class="input" name="name" type="email" placeholder="anton.hubner@regionhalland.se">	
+// </form>
+// 
+// 
+
+.label {
+  font-size: .875rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.input {
+  font-family: inherit;
+  font-size: inherit;
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  padding: .5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.select {
+  font-family: inherit;
+  font-size: inherit;
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  padding: .5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.textarea {
+  font-family: inherit;
+  font-size: inherit;
+  display: block;
+  width: 100%;
+  padding: .5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
