@@ -20,6 +20,12 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: $bold-font-weight;
 }
 
+strong,
+.strong { font-weight: $bold-font-weight }
+
+em, .em,
+i, .i { font-style: italic }
+
 a {
 	text-decoration: none;
 	color: $color-primary;
@@ -35,6 +41,11 @@ th {
 	vertical-align: bottom; 
 	text-align: left;
 }	
+
+img {
+	width: 100%;
+	max-width: 100%;
+}
 
 pre,
 code,
@@ -58,3 +69,8 @@ sup {
 
 sub { bottom: -0.25em }
 sup { top: -0.5em }
+
+figcaption {
+	font-size: $h5;
+	font-style: italic;
+}

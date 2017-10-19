@@ -4,6 +4,7 @@
 	<title>Styleguide</title>
 	<link rel="stylesheet" type="text/css" href="../dist/css/main.css">
 	<style type="text/css">
+	<meta charset="utf-8">
 	/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript */
 	/**
 	 * prism.js default theme for JavaScript, CSS and HTML
