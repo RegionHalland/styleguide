@@ -76,3 +76,9 @@ figcaption {
 	font-size: $h5;
 	font-style: italic;
 }
+
+hr {
+	border: 0;
+	height: 1px;
+	background: palette(grey, light)
+}
