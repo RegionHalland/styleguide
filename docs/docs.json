@@ -3,7 +3,6 @@
   "components": [
    "article",
    "button",
-   "component",
    "forms",
    "icons",
    "table",
@@ -97,35 +96,6 @@
        "path": "~/src/scss/components/_button.scss",
        "example": "\n<button class=\"btn\">Button</button>",
        "escaped": "\n&lt;button class=\"btn\"&gt;Button&lt;/button&gt;"
-      }
-     ]
-    }
-   ],
-   "component": [
-    {
-     "name": "Component",
-     "page": [
-      {
-       "nav": "Components",
-       "section": "Component"
-      }
-     ],
-     "description": "<p>A really good component, fitting all your needs.</p>\n",
-     "state": [
-      {
-       "name": ":hover",
-       "escaped": ":hover",
-       "description": "Highlights when hovering."
-      }
-     ],
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<div class=\"component\">This is a component</div>",
-       "path": "~/src/scss/components/_component.scss",
-       "example": "\n<div class=\"component\">This is a component</div>",
-       "escaped": "\n&lt;div class=\"component\"&gt;This is a component&lt;/div&gt;"
       }
      ]
     }

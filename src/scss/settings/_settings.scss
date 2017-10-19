@@ -27,8 +27,43 @@ $bold-font-weight: bold;
 
 $border-radius: 3px;
 
+// Colors
 $color-primary: blue;
 $color-white: #fff;
+$color-grey: #C3C7CB;
+$color-text: #2d2d2d;
+
+$palettes: (
+	primary: (
+		xx-light : lighten($color-primary, 20%),
+		x-light  : lighten($color-primary, 16%),
+		light    : lighten($color-primary, 10%),
+		base     : $color-primary,
+		dark     : darken($color-primary, 8%),
+		x-dark   : darken($color-primary, 24%)
+	),
+	text: (
+		x-light  : lighten($color-text, 30%),
+		light    : lighten($color-text, 10%),
+		base     : $color-text,
+		dark     : darken($color-text, 8%),
+		x-dark   : darken($color-text, 24%)
+	),
+	grey: (
+		xx-light : lighten($color-grey, 20%),
+		x-light  : lighten($color-grey, 16%),
+		light    : lighten($color-grey, 10%),
+		base     : $color-grey,
+		dark     : darken($color-grey, 8%),
+		x-dark   : darken($color-grey, 24%)
+	),
+);
+
+// Darken
+$darken-1: rgba(0, 0, 0, .0625);
+$darken-2: rgba(0, 0, 0, .125);
+$darken-3: rgba(0, 0, 0, .25);
+
 
 // Widths
 $width-1: 24rem;
@@ -46,3 +81,4 @@ $z1: 1;
 $z2: 2;
 $z3: 3;
 $z4: 4;
+
