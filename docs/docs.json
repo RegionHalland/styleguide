@@ -116,6 +116,33 @@
       }
      ],
      "description": "<p>Icons from <a href=\"https:github.com/iconic/open-iconic\">https:github.com/iconic/open-iconic</a></p>\n",
+     "state": [
+      {
+       "name": ".icon-sm",
+       "escaped": "icon-sm",
+       "description": "Small icon (8px)"
+      },
+      {
+       "name": ".icon",
+       "escaped": "icon",
+       "description": "Regular icon (16px)"
+      },
+      {
+       "name": ".icon-md",
+       "escaped": "icon-md",
+       "description": "Medium icon (24px)"
+      },
+      {
+       "name": ".icon-lg",
+       "escaped": "icon-lg",
+       "description": "Large icon (32px)"
+      },
+      {
+       "name": ".icon-xl",
+       "escaped": "icon-xl",
+       "description": "Extra large icon (64px)"
+      }
+     ],
      "markup": [
       {
        "lang": "markup",

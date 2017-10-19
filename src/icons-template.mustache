@@ -5,6 +5,11 @@
 // @description
 // Icons from <a href="https://github.com/iconic/open-iconic">https://github.com/iconic/open-iconic</a>
 //
+// @state .icon-sm - Small icon (8px)
+// @state .icon - Regular icon (16px)
+// @state .icon-md - Medium icon (24px)
+// @state .icon-lg - Large icon (32px)
+// @state .icon-xl - Extra large icon (64px)
 //
 // @markup
 // <div style="-webkit-columns: 3; columns: 3">
@@ -13,21 +18,44 @@
 {{/shapes}}
 // </div>
 // 
-// 
+//
 
-.icon {
+.icon-sm::before,
+.icon::before,
+.icon-md::before,
+.icon-lg::before,
+.icon-xl::before {
+	background: transparent url('../icons/sprite.svg') no-repeat;
+	background-size: auto 100%;    
+	vertical-align: middle;
+	display: inline-block;
+}
 
-	&:before {
-		background: transparent url('../icons/sprite.svg') no-repeat;
-		background-size: auto 100%;    
-		width:  16px;
-		height: 16px;
-		vertical-align: middle;
-		display: inline-block;
-		line-height: 1;
-	}
+.icon-sm::before {
+	width:  8px;
+	height: 8px;
+}
+
+.icon::before {
+	width:  16px;
+	height: 16px;
+}
+
+.icon-md::before {
+	width:  24px;
+	height: 24px;
+}
+
+.icon-lg::before {
+	width:  32px;
+	height: 32px;
+}
+
+.icon-xl::before {
+	width:  64px;
+	height: 64px;
 }
 
 {{#shapes}}
-.icon-{{base}}:before { content: ''; background-position: {{position.relative.x}}% {{position.relative.y}}%;}
+.icon-{{base}}::before { content: ''; background-position: {{position.relative.x}}% {{position.relative.y}}%;}
 {{/shapes}}

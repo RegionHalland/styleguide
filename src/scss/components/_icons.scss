@@ -5,6 +5,11 @@
 // @description
 // Icons from <a href="https://github.com/iconic/open-iconic">https://github.com/iconic/open-iconic</a>
 //
+// @state .icon-sm - Small icon (8px)
+// @state .icon - Regular icon (16px)
+// @state .icon-md - Medium icon (24px)
+// @state .icon-lg - Large icon (32px)
+// @state .icon-xl - Extra large icon (64px)
 //
 // @markup
 // <div style="-webkit-columns: 3; columns: 3">
@@ -233,241 +238,264 @@
 //   <p><span class="icon icon-zoom-out mr1"></span>zoom-out</p><br>
 // </div>
 // 
-// 
+//
 
-.icon {
-
-	&:before {
-		background: transparent url('../icons/sprite.svg') no-repeat;
-		background-size: auto 100%;    
-		width:  16px;
-		height: 16px;
-		vertical-align: middle;
-		display: inline-block;
-		line-height: 1;
-	}
+.icon-sm::before,
+.icon::before,
+.icon-md::before,
+.icon-lg::before,
+.icon-xl::before {
+	background: transparent url('../icons/sprite.svg') no-repeat;
+	background-size: auto 100%;    
+	vertical-align: middle;
+	display: inline-block;
 }
 
-.icon-account-login:before { content: ''; background-position: 0% 0%;}
-.icon-account-logout:before { content: ''; background-position: 0.45045045045045046% 0%;}
-.icon-action-redo:before { content: ''; background-position: 0.9009009009009009% 0%;}
-.icon-action-undo:before { content: ''; background-position: 1.3513513513513513% 0%;}
-.icon-align-center:before { content: ''; background-position: 1.8018018018018018% 0%;}
-.icon-align-left:before { content: ''; background-position: 2.2522522522522523% 0%;}
-.icon-align-right:before { content: ''; background-position: 2.7027027027027026% 0%;}
-.icon-aperture:before { content: ''; background-position: 3.1531531531531534% 0%;}
-.icon-arrow-bottom:before { content: ''; background-position: 3.6036036036036037% 0%;}
-.icon-arrow-circle-bottom:before { content: ''; background-position: 4.054054054054054% 0%;}
-.icon-arrow-circle-left:before { content: ''; background-position: 4.504504504504505% 0%;}
-.icon-arrow-circle-right:before { content: ''; background-position: 4.954954954954955% 0%;}
-.icon-arrow-circle-top:before { content: ''; background-position: 5.405405405405405% 0%;}
-.icon-arrow-left:before { content: ''; background-position: 5.8558558558558556% 0%;}
-.icon-arrow-right:before { content: ''; background-position: 6.306306306306307% 0%;}
-.icon-arrow-thick-bottom:before { content: ''; background-position: 6.756756756756757% 0%;}
-.icon-arrow-thick-left:before { content: ''; background-position: 7.207207207207207% 0%;}
-.icon-arrow-thick-right:before { content: ''; background-position: 7.657657657657658% 0%;}
-.icon-arrow-thick-top:before { content: ''; background-position: 8.108108108108109% 0%;}
-.icon-arrow-top:before { content: ''; background-position: 8.558558558558559% 0%;}
-.icon-audio:before { content: ''; background-position: 9.00900900900901% 0%;}
-.icon-audio-spectrum:before { content: ''; background-position: 9.45945945945946% 0%;}
-.icon-badge:before { content: ''; background-position: 9.90990990990991% 0%;}
-.icon-ban:before { content: ''; background-position: 10.36036036036036% 0%;}
-.icon-bar-chart:before { content: ''; background-position: 10.81081081081081% 0%;}
-.icon-basket:before { content: ''; background-position: 11.26126126126126% 0%;}
-.icon-battery-empty:before { content: ''; background-position: 11.711711711711711% 0%;}
-.icon-battery-full:before { content: ''; background-position: 12.162162162162161% 0%;}
-.icon-beaker:before { content: ''; background-position: 12.612612612612613% 0%;}
-.icon-bell:before { content: ''; background-position: 13.063063063063064% 0%;}
-.icon-bluetooth:before { content: ''; background-position: 13.513513513513514% 0%;}
-.icon-bold:before { content: ''; background-position: 13.963963963963964% 0%;}
-.icon-bolt:before { content: ''; background-position: 14.414414414414415% 0%;}
-.icon-book:before { content: ''; background-position: 14.864864864864865% 0%;}
-.icon-bookmark:before { content: ''; background-position: 15.315315315315315% 0%;}
-.icon-box:before { content: ''; background-position: 15.765765765765765% 0%;}
-.icon-briefcase:before { content: ''; background-position: 16.216216216216218% 0%;}
-.icon-british-pound:before { content: ''; background-position: 16.666666666666668% 0%;}
-.icon-browser:before { content: ''; background-position: 17.117117117117118% 0%;}
-.icon-brush:before { content: ''; background-position: 17.56756756756757% 0%;}
-.icon-bug:before { content: ''; background-position: 18.01801801801802% 0%;}
-.icon-bullhorn:before { content: ''; background-position: 18.46846846846847% 0%;}
-.icon-calculator:before { content: ''; background-position: 18.91891891891892% 0%;}
-.icon-calendar:before { content: ''; background-position: 19.36936936936937% 0%;}
-.icon-camera-slr:before { content: ''; background-position: 19.81981981981982% 0%;}
-.icon-caret-bottom:before { content: ''; background-position: 20.27027027027027% 0%;}
-.icon-caret-left:before { content: ''; background-position: 20.72072072072072% 0%;}
-.icon-caret-right:before { content: ''; background-position: 21.17117117117117% 0%;}
-.icon-caret-top:before { content: ''; background-position: 21.62162162162162% 0%;}
-.icon-cart:before { content: ''; background-position: 22.07207207207207% 0%;}
-.icon-chat:before { content: ''; background-position: 22.52252252252252% 0%;}
-.icon-check:before { content: ''; background-position: 22.972972972972972% 0%;}
-.icon-chevron-bottom:before { content: ''; background-position: 23.423423423423422% 0%;}
-.icon-chevron-left:before { content: ''; background-position: 23.873873873873872% 0%;}
-.icon-chevron-right:before { content: ''; background-position: 24.324324324324323% 0%;}
-.icon-chevron-top:before { content: ''; background-position: 24.774774774774773% 0%;}
-.icon-circle-check:before { content: ''; background-position: 25.225225225225227% 0%;}
-.icon-circle-x:before { content: ''; background-position: 25.675675675675677% 0%;}
-.icon-clipboard:before { content: ''; background-position: 26.126126126126128% 0%;}
-.icon-clock:before { content: ''; background-position: 26.576576576576578% 0%;}
-.icon-cloud:before { content: ''; background-position: 27.027027027027028% 0%;}
-.icon-cloud-download:before { content: ''; background-position: 27.47747747747748% 0%;}
-.icon-cloud-upload:before { content: ''; background-position: 27.92792792792793% 0%;}
-.icon-cloudy:before { content: ''; background-position: 28.37837837837838% 0%;}
-.icon-code:before { content: ''; background-position: 28.82882882882883% 0%;}
-.icon-cog:before { content: ''; background-position: 29.27927927927928% 0%;}
-.icon-collapse-down:before { content: ''; background-position: 29.72972972972973% 0%;}
-.icon-collapse-left:before { content: ''; background-position: 30.18018018018018% 0%;}
-.icon-collapse-right:before { content: ''; background-position: 30.63063063063063% 0%;}
-.icon-collapse-up:before { content: ''; background-position: 31.08108108108108% 0%;}
-.icon-command:before { content: ''; background-position: 31.53153153153153% 0%;}
-.icon-comment-square:before { content: ''; background-position: 31.98198198198198% 0%;}
-.icon-compass:before { content: ''; background-position: 32.432432432432435% 0%;}
-.icon-contrast:before { content: ''; background-position: 32.88288288288288% 0%;}
-.icon-copywriting:before { content: ''; background-position: 33.333333333333336% 0%;}
-.icon-credit-card:before { content: ''; background-position: 33.78378378378378% 0%;}
-.icon-crop:before { content: ''; background-position: 34.234234234234236% 0%;}
-.icon-dashboard:before { content: ''; background-position: 34.68468468468468% 0%;}
-.icon-data-transfer-download:before { content: ''; background-position: 35.13513513513514% 0%;}
-.icon-data-transfer-upload:before { content: ''; background-position: 35.585585585585584% 0%;}
-.icon-delete:before { content: ''; background-position: 36.03603603603604% 0%;}
-.icon-dial:before { content: ''; background-position: 36.486486486486484% 0%;}
-.icon-document:before { content: ''; background-position: 36.93693693693694% 0%;}
-.icon-dollar:before { content: ''; background-position: 37.387387387387385% 0%;}
-.icon-double-quote-sans-left:before { content: ''; background-position: 37.83783783783784% 0%;}
-.icon-double-quote-sans-right:before { content: ''; background-position: 38.288288288288285% 0%;}
-.icon-double-quote-serif-left:before { content: ''; background-position: 38.73873873873874% 0%;}
-.icon-double-quote-serif-right:before { content: ''; background-position: 39.189189189189186% 0%;}
-.icon-droplet:before { content: ''; background-position: 39.63963963963964% 0%;}
-.icon-eject:before { content: ''; background-position: 40.090090090090094% 0%;}
-.icon-elevator:before { content: ''; background-position: 40.54054054054054% 0%;}
-.icon-ellipses:before { content: ''; background-position: 40.990990990990994% 0%;}
-.icon-envelope-closed:before { content: ''; background-position: 41.44144144144144% 0%;}
-.icon-envelope-open:before { content: ''; background-position: 41.891891891891895% 0%;}
-.icon-euro:before { content: ''; background-position: 42.34234234234234% 0%;}
-.icon-excerpt:before { content: ''; background-position: 42.792792792792795% 0%;}
-.icon-expand-down:before { content: ''; background-position: 43.24324324324324% 0%;}
-.icon-expand-left:before { content: ''; background-position: 43.693693693693696% 0%;}
-.icon-expand-right:before { content: ''; background-position: 44.14414414414414% 0%;}
-.icon-expand-up:before { content: ''; background-position: 44.5945945945946% 0%;}
-.icon-external-link:before { content: ''; background-position: 45.04504504504504% 0%;}
-.icon-eye:before { content: ''; background-position: 45.4954954954955% 0%;}
-.icon-eyedropper:before { content: ''; background-position: 45.945945945945944% 0%;}
-.icon-file:before { content: ''; background-position: 46.3963963963964% 0%;}
-.icon-fire:before { content: ''; background-position: 46.846846846846844% 0%;}
-.icon-flag:before { content: ''; background-position: 47.2972972972973% 0%;}
-.icon-flash:before { content: ''; background-position: 47.747747747747745% 0%;}
-.icon-folder:before { content: ''; background-position: 48.1981981981982% 0%;}
-.icon-fork:before { content: ''; background-position: 48.648648648648646% 0%;}
-.icon-fullscreen-enter:before { content: ''; background-position: 49.0990990990991% 0%;}
-.icon-fullscreen-exit:before { content: ''; background-position: 49.549549549549546% 0%;}
-.icon-globe:before { content: ''; background-position: 50% 0%;}
-.icon-graph:before { content: ''; background-position: 50.450450450450454% 0%;}
-.icon-grid-four-up:before { content: ''; background-position: 50.9009009009009% 0%;}
-.icon-grid-three-up:before { content: ''; background-position: 51.351351351351354% 0%;}
-.icon-grid-two-up:before { content: ''; background-position: 51.8018018018018% 0%;}
-.icon-hard-drive:before { content: ''; background-position: 52.252252252252255% 0%;}
-.icon-header:before { content: ''; background-position: 52.7027027027027% 0%;}
-.icon-headphones:before { content: ''; background-position: 53.153153153153156% 0%;}
-.icon-heart:before { content: ''; background-position: 53.6036036036036% 0%;}
-.icon-home:before { content: ''; background-position: 54.054054054054056% 0%;}
-.icon-image:before { content: ''; background-position: 54.5045045045045% 0%;}
-.icon-inbox:before { content: ''; background-position: 54.95495495495496% 0%;}
-.icon-infinity:before { content: ''; background-position: 55.4054054054054% 0%;}
-.icon-info:before { content: ''; background-position: 55.85585585585586% 0%;}
-.icon-italic:before { content: ''; background-position: 56.306306306306304% 0%;}
-.icon-justify-center:before { content: ''; background-position: 56.75675675675676% 0%;}
-.icon-justify-left:before { content: ''; background-position: 57.207207207207205% 0%;}
-.icon-justify-right:before { content: ''; background-position: 57.65765765765766% 0%;}
-.icon-key:before { content: ''; background-position: 58.108108108108105% 0%;}
-.icon-laptop:before { content: ''; background-position: 58.55855855855856% 0%;}
-.icon-layers:before { content: ''; background-position: 59.009009009009006% 0%;}
-.icon-lightbulb:before { content: ''; background-position: 59.45945945945946% 0%;}
-.icon-link-broken:before { content: ''; background-position: 59.909909909909906% 0%;}
-.icon-link-intact:before { content: ''; background-position: 60.36036036036036% 0%;}
-.icon-list:before { content: ''; background-position: 60.810810810810814% 0%;}
-.icon-list-rich:before { content: ''; background-position: 61.26126126126126% 0%;}
-.icon-location:before { content: ''; background-position: 61.711711711711715% 0%;}
-.icon-lock-locked:before { content: ''; background-position: 62.16216216216216% 0%;}
-.icon-lock-unlocked:before { content: ''; background-position: 62.612612612612615% 0%;}
-.icon-loop:before { content: ''; background-position: 63.06306306306306% 0%;}
-.icon-loop-circular:before { content: ''; background-position: 63.513513513513516% 0%;}
-.icon-loop-square:before { content: ''; background-position: 63.96396396396396% 0%;}
-.icon-magnifying-glass:before { content: ''; background-position: 64.41441441441441% 0%;}
-.icon-map:before { content: ''; background-position: 64.86486486486487% 0%;}
-.icon-map-marker:before { content: ''; background-position: 65.31531531531532% 0%;}
-.icon-media-pause:before { content: ''; background-position: 65.76576576576576% 0%;}
-.icon-media-play:before { content: ''; background-position: 66.21621621621621% 0%;}
-.icon-media-record:before { content: ''; background-position: 66.66666666666667% 0%;}
-.icon-media-skip-backward:before { content: ''; background-position: 67.11711711711712% 0%;}
-.icon-media-skip-forward:before { content: ''; background-position: 67.56756756756756% 0%;}
-.icon-media-step-backward:before { content: ''; background-position: 68.01801801801801% 0%;}
-.icon-media-step-forward:before { content: ''; background-position: 68.46846846846847% 0%;}
-.icon-media-stop:before { content: ''; background-position: 68.91891891891892% 0%;}
-.icon-medical-cross:before { content: ''; background-position: 69.36936936936937% 0%;}
-.icon-menu:before { content: ''; background-position: 69.81981981981981% 0%;}
-.icon-microphone:before { content: ''; background-position: 70.27027027027027% 0%;}
-.icon-minus:before { content: ''; background-position: 70.72072072072072% 0%;}
-.icon-monitor:before { content: ''; background-position: 71.17117117117117% 0%;}
-.icon-moon:before { content: ''; background-position: 71.62162162162163% 0%;}
-.icon-move:before { content: ''; background-position: 72.07207207207207% 0%;}
-.icon-musical-note:before { content: ''; background-position: 72.52252252252252% 0%;}
-.icon-paperclip:before { content: ''; background-position: 72.97297297297297% 0%;}
-.icon-pencil:before { content: ''; background-position: 73.42342342342343% 0%;}
-.icon-people:before { content: ''; background-position: 73.87387387387388% 0%;}
-.icon-person:before { content: ''; background-position: 74.32432432432432% 0%;}
-.icon-phone:before { content: ''; background-position: 74.77477477477477% 0%;}
-.icon-pie-chart:before { content: ''; background-position: 75.22522522522523% 0%;}
-.icon-pin:before { content: ''; background-position: 75.67567567567568% 0%;}
-.icon-play-circle:before { content: ''; background-position: 76.12612612612612% 0%;}
-.icon-plus:before { content: ''; background-position: 76.57657657657657% 0%;}
-.icon-power-standby:before { content: ''; background-position: 77.02702702702703% 0%;}
-.icon-print:before { content: ''; background-position: 77.47747747747748% 0%;}
-.icon-project:before { content: ''; background-position: 77.92792792792793% 0%;}
-.icon-pulse:before { content: ''; background-position: 78.37837837837837% 0%;}
-.icon-puzzle-piece:before { content: ''; background-position: 78.82882882882883% 0%;}
-.icon-question-mark:before { content: ''; background-position: 79.27927927927928% 0%;}
-.icon-rain:before { content: ''; background-position: 79.72972972972973% 0%;}
-.icon-random:before { content: ''; background-position: 80.18018018018019% 0%;}
-.icon-reload:before { content: ''; background-position: 80.63063063063063% 0%;}
-.icon-resize-both:before { content: ''; background-position: 81.08108108108108% 0%;}
-.icon-resize-height:before { content: ''; background-position: 81.53153153153153% 0%;}
-.icon-resize-width:before { content: ''; background-position: 81.98198198198199% 0%;}
-.icon-rss:before { content: ''; background-position: 82.43243243243244% 0%;}
-.icon-rss-alt:before { content: ''; background-position: 82.88288288288288% 0%;}
-.icon-script:before { content: ''; background-position: 83.33333333333333% 0%;}
-.icon-share:before { content: ''; background-position: 83.78378378378379% 0%;}
-.icon-share-boxed:before { content: ''; background-position: 84.23423423423424% 0%;}
-.icon-shield:before { content: ''; background-position: 84.68468468468468% 0%;}
-.icon-signal:before { content: ''; background-position: 85.13513513513513% 0%;}
-.icon-signpost:before { content: ''; background-position: 85.58558558558559% 0%;}
-.icon-sort-ascending:before { content: ''; background-position: 86.03603603603604% 0%;}
-.icon-sort-descending:before { content: ''; background-position: 86.48648648648648% 0%;}
-.icon-spreadsheet:before { content: ''; background-position: 86.93693693693693% 0%;}
-.icon-star:before { content: ''; background-position: 87.38738738738739% 0%;}
-.icon-sun:before { content: ''; background-position: 87.83783783783784% 0%;}
-.icon-tablet:before { content: ''; background-position: 88.28828828828829% 0%;}
-.icon-tag:before { content: ''; background-position: 88.73873873873873% 0%;}
-.icon-tags:before { content: ''; background-position: 89.1891891891892% 0%;}
-.icon-target:before { content: ''; background-position: 89.63963963963964% 0%;}
-.icon-task:before { content: ''; background-position: 90.09009009009009% 0%;}
-.icon-terminal:before { content: ''; background-position: 90.54054054054055% 0%;}
-.icon-text:before { content: ''; background-position: 90.990990990991% 0%;}
-.icon-thumb-down:before { content: ''; background-position: 91.44144144144144% 0%;}
-.icon-thumb-up:before { content: ''; background-position: 91.89189189189189% 0%;}
-.icon-timer:before { content: ''; background-position: 92.34234234234235% 0%;}
-.icon-transfer:before { content: ''; background-position: 92.7927927927928% 0%;}
-.icon-trash:before { content: ''; background-position: 93.24324324324324% 0%;}
-.icon-underline:before { content: ''; background-position: 93.69369369369369% 0%;}
-.icon-vertical-align-bottom:before { content: ''; background-position: 94.14414414414415% 0%;}
-.icon-vertical-align-center:before { content: ''; background-position: 94.5945945945946% 0%;}
-.icon-vertical-align-top:before { content: ''; background-position: 95.04504504504504% 0%;}
-.icon-video:before { content: ''; background-position: 95.49549549549549% 0%;}
-.icon-volume-high:before { content: ''; background-position: 95.94594594594595% 0%;}
-.icon-volume-low:before { content: ''; background-position: 96.3963963963964% 0%;}
-.icon-volume-off:before { content: ''; background-position: 96.84684684684684% 0%;}
-.icon-warning:before { content: ''; background-position: 97.29729729729729% 0%;}
-.icon-wifi:before { content: ''; background-position: 97.74774774774775% 0%;}
-.icon-wrench:before { content: ''; background-position: 98.1981981981982% 0%;}
-.icon-x:before { content: ''; background-position: 98.64864864864865% 0%;}
-.icon-yen:before { content: ''; background-position: 99.09909909909909% 0%;}
-.icon-zoom-in:before { content: ''; background-position: 99.54954954954955% 0%;}
-.icon-zoom-out:before { content: ''; background-position: 100% 0%;}
+.icon-sm::before {
+	width:  8px;
+	height: 8px;
+}
+
+.icon::before {
+	width:  16px;
+	height: 16px;
+}
+
+.icon-md::before {
+	width:  24px;
+	height: 24px;
+}
+
+.icon-lg::before {
+	width:  32px;
+	height: 32px;
+}
+
+.icon-xl::before {
+	width:  64px;
+	height: 64px;
+}
+
+.icon-account-login::before { content: ''; background-position: 0% 0%;}
+.icon-account-logout::before { content: ''; background-position: 0.45045045045045046% 0%;}
+.icon-action-redo::before { content: ''; background-position: 0.9009009009009009% 0%;}
+.icon-action-undo::before { content: ''; background-position: 1.3513513513513513% 0%;}
+.icon-align-center::before { content: ''; background-position: 1.8018018018018018% 0%;}
+.icon-align-left::before { content: ''; background-position: 2.2522522522522523% 0%;}
+.icon-align-right::before { content: ''; background-position: 2.7027027027027026% 0%;}
+.icon-aperture::before { content: ''; background-position: 3.1531531531531534% 0%;}
+.icon-arrow-bottom::before { content: ''; background-position: 3.6036036036036037% 0%;}
+.icon-arrow-circle-bottom::before { content: ''; background-position: 4.054054054054054% 0%;}
+.icon-arrow-circle-left::before { content: ''; background-position: 4.504504504504505% 0%;}
+.icon-arrow-circle-right::before { content: ''; background-position: 4.954954954954955% 0%;}
+.icon-arrow-circle-top::before { content: ''; background-position: 5.405405405405405% 0%;}
+.icon-arrow-left::before { content: ''; background-position: 5.8558558558558556% 0%;}
+.icon-arrow-right::before { content: ''; background-position: 6.306306306306307% 0%;}
+.icon-arrow-thick-bottom::before { content: ''; background-position: 6.756756756756757% 0%;}
+.icon-arrow-thick-left::before { content: ''; background-position: 7.207207207207207% 0%;}
+.icon-arrow-thick-right::before { content: ''; background-position: 7.657657657657658% 0%;}
+.icon-arrow-thick-top::before { content: ''; background-position: 8.108108108108109% 0%;}
+.icon-arrow-top::before { content: ''; background-position: 8.558558558558559% 0%;}
+.icon-audio::before { content: ''; background-position: 9.00900900900901% 0%;}
+.icon-audio-spectrum::before { content: ''; background-position: 9.45945945945946% 0%;}
+.icon-badge::before { content: ''; background-position: 9.90990990990991% 0%;}
+.icon-ban::before { content: ''; background-position: 10.36036036036036% 0%;}
+.icon-bar-chart::before { content: ''; background-position: 10.81081081081081% 0%;}
+.icon-basket::before { content: ''; background-position: 11.26126126126126% 0%;}
+.icon-battery-empty::before { content: ''; background-position: 11.711711711711711% 0%;}
+.icon-battery-full::before { content: ''; background-position: 12.162162162162161% 0%;}
+.icon-beaker::before { content: ''; background-position: 12.612612612612613% 0%;}
+.icon-bell::before { content: ''; background-position: 13.063063063063064% 0%;}
+.icon-bluetooth::before { content: ''; background-position: 13.513513513513514% 0%;}
+.icon-bold::before { content: ''; background-position: 13.963963963963964% 0%;}
+.icon-bolt::before { content: ''; background-position: 14.414414414414415% 0%;}
+.icon-book::before { content: ''; background-position: 14.864864864864865% 0%;}
+.icon-bookmark::before { content: ''; background-position: 15.315315315315315% 0%;}
+.icon-box::before { content: ''; background-position: 15.765765765765765% 0%;}
+.icon-briefcase::before { content: ''; background-position: 16.216216216216218% 0%;}
+.icon-british-pound::before { content: ''; background-position: 16.666666666666668% 0%;}
+.icon-browser::before { content: ''; background-position: 17.117117117117118% 0%;}
+.icon-brush::before { content: ''; background-position: 17.56756756756757% 0%;}
+.icon-bug::before { content: ''; background-position: 18.01801801801802% 0%;}
+.icon-bullhorn::before { content: ''; background-position: 18.46846846846847% 0%;}
+.icon-calculator::before { content: ''; background-position: 18.91891891891892% 0%;}
+.icon-calendar::before { content: ''; background-position: 19.36936936936937% 0%;}
+.icon-camera-slr::before { content: ''; background-position: 19.81981981981982% 0%;}
+.icon-caret-bottom::before { content: ''; background-position: 20.27027027027027% 0%;}
+.icon-caret-left::before { content: ''; background-position: 20.72072072072072% 0%;}
+.icon-caret-right::before { content: ''; background-position: 21.17117117117117% 0%;}
+.icon-caret-top::before { content: ''; background-position: 21.62162162162162% 0%;}
+.icon-cart::before { content: ''; background-position: 22.07207207207207% 0%;}
+.icon-chat::before { content: ''; background-position: 22.52252252252252% 0%;}
+.icon-check::before { content: ''; background-position: 22.972972972972972% 0%;}
+.icon-chevron-bottom::before { content: ''; background-position: 23.423423423423422% 0%;}
+.icon-chevron-left::before { content: ''; background-position: 23.873873873873872% 0%;}
+.icon-chevron-right::before { content: ''; background-position: 24.324324324324323% 0%;}
+.icon-chevron-top::before { content: ''; background-position: 24.774774774774773% 0%;}
+.icon-circle-check::before { content: ''; background-position: 25.225225225225227% 0%;}
+.icon-circle-x::before { content: ''; background-position: 25.675675675675677% 0%;}
+.icon-clipboard::before { content: ''; background-position: 26.126126126126128% 0%;}
+.icon-clock::before { content: ''; background-position: 26.576576576576578% 0%;}
+.icon-cloud::before { content: ''; background-position: 27.027027027027028% 0%;}
+.icon-cloud-download::before { content: ''; background-position: 27.47747747747748% 0%;}
+.icon-cloud-upload::before { content: ''; background-position: 27.92792792792793% 0%;}
+.icon-cloudy::before { content: ''; background-position: 28.37837837837838% 0%;}
+.icon-code::before { content: ''; background-position: 28.82882882882883% 0%;}
+.icon-cog::before { content: ''; background-position: 29.27927927927928% 0%;}
+.icon-collapse-down::before { content: ''; background-position: 29.72972972972973% 0%;}
+.icon-collapse-left::before { content: ''; background-position: 30.18018018018018% 0%;}
+.icon-collapse-right::before { content: ''; background-position: 30.63063063063063% 0%;}
+.icon-collapse-up::before { content: ''; background-position: 31.08108108108108% 0%;}
+.icon-command::before { content: ''; background-position: 31.53153153153153% 0%;}
+.icon-comment-square::before { content: ''; background-position: 31.98198198198198% 0%;}
+.icon-compass::before { content: ''; background-position: 32.432432432432435% 0%;}
+.icon-contrast::before { content: ''; background-position: 32.88288288288288% 0%;}
+.icon-copywriting::before { content: ''; background-position: 33.333333333333336% 0%;}
+.icon-credit-card::before { content: ''; background-position: 33.78378378378378% 0%;}
+.icon-crop::before { content: ''; background-position: 34.234234234234236% 0%;}
+.icon-dashboard::before { content: ''; background-position: 34.68468468468468% 0%;}
+.icon-data-transfer-download::before { content: ''; background-position: 35.13513513513514% 0%;}
+.icon-data-transfer-upload::before { content: ''; background-position: 35.585585585585584% 0%;}
+.icon-delete::before { content: ''; background-position: 36.03603603603604% 0%;}
+.icon-dial::before { content: ''; background-position: 36.486486486486484% 0%;}
+.icon-document::before { content: ''; background-position: 36.93693693693694% 0%;}
+.icon-dollar::before { content: ''; background-position: 37.387387387387385% 0%;}
+.icon-double-quote-sans-left::before { content: ''; background-position: 37.83783783783784% 0%;}
+.icon-double-quote-sans-right::before { content: ''; background-position: 38.288288288288285% 0%;}
+.icon-double-quote-serif-left::before { content: ''; background-position: 38.73873873873874% 0%;}
+.icon-double-quote-serif-right::before { content: ''; background-position: 39.189189189189186% 0%;}
+.icon-droplet::before { content: ''; background-position: 39.63963963963964% 0%;}
+.icon-eject::before { content: ''; background-position: 40.090090090090094% 0%;}
+.icon-elevator::before { content: ''; background-position: 40.54054054054054% 0%;}
+.icon-ellipses::before { content: ''; background-position: 40.990990990990994% 0%;}
+.icon-envelope-closed::before { content: ''; background-position: 41.44144144144144% 0%;}
+.icon-envelope-open::before { content: ''; background-position: 41.891891891891895% 0%;}
+.icon-euro::before { content: ''; background-position: 42.34234234234234% 0%;}
+.icon-excerpt::before { content: ''; background-position: 42.792792792792795% 0%;}
+.icon-expand-down::before { content: ''; background-position: 43.24324324324324% 0%;}
+.icon-expand-left::before { content: ''; background-position: 43.693693693693696% 0%;}
+.icon-expand-right::before { content: ''; background-position: 44.14414414414414% 0%;}
+.icon-expand-up::before { content: ''; background-position: 44.5945945945946% 0%;}
+.icon-external-link::before { content: ''; background-position: 45.04504504504504% 0%;}
+.icon-eye::before { content: ''; background-position: 45.4954954954955% 0%;}
+.icon-eyedropper::before { content: ''; background-position: 45.945945945945944% 0%;}
+.icon-file::before { content: ''; background-position: 46.3963963963964% 0%;}
+.icon-fire::before { content: ''; background-position: 46.846846846846844% 0%;}
+.icon-flag::before { content: ''; background-position: 47.2972972972973% 0%;}
+.icon-flash::before { content: ''; background-position: 47.747747747747745% 0%;}
+.icon-folder::before { content: ''; background-position: 48.1981981981982% 0%;}
+.icon-fork::before { content: ''; background-position: 48.648648648648646% 0%;}
+.icon-fullscreen-enter::before { content: ''; background-position: 49.0990990990991% 0%;}
+.icon-fullscreen-exit::before { content: ''; background-position: 49.549549549549546% 0%;}
+.icon-globe::before { content: ''; background-position: 50% 0%;}
+.icon-graph::before { content: ''; background-position: 50.450450450450454% 0%;}
+.icon-grid-four-up::before { content: ''; background-position: 50.9009009009009% 0%;}
+.icon-grid-three-up::before { content: ''; background-position: 51.351351351351354% 0%;}
+.icon-grid-two-up::before { content: ''; background-position: 51.8018018018018% 0%;}
+.icon-hard-drive::before { content: ''; background-position: 52.252252252252255% 0%;}
+.icon-header::before { content: ''; background-position: 52.7027027027027% 0%;}
+.icon-headphones::before { content: ''; background-position: 53.153153153153156% 0%;}
+.icon-heart::before { content: ''; background-position: 53.6036036036036% 0%;}
+.icon-home::before { content: ''; background-position: 54.054054054054056% 0%;}
+.icon-image::before { content: ''; background-position: 54.5045045045045% 0%;}
+.icon-inbox::before { content: ''; background-position: 54.95495495495496% 0%;}
+.icon-infinity::before { content: ''; background-position: 55.4054054054054% 0%;}
+.icon-info::before { content: ''; background-position: 55.85585585585586% 0%;}
+.icon-italic::before { content: ''; background-position: 56.306306306306304% 0%;}
+.icon-justify-center::before { content: ''; background-position: 56.75675675675676% 0%;}
+.icon-justify-left::before { content: ''; background-position: 57.207207207207205% 0%;}
+.icon-justify-right::before { content: ''; background-position: 57.65765765765766% 0%;}
+.icon-key::before { content: ''; background-position: 58.108108108108105% 0%;}
+.icon-laptop::before { content: ''; background-position: 58.55855855855856% 0%;}
+.icon-layers::before { content: ''; background-position: 59.009009009009006% 0%;}
+.icon-lightbulb::before { content: ''; background-position: 59.45945945945946% 0%;}
+.icon-link-broken::before { content: ''; background-position: 59.909909909909906% 0%;}
+.icon-link-intact::before { content: ''; background-position: 60.36036036036036% 0%;}
+.icon-list::before { content: ''; background-position: 60.810810810810814% 0%;}
+.icon-list-rich::before { content: ''; background-position: 61.26126126126126% 0%;}
+.icon-location::before { content: ''; background-position: 61.711711711711715% 0%;}
+.icon-lock-locked::before { content: ''; background-position: 62.16216216216216% 0%;}
+.icon-lock-unlocked::before { content: ''; background-position: 62.612612612612615% 0%;}
+.icon-loop::before { content: ''; background-position: 63.06306306306306% 0%;}
+.icon-loop-circular::before { content: ''; background-position: 63.513513513513516% 0%;}
+.icon-loop-square::before { content: ''; background-position: 63.96396396396396% 0%;}
+.icon-magnifying-glass::before { content: ''; background-position: 64.41441441441441% 0%;}
+.icon-map::before { content: ''; background-position: 64.86486486486487% 0%;}
+.icon-map-marker::before { content: ''; background-position: 65.31531531531532% 0%;}
+.icon-media-pause::before { content: ''; background-position: 65.76576576576576% 0%;}
+.icon-media-play::before { content: ''; background-position: 66.21621621621621% 0%;}
+.icon-media-record::before { content: ''; background-position: 66.66666666666667% 0%;}
+.icon-media-skip-backward::before { content: ''; background-position: 67.11711711711712% 0%;}
+.icon-media-skip-forward::before { content: ''; background-position: 67.56756756756756% 0%;}
+.icon-media-step-backward::before { content: ''; background-position: 68.01801801801801% 0%;}
+.icon-media-step-forward::before { content: ''; background-position: 68.46846846846847% 0%;}
+.icon-media-stop::before { content: ''; background-position: 68.91891891891892% 0%;}
+.icon-medical-cross::before { content: ''; background-position: 69.36936936936937% 0%;}
+.icon-menu::before { content: ''; background-position: 69.81981981981981% 0%;}
+.icon-microphone::before { content: ''; background-position: 70.27027027027027% 0%;}
+.icon-minus::before { content: ''; background-position: 70.72072072072072% 0%;}
+.icon-monitor::before { content: ''; background-position: 71.17117117117117% 0%;}
+.icon-moon::before { content: ''; background-position: 71.62162162162163% 0%;}
+.icon-move::before { content: ''; background-position: 72.07207207207207% 0%;}
+.icon-musical-note::before { content: ''; background-position: 72.52252252252252% 0%;}
+.icon-paperclip::before { content: ''; background-position: 72.97297297297297% 0%;}
+.icon-pencil::before { content: ''; background-position: 73.42342342342343% 0%;}
+.icon-people::before { content: ''; background-position: 73.87387387387388% 0%;}
+.icon-person::before { content: ''; background-position: 74.32432432432432% 0%;}
+.icon-phone::before { content: ''; background-position: 74.77477477477477% 0%;}
+.icon-pie-chart::before { content: ''; background-position: 75.22522522522523% 0%;}
+.icon-pin::before { content: ''; background-position: 75.67567567567568% 0%;}
+.icon-play-circle::before { content: ''; background-position: 76.12612612612612% 0%;}
+.icon-plus::before { content: ''; background-position: 76.57657657657657% 0%;}
+.icon-power-standby::before { content: ''; background-position: 77.02702702702703% 0%;}
+.icon-print::before { content: ''; background-position: 77.47747747747748% 0%;}
+.icon-project::before { content: ''; background-position: 77.92792792792793% 0%;}
+.icon-pulse::before { content: ''; background-position: 78.37837837837837% 0%;}
+.icon-puzzle-piece::before { content: ''; background-position: 78.82882882882883% 0%;}
+.icon-question-mark::before { content: ''; background-position: 79.27927927927928% 0%;}
+.icon-rain::before { content: ''; background-position: 79.72972972972973% 0%;}
+.icon-random::before { content: ''; background-position: 80.18018018018019% 0%;}
+.icon-reload::before { content: ''; background-position: 80.63063063063063% 0%;}
+.icon-resize-both::before { content: ''; background-position: 81.08108108108108% 0%;}
+.icon-resize-height::before { content: ''; background-position: 81.53153153153153% 0%;}
+.icon-resize-width::before { content: ''; background-position: 81.98198198198199% 0%;}
+.icon-rss::before { content: ''; background-position: 82.43243243243244% 0%;}
+.icon-rss-alt::before { content: ''; background-position: 82.88288288288288% 0%;}
+.icon-script::before { content: ''; background-position: 83.33333333333333% 0%;}
+.icon-share::before { content: ''; background-position: 83.78378378378379% 0%;}
+.icon-share-boxed::before { content: ''; background-position: 84.23423423423424% 0%;}
+.icon-shield::before { content: ''; background-position: 84.68468468468468% 0%;}
+.icon-signal::before { content: ''; background-position: 85.13513513513513% 0%;}
+.icon-signpost::before { content: ''; background-position: 85.58558558558559% 0%;}
+.icon-sort-ascending::before { content: ''; background-position: 86.03603603603604% 0%;}
+.icon-sort-descending::before { content: ''; background-position: 86.48648648648648% 0%;}
+.icon-spreadsheet::before { content: ''; background-position: 86.93693693693693% 0%;}
+.icon-star::before { content: ''; background-position: 87.38738738738739% 0%;}
+.icon-sun::before { content: ''; background-position: 87.83783783783784% 0%;}
+.icon-tablet::before { content: ''; background-position: 88.28828828828829% 0%;}
+.icon-tag::before { content: ''; background-position: 88.73873873873873% 0%;}
+.icon-tags::before { content: ''; background-position: 89.1891891891892% 0%;}
+.icon-target::before { content: ''; background-position: 89.63963963963964% 0%;}
+.icon-task::before { content: ''; background-position: 90.09009009009009% 0%;}
+.icon-terminal::before { content: ''; background-position: 90.54054054054055% 0%;}
+.icon-text::before { content: ''; background-position: 90.990990990991% 0%;}
+.icon-thumb-down::before { content: ''; background-position: 91.44144144144144% 0%;}
+.icon-thumb-up::before { content: ''; background-position: 91.89189189189189% 0%;}
+.icon-timer::before { content: ''; background-position: 92.34234234234235% 0%;}
+.icon-transfer::before { content: ''; background-position: 92.7927927927928% 0%;}
+.icon-trash::before { content: ''; background-position: 93.24324324324324% 0%;}
+.icon-underline::before { content: ''; background-position: 93.69369369369369% 0%;}
+.icon-vertical-align-bottom::before { content: ''; background-position: 94.14414414414415% 0%;}
+.icon-vertical-align-center::before { content: ''; background-position: 94.5945945945946% 0%;}
+.icon-vertical-align-top::before { content: ''; background-position: 95.04504504504504% 0%;}
+.icon-video::before { content: ''; background-position: 95.49549549549549% 0%;}
+.icon-volume-high::before { content: ''; background-position: 95.94594594594595% 0%;}
+.icon-volume-low::before { content: ''; background-position: 96.3963963963964% 0%;}
+.icon-volume-off::before { content: ''; background-position: 96.84684684684684% 0%;}
+.icon-warning::before { content: ''; background-position: 97.29729729729729% 0%;}
+.icon-wifi::before { content: ''; background-position: 97.74774774774775% 0%;}
+.icon-wrench::before { content: ''; background-position: 98.1981981981982% 0%;}
+.icon-x::before { content: ''; background-position: 98.64864864864865% 0%;}
+.icon-yen::before { content: ''; background-position: 99.09909909909909% 0%;}
+.icon-zoom-in::before { content: ''; background-position: 99.54954954954955% 0%;}
+.icon-zoom-out::before { content: ''; background-position: 100% 0%;}
