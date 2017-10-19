@@ -1,0 +1,44 @@
+%svg-common {
+	background: url("assets/sprite.svg") no-repeat;
+}
+
+.icon-apple {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.icon-sun {
+	@extend %svg-common;
+	background-position: 14.285714285714286% 0;
+}
+
+.icon-twitter-square {
+	@extend %svg-common;
+	background-position: 28.571428571428573% 0;
+}
+
+.icon-union-jack {
+	@extend %svg-common;
+	background-position: 42.857142857142854% 0;
+}
+
+.icon-up {
+	@extend %svg-common;
+	background-position: 57.142857142857146% 0;
+}
+
+.icon-usb {
+	@extend %svg-common;
+	background-position: 71.42857142857143% 0;
+}
+
+.icon-user {
+	@extend %svg-common;
+	background-position: 85.71428571428571% 0;
+}
+
+.icon-user-o {
+	@extend %svg-common;
+	background-position: 100% 0;
+}
+

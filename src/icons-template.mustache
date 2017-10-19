@@ -1,0 +1,33 @@
+//
+// @name Icons
+// @page Components/Icons
+//
+// @description
+// Icons from <a href="https://github.com/iconic/open-iconic">https://github.com/iconic/open-iconic</a>
+//
+//
+// @markup
+// <div style="-webkit-columns: 3; columns: 3">
+{{#shapes}}
+//   <p><span class="icon icon-{{base}} mr1"></span>{{base}}</p><br>
+{{/shapes}}
+// </div>
+// 
+// 
+
+.icon {
+
+	&:before {
+		background: transparent url('../icons/sprite.svg') no-repeat;
+		background-size: auto 100%;    
+		width:  16px;
+		height: 16px;
+		vertical-align: middle;
+		display: inline-block;
+		line-height: 1;
+	}
+}
+
+{{#shapes}}
+.icon-{{base}}:before { content: ''; background-position: {{position.relative.x}}% {{position.relative.y}}%;}
+{{/shapes}}

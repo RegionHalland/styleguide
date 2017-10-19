@@ -58,33 +58,37 @@ gulp.task('docs', () => {
 		.pipe(gulp.dest('./docs/'));
 });
 
-// Build SVG sprite
-// More complex configuration example
-var config					= {
-	mode				: {
-		view			: {			// Activate the «view» mode
-			layout: 'horizontal',
-			bust		: false,
-			render		: {
-				css	: true		// Activate Sass output (with default options)
-			}
-		},
-		symbol			: true		// Activate the «symbol» mode
-	}
-};
-
-gulp.task('sprite', () => {
+// Create SVG sprite from icons in ./src/icons
+gulp.task('sprite:dist', () => {
 	return gulp.src('./src/icons/**/*.svg')
-		.pipe(svgSprite(config))
-		.pipe(gulp.dest('out'));
+		.pipe(svgSprite({
+			mode: {
+				view: {
+					dest: './scss',
+					prefix: '.icon-%s',
+					dimensions: false,
+					sprite: '../../dist/icons/sprite.svg',
+					layout: 'horizontal',
+					bust: false,
+					render: {
+						css: false,
+						scss: {
+							template: './src/icons-template.mustache',
+							dest: '../scss/components/_icons.scss'
+						}
+					}
+				}
+			}
+		}))
+		.pipe(gulp.dest('./src'));
 });
 
-// SVG-min
+// Clean up SVGs
 gulp.task('svg-min', () => {
 	return gulp.src('./src/icons/**/*.svg')
 		.pipe(svgmin({
 			plugins: [{
-				removeDimensions: true
+				removeDimensions: true // Remove width and height
 			}]
 		}))
 		.pipe(gulp.dest('./src/icons'))
@@ -103,7 +107,6 @@ gulp.task('bs-reload', () => {
 });
 
 // Watch
-gulp.task('watch', ['css:dist', 'docs', 'browsersync'], () => {
+gulp.task('watch', ['css:dist', 'sprite:dist', 'docs', 'browsersync'], () => {
 	gulp.watch('./src/scss/**/*.scss', ['css:dist', 'docs', 'bs-reload']);
-	gulp.watch('./demo/*.html', ['bs-reload']);
 })
