@@ -246,10 +246,10 @@
       {
        "lang": "markup",
        "description": "",
-       "modifier": "\n<div class=\"table\">\n  <div class=\"table-cell\"><h1>Halland</h1></div>\n  <div class=\"table-cell align-baseline\">baseline</div>\n  <div class=\"table-cell align-top\">top</div>\n  <div class=\"table-cell align-middle\">middle</div>\n  <div class=\"table-cell align-bottom\">bottom</div>\n</div>",
+       "modifier": "\n<div>\n  <div class=\"table-cell\"><h1>Halland</h1></div>\n  <div class=\"table-cell align-baseline\">baseline</div>\n  <div class=\"table-cell align-top\">top</div>\n  <div class=\"table-cell align-middle\">middle</div>\n  <div class=\"table-cell align-bottom\">bottom</div>\n</div>",
        "path": "~/src/scss/config/_align.scss",
-       "example": "\n<div class=\"table\">\n  <div class=\"table-cell\"><h1>Halland</h1></div>\n  <div class=\"table-cell align-baseline\">baseline</div>\n  <div class=\"table-cell align-top\">top</div>\n  <div class=\"table-cell align-middle\">middle</div>\n  <div class=\"table-cell align-bottom\">bottom</div>\n</div>",
-       "escaped": "\n&lt;div class=\"table\"&gt;\n  &lt;div class=\"table-cell\"&gt;&lt;h1&gt;Halland&lt;/h1&gt;&lt;/div&gt;\n  &lt;div class=\"table-cell align-baseline\"&gt;baseline&lt;/div&gt;\n  &lt;div class=\"table-cell align-top\"&gt;top&lt;/div&gt;\n  &lt;div class=\"table-cell align-middle\"&gt;middle&lt;/div&gt;\n  &lt;div class=\"table-cell align-bottom\"&gt;bottom&lt;/div&gt;\n&lt;/div&gt;"
+       "example": "\n<div>\n  <div class=\"table-cell\"><h1>Halland</h1></div>\n  <div class=\"table-cell align-baseline\">baseline</div>\n  <div class=\"table-cell align-top\">top</div>\n  <div class=\"table-cell align-middle\">middle</div>\n  <div class=\"table-cell align-bottom\">bottom</div>\n</div>",
+       "escaped": "\n&lt;div&gt;\n  &lt;div class=\"table-cell\"&gt;&lt;h1&gt;Halland&lt;/h1&gt;&lt;/div&gt;\n  &lt;div class=\"table-cell align-baseline\"&gt;baseline&lt;/div&gt;\n  &lt;div class=\"table-cell align-top\"&gt;top&lt;/div&gt;\n  &lt;div class=\"table-cell align-middle\"&gt;middle&lt;/div&gt;\n  &lt;div class=\"table-cell align-bottom\"&gt;bottom&lt;/div&gt;\n&lt;/div&gt;"
       }
      ]
     }
