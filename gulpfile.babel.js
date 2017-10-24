@@ -63,12 +63,10 @@ gulp.task('sprite:dist', () => {
 	return gulp.src('./src/icons/**/*.svg')
 		.pipe(svgSprite({
 			mode: {
-				view: {
-					dest: './scss',
+				symbol: {
 					prefix: '.icon-%s',
 					dimensions: false,
-					sprite: '../../dist/icons/sprite.svg',
-					layout: 'horizontal',
+					sprite: '../../dist/icons/sprite-2.svg',
 					bust: false,
 					render: {
 						css: false,

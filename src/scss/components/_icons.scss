@@ -12,490 +12,1133 @@
 // @state .icon-xl - Extra large icon (64px)
 //
 // @markup
-// <div style="-webkit-columns: 3; columns: 3">
-//   <p><span class="icon icon-account-login mr1"></span>account-login</p><br>
-//   <p><span class="icon icon-account-logout mr1"></span>account-logout</p><br>
-//   <p><span class="icon icon-action-redo mr1"></span>action-redo</p><br>
-//   <p><span class="icon icon-action-undo mr1"></span>action-undo</p><br>
-//   <p><span class="icon icon-align-center mr1"></span>align-center</p><br>
-//   <p><span class="icon icon-align-left mr1"></span>align-left</p><br>
-//   <p><span class="icon icon-align-right mr1"></span>align-right</p><br>
-//   <p><span class="icon icon-aperture mr1"></span>aperture</p><br>
-//   <p><span class="icon icon-arrow-bottom mr1"></span>arrow-bottom</p><br>
-//   <p><span class="icon icon-arrow-circle-bottom mr1"></span>arrow-circle-bottom</p><br>
-//   <p><span class="icon icon-arrow-circle-left mr1"></span>arrow-circle-left</p><br>
-//   <p><span class="icon icon-arrow-circle-right mr1"></span>arrow-circle-right</p><br>
-//   <p><span class="icon icon-arrow-circle-top mr1"></span>arrow-circle-top</p><br>
-//   <p><span class="icon icon-arrow-left mr1"></span>arrow-left</p><br>
-//   <p><span class="icon icon-arrow-right mr1"></span>arrow-right</p><br>
-//   <p><span class="icon icon-arrow-thick-bottom mr1"></span>arrow-thick-bottom</p><br>
-//   <p><span class="icon icon-arrow-thick-left mr1"></span>arrow-thick-left</p><br>
-//   <p><span class="icon icon-arrow-thick-right mr1"></span>arrow-thick-right</p><br>
-//   <p><span class="icon icon-arrow-thick-top mr1"></span>arrow-thick-top</p><br>
-//   <p><span class="icon icon-arrow-top mr1"></span>arrow-top</p><br>
-//   <p><span class="icon icon-audio mr1"></span>audio</p><br>
-//   <p><span class="icon icon-audio-spectrum mr1"></span>audio-spectrum</p><br>
-//   <p><span class="icon icon-badge mr1"></span>badge</p><br>
-//   <p><span class="icon icon-ban mr1"></span>ban</p><br>
-//   <p><span class="icon icon-bar-chart mr1"></span>bar-chart</p><br>
-//   <p><span class="icon icon-basket mr1"></span>basket</p><br>
-//   <p><span class="icon icon-battery-empty mr1"></span>battery-empty</p><br>
-//   <p><span class="icon icon-battery-full mr1"></span>battery-full</p><br>
-//   <p><span class="icon icon-beaker mr1"></span>beaker</p><br>
-//   <p><span class="icon icon-bell mr1"></span>bell</p><br>
-//   <p><span class="icon icon-bluetooth mr1"></span>bluetooth</p><br>
-//   <p><span class="icon icon-bold mr1"></span>bold</p><br>
-//   <p><span class="icon icon-bolt mr1"></span>bolt</p><br>
-//   <p><span class="icon icon-book mr1"></span>book</p><br>
-//   <p><span class="icon icon-bookmark mr1"></span>bookmark</p><br>
-//   <p><span class="icon icon-box mr1"></span>box</p><br>
-//   <p><span class="icon icon-briefcase mr1"></span>briefcase</p><br>
-//   <p><span class="icon icon-british-pound mr1"></span>british-pound</p><br>
-//   <p><span class="icon icon-browser mr1"></span>browser</p><br>
-//   <p><span class="icon icon-brush mr1"></span>brush</p><br>
-//   <p><span class="icon icon-bug mr1"></span>bug</p><br>
-//   <p><span class="icon icon-bullhorn mr1"></span>bullhorn</p><br>
-//   <p><span class="icon icon-calculator mr1"></span>calculator</p><br>
-//   <p><span class="icon icon-calendar mr1"></span>calendar</p><br>
-//   <p><span class="icon icon-camera-slr mr1"></span>camera-slr</p><br>
-//   <p><span class="icon icon-caret-bottom mr1"></span>caret-bottom</p><br>
-//   <p><span class="icon icon-caret-left mr1"></span>caret-left</p><br>
-//   <p><span class="icon icon-caret-right mr1"></span>caret-right</p><br>
-//   <p><span class="icon icon-caret-top mr1"></span>caret-top</p><br>
-//   <p><span class="icon icon-cart mr1"></span>cart</p><br>
-//   <p><span class="icon icon-chat mr1"></span>chat</p><br>
-//   <p><span class="icon icon-check mr1"></span>check</p><br>
-//   <p><span class="icon icon-chevron-bottom mr1"></span>chevron-bottom</p><br>
-//   <p><span class="icon icon-chevron-left mr1"></span>chevron-left</p><br>
-//   <p><span class="icon icon-chevron-right mr1"></span>chevron-right</p><br>
-//   <p><span class="icon icon-chevron-top mr1"></span>chevron-top</p><br>
-//   <p><span class="icon icon-circle-check mr1"></span>circle-check</p><br>
-//   <p><span class="icon icon-circle-x mr1"></span>circle-x</p><br>
-//   <p><span class="icon icon-clipboard mr1"></span>clipboard</p><br>
-//   <p><span class="icon icon-clock mr1"></span>clock</p><br>
-//   <p><span class="icon icon-cloud mr1"></span>cloud</p><br>
-//   <p><span class="icon icon-cloud-download mr1"></span>cloud-download</p><br>
-//   <p><span class="icon icon-cloud-upload mr1"></span>cloud-upload</p><br>
-//   <p><span class="icon icon-cloudy mr1"></span>cloudy</p><br>
-//   <p><span class="icon icon-code mr1"></span>code</p><br>
-//   <p><span class="icon icon-cog mr1"></span>cog</p><br>
-//   <p><span class="icon icon-collapse-down mr1"></span>collapse-down</p><br>
-//   <p><span class="icon icon-collapse-left mr1"></span>collapse-left</p><br>
-//   <p><span class="icon icon-collapse-right mr1"></span>collapse-right</p><br>
-//   <p><span class="icon icon-collapse-up mr1"></span>collapse-up</p><br>
-//   <p><span class="icon icon-command mr1"></span>command</p><br>
-//   <p><span class="icon icon-comment-square mr1"></span>comment-square</p><br>
-//   <p><span class="icon icon-compass mr1"></span>compass</p><br>
-//   <p><span class="icon icon-contrast mr1"></span>contrast</p><br>
-//   <p><span class="icon icon-copywriting mr1"></span>copywriting</p><br>
-//   <p><span class="icon icon-credit-card mr1"></span>credit-card</p><br>
-//   <p><span class="icon icon-crop mr1"></span>crop</p><br>
-//   <p><span class="icon icon-dashboard mr1"></span>dashboard</p><br>
-//   <p><span class="icon icon-data-transfer-download mr1"></span>data-transfer-download</p><br>
-//   <p><span class="icon icon-data-transfer-upload mr1"></span>data-transfer-upload</p><br>
-//   <p><span class="icon icon-delete mr1"></span>delete</p><br>
-//   <p><span class="icon icon-dial mr1"></span>dial</p><br>
-//   <p><span class="icon icon-document mr1"></span>document</p><br>
-//   <p><span class="icon icon-dollar mr1"></span>dollar</p><br>
-//   <p><span class="icon icon-double-quote-sans-left mr1"></span>double-quote-sans-left</p><br>
-//   <p><span class="icon icon-double-quote-sans-right mr1"></span>double-quote-sans-right</p><br>
-//   <p><span class="icon icon-double-quote-serif-left mr1"></span>double-quote-serif-left</p><br>
-//   <p><span class="icon icon-double-quote-serif-right mr1"></span>double-quote-serif-right</p><br>
-//   <p><span class="icon icon-droplet mr1"></span>droplet</p><br>
-//   <p><span class="icon icon-eject mr1"></span>eject</p><br>
-//   <p><span class="icon icon-elevator mr1"></span>elevator</p><br>
-//   <p><span class="icon icon-ellipses mr1"></span>ellipses</p><br>
-//   <p><span class="icon icon-envelope-closed mr1"></span>envelope-closed</p><br>
-//   <p><span class="icon icon-envelope-open mr1"></span>envelope-open</p><br>
-//   <p><span class="icon icon-euro mr1"></span>euro</p><br>
-//   <p><span class="icon icon-excerpt mr1"></span>excerpt</p><br>
-//   <p><span class="icon icon-expand-down mr1"></span>expand-down</p><br>
-//   <p><span class="icon icon-expand-left mr1"></span>expand-left</p><br>
-//   <p><span class="icon icon-expand-right mr1"></span>expand-right</p><br>
-//   <p><span class="icon icon-expand-up mr1"></span>expand-up</p><br>
-//   <p><span class="icon icon-external-link mr1"></span>external-link</p><br>
-//   <p><span class="icon icon-eye mr1"></span>eye</p><br>
-//   <p><span class="icon icon-eyedropper mr1"></span>eyedropper</p><br>
-//   <p><span class="icon icon-file mr1"></span>file</p><br>
-//   <p><span class="icon icon-fire mr1"></span>fire</p><br>
-//   <p><span class="icon icon-flag mr1"></span>flag</p><br>
-//   <p><span class="icon icon-flash mr1"></span>flash</p><br>
-//   <p><span class="icon icon-folder mr1"></span>folder</p><br>
-//   <p><span class="icon icon-fork mr1"></span>fork</p><br>
-//   <p><span class="icon icon-fullscreen-enter mr1"></span>fullscreen-enter</p><br>
-//   <p><span class="icon icon-fullscreen-exit mr1"></span>fullscreen-exit</p><br>
-//   <p><span class="icon icon-globe mr1"></span>globe</p><br>
-//   <p><span class="icon icon-graph mr1"></span>graph</p><br>
-//   <p><span class="icon icon-grid-four-up mr1"></span>grid-four-up</p><br>
-//   <p><span class="icon icon-grid-three-up mr1"></span>grid-three-up</p><br>
-//   <p><span class="icon icon-grid-two-up mr1"></span>grid-two-up</p><br>
-//   <p><span class="icon icon-hard-drive mr1"></span>hard-drive</p><br>
-//   <p><span class="icon icon-header mr1"></span>header</p><br>
-//   <p><span class="icon icon-headphones mr1"></span>headphones</p><br>
-//   <p><span class="icon icon-heart mr1"></span>heart</p><br>
-//   <p><span class="icon icon-home mr1"></span>home</p><br>
-//   <p><span class="icon icon-image mr1"></span>image</p><br>
-//   <p><span class="icon icon-inbox mr1"></span>inbox</p><br>
-//   <p><span class="icon icon-infinity mr1"></span>infinity</p><br>
-//   <p><span class="icon icon-info mr1"></span>info</p><br>
-//   <p><span class="icon icon-italic mr1"></span>italic</p><br>
-//   <p><span class="icon icon-justify-center mr1"></span>justify-center</p><br>
-//   <p><span class="icon icon-justify-left mr1"></span>justify-left</p><br>
-//   <p><span class="icon icon-justify-right mr1"></span>justify-right</p><br>
-//   <p><span class="icon icon-key mr1"></span>key</p><br>
-//   <p><span class="icon icon-laptop mr1"></span>laptop</p><br>
-//   <p><span class="icon icon-layers mr1"></span>layers</p><br>
-//   <p><span class="icon icon-lightbulb mr1"></span>lightbulb</p><br>
-//   <p><span class="icon icon-link-broken mr1"></span>link-broken</p><br>
-//   <p><span class="icon icon-link-intact mr1"></span>link-intact</p><br>
-//   <p><span class="icon icon-list mr1"></span>list</p><br>
-//   <p><span class="icon icon-list-rich mr1"></span>list-rich</p><br>
-//   <p><span class="icon icon-location mr1"></span>location</p><br>
-//   <p><span class="icon icon-lock-locked mr1"></span>lock-locked</p><br>
-//   <p><span class="icon icon-lock-unlocked mr1"></span>lock-unlocked</p><br>
-//   <p><span class="icon icon-loop mr1"></span>loop</p><br>
-//   <p><span class="icon icon-loop-circular mr1"></span>loop-circular</p><br>
-//   <p><span class="icon icon-loop-square mr1"></span>loop-square</p><br>
-//   <p><span class="icon icon-magnifying-glass mr1"></span>magnifying-glass</p><br>
-//   <p><span class="icon icon-map mr1"></span>map</p><br>
-//   <p><span class="icon icon-map-marker mr1"></span>map-marker</p><br>
-//   <p><span class="icon icon-media-pause mr1"></span>media-pause</p><br>
-//   <p><span class="icon icon-media-play mr1"></span>media-play</p><br>
-//   <p><span class="icon icon-media-record mr1"></span>media-record</p><br>
-//   <p><span class="icon icon-media-skip-backward mr1"></span>media-skip-backward</p><br>
-//   <p><span class="icon icon-media-skip-forward mr1"></span>media-skip-forward</p><br>
-//   <p><span class="icon icon-media-step-backward mr1"></span>media-step-backward</p><br>
-//   <p><span class="icon icon-media-step-forward mr1"></span>media-step-forward</p><br>
-//   <p><span class="icon icon-media-stop mr1"></span>media-stop</p><br>
-//   <p><span class="icon icon-medical-cross mr1"></span>medical-cross</p><br>
-//   <p><span class="icon icon-menu mr1"></span>menu</p><br>
-//   <p><span class="icon icon-microphone mr1"></span>microphone</p><br>
-//   <p><span class="icon icon-minus mr1"></span>minus</p><br>
-//   <p><span class="icon icon-monitor mr1"></span>monitor</p><br>
-//   <p><span class="icon icon-moon mr1"></span>moon</p><br>
-//   <p><span class="icon icon-move mr1"></span>move</p><br>
-//   <p><span class="icon icon-musical-note mr1"></span>musical-note</p><br>
-//   <p><span class="icon icon-paperclip mr1"></span>paperclip</p><br>
-//   <p><span class="icon icon-pencil mr1"></span>pencil</p><br>
-//   <p><span class="icon icon-people mr1"></span>people</p><br>
-//   <p><span class="icon icon-person mr1"></span>person</p><br>
-//   <p><span class="icon icon-phone mr1"></span>phone</p><br>
-//   <p><span class="icon icon-pie-chart mr1"></span>pie-chart</p><br>
-//   <p><span class="icon icon-pin mr1"></span>pin</p><br>
-//   <p><span class="icon icon-play-circle mr1"></span>play-circle</p><br>
-//   <p><span class="icon icon-plus mr1"></span>plus</p><br>
-//   <p><span class="icon icon-power-standby mr1"></span>power-standby</p><br>
-//   <p><span class="icon icon-print mr1"></span>print</p><br>
-//   <p><span class="icon icon-project mr1"></span>project</p><br>
-//   <p><span class="icon icon-pulse mr1"></span>pulse</p><br>
-//   <p><span class="icon icon-puzzle-piece mr1"></span>puzzle-piece</p><br>
-//   <p><span class="icon icon-question-mark mr1"></span>question-mark</p><br>
-//   <p><span class="icon icon-rain mr1"></span>rain</p><br>
-//   <p><span class="icon icon-random mr1"></span>random</p><br>
-//   <p><span class="icon icon-reload mr1"></span>reload</p><br>
-//   <p><span class="icon icon-resize-both mr1"></span>resize-both</p><br>
-//   <p><span class="icon icon-resize-height mr1"></span>resize-height</p><br>
-//   <p><span class="icon icon-resize-width mr1"></span>resize-width</p><br>
-//   <p><span class="icon icon-rss mr1"></span>rss</p><br>
-//   <p><span class="icon icon-rss-alt mr1"></span>rss-alt</p><br>
-//   <p><span class="icon icon-script mr1"></span>script</p><br>
-//   <p><span class="icon icon-share mr1"></span>share</p><br>
-//   <p><span class="icon icon-share-boxed mr1"></span>share-boxed</p><br>
-//   <p><span class="icon icon-shield mr1"></span>shield</p><br>
-//   <p><span class="icon icon-signal mr1"></span>signal</p><br>
-//   <p><span class="icon icon-signpost mr1"></span>signpost</p><br>
-//   <p><span class="icon icon-sort-ascending mr1"></span>sort-ascending</p><br>
-//   <p><span class="icon icon-sort-descending mr1"></span>sort-descending</p><br>
-//   <p><span class="icon icon-spreadsheet mr1"></span>spreadsheet</p><br>
-//   <p><span class="icon icon-star mr1"></span>star</p><br>
-//   <p><span class="icon icon-sun mr1"></span>sun</p><br>
-//   <p><span class="icon icon-tablet mr1"></span>tablet</p><br>
-//   <p><span class="icon icon-tag mr1"></span>tag</p><br>
-//   <p><span class="icon icon-tags mr1"></span>tags</p><br>
-//   <p><span class="icon icon-target mr1"></span>target</p><br>
-//   <p><span class="icon icon-task mr1"></span>task</p><br>
-//   <p><span class="icon icon-terminal mr1"></span>terminal</p><br>
-//   <p><span class="icon icon-text mr1"></span>text</p><br>
-//   <p><span class="icon icon-thumb-down mr1"></span>thumb-down</p><br>
-//   <p><span class="icon icon-thumb-up mr1"></span>thumb-up</p><br>
-//   <p><span class="icon icon-timer mr1"></span>timer</p><br>
-//   <p><span class="icon icon-transfer mr1"></span>transfer</p><br>
-//   <p><span class="icon icon-trash mr1"></span>trash</p><br>
-//   <p><span class="icon icon-underline mr1"></span>underline</p><br>
-//   <p><span class="icon icon-vertical-align-bottom mr1"></span>vertical-align-bottom</p><br>
-//   <p><span class="icon icon-vertical-align-center mr1"></span>vertical-align-center</p><br>
-//   <p><span class="icon icon-vertical-align-top mr1"></span>vertical-align-top</p><br>
-//   <p><span class="icon icon-video mr1"></span>video</p><br>
-//   <p><span class="icon icon-volume-high mr1"></span>volume-high</p><br>
-//   <p><span class="icon icon-volume-low mr1"></span>volume-low</p><br>
-//   <p><span class="icon icon-volume-off mr1"></span>volume-off</p><br>
-//   <p><span class="icon icon-warning mr1"></span>warning</p><br>
-//   <p><span class="icon icon-wifi mr1"></span>wifi</p><br>
-//   <p><span class="icon icon-wrench mr1"></span>wrench</p><br>
-//   <p><span class="icon icon-x mr1"></span>x</p><br>
-//   <p><span class="icon icon-yen mr1"></span>yen</p><br>
-//   <p><span class="icon icon-zoom-in mr1"></span>zoom-in</p><br>
-//   <p><span class="icon icon-zoom-out mr1"></span>zoom-out</p><br>
-// </div>
+// <div style="-webkit-columns: 12; columns: 12">
 // 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#account-login"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#account-logout"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#action-redo"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#action-undo"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#align-center"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#align-left"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#align-right"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#aperture"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-bottom"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-circle-bottom"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-circle-left"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-circle-right"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-circle-top"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-left"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-right"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-thick-bottom"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-thick-left"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-thick-right"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-thick-top"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-top"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#audio"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#audio-spectrum"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#badge"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#ban"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#bar-chart"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#basket"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#battery-empty"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#battery-full"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#beaker"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#bell"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#bluetooth"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#bold"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#bolt"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#book"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#bookmark"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#box"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#briefcase"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#british-pound"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#browser"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#brush"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#bug"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#bullhorn"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#calculator"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#calendar"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#camera-slr"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#caret-bottom"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#caret-left"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#caret-right"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#caret-top"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#cart"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#chat"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#check"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#chevron-bottom"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#chevron-left"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#chevron-right"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#chevron-top"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#circle-check"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#circle-x"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#clipboard"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#clock"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#cloud"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#cloud-download"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#cloud-upload"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#cloudy"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#code"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#cog"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#collapse-down"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#collapse-left"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#collapse-right"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#collapse-up"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#command"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#comment-square"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#compass"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#contrast"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#copywriting"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#credit-card"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#crop"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#dashboard"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#data-transfer-download"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#data-transfer-upload"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#delete"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#dial"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#document"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#dollar"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#double-quote-sans-left"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#double-quote-sans-right"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#double-quote-serif-left"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#double-quote-serif-right"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#droplet"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#eject"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#elevator"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#ellipses"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#envelope-closed"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#envelope-open"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#euro"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#excerpt"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#expand-down"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#expand-left"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#expand-right"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#expand-up"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#external-link"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#eye"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#eyedropper"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#file"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#fire"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#flag"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#flash"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#folder"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#fork"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#fullscreen-enter"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#fullscreen-exit"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#globe"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#graph"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#grid-four-up"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#grid-three-up"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#grid-two-up"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#hard-drive"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#header"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#headphones"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#heart"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#home"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#image"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#inbox"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#infinity"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#info"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#italic"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#justify-center"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#justify-left"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#justify-right"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#key"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#laptop"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#layers"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#lightbulb"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#link-broken"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#link-intact"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#list"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#list-rich"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#location"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#lock-locked"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#lock-unlocked"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#loop"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#loop-circular"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#loop-square"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#magnifying-glass"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#map"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#map-marker"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#media-pause"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#media-play"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#media-record"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#media-skip-backward"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#media-skip-forward"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#media-step-backward"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#media-step-forward"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#media-stop"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#medical-cross"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#menu"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#microphone"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#minus"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#monitor"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#moon"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#move"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#musical-note"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#paperclip"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#pencil"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#people"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#person"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#phone"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#pie-chart"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#pin"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#play-circle"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#plus"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#power-standby"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#print"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#project"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#pulse"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#puzzle-piece"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#question-mark"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#rain"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#random"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#reload"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#resize-both"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#resize-height"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#resize-width"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#rss"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#rss-alt"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#script"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#share"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#share-boxed"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#shield"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#signal"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#signpost"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#sort-ascending"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#sort-descending"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#spreadsheet"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#star"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#sun"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#tablet"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#tag"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#tags"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#target"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#task"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#terminal"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#text"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#thumb-down"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#thumb-up"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#timer"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#transfer"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#trash"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#underline"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#vertical-align-bottom"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#vertical-align-center"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#vertical-align-top"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#video"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#volume-high"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#volume-low"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#volume-off"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#warning"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#wifi"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#wrench"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#x"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#yen"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#zoom-in"/>
+//	 </svg>
+//	 <br>
+// 
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#zoom-out"/>
+//	 </svg>
+//	 <br>
+// 
+// </div>
 //
 
-.icon-sm::before,
-.icon::before,
-.icon-md::before,
-.icon-lg::before,
-.icon-xl::before {
-	background: transparent url('../icons/sprite.svg') no-repeat;
-	background-size: auto 100%;    
-	vertical-align: middle;
-	display: inline-block;
+.icon {
+  display: inline-block;
+  fill: red;
+  height: 1em;
+  line-height: 1;
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+  width: 1em;
 }
-
-.icon-sm::before {
-	width:  8px;
-	height: 8px;
-}
-
-.icon::before {
-	width:  16px;
-	height: 16px;
-}
-
-.icon-md::before {
-	width:  24px;
-	height: 24px;
-}
-
-.icon-lg::before {
-	width:  32px;
-	height: 32px;
-}
-
-.icon-xl::before {
-	width:  64px;
-	height: 64px;
-}
-
-.icon-account-login::before { content: ''; background-position: 0% 0%;}
-.icon-account-logout::before { content: ''; background-position: 0.45045045045045046% 0%;}
-.icon-action-redo::before { content: ''; background-position: 0.9009009009009009% 0%;}
-.icon-action-undo::before { content: ''; background-position: 1.3513513513513513% 0%;}
-.icon-align-center::before { content: ''; background-position: 1.8018018018018018% 0%;}
-.icon-align-left::before { content: ''; background-position: 2.2522522522522523% 0%;}
-.icon-align-right::before { content: ''; background-position: 2.7027027027027026% 0%;}
-.icon-aperture::before { content: ''; background-position: 3.1531531531531534% 0%;}
-.icon-arrow-bottom::before { content: ''; background-position: 3.6036036036036037% 0%;}
-.icon-arrow-circle-bottom::before { content: ''; background-position: 4.054054054054054% 0%;}
-.icon-arrow-circle-left::before { content: ''; background-position: 4.504504504504505% 0%;}
-.icon-arrow-circle-right::before { content: ''; background-position: 4.954954954954955% 0%;}
-.icon-arrow-circle-top::before { content: ''; background-position: 5.405405405405405% 0%;}
-.icon-arrow-left::before { content: ''; background-position: 5.8558558558558556% 0%;}
-.icon-arrow-right::before { content: ''; background-position: 6.306306306306307% 0%;}
-.icon-arrow-thick-bottom::before { content: ''; background-position: 6.756756756756757% 0%;}
-.icon-arrow-thick-left::before { content: ''; background-position: 7.207207207207207% 0%;}
-.icon-arrow-thick-right::before { content: ''; background-position: 7.657657657657658% 0%;}
-.icon-arrow-thick-top::before { content: ''; background-position: 8.108108108108109% 0%;}
-.icon-arrow-top::before { content: ''; background-position: 8.558558558558559% 0%;}
-.icon-audio::before { content: ''; background-position: 9.00900900900901% 0%;}
-.icon-audio-spectrum::before { content: ''; background-position: 9.45945945945946% 0%;}
-.icon-badge::before { content: ''; background-position: 9.90990990990991% 0%;}
-.icon-ban::before { content: ''; background-position: 10.36036036036036% 0%;}
-.icon-bar-chart::before { content: ''; background-position: 10.81081081081081% 0%;}
-.icon-basket::before { content: ''; background-position: 11.26126126126126% 0%;}
-.icon-battery-empty::before { content: ''; background-position: 11.711711711711711% 0%;}
-.icon-battery-full::before { content: ''; background-position: 12.162162162162161% 0%;}
-.icon-beaker::before { content: ''; background-position: 12.612612612612613% 0%;}
-.icon-bell::before { content: ''; background-position: 13.063063063063064% 0%;}
-.icon-bluetooth::before { content: ''; background-position: 13.513513513513514% 0%;}
-.icon-bold::before { content: ''; background-position: 13.963963963963964% 0%;}
-.icon-bolt::before { content: ''; background-position: 14.414414414414415% 0%;}
-.icon-book::before { content: ''; background-position: 14.864864864864865% 0%;}
-.icon-bookmark::before { content: ''; background-position: 15.315315315315315% 0%;}
-.icon-box::before { content: ''; background-position: 15.765765765765765% 0%;}
-.icon-briefcase::before { content: ''; background-position: 16.216216216216218% 0%;}
-.icon-british-pound::before { content: ''; background-position: 16.666666666666668% 0%;}
-.icon-browser::before { content: ''; background-position: 17.117117117117118% 0%;}
-.icon-brush::before { content: ''; background-position: 17.56756756756757% 0%;}
-.icon-bug::before { content: ''; background-position: 18.01801801801802% 0%;}
-.icon-bullhorn::before { content: ''; background-position: 18.46846846846847% 0%;}
-.icon-calculator::before { content: ''; background-position: 18.91891891891892% 0%;}
-.icon-calendar::before { content: ''; background-position: 19.36936936936937% 0%;}
-.icon-camera-slr::before { content: ''; background-position: 19.81981981981982% 0%;}
-.icon-caret-bottom::before { content: ''; background-position: 20.27027027027027% 0%;}
-.icon-caret-left::before { content: ''; background-position: 20.72072072072072% 0%;}
-.icon-caret-right::before { content: ''; background-position: 21.17117117117117% 0%;}
-.icon-caret-top::before { content: ''; background-position: 21.62162162162162% 0%;}
-.icon-cart::before { content: ''; background-position: 22.07207207207207% 0%;}
-.icon-chat::before { content: ''; background-position: 22.52252252252252% 0%;}
-.icon-check::before { content: ''; background-position: 22.972972972972972% 0%;}
-.icon-chevron-bottom::before { content: ''; background-position: 23.423423423423422% 0%;}
-.icon-chevron-left::before { content: ''; background-position: 23.873873873873872% 0%;}
-.icon-chevron-right::before { content: ''; background-position: 24.324324324324323% 0%;}
-.icon-chevron-top::before { content: ''; background-position: 24.774774774774773% 0%;}
-.icon-circle-check::before { content: ''; background-position: 25.225225225225227% 0%;}
-.icon-circle-x::before { content: ''; background-position: 25.675675675675677% 0%;}
-.icon-clipboard::before { content: ''; background-position: 26.126126126126128% 0%;}
-.icon-clock::before { content: ''; background-position: 26.576576576576578% 0%;}
-.icon-cloud::before { content: ''; background-position: 27.027027027027028% 0%;}
-.icon-cloud-download::before { content: ''; background-position: 27.47747747747748% 0%;}
-.icon-cloud-upload::before { content: ''; background-position: 27.92792792792793% 0%;}
-.icon-cloudy::before { content: ''; background-position: 28.37837837837838% 0%;}
-.icon-code::before { content: ''; background-position: 28.82882882882883% 0%;}
-.icon-cog::before { content: ''; background-position: 29.27927927927928% 0%;}
-.icon-collapse-down::before { content: ''; background-position: 29.72972972972973% 0%;}
-.icon-collapse-left::before { content: ''; background-position: 30.18018018018018% 0%;}
-.icon-collapse-right::before { content: ''; background-position: 30.63063063063063% 0%;}
-.icon-collapse-up::before { content: ''; background-position: 31.08108108108108% 0%;}
-.icon-command::before { content: ''; background-position: 31.53153153153153% 0%;}
-.icon-comment-square::before { content: ''; background-position: 31.98198198198198% 0%;}
-.icon-compass::before { content: ''; background-position: 32.432432432432435% 0%;}
-.icon-contrast::before { content: ''; background-position: 32.88288288288288% 0%;}
-.icon-copywriting::before { content: ''; background-position: 33.333333333333336% 0%;}
-.icon-credit-card::before { content: ''; background-position: 33.78378378378378% 0%;}
-.icon-crop::before { content: ''; background-position: 34.234234234234236% 0%;}
-.icon-dashboard::before { content: ''; background-position: 34.68468468468468% 0%;}
-.icon-data-transfer-download::before { content: ''; background-position: 35.13513513513514% 0%;}
-.icon-data-transfer-upload::before { content: ''; background-position: 35.585585585585584% 0%;}
-.icon-delete::before { content: ''; background-position: 36.03603603603604% 0%;}
-.icon-dial::before { content: ''; background-position: 36.486486486486484% 0%;}
-.icon-document::before { content: ''; background-position: 36.93693693693694% 0%;}
-.icon-dollar::before { content: ''; background-position: 37.387387387387385% 0%;}
-.icon-double-quote-sans-left::before { content: ''; background-position: 37.83783783783784% 0%;}
-.icon-double-quote-sans-right::before { content: ''; background-position: 38.288288288288285% 0%;}
-.icon-double-quote-serif-left::before { content: ''; background-position: 38.73873873873874% 0%;}
-.icon-double-quote-serif-right::before { content: ''; background-position: 39.189189189189186% 0%;}
-.icon-droplet::before { content: ''; background-position: 39.63963963963964% 0%;}
-.icon-eject::before { content: ''; background-position: 40.090090090090094% 0%;}
-.icon-elevator::before { content: ''; background-position: 40.54054054054054% 0%;}
-.icon-ellipses::before { content: ''; background-position: 40.990990990990994% 0%;}
-.icon-envelope-closed::before { content: ''; background-position: 41.44144144144144% 0%;}
-.icon-envelope-open::before { content: ''; background-position: 41.891891891891895% 0%;}
-.icon-euro::before { content: ''; background-position: 42.34234234234234% 0%;}
-.icon-excerpt::before { content: ''; background-position: 42.792792792792795% 0%;}
-.icon-expand-down::before { content: ''; background-position: 43.24324324324324% 0%;}
-.icon-expand-left::before { content: ''; background-position: 43.693693693693696% 0%;}
-.icon-expand-right::before { content: ''; background-position: 44.14414414414414% 0%;}
-.icon-expand-up::before { content: ''; background-position: 44.5945945945946% 0%;}
-.icon-external-link::before { content: ''; background-position: 45.04504504504504% 0%;}
-.icon-eye::before { content: ''; background-position: 45.4954954954955% 0%;}
-.icon-eyedropper::before { content: ''; background-position: 45.945945945945944% 0%;}
-.icon-file::before { content: ''; background-position: 46.3963963963964% 0%;}
-.icon-fire::before { content: ''; background-position: 46.846846846846844% 0%;}
-.icon-flag::before { content: ''; background-position: 47.2972972972973% 0%;}
-.icon-flash::before { content: ''; background-position: 47.747747747747745% 0%;}
-.icon-folder::before { content: ''; background-position: 48.1981981981982% 0%;}
-.icon-fork::before { content: ''; background-position: 48.648648648648646% 0%;}
-.icon-fullscreen-enter::before { content: ''; background-position: 49.0990990990991% 0%;}
-.icon-fullscreen-exit::before { content: ''; background-position: 49.549549549549546% 0%;}
-.icon-globe::before { content: ''; background-position: 50% 0%;}
-.icon-graph::before { content: ''; background-position: 50.450450450450454% 0%;}
-.icon-grid-four-up::before { content: ''; background-position: 50.9009009009009% 0%;}
-.icon-grid-three-up::before { content: ''; background-position: 51.351351351351354% 0%;}
-.icon-grid-two-up::before { content: ''; background-position: 51.8018018018018% 0%;}
-.icon-hard-drive::before { content: ''; background-position: 52.252252252252255% 0%;}
-.icon-header::before { content: ''; background-position: 52.7027027027027% 0%;}
-.icon-headphones::before { content: ''; background-position: 53.153153153153156% 0%;}
-.icon-heart::before { content: ''; background-position: 53.6036036036036% 0%;}
-.icon-home::before { content: ''; background-position: 54.054054054054056% 0%;}
-.icon-image::before { content: ''; background-position: 54.5045045045045% 0%;}
-.icon-inbox::before { content: ''; background-position: 54.95495495495496% 0%;}
-.icon-infinity::before { content: ''; background-position: 55.4054054054054% 0%;}
-.icon-info::before { content: ''; background-position: 55.85585585585586% 0%;}
-.icon-italic::before { content: ''; background-position: 56.306306306306304% 0%;}
-.icon-justify-center::before { content: ''; background-position: 56.75675675675676% 0%;}
-.icon-justify-left::before { content: ''; background-position: 57.207207207207205% 0%;}
-.icon-justify-right::before { content: ''; background-position: 57.65765765765766% 0%;}
-.icon-key::before { content: ''; background-position: 58.108108108108105% 0%;}
-.icon-laptop::before { content: ''; background-position: 58.55855855855856% 0%;}
-.icon-layers::before { content: ''; background-position: 59.009009009009006% 0%;}
-.icon-lightbulb::before { content: ''; background-position: 59.45945945945946% 0%;}
-.icon-link-broken::before { content: ''; background-position: 59.909909909909906% 0%;}
-.icon-link-intact::before { content: ''; background-position: 60.36036036036036% 0%;}
-.icon-list::before { content: ''; background-position: 60.810810810810814% 0%;}
-.icon-list-rich::before { content: ''; background-position: 61.26126126126126% 0%;}
-.icon-location::before { content: ''; background-position: 61.711711711711715% 0%;}
-.icon-lock-locked::before { content: ''; background-position: 62.16216216216216% 0%;}
-.icon-lock-unlocked::before { content: ''; background-position: 62.612612612612615% 0%;}
-.icon-loop::before { content: ''; background-position: 63.06306306306306% 0%;}
-.icon-loop-circular::before { content: ''; background-position: 63.513513513513516% 0%;}
-.icon-loop-square::before { content: ''; background-position: 63.96396396396396% 0%;}
-.icon-magnifying-glass::before { content: ''; background-position: 64.41441441441441% 0%;}
-.icon-map::before { content: ''; background-position: 64.86486486486487% 0%;}
-.icon-map-marker::before { content: ''; background-position: 65.31531531531532% 0%;}
-.icon-media-pause::before { content: ''; background-position: 65.76576576576576% 0%;}
-.icon-media-play::before { content: ''; background-position: 66.21621621621621% 0%;}
-.icon-media-record::before { content: ''; background-position: 66.66666666666667% 0%;}
-.icon-media-skip-backward::before { content: ''; background-position: 67.11711711711712% 0%;}
-.icon-media-skip-forward::before { content: ''; background-position: 67.56756756756756% 0%;}
-.icon-media-step-backward::before { content: ''; background-position: 68.01801801801801% 0%;}
-.icon-media-step-forward::before { content: ''; background-position: 68.46846846846847% 0%;}
-.icon-media-stop::before { content: ''; background-position: 68.91891891891892% 0%;}
-.icon-medical-cross::before { content: ''; background-position: 69.36936936936937% 0%;}
-.icon-menu::before { content: ''; background-position: 69.81981981981981% 0%;}
-.icon-microphone::before { content: ''; background-position: 70.27027027027027% 0%;}
-.icon-minus::before { content: ''; background-position: 70.72072072072072% 0%;}
-.icon-monitor::before { content: ''; background-position: 71.17117117117117% 0%;}
-.icon-moon::before { content: ''; background-position: 71.62162162162163% 0%;}
-.icon-move::before { content: ''; background-position: 72.07207207207207% 0%;}
-.icon-musical-note::before { content: ''; background-position: 72.52252252252252% 0%;}
-.icon-paperclip::before { content: ''; background-position: 72.97297297297297% 0%;}
-.icon-pencil::before { content: ''; background-position: 73.42342342342343% 0%;}
-.icon-people::before { content: ''; background-position: 73.87387387387388% 0%;}
-.icon-person::before { content: ''; background-position: 74.32432432432432% 0%;}
-.icon-phone::before { content: ''; background-position: 74.77477477477477% 0%;}
-.icon-pie-chart::before { content: ''; background-position: 75.22522522522523% 0%;}
-.icon-pin::before { content: ''; background-position: 75.67567567567568% 0%;}
-.icon-play-circle::before { content: ''; background-position: 76.12612612612612% 0%;}
-.icon-plus::before { content: ''; background-position: 76.57657657657657% 0%;}
-.icon-power-standby::before { content: ''; background-position: 77.02702702702703% 0%;}
-.icon-print::before { content: ''; background-position: 77.47747747747748% 0%;}
-.icon-project::before { content: ''; background-position: 77.92792792792793% 0%;}
-.icon-pulse::before { content: ''; background-position: 78.37837837837837% 0%;}
-.icon-puzzle-piece::before { content: ''; background-position: 78.82882882882883% 0%;}
-.icon-question-mark::before { content: ''; background-position: 79.27927927927928% 0%;}
-.icon-rain::before { content: ''; background-position: 79.72972972972973% 0%;}
-.icon-random::before { content: ''; background-position: 80.18018018018019% 0%;}
-.icon-reload::before { content: ''; background-position: 80.63063063063063% 0%;}
-.icon-resize-both::before { content: ''; background-position: 81.08108108108108% 0%;}
-.icon-resize-height::before { content: ''; background-position: 81.53153153153153% 0%;}
-.icon-resize-width::before { content: ''; background-position: 81.98198198198199% 0%;}
-.icon-rss::before { content: ''; background-position: 82.43243243243244% 0%;}
-.icon-rss-alt::before { content: ''; background-position: 82.88288288288288% 0%;}
-.icon-script::before { content: ''; background-position: 83.33333333333333% 0%;}
-.icon-share::before { content: ''; background-position: 83.78378378378379% 0%;}
-.icon-share-boxed::before { content: ''; background-position: 84.23423423423424% 0%;}
-.icon-shield::before { content: ''; background-position: 84.68468468468468% 0%;}
-.icon-signal::before { content: ''; background-position: 85.13513513513513% 0%;}
-.icon-signpost::before { content: ''; background-position: 85.58558558558559% 0%;}
-.icon-sort-ascending::before { content: ''; background-position: 86.03603603603604% 0%;}
-.icon-sort-descending::before { content: ''; background-position: 86.48648648648648% 0%;}
-.icon-spreadsheet::before { content: ''; background-position: 86.93693693693693% 0%;}
-.icon-star::before { content: ''; background-position: 87.38738738738739% 0%;}
-.icon-sun::before { content: ''; background-position: 87.83783783783784% 0%;}
-.icon-tablet::before { content: ''; background-position: 88.28828828828829% 0%;}
-.icon-tag::before { content: ''; background-position: 88.73873873873873% 0%;}
-.icon-tags::before { content: ''; background-position: 89.1891891891892% 0%;}
-.icon-target::before { content: ''; background-position: 89.63963963963964% 0%;}
-.icon-task::before { content: ''; background-position: 90.09009009009009% 0%;}
-.icon-terminal::before { content: ''; background-position: 90.54054054054055% 0%;}
-.icon-text::before { content: ''; background-position: 90.990990990991% 0%;}
-.icon-thumb-down::before { content: ''; background-position: 91.44144144144144% 0%;}
-.icon-thumb-up::before { content: ''; background-position: 91.89189189189189% 0%;}
-.icon-timer::before { content: ''; background-position: 92.34234234234235% 0%;}
-.icon-transfer::before { content: ''; background-position: 92.7927927927928% 0%;}
-.icon-trash::before { content: ''; background-position: 93.24324324324324% 0%;}
-.icon-underline::before { content: ''; background-position: 93.69369369369369% 0%;}
-.icon-vertical-align-bottom::before { content: ''; background-position: 94.14414414414415% 0%;}
-.icon-vertical-align-center::before { content: ''; background-position: 94.5945945945946% 0%;}
-.icon-vertical-align-top::before { content: ''; background-position: 95.04504504504504% 0%;}
-.icon-video::before { content: ''; background-position: 95.49549549549549% 0%;}
-.icon-volume-high::before { content: ''; background-position: 95.94594594594595% 0%;}
-.icon-volume-low::before { content: ''; background-position: 96.3963963963964% 0%;}
-.icon-volume-off::before { content: ''; background-position: 96.84684684684684% 0%;}
-.icon-warning::before { content: ''; background-position: 97.29729729729729% 0%;}
-.icon-wifi::before { content: ''; background-position: 97.74774774774775% 0%;}
-.icon-wrench::before { content: ''; background-position: 98.1981981981982% 0%;}
-.icon-x::before { content: ''; background-position: 98.64864864864865% 0%;}
-.icon-yen::before { content: ''; background-position: 99.09909909909909% 0%;}
-.icon-zoom-in::before { content: ''; background-position: 99.54954954954955% 0%;}
-.icon-zoom-out::before { content: ''; background-position: 100% 0%;}

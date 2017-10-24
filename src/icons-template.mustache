@@ -12,50 +12,24 @@
 // @state .icon-xl - Extra large icon (64px)
 //
 // @markup
-// <div style="-webkit-columns: 3; columns: 3">
-{{#shapes}}
-//   <p><span class="icon icon-{{base}} mr1"></span>{{base}}</p><br>
-{{/shapes}}
+// <div style="-webkit-columns: 12; columns: 12">
+// {{#shapes}}
+//	 <svg class="icon">
+//	 	<use xlink:href="../dist/icons/sprite-2.svg#{{base}}"/>
+//		<span>{{base}}</span>
+//	 </svg>
+//	 <br>
+// {{/shapes}}
 // </div>
-// 
 //
 
-.icon-sm::before,
-.icon::before,
-.icon-md::before,
-.icon-lg::before,
-.icon-xl::before {
-	background: transparent url('../icons/sprite.svg') no-repeat;
-	background-size: auto 100%;    
-	vertical-align: middle;
-	display: inline-block;
+.icon {
+  display: inline-block;
+  fill: red;
+  height: 1em;
+  line-height: 1;
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+  width: 1em;
 }
-
-.icon-sm::before {
-	width:  8px;
-	height: 8px;
-}
-
-.icon::before {
-	width:  16px;
-	height: 16px;
-}
-
-.icon-md::before {
-	width:  24px;
-	height: 24px;
-}
-
-.icon-lg::before {
-	width:  32px;
-	height: 32px;
-}
-
-.icon-xl::before {
-	width:  64px;
-	height: 64px;
-}
-
-{{#shapes}}
-.icon-{{base}}::before { content: ''; background-position: {{position.relative.x}}% {{position.relative.y}}%;}
-{{/shapes}}
