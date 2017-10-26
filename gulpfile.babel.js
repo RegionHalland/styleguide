@@ -107,4 +107,6 @@ gulp.task('bs-reload', () => {
 // Watch
 gulp.task('watch', ['css:dist', 'sprite:dist', 'docs', 'browsersync'], () => {
 	gulp.watch('./src/scss/**/*.scss', ['css:dist', 'docs', 'bs-reload']);
+	// Watch for changes in icon template
+	gulp.watch('./src/icons-template.mustache', ['sprite:dist', 'css:dist', 'docs', 'bs-reload']);
 })

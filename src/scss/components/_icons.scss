@@ -5,1140 +5,932 @@
 // @description
 // Icons from <a href="https://github.com/iconic/open-iconic">https://github.com/iconic/open-iconic</a>
 //
-// @state .icon-sm - Small icon (8px)
-// @state .icon - Regular icon (16px)
-// @state .icon-md - Medium icon (24px)
-// @state .icon-lg - Large icon (32px)
-// @state .icon-xl - Extra large icon (64px)
+// @state .icon--sm - Small (8px)
+// @state .icon--md - Medium (24px)
+// @state .icon--lg - Large (32px)
+// @state .icon--xl - Extra large (64px)
 //
 // @markup
-// <div style="-webkit-columns: 12; columns: 12">
+// <div>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#account-login"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#account-logout"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#action-redo"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#action-undo"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#align-center"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#align-left"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#align-right"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#aperture"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-bottom"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-circle-bottom"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-circle-left"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-circle-right"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-circle-top"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-left"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-right"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-thick-bottom"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-thick-left"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-thick-right"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-thick-top"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#arrow-top"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#audio"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#audio-spectrum"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#badge"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#ban"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#bar-chart"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#basket"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#battery-empty"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#battery-full"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#beaker"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#bell"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#bluetooth"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#bold"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#bolt"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#book"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#bookmark"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#box"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#briefcase"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#british-pound"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#browser"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#brush"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#bug"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#bullhorn"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#calculator"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#calendar"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#camera-slr"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#caret-bottom"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#caret-left"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#caret-right"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#caret-top"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#cart"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#chat"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#check"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#chevron-bottom"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#chevron-left"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#chevron-right"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#chevron-top"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#circle-check"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#circle-x"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#clipboard"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#clock"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#cloud"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#cloud-download"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#cloud-upload"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#cloudy"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#code"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#cog"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#collapse-down"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#collapse-left"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#collapse-right"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#collapse-up"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#command"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#comment-square"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#compass"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#contrast"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#copywriting"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#credit-card"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#crop"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#dashboard"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#data-transfer-download"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#data-transfer-upload"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#delete"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#dial"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#document"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#dollar"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#double-quote-sans-left"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#double-quote-sans-right"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#double-quote-serif-left"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#double-quote-serif-right"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#droplet"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#eject"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#elevator"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#ellipses"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#envelope-closed"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#envelope-open"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#euro"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#excerpt"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#expand-down"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#expand-left"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#expand-right"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#expand-up"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#external-link"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#eye"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#eyedropper"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#file"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#fire"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#flag"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#flash"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#folder"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#fork"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#fullscreen-enter"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#fullscreen-exit"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#globe"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#graph"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#grid-four-up"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#grid-three-up"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#grid-two-up"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#hard-drive"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#header"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#headphones"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#heart"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#home"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#image"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#inbox"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#infinity"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#info"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#italic"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#justify-center"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#justify-left"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#justify-right"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#key"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#laptop"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#layers"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#lightbulb"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#link-broken"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#link-intact"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#list"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#list-rich"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#location"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#lock-locked"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#lock-unlocked"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#loop"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#loop-circular"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#loop-square"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#magnifying-glass"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#map"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#map-marker"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#media-pause"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#media-play"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#media-record"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#media-skip-backward"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#media-skip-forward"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#media-step-backward"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#media-step-forward"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#media-stop"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#medical-cross"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#menu"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#microphone"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#minus"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#monitor"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#moon"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#move"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#musical-note"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#paperclip"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#pencil"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#people"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#person"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#phone"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#pie-chart"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#pin"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#play-circle"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#plus"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#power-standby"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#print"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#project"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#pulse"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#puzzle-piece"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#question-mark"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#rain"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#random"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#reload"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#resize-both"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#resize-height"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#resize-width"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#rss"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#rss-alt"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#script"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#share"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#share-boxed"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#shield"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#signal"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#signpost"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#sort-ascending"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#sort-descending"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#spreadsheet"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#star"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#sun"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#tablet"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#tag"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#tags"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#target"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#task"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#terminal"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#text"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#thumb-down"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#thumb-up"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#timer"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#transfer"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#trash"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#underline"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#vertical-align-bottom"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#vertical-align-center"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#vertical-align-top"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#video"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#volume-high"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#volume-low"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#volume-off"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#warning"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#wifi"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#wrench"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#x"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#yen"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#zoom-in"/>
 //	 </svg>
-//	 <br>
 // 
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#zoom-out"/>
 //	 </svg>
-//	 <br>
 // 
 // </div>
 //
 
 .icon {
-  display: inline-block;
-  fill: red;
-  height: 1em;
-  line-height: 1;
-  position: relative;
-  top: -1px;
-  vertical-align: middle;
-  width: 1em;
+	display: inline-block;
+	height: 16px;
+	width:  16px;
+	vertical-align: middle;
+}
+
+.icon--sm {
+	width:  8px;
+	height: 8px;
+}
+
+.icon--md {
+	width:  24px;
+	height: 24px;
+}
+
+.icon--lg {
+	width:  32px;
+	height: 32px;
+}
+
+.icon--xl {
+	width:  64px;
+	height: 64px;
 }

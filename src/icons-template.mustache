@@ -5,31 +5,44 @@
 // @description
 // Icons from <a href="https://github.com/iconic/open-iconic">https://github.com/iconic/open-iconic</a>
 //
-// @state .icon-sm - Small icon (8px)
-// @state .icon - Regular icon (16px)
-// @state .icon-md - Medium icon (24px)
-// @state .icon-lg - Large icon (32px)
-// @state .icon-xl - Extra large icon (64px)
+// @state .icon--sm - Small (8px)
+// @state .icon--md - Medium (24px)
+// @state .icon--lg - Large (32px)
+// @state .icon--xl - Extra large (64px)
 //
 // @markup
-// <div style="-webkit-columns: 12; columns: 12">
+// <div>
 // {{#shapes}}
 //	 <svg class="icon">
 //	 	<use xlink:href="../dist/icons/sprite-2.svg#{{base}}"/>
-//		<span>{{base}}</span>
 //	 </svg>
-//	 <br>
 // {{/shapes}}
 // </div>
 //
 
 .icon {
-  display: inline-block;
-  fill: red;
-  height: 1em;
-  line-height: 1;
-  position: relative;
-  top: -1px;
-  vertical-align: middle;
-  width: 1em;
+	display: inline-block;
+	height: 16px;
+	width:  16px;
+	vertical-align: middle;
+}
+
+.icon--sm {
+	width:  8px;
+	height: 8px;
+}
+
+.icon--md {
+	width:  24px;
+	height: 24px;
+}
+
+.icon--lg {
+	width:  32px;
+	height: 32px;
+}
+
+.icon--xl {
+	width:  64px;
+	height: 64px;
 }
