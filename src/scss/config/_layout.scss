@@ -37,3 +37,7 @@
 .max-width-4 { max-width: $width-4 }
 
 .border-box { box-sizing: border-box }
+
+.print-hide {
+	@media print { display: none; }
+}

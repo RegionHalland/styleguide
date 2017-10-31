@@ -1,14 +1,5 @@
 {
  "nav": {
-  "components": [
-   "article",
-   "button",
-   "forms",
-   "icons",
-   "panel",
-   "table",
-   "navigation"
-  ],
   "config": [
    "align",
    "flexbox",
@@ -19,9 +10,218 @@
    "position",
    "typescale",
    "typography"
+  ],
+  "components": [
+   "article",
+   "button",
+   "forms",
+   "icons",
+   "panel",
+   "table",
+   "navigation"
   ]
  },
  "pages": {
+  "config": {
+   "align": [
+    {
+     "name": "Align",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Align"
+      }
+     ],
+     "description": "<p>Adjust vertical alignment with these utilities.</p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<div>\n  <div class=\"table-cell\"><h1>Halland</h1></div>\n  <div class=\"table-cell align-baseline\">baseline</div>\n  <div class=\"table-cell align-top\">top</div>\n  <div class=\"table-cell align-middle\">middle</div>\n  <div class=\"table-cell align-bottom\">bottom</div>\n</div>",
+       "path": "~/src/scss/config/_align.scss",
+       "example": "\n<div>\n  <div class=\"table-cell\"><h1>Halland</h1></div>\n  <div class=\"table-cell align-baseline\">baseline</div>\n  <div class=\"table-cell align-top\">top</div>\n  <div class=\"table-cell align-middle\">middle</div>\n  <div class=\"table-cell align-bottom\">bottom</div>\n</div>",
+       "escaped": "\n&lt;div&gt;\n  &lt;div class=\"table-cell\"&gt;&lt;h1&gt;Halland&lt;/h1&gt;&lt;/div&gt;\n  &lt;div class=\"table-cell align-baseline\"&gt;baseline&lt;/div&gt;\n  &lt;div class=\"table-cell align-top\"&gt;top&lt;/div&gt;\n  &lt;div class=\"table-cell align-middle\"&gt;middle&lt;/div&gt;\n  &lt;div class=\"table-cell align-bottom\"&gt;bottom&lt;/div&gt;\n&lt;/div&gt;"
+      }
+     ]
+    }
+   ],
+   "flexbox": [
+    {
+     "name": "Flexbox",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Flexbox"
+      }
+     ],
+     "description": "<p>These flexbox-based utilities can replace the need for a grid system in many instances.</p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<span>TBA</span>",
+       "path": "~/src/scss/config/_flexbox.scss",
+       "example": "\n<span>TBA</span>",
+       "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
+      }
+     ]
+    }
+   ],
+   "grid": [
+    {
+     "name": "Grid",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Grid"
+      }
+     ],
+     "description": "<p>This module contains responsive float and width utilities to create a variety of grid layouts. \nUse this module in combination with layout, white space, and other utilities. </p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<span>TBA</span>",
+       "path": "~/src/scss/config/_grid.scss",
+       "example": "\n<span>TBA</span>",
+       "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
+      }
+     ]
+    }
+   ],
+   "layout": [
+    {
+     "name": "Layout",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Layout"
+      }
+     ],
+     "description": "<p>Change the default document flow with these display, float, and other utilities.</p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<span>TBA</span>",
+       "path": "~/src/scss/config/_layout.scss",
+       "example": "\n<span>TBA</span>",
+       "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
+      }
+     ]
+    }
+   ],
+   "margin": [
+    {
+     "name": "Margin",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Margin"
+      }
+     ],
+     "description": "<p>Immutable margin utilities are based on a global white space scale defined with custom properties.</p>\n<p><h3>Naming Convention</h3>\nDue to the ubiquitous nature of setting margin, these utilities use a shorthand naming convention:</p>\n<table>\n  <thead>\n    <tr>\n        <th>Shorthand</th> \n        <th>Description</th>\n     </tr>\n    </thead>\n    <tbody>\n      <tr><td>m</td><td>Margin</td></tr>\n      <tr><td>t</td><td>Top</td></tr>\n      <tr><td>r</td><td>Right</td></tr>\n      <tr><td>b</td><td>Bottom</td></tr>\n      <tr><td>l</td><td>Left</td></tr>\n      <tr><td>x</td><td>X-axis (left and right)</td></tr>\n      <tr><td>y</td><td>Y-axis (top and bottom)</td></tr>\n      <tr><td>n</td><td>Negative</td> </tr>\n      <tr><td>0</td><td>0 reset</td> </tr>\n      <tr><td>1</td><td>$space-1 (.25rem)</td></tr>\n      <tr><td>2</td><td>$space-2 (.5rem)</td></tr>\n      <tr><td>3</td><td>$space-3 (1rem)</td></tr>\n      <tr><td>4</td><td>$space-4 (2rem)</td></tr>\n     <tr><td>4</td><td>$space-5 (4rem)</td></tr>\n     <tr><td>4</td><td>$space-6 (8rem)</td></tr>\n    </tbody>\n  </table>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "",
+       "path": "~/src/scss/config/_margin.scss",
+       "example": "",
+       "escaped": ""
+      }
+     ]
+    }
+   ],
+   "padding": [
+    {
+     "name": "Padding",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Padding"
+      }
+     ],
+     "description": "<p>Immutable padding utilities are based on a global white space scale defined with custom properties. </p>\n<p><h3>Naming Convention</h3>\nDue to the ubiquitous nature of setting padding, these utilities use a shorthand naming convention:</p>\n<table class=\"mb2 table-flush table-light\">\n    <thead>\n      <tr>\n        <th>Shorthand</th>\n        <th>Description</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr><td>p</td><td>Padding</td></tr>\n      <tr><td>t</td><td>Top</td></tr>\n      <tr><td>r</td><td>Right</td></tr>\n      <tr><td>b</td><td>Bottom</td></tr>\n      <tr><td>l</td><td>Left</td></tr>\n      <tr><td>x</td><td>X-axis (left and right)</td></tr>\n      <tr><td>y</td><td>Y-axis (top and bottom)</td></tr>\n      <tr><td>n</td><td>Negative (margin only)</td></tr>\n      <tr><td>0</td><td>0 reset</td> </tr>\n      <tr><td>1</td><td>$space-1 (.25rem)</td></tr>\n      <tr><td>2</td><td>$space-2 (.5rem)</td></tr>\n      <tr><td>3</td><td>$space-3 (1rem)</td></tr>\n      <tr><td>4</td><td>$space-4 (2rem)</td></tr>\n     <tr><td>4</td><td>$space-5 (4rem)</td></tr>\n     <tr><td>4</td><td>$space-6 (6rem)</td></tr>\n    </tbody>\n  </table>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<div class=\"pb1\">This will have a padding bottom</div>",
+       "path": "~/src/scss/config/_padding.scss",
+       "example": "\n<div class=\"pb1\">This will have a padding bottom</div>",
+       "escaped": "\n&lt;div class=\"pb1\"&gt;This will have a padding bottom&lt;/div&gt;"
+      }
+     ]
+    }
+   ],
+   "position": [
+    {
+     "name": "Position",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Position"
+      }
+     ],
+     "description": "<p>This module includes basic positioning utilities to alter the default document flow. \nUse positions with caution. They are often unnecessary and commonly misused.</p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "",
+       "path": "~/src/scss/config/_position.scss",
+       "example": "",
+       "escaped": ""
+      }
+     ]
+    }
+   ],
+   "typescale": [
+    {
+     "name": "Typescale",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Typescale"
+      }
+     ],
+     "description": "<p>This module provides utilities for adjusting font-size.</p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<p class=\"h1\">Heading 1</p>\n<p class=\"h2\">Heading 2</p>\n<p class=\"h3\">Heading 3</p>\n<p class=\"h4\">Heading 4</p>\n<p class=\"h5\">Heading 5</p>\n<p class=\"h6\">Heading 6</p>",
+       "path": "~/src/scss/config/_type-scale.scss",
+       "example": "\n<p class=\"h1\">Heading 1</p>\n<p class=\"h2\">Heading 2</p>\n<p class=\"h3\">Heading 3</p>\n<p class=\"h4\">Heading 4</p>\n<p class=\"h5\">Heading 5</p>\n<p class=\"h6\">Heading 6</p>",
+       "escaped": "\n&lt;p class=\"h1\"&gt;Heading 1&lt;/p&gt;\n&lt;p class=\"h2\"&gt;Heading 2&lt;/p&gt;\n&lt;p class=\"h3\"&gt;Heading 3&lt;/p&gt;\n&lt;p class=\"h4\"&gt;Heading 4&lt;/p&gt;\n&lt;p class=\"h5\"&gt;Heading 5&lt;/p&gt;\n&lt;p class=\"h6\"&gt;Heading 6&lt;/p&gt;"
+      }
+     ]
+    }
+   ],
+   "typography": [
+    {
+     "name": "Typography",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Typography"
+      }
+     ],
+     "description": "<p>Change typographic weights, styles, and alignment with these utility styles.</p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<span>TBA</span>",
+       "path": "~/src/scss/config/_typography.scss",
+       "example": "\n<span>TBA</span>",
+       "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
+      }
+     ]
+    }
+   ]
+  },
   "components": {
    "article": [
     {
@@ -244,206 +444,6 @@
        "path": "~/src/scss/components/_vertical-nav.scss",
        "example": "\n<nav>\n<ul class=\"vertical-nav\">\n\t<li class=\"vertical-nav__item\"><a class=\"vertical-nav__link\" href=\"#\">Alternativ</a></li>\n\t<li class=\"vertical-nav__item active\"><a class=\"vertical-nav__link\" href=\"#\">Alternativ (active)</a></li>\n\t<li class=\"vertical-nav__item\"><a class=\"vertical-nav__link\" href=\"#\">Alternativ</a></li>\n\t<li class=\"vertical-nav__item has-children\">\n\t\t<a class=\"vertical-nav__link\" href=\"#\">Alternativ</a>\n\t\t<ul class=\"vertical-nav__sub-menu\">\n\t\t\t<li class=\"vertical-nav__item\"><a class=\"vertical-nav__link\" href=\"#\">Alternativ</a></li>\n\t\t\t<li class=\"vertical-nav__item\"><a class=\"vertical-nav__link\" href=\"#\">Alternativ</a></li>\n\t\t\t<li class=\"vertical-nav__item\"><a class=\"vertical-nav__link\" href=\"#\">Alternativ</a></li>\n\t\t\t<li class=\"vertical-nav__item has-children\">\n\t\t\t\t<a class=\"vertical-nav__link\" href=\"#\">Alternativ</a>\n\t\t\t\t<ul class=\"vertical-nav__sub-menu\">\n\t\t\t\t\t<li class=\"vertical-nav__item\"><a class=\"vertical-nav__link\" href=\"#\">Världens längsta alternativ</a></li>\n\t\t\t\t\t<li class=\"vertical-nav__item static\">Alternativ</li>\n\t\t\t\t\t<li class=\"vertical-nav__item has-children\">\n\t\t\t\t\t\t<a class=\"vertical-nav__link\" href=\"#\">Världens längsta alternativ</a>\n\t\t\t\t\t</li>\n\t\t\t\t</ul>\n\t\t\t</li>\n\t\t\t<li class=\"vertical-nav__item\"><a class=\"vertical-nav__link\" href=\"#\">Alternativ</a></li>\n\t\t</ul>\n\t</li>\n\t<li class=\"vertical-nav__item\"><a class=\"vertical-nav__link\" href=\"#\">Alternativ</a></li>\n\t<li class=\"vertical-nav__item\"><a class=\"vertical-nav__link\" href=\"#\">Alternativ</a></li>\n</ul>\n</nav>",
        "escaped": "\n&lt;nav&gt;\n&lt;ul class=\"vertical-nav\"&gt;\n\t&lt;li class=\"vertical-nav__item\"&gt;&lt;a class=\"vertical-nav__link\" href=\"#\"&gt;Alternativ&lt;/a&gt;&lt;/li&gt;\n\t&lt;li class=\"vertical-nav__item active\"&gt;&lt;a class=\"vertical-nav__link\" href=\"#\"&gt;Alternativ (active)&lt;/a&gt;&lt;/li&gt;\n\t&lt;li class=\"vertical-nav__item\"&gt;&lt;a class=\"vertical-nav__link\" href=\"#\"&gt;Alternativ&lt;/a&gt;&lt;/li&gt;\n\t&lt;li class=\"vertical-nav__item has-children\"&gt;\n\t\t&lt;a class=\"vertical-nav__link\" href=\"#\"&gt;Alternativ&lt;/a&gt;\n\t\t&lt;ul class=\"vertical-nav__sub-menu\"&gt;\n\t\t\t&lt;li class=\"vertical-nav__item\"&gt;&lt;a class=\"vertical-nav__link\" href=\"#\"&gt;Alternativ&lt;/a&gt;&lt;/li&gt;\n\t\t\t&lt;li class=\"vertical-nav__item\"&gt;&lt;a class=\"vertical-nav__link\" href=\"#\"&gt;Alternativ&lt;/a&gt;&lt;/li&gt;\n\t\t\t&lt;li class=\"vertical-nav__item\"&gt;&lt;a class=\"vertical-nav__link\" href=\"#\"&gt;Alternativ&lt;/a&gt;&lt;/li&gt;\n\t\t\t&lt;li class=\"vertical-nav__item has-children\"&gt;\n\t\t\t\t&lt;a class=\"vertical-nav__link\" href=\"#\"&gt;Alternativ&lt;/a&gt;\n\t\t\t\t&lt;ul class=\"vertical-nav__sub-menu\"&gt;\n\t\t\t\t\t&lt;li class=\"vertical-nav__item\"&gt;&lt;a class=\"vertical-nav__link\" href=\"#\"&gt;Världens längsta alternativ&lt;/a&gt;&lt;/li&gt;\n\t\t\t\t\t&lt;li class=\"vertical-nav__item static\"&gt;Alternativ&lt;/li&gt;\n\t\t\t\t\t&lt;li class=\"vertical-nav__item has-children\"&gt;\n\t\t\t\t\t\t&lt;a class=\"vertical-nav__link\" href=\"#\"&gt;Världens längsta alternativ&lt;/a&gt;\n\t\t\t\t\t&lt;/li&gt;\n\t\t\t\t&lt;/ul&gt;\n\t\t\t&lt;/li&gt;\n\t\t\t&lt;li class=\"vertical-nav__item\"&gt;&lt;a class=\"vertical-nav__link\" href=\"#\"&gt;Alternativ&lt;/a&gt;&lt;/li&gt;\n\t\t&lt;/ul&gt;\n\t&lt;/li&gt;\n\t&lt;li class=\"vertical-nav__item\"&gt;&lt;a class=\"vertical-nav__link\" href=\"#\"&gt;Alternativ&lt;/a&gt;&lt;/li&gt;\n\t&lt;li class=\"vertical-nav__item\"&gt;&lt;a class=\"vertical-nav__link\" href=\"#\"&gt;Alternativ&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/nav&gt;"
-      }
-     ]
-    }
-   ]
-  },
-  "config": {
-   "align": [
-    {
-     "name": "Align",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Align"
-      }
-     ],
-     "description": "<p>Adjust vertical alignment with these utilities.</p>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<div>\n  <div class=\"table-cell\"><h1>Halland</h1></div>\n  <div class=\"table-cell align-baseline\">baseline</div>\n  <div class=\"table-cell align-top\">top</div>\n  <div class=\"table-cell align-middle\">middle</div>\n  <div class=\"table-cell align-bottom\">bottom</div>\n</div>",
-       "path": "~/src/scss/config/_align.scss",
-       "example": "\n<div>\n  <div class=\"table-cell\"><h1>Halland</h1></div>\n  <div class=\"table-cell align-baseline\">baseline</div>\n  <div class=\"table-cell align-top\">top</div>\n  <div class=\"table-cell align-middle\">middle</div>\n  <div class=\"table-cell align-bottom\">bottom</div>\n</div>",
-       "escaped": "\n&lt;div&gt;\n  &lt;div class=\"table-cell\"&gt;&lt;h1&gt;Halland&lt;/h1&gt;&lt;/div&gt;\n  &lt;div class=\"table-cell align-baseline\"&gt;baseline&lt;/div&gt;\n  &lt;div class=\"table-cell align-top\"&gt;top&lt;/div&gt;\n  &lt;div class=\"table-cell align-middle\"&gt;middle&lt;/div&gt;\n  &lt;div class=\"table-cell align-bottom\"&gt;bottom&lt;/div&gt;\n&lt;/div&gt;"
-      }
-     ]
-    }
-   ],
-   "flexbox": [
-    {
-     "name": "Flexbox",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Flexbox"
-      }
-     ],
-     "description": "<p>These flexbox-based utilities can replace the need for a grid system in many instances.</p>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<span>TBA</span>",
-       "path": "~/src/scss/config/_flexbox.scss",
-       "example": "\n<span>TBA</span>",
-       "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
-      }
-     ]
-    }
-   ],
-   "grid": [
-    {
-     "name": "Grid",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Grid"
-      }
-     ],
-     "description": "<p>This module contains responsive float and width utilities to create a variety of grid layouts. \nUse this module in combination with layout, white space, and other utilities. </p>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<span>TBA</span>",
-       "path": "~/src/scss/config/_grid.scss",
-       "example": "\n<span>TBA</span>",
-       "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
-      }
-     ]
-    }
-   ],
-   "layout": [
-    {
-     "name": "Layout",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Layout"
-      }
-     ],
-     "description": "<p>Change the default document flow with these display, float, and other utilities.</p>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<span>TBA</span>",
-       "path": "~/src/scss/config/_layout.scss",
-       "example": "\n<span>TBA</span>",
-       "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
-      }
-     ]
-    }
-   ],
-   "margin": [
-    {
-     "name": "Margin",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Margin"
-      }
-     ],
-     "description": "<p>Immutable margin utilities are based on a global white space scale defined with custom properties.</p>\n<p><h3>Naming Convention</h3>\nDue to the ubiquitous nature of setting margin, these utilities use a shorthand naming convention:</p>\n<table>\n  <thead>\n    <tr>\n        <th>Shorthand</th> \n        <th>Description</th>\n     </tr>\n    </thead>\n    <tbody>\n      <tr><td>m</td><td>Margin</td></tr>\n      <tr><td>t</td><td>Top</td></tr>\n      <tr><td>r</td><td>Right</td></tr>\n      <tr><td>b</td><td>Bottom</td></tr>\n      <tr><td>l</td><td>Left</td></tr>\n      <tr><td>x</td><td>X-axis (left and right)</td></tr>\n      <tr><td>y</td><td>Y-axis (top and bottom)</td></tr>\n      <tr><td>n</td><td>Negative</td> </tr>\n      <tr><td>0</td><td>0 reset</td> </tr>\n      <tr><td>1</td><td>$space-1 (.25rem)</td></tr>\n      <tr><td>2</td><td>$space-2 (.5rem)</td></tr>\n      <tr><td>3</td><td>$space-3 (1rem)</td></tr>\n      <tr><td>4</td><td>$space-4 (2rem)</td></tr>\n     <tr><td>4</td><td>$space-5 (4rem)</td></tr>\n     <tr><td>4</td><td>$space-6 (8rem)</td></tr>\n    </tbody>\n  </table>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "",
-       "path": "~/src/scss/config/_margin.scss",
-       "example": "",
-       "escaped": ""
-      }
-     ]
-    }
-   ],
-   "padding": [
-    {
-     "name": "Padding",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Padding"
-      }
-     ],
-     "description": "<p>Immutable padding utilities are based on a global white space scale defined with custom properties. </p>\n<p><h3>Naming Convention</h3>\nDue to the ubiquitous nature of setting padding, these utilities use a shorthand naming convention:</p>\n<table class=\"mb2 table-flush table-light\">\n    <thead>\n      <tr>\n        <th>Shorthand</th>\n        <th>Description</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr><td>p</td><td>Padding</td></tr>\n      <tr><td>t</td><td>Top</td></tr>\n      <tr><td>r</td><td>Right</td></tr>\n      <tr><td>b</td><td>Bottom</td></tr>\n      <tr><td>l</td><td>Left</td></tr>\n      <tr><td>x</td><td>X-axis (left and right)</td></tr>\n      <tr><td>y</td><td>Y-axis (top and bottom)</td></tr>\n      <tr><td>n</td><td>Negative (margin only)</td></tr>\n      <tr><td>0</td><td>0 reset</td> </tr>\n      <tr><td>1</td><td>$space-1 (.25rem)</td></tr>\n      <tr><td>2</td><td>$space-2 (.5rem)</td></tr>\n      <tr><td>3</td><td>$space-3 (1rem)</td></tr>\n      <tr><td>4</td><td>$space-4 (2rem)</td></tr>\n     <tr><td>4</td><td>$space-5 (4rem)</td></tr>\n     <tr><td>4</td><td>$space-6 (6rem)</td></tr>\n    </tbody>\n  </table>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<div class=\"pb1\">This will have a padding bottom</div>",
-       "path": "~/src/scss/config/_padding.scss",
-       "example": "\n<div class=\"pb1\">This will have a padding bottom</div>",
-       "escaped": "\n&lt;div class=\"pb1\"&gt;This will have a padding bottom&lt;/div&gt;"
-      }
-     ]
-    }
-   ],
-   "position": [
-    {
-     "name": "Position",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Position"
-      }
-     ],
-     "description": "<p>This module includes basic positioning utilities to alter the default document flow. \nUse positions with caution. They are often unnecessary and commonly misused.</p>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "",
-       "path": "~/src/scss/config/_position.scss",
-       "example": "",
-       "escaped": ""
-      }
-     ]
-    }
-   ],
-   "typescale": [
-    {
-     "name": "Typescale",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Typescale"
-      }
-     ],
-     "description": "<p>This module provides utilities for adjusting font-size.</p>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<p class=\"h1\">Heading 1</p>\n<p class=\"h2\">Heading 2</p>\n<p class=\"h3\">Heading 3</p>\n<p class=\"h4\">Heading 4</p>\n<p class=\"h5\">Heading 5</p>\n<p class=\"h6\">Heading 6</p>",
-       "path": "~/src/scss/config/_type-scale.scss",
-       "example": "\n<p class=\"h1\">Heading 1</p>\n<p class=\"h2\">Heading 2</p>\n<p class=\"h3\">Heading 3</p>\n<p class=\"h4\">Heading 4</p>\n<p class=\"h5\">Heading 5</p>\n<p class=\"h6\">Heading 6</p>",
-       "escaped": "\n&lt;p class=\"h1\"&gt;Heading 1&lt;/p&gt;\n&lt;p class=\"h2\"&gt;Heading 2&lt;/p&gt;\n&lt;p class=\"h3\"&gt;Heading 3&lt;/p&gt;\n&lt;p class=\"h4\"&gt;Heading 4&lt;/p&gt;\n&lt;p class=\"h5\"&gt;Heading 5&lt;/p&gt;\n&lt;p class=\"h6\"&gt;Heading 6&lt;/p&gt;"
-      }
-     ]
-    }
-   ],
-   "typography": [
-    {
-     "name": "Typography",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Typography"
-      }
-     ],
-     "description": "<p>Change typographic weights, styles, and alignment with these utility styles.</p>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<span>TBA</span>",
-       "path": "~/src/scss/config/_typography.scss",
-       "example": "\n<span>TBA</span>",
-       "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
       }
      ]
     }
