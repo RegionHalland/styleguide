@@ -1,17 +1,18 @@
 'use strict';
 
-import gulp from 'gulp';
-import plumber from 'gulp-plumber';
-import gutil from 'gulp-util';
-import browsersync from 'browser-sync';
-import sourcemaps from 'gulp-sourcemaps';
-import sass from 'gulp-sass';
-import postcss from 'gulp-postcss';
-import autoprefixer from 'autoprefixer';
-import cssnano from 'cssnano';
-import svgmin from 'gulp-svgmin';
-import svgSprite from 'gulp-svg-sprite';
-import docs from 'gulp-docs';
+import gulp from 'gulp'
+import plumber from 'gulp-plumber'
+import gutil from 'gulp-util'
+import rename from 'gulp-rename'
+import browsersync from 'browser-sync'
+import sourcemaps from 'gulp-sourcemaps'
+import sass from 'gulp-sass'
+import postcss from 'gulp-postcss'
+import autoprefixer from 'autoprefixer'
+import cssnano from 'cssnano'
+import svgmin from 'gulp-svgmin'
+import svgSprite from 'gulp-svg-sprite'
+import docs from 'gulp-docs'
 
 // Build css
 gulp.task('css:dist', () => {
@@ -30,6 +31,7 @@ gulp.task('css:dist', () => {
 		.pipe(sourcemaps.init())
 		.pipe(sass())
 		.pipe(postcss(plugins))
+		.pipe(rename({suffix: '.min'}))
 		.pipe(browsersync.stream())
 		.pipe(sourcemaps.write())
 		.pipe(plumber.stop())
