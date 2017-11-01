@@ -43,7 +43,8 @@
 //
 
 
-.table {
+.table,
+.article table {
 	border: 1px solid palette(grey, light);
 	// Workaround for border-collapse bug.
 	// https://stackoverflow.com/questions/25591499/chrome-bug-with-colspan-and-border
