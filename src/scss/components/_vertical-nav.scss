@@ -13,7 +13,7 @@
 // 	<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
 // 	<li class="vertical-nav__item active"><a class="vertical-nav__link" href="#">Alternativ (active)</a></li>
 // 	<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
-// 	<li class="vertical-nav__item has-children">
+// 	<li class="vertical-nav__item has-children is-expanded">
 // 		<a class="vertical-nav__link" href="#">Alternativ</a>
 // 		<ul class="vertical-nav__sub-menu">
 // 			<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
@@ -48,6 +48,18 @@
 	display: block;
 	border-bottom: 1px solid palette(grey, light);
 	//background: white;
+
+	.vertical-nav__sub-menu {
+		display: none;
+	}
+
+	&.is-expanded {
+
+		.vertical-nav__sub-menu {
+			display: block;
+		}
+
+	}
 
 	&.has-children {
 		position: relative;
