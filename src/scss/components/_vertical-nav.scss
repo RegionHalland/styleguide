@@ -17,7 +17,7 @@
 // 		<a class="vertical-nav__link" href="#">Alternativ</a>
 //		<button class="vertical-nav__toggle">
 //			<span class="sr-only">Show submenu</span>
-//			<svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../dist/icons/sprite-2.svg#chevron-bottom"></use></svg>
+//			<svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../dist/icons/sprite.svg#chevron-bottom"></use></svg>
 //		</button>
 // 		<ul class="vertical-nav__sub-menu">
 // 			<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
@@ -69,6 +69,10 @@
 		position: relative;
 	}
 
+	&.has-children > .vertical-nav__link {
+		padding-right: 32px;
+	}
+
 	&.static {
 		padding: $space-1 $space-2;
 		border-bottom: 1px solid palette(grey, light);
@@ -86,11 +90,10 @@
 .vertical-nav__link {
 	position: relative;
 	display: block;
-	width: calc(100% - 32px);
 	padding: $space-1 $space-2;
 
-	&:hover { background: palette(grey, x-light); }
-	&:active { background: palette(grey, light); }
+	&:hover  { background: palette(grey, x-light); }
+	&:active { background: palette(grey, light);   }
 }
 
 .vertical-nav__sub-menu {
@@ -101,12 +104,14 @@
 .vertical-nav__toggle {
 	display: block;
 	position: absolute;
-	top: 0;
+	top: 50%;
+	transform: translateY(-50%);
 	right: 0;
 	appearance: none;
-	border: none;
+	border: 0;
 	background: none;
 	padding: 0;
 	margin: 0;
 	width: 32px;
+	z-index: $z1;
 }
