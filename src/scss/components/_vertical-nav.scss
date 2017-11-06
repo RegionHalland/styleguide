@@ -17,7 +17,7 @@
 // 		<a class="vertical-nav__link" href="#">Alternativ</a>
 //		<button class="vertical-nav__toggle">
 //			<span class="sr-only">Show submenu</span>
-//			<svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../dist/icons/sprite.svg#chevron-bottom"></use></svg>
+//			<svg class="icon--sm"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../dist/icons/sprite.svg#caret-bottom"></use></svg>
 //		</button>
 // 		<ul class="vertical-nav__sub-menu">
 // 			<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
@@ -108,13 +108,23 @@
 .vertical-nav__toggle {
 	display: block;
 	position: absolute;
-	top: 1em;
+	top: 0;
 	right: 0;
 	appearance: none;
 	border: 0;
 	background: none;
 	padding: 0;
 	margin: 0;
-	width: 32px;
+	width:  $space-4;
+	height: $space-4;
+	line-height: 0;
 	z-index: $z1;
+
+	&:hover {
+		fill: blue;
+	}
+
+	&:focus {
+		outline: 0;
+	}
 }
