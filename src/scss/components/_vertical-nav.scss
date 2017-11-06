@@ -63,6 +63,10 @@
 			display: block;
 		}
 
+		& > .vertical-nav__toggle {
+			transform: rotate(180deg)
+		}
+
 	}
 
 	&.has-children {
@@ -104,8 +108,7 @@
 .vertical-nav__toggle {
 	display: block;
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 1rem;
 	right: 0;
 	appearance: none;
 	border: 0;
