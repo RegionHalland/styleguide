@@ -68,7 +68,7 @@ gulp.task('sprite:dist', () => {
 				symbol: {
 					prefix: '.icon-%s',
 					dimensions: false,
-					sprite: '../../dist/icons/sprite-2.svg',
+					sprite: '../../dist/icons/sprite.svg',
 					bust: false,
 					render: {
 						css: false,
