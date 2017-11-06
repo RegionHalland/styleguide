@@ -59,7 +59,7 @@
 
 	&.is-expanded {
 
-		.vertical-nav__sub-menu {
+		& > .vertical-nav__sub-menu {
 			display: block;
 		}
 
