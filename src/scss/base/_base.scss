@@ -14,12 +14,12 @@ html {
 body {
 	font-family: $sans-font-family;
 	line-height: $line-height-4;
-	color: palette(text, base);
+	color: palette(black, base);
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: $bold-font-weight;
-	color: palette(text, x-dark);
+	color: palette(black, x-dark);
 }
 
 strong,
@@ -30,7 +30,7 @@ i, .i { font-style: italic }
 
 a {
 	text-decoration: none;
-	color: $color-primary;
+	color: $blue;
 }
 
 table {
