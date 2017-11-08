@@ -28,34 +28,71 @@ $bold-font-weight: bold;
 $border-radius: 3px;
 
 // Colors
-$color-primary: blue;
-$color-white: #fff;
-$color-grey: #C3C7CB;
-$color-text: #2d2d2d;
+$white: #FFFFFF;
+$grey: #DEE6EC;
+$black: #000000;
+
+$dark-blue: #0E5AA4;
+$blue: #6CA2D5;
+$light-blue: #CEE2F2;
+
+$light-green: #D2E1C6;
+$green: #438011;
+
+$yellow: #FDB813;
+$light-yellow: #FFF1CE;
 
 $palettes: (
-	primary: (
-		xx-light : lighten($color-primary, 20%),
-		x-light  : lighten($color-primary, 16%),
-		light    : lighten($color-primary, 10%),
-		base     : $color-primary,
-		dark     : darken($color-primary, 8%),
-		x-dark   : darken($color-primary, 24%)
-	),
-	text: (
-		x-light  : lighten($color-text, 30%),
-		light    : lighten($color-text, 10%),
-		base     : $color-text,
-		dark     : darken($color-text, 8%),
-		x-dark   : darken($color-text, 24%)
-	),
 	grey: (
-		xx-light : lighten($color-grey, 20%),
-		x-light  : lighten($color-grey, 16%),
-		light    : lighten($color-grey, 10%),
-		base     : $color-grey,
-		dark     : darken($color-grey, 8%),
-		x-dark   : darken($color-grey, 24%)
+		xx-light : lighten($grey, 7%),
+		x-light  : lighten($grey, 5%),
+		light    : lighten($grey, 2%),
+		base     : $grey,
+		dark     : darken($grey, 8%),
+		x-dark   : darken($grey, 24%)
+	),
+	black: (
+		xx-light : lighten($black, 20%),
+		x-light  : lighten($black, 16%),
+		light    : lighten($black, 10%),
+		base     : $black,
+		dark     : darken($black, 8%),
+		x-dark   : darken($black, 24%)
+	),
+	blue: (
+		light    : lighten($blue, 10%),
+		base     : $blue,
+		dark     : darken($blue, 8%),
+	),
+	dark-blue: (
+		light    : lighten($dark-blue, 10%),
+		base     : $dark-blue,
+		dark     : darken($dark-blue, 8%),
+	),
+	light-blue: (
+		light    : lighten($light-blue, 10%),
+		base     : $light-blue,
+		dark     : darken($light-blue, 8%),
+	),
+	green: (
+		light    : lighten($green, 10%),
+		base     : $green,
+		dark     : darken($green, 8%),
+	),
+	light-green: (
+		light    : lighten($light-green, 10%),
+		base     : $light-green,
+		dark     : darken($light-green, 8%),
+	),
+	yellow: (
+		light    : lighten($yellow, 10%),
+		base     : $yellow,
+		dark     : darken($yellow, 8%),
+	),
+	light-yellow: (
+		light    : lighten($light-yellow, 10%),
+		base     : $light-yellow,
+		dark     : darken($light-yellow, 8%),
 	),
 );
 

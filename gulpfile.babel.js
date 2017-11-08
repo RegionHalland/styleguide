@@ -96,8 +96,8 @@ gulp.task('svg-min', () => {
 
 // Copy fonts to the dist directory
 gulp.task('fonts', () => {
-	return gulp.src('./src/fonts/')
-		.pipe(gulp.dest('./dist/'))
+	return gulp.src('./src/fonts/*')
+		.pipe(gulp.dest('./dist/fonts/'))
 })
 
 // Browsersync

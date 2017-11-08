@@ -13,11 +13,11 @@
 // 
 
 .btn-primary {
-	color: $color-white;
-	background-color: palette(primary);
+	color: $white;
+	background-color: palette(blue);
 
 	&:hover {
-		background-color: palette(primary, dark)
+		background-color: palette(blue, dark)
 	}
 
 
