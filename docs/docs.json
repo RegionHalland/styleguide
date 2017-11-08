@@ -6,6 +6,7 @@
    "forms",
    "icons",
    "panel",
+   "search",
    "table",
    "navigation"
   ],
@@ -193,6 +194,35 @@
        "path": "~/src/scss/components/_panel.scss",
        "example": "\n<div class=\"col col-12 mxn3\">\n  <div class=\"col col-6 px3\">\n    <div class=\"panel\">\n      <div class=\"panel__header\">Städer</div>\n      <div class=\"panel__body\">De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. </div>\n    </div>\n  </div>\n  <div class=\"col col-6 px3\">\n    <div class=\"panel\">\n      <div class=\"panel__header\">Städer</div>\n      <div class=\"panel__body\">De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. </div>\n    </div>\n  </div>\n</div>",
        "escaped": "\n&lt;div class=\"col col-12 mxn3\"&gt;\n  &lt;div class=\"col col-6 px3\"&gt;\n    &lt;div class=\"panel\"&gt;\n      &lt;div class=\"panel__header\"&gt;Städer&lt;/div&gt;\n      &lt;div class=\"panel__body\"&gt;De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. &lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n  &lt;div class=\"col col-6 px3\"&gt;\n    &lt;div class=\"panel\"&gt;\n      &lt;div class=\"panel__header\"&gt;Städer&lt;/div&gt;\n      &lt;div class=\"panel__body\"&gt;De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. &lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;"
+      }
+     ]
+    }
+   ],
+   "search": [
+    {
+     "name": "Search Header",
+     "description": "<p>Used for scoped search queries as opposed to site wide search queries.</p>\n",
+     "page": [
+      {
+       "nav": "Components",
+       "section": "Search"
+      }
+     ],
+     "state": [
+      {
+       "name": ":focus",
+       "escaped": ":focus",
+       "description": "Highlights when focused."
+      }
+     ],
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<section class=\"search-header  clearfix\">\n\t<div class=\"search-header__inner  col-12 sm-col-12 md-col-12 lg-col-8\">\n\t\t<label class=\"search-header__label\" for=\"search-header__input\">Skriv för att börja söka i terapirekommendationerna</label>\n\t\t<div class=\"search-header__input-wrapper\">\n\t\t\t<input class=\"search-header__input\" type=\"search\"  placeholder=\"Skriv här för att börja söka\" id=\"search-header__input\">\n\t\t\t <svg class=\"search-header__icon  icon icon--md\">\n\t\t\t \t<use xlink:href=\"../dist/icons/sprite-2.svg#magnifying-glass\"/>\n\t\t\t </svg>\n\t\t\t <div class=\"search-header__results\">\n\t\t\t </div>\n\t\t</div>\n\t\t<span class=\"search-header__example\">Ex. Behandling luftrörskatarr</span>\n\t</div>\n</section>",
+       "path": "~/src/scss/components/_search-header.scss",
+       "example": "\n<section class=\"search-header  clearfix\">\n\t<div class=\"search-header__inner  col-12 sm-col-12 md-col-12 lg-col-8\">\n\t\t<label class=\"search-header__label\" for=\"search-header__input\">Skriv för att börja söka i terapirekommendationerna</label>\n\t\t<div class=\"search-header__input-wrapper\">\n\t\t\t<input class=\"search-header__input\" type=\"search\"  placeholder=\"Skriv här för att börja söka\" id=\"search-header__input\">\n\t\t\t <svg class=\"search-header__icon  icon icon--md\">\n\t\t\t \t<use xlink:href=\"../dist/icons/sprite-2.svg#magnifying-glass\"/>\n\t\t\t </svg>\n\t\t\t <div class=\"search-header__results\">\n\t\t\t </div>\n\t\t</div>\n\t\t<span class=\"search-header__example\">Ex. Behandling luftrörskatarr</span>\n\t</div>\n</section>",
+       "escaped": "\n&lt;section class=\"search-header  clearfix\"&gt;\n\t&lt;div class=\"search-header__inner  col-12 sm-col-12 md-col-12 lg-col-8\"&gt;\n\t\t&lt;label class=\"search-header__label\" for=\"search-header__input\"&gt;Skriv för att börja söka i terapirekommendationerna&lt;/label&gt;\n\t\t&lt;div class=\"search-header__input-wrapper\"&gt;\n\t\t\t&lt;input class=\"search-header__input\" type=\"search\"  placeholder=\"Skriv här för att börja söka\" id=\"search-header__input\"&gt;\n\t\t\t &lt;svg class=\"search-header__icon  icon icon--md\"&gt;\n\t\t\t \t&lt;use xlink:href=\"../dist/icons/sprite-2.svg#magnifying-glass\"/&gt;\n\t\t\t &lt;/svg&gt;\n\t\t\t &lt;div class=\"search-header__results\"&gt;\n\t\t\t &lt;/div&gt;\n\t\t&lt;/div&gt;\n\t\t&lt;span class=\"search-header__example\"&gt;Ex. Behandling luftrörskatarr&lt;/span&gt;\n\t&lt;/div&gt;\n&lt;/section&gt;"
       }
      ]
     }
