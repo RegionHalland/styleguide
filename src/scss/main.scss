@@ -6,6 +6,7 @@
 @import 'mixins/palette';
 
 // Base
+@import 'base/fonts';
 @import 'base/reset';
 @import 'base/base';
 
@@ -29,3 +30,8 @@
 @import 'components/panel';
 @import 'components/icons';
 @import 'components/forms';
+
+
+.scala-1 {
+	font-style: italic;
+}
