@@ -16,7 +16,7 @@
 // 			 <svg class="search-header__icon  icon icon--md">
 // 			 	<use xlink:href="../dist/icons/sprite-2.svg#magnifying-glass"/>
 // 			 </svg>
-// 			 <div class="search-header__results">
+// 			 <div class="search-header__results active">
 //			 	
 // 			 </div>
 // 		</div>
@@ -84,6 +84,11 @@
 		top:$space-5;
 		width:100%;
 		z-index: 1;
+		display:none;
+
+		&.active {
+			display:block;
+		}
 	}
 
 	&__icon {
