@@ -1,0 +1,118 @@
+//
+// @name Search Header
+// @description
+//
+// @page Components/Search
+//
+// @description Used for scoped search queries as opposed to site wide search queries.
+//
+// @state :focus - Highlights when focused.
+// @markup
+// <section class="search-header  clearfix">
+// 	<div class="search-header__inner  col-12 sm-col-12 md-col-12 lg-col-8">
+// 		<label class="search-header__label" for="search-header__input">Skriv för att börja söka i terapirekommendationerna</label>
+// 		<div class="search-header__input-wrapper">
+// 			<input class="search-header__input" type="search"  placeholder="Skriv här för att börja söka" id="search-header__input">
+// 			 <svg class="search-header__icon  icon icon--md">
+// 			 	<use xlink:href="../dist/icons/sprite-2.svg#magnifying-glass"/>
+// 			 </svg>
+// 			 <div class="search-header__results active">
+//			 	
+// 			 </div>
+// 		</div>
+// 		<span class="search-header__example">Ex. Behandling luftrörskatarr</span>
+// 	</div>
+// </section>
+
+.search-header {
+	background-color:$dark-blue;
+	padding: $space-5 0;
+
+	&__inner {
+		margin:0 auto;
+	}
+
+	&__input-wrapper {
+		position:relative;
+	}
+
+	&__label {
+		color:$white;
+		font-size:0.9em;
+		display:block;
+		margin-bottom:$space-2;
+	}
+
+	&__example {
+		font-style: italic;
+		color:$white;
+		opacity:0.8;
+		font-size:0.9em;
+		margin-top:$space-2;
+		display:block;
+	}
+
+	&__input {
+		padding:$space-3 $space-3;
+		border:1px solid $darken-3;
+		box-shadow: 0 1px 7px 0 rgba(0,0,0,0.16);
+		font-size:1em;
+		width:100%;
+		border-radius:$border-radius;
+		transition:background 0.2s;
+		position:relative;
+		z-index: 2;
+
+		&:focus {
+			background:palette(grey, light);
+			outline:none;
+		}
+
+		&::placeholder {
+			color:$darken-3;
+		}
+	}
+
+	&__results {
+		height:500px;
+		padding:$space-3 $space-3;
+		border:1px solid $darken-3;
+		box-shadow: 0 1px 7px 0 rgba(0,0,0,0.16);
+		background:$white;
+		border-radius:$border-radius;
+		position:absolute;
+		top:$space-5;
+		width:100%;
+		z-index: 1;
+		display:none;
+
+		&.active {
+			display:block;
+		}
+	}
+
+	&__icon {
+		position:absolute;
+		right:$space-3;
+		top:50%;
+		transform:translateY(-50%);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

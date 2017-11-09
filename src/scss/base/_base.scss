@@ -14,8 +14,10 @@ html {
 body {
 	font-family: $sans-font-family;
 	line-height: $line-height-4;
-	color: palette(black, base);
+	// Added font-smoothing to prevent smudges - please review performance
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: palette(black, base);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -82,4 +84,8 @@ hr {
 	border: 0;
 	height: 1px;
 	background: palette(grey, light)
+}
+
+input {
+	font-family: inherit;
 }
