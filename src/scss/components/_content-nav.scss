@@ -1,0 +1,46 @@
+//
+// @name Content Navigation
+// @page Components/Navigation
+//
+// @description 
+// A really good component, fitting all your needs.
+//
+// @state :active - Highlights when hovering.
+// 
+// @markup
+// <nav>
+// 	<span class="content-nav__heading">Innehållsmeny</span>
+// 	<ul class="content-nav">
+// 		<li class="content-nav__item"><a class="content-nav__link" href="#">Behandling</a></li>
+// 		<li class="content-nav__item active"><a class="content-nav__link" href="#">Kontakt</a></li>
+// 		<li class="content-nav__item"><a class="content-nav__link" href="#">Hosta</a></li>
+// 		<li class="content-nav__item"><a class="content-nav__link" href="#">Farliga läkemedel</a></li>
+// 	</ul>
+// </nav>
+
+
+.content-nav__heading  {
+	font-weight: $bold-font-weight;
+}
+
+.content-nav__item {
+	margin-top:    $space-1;
+	margin-bottom: $space-1;
+
+	&.active {
+		padding-left: $space-2;
+		border-left: 3px solid palette(dark-blue, base);
+	}
+
+	&.active .content-nav__link {
+		color: palette(black, base)
+	}
+}
+
+.content-nav__link {
+	color: palette(grey, x-dark);
+
+	&:hover {
+		color: palette(black, base);
+	}
+}
