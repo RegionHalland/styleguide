@@ -13,7 +13,7 @@
 // 		<label class="search-header__label" for="search-header__input">Skriv för att börja söka i terapirekommendationerna</label>
 // 		<div class="search-header__input-wrapper">
 // 			<input class="search-header__input" type="search"  placeholder="Skriv här för att börja söka" id="search-header__input">
-// 			 <svg class="search-header__icon  icon icon--md">
+// 			 <svg class="search-header__icon  icon">
 // 			 	<use xlink:href="#magnifying-glass"/>
 // 			 </svg>
 // 			 <div class="search-header__results active">
@@ -95,6 +95,7 @@
 
 	&__icon {
 		position:absolute;
+		z-index:2;
 		right:$space-3;
 		top:50%;
 		transform:translateY(-50%);
