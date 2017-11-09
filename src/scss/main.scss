@@ -24,6 +24,7 @@
 // Components
 @import 'components/article';
 @import 'components/vertical-nav';
+@import 'components/content-nav';
 @import 'components/button';
 @import 'components/button-primary';
 @import 'components/table';
@@ -31,8 +32,3 @@
 @import 'components/icons';
 @import 'components/forms';
 @import 'components/search-header';
-
-
-.scala-1 {
-	font-style: italic;
-}

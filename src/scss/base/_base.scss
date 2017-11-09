@@ -14,7 +14,7 @@ html {
 body {
 	font-family: $sans-font-family;
 	line-height: $line-height-4;
-	//Added font-smoothing to prevent smudges - please review performance
+	// Added font-smoothing to prevent smudges - please review performance
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	color: palette(black, base);
@@ -88,11 +88,4 @@ hr {
 
 input {
 	font-family: inherit;
-}
-
-button {
-	cursor: pointer;
-	//Added temporarily - Review before publishing
-	outline:none;
-	border:none;
 }

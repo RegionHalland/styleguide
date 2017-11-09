@@ -9,11 +9,12 @@
 //   <span>TBA</span>
 // 
 
-.inline               { display: inline }
-.block                { display: block }
-.inline-block         { display: inline-block }
-.display-table        { display: table }
-.table-cell           { display: table-cell }
+.inline        { display: inline }
+.block         { display: block }
+.inline-block  { display: inline-block }
+.display-table { display: table }
+.table-cell    { display: table-cell }
+.display-none  { display: none }
 
 .overflow-hidden { overflow: hidden }
 .overflow-scroll { overflow: scroll }

@@ -164,6 +164,17 @@
 		</div>
 		@yield('content')
 	</div>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.8.1/prism.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.8.1/prism.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+	// Get spritesheet
+	// In a real world project, change the URL to where the styleguide lives.
+	$.get('/dist/icons/sprite.svg', function(data) {
+		var div = document.createElement('div');
+		div.className = 'display-none';
+		div.innerHTML = new XMLSerializer().serializeToString(data.documentElement);
+		document.body.insertBefore(div, document.body.childNodes[0]);
+	});
+	</script>
 </body>
 </html>
