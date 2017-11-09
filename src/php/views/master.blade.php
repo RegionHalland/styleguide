@@ -147,14 +147,14 @@
 	</style>
 </head>
 <body class="">
-	<nav class="site-nav">
+	<nav class="site-nav mb4">
 		<div class="top-nav">
 			<div class="top-nav__logo">
 				
 			</div>
 			<div class="top-nav__search-wrapper">
 				<div class="top-nav__search">
-					<input type="text" class="top-nav__search-input">
+					<input type="text" placeholder="Sök på hela vårdgivarwebben" class="top-nav__search-input">
 					<svg class="top-nav__search-icon  icon">
 						<use xlink:href="#magnifying-glass"/>
 					</svg>
@@ -170,17 +170,17 @@
 		</div>
 		<div class="sub-nav sub-nav--first-level">
 			<ul class="sub-nav__links">
-				<li><a class="sub-nav__link active" href="">Patientadministration</a></li>
+				<li><a class="sub-nav__link" href="">Patientadministration</a></li>
 				<li><a class="sub-nav__link" href="">Behandlingsstöd</a></li>
 				<li><a class="sub-nav__link" href="">Kompetens & Utveckling</a></li>
 				<li><a class="sub-nav__link" href="">Service & IT</a></li>
-				<li><a class="sub-nav__link" href="">Uppdrag & Avtal</a></li>
+				<li><a class="sub-nav__link active" href="">Uppdrag & Avtal</a></li>
 			</ul>
 		</div>
 		<div class="sub-nav sub-nav--second-level">
 			<ul class="sub-nav__links">
-				<li><a class="sub-nav__link active" href="">Patientadministration</a></li>
-				<li><a class="sub-nav__link" href="">Behandlingsstöd</a></li>
+				<li><a class="sub-nav__link" href="">Patientadministration</a></li>
+				<li><a class="sub-nav__link active" href="">Behandlingsstöd</a></li>
 				<li><a class="sub-nav__link" href="">Kompetens & Utveckling</a></li>
 			</ul>
 		</div>

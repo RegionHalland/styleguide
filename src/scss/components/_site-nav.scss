@@ -6,11 +6,45 @@
 // A component created for the purpose of large site navigation.
 //
 // @state :hover - Highlights when hovering.
-// @state .open - Defaults to its open state, i.e. .open on desktop – toggle .open class on .vertical-nav to open or close.
 // 
 // @markup
-// <nav>
-// </nav>
+// <nav class="site-nav">
+// 		<div class="top-nav">
+// 			<div class="top-nav__logo">	
+// 			</div>
+// 			<div class="top-nav__search-wrapper">
+// 				<div class="top-nav__search">
+// 					<input type="text" placeholder="Sök på hela vårdgivarwebben" class="top-nav__search-input">
+// 					<svg class="top-nav__search-icon  icon">
+// 						<use xlink:href="#magnifying-glass"/>
+// 					</svg>
+// 				</div>
+// 			</div>
+// 			<ul class="top-nav__links">
+// 				<li><a class="top-nav__link active" href="">Patientadministration</a></li>
+// 				<li><a class="top-nav__link" href="">Behandlingsstöd</a></li>
+// 				<li><a class="top-nav__link" href="">Kompetens & Utveckling</a></li>
+// 				<li><a class="top-nav__link" href="">Service & IT</a></li>
+// 				<li><a class="top-nav__link" href="">Uppdrag & Avtal</a></li>
+// 			</ul>
+// 		</div>
+// 		<div class="sub-nav sub-nav--first-level">
+// 			<ul class="sub-nav__links">
+// 				<li><a class="sub-nav__link" href="">Patientadministration</a></li>
+// 				<li><a class="sub-nav__link" href="">Behandlingsstöd</a></li>
+// 				<li><a class="sub-nav__link" href="">Kompetens & Utveckling</a></li>
+// 				<li><a class="sub-nav__link" href="">Service & IT</a></li>
+// 				<li><a class="sub-nav__link active" href="">Uppdrag & Avtal</a></li>
+// 			</ul>
+// 		</div>
+// 		<div class="sub-nav sub-nav--second-level">
+// 			<ul class="sub-nav__links">
+// 				<li><a class="sub-nav__link" href="">Patientadministration</a></li>
+// 				<li><a class="sub-nav__link active" href="">Behandlingsstöd</a></li>
+// 				<li><a class="sub-nav__link" href="">Kompetens & Utveckling</a></li>
+// 			</ul>
+// 		</div>
+// 	</nav>
 
 
 .site-nav {
@@ -20,7 +54,6 @@
 .top-nav {
 	background:$white;
 	padding:0 $space-3;
-	//border-bottom:2px solid palette(grey, light);
 	width:100%;
 	display:inline-flex;
 	justify-content:space-between;
@@ -32,12 +65,13 @@
 }
 
 .top-nav__links {
-	padding:0 $space-4;
+	padding:0 $space-3;
 	flex-basis:100%;
 	display:flex;
-	border-top:2px solid $darken-3;
+	border-top:1px solid $darken-2;
 	@media (min-width: $breakpoint-md) {
 		border-top:none;
+		padding:0 $space-4;
 		justify-content:flex-end;
 	}
 }
@@ -79,13 +113,19 @@
 	background:palette(grey, light);
 	height:50px;
 	width:225px;
+	padding:$space-3 0;
 	border-radius:$border-radius;
+	@media (min-width: $breakpoint-md) {
+		padding:0;
+	}
 }
 
 
 .top-nav__search-wrapper {
+	padding:$space-3 0;
 	@media (min-width: $breakpoint-md) {
 		order:3;
+		padding:0;
 	}
 }
 
@@ -107,7 +147,7 @@
 	padding:$space-3 $space-3;
 	border:1px solid $darken-3;
 	box-shadow: 0 1px 7px 0 rgba(0,0,0,0.16);
-	font-size:1em;
+	font-size:0.9em;
 	border-radius:$border-radius;
 	transition:background 0.2s;
 
