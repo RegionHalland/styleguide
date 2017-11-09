@@ -52,7 +52,7 @@
 
 
 .vertical-nav {
-	border: 1px solid palette(grey, light);
+	border: 1px solid palette(grey, base);
 	padding: 0;
 	border-radius: $border-radius;
 	overflow:hidden;
@@ -108,7 +108,7 @@
 	}
 
 	&.active {
-		background: palette(grey, x-light);
+		background: palette(grey, light);
 	}
 
 	&:last-of-type {
@@ -119,15 +119,15 @@
 .vertical-nav__link {
 	position: relative;
 	display: block;
-	padding: $space-3 $space-3;
+	padding: $space-2 $space-2;
 
-	&:hover  { background: palette(grey, x-light); }
+	&:hover  { background: palette(grey, light); }
 	&:active { background: palette(grey, light);   }
 }
 
 .vertical-nav__sub-menu {
-	border-top: 1px solid palette(grey, light);
-	border-left: $space-2 solid palette(grey, light);
+	border-top: 1px solid palette(grey, base);
+	border-left: $space-2 solid palette(grey, base);
 }
 
 .vertical-nav__toggle {
