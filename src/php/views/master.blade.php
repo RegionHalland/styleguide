@@ -148,6 +148,7 @@
 </head>
 <body class="">
 	<div class="support-header clearfix">
+		<a class="support-header__skip-link" href="">Hoppa till innehåll</a>
 		<ul class="support-header__links">
 			<li class="support-header__item has-dropdown">
 				<button class="support-header__link" href="">
@@ -157,24 +158,24 @@
 					</svg>
 				</button>
 				<ul class="support-header__dropdown">
-					<li class="support-header__dropdown-link">
-						<a href="">
+					<li>
+						<a href="" class="support-header__dropdown-link">
 							<span>www.regionhalland.se</span>
 							<svg class="support-header__dropdown-icon  icon icon--sm">
 								<use xlink:href="#share-boxed"/>
 							</svg>
 						</a>
 					</li>
-					<li class="support-header__dropdown-link">
-						<a href="">
+					<li>
+						<a href="" class="support-header__dropdown-link">
 							<span>www.regionhalland.se</span>
 							<svg class="support-header__dropdown-icon  icon icon--sm">
 								<use xlink:href="#share-boxed"/>
 							</svg>
 						</a>
 					</li>
-					<li class="support-header__dropdown-link">
-						<a href="">
+					<li>
+						<a href="" class="support-header__dropdown-link">
 							<span>www.regionhalland.se</span>
 							<svg class="support-header__dropdown-icon  icon icon--sm">
 								<use xlink:href="#share-boxed"/>

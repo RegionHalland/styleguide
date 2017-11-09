@@ -9,6 +9,7 @@
 // 
 // @markup
 // <div class="support-header clearfix">
+// 	<a class="support-header__skip-link" href="">Hoppa till innehåll</a>
 // 	<ul class="support-header__links">
 // 		<li class="support-header__item has-dropdown">
 // 			<button class="support-header__link" href="">
@@ -18,24 +19,24 @@
 // 				</svg>
 // 			</button>
 // 			<ul class="support-header__dropdown">
-// 				<li class="support-header__dropdown-link">
-// 					<a href="">
+// 				<li>
+// 					<a href="" class="support-header__dropdown-link">
 // 						<span>www.regionhalland.se</span>
 // 						<svg class="support-header__dropdown-icon  icon icon--sm">
 // 							<use xlink:href="#share-boxed"/>
 // 						</svg>
 // 					</a>
 // 				</li>
-// 				<li class="support-header__dropdown-link">
-// 					<a href="">
+// 				<li>
+// 					<a href="" class="support-header__dropdown-link">
 // 						<span>www.regionhalland.se</span>
 // 						<svg class="support-header__dropdown-icon  icon icon--sm">
 // 							<use xlink:href="#share-boxed"/>
 // 						</svg>
 // 					</a>
 // 				</li>
-// 				<li class="support-header__dropdown-link">
-// 					<a href="">
+// 				<li>
+// 					<a href="" class="support-header__dropdown-link">
 // 						<span>www.regionhalland.se</span>
 // 						<svg class="support-header__dropdown-icon  icon icon--sm">
 // 							<use xlink:href="#share-boxed"/>
@@ -69,6 +70,22 @@
 	padding:0 $space-3;
 	z-index:$z4;
 	position:relative;
+}
+
+.support-header__skip-link {
+	position:absolute;
+	top:$space-2;
+	left:$space-2;
+	padding:$space-2;
+	background:$dark-blue;
+	border-radius:$border-radius;
+	color:$white;
+
+	//Needs review before publishing
+	opacity:0;
+	&:focus {
+		opacity:1;
+	}
 }
 
 .support-header__item {
@@ -105,7 +122,7 @@
 
 .support-header__dropdown-link {
 	padding:$space-2;
-	color:palette(black, x-light);
+	display:block;
 	font-size:0.95em;
 
 	&:hover {
