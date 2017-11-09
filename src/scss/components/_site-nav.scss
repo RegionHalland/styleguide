@@ -1,0 +1,56 @@
+//
+// @name Site Navigation
+// @page Components/Navigation
+//
+// @description 
+// A component created for the purpose of large site navigation.
+//
+// @state :hover - Highlights when hovering.
+// @state .open - Defaults to its open state, i.e. .open on desktop – toggle .open class on .vertical-nav to open or close.
+// 
+// @markup
+// <nav>
+// 	<ul class="vertical-nav">
+//		<div class="vertical-nav__header">
+//			<span class="vertical-nav__heading h4">Sidmeny</span>
+// 			<button class="vertical-nav__header-button">
+// 				<svg class="vertical-nav__icon  icon">
+// 					<use xlink:href="#menu"/>
+// 				</svg>
+// 			</button>
+//		</div>
+// 		<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+// 		<li class="vertical-nav__item active"><a class="vertical-nav__link" href="#">Alternativ (active)</a></li>
+// 		<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+// 		<li class="vertical-nav__item has-children is-expanded">
+// 		<a class="vertical-nav__link" href="#">Alternativ</a>
+//			<button class="vertical-nav__toggle">
+//				<span class="sr-only">Show submenu</span>
+//				<svg class="icon--sm"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../dist/icons/sprite.svg#caret-bottom"></use></svg>
+//			</button>
+// 			<ul class="vertical-nav__sub-menu">
+// 				<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+// 				<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+// 				<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+// 				<li class="vertical-nav__item has-children">
+// 					<a class="vertical-nav__link" href="#">Alternativ</a>
+// 					<ul class="vertical-nav__sub-menu">
+// 						<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Världens längsta alternativ</a></li>
+// 						<li class="vertical-nav__item static">Alternativ</li>
+// 						<li class="vertical-nav__item has-children">
+// 							<a class="vertical-nav__link" href="#">Världens längsta alternativ</a>
+// 						</li>
+// 					</ul>
+// 				</li>
+// 				<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+// 			</ul>
+// 		</li>
+// 		<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+// 		<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
+// 		</ul>
+// </nav>
+
+
+.vertical-nav {
+	
+}
