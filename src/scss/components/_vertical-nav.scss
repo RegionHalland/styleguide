@@ -12,7 +12,7 @@
 // <nav>
 // 	<ul class="vertical-nav">
 //		<div class="vertical-nav__header">
-//			<span class="vertical-nav__heading">Sidmeny</span>
+//			<span class="vertical-nav__heading h4">Sidmeny</span>
 // 			<button class="vertical-nav__header-button">
 // 				<svg class="vertical-nav__icon  icon">
 // 					<use xlink:href="#menu"/>
@@ -68,7 +68,7 @@
 	padding:$space-3;
 	background:$grey;
 	.vertical-nav__heading {
-		font-size:1.1em;
+		//font-size:1.1em;
 		font-weight:bold;
 		display:inline-block;
 	}
