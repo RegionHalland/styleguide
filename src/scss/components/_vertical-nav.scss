@@ -6,10 +6,19 @@
 // A really good component, fitting all your needs.
 //
 // @state :hover - Highlights when hovering.
+// @state .active - Defaults to its open state, i.e. .active on desktop – toggle .active class on mobile to open or close.
 // 
 // @markup
 // <nav>
 // <ul class="vertical-nav">
+//	<div class="vertical-nav__header">
+//		<span class="vertical-nav__heading">Sidmeny</span>
+// 		<button class="vertical-nav__header-button">
+// 			<svg class="vertical-nav__icon  icon icon--md">
+// 				<use xlink:href="../dist/icons/sprite-2.svg#magnifying-glass"/>
+// 			</svg>
+// 		</button>
+//	</div>
 // 	<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
 // 	<li class="vertical-nav__item active"><a class="vertical-nav__link" href="#">Alternativ (active)</a></li>
 // 	<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
@@ -46,6 +55,22 @@
 	border: 1px solid palette(grey, light);
 	padding: 0;
 	border-radius: $border-radius;
+	overflow:hidden;
+}
+
+.vertical-nav__header {
+	padding:$space-3;
+	background:$grey;
+	.vertical-nav__heading {
+		font-size:1.1em;
+		font-weight:bold;
+		vertical-align: middle;
+	}
+	.vertical-nav__header-button {
+		background:red;
+		padding:$space-1;
+		float:right;
+	}
 }
 
 .vertical-nav__item {
@@ -94,7 +119,7 @@
 .vertical-nav__link {
 	position: relative;
 	display: block;
-	padding: $space-1 $space-2;
+	padding: $space-3 $space-3;
 
 	&:hover  { background: palette(grey, x-light); }
 	&:active { background: palette(grey, light);   }

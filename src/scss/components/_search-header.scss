@@ -26,7 +26,9 @@
 
 .search-header {
 	background-color:$dark-blue;
-	padding: $space-5 0;
+	@media (min-width: $breakpoint-md) {
+		padding: $space-5 0;
+	}
 
 	&__inner {
 		margin:0 auto;
@@ -66,15 +68,16 @@
 		&:focus {
 			background:palette(grey, light);
 			outline:none;
+			//border:1px solid palette(dark-blue, dark);
 		}
 
 		&::placeholder {
-			color:$darken-3;
+			color:palette(grey, x-dark);
 		}
 	}
 
 	&__results {
-		height:500px;
+		height:75px;
 		padding:$space-3 $space-3;
 		border:1px solid $darken-3;
 		box-shadow: 0 1px 7px 0 rgba(0,0,0,0.16);
