@@ -340,6 +340,26 @@
        "escaped": "\n&lt;section class=\"search-header  clearfix\"&gt;\n\t&lt;div class=\"search-header__inner  col-12 sm-col-12 md-col-12 lg-col-8\"&gt;\n\t\t&lt;label class=\"search-header__label\" for=\"search-header__input\"&gt;Skriv för att börja söka i terapirekommendationerna&lt;/label&gt;\n\t\t&lt;div class=\"search-header__input-wrapper\"&gt;\n\t\t\t&lt;input class=\"search-header__input\" type=\"search\"  placeholder=\"Skriv här för att börja söka\" id=\"search-header__input\"&gt;\n\t\t\t &lt;svg class=\"search-header__icon  icon\"&gt;\n\t\t\t \t&lt;use xlink:href=\"#magnifying-glass\"/&gt;\n\t\t\t &lt;/svg&gt;\n\t\t\t &lt;div class=\"search-header__results active\"&gt;\n\t\t\t &lt;/div&gt;\n\t\t&lt;/div&gt;\n\t\t&lt;span class=\"search-header__example\"&gt;Ex. Behandling luftrörskatarr&lt;/span&gt;\n\t&lt;/div&gt;\n&lt;/section&gt;"
       }
      ]
+    },
+    {
+     "name": "Search Result",
+     "description": "<p>Used for displaying scoped search results</p>\n",
+     "page": [
+      {
+       "nav": "Components",
+       "section": "Search"
+      }
+     ],
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<div class=\"search-result\">\n\t<a class=\"search-result__link\">\n\t\t<span class=\"search-result__title\"><strong>Beha</strong>ndling</span>\n\t\t<div class=\"search-result__breadcrumbs\">\n\t\t\t<span class=\"search-result__breadcrumb\">Kapitel</span>\n\t\t\t<svg class=\"search-result__breadcrumb-icon  icon icon--sm\">\n\t\t\t\t<use xlink:href=\"#arrow-right\"/>\n\t\t\t</svg>\n\t\t\t<span class=\"search-result__breadcrumb\">Underrubrik</span>\n\t\t\t<svg class=\"search-result__breadcrumb-icon  icon icon--sm\">\n\t\t\t\t<use xlink:href=\"#arrow-right\"/>\n\t\t\t</svg>\n\t\t\t<span class=\"search-result__breadcrumb\">Sökfras</span>\n\t\t</div>\n\t</a>\n</div>",
+       "path": "~/src/scss/components/_search-result.scss",
+       "example": "\n<div class=\"search-result\">\n\t<a class=\"search-result__link\">\n\t\t<span class=\"search-result__title\"><strong>Beha</strong>ndling</span>\n\t\t<div class=\"search-result__breadcrumbs\">\n\t\t\t<span class=\"search-result__breadcrumb\">Kapitel</span>\n\t\t\t<svg class=\"search-result__breadcrumb-icon  icon icon--sm\">\n\t\t\t\t<use xlink:href=\"#arrow-right\"/>\n\t\t\t</svg>\n\t\t\t<span class=\"search-result__breadcrumb\">Underrubrik</span>\n\t\t\t<svg class=\"search-result__breadcrumb-icon  icon icon--sm\">\n\t\t\t\t<use xlink:href=\"#arrow-right\"/>\n\t\t\t</svg>\n\t\t\t<span class=\"search-result__breadcrumb\">Sökfras</span>\n\t\t</div>\n\t</a>\n</div>",
+       "escaped": "\n&lt;div class=\"search-result\"&gt;\n\t&lt;a class=\"search-result__link\"&gt;\n\t\t&lt;span class=\"search-result__title\"&gt;&lt;strong&gt;Beha&lt;/strong&gt;ndling&lt;/span&gt;\n\t\t&lt;div class=\"search-result__breadcrumbs\"&gt;\n\t\t\t&lt;span class=\"search-result__breadcrumb\"&gt;Kapitel&lt;/span&gt;\n\t\t\t&lt;svg class=\"search-result__breadcrumb-icon  icon icon--sm\"&gt;\n\t\t\t\t&lt;use xlink:href=\"#arrow-right\"/&gt;\n\t\t\t&lt;/svg&gt;\n\t\t\t&lt;span class=\"search-result__breadcrumb\"&gt;Underrubrik&lt;/span&gt;\n\t\t\t&lt;svg class=\"search-result__breadcrumb-icon  icon icon--sm\"&gt;\n\t\t\t\t&lt;use xlink:href=\"#arrow-right\"/&gt;\n\t\t\t&lt;/svg&gt;\n\t\t\t&lt;span class=\"search-result__breadcrumb\"&gt;Sökfras&lt;/span&gt;\n\t\t&lt;/div&gt;\n\t&lt;/a&gt;\n&lt;/div&gt;"
+      }
+     ]
     }
    ],
    "table": [
