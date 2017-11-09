@@ -131,6 +131,38 @@
      ]
     },
     {
+     "name": "Site Navigation",
+     "page": [
+      {
+       "nav": "Components",
+       "section": "Navigation"
+      }
+     ],
+     "description": "<p>A component created for the purpose of large site navigation.</p>\n",
+     "state": [
+      {
+       "name": ":hover",
+       "escaped": ":hover",
+       "description": "Highlights when hovering."
+      },
+      {
+       "name": ".open",
+       "escaped": "open",
+       "description": "Defaults to its open state, i.e. .open on desktop – toggle .open class on .vertical-nav to open or close."
+      }
+     ],
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<nav>\n</nav>",
+       "path": "~/src/scss/components/_site-nav.scss",
+       "example": "\n<nav>\n</nav>",
+       "escaped": "\n&lt;nav&gt;\n&lt;/nav&gt;"
+      }
+     ]
+    },
+    {
      "name": "Vertical Navigation",
      "page": [
       {
@@ -280,10 +312,10 @@
       {
        "lang": "markup",
        "description": "",
-       "modifier": "\n<section class=\"search-header  clearfix\">\n\t<div class=\"search-header__inner  col-12 sm-col-12 md-col-12 lg-col-8\">\n\t\t<label class=\"search-header__label\" for=\"search-header__input\">Skriv för att börja söka i terapirekommendationerna</label>\n\t\t<div class=\"search-header__input-wrapper\">\n\t\t\t<input class=\"search-header__input\" type=\"search\"  placeholder=\"Skriv här för att börja söka\" id=\"search-header__input\">\n\t\t\t <svg class=\"search-header__icon  icon icon--md\">\n\t\t\t \t<use xlink:href=\"../dist/icons/sprite-2.svg#magnifying-glass\"/>\n\t\t\t </svg>\n\t\t\t <div class=\"search-header__results active\">\n\t\t\t </div>\n\t\t</div>\n\t\t<span class=\"search-header__example\">Ex. Behandling luftrörskatarr</span>\n\t</div>\n</section>",
+       "modifier": "\n<section class=\"search-header  clearfix\">\n\t<div class=\"search-header__inner  col-12 sm-col-12 md-col-12 lg-col-8\">\n\t\t<label class=\"search-header__label\" for=\"search-header__input\">Skriv för att börja söka i terapirekommendationerna</label>\n\t\t<div class=\"search-header__input-wrapper\">\n\t\t\t<input class=\"search-header__input\" type=\"search\"  placeholder=\"Skriv här för att börja söka\" id=\"search-header__input\">\n\t\t\t <svg class=\"search-header__icon  icon icon--md\">\n\t\t\t \t<use xlink:href=\"#magnifying-glass\"/>\n\t\t\t </svg>\n\t\t\t <div class=\"search-header__results active\">\n\t\t\t </div>\n\t\t</div>\n\t\t<span class=\"search-header__example\">Ex. Behandling luftrörskatarr</span>\n\t</div>\n</section>",
        "path": "~/src/scss/components/_search-header.scss",
-       "example": "\n<section class=\"search-header  clearfix\">\n\t<div class=\"search-header__inner  col-12 sm-col-12 md-col-12 lg-col-8\">\n\t\t<label class=\"search-header__label\" for=\"search-header__input\">Skriv för att börja söka i terapirekommendationerna</label>\n\t\t<div class=\"search-header__input-wrapper\">\n\t\t\t<input class=\"search-header__input\" type=\"search\"  placeholder=\"Skriv här för att börja söka\" id=\"search-header__input\">\n\t\t\t <svg class=\"search-header__icon  icon icon--md\">\n\t\t\t \t<use xlink:href=\"../dist/icons/sprite-2.svg#magnifying-glass\"/>\n\t\t\t </svg>\n\t\t\t <div class=\"search-header__results active\">\n\t\t\t </div>\n\t\t</div>\n\t\t<span class=\"search-header__example\">Ex. Behandling luftrörskatarr</span>\n\t</div>\n</section>",
-       "escaped": "\n&lt;section class=\"search-header  clearfix\"&gt;\n\t&lt;div class=\"search-header__inner  col-12 sm-col-12 md-col-12 lg-col-8\"&gt;\n\t\t&lt;label class=\"search-header__label\" for=\"search-header__input\"&gt;Skriv för att börja söka i terapirekommendationerna&lt;/label&gt;\n\t\t&lt;div class=\"search-header__input-wrapper\"&gt;\n\t\t\t&lt;input class=\"search-header__input\" type=\"search\"  placeholder=\"Skriv här för att börja söka\" id=\"search-header__input\"&gt;\n\t\t\t &lt;svg class=\"search-header__icon  icon icon--md\"&gt;\n\t\t\t \t&lt;use xlink:href=\"../dist/icons/sprite-2.svg#magnifying-glass\"/&gt;\n\t\t\t &lt;/svg&gt;\n\t\t\t &lt;div class=\"search-header__results active\"&gt;\n\t\t\t &lt;/div&gt;\n\t\t&lt;/div&gt;\n\t\t&lt;span class=\"search-header__example\"&gt;Ex. Behandling luftrörskatarr&lt;/span&gt;\n\t&lt;/div&gt;\n&lt;/section&gt;"
+       "example": "\n<section class=\"search-header  clearfix\">\n\t<div class=\"search-header__inner  col-12 sm-col-12 md-col-12 lg-col-8\">\n\t\t<label class=\"search-header__label\" for=\"search-header__input\">Skriv för att börja söka i terapirekommendationerna</label>\n\t\t<div class=\"search-header__input-wrapper\">\n\t\t\t<input class=\"search-header__input\" type=\"search\"  placeholder=\"Skriv här för att börja söka\" id=\"search-header__input\">\n\t\t\t <svg class=\"search-header__icon  icon icon--md\">\n\t\t\t \t<use xlink:href=\"#magnifying-glass\"/>\n\t\t\t </svg>\n\t\t\t <div class=\"search-header__results active\">\n\t\t\t </div>\n\t\t</div>\n\t\t<span class=\"search-header__example\">Ex. Behandling luftrörskatarr</span>\n\t</div>\n</section>",
+       "escaped": "\n&lt;section class=\"search-header  clearfix\"&gt;\n\t&lt;div class=\"search-header__inner  col-12 sm-col-12 md-col-12 lg-col-8\"&gt;\n\t\t&lt;label class=\"search-header__label\" for=\"search-header__input\"&gt;Skriv för att börja söka i terapirekommendationerna&lt;/label&gt;\n\t\t&lt;div class=\"search-header__input-wrapper\"&gt;\n\t\t\t&lt;input class=\"search-header__input\" type=\"search\"  placeholder=\"Skriv här för att börja söka\" id=\"search-header__input\"&gt;\n\t\t\t &lt;svg class=\"search-header__icon  icon icon--md\"&gt;\n\t\t\t \t&lt;use xlink:href=\"#magnifying-glass\"/&gt;\n\t\t\t &lt;/svg&gt;\n\t\t\t &lt;div class=\"search-header__results active\"&gt;\n\t\t\t &lt;/div&gt;\n\t\t&lt;/div&gt;\n\t\t&lt;span class=\"search-header__example\"&gt;Ex. Behandling luftrörskatarr&lt;/span&gt;\n\t&lt;/div&gt;\n&lt;/section&gt;"
       }
      ]
     }

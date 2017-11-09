@@ -10,47 +10,181 @@
 // 
 // @markup
 // <nav>
-// 	<ul class="vertical-nav">
-//		<div class="vertical-nav__header">
-//			<span class="vertical-nav__heading h4">Sidmeny</span>
-// 			<button class="vertical-nav__header-button">
-// 				<svg class="vertical-nav__icon  icon">
-// 					<use xlink:href="#menu"/>
-// 				</svg>
-// 			</button>
-//		</div>
-// 		<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
-// 		<li class="vertical-nav__item active"><a class="vertical-nav__link" href="#">Alternativ (active)</a></li>
-// 		<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
-// 		<li class="vertical-nav__item has-children is-expanded">
-// 		<a class="vertical-nav__link" href="#">Alternativ</a>
-//			<button class="vertical-nav__toggle">
-//				<span class="sr-only">Show submenu</span>
-//				<svg class="icon--sm"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../dist/icons/sprite.svg#caret-bottom"></use></svg>
-//			</button>
-// 			<ul class="vertical-nav__sub-menu">
-// 				<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
-// 				<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
-// 				<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
-// 				<li class="vertical-nav__item has-children">
-// 					<a class="vertical-nav__link" href="#">Alternativ</a>
-// 					<ul class="vertical-nav__sub-menu">
-// 						<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Världens längsta alternativ</a></li>
-// 						<li class="vertical-nav__item static">Alternativ</li>
-// 						<li class="vertical-nav__item has-children">
-// 							<a class="vertical-nav__link" href="#">Världens längsta alternativ</a>
-// 						</li>
-// 					</ul>
-// 				</li>
-// 				<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
-// 			</ul>
-// 		</li>
-// 		<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
-// 		<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
-// 		</ul>
 // </nav>
 
 
-.vertical-nav {
-	
+.site-nav {
+
 }
+
+.top-nav {
+	background:$white;
+	padding:0 $space-3;
+	border-bottom:2px solid palette(grey, light);
+	width:100%;
+	display:inline-flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-wrap: wrap;
+	@media (min-width: $breakpoint-md) {
+		flex-wrap: nowrap;
+	}
+}
+
+.top-nav__links {
+	padding:0 $space-4;
+	flex-basis:100%;
+	display:flex;
+	border-top:2px solid palette(grey, light);
+	@media (min-width: $breakpoint-md) {
+		border-top:none;
+		justify-content:flex-end;
+	}
+}
+.top-nav__link {
+	display:inline-block;
+	padding:$space-3 0;
+	margin:0 $space-2;
+	font-weight:bold;
+	color:palette(black, xx-light);
+	font-size:1em;
+	position:relative;
+	&:hover {
+		color:$black;
+	}
+	&:hover::after  {
+		content:'';
+		position:absolute;
+		bottom:0;
+		left:0;
+		right:0;
+		height:$space-1;
+		background:palette(grey, base);
+	}
+	&.active {
+		color:$black;
+	}
+	&.active::after  {
+		content:'';
+		position:absolute;
+		bottom:0;
+		left:0;
+		right:0;
+		height:$space-1;
+		background:$green;
+	}
+}
+
+.top-nav__logo {
+	background:palette(grey, light);
+	height:50px;
+	width:225px;
+	border-radius:$border-radius;
+}
+
+
+.top-nav__search-wrapper {
+	@media (min-width: $breakpoint-md) {
+		order:3;
+	}
+}
+
+
+.top-nav__search {
+	position: relative;
+}
+
+.top-nav__search-icon {
+	position:absolute;
+	right:$space-3;
+	top:50%;
+	transform:translateY(-50%);
+}
+
+.top-nav__search-input {
+	width:300px;
+	height:45px;
+	padding:$space-3 $space-3;
+	border:1px solid $darken-3;
+	box-shadow: 0 1px 7px 0 rgba(0,0,0,0.16);
+	font-size:1em;
+	border-radius:$border-radius;
+	transition:background 0.2s;
+
+	&:focus {
+		background:palette(grey, light);
+		outline:none;
+	}
+
+	&::placeholder {
+		color:palette(grey, x-dark);
+	}
+}
+
+
+
+
+.sub-nav {
+	background:$white;
+	padding:0 $space-3;
+	border-bottom:2px solid palette(grey, light);
+	width:100%;
+	display:inline-flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-wrap: wrap;
+	@media (min-width: $breakpoint-md) {
+		flex-wrap: nowrap;
+	}
+	
+	&--first-level {
+		background:$light-blue;
+	}
+	&--second-level {
+		background:$light-yellow;
+	}
+}
+.sub-nav__links {
+	padding:0 $space-4;
+	flex-basis:100%;
+	display:flex;
+	justify-content:center;
+}
+.sub-nav__link {
+	display:inline-block;
+	padding:$space-2 0;
+	margin:0 $space-2;
+	font-weight:normal;
+	color:palette(black, xx-light);
+	font-size:0.9em;
+	position:relative;
+	&:hover {
+		color:$black;
+		font-weight:bold;
+	}
+	&:hover::after  {
+		content:'';
+		position:absolute;
+		bottom:0;
+		left:0;
+		right:0;
+		height:$space-1;
+		background:palette(grey, base);
+	}
+	&.active {
+		color:$black;
+		font-weight:bold;
+	}
+	&.active::after  {
+		content:'';
+		position:absolute;
+		bottom:0;
+		left:0;
+		right:0;
+		height:$space-1;
+		background:$green;
+	}
+}
+
+/*
+*/

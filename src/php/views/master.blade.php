@@ -3,8 +3,9 @@
 <head>
 	<title>Styleguide</title>
 	<link rel="stylesheet" type="text/css" href="../dev/css/main.min.css">
-	<style type="text/css">
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
 	/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript */
 	/**
 	 * prism.js default theme for JavaScript, CSS and HTML
@@ -146,7 +147,46 @@
 	</style>
 </head>
 <body class="">
-	<nav class="py4 mb4" style="background: blue;"></nav>
+	<nav class="site-nav">
+		<div class="top-nav">
+			<div class="top-nav__logo">
+				
+			</div>
+			<div class="top-nav__search-wrapper">
+				<div class="top-nav__search">
+					<input type="text" class="top-nav__search-input">
+					<svg class="top-nav__search-icon  icon">
+						<use xlink:href="#magnifying-glass"/>
+					</svg>
+				</div>
+			</div>
+			<ul class="top-nav__links">
+				<li><a class="top-nav__link active" href="">Patientadministration</a></li>
+				<li><a class="top-nav__link" href="">Behandlingsstöd</a></li>
+				<li><a class="top-nav__link" href="">Kompetens & Utveckling</a></li>
+				<li><a class="top-nav__link" href="">Service & IT</a></li>
+				<li><a class="top-nav__link" href="">Uppdrag & Avtal</a></li>
+			</ul>
+		</div>
+		<div class="sub-nav sub-nav--first-level">
+			<ul class="sub-nav__links">
+				<li><a class="sub-nav__link active" href="">Patientadministration</a></li>
+				<li><a class="sub-nav__link" href="">Behandlingsstöd</a></li>
+				<li><a class="sub-nav__link" href="">Kompetens & Utveckling</a></li>
+				<li><a class="sub-nav__link" href="">Service & IT</a></li>
+				<li><a class="sub-nav__link" href="">Uppdrag & Avtal</a></li>
+			</ul>
+		</div>
+		<div class="sub-nav sub-nav--second-level">
+			<ul class="sub-nav__links">
+				<li><a class="sub-nav__link active" href="">Patientadministration</a></li>
+				<li><a class="sub-nav__link" href="">Behandlingsstöd</a></li>
+				<li><a class="sub-nav__link" href="">Kompetens & Utveckling</a></li>
+				<li><a class="sub-nav__link" href="">Service & IT</a></li>
+				<li><a class="sub-nav__link" href="">Uppdrag & Avtal</a></li>
+			</ul>
+		</div>
+	</nav>
 	<div class="mx-auto max-width-4">
 		<div class="col col-12 sm-col-3 md-col-3 px3">
 			<nav class="mb4">
