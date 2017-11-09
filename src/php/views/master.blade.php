@@ -149,25 +149,54 @@
 <body class="">
 	<div class="support-header clearfix">
 		<ul class="support-header__links">
-			<li class="support-header__item">
-				<a class="support-header__link" href="">
+			<li class="support-header__item has-dropdown">
+				<button class="support-header__link" href="">
 					<span class="support-header__link-text">Region Hallands Webbplatser</span>
-				</a>
+					<svg class="support-header__icon  icon icon--sm">
+						<use xlink:href="#caret-bottom"/>
+					</svg>
+				</button>
+				<ul class="support-header__dropdown">
+					<li class="support-header__dropdown-link">
+						<a href="">
+							<span>www.regionhalland.se</span>
+							<svg class="support-header__dropdown-icon  icon icon--sm">
+								<use xlink:href="#share-boxed"/>
+							</svg>
+						</a>
+					</li>
+					<li class="support-header__dropdown-link">
+						<a href="">
+							<span>www.regionhalland.se</span>
+							<svg class="support-header__dropdown-icon  icon icon--sm">
+								<use xlink:href="#share-boxed"/>
+							</svg>
+						</a>
+					</li>
+					<li class="support-header__dropdown-link">
+						<a href="">
+							<span>www.regionhalland.se</span>
+							<svg class="support-header__dropdown-icon  icon icon--sm">
+								<use xlink:href="#share-boxed"/>
+							</svg>
+						</a>
+					</li>
+				</ul>
 			</li>
 			<li class="support-header__item">
 				<a class="support-header__link" href="">
+					<span class="support-header__link-text">Lyssna</span>
 					<svg class="support-header__icon  icon icon--sm">
 						<use xlink:href="#headphones"/>
 					</svg>
-					<span class="support-header__link-text">Lyssna</span>
 				</a>
 			</li>
 			<li class="support-header__item">
 				<a class="support-header__link" href="">
-					<svg class="support-header__icon  icon icon--sm">
-						<use xlink:href="#magnifying-glass"/>
-					</svg>
 					<span class="support-header__link-text">Translate</span>
+					<svg class="support-header__icon  icon icon--sm">
+						<use xlink:href="#translate"/>
+					</svg>
 				</a>
 			</li>
 		</ul>
