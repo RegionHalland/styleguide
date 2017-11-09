@@ -38,6 +38,30 @@ gulp.task('css:dist', () => {
 		.pipe(gulp.dest('./dist/css/'))
 });
 
+// Build temporary CSS 
+gulp.task('css:dev', () => {
+	// PostCSS plugins
+	const plugins = [
+		autoprefixer({browsers: ['last 1 version']}),
+		cssnano()
+	];
+	return gulp.src('./src/scss/**/*.scss')
+		.pipe(plumber({
+			errorHandler: error => {
+				gutil.beep();
+				console.log(error)
+			}
+		}))
+		.pipe(sourcemaps.init())
+		.pipe(sass())
+		.pipe(postcss(plugins))
+		.pipe(rename({suffix: '.min'}))
+		.pipe(browsersync.stream())
+		.pipe(sourcemaps.write())
+		.pipe(plumber.stop())
+		.pipe(gulp.dest('./dev/css/'))
+});
+
 // Generate docs.json
 gulp.task('docs', () => {
 	return gulp.src(['./src/scss/**/*.scss'])
@@ -95,9 +119,14 @@ gulp.task('svg-min', () => {
 });
 
 // Copy fonts to the dist directory
-gulp.task('fonts', () => {
+gulp.task('fonts:dist', () => {
 	return gulp.src('./src/fonts/*')
 		.pipe(gulp.dest('./dist/fonts/'))
+})
+
+gulp.task('fonts:dev', () => {
+	return gulp.src('./src/fonts/*')
+		.pipe(gulp.dest('./dev/fonts/'))
 })
 
 // Browsersync
@@ -113,8 +142,8 @@ gulp.task('bs-reload', () => {
 });
 
 // Watch
-gulp.task('watch', ['css:dist', 'sprite:dist', 'docs', 'browsersync'], () => {
-	gulp.watch('./src/scss/**/*.scss', ['css:dist', 'docs', 'bs-reload']);
+gulp.task('watch', ['css:dev', 'fonts:dev', 'sprite:dist', 'docs', 'browsersync'], () => {
+	gulp.watch('./src/scss/**/*.scss', ['css:dev', 'docs', 'bs-reload']);
 	// Watch for changes in icon template
-	gulp.watch('./src/icons-template.mustache', ['sprite:dist', 'css:dist', 'docs', 'bs-reload']);
+	gulp.watch('./src/icons-template.mustache', ['sprite:dist', 'css:dev', 'docs', 'bs-reload']);
 })
