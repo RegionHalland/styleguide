@@ -158,6 +158,33 @@
      ]
     },
     {
+     "name": "Support Header",
+     "page": [
+      {
+       "nav": "Components",
+       "section": "Navigation"
+      }
+     ],
+     "description": "<p>A support header contains information about the site, accessibility tools and language settings.</p>\n",
+     "state": [
+      {
+       "name": ":hover",
+       "escaped": ":hover",
+       "description": "Highlights when hovering."
+      }
+     ],
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "",
+       "path": "~/src/scss/components/_support-header.scss",
+       "example": "",
+       "escaped": ""
+      }
+     ]
+    },
+    {
      "name": "Vertical Navigation",
      "page": [
       {

@@ -147,6 +147,31 @@
 	</style>
 </head>
 <body class="">
+	<div class="support-header clearfix">
+		<ul class="support-header__links">
+			<li class="support-header__item">
+				<a class="support-header__link" href="">
+					<span class="support-header__link-text">Region Hallands Webbplatser</span>
+				</a>
+			</li>
+			<li class="support-header__item">
+				<a class="support-header__link" href="">
+					<svg class="support-header__icon  icon icon--sm">
+						<use xlink:href="#headphones"/>
+					</svg>
+					<span class="support-header__link-text">Lyssna</span>
+				</a>
+			</li>
+			<li class="support-header__item">
+				<a class="support-header__link" href="">
+					<svg class="support-header__icon  icon icon--sm">
+						<use xlink:href="#magnifying-glass"/>
+					</svg>
+					<span class="support-header__link-text">Translate</span>
+				</a>
+			</li>
+		</ul>
+	</div>
 	<nav class="site-nav mb4">
 		<div class="top-nav">
 			<div class="top-nav__logo">

@@ -1,0 +1,32 @@
+//
+// @name Support Header
+// @page Components/Navigation
+//
+// @description 
+// A support header contains information about the site, accessibility tools and language settings.
+//
+// @state :hover - Highlights when hovering.
+// 
+// @markup
+// 
+
+.support-header {
+	padding:$space-2 0;
+	width:100%;
+	background:palette(grey, base);
+	padding:0 $space-3;
+}
+
+.support-header__item {
+	display:inline-block;
+}
+
+.support-header__links {
+	float:right;
+}
+
+.support-header__link {
+	margin:0 $space-2;
+	color:palette(black, x-light);
+	font-size:0.9em;
+}
