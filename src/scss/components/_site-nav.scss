@@ -20,7 +20,7 @@
 .top-nav {
 	background:$white;
 	padding:0 $space-3;
-	border-bottom:2px solid palette(grey, light);
+	//border-bottom:2px solid palette(grey, light);
 	width:100%;
 	display:inline-flex;
 	justify-content:space-between;
@@ -35,7 +35,7 @@
 	padding:0 $space-4;
 	flex-basis:100%;
 	display:flex;
-	border-top:2px solid palette(grey, light);
+	border-top:2px solid $darken-3;
 	@media (min-width: $breakpoint-md) {
 		border-top:none;
 		justify-content:flex-end;
@@ -59,7 +59,7 @@
 		left:0;
 		right:0;
 		height:$space-1;
-		background:palette(grey, base);
+		background:$darken-2;
 	}
 	&.active {
 		color:$black;
@@ -127,7 +127,7 @@
 .sub-nav {
 	background:$white;
 	padding:0 $space-3;
-	border-bottom:2px solid palette(grey, light);
+	border-top:1px solid $darken-2;
 	width:100%;
 	display:inline-flex;
 	justify-content:space-between;
@@ -136,14 +136,26 @@
 	@media (min-width: $breakpoint-md) {
 		flex-wrap: nowrap;
 	}
-	
-	&--first-level {
-		background:$light-blue;
-	}
-	&--second-level {
-		background:$light-yellow;
+}
+
+.sub-nav--first-level {
+	background:$light-blue;
+	.sub-nav__link {
+		&.active::after  {
+			background:$blue;
+		}
 	}
 }
+
+.sub-nav--second-level {
+	background:$light-yellow;
+	.sub-nav__link {
+		&.active::after  {
+			background:$yellow;
+		}
+	}
+}
+
 .sub-nav__links {
 	padding:0 $space-4;
 	flex-basis:100%;
@@ -158,10 +170,11 @@
 	color:palette(black, xx-light);
 	font-size:0.9em;
 	position:relative;
+
 	&:hover {
 		color:$black;
-		font-weight:bold;
 	}
+	
 	&:hover::after  {
 		content:'';
 		position:absolute;
@@ -169,7 +182,7 @@
 		left:0;
 		right:0;
 		height:$space-1;
-		background:palette(grey, base);
+		background:$darken-2;
 	}
 	&.active {
 		color:$black;

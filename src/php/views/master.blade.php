@@ -182,8 +182,6 @@
 				<li><a class="sub-nav__link active" href="">Patientadministration</a></li>
 				<li><a class="sub-nav__link" href="">Behandlingsstöd</a></li>
 				<li><a class="sub-nav__link" href="">Kompetens & Utveckling</a></li>
-				<li><a class="sub-nav__link" href="">Service & IT</a></li>
-				<li><a class="sub-nav__link" href="">Uppdrag & Avtal</a></li>
 			</ul>
 		</div>
 	</nav>
