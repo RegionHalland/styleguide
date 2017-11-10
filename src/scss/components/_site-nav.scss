@@ -190,19 +190,19 @@
 }
 
 .sub-nav--first-level {
-	background:$light-blue;
+	background:$blue;
 	.sub-nav__link {
 		&.active::after  {
-			background:$blue;
+			background:$darken-3;
 		}
 	}
 }
 
 .sub-nav--second-level {
-	background:$light-yellow;
+	background:$yellow;
 	.sub-nav__link {
 		&.active::after  {
-			background:$yellow;
+			background:$darken-3;
 		}
 	}
 }
@@ -218,7 +218,7 @@
 	padding:$space-2 0;
 	margin:0 $space-2;
 	font-weight:normal;
-	color:palette(black, xx-light);
+	color:palette(black, light);
 	font-size:0.9em;
 	position:relative;
 	&::after {

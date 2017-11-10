@@ -166,7 +166,7 @@
 .mobile-top-nav__link {
 	font-weight:bold;
 	display:block;
-	color:palette(black, xx-light);
+	color:palette(black, light);
 	font-size:0.95em;
 	border-top:1px solid palette(grey, base);
 	padding:$space-3 $space-3;
@@ -197,7 +197,7 @@
 }
 
 .mobile-sub-nav--first-level {
-	background:$light-blue;
+	background:$blue;
 	
 	.mobile-sub-nav__link {
 		padding:$space-3 $space-3;
@@ -206,15 +206,15 @@
 			background:$darken-1;
 		}
 		&.active::after  {
-			background:$blue;
+			background:$darken-3;
 			width:$space-1;
 		}
 	}
 }
 
 .mobile-sub-nav--second-level {
-	background:$light-yellow;
-	
+	background:$yellow;
+
 	.mobile-sub-nav__link {
 		padding:$space-3 $space-4;
 		&::after {
@@ -223,7 +223,7 @@
 		}
 		&.active::after  {
 			width:$space-2;
-			background:$yellow;
+			background:$darken-2;
 		}
 	}
 }
@@ -236,7 +236,7 @@
 	display:block;
 	border-top:1px solid $darken-1;
 	font-weight:normal;
-	color:palette(black, xx-light);
+	color:palette(black, light);
 	font-size:0.9em;
 	position:relative;
 	&::after {
