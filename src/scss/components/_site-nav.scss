@@ -51,6 +51,7 @@
 	box-shadow: 0 1px 7px 0 rgba(0,0,0,0.16);
 	border-bottom:1px solid $darken-2;
 	display:none;
+	position:relative;
 	@media (min-width: $breakpoint-md) {
 		display:block;
 	}
