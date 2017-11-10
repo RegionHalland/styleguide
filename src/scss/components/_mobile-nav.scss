@@ -5,7 +5,7 @@
 // @description 
 // A component created for the purpose of large site navigation.
 //
-// @state .active - Shows search
+// @state .active - Add class .active to mobile-top-nav to toggle navigation
 // 
 // @markup
 // <nav class="mobile-nav">
@@ -35,7 +35,7 @@
 // 			</svg>
 // 		</div>
 // 	</div>
-// 	<div class="mobile-top-nav">
+// 	<div class="mobile-top-nav active">
 // 		<ul class="mobile-top-nav__links">
 // 			<li class="has-children">
 // 				<a class="mobile-top-nav__link active" href="">Patientadministration</a>
@@ -152,6 +152,10 @@
 	background:$white;
 	width:100%;
 	position:relative;
+	display:none;
+	&.active {
+		display:block;
+	}
 }
 
 .mobile-top-nav__links {

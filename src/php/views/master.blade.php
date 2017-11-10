@@ -230,7 +230,7 @@
 				</svg>
 			</div>
 		</div>
-		<div class="mobile-top-nav">
+		<div class="mobile-top-nav  active">
 			<ul class="mobile-top-nav__links">
 				<li class="has-children">
 					<a class="mobile-top-nav__link active" href="">Patientadministration</a>
