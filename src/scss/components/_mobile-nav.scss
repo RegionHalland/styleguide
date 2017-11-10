@@ -1,0 +1,253 @@
+//
+// @name Site Navigation
+// @page Components/Navigation
+//
+// @description 
+// A component created for the purpose of large site navigation.
+//
+// @state .active - Shows search
+// 
+// @markup
+// <nav class="mobile-nav">
+// 	<div class="mobile-navbar">
+// 		<div class="mobile-navbar__logo">	
+// 		</div>
+// 		<div class="mobile-navbar__controls">
+// 			<button class="mobile-navbar__search-button">
+// 				<span class="sr-only">Sök här</span>
+// 				<svg class="mobile-navbar__search-icon  icon">
+// 					<use xlink:href="#magnifying-glass"/>
+// 				</svg>
+// 			</button>
+// 			<button class="mobile-navbar__menu-button">
+// 				<span class="mobile-navbar__menu-text">Meny</span>
+// 				<svg class="mobile-navbar__menu-icon  icon">
+// 					<use xlink:href="#menu"/>
+// 				</svg>
+// 			</button>
+// 		</div>
+// 	</div>
+// 	<div class="mobile-search-wrapper active">
+// 		<div class="mobile-search">
+// 			<input type="text" placeholder="Sök på hela vårdgivarwebben" class="mobile-search__input">
+// 			<svg class="mobile-search__icon  icon">
+// 				<use xlink:href="#magnifying-glass"/>
+// 			</svg>
+// 		</div>
+// 	</div>
+// 	<div class="mobile-top-nav">
+// 		<ul class="mobile-top-nav__links">
+// 			<li class="has-children">
+// 				<a class="mobile-top-nav__link active" href="">Patientadministration</a>
+// 				<div class="mobile-sub-nav mobile-sub-nav--first-level">
+// 					<ul class="mobile-sub-nav__links">
+// 						<li><a class="mobile-sub-nav__link" href="">Patientadministration</a></li>
+// 						<li><a class="mobile-sub-nav__link" href="">Behandlingsstöd</a></li>
+// 						<li><a class="mobile-sub-nav__link" href="">Kompetens & Utveckling</a></li>
+// 						<li><a class="mobile-sub-nav__link" href="">Service & IT</a></li>
+// 						<li class="has-children">
+// 							<a class="mobile-sub-nav__link active" href="">Uppdrag & Avtal</a>
+// 							<div class="mobile-sub-nav mobile-sub-nav--second-level">
+// 								<ul class="mobile-sub-nav__links">
+// 									<li><a class="mobile-sub-nav__link" href="">Patientadministration</a></li>
+// 									<li><a class="mobile-sub-nav__link active" href="">Behandlingsstöd</a></li>
+// 									<li><a class="mobile-sub-nav__link" href="">Kompetens & Utveckling</a></li>
+// 								</ul>
+// 							</div>
+// 						</li>
+// 					</ul>
+// 				</div>
+// 			</li>
+// 			<li><a class="mobile-top-nav__link" href="">Behandlingsstöd</a></li>
+// 			<li><a class="mobile-top-nav__link" href="">Kompetens & Utveckling</a></li>
+// 			<li><a class="mobile-top-nav__link" href="">Service & IT</a></li>
+// 			<li><a class="mobile-top-nav__link" href="">Uppdrag & Avtal</a></li>
+// 		</ul>
+// 	</div>
+// </nav>
+
+.mobile-nav {
+	display:block;
+	@media (min-width:$breakpoint-md) {
+		display:none;
+	}
+}
+
+.mobile-navbar {
+	padding:$space-2 $space-3;
+	background:$white;
+	border-bottom:1px solid palette(grey, light);
+	display:inline-flex;
+	align-items:center;
+	justify-content:space-between;
+	width:100%;	
+}
+
+.mobile-navbar__logo {
+	height:50px;
+	width:125px;
+	background:palette(grey, base);
+	border-radius:$border-radius;
+}
+
+.mobile-navbar__controls {
+
+}
+
+.mobile-navbar__search-button {
+	background:palette(grey, base);
+	padding:$space-2;
+	margin:0 $space-2;
+	border-radius:$border-radius;
+}
+
+.mobile-navbar__menu-button {
+	background:palette(grey, base);
+	border-radius:$border-radius;
+	padding:$space-2;
+}
+
+.mobile-navbar__menu-icon {
+	margin:0 $space-2;
+}
+
+
+.mobile-search {
+	border-bottom:1px solid palette(grey, light);
+}
+
+.mobile-search-wrapper {
+	position: relative;
+	display:none;
+	&.active {
+		display:block;
+	}
+}
+
+.mobile-search__input {
+	width:100%;
+	padding:$space-3;
+	font-size:1.1em;
+	transition:background 0.2s;
+	border:none;
+	&:focus {
+		background:palette(grey, light);
+		outline:none;
+	}
+
+	&::placeholder {
+		color:palette(grey, x-dark);
+	}
+}
+
+.mobile-search__icon {
+	position:absolute;
+	right:$space-3;
+	top:50%;
+	transform:translateY(-50%);
+}
+
+
+.mobile-top-nav {
+	background:$white;
+	width:100%;
+	position:relative;
+}
+
+.mobile-top-nav__links {
+	flex-basis:100%;
+	border-top:1px solid $darken-2;
+}
+.mobile-top-nav__link {
+	font-weight:bold;
+	display:block;
+	color:palette(black, xx-light);
+	font-size:0.95em;
+	border-top:1px solid palette(grey, base);
+	padding:$space-3 $space-3;
+	position:relative;
+	&::after {
+		content:'';
+		position:absolute;
+		bottom:0;
+		left:0;
+		right:0;
+		height:100%;
+		width:$space-1;
+	}
+	&.active {
+		color:$black;
+	}
+	&.active::after  {
+		background:$green;
+	}
+}
+
+
+.mobile-sub-nav {
+	background:$white;
+	position:relative;
+	border-top:1px solid $darken-2;
+	width:100%;
+}
+
+.mobile-sub-nav--first-level {
+	background:$light-blue;
+	
+	.mobile-sub-nav__link {
+		padding:$space-3 $space-3;
+		&::after {
+			width:$space-1;
+			background:$darken-1;
+		}
+		&.active::after  {
+			background:$blue;
+			width:$space-1;
+		}
+	}
+}
+
+.mobile-sub-nav--second-level {
+	background:$light-yellow;
+	
+	.mobile-sub-nav__link {
+		padding:$space-3 $space-4;
+		&::after {
+			width:$space-2;
+			background:$darken-1;
+		}
+		&.active::after  {
+			width:$space-2;
+			background:$yellow;
+		}
+	}
+}
+
+.mobile-sub-nav__links {
+	display:block;
+}
+
+.mobile-sub-nav__link {
+	display:block;
+	border-top:1px solid $darken-1;
+	font-weight:normal;
+	color:palette(black, xx-light);
+	font-size:0.9em;
+	position:relative;
+	&::after {
+		content:'';
+		position:absolute;
+		bottom:0;
+		left:0;
+		height:100%;
+		width:$space-1;
+	}
+	&.active {
+		color:$black;
+		font-weight:bold;
+	}
+	&.active::after  {
+		background:$green;
+	}
+}
+

@@ -202,7 +202,65 @@
 			</li>
 		</ul>
 	</div>
-	<nav class="site-nav mb4">
+	<nav class="mobile-nav">
+		<div class="mobile-navbar">
+			<div class="mobile-navbar__logo">
+				
+			</div>
+			<div class="mobile-navbar__controls">
+				<button class="mobile-navbar__search-button">
+					<span class="sr-only">Sök här</span>
+					<svg class="mobile-navbar__search-icon  icon">
+						<use xlink:href="#magnifying-glass"/>
+					</svg>
+				</button>
+				<button class="mobile-navbar__menu-button">
+					<span class="mobile-navbar__menu-text">Meny</span>
+					<svg class="mobile-navbar__menu-icon  icon">
+						<use xlink:href="#menu"/>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="mobile-search-wrapper active">
+			<div class="mobile-search">
+				<input type="text" placeholder="Sök på hela vårdgivarwebben" class="mobile-search__input">
+				<svg class="mobile-search__icon  icon">
+					<use xlink:href="#magnifying-glass"/>
+				</svg>
+			</div>
+		</div>
+		<div class="mobile-top-nav">
+			<ul class="mobile-top-nav__links">
+				<li class="has-children">
+					<a class="mobile-top-nav__link active" href="">Patientadministration</a>
+					<div class="mobile-sub-nav mobile-sub-nav--first-level">
+						<ul class="mobile-sub-nav__links">
+							<li><a class="mobile-sub-nav__link" href="">Patientadministration</a></li>
+							<li><a class="mobile-sub-nav__link" href="">Behandlingsstöd</a></li>
+							<li><a class="mobile-sub-nav__link" href="">Kompetens & Utveckling</a></li>
+							<li><a class="mobile-sub-nav__link" href="">Service & IT</a></li>
+							<li class="has-children">
+								<a class="mobile-sub-nav__link active" href="">Uppdrag & Avtal</a>
+								<div class="mobile-sub-nav mobile-sub-nav--second-level">
+									<ul class="mobile-sub-nav__links">
+										<li><a class="mobile-sub-nav__link" href="">Patientadministration</a></li>
+										<li><a class="mobile-sub-nav__link active" href="">Behandlingsstöd</a></li>
+										<li><a class="mobile-sub-nav__link" href="">Kompetens & Utveckling</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li><a class="mobile-top-nav__link" href="">Behandlingsstöd</a></li>
+				<li><a class="mobile-top-nav__link" href="">Kompetens & Utveckling</a></li>
+				<li><a class="mobile-top-nav__link" href="">Service & IT</a></li>
+				<li><a class="mobile-top-nav__link" href="">Uppdrag & Avtal</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav class="site-nav mb6">
 		<div class="top-nav">
 			<div class="top-nav__logo">
 				
@@ -216,27 +274,31 @@
 				</div>
 			</div>
 			<ul class="top-nav__links">
-				<li><a class="top-nav__link active" href="">Patientadministration</a></li>
+				<li class="has-children">
+					<a class="top-nav__link active" href="">Patientadministration</a>
+					<div class="sub-nav sub-nav--first-level">
+						<ul class="sub-nav__links">
+							<li><a class="sub-nav__link" href="">Patientadministration</a></li>
+							<li><a class="sub-nav__link" href="">Behandlingsstöd</a></li>
+							<li><a class="sub-nav__link" href="">Kompetens & Utveckling</a></li>
+							<li><a class="sub-nav__link" href="">Service & IT</a></li>
+							<li class="has-children">
+								<a class="sub-nav__link active" href="">Uppdrag & Avtal</a>
+								<div class="sub-nav sub-nav--second-level">
+									<ul class="sub-nav__links">
+										<li><a class="sub-nav__link" href="">Patientadministration</a></li>
+										<li><a class="sub-nav__link active" href="">Behandlingsstöd</a></li>
+										<li><a class="sub-nav__link" href="">Kompetens & Utveckling</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
 				<li><a class="top-nav__link" href="">Behandlingsstöd</a></li>
 				<li><a class="top-nav__link" href="">Kompetens & Utveckling</a></li>
 				<li><a class="top-nav__link" href="">Service & IT</a></li>
 				<li><a class="top-nav__link" href="">Uppdrag & Avtal</a></li>
-			</ul>
-		</div>
-		<div class="sub-nav sub-nav--first-level">
-			<ul class="sub-nav__links">
-				<li><a class="sub-nav__link" href="">Patientadministration</a></li>
-				<li><a class="sub-nav__link" href="">Behandlingsstöd</a></li>
-				<li><a class="sub-nav__link" href="">Kompetens & Utveckling</a></li>
-				<li><a class="sub-nav__link" href="">Service & IT</a></li>
-				<li><a class="sub-nav__link active" href="">Uppdrag & Avtal</a></li>
-			</ul>
-		</div>
-		<div class="sub-nav sub-nav--second-level">
-			<ul class="sub-nav__links">
-				<li><a class="sub-nav__link" href="">Patientadministration</a></li>
-				<li><a class="sub-nav__link active" href="">Behandlingsstöd</a></li>
-				<li><a class="sub-nav__link" href="">Kompetens & Utveckling</a></li>
 			</ul>
 		</div>
 	</nav>
