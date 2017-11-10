@@ -68,7 +68,7 @@
 
 .mobile-nav {
 	display:block;
-	@media (min-width:$breakpoint-md) {
+	@media (min-width:$breakpoint-sm) {
 		display:none;
 	}
 }
@@ -160,6 +160,7 @@
 
 .mobile-top-nav__links {
 	flex-basis:100%;
+	border-bottom:1px solid palette(grey, base);
 }
 
 .mobile-top-nav__link {

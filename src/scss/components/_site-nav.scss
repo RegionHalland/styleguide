@@ -52,7 +52,7 @@
 	border-bottom:1px solid $darken-2;
 	display:none;
 	position:relative;
-	@media (min-width: $breakpoint-md) {
+	@media (min-width: $breakpoint-sm) {
 		display:block;
 	}
 }
