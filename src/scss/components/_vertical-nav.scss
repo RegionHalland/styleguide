@@ -128,7 +128,7 @@
 	color: palette(black, dark);
 
 	&:hover  { background: palette(grey, light); }
-	&:active { 
+	&.active { 
 				background: palette(grey, light);
 				font-weight:bold;   
 			 }
