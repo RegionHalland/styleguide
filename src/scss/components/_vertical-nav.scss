@@ -11,14 +11,14 @@
 // @markup
 // <nav>
 // 	<ul class="vertical-nav">
-//		<div class="vertical-nav__header">
-//			<span class="vertical-nav__heading h4">Sidmeny</span>
+//		<li class="vertical-nav__header">
+//			<span class="vertical-nav__heading">Sidmeny</span>
 // 			<button class="vertical-nav__header-button">
 // 				<svg class="vertical-nav__icon  icon">
 // 					<use xlink:href="#menu"/>
 // 				</svg>
 // 			</button>
-//		</div>
+//		</li>
 // 		<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
 // 		<li class="vertical-nav__item active"><a class="vertical-nav__link" href="#">Alternativ (active)</a></li>
 // 		<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
@@ -65,17 +65,20 @@
 }
 
 .vertical-nav__header {
-	padding:$space-3;
-	background:$grey;
-	.vertical-nav__heading {
-		font-weight:bold;
-		display:inline-block;
-	}
-	.vertical-nav__header-button {
-		padding:$space-1;
-		float:right;
-		vertical-align: top;
-	}
+	padding: $space-3;
+	background: $grey;
+}
+
+.vertical-nav__heading {
+	font-weight: bold;
+	display: inline-block;
+	line-height: 1;
+}
+
+.vertical-nav__header-button {
+	float: right;
+	line-height: 0;
+	padding: .25rem;
 }
 
 .vertical-nav__item {
@@ -103,7 +106,7 @@
 	}
 
 	&.has-children > .vertical-nav__link {
-		padding-right: 32px;
+		padding-right: 2.5rem;
 	}
 
 	&.static {
@@ -128,10 +131,11 @@
 	color: palette(black, dark);
 
 	&:hover  { background: palette(grey, light); }
+	
 	&.active { 
-				background: palette(grey, light);
-				font-weight:bold;   
-			 }
+		background: palette(grey, light);
+		font-weight: bold;   
+	}
 }
 
 .vertical-nav__sub-menu {
@@ -149,10 +153,8 @@
 	background: none;
 	padding: 0;
 	margin: 0;
-
-	//None-optimal solution that needs review. 
-	width:  4em;
-	height: 4em;
+	width:  2.5rem;
+	height: 2.5rem;
 	line-height: 0;
 	z-index: $z1;
 
