@@ -22,7 +22,7 @@
 // 		<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
 // 		<li class="vertical-nav__item active"><a class="vertical-nav__link" href="#">Alternativ (active)</a></li>
 // 		<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
-// 		<li class="vertical-nav__item has-children is-expanded">
+// 		<li class="vertical-nav__item has-sub-menu is-expanded">
 // 		<a class="vertical-nav__link" href="#">Alternativ</a>
 //			<button class="vertical-nav__toggle">
 //				<span class="sr-only">Show submenu</span>
@@ -32,12 +32,12 @@
 // 				<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
 // 				<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
 // 				<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
-// 				<li class="vertical-nav__item has-children">
+// 				<li class="vertical-nav__item has-sub-menu">
 // 					<a class="vertical-nav__link" href="#">Alternativ</a>
 // 					<ul class="vertical-nav__sub-menu">
 // 						<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Världens längsta alternativ</a></li>
 // 						<li class="vertical-nav__item static">Alternativ</li>
-// 						<li class="vertical-nav__item has-children">
+// 						<li class="vertical-nav__item">
 // 							<a class="vertical-nav__link" href="#">Världens längsta alternativ</a>
 // 						</li>
 // 					</ul>
@@ -96,16 +96,16 @@
 		}
 
 		& > .vertical-nav__toggle {
-			transform: rotate(180deg)
+			transform: rotate(180deg);
 		}
 
 	}
 
-	&.has-children {
+	&.has-sub-menu {
 		position: relative;
 	}
 
-	&.has-children > .vertical-nav__link {
+	&.has-sub-menu > .vertical-nav__link {
 		padding-right: 2.5rem;
 	}
 
