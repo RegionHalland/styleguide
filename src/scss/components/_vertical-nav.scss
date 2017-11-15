@@ -12,7 +12,8 @@
 // <nav>
 // 	<ul class="vertical-nav">
 //		<li class="vertical-nav__header">
-//			<span class="vertical-nav__heading">Sjukt långt kapitel namn, typ Sjukdomsförebyggande metoder/levnadsvanor eller liknande</span>
+//			<span class="vertical-nav__heading--dynamic">Alternativ</span>
+//			<span class="vertical-nav__heading--static">Meny</span>
 // 			<button class="vertical-nav__button">
 // 				<svg class="vertical-nav__icon  icon">
 // 					<use xlink:href="#menu"/>
@@ -69,17 +70,34 @@
 .vertical-nav__header {
 	background: $grey;
 	position: relative;
+
+	@media screen and (min-width: $breakpoint-md) {
+
+		.vertical-nav__button {
+			display: none;	
+		}
+	}
 }
 
-.vertical-nav__heading {
+.vertical-nav__heading--dynamic,
+.vertical-nav__heading--static {
 	position: relative;
-	display: block;
 	font-weight: bold;
 	padding: $space-2 $space-3;
 	padding-right: 2.5rem;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+.vertical-nav__heading--static {
+	display: none;
+	@media screen and (min-width: $breakpoint-md) { display: block }
+}
+
+.vertical-nav__heading--dynamic {
+	display: block;
+	@media screen and (min-width: $breakpoint-md) { display: none }
 }
 
 .vertical-nav__item {
