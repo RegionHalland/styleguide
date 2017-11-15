@@ -55,12 +55,14 @@
 	border: 1px solid palette(grey, base);
 	padding: 0;
 	border-radius: $border-radius;
-	overflow:hidden;
+	overflow: hidden;
 
 	&.open {
+		
 		.vertical-nav__item {
-			display:none;
+			display: block;
 		}
+		
 	}
 }
 
@@ -81,7 +83,7 @@
 }
 
 .vertical-nav__item {
-	display: block;
+	display: none;
 	border-bottom: 1px solid palette(grey, light);
 
 	.vertical-nav__sub-menu {
@@ -120,6 +122,10 @@
 
 	&:last-of-type {
 		border-bottom: none;
+	}
+
+	@media screen and (min-width: $breakpoint-md) {
+		display: block;
 	}
 }
 
