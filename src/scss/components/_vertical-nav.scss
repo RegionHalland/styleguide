@@ -12,8 +12,8 @@
 // <nav>
 // 	<ul class="vertical-nav">
 //		<li class="vertical-nav__header">
-//			<span class="vertical-nav__heading">Sidmeny</span>
-// 			<button class="vertical-nav__header-button">
+//			<span class="vertical-nav__heading">Sjukt långt kapitel namn, typ Sjukdomsförebyggande metoder/levnadsvanor eller liknande</span>
+// 			<button class="vertical-nav__button">
 // 				<svg class="vertical-nav__icon  icon">
 // 					<use xlink:href="#menu"/>
 // 				</svg>
@@ -24,7 +24,7 @@
 // 		<li class="vertical-nav__item"><a class="vertical-nav__link" href="#">Alternativ</a></li>
 // 		<li class="vertical-nav__item has-sub-menu is-expanded">
 // 		<a class="vertical-nav__link" href="#">Alternativ</a>
-//			<button class="vertical-nav__toggle">
+//			<button class="vertical-nav__button">
 //				<span class="sr-only">Show submenu</span>
 //				<svg class="icon--sm"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../dist/icons/sprite.svg#caret-bottom"></use></svg>
 //			</button>
@@ -65,20 +65,19 @@
 }
 
 .vertical-nav__header {
-	padding: $space-3;
 	background: $grey;
+	position: relative;
 }
 
 .vertical-nav__heading {
+	position: relative;
+	display: block;
 	font-weight: bold;
-	display: inline-block;
-	line-height: 1;
-}
-
-.vertical-nav__header-button {
-	float: right;
-	line-height: 0;
-	padding: .25rem;
+	padding: $space-2 $space-3;
+	padding-right: 2.5rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .vertical-nav__item {
@@ -95,7 +94,7 @@
 			display: block;
 		}
 
-		& > .vertical-nav__toggle {
+		& > .vertical-nav__button {
 			transform: rotate(180deg);
 		}
 
@@ -143,7 +142,7 @@
 	border-left: $space-2 solid palette(grey, base);
 }
 
-.vertical-nav__toggle {
+.vertical-nav__button {
 	display: block;
 	position: absolute;
 	top: 0;
