@@ -1,4 +1,4 @@
-//
+	//
 // @name Search Header
 // @description
 //
@@ -8,106 +8,153 @@
 //
 // @state :focus - Highlights when focused.
 // @markup
-// <section class="search-header  clearfix">
-// 	<div class="search-header__inner  col-12 sm-col-12 md-col-12 lg-col-8">
-// 		<label class="search-header__label" for="search-header__input">Skriv för att börja söka i terapirekommendationerna</label>
-// 		<div class="search-header__input-wrapper">
-// 			<input class="search-header__input" type="search"  placeholder="Skriv här för att börja söka" id="search-header__input">
-// 			 <svg class="search-header__icon  icon">
-// 			 	<use xlink:href="#magnifying-glass"/>
-// 			 </svg>
-// 			 <div class="search-header__results active">
-//			 	
-// 			 </div>
-// 		</div>
-// 		<span class="search-header__example">Ex. Behandling luftrörskatarr</span>
-// 	</div>
-// </section>
+//	<div class="col col-12 p4 relative inline-block" style="background: #0e5aa4;">
+//
+//	<label class="search-header__label" for="search-header__input">Skriv för att börja söka i terapirekommendationerna</label>
+//	<span class="search-header">
+//		<input class="search-header__input  hint" type="search">
+//		<input class="search-header__input" id="search-header__input" type="search" placeholder="Skriv här för att börja söka">
+//		<span class="search-header__results">
+//			<div class="search-header__dataset-1">
+//				<span class="search-header__suggestions">
+//					<div class="search-header__suggestion">
+//						<span class="search-header__hit"><em>Syra</em>relaterade sjukdomar</span>
+//						<div class="search-header__breadcrumbs">
+//							<span class="search-header__breadcrumb h6">Kapitel</span>
+//							<span class="search-header__breadcrumb h6">Delkapitel</span>
+//							<span class="search-header__breadcrumb h6">Närmaste rubrik</span>
+//						</div>
+//					</div>
+//					<div class="search-header__suggestion">
+//						<span class="search-header__hit">Bensår</span>
+//						<div class="search-header__breadcrumbs">
+//							<span class="search-header__breadcrumb h6">Kapitel</span>
+//							<span class="search-header__breadcrumb h6">Delkapitel</span>
+//							<span class="search-header__breadcrumb h6">Närmaste rubrik</span>
+//						</div>
+//					</div>
+//					<div class="search-header__suggestion">
+//						<span class="search-header__hit">Benartärssjukdom</span>
+//						<div class="search-header__breadcrumbs">
+//							<span class="search-header__breadcrumb h6">Kapitel</span>
+//							<span class="search-header__breadcrumb h6">Delkapitel</span>
+//							<span class="search-header__breadcrumb h6">Närmaste rubrik</span>
+//						</div>
+//					</div>
+//					<div class="search-header__suggestion">
+//						<span class="search-header__hit">Benartärssjukdom</span>
+//						<div class="search-header__breadcrumbs">
+//							<span class="search-header__breadcrumb h6">Kapitel</span>
+//							<span class="search-header__breadcrumb h6">Delkapitel</span>
+//							<span class="search-header__breadcrumb h6">Närmaste rubrik</span>
+//						</div>
+//					</div>				
+//					<div class="search-header__suggestion">
+//						<span class="search-header__hit">Tobak</span>
+//						<div class="search-header__breadcrumbs">
+//							<span class="search-header__breadcrumb h6">Kapitel</span>
+//							<span class="search-header__breadcrumb h6">Delkapitel</span>
+//							<span class="search-header__breadcrumb h6">Närmaste rubrik?</span>
+//						</div>
+//					</div>	
+//				</span>
+//			</div>
+//		</span>
+//	</span>
+//	<span class="search-header__example">Ex. Behandling luftrörskatarr</span>
+//
+//	</div>
 
 .search-header {
-	background-color:$dark-blue;
-	@media (min-width: $breakpoint-md) {
-		padding: $space-5 0;
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.search-header__input {
+	position: relative;
+	width: 100%;
+	padding: $space-3 $space-3;
+	font-size: inherit;
+	border: 1px solid $darken-3;
+	box-shadow: 0 1px 7px 0 rgba(0,0,0,0.16);
+	border-radius: $border-radius;
+
+	&.hint {
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-color: transparent;
+		box-shadow: none;
+		opacity: 1;
+		background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);
 	}
 
-	&__inner {
-		margin:0 auto;
+	&:focus {
+		background: palette(grey, base);
+		outline: none;
 	}
 
-	&__input-wrapper {
-		position:relative;
-	}
-
-	&__label {
-		color:$white;
-		font-size:0.9em;
-		display:block;
-		margin-bottom:$space-2;
-	}
-
-	&__example {
-		font-style: italic;
-		color:$white;
-		opacity:0.8;
-		font-size:0.9em;
-		margin-top:$space-2;
-		display:block;
-	}
-
-	&__input {
-		padding:$space-3 $space-3;
-		border:1px solid $darken-3;
-		box-shadow: 0 1px 7px 0 rgba(0,0,0,0.16);
-		transition:background 0.2s;
-		font-size:1em;
-		width:100%;
-		border-radius:$border-radius;
-		transition:background 0.2s;
-		position:relative;
-		z-index: 2;
-
-		&:focus {
-			background:palette(grey, light);
-			outline:none;
-		}
-
-		&::placeholder {
-			color:palette(grey, x-dark);
-		}
-	}
-
-	&__results {
-		height:75px;
-		padding:$space-3 $space-3;
-		border:1px solid $darken-3;
-		box-shadow: 0 1px 7px 0 rgba(0,0,0,0.16);
-		background:$white;
-		border-radius:$border-radius;
-		position:absolute;
-		top:$space-5;
-		width:100%;
-		z-index: 1;
-		display:none;
-
-		&.active {
-			display:block;
-		}
-	}
-
-	&__icon {
-		position:absolute;
-		z-index:2;
-		right:$space-3;
-		top:50%;
-		transform:translateY(-50%);
+	&::placeholder {
+		color:palette(grey, x-dark);
 	}
 }
 
+.search-header__label {
+	display: block;
+	margin-bottom: $space-2;
+	color: $white;
+	font-size: 0.9em;
+}
 
+.search-header__example {
+	display: block;
+	margin-top: $space-2;
+	color: $white;
+	font-size: 0.9em;
+	font-style: italic;
+	opacity: 0.8;
+}
 
+.search-header__results {
+	position: absolute;
+	top: $space-5;
+	width: 100%;
+	box-shadow: 0 1px 7px 0 rgba(0,0,0,0.16);
+	background: $white;
+	border: 1px solid $darken-3;
+	border-radius: $border-radius;
+	z-index: $z1;
+	overflow-y: scroll;
+	max-height: 360px;
+}
 
+.search-header__suggestion {
+	padding: $space-3;
 
+	&:hover,
+	&:focus {
+		background: palette(grey, base);
+	}
+	em {
+		font-style: normal;
+		font-weight: $bold-font-weight;
+	}
+}
 
+.search-header__hit {
+	line-height: 1;
+}
+
+.search-header__breadcrumb {
+	margin-right: $space-1;
+
+	&+&::before {
+		content: "->";
+		display: inline-block;
+		margin-right: $space-1;
+	}
+}
 
 
 

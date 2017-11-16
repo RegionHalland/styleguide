@@ -1,15 +1,5 @@
 {
  "nav": {
-  "components": [
-   "article",
-   "button",
-   "navigation",
-   "forms",
-   "icons",
-   "panel",
-   "search",
-   "table"
-  ],
   "config": [
    "align",
    "flexbox",
@@ -20,9 +10,219 @@
    "position",
    "typescale",
    "typography"
+  ],
+  "components": [
+   "article",
+   "button",
+   "navigation",
+   "forms",
+   "icons",
+   "panel",
+   "search",
+   "table"
   ]
  },
  "pages": {
+  "config": {
+   "align": [
+    {
+     "name": "Align",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Align"
+      }
+     ],
+     "description": "<p>Adjust vertical alignment with these utilities.</p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<div>\n  <div class=\"table-cell\"><h1>Halland</h1></div>\n  <div class=\"table-cell align-baseline\">baseline</div>\n  <div class=\"table-cell align-top\">top</div>\n  <div class=\"table-cell align-middle\">middle</div>\n  <div class=\"table-cell align-bottom\">bottom</div>\n</div>",
+       "path": "~/src/scss/config/_align.scss",
+       "example": "\n<div>\n  <div class=\"table-cell\"><h1>Halland</h1></div>\n  <div class=\"table-cell align-baseline\">baseline</div>\n  <div class=\"table-cell align-top\">top</div>\n  <div class=\"table-cell align-middle\">middle</div>\n  <div class=\"table-cell align-bottom\">bottom</div>\n</div>",
+       "escaped": "\n&lt;div&gt;\n  &lt;div class=\"table-cell\"&gt;&lt;h1&gt;Halland&lt;/h1&gt;&lt;/div&gt;\n  &lt;div class=\"table-cell align-baseline\"&gt;baseline&lt;/div&gt;\n  &lt;div class=\"table-cell align-top\"&gt;top&lt;/div&gt;\n  &lt;div class=\"table-cell align-middle\"&gt;middle&lt;/div&gt;\n  &lt;div class=\"table-cell align-bottom\"&gt;bottom&lt;/div&gt;\n&lt;/div&gt;"
+      }
+     ]
+    }
+   ],
+   "flexbox": [
+    {
+     "name": "Flexbox",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Flexbox"
+      }
+     ],
+     "description": "<p>These flexbox-based utilities can replace the need for a grid system in many instances.</p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<span>TBA</span>",
+       "path": "~/src/scss/config/_flexbox.scss",
+       "example": "\n<span>TBA</span>",
+       "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
+      }
+     ]
+    }
+   ],
+   "grid": [
+    {
+     "name": "Grid",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Grid"
+      }
+     ],
+     "description": "<p>This module contains responsive float and width utilities to create a variety of grid layouts. \nUse this module in combination with layout, white space, and other utilities. </p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<span>TBA</span>",
+       "path": "~/src/scss/config/_grid.scss",
+       "example": "\n<span>TBA</span>",
+       "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
+      }
+     ]
+    }
+   ],
+   "layout": [
+    {
+     "name": "Layout",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Layout"
+      }
+     ],
+     "description": "<p>Change the default document flow with these display, float, and other utilities.</p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<span>TBA</span>",
+       "path": "~/src/scss/config/_layout.scss",
+       "example": "\n<span>TBA</span>",
+       "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
+      }
+     ]
+    }
+   ],
+   "margin": [
+    {
+     "name": "Margin",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Margin"
+      }
+     ],
+     "description": "<p>Immutable margin utilities are based on a global white space scale defined with custom properties.</p>\n<p><h3>Naming Convention</h3>\nDue to the ubiquitous nature of setting margin, these utilities use a shorthand naming convention:</p>\n<table>\n  <thead>\n    <tr>\n        <th>Shorthand</th> \n        <th>Description</th>\n     </tr>\n    </thead>\n    <tbody>\n      <tr><td>m</td><td>Margin</td></tr>\n      <tr><td>t</td><td>Top</td></tr>\n      <tr><td>r</td><td>Right</td></tr>\n      <tr><td>b</td><td>Bottom</td></tr>\n      <tr><td>l</td><td>Left</td></tr>\n      <tr><td>x</td><td>X-axis (left and right)</td></tr>\n      <tr><td>y</td><td>Y-axis (top and bottom)</td></tr>\n      <tr><td>n</td><td>Negative</td> </tr>\n      <tr><td>0</td><td>0 reset</td> </tr>\n      <tr><td>1</td><td>$space-1 (.25rem)</td></tr>\n      <tr><td>2</td><td>$space-2 (.5rem)</td></tr>\n      <tr><td>3</td><td>$space-3 (1rem)</td></tr>\n      <tr><td>4</td><td>$space-4 (2rem)</td></tr>\n     <tr><td>5</td><td>$space-5 (4rem)</td></tr>\n     <tr><td>6</td><td>$space-6 (8rem)</td></tr>\n    </tbody>\n  </table>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "",
+       "path": "~/src/scss/config/_margin.scss",
+       "example": "",
+       "escaped": ""
+      }
+     ]
+    }
+   ],
+   "padding": [
+    {
+     "name": "Padding",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Padding"
+      }
+     ],
+     "description": "<p>Immutable padding utilities are based on a global white space scale defined with custom properties. </p>\n<p><h3>Naming Convention</h3>\nDue to the ubiquitous nature of setting padding, these utilities use a shorthand naming convention:</p>\n<table class=\"mb2 table-flush table-light\">\n    <thead>\n      <tr>\n        <th>Shorthand</th>\n        <th>Description</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr><td>p</td><td>Padding</td></tr>\n      <tr><td>t</td><td>Top</td></tr>\n      <tr><td>r</td><td>Right</td></tr>\n      <tr><td>b</td><td>Bottom</td></tr>\n      <tr><td>l</td><td>Left</td></tr>\n      <tr><td>x</td><td>X-axis (left and right)</td></tr>\n      <tr><td>y</td><td>Y-axis (top and bottom)</td></tr>\n      <tr><td>n</td><td>Negative (margin only)</td></tr>\n      <tr><td>0</td><td>0 reset</td> </tr>\n      <tr><td>1</td><td>$space-1 (.25rem)</td></tr>\n      <tr><td>2</td><td>$space-2 (.5rem)</td></tr>\n      <tr><td>3</td><td>$space-3 (1rem)</td></tr>\n      <tr><td>4</td><td>$space-4 (2rem)</td></tr>\n     <tr><td>5</td><td>$space-5 (4rem)</td></tr>\n     <tr><td>5</td><td>$space-6 (6rem)</td></tr>\n    </tbody>\n  </table>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<div class=\"pb1\">This will have a padding bottom</div>",
+       "path": "~/src/scss/config/_padding.scss",
+       "example": "\n<div class=\"pb1\">This will have a padding bottom</div>",
+       "escaped": "\n&lt;div class=\"pb1\"&gt;This will have a padding bottom&lt;/div&gt;"
+      }
+     ]
+    }
+   ],
+   "position": [
+    {
+     "name": "Position",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Position"
+      }
+     ],
+     "description": "<p>This module includes basic positioning utilities to alter the default document flow. \nUse positions with caution. They are often unnecessary and commonly misused.</p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "",
+       "path": "~/src/scss/config/_position.scss",
+       "example": "",
+       "escaped": ""
+      }
+     ]
+    }
+   ],
+   "typescale": [
+    {
+     "name": "Typescale",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Typescale"
+      }
+     ],
+     "description": "<p>This module provides utilities for adjusting font-size.</p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<p class=\"h1\">Heading 1</p>\n<p class=\"h2\">Heading 2</p>\n<p class=\"h3\">Heading 3</p>\n<p class=\"h4\">Heading 4</p>\n<p class=\"h5\">Heading 5</p>\n<p class=\"h6\">Heading 6</p>",
+       "path": "~/src/scss/config/_type-scale.scss",
+       "example": "\n<p class=\"h1\">Heading 1</p>\n<p class=\"h2\">Heading 2</p>\n<p class=\"h3\">Heading 3</p>\n<p class=\"h4\">Heading 4</p>\n<p class=\"h5\">Heading 5</p>\n<p class=\"h6\">Heading 6</p>",
+       "escaped": "\n&lt;p class=\"h1\"&gt;Heading 1&lt;/p&gt;\n&lt;p class=\"h2\"&gt;Heading 2&lt;/p&gt;\n&lt;p class=\"h3\"&gt;Heading 3&lt;/p&gt;\n&lt;p class=\"h4\"&gt;Heading 4&lt;/p&gt;\n&lt;p class=\"h5\"&gt;Heading 5&lt;/p&gt;\n&lt;p class=\"h6\"&gt;Heading 6&lt;/p&gt;"
+      }
+     ]
+    }
+   ],
+   "typography": [
+    {
+     "name": "Typography",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Typography"
+      }
+     ],
+     "description": "<p>Change typographic weights, styles, and alignment with these utility styles.</p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<span>TBA</span>",
+       "path": "~/src/scss/config/_typography.scss",
+       "example": "\n<span>TBA</span>",
+       "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
+      }
+     ]
+    }
+   ]
+  },
   "components": {
    "article": [
     {
@@ -361,10 +561,10 @@
       {
        "lang": "markup",
        "description": "",
-       "modifier": "\n<section class=\"search-header  clearfix\">\n\t<div class=\"search-header__inner  col-12 sm-col-12 md-col-12 lg-col-8\">\n\t\t<label class=\"search-header__label\" for=\"search-header__input\">Skriv för att börja söka i terapirekommendationerna</label>\n\t\t<div class=\"search-header__input-wrapper\">\n\t\t\t<input class=\"search-header__input\" type=\"search\"  placeholder=\"Skriv här för att börja söka\" id=\"search-header__input\">\n\t\t\t <svg class=\"search-header__icon  icon\">\n\t\t\t \t<use xlink:href=\"#magnifying-glass\"/>\n\t\t\t </svg>\n\t\t\t <div class=\"search-header__results active\">\n\t\t\t </div>\n\t\t</div>\n\t\t<span class=\"search-header__example\">Ex. Behandling luftrörskatarr</span>\n\t</div>\n</section>",
+       "modifier": "\n<div class=\"col col-12 p4 relative inline-block\" style=\"background: #0e5aa4;\">\n<label class=\"search-header__label\" for=\"search-header__input\">Skriv för att börja söka i terapirekommendationerna</label>\n<span class=\"search-header\">\n\t<input class=\"search-header__input  hint\" type=\"search\">\n\t<input class=\"search-header__input\" id=\"search-header__input\" type=\"search\" placeholder=\"Skriv här för att börja söka\">\n\t<span class=\"search-header__results\">\n\t\t<div class=\"search-header__dataset-1\">\n\t\t\t<span class=\"search-header__suggestions\">\n\t\t\t\t<div class=\"search-header__suggestion\">\n\t\t\t\t\t<span class=\"search-header__hit\"><em>Syra</em>relaterade sjukdomar</span>\n\t\t\t\t\t<div class=\"search-header__breadcrumbs\">\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Kapitel</span>\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Delkapitel</span>\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Närmaste rubrik</span>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"search-header__suggestion\">\n\t\t\t\t\t<span class=\"search-header__hit\">Bensår</span>\n\t\t\t\t\t<div class=\"search-header__breadcrumbs\">\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Kapitel</span>\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Delkapitel</span>\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Närmaste rubrik</span>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"search-header__suggestion\">\n\t\t\t\t\t<span class=\"search-header__hit\">Benartärssjukdom</span>\n\t\t\t\t\t<div class=\"search-header__breadcrumbs\">\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Kapitel</span>\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Delkapitel</span>\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Närmaste rubrik</span>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"search-header__suggestion\">\n\t\t\t\t\t<span class=\"search-header__hit\">Benartärssjukdom</span>\n\t\t\t\t\t<div class=\"search-header__breadcrumbs\">\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Kapitel</span>\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Delkapitel</span>\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Närmaste rubrik</span>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\t\t\t\t\n\t\t\t\t<div class=\"search-header__suggestion\">\n\t\t\t\t\t<span class=\"search-header__hit\">Tobak</span>\n\t\t\t\t\t<div class=\"search-header__breadcrumbs\">\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Kapitel</span>\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Delkapitel</span>\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Närmaste rubrik?</span>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\t\n\t\t\t</span>\n\t\t</div>\n\t</span>\n</span>\n<span class=\"search-header__example\">Ex. Behandling luftrörskatarr</span>\n</div>",
        "path": "~/src/scss/components/_search-header.scss",
-       "example": "\n<section class=\"search-header  clearfix\">\n\t<div class=\"search-header__inner  col-12 sm-col-12 md-col-12 lg-col-8\">\n\t\t<label class=\"search-header__label\" for=\"search-header__input\">Skriv för att börja söka i terapirekommendationerna</label>\n\t\t<div class=\"search-header__input-wrapper\">\n\t\t\t<input class=\"search-header__input\" type=\"search\"  placeholder=\"Skriv här för att börja söka\" id=\"search-header__input\">\n\t\t\t <svg class=\"search-header__icon  icon\">\n\t\t\t \t<use xlink:href=\"#magnifying-glass\"/>\n\t\t\t </svg>\n\t\t\t <div class=\"search-header__results active\">\n\t\t\t </div>\n\t\t</div>\n\t\t<span class=\"search-header__example\">Ex. Behandling luftrörskatarr</span>\n\t</div>\n</section>",
-       "escaped": "\n&lt;section class=\"search-header  clearfix\"&gt;\n\t&lt;div class=\"search-header__inner  col-12 sm-col-12 md-col-12 lg-col-8\"&gt;\n\t\t&lt;label class=\"search-header__label\" for=\"search-header__input\"&gt;Skriv för att börja söka i terapirekommendationerna&lt;/label&gt;\n\t\t&lt;div class=\"search-header__input-wrapper\"&gt;\n\t\t\t&lt;input class=\"search-header__input\" type=\"search\"  placeholder=\"Skriv här för att börja söka\" id=\"search-header__input\"&gt;\n\t\t\t &lt;svg class=\"search-header__icon  icon\"&gt;\n\t\t\t \t&lt;use xlink:href=\"#magnifying-glass\"/&gt;\n\t\t\t &lt;/svg&gt;\n\t\t\t &lt;div class=\"search-header__results active\"&gt;\n\t\t\t &lt;/div&gt;\n\t\t&lt;/div&gt;\n\t\t&lt;span class=\"search-header__example\"&gt;Ex. Behandling luftrörskatarr&lt;/span&gt;\n\t&lt;/div&gt;\n&lt;/section&gt;"
+       "example": "\n<div class=\"col col-12 p4 relative inline-block\" style=\"background: #0e5aa4;\">\n<label class=\"search-header__label\" for=\"search-header__input\">Skriv för att börja söka i terapirekommendationerna</label>\n<span class=\"search-header\">\n\t<input class=\"search-header__input  hint\" type=\"search\">\n\t<input class=\"search-header__input\" id=\"search-header__input\" type=\"search\" placeholder=\"Skriv här för att börja söka\">\n\t<span class=\"search-header__results\">\n\t\t<div class=\"search-header__dataset-1\">\n\t\t\t<span class=\"search-header__suggestions\">\n\t\t\t\t<div class=\"search-header__suggestion\">\n\t\t\t\t\t<span class=\"search-header__hit\"><em>Syra</em>relaterade sjukdomar</span>\n\t\t\t\t\t<div class=\"search-header__breadcrumbs\">\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Kapitel</span>\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Delkapitel</span>\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Närmaste rubrik</span>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"search-header__suggestion\">\n\t\t\t\t\t<span class=\"search-header__hit\">Bensår</span>\n\t\t\t\t\t<div class=\"search-header__breadcrumbs\">\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Kapitel</span>\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Delkapitel</span>\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Närmaste rubrik</span>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"search-header__suggestion\">\n\t\t\t\t\t<span class=\"search-header__hit\">Benartärssjukdom</span>\n\t\t\t\t\t<div class=\"search-header__breadcrumbs\">\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Kapitel</span>\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Delkapitel</span>\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Närmaste rubrik</span>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"search-header__suggestion\">\n\t\t\t\t\t<span class=\"search-header__hit\">Benartärssjukdom</span>\n\t\t\t\t\t<div class=\"search-header__breadcrumbs\">\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Kapitel</span>\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Delkapitel</span>\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Närmaste rubrik</span>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\t\t\t\t\n\t\t\t\t<div class=\"search-header__suggestion\">\n\t\t\t\t\t<span class=\"search-header__hit\">Tobak</span>\n\t\t\t\t\t<div class=\"search-header__breadcrumbs\">\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Kapitel</span>\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Delkapitel</span>\n\t\t\t\t\t\t<span class=\"search-header__breadcrumb h6\">Närmaste rubrik?</span>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\t\n\t\t\t</span>\n\t\t</div>\n\t</span>\n</span>\n<span class=\"search-header__example\">Ex. Behandling luftrörskatarr</span>\n</div>",
+       "escaped": "\n&lt;div class=\"col col-12 p4 relative inline-block\" style=\"background: #0e5aa4;\"&gt;\n&lt;label class=\"search-header__label\" for=\"search-header__input\"&gt;Skriv för att börja söka i terapirekommendationerna&lt;/label&gt;\n&lt;span class=\"search-header\"&gt;\n\t&lt;input class=\"search-header__input  hint\" type=\"search\"&gt;\n\t&lt;input class=\"search-header__input\" id=\"search-header__input\" type=\"search\" placeholder=\"Skriv här för att börja söka\"&gt;\n\t&lt;span class=\"search-header__results\"&gt;\n\t\t&lt;div class=\"search-header__dataset-1\"&gt;\n\t\t\t&lt;span class=\"search-header__suggestions\"&gt;\n\t\t\t\t&lt;div class=\"search-header__suggestion\"&gt;\n\t\t\t\t\t&lt;span class=\"search-header__hit\"&gt;&lt;em&gt;Syra&lt;/em&gt;relaterade sjukdomar&lt;/span&gt;\n\t\t\t\t\t&lt;div class=\"search-header__breadcrumbs\"&gt;\n\t\t\t\t\t\t&lt;span class=\"search-header__breadcrumb h6\"&gt;Kapitel&lt;/span&gt;\n\t\t\t\t\t\t&lt;span class=\"search-header__breadcrumb h6\"&gt;Delkapitel&lt;/span&gt;\n\t\t\t\t\t\t&lt;span class=\"search-header__breadcrumb h6\"&gt;Närmaste rubrik&lt;/span&gt;\n\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t&lt;/div&gt;\n\t\t\t\t&lt;div class=\"search-header__suggestion\"&gt;\n\t\t\t\t\t&lt;span class=\"search-header__hit\"&gt;Bensår&lt;/span&gt;\n\t\t\t\t\t&lt;div class=\"search-header__breadcrumbs\"&gt;\n\t\t\t\t\t\t&lt;span class=\"search-header__breadcrumb h6\"&gt;Kapitel&lt;/span&gt;\n\t\t\t\t\t\t&lt;span class=\"search-header__breadcrumb h6\"&gt;Delkapitel&lt;/span&gt;\n\t\t\t\t\t\t&lt;span class=\"search-header__breadcrumb h6\"&gt;Närmaste rubrik&lt;/span&gt;\n\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t&lt;/div&gt;\n\t\t\t\t&lt;div class=\"search-header__suggestion\"&gt;\n\t\t\t\t\t&lt;span class=\"search-header__hit\"&gt;Benartärssjukdom&lt;/span&gt;\n\t\t\t\t\t&lt;div class=\"search-header__breadcrumbs\"&gt;\n\t\t\t\t\t\t&lt;span class=\"search-header__breadcrumb h6\"&gt;Kapitel&lt;/span&gt;\n\t\t\t\t\t\t&lt;span class=\"search-header__breadcrumb h6\"&gt;Delkapitel&lt;/span&gt;\n\t\t\t\t\t\t&lt;span class=\"search-header__breadcrumb h6\"&gt;Närmaste rubrik&lt;/span&gt;\n\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t&lt;/div&gt;\n\t\t\t\t&lt;div class=\"search-header__suggestion\"&gt;\n\t\t\t\t\t&lt;span class=\"search-header__hit\"&gt;Benartärssjukdom&lt;/span&gt;\n\t\t\t\t\t&lt;div class=\"search-header__breadcrumbs\"&gt;\n\t\t\t\t\t\t&lt;span class=\"search-header__breadcrumb h6\"&gt;Kapitel&lt;/span&gt;\n\t\t\t\t\t\t&lt;span class=\"search-header__breadcrumb h6\"&gt;Delkapitel&lt;/span&gt;\n\t\t\t\t\t\t&lt;span class=\"search-header__breadcrumb h6\"&gt;Närmaste rubrik&lt;/span&gt;\n\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t&lt;/div&gt;\t\t\t\t\n\t\t\t\t&lt;div class=\"search-header__suggestion\"&gt;\n\t\t\t\t\t&lt;span class=\"search-header__hit\"&gt;Tobak&lt;/span&gt;\n\t\t\t\t\t&lt;div class=\"search-header__breadcrumbs\"&gt;\n\t\t\t\t\t\t&lt;span class=\"search-header__breadcrumb h6\"&gt;Kapitel&lt;/span&gt;\n\t\t\t\t\t\t&lt;span class=\"search-header__breadcrumb h6\"&gt;Delkapitel&lt;/span&gt;\n\t\t\t\t\t\t&lt;span class=\"search-header__breadcrumb h6\"&gt;Närmaste rubrik?&lt;/span&gt;\n\t\t\t\t\t&lt;/div&gt;\n\t\t\t\t&lt;/div&gt;\t\n\t\t\t&lt;/span&gt;\n\t\t&lt;/div&gt;\n\t&lt;/span&gt;\n&lt;/span&gt;\n&lt;span class=\"search-header__example\"&gt;Ex. Behandling luftrörskatarr&lt;/span&gt;\n&lt;/div&gt;"
       }
      ]
     },
@@ -407,206 +607,6 @@
        "path": "~/src/scss/components/_table.scss",
        "example": "\n<table class=\"table\">\n    <thead>\n        <tr>\n            <th>Yummie <i class=\"icon icon-apple\"></i></th>\n            <th>Much</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>Gingerbread</td>\n            <td>9</td>\n        </tr>\n        <tr>\n            <td>Jelly-o</td>\n            <td>8</td>\n        </tr>\n        <tr>\n            <td>Apple pie</td>\n            <td>10</td>\n        </tr>\n        <tr>\n            <td>Apple pie</td>\n            <td>10</td>\n        </tr>\n        <tr>\n            <td>Apple pie</td>\n            <td>10</td>\n        </tr>\n    </tbody>\n    <tfoot>\n        <tr>\n            <td colspan=\"3\">Table foot</td>\n        </tr>\n    </tfoot>\n</table>",
        "escaped": "\n&lt;table class=\"table\"&gt;\n    &lt;thead&gt;\n        &lt;tr&gt;\n            &lt;th&gt;Yummie &lt;i class=\"icon icon-apple\"&gt;&lt;/i&gt;&lt;/th&gt;\n            &lt;th&gt;Much&lt;/th&gt;\n        &lt;/tr&gt;\n    &lt;/thead&gt;\n    &lt;tbody&gt;\n        &lt;tr&gt;\n            &lt;td&gt;Gingerbread&lt;/td&gt;\n            &lt;td&gt;9&lt;/td&gt;\n        &lt;/tr&gt;\n        &lt;tr&gt;\n            &lt;td&gt;Jelly-o&lt;/td&gt;\n            &lt;td&gt;8&lt;/td&gt;\n        &lt;/tr&gt;\n        &lt;tr&gt;\n            &lt;td&gt;Apple pie&lt;/td&gt;\n            &lt;td&gt;10&lt;/td&gt;\n        &lt;/tr&gt;\n        &lt;tr&gt;\n            &lt;td&gt;Apple pie&lt;/td&gt;\n            &lt;td&gt;10&lt;/td&gt;\n        &lt;/tr&gt;\n        &lt;tr&gt;\n            &lt;td&gt;Apple pie&lt;/td&gt;\n            &lt;td&gt;10&lt;/td&gt;\n        &lt;/tr&gt;\n    &lt;/tbody&gt;\n    &lt;tfoot&gt;\n        &lt;tr&gt;\n            &lt;td colspan=\"3\"&gt;Table foot&lt;/td&gt;\n        &lt;/tr&gt;\n    &lt;/tfoot&gt;\n&lt;/table&gt;"
-      }
-     ]
-    }
-   ]
-  },
-  "config": {
-   "align": [
-    {
-     "name": "Align",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Align"
-      }
-     ],
-     "description": "<p>Adjust vertical alignment with these utilities.</p>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<div>\n  <div class=\"table-cell\"><h1>Halland</h1></div>\n  <div class=\"table-cell align-baseline\">baseline</div>\n  <div class=\"table-cell align-top\">top</div>\n  <div class=\"table-cell align-middle\">middle</div>\n  <div class=\"table-cell align-bottom\">bottom</div>\n</div>",
-       "path": "~/src/scss/config/_align.scss",
-       "example": "\n<div>\n  <div class=\"table-cell\"><h1>Halland</h1></div>\n  <div class=\"table-cell align-baseline\">baseline</div>\n  <div class=\"table-cell align-top\">top</div>\n  <div class=\"table-cell align-middle\">middle</div>\n  <div class=\"table-cell align-bottom\">bottom</div>\n</div>",
-       "escaped": "\n&lt;div&gt;\n  &lt;div class=\"table-cell\"&gt;&lt;h1&gt;Halland&lt;/h1&gt;&lt;/div&gt;\n  &lt;div class=\"table-cell align-baseline\"&gt;baseline&lt;/div&gt;\n  &lt;div class=\"table-cell align-top\"&gt;top&lt;/div&gt;\n  &lt;div class=\"table-cell align-middle\"&gt;middle&lt;/div&gt;\n  &lt;div class=\"table-cell align-bottom\"&gt;bottom&lt;/div&gt;\n&lt;/div&gt;"
-      }
-     ]
-    }
-   ],
-   "flexbox": [
-    {
-     "name": "Flexbox",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Flexbox"
-      }
-     ],
-     "description": "<p>These flexbox-based utilities can replace the need for a grid system in many instances.</p>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<span>TBA</span>",
-       "path": "~/src/scss/config/_flexbox.scss",
-       "example": "\n<span>TBA</span>",
-       "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
-      }
-     ]
-    }
-   ],
-   "grid": [
-    {
-     "name": "Grid",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Grid"
-      }
-     ],
-     "description": "<p>This module contains responsive float and width utilities to create a variety of grid layouts. \nUse this module in combination with layout, white space, and other utilities. </p>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<span>TBA</span>",
-       "path": "~/src/scss/config/_grid.scss",
-       "example": "\n<span>TBA</span>",
-       "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
-      }
-     ]
-    }
-   ],
-   "layout": [
-    {
-     "name": "Layout",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Layout"
-      }
-     ],
-     "description": "<p>Change the default document flow with these display, float, and other utilities.</p>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<span>TBA</span>",
-       "path": "~/src/scss/config/_layout.scss",
-       "example": "\n<span>TBA</span>",
-       "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
-      }
-     ]
-    }
-   ],
-   "margin": [
-    {
-     "name": "Margin",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Margin"
-      }
-     ],
-     "description": "<p>Immutable margin utilities are based on a global white space scale defined with custom properties.</p>\n<p><h3>Naming Convention</h3>\nDue to the ubiquitous nature of setting margin, these utilities use a shorthand naming convention:</p>\n<table>\n  <thead>\n    <tr>\n        <th>Shorthand</th> \n        <th>Description</th>\n     </tr>\n    </thead>\n    <tbody>\n      <tr><td>m</td><td>Margin</td></tr>\n      <tr><td>t</td><td>Top</td></tr>\n      <tr><td>r</td><td>Right</td></tr>\n      <tr><td>b</td><td>Bottom</td></tr>\n      <tr><td>l</td><td>Left</td></tr>\n      <tr><td>x</td><td>X-axis (left and right)</td></tr>\n      <tr><td>y</td><td>Y-axis (top and bottom)</td></tr>\n      <tr><td>n</td><td>Negative</td> </tr>\n      <tr><td>0</td><td>0 reset</td> </tr>\n      <tr><td>1</td><td>$space-1 (.25rem)</td></tr>\n      <tr><td>2</td><td>$space-2 (.5rem)</td></tr>\n      <tr><td>3</td><td>$space-3 (1rem)</td></tr>\n      <tr><td>4</td><td>$space-4 (2rem)</td></tr>\n     <tr><td>5</td><td>$space-5 (4rem)</td></tr>\n     <tr><td>6</td><td>$space-6 (8rem)</td></tr>\n    </tbody>\n  </table>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "",
-       "path": "~/src/scss/config/_margin.scss",
-       "example": "",
-       "escaped": ""
-      }
-     ]
-    }
-   ],
-   "padding": [
-    {
-     "name": "Padding",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Padding"
-      }
-     ],
-     "description": "<p>Immutable padding utilities are based on a global white space scale defined with custom properties. </p>\n<p><h3>Naming Convention</h3>\nDue to the ubiquitous nature of setting padding, these utilities use a shorthand naming convention:</p>\n<table class=\"mb2 table-flush table-light\">\n    <thead>\n      <tr>\n        <th>Shorthand</th>\n        <th>Description</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr><td>p</td><td>Padding</td></tr>\n      <tr><td>t</td><td>Top</td></tr>\n      <tr><td>r</td><td>Right</td></tr>\n      <tr><td>b</td><td>Bottom</td></tr>\n      <tr><td>l</td><td>Left</td></tr>\n      <tr><td>x</td><td>X-axis (left and right)</td></tr>\n      <tr><td>y</td><td>Y-axis (top and bottom)</td></tr>\n      <tr><td>n</td><td>Negative (margin only)</td></tr>\n      <tr><td>0</td><td>0 reset</td> </tr>\n      <tr><td>1</td><td>$space-1 (.25rem)</td></tr>\n      <tr><td>2</td><td>$space-2 (.5rem)</td></tr>\n      <tr><td>3</td><td>$space-3 (1rem)</td></tr>\n      <tr><td>4</td><td>$space-4 (2rem)</td></tr>\n     <tr><td>5</td><td>$space-5 (4rem)</td></tr>\n     <tr><td>5</td><td>$space-6 (6rem)</td></tr>\n    </tbody>\n  </table>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<div class=\"pb1\">This will have a padding bottom</div>",
-       "path": "~/src/scss/config/_padding.scss",
-       "example": "\n<div class=\"pb1\">This will have a padding bottom</div>",
-       "escaped": "\n&lt;div class=\"pb1\"&gt;This will have a padding bottom&lt;/div&gt;"
-      }
-     ]
-    }
-   ],
-   "position": [
-    {
-     "name": "Position",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Position"
-      }
-     ],
-     "description": "<p>This module includes basic positioning utilities to alter the default document flow. \nUse positions with caution. They are often unnecessary and commonly misused.</p>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "",
-       "path": "~/src/scss/config/_position.scss",
-       "example": "",
-       "escaped": ""
-      }
-     ]
-    }
-   ],
-   "typescale": [
-    {
-     "name": "Typescale",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Typescale"
-      }
-     ],
-     "description": "<p>This module provides utilities for adjusting font-size.</p>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<p class=\"h1\">Heading 1</p>\n<p class=\"h2\">Heading 2</p>\n<p class=\"h3\">Heading 3</p>\n<p class=\"h4\">Heading 4</p>\n<p class=\"h5\">Heading 5</p>\n<p class=\"h6\">Heading 6</p>",
-       "path": "~/src/scss/config/_type-scale.scss",
-       "example": "\n<p class=\"h1\">Heading 1</p>\n<p class=\"h2\">Heading 2</p>\n<p class=\"h3\">Heading 3</p>\n<p class=\"h4\">Heading 4</p>\n<p class=\"h5\">Heading 5</p>\n<p class=\"h6\">Heading 6</p>",
-       "escaped": "\n&lt;p class=\"h1\"&gt;Heading 1&lt;/p&gt;\n&lt;p class=\"h2\"&gt;Heading 2&lt;/p&gt;\n&lt;p class=\"h3\"&gt;Heading 3&lt;/p&gt;\n&lt;p class=\"h4\"&gt;Heading 4&lt;/p&gt;\n&lt;p class=\"h5\"&gt;Heading 5&lt;/p&gt;\n&lt;p class=\"h6\"&gt;Heading 6&lt;/p&gt;"
-      }
-     ]
-    }
-   ],
-   "typography": [
-    {
-     "name": "Typography",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Typography"
-      }
-     ],
-     "description": "<p>Change typographic weights, styles, and alignment with these utility styles.</p>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<span>TBA</span>",
-       "path": "~/src/scss/config/_typography.scss",
-       "example": "\n<span>TBA</span>",
-       "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
       }
      ]
     }
