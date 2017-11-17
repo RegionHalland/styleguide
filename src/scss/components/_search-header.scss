@@ -29,9 +29,9 @@
 //						<span class="search-header__hit">Bensår</span>
 //						<div class="search-header__breadcrumbs">
 //							<span class="search-header__breadcrumb h6">Kapitel</span>
-//							<svg class="search-header__breadcrumb-icon  icon"><use xlink:href="#compass"/></svg>
+//							<svg class="search-header__breadcrumb icon"><use xlink:href="#arrow-right"/></svg>
 //							<span class="search-header__breadcrumb h6">Delkapitel</span>
-//							<svg class="search-header__breadcrumb-icon  icon"><use xlink:href="#compass"/></svg>
+//							<svg class="search-header__breadcrumb icon"><use xlink:href="#arrow-right"/></svg>
 //							<span class="search-header__breadcrumb h6">Närmaste rubrik</span>
 //						</div>
 //					</div>
@@ -39,7 +39,9 @@
 //						<span class="search-header__hit">Benartärssjukdom</span>
 //						<div class="search-header__breadcrumbs">
 //							<span class="search-header__breadcrumb h6">Kapitel</span>
+//							<svg class="search-header__breadcrumb icon"><use xlink:href="#arrow-right"/></svg>
 //							<span class="search-header__breadcrumb h6">Delkapitel</span>
+//							<svg class="search-header__breadcrumb icon"><use xlink:href="#arrow-right"/></svg>
 //							<span class="search-header__breadcrumb h6">Närmaste rubrik</span>
 //						</div>
 //					</div>
@@ -47,7 +49,9 @@
 //						<span class="search-header__hit">Benartärssjukdom</span>
 //						<div class="search-header__breadcrumbs">
 //							<span class="search-header__breadcrumb h6">Kapitel</span>
+//							<svg class="search-header__breadcrumb icon"><use xlink:href="#arrow-right"/></svg>
 //							<span class="search-header__breadcrumb h6">Delkapitel</span>
+//							<svg class="search-header__breadcrumb icon"><use xlink:href="#arrow-right"/></svg>
 //							<span class="search-header__breadcrumb h6">Närmaste rubrik</span>
 //						</div>
 //					</div>				
@@ -55,8 +59,10 @@
 //						<span class="search-header__hit">Tobak</span>
 //						<div class="search-header__breadcrumbs">
 //							<span class="search-header__breadcrumb h6">Kapitel</span>
+//							<svg class="search-header__breadcrumb icon"><use xlink:href="#arrow-right"/></svg>
 //							<span class="search-header__breadcrumb h6">Delkapitel</span>
-//							<span class="search-header__breadcrumb h6">Närmaste rubrik?</span>
+//							<svg class="search-header__breadcrumb icon"><use xlink:href="#arrow-right"/></svg>
+//							<span class="search-header__breadcrumb h6">Närmaste rubrik</span>
 //						</div>
 //					</div>	
 //				</span>
@@ -151,11 +157,13 @@
 	line-height: 1;
 }
 
+.search-header__breadcrumbs {
+	display: flex;
+	align-items: center;
+}
 
-
-
-
-
-
+.search-header__breadcrumb {
+	margin-right: $space-1;	
+}
 
 
