@@ -133,9 +133,11 @@
 	padding: $space-3;
 
 	&:hover,
-	&:focus {
+	&:focus,
+	&.cursor {
 		background: palette(grey, base);
 	}
+	
 	em {
 		font-style: normal;
 		font-weight: $bold-font-weight;
