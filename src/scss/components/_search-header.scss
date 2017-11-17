@@ -29,7 +29,9 @@
 //						<span class="search-header__hit">Bensår</span>
 //						<div class="search-header__breadcrumbs">
 //							<span class="search-header__breadcrumb h6">Kapitel</span>
+//							<svg class="search-header__breadcrumb-icon  icon"><use xlink:href="#compass"/></svg>
 //							<span class="search-header__breadcrumb h6">Delkapitel</span>
+//							<svg class="search-header__breadcrumb-icon  icon"><use xlink:href="#compass"/></svg>
 //							<span class="search-header__breadcrumb h6">Närmaste rubrik</span>
 //						</div>
 //					</div>
@@ -148,19 +150,6 @@
 .search-header__hit {
 	line-height: 1;
 }
-
-.search-header__breadcrumb {
-	margin-right: $space-1;
-
-	&+&::before {
-		content: "->";
-		display: inline-block;
-		margin-right: $space-1;
-	}
-}
-
-
-
 
 
 
