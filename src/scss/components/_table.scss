@@ -13,7 +13,11 @@
 //         </tr>
 //     </thead>
 //     <tbody>
-//         <tr>
+//         <tr class="table__subheader">
+//             <td>Gingerbread</td>
+//             <td>9</td>
+//         </tr>
+//         </tr>
 //             <td>Gingerbread</td>
 //             <td>9</td>
 //         </tr>
@@ -50,8 +54,14 @@
 	// https://stackoverflow.com/questions/25591499/chrome-bug-with-colspan-and-border
 	box-shadow: 1px 0 0 0 palette(grey, light);
 
-	thead {
-		border-bottom: 1px solid palette(grey, light);
+	thead,
+	.table__header {
+		background: $dark-blue;
+		color: $white;
+	}
+
+	.table__subheader {
+		background: $light-blue;
 	}
 
 	td, th {
@@ -59,7 +69,7 @@
 	}
 
 	tbody tr:nth-child(even) {
-		background: palette(grey, x-light);
+		background: palette(grey, light);
 	}
 
     tbody + tfoot {
