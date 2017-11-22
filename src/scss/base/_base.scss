@@ -41,10 +41,10 @@ table {
 	max-width: 100%;
 }
 
-th { 
+th,
+thead { 
 	font-weight: $bold-font-weight;
 	vertical-align: bottom; 
-	text-align: left;
 }	
 
 img {

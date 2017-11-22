@@ -7,15 +7,14 @@
 // @markup
 // <table class="table">
 //     <thead>
-//         <tr>
-//             <th>Yummie <i class="icon icon-apple"></i></th>
-//             <th>Much</th>
-//         </tr>
+//	       <tr>
+//	           <th colspan="2">What is good</th>
+//	       </tr>
 //     </thead>
 //     <tbody>
 //         <tr class="table__subheader">
-//             <td>Gingerbread</td>
-//             <td>9</td>
+//             <td>Good</td>
+//             <td>Amount</td>
 //         </tr>
 //         </tr>
 //             <td>Gingerbread</td>
@@ -58,6 +57,7 @@
 	.table__header {
 		background: $dark-blue;
 		color: $white;
+		text-align: center;
 	}
 
 	.table__subheader {
