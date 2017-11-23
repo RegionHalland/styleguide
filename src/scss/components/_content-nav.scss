@@ -8,16 +8,15 @@
 // @state :active - Highlights when hovering.
 // 
 // @markup
-// <nav>
+// <nav class="content-nav">
 // 	<span class="content-nav__heading">Innehållsmeny</span>
-// 	<ul class="content-nav">
+// 	<ul class="content-nav__list">
 // 		<li class="content-nav__item"><a class="content-nav__link" href="#">Behandling</a></li>
 // 		<li class="content-nav__item active"><a class="content-nav__link" href="#">Kontakt</a></li>
 // 		<li class="content-nav__item"><a class="content-nav__link" href="#">Hosta</a></li>
 // 		<li class="content-nav__item"><a class="content-nav__link" href="#">Farliga läkemedel</a></li>
 // 	</ul>
 // </nav>
-
 
 .content-nav__heading  {
 	font-weight: $bold-font-weight;
