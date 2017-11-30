@@ -1,3 +1,23 @@
+//
+// @name Colors
+// @description
+//
+// @page Components/Colors
+//
+// @description Use to wrap articles.
+//
+// @markup
+// <div class="color">
+// 	<div class="color__block dark-blue">
+// 	</div>
+// 	<div class="color__description">
+// 		<span class="color__section">#444444</span>
+// 		<span class="color__section">.fill-blue</span>
+// 		<span class="color__section">.background-blue</span>
+// 		<span class="color__section">.text-blue</span>
+// 	</div>
+// </div>
+
 .background-white     { background: $white}
 .background-black     { background: $black}
 .background-dark-blue { background: $dark-blue}

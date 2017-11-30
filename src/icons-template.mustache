@@ -13,12 +13,38 @@
 // @markup
 // <div>
 // {{#shapes}}
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#{{base}}"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#{{base}}</span>
+// </div>
 // {{/shapes}}
 // </div>
 //
+
+.icon-container {
+	border:1px solid palette(grey, base);
+	display:inline-block;
+	margin:$space-2;
+	border-radius:$border-radius;
+
+	&__inner {
+		height:120px;
+		width:200px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	&__name {
+		padding:$space-2;
+		background: palette(grey, base);
+		display: block;
+		text-align:center;
+	}
+}
 
 .icon {
 	display: inline-block;

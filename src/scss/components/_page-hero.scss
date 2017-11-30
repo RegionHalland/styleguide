@@ -1,3 +1,30 @@
+//
+// @name Page Hero
+// @page Components/Hero
+//
+// @description 
+// A Page Hero
+//
+// 
+// @markup
+// <div class="page-hero">
+// 		<div class="page-hero__img-container">
+// 			<picture>
+// 				<source srcset="../dist/img/hero-image.jpg" media="(min-width: 600px)">
+// 				<source srcset="../dist/img/hero-image-mobile.jpg">
+// 				<img class="page-hero__img" src="../dist/img/hero-image.jpg" alt="">
+// 			</picture>
+// 		</div>
+// 		<div class="page-hero__inner clearfix">
+// 			<div class="page-hero__content col-12 sm-col-10">		
+// 				<h1 class="page-hero__title">
+// 					Digital Styleguide
+// 				</h1>
+// 			</div>
+// 		</div>
+// 	</div>
+
+
 .page-hero {
 	position:relative;
 }

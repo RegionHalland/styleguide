@@ -13,904 +13,2045 @@
 // @markup
 // <div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#account-login"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#account-login</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#account-logout"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#account-logout</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#action-redo"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#action-redo</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#action-undo"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#action-undo</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#align-center"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#align-center</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#align-left"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#align-left</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#align-right"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#align-right</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#aperture"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#aperture</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#arrow-bottom"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#arrow-bottom</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#arrow-circle-bottom"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#arrow-circle-bottom</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#arrow-circle-left"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#arrow-circle-left</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#arrow-circle-right"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#arrow-circle-right</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#arrow-circle-top"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#arrow-circle-top</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#arrow-left"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#arrow-left</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#arrow-right"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#arrow-right</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#arrow-thick-bottom"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#arrow-thick-bottom</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#arrow-thick-left"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#arrow-thick-left</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#arrow-thick-right"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#arrow-thick-right</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#arrow-thick-top"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#arrow-thick-top</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#arrow-top"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#arrow-top</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#audio"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#audio</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#audio-spectrum"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#audio-spectrum</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#badge"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#badge</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#ban"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#ban</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#bar-chart"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#bar-chart</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#basket"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#basket</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#battery-empty"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#battery-empty</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#battery-full"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#battery-full</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#beaker"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#beaker</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#bell"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#bell</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#bluetooth"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#bluetooth</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#bold"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#bold</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#bolt"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#bolt</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#book"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#book</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#bookmark"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#bookmark</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#box"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#box</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#briefcase"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#briefcase</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#british-pound"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#british-pound</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#browser"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#browser</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#brush"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#brush</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#bug"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#bug</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#bullhorn"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#bullhorn</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#calculator"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#calculator</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#calendar"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#calendar</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#camera-slr"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#camera-slr</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#caret-bottom"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#caret-bottom</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#caret-left"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#caret-left</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#caret-right"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#caret-right</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#caret-top"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#caret-top</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#cart"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#cart</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#chat"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#chat</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#check"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#check</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#chevron-bottom"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#chevron-bottom</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#chevron-left"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#chevron-left</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#chevron-right"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#chevron-right</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#chevron-top"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#chevron-top</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#circle-check"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#circle-check</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#circle-x"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#circle-x</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#clipboard"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#clipboard</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#clock"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#clock</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#cloud"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#cloud</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#cloud-download"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#cloud-download</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#cloud-upload"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#cloud-upload</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#cloudy"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#cloudy</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#code"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#code</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#cog"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#cog</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#collapse-down"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#collapse-down</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#collapse-left"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#collapse-left</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#collapse-right"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#collapse-right</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#collapse-up"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#collapse-up</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#command"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#command</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#comment-square"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#comment-square</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#compass"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#compass</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#contrast"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#contrast</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#copywriting"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#copywriting</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#credit-card"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#credit-card</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#crop"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#crop</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#dashboard"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#dashboard</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#data-transfer-download"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#data-transfer-download</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#data-transfer-upload"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#data-transfer-upload</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#delete"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#delete</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#dial"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#dial</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#document"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#document</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#dollar"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#dollar</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#double-quote-sans-left"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#double-quote-sans-left</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#double-quote-sans-right"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#double-quote-sans-right</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#double-quote-serif-left"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#double-quote-serif-left</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#double-quote-serif-right"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#double-quote-serif-right</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#droplet"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#droplet</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#eject"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#eject</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#elevator"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#elevator</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#ellipses"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#ellipses</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#envelope-closed"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#envelope-closed</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#envelope-open"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#envelope-open</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#euro"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#euro</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#excerpt"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#excerpt</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#expand-down"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#expand-down</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#expand-left"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#expand-left</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#expand-right"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#expand-right</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#expand-up"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#expand-up</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#external-link"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#external-link</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#eye"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#eye</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#eyedropper"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#eyedropper</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#file"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#file</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#fire"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#fire</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#flag"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#flag</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#flash"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#flash</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#folder"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#folder</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#fork"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#fork</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#fullscreen-enter"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#fullscreen-enter</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#fullscreen-exit"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#fullscreen-exit</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#globe"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#globe</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#graph"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#graph</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#grid-four-up"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#grid-four-up</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#grid-three-up"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#grid-three-up</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#grid-two-up"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#grid-two-up</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#hard-drive"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#hard-drive</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#header"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#header</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#headphones"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#headphones</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#heart"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#heart</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#home"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#home</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#image"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#image</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#inbox"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#inbox</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#infinity"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#infinity</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#info"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#info</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#italic"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#italic</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#justify-center"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#justify-center</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#justify-left"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#justify-left</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#justify-right"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#justify-right</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#key"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#key</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#laptop"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#laptop</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#layers"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#layers</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#lightbulb"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#lightbulb</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#link-broken"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#link-broken</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#link-intact"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#link-intact</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#list"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#list</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#list-rich"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#list-rich</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#location"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#location</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#lock-locked"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#lock-locked</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#lock-unlocked"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#lock-unlocked</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#loop"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#loop</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#loop-circular"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#loop-circular</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#loop-square"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#loop-square</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#magnifying-glass"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#magnifying-glass</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#map"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#map</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#map-marker"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#map-marker</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#media-pause"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#media-pause</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#media-play"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#media-play</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#media-record"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#media-record</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#media-skip-backward"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#media-skip-backward</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#media-skip-forward"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#media-skip-forward</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#media-step-backward"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#media-step-backward</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#media-step-forward"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#media-step-forward</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#media-stop"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#media-stop</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#medical-cross"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#medical-cross</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#menu"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#menu</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#microphone"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#microphone</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#minus"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#minus</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#monitor"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#monitor</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#moon"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#moon</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#move"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#move</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#musical-note"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#musical-note</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#paperclip"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#paperclip</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#pencil"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#pencil</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#people"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#people</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#person"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#person</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#phone"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#phone</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#pie-chart"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#pie-chart</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#pin"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#pin</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#play-circle"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#play-circle</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#plus"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#plus</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#power-standby"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#power-standby</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#print"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#print</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#project"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#project</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#pulse"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#pulse</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#puzzle-piece"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#puzzle-piece</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#question-mark"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#question-mark</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#rain"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#rain</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#random"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#random</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#reload"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#reload</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#resize-both"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#resize-both</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#resize-height"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#resize-height</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#resize-width"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#resize-width</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#rss"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#rss</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#rss-alt"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#rss-alt</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#script"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#script</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#share"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#share</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#share-boxed"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#share-boxed</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#shield"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#shield</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#signal"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#signal</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#signpost"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#signpost</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#sort-ascending"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#sort-ascending</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#sort-descending"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#sort-descending</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#spreadsheet"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#spreadsheet</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#star"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#star</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#sun"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#sun</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#tablet"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#tablet</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#tag"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#tag</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#tags"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#tags</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#target"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#target</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#task"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#task</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#terminal"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#terminal</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#text"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#text</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#thumb-down"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#thumb-down</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#thumb-up"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#thumb-up</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#timer"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#timer</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#transfer"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#transfer</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#translate"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#translate</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#trash"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#trash</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#underline"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#underline</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#vertical-align-bottom"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#vertical-align-bottom</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#vertical-align-center"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#vertical-align-center</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#vertical-align-top"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#vertical-align-top</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#video"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#video</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#volume-high"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#volume-high</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#volume-low"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#volume-low</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#volume-off"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#volume-off</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#warning"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#warning</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#wifi"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#wifi</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#wrench"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#wrench</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#x"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#x</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#yen"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#yen</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#zoom-in"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#zoom-in</span>
+// </div>
 // 
+// <div class="icon-container">
+//	 <div class="icon-container__inner">
 //	 <svg class="icon">
 //	 	<use xlink:href="#zoom-out"/>
 //	 </svg>
+//	</div>
+//	 <span class="icon-container__name">#zoom-out</span>
+// </div>
 // 
 // </div>
 //
+
+.icon-container {
+	border:1px solid palette(grey, base);
+	display:inline-block;
+	margin:$space-2;
+	border-radius:$border-radius;
+
+	&__inner {
+		height:120px;
+		width:200px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	&__name {
+		padding:$space-2;
+		background: palette(grey, base);
+		display: block;
+		text-align:center;
+	}
+}
 
 .icon {
 	display: inline-block;

@@ -9,51 +9,53 @@
 </head>
 <body class="">
 	<div class="support-header clearfix">
-		<a class="support-header__skip-link" href="">Hoppa till innehåll</a>
-		<ul class="support-header__links">
-			<li class="support-header__item has-dropdown">
-				<button class="support-header__link" href="">
-					<span class="support-header__link-text">Region Hallands Webbplatser</span>
-					<svg class="support-header__icon  icon icon--sm">
-						<use xlink:href="#caret-bottom"/>
-					</svg>
-				</button>
-				<ul class="support-header__dropdown">
-					<li>
-						<a href="" class="support-header__dropdown-link">
-							<span>www.regionhalland.se</span>
-							<svg class="support-header__dropdown-icon  icon icon--sm">
-								<use xlink:href="#share-boxed"/>
-							</svg>
-						</a>
-					</li>
-					<li>
-						<a href="" class="support-header__dropdown-link">
-							<span>www.regionhalland.se</span>
-							<svg class="support-header__dropdown-icon  icon icon--sm">
-								<use xlink:href="#share-boxed"/>
-							</svg>
-						</a>
-					</li>
-					<li>
-						<a href="" class="support-header__dropdown-link">
-							<span>www.regionhalland.se</span>
-							<svg class="support-header__dropdown-icon  icon icon--sm">
-								<use xlink:href="#share-boxed"/>
-							</svg>
-						</a>
-					</li>
-				</ul>
-			</li>
-			<li class="support-header__item">
-				<a class="support-header__link" href="">
-					<span class="support-header__link-text">Github</span>
-					<svg class="support-header__icon  icon icon--sm">
-						<use xlink:href="#headphones"/>
-					</svg>
-				</a>
-			</li>
-		</ul>
+		<div class="col-12 sm-col-10 mx-auto">
+			<a class="support-header__skip-link" href="">Hoppa till innehåll</a>
+			<ul class="support-header__links">
+				<li class="support-header__item has-dropdown">
+					<button class="support-header__link" href="">
+						<span class="support-header__link-text">Region Hallands Webbplatser</span>
+						<svg class="support-header__icon  icon icon--sm">
+							<use xlink:href="#caret-bottom"/>
+						</svg>
+					</button>
+					<ul class="support-header__dropdown">
+						<li>
+							<a href="" class="support-header__dropdown-link">
+								<span>www.regionhalland.se</span>
+								<svg class="support-header__dropdown-icon  icon icon--sm">
+									<use xlink:href="#share-boxed"/>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="" class="support-header__dropdown-link">
+								<span>www.regionhalland.se</span>
+								<svg class="support-header__dropdown-icon  icon icon--sm">
+									<use xlink:href="#share-boxed"/>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="" class="support-header__dropdown-link">
+								<span>www.regionhalland.se</span>
+								<svg class="support-header__dropdown-icon  icon icon--sm">
+									<use xlink:href="#share-boxed"/>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="support-header__item">
+					<a class="support-header__link" href="">
+						<span class="support-header__link-text">Github</span>
+						<svg class="support-header__icon  icon icon--sm">
+							<use xlink:href="#headphones"/>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
 	</div>
 	<nav class="mobile-nav">
 		<div class="mobile-navbar">
@@ -76,34 +78,20 @@
 			</ul>
 		</div>
 	</nav>
-	<nav class="site-nav">
-		<div class="top-nav">
-			<img class="top-nav__logo" src="../dist/img/logo.svg" alt="">
-			<ul class="top-nav__links">
-				<li><a class="top-nav__link" href="">UI-komponenter</a></li>
-				<li><a class="top-nav__link" href="">Sidmallar</a></li>
-				<li><a class="top-nav__link" href="">Kom igång</a></li>
-				<li><a class="top-nav__link" href="">Designprinciper</a></li>
-			</ul>
-		</div>
-	</nav>
-	<div class="page-hero mb4">
-		<div class="page-hero__img-container">
-			<picture>
-				<source srcset="../dist/img/hero-image.jpg" media="(min-width: 600px)">
-				<source srcset="../dist/img/hero-image-mobile.jpg">
-				<img class="page-hero__img" src="../dist/img/hero-image.jpg" alt="">
-			</picture>
-		</div>
-		<div class="page-hero__inner clearfix">
-			<div class="page-hero__content col-12 sm-col-10">		
-				<h1 class="page-hero__title">
-					Digital Styleguide
-				</h1>
+	<nav class="site-nav clearfix">
+		<div class="col-12 sm-col-10 mx-auto">
+			<div class="top-nav">
+				<img class="top-nav__logo" src="../dist/img/logo.svg" alt="">
+				<ul class="top-nav__links">
+					<li><a class="top-nav__link" href="">UI-komponenter</a></li>
+					<li><a class="top-nav__link" href="">Sidmallar</a></li>
+					<li><a class="top-nav__link" href="">Kom igång</a></li>
+					<li><a class="top-nav__link" href="">Designprinciper</a></li>
+				</ul>
 			</div>
 		</div>
-	</div>
-	<div class="clearfix">
+	</nav>
+	<div class="clearfix mt5">
 		<div class="col-12 sm-col-10 mx-auto">
 			<div class="col col-12 sm-col-3 md-col-3">
 				<nav class="mb4">

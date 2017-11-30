@@ -1,19 +1,22 @@
-//
-// @name Colors
-// @description
-//
-// @page Components/Colors
-//
-// @description Use to wrap articles.
-//
-// @markup
-// <article class="color">
-// 	<p>test</p>
-// </article>
-
 .color {
-	background:blue;
-	height:30px;
-	width:40px;
-	
+	border:1px solid palette(grey, base);
+	display:inline-block;
+	border-radius:$border-radius;
+	overflow:hidden;
+}
+
+.color__block {
+	background:$blue;
+	height:125px;
+	width:200px;
+
+	&.dark-blue {
+		background:$dark-blue;
+	}
+}
+
+.color__section {
+	padding:$space-2;
+	display:block;
+	border-top:1px solid palette(grey, base);
 }

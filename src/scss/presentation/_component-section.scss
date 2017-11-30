@@ -1,0 +1,30 @@
+.component-section {
+
+}
+
+.component-section__example {
+	padding:$space-3;
+	border:1px solid palette(grey, base);
+	border-radius:$border-radius;
+	margin:$space-2 0;
+}
+
+.component-section__modifiers {
+	padding:$space-3;
+	border:1px solid palette(grey, base);
+	border-radius:$border-radius;
+	margin:$space-2 0;
+}
+
+.component-section__modifier {
+	margin:$space-2 0;
+}
+
+.component-section__code {
+	padding:$space-2;
+	background:#000;
+	font-size:0.8em;
+	border-radius:$border-radius;
+	margin:$space-2 0;
+	color: #36ea9a;
+}
