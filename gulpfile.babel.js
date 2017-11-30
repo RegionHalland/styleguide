@@ -38,6 +38,7 @@ gulp.task('css:dist', () => {
 		.pipe(gulp.dest('./dist/css/'))
 });
 
+
 // Build temporary CSS 
 gulp.task('css:dev', () => {
 	// PostCSS plugins
@@ -124,6 +125,11 @@ gulp.task('fonts:dist', () => {
 		.pipe(gulp.dest('./dist/fonts/'))
 })
 
+gulp.task('img:dist', () => {
+	return gulp.src('./src/img/**/*')
+		.pipe(gulp.dest('./dist/img/'))
+})
+
 gulp.task('fonts:dev', () => {
 	return gulp.src('./src/fonts/*')
 		.pipe(gulp.dest('./dev/fonts/'))
@@ -144,6 +150,8 @@ gulp.task('bs-reload', () => {
 // Watch
 gulp.task('watch', ['css:dev', 'fonts:dev', 'sprite:dist', 'docs', 'browsersync'], () => {
 	gulp.watch('./src/scss/**/*.scss', ['css:dev', 'docs', 'bs-reload']);
+	gulp.watch('./src/img/**/*', ['img:dist', 'docs', 'bs-reload']);
 	// Watch for changes in icon template
 	gulp.watch('./src/icons-template.mustache', ['sprite:dist', 'css:dev', 'docs', 'bs-reload']);
+
 })

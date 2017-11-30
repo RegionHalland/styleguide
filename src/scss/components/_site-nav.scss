@@ -50,8 +50,8 @@
 .site-nav {
 	box-shadow: 0 1px 7px 0 rgba(0,0,0,0.16);
 	border-bottom:1px solid $darken-2;
-	display:none;
 	position:relative;
+	display:none;
 	@media (min-width: $breakpoint-sm) {
 		display:block;
 	}
@@ -72,21 +72,19 @@
 }
 
 .top-nav__links {
-	padding:0 $space-3;
 	flex-basis:100%;
 	display:flex;
 	border-top:1px solid $darken-2;
 	justify-content:center;
 	@media (min-width: $breakpoint-md) {
 		border-top:none;
-		padding:0 $space-4;
 		justify-content:flex-end;
 	}
 }
 .top-nav__link {
 	display:inline-block;
 	padding:1.45em 0;
-	margin:0 $space-2;
+	margin-left:$space-4;
 	font-weight:bold;
 	color:palette(black, xx-light);
 	font-size:0.95em;
@@ -112,19 +110,12 @@
 		color:$black;
 	}
 	&.active::after  {
-		background:$green;
+		background:$dark-blue;
 	}
 }
 
 .top-nav__logo {
-	background:palette(grey, light);
-	height:50px;
-	width:225px;
 	padding:$space-3 0;
-	border-radius:$border-radius;
-	@media (min-width: $breakpoint-md) {
-		padding:0;
-	}
 }
 
 

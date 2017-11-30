@@ -8,7 +8,8 @@
    "icons",
    "panel",
    "search",
-   "table"
+   "table",
+   "colors"
   ],
   "config": [
    "align",
@@ -111,12 +112,12 @@
        "section": "Navigation"
       }
      ],
-     "description": "<p>A really good component, fitting all your needs.</p>\n",
+     "description": "<p>This component is used for navigation article content.</p>\n",
      "state": [
       {
        "name": ":active",
        "escaped": ":active",
-       "description": "Highlights when hovering."
+       "description": "Applied to highlight the current article section."
       }
      ],
      "markup": [
@@ -407,6 +408,28 @@
        "path": "~/src/scss/components/_table.scss",
        "example": "\n<table class=\"table\">\n    <thead>\n       <tr>\n           <th colspan=\"2\">What is good</th>\n       </tr>\n    </thead>\n    <tbody>\n        <tr class=\"table__subheader\">\n            <td>Good</td>\n            <td>Amount</td>\n        </tr>\n        </tr>\n            <td>Gingerbread</td>\n            <td>9</td>\n        </tr>\n        <tr>\n            <td>Jelly-o</td>\n            <td>8</td>\n        </tr>\n        <tr>\n            <td>Apple pie</td>\n            <td>10</td>\n        </tr>\n        <tr>\n            <td>Apple pie</td>\n            <td>10</td>\n        </tr>\n        <tr>\n            <td>Apple pie</td>\n            <td>10</td>\n        </tr>\n    </tbody>\n    <tfoot>\n        <tr>\n            <td colspan=\"3\">Table foot</td>\n        </tr>\n    </tfoot>\n</table>",
        "escaped": "\n&lt;table class=\"table\"&gt;\n    &lt;thead&gt;\n       &lt;tr&gt;\n           &lt;th colspan=\"2\"&gt;What is good&lt;/th&gt;\n       &lt;/tr&gt;\n    &lt;/thead&gt;\n    &lt;tbody&gt;\n        &lt;tr class=\"table__subheader\"&gt;\n            &lt;td&gt;Good&lt;/td&gt;\n            &lt;td&gt;Amount&lt;/td&gt;\n        &lt;/tr&gt;\n        &lt;/tr&gt;\n            &lt;td&gt;Gingerbread&lt;/td&gt;\n            &lt;td&gt;9&lt;/td&gt;\n        &lt;/tr&gt;\n        &lt;tr&gt;\n            &lt;td&gt;Jelly-o&lt;/td&gt;\n            &lt;td&gt;8&lt;/td&gt;\n        &lt;/tr&gt;\n        &lt;tr&gt;\n            &lt;td&gt;Apple pie&lt;/td&gt;\n            &lt;td&gt;10&lt;/td&gt;\n        &lt;/tr&gt;\n        &lt;tr&gt;\n            &lt;td&gt;Apple pie&lt;/td&gt;\n            &lt;td&gt;10&lt;/td&gt;\n        &lt;/tr&gt;\n        &lt;tr&gt;\n            &lt;td&gt;Apple pie&lt;/td&gt;\n            &lt;td&gt;10&lt;/td&gt;\n        &lt;/tr&gt;\n    &lt;/tbody&gt;\n    &lt;tfoot&gt;\n        &lt;tr&gt;\n            &lt;td colspan=\"3\"&gt;Table foot&lt;/td&gt;\n        &lt;/tr&gt;\n    &lt;/tfoot&gt;\n&lt;/table&gt;"
+      }
+     ]
+    }
+   ],
+   "colors": [
+    {
+     "name": "Colors",
+     "description": "<p>Use to wrap articles.</p>\n",
+     "page": [
+      {
+       "nav": "Components",
+       "section": "Colors"
+      }
+     ],
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<article class=\"color\">\n\t<p>test</p>\n</article>",
+       "path": "~/src/scss/presentation/_colors.scss",
+       "example": "\n<article class=\"color\">\n\t<p>test</p>\n</article>",
+       "escaped": "\n&lt;article class=\"color\"&gt;\n\t&lt;p&gt;test&lt;/p&gt;\n&lt;/article&gt;"
       }
      ]
     }
