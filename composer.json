@@ -1,6 +1,7 @@
 {
     "name": "region-halland/styleguide",
     "require": {
-        "philo/laravel-blade": "^3.1"
+        "philo/laravel-blade": "^3.1",
+        "vlucas/phpdotenv": "^2.4"
     }
 }

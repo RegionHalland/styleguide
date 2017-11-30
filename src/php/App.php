@@ -2,6 +2,7 @@
 namespace Styleguide;
 
 use Philo\Blade\Blade;
+use Dotenv\Dotenv;
 define('DOCUMENTATION_SASS_PATH', './docs/docs.json');
 
 class App {
@@ -23,7 +24,9 @@ class App {
 			$this->section = [];
 		}
 
-
+		//Add .env file
+		$dotenv = new Dotenv(ROOT_PATH);
+		$dotenv->load();
 
 		$views = __DIR__ . '/views';
 		$cache = __DIR__ . '/cache';
