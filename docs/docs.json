@@ -279,7 +279,7 @@
        "section": "Button"
       }
      ],
-     "description": "<p>Solid button color style for use with the .btn base style.</p>\n",
+     "description": "<p>An outlined button for secondary actions</p>\n",
      "state": [
       {
        "name": ":hover",
@@ -583,7 +583,7 @@
        "section": "Hero"
       }
      ],
-     "description": "<p>A Page Hero</p>\n",
+     "description": "<p>A Page Hero that uses a 16:4.5 aspect ratio for tablet and up, otherwise a 4:3 aspect ratio.</p>\n",
      "markup": [
       {
        "lang": "markup",
