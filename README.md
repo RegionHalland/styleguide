@@ -9,8 +9,7 @@ $ yarn install
 $ composer install
 ```
 
-Create .env file (required)
-
+Create .env file (required) in root folder
 ```sh
 $ echo 'PRODUCTION="false"' > .env
 ```
