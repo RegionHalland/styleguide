@@ -133,9 +133,9 @@
 		border-bottom: 1px solid palette(grey, light);
 	}
 
-	&.active {
+	&.active > .vertical-nav__link {
 		background: palette(grey, light);
-		font-weight:bold;
+		font-weight: bold;
 	}
 
 	&:last-of-type {
