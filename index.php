@@ -6,6 +6,7 @@
 }*/
 //Run application
 //require_once 'Bootstrap.php';
+define('ROOT_PATH', __DIR__);
 $loader = require __DIR__ . '/vendor/autoload.php';
 $loader->addPsr4('Styleguide\\', __DIR__ . '/src/php');
 

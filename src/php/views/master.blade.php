@@ -2,7 +2,11 @@
 <html>
 <head>
 	<title>Styleguide</title>
+	@if (getenv('PRODUCTION') === 'true')
+	<link rel="stylesheet" type="text/css" href="../dist/css/main.min.css">
+	@else
 	<link rel="stylesheet" type="text/css" href="../dev/css/main.min.css">
+	@endif
 	<link rel="stylesheet" type="text/css" href="../dev/css/presentation.min.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
