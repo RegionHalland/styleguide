@@ -9,6 +9,12 @@ $ yarn install
 $ composer install
 ```
 
+Create .env file (required)
+
+```sh
+$ echo 'PRODUCTION="false"' > .env
+```
+
 ## Development
 
 Runs a browsersync server and watches for changes.
