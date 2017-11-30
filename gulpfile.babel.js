@@ -170,8 +170,9 @@ gulp.task('bs-reload', () => {
 });
 
 // Watch
-gulp.task('watch', ['css:dev', 'fonts:dev', 'sprite:dist', 'docs', 'browsersync'], () => {
+gulp.task('watch', ['css:dev', 'js:dev', 'fonts:dev', 'sprite:dist', 'docs', 'browsersync'], () => {
 	gulp.watch('./src/scss/**/*.scss', ['css:dev', 'docs', 'bs-reload']);
+	gulp.watch('./src/js/**/*.js', ['js:dev', 'docs', 'bs-reload']);
 	gulp.watch('./src/img/**/*', ['img:dist', 'docs', 'bs-reload']);
 	// Watch for changes in icon template
 	gulp.watch('./src/icons-template.mustache', ['sprite:dist', 'css:dev', 'docs', 'bs-reload']);
