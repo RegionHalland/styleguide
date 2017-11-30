@@ -1,20 +1,23 @@
 'use strict';
 
-import gulp from 'gulp'
-import plumber from 'gulp-plumber'
-import gutil from 'gulp-util'
-import rename from 'gulp-rename'
-import browsersync from 'browser-sync'
-import sourcemaps from 'gulp-sourcemaps'
-import sass from 'gulp-sass'
-import postcss from 'gulp-postcss'
-import autoprefixer from 'autoprefixer'
-import cssnano from 'cssnano'
-import svgmin from 'gulp-svgmin'
-import svgSprite from 'gulp-svg-sprite'
-import docs from 'gulp-docs'
+import gulp from 'gulp';
+import plumber from 'gulp-plumber';
+import gutil from 'gulp-util';
+import rename from 'gulp-rename';
+import browsersync from 'browser-sync';
+import sourcemaps from 'gulp-sourcemaps';
+import sass from 'gulp-sass';
+import postcss from 'gulp-postcss';
+import autoprefixer from 'autoprefixer';
+import cssnano from 'cssnano';
+import svgmin from 'gulp-svgmin';
+import svgSprite from 'gulp-svg-sprite';
+import concat from 'gulp-concat';
+import uglify from 'gulp-uglify';
+import docs from 'gulp-docs';
 
-// Build css
+
+// Build CSS
 gulp.task('css:dist', () => {
 	// PostCSS plugins
 	const plugins = [
@@ -22,12 +25,7 @@ gulp.task('css:dist', () => {
 		cssnano()
 	];
 	return gulp.src('./src/scss/**/*.scss')
-		.pipe(plumber({
-			errorHandler: error => {
-				gutil.beep();
-				console.log(error)
-			}
-		}))
+		.pipe(plumber())
 		.pipe(sourcemaps.init())
 		.pipe(sass())
 		.pipe(postcss(plugins))
@@ -35,7 +33,7 @@ gulp.task('css:dist', () => {
 		.pipe(browsersync.stream())
 		.pipe(sourcemaps.write())
 		.pipe(plumber.stop())
-		.pipe(gulp.dest('./dist/css/'))
+		.pipe(gulp.dest('./dist/css/'));
 });
 
 
@@ -47,20 +45,42 @@ gulp.task('css:dev', () => {
 		cssnano()
 	];
 	return gulp.src('./src/scss/**/*.scss')
-		.pipe(plumber({
-			errorHandler: error => {
-				gutil.beep();
-				console.log(error)
-			}
-		}))
+		.pipe(plumber())
 		.pipe(sourcemaps.init())
 		.pipe(sass())
 		.pipe(postcss(plugins))
+		.pipe(gulp.dest('./temp/css/'))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(browsersync.stream())
 		.pipe(sourcemaps.write())
 		.pipe(plumber.stop())
-		.pipe(gulp.dest('./dev/css/'))
+		.pipe(gulp.dest('./temp/css/'));
+});
+
+// Build JS
+gulp.task('js:dist', () => {
+	gulp.src('./src/js/**/*.js')
+		.pipe(plumber())
+		.pipe(concat('app.js'))
+		.pipe(gulp.dest('dist/js'))
+		.pipe(rename('app.min.js'))
+		.pipe(uglify())
+		.pipe(plumber.stop())
+		.pipe(gulp.dest('dist/js'));
+});
+
+// Build temporary JS
+gulp.task('js:dev', () => {
+	gulp.src('./src/js/**/*.js')
+		.pipe(plumber())
+		.pipe(sourcemaps.init())
+		.pipe(concat('app.js'))
+		.pipe(sourcemaps.write())
+		.pipe(gulp.dest('temp/js'))
+		.pipe(rename('app.min.js'))
+		.pipe(uglify())
+		.pipe(plumber.stop())
+		.pipe(gulp.dest('temp/js'));
 });
 
 // Generate docs.json
@@ -69,24 +89,24 @@ gulp.task('docs', () => {
 		.pipe(docs({
 			fileName: 'docs',
 			parsers: {
-                // @state :hover - When the button is hovered over.
+				// @state :hover - When the button is hovered over.
 				state: function(i, line, block, file, endOfBlock) {
-                    var values = line.split(' - '),
-                    states = (values[0]) ? (values[0].replace(":::", ":").replace("::", ":")) : "";
+					var values = line.split(' - '),
+					states = (values[0]) ? (values[0].replace(":::", ":").replace("::", ":")) : "";
 
-                    return {
-                        name: states,
-                        escaped: states.replace(":", " :").replace(".", " ").trim(),
-                        description: (values[1]) ? values[1].trim() : ""
-                    };
-            	}
-            }
+					return {
+						name: states,
+						escaped: states.replace(":", " :").replace(".", " ").trim(),
+						description: (values[1]) ? values[1].trim() : ""
+					};
+				}
+			}
 		}))
 		.pipe(gulp.dest('./docs/'));
 });
 
 // Create SVG sprite from icons in ./src/icons
-gulp.task('sprite:dist', () => {
+gulp.task('sprite:dist', ['svg-min'], () => {
 	return gulp.src('./src/icons/**/*.svg')
 		.pipe(svgSprite({
 			mode: {
@@ -119,20 +139,22 @@ gulp.task('svg-min', () => {
 		.pipe(gulp.dest('./src/icons'))
 });
 
-// Copy fonts to the dist directory
+// Copy fonts to temporary directory
 gulp.task('fonts:dist', () => {
 	return gulp.src('./src/fonts/*')
 		.pipe(gulp.dest('./dist/fonts/'))
-})
+});
 
+// Copy fonts to the dist directory
+gulp.task('fonts:dev', () => {
+	return gulp.src('./src/fonts/*')
+		.pipe(gulp.dest('./temp/fonts/'))
+});
+
+// Clean images
 gulp.task('img:dist', () => {
 	return gulp.src('./src/img/**/*')
 		.pipe(gulp.dest('./dist/img/'))
-})
-
-gulp.task('fonts:dev', () => {
-	return gulp.src('./src/fonts/*')
-		.pipe(gulp.dest('./dev/fonts/'))
 })
 
 // Browsersync
@@ -153,5 +175,10 @@ gulp.task('watch', ['css:dev', 'fonts:dev', 'sprite:dist', 'docs', 'browsersync'
 	gulp.watch('./src/img/**/*', ['img:dist', 'docs', 'bs-reload']);
 	// Watch for changes in icon template
 	gulp.watch('./src/icons-template.mustache', ['sprite:dist', 'css:dev', 'docs', 'bs-reload']);
+});
 
-})
+
+// Production
+gulp.task('dist', ['css:dist', 'sprite:dist', 'js:dist', 'fonts:dist', 'img:dist', 'docs' ], () => {
+
+});
