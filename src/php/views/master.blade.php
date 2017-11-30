@@ -2,12 +2,11 @@
 <html>
 <head>
 	<title>Styleguide</title>
-	@if (getenv('PRODUCTION') === 'true')
-	<link rel="stylesheet" type="text/css" href="../dist/css/main.min.css">
-	@else
-	<link rel="stylesheet" type="text/css" href="../dev/css/main.min.css">
-	@endif
-	<link rel="stylesheet" type="text/css" href="../dev/css/presentation.min.css">
+	@php 
+		$env = getenv('PRODUCTION') === 'true' ? 'dist' : 'temp';
+	@endphp
+	<link rel="stylesheet" type="text/css" href="../{{ $env }}/css/main.min.css">
+	<link rel="stylesheet" type="text/css" href="../{{ $env }}/css/presentation.min.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -125,15 +124,6 @@
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.8.1/prism.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script>
-	// Get spritesheet
-	// In a real world project, change the URL to where the styleguide lives.
-	$.get('/dist/icons/sprite.svg', function(data) {
-		var div = document.createElement('div');
-		div.className = 'display-none';
-		div.innerHTML = new XMLSerializer().serializeToString(data.documentElement);
-		document.body.insertBefore(div, document.body.childNodes[0]);
-	});
-	</script>
+	<script src="../{{ $env }}/js/app.min.js"></script>
 </body>
 </html>
