@@ -3,6 +3,7 @@
 	display:inline-block;
 	border-radius:$border-radius;
 	overflow:hidden;
+	margin:$space-2;
 }
 
 .color__block {
@@ -12,6 +13,12 @@
 
 	&.dark-blue {
 		background:$dark-blue;
+	}
+	&.blue {
+		background:$blue;
+	}
+	&.yellow {
+		background:$yellow;
 	}
 }
 

@@ -29,7 +29,7 @@ $border-radius: 3px;
 
 // Colors
 $white: #FFFFFF;
-$grey: #F6F6F6;
+$grey: #e4e4e4;
 $black: #000000;
 
 $dark-blue: #0E5AA4;
@@ -60,7 +60,7 @@ $palettes: (
 		x-dark   : darken($black, 24%)
 	),
 	blue: (
-		light    : lighten($blue, 10%),
+		light    : lighten($blue, 2.5%),
 		base     : $blue,
 		dark     : darken($blue, 8%),
 	),

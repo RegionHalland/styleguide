@@ -1,0 +1,19 @@
+.flex-grid {
+	padding:$space-4;
+	background:palette(grey, x-light);
+	margin-top:$space-3;
+	border-radius:$border-radius;
+	&.height {
+		height:200px;
+	}
+}
+
+.flex-grid-item {
+	height:50px;
+	background:palette(grey, base);
+	border-radius:$border-radius;
+	margin:0 $space-2;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}

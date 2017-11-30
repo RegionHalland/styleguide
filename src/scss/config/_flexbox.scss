@@ -4,9 +4,82 @@
 //
 // @description 
 // These flexbox-based utilities can replace the need for a grid system in many instances.
-//
+// <table class="component-table">
+//   <thead>
+// 	<tr>
+// 			<th class="left-align">Shorthand</th> 
+// 			<th class="left-align">Description</th>
+// 		 </tr>
+// 	</thead>
+// 	<tbody>
+// 	  <tr class="component-table__row">
+// 	  	<td><code class="component-section__code">.flex</code></td>
+// 	  	<td><code class="component-section__code">display:flex;</code></td>
+// 	  </tr>
+// 	  <tr class="component-table__row">
+// 	  	<td><code class="component-section__code">.inline-flex</code></td>
+// 	  	<td><code class="component-section__code">display:inline-flex;</code></td>
+// 	  </tr>
+// 	  <tr class="component-table__row">
+// 	  	<td><code class="component-section__code">.justify-start</code></td>
+// 	  	<td><code class="component-section__code">justify-content:start;</code></td>
+// 	  </tr>
+// 	  <tr class="component-table__row">
+// 	  	<td><code class="component-section__code">.justify-center</code></td>
+// 	  	<td><code class="component-section__code">justify-content:center;</code></td>
+// 	  </tr>
+// 	  <tr class="component-table__row">
+// 	  	<td><code class="component-section__code">.justify-end</code></td>
+// 	  	<td><code class="component-section__code">justify-content:end;</code></td>
+// 	  </tr>
+// 	  <tr class="component-table__row">
+// 	  	<td><code class="component-section__code">.items-start</code></td>
+// 	  	<td><code class="component-section__code">align-items:start;</code></td>
+// 	  </tr>
+// 	  <tr class="component-table__row">
+// 	  	<td><code class="component-section__code">.items-center</code></td>
+// 	  	<td><code class="component-section__code">align-items:center;</code></td>
+// 	  </tr>
+// 	  <tr class="component-table__row">
+// 	  	<td><code class="component-section__code">.items-end</code></td>
+// 	  	<td><code class="component-section__code">align-items:end;</code></td>
+// 	  </tr>
+// 	</tbody>
+// </table>
 // @markup
-//   <span>TBA</span>
+// <div class="clearfix flex-grid flex justify-start">
+// 	<div class="flex-grid-item col-3">.justify-start</div>
+// </div>
+// <div class="clearfix flex-grid flex justify-center">
+// 	<div class="flex-grid-item col-3">.justify-center</div>
+// </div>
+// <div class="clearfix flex-grid flex justify-end">
+// 	<div class="flex-grid-item col-3">.justify-end</div>
+// </div>
+// <div class="clearfix flex-grid height flex items-start">
+// 	<div class="flex-grid-item col-3">.items-start</div>
+// </div>
+// <div class="clearfix flex-grid height flex items-center">
+// 	<div class="flex-grid-item col-3">.items-center</div>
+// </div>
+// <div class="clearfix flex-grid height flex items-end">
+// 	<div class="flex-grid-item col-3">.items-end</div>
+// </div>
+// <div class="clearfix flex-grid flex justify-between">
+// 	<div class="flex-grid-item col-2">.justify-between</div>
+// 	<div class="flex-grid-item col-2">.justify-between</div>
+// 	<div class="flex-grid-item col-2">.justify-between</div>
+// </div>
+// <div class="clearfix flex-grid flex justify-around">
+// 	<div class="flex-grid-item col-2">.justify-between</div>
+// 	<div class="flex-grid-item col-2">.justify-between</div>
+// 	<div class="flex-grid-item col-2">.justify-between</div>
+// </div>
+// <div class="clearfix flex-grid flex">
+// 	<div class="flex-grid-item flex order-3 col-2">.order-3</div>
+// 	<div class="flex-grid-item flex order-2 col-2">.order-2</div>
+// 	<div class="flex-grid-item flex order-1 col-2">.order-1</div>
+// </div>
 // 
 
 

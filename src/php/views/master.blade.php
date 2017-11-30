@@ -100,6 +100,15 @@
 			<div class="col col-12 sm-col-3 md-col-3">
 				<nav class="mb4">
 				<ul class="vertical-nav">
+					<li class="vertical-nav__header">
+						<span class="vertical-nav__heading--dynamic">Alternativ</span>
+						<span class="vertical-nav__heading--static">UI-komponenter</span>
+						<button class="vertical-nav__button">
+			 				<svg class="vertical-nav__icon  icon">
+								<use xlink:href="#menu"/>
+							</svg>
+						</button>
+					</li>
 					@foreach ($nav as $item => $subitems)
 						<li class="vertical-nav__item static">{{$item}}</li>
 						

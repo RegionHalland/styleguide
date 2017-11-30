@@ -1,0 +1,35 @@
+//
+// @name Button Outline
+// @page Components/Button
+//
+// @description
+// Solid button color style for use with the .btn base style.
+//
+// @state :hover - Highlights when hovering.
+// @state .disabled - Disables button.
+//
+// @markup
+// <button class="btn btn-outline">Button</button>
+// 
+// 
+
+.btn-outline {
+	color: $dark-blue;
+	background:none;
+    border: 1px solid $dark-blue;
+
+	&:hover {
+		background: palette(light-blue, light);
+	}
+
+
+	&:active {
+		background:$darken-3;
+	}
+
+	&:disabled,
+	&.is-disabled {
+		opacity: .5;
+		pointer-events: none;
+	}
+}
