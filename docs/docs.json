@@ -1,17 +1,5 @@
 {
  "nav": {
-  "components": [
-   "article",
-   "button",
-   "navigation",
-   "forms",
-   "icons",
-   "hero",
-   "panel",
-   "search",
-   "table",
-   "colors"
-  ],
   "config": [
    "align",
    "flexbox",
@@ -22,10 +10,244 @@
    "position",
    "typescale",
    "typography"
+  ],
+  "components": [
+   "colors",
+   "article",
+   "button",
+   "navigation",
+   "forms",
+   "icons",
+   "hero",
+   "panel",
+   "search",
+   "table"
   ]
  },
  "pages": {
+  "config": {
+   "align": [
+    {
+     "name": "Align",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Align"
+      }
+     ],
+     "description": "<p>Adjust vertical alignment with these utilities.</p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<div>\n  <div class=\"table-cell\"><h1>Halland</h1></div>\n  <div class=\"table-cell align-baseline\">baseline</div>\n  <div class=\"table-cell align-top\">top</div>\n  <div class=\"table-cell align-middle\">middle</div>\n  <div class=\"table-cell align-bottom\">bottom</div>\n</div>",
+       "path": "~/src/scss/config/_align.scss",
+       "example": "\n<div>\n  <div class=\"table-cell\"><h1>Halland</h1></div>\n  <div class=\"table-cell align-baseline\">baseline</div>\n  <div class=\"table-cell align-top\">top</div>\n  <div class=\"table-cell align-middle\">middle</div>\n  <div class=\"table-cell align-bottom\">bottom</div>\n</div>",
+       "escaped": "\n&lt;div&gt;\n  &lt;div class=\"table-cell\"&gt;&lt;h1&gt;Halland&lt;/h1&gt;&lt;/div&gt;\n  &lt;div class=\"table-cell align-baseline\"&gt;baseline&lt;/div&gt;\n  &lt;div class=\"table-cell align-top\"&gt;top&lt;/div&gt;\n  &lt;div class=\"table-cell align-middle\"&gt;middle&lt;/div&gt;\n  &lt;div class=\"table-cell align-bottom\"&gt;bottom&lt;/div&gt;\n&lt;/div&gt;"
+      }
+     ]
+    }
+   ],
+   "flexbox": [
+    {
+     "name": "Flexbox",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Flexbox"
+      }
+     ],
+     "description": "<p>These flexbox-based utilities can replace the need for a grid system in many instances.</p>\n<table class=\"component-table\">\n  <thead>\n    <tr>\n            <th class=\"left-align\">Shorthand</th> \n            <th class=\"left-align\">Description</th>\n         </tr>\n    </thead>\n    <tbody>\n      <tr class=\"component-table__row\">\n          <td><code class=\"component-section__code\">.flex</code></td>\n          <td><code class=\"component-section__code\">display:flex;</code></td>\n      </tr>\n      <tr class=\"component-table__row\">\n          <td><code class=\"component-section__code\">.inline-flex</code></td>\n          <td><code class=\"component-section__code\">display:inline-flex;</code></td>\n      </tr>\n      <tr class=\"component-table__row\">\n          <td><code class=\"component-section__code\">.justify-start</code></td>\n          <td><code class=\"component-section__code\">justify-content:start;</code></td>\n      </tr>\n      <tr class=\"component-table__row\">\n          <td><code class=\"component-section__code\">.justify-center</code></td>\n          <td><code class=\"component-section__code\">justify-content:center;</code></td>\n      </tr>\n      <tr class=\"component-table__row\">\n          <td><code class=\"component-section__code\">.justify-end</code></td>\n          <td><code class=\"component-section__code\">justify-content:end;</code></td>\n      </tr>\n      <tr class=\"component-table__row\">\n          <td><code class=\"component-section__code\">.items-start</code></td>\n          <td><code class=\"component-section__code\">align-items:start;</code></td>\n      </tr>\n      <tr class=\"component-table__row\">\n          <td><code class=\"component-section__code\">.items-center</code></td>\n          <td><code class=\"component-section__code\">align-items:center;</code></td>\n      </tr>\n      <tr class=\"component-table__row\">\n          <td><code class=\"component-section__code\">.items-end</code></td>\n          <td><code class=\"component-section__code\">align-items:end;</code></td>\n      </tr>\n    </tbody>\n</table>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<div class=\"clearfix flex-grid flex justify-start\">\n\t<div class=\"flex-grid-item col-3\">.justify-start</div>\n</div>\n<div class=\"clearfix flex-grid flex justify-center\">\n\t<div class=\"flex-grid-item col-3\">.justify-center</div>\n</div>\n<div class=\"clearfix flex-grid flex justify-end\">\n\t<div class=\"flex-grid-item col-3\">.justify-end</div>\n</div>\n<div class=\"clearfix flex-grid height flex items-start\">\n\t<div class=\"flex-grid-item col-3\">.items-start</div>\n</div>\n<div class=\"clearfix flex-grid height flex items-center\">\n\t<div class=\"flex-grid-item col-3\">.items-center</div>\n</div>\n<div class=\"clearfix flex-grid height flex items-end\">\n\t<div class=\"flex-grid-item col-3\">.items-end</div>\n</div>\n<div class=\"clearfix flex-grid flex justify-between\">\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n</div>\n<div class=\"clearfix flex-grid flex justify-around\">\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n</div>\n<div class=\"clearfix flex-grid flex\">\n\t<div class=\"flex-grid-item flex order-3 col-2\">.order-3</div>\n\t<div class=\"flex-grid-item flex order-2 col-2\">.order-2</div>\n\t<div class=\"flex-grid-item flex order-1 col-2\">.order-1</div>\n</div>",
+       "path": "~/src/scss/config/_flexbox.scss",
+       "example": "\n<div class=\"clearfix flex-grid flex justify-start\">\n\t<div class=\"flex-grid-item col-3\">.justify-start</div>\n</div>\n<div class=\"clearfix flex-grid flex justify-center\">\n\t<div class=\"flex-grid-item col-3\">.justify-center</div>\n</div>\n<div class=\"clearfix flex-grid flex justify-end\">\n\t<div class=\"flex-grid-item col-3\">.justify-end</div>\n</div>\n<div class=\"clearfix flex-grid height flex items-start\">\n\t<div class=\"flex-grid-item col-3\">.items-start</div>\n</div>\n<div class=\"clearfix flex-grid height flex items-center\">\n\t<div class=\"flex-grid-item col-3\">.items-center</div>\n</div>\n<div class=\"clearfix flex-grid height flex items-end\">\n\t<div class=\"flex-grid-item col-3\">.items-end</div>\n</div>\n<div class=\"clearfix flex-grid flex justify-between\">\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n</div>\n<div class=\"clearfix flex-grid flex justify-around\">\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n</div>\n<div class=\"clearfix flex-grid flex\">\n\t<div class=\"flex-grid-item flex order-3 col-2\">.order-3</div>\n\t<div class=\"flex-grid-item flex order-2 col-2\">.order-2</div>\n\t<div class=\"flex-grid-item flex order-1 col-2\">.order-1</div>\n</div>",
+       "escaped": "\n&lt;div class=\"clearfix flex-grid flex justify-start\"&gt;\n\t&lt;div class=\"flex-grid-item col-3\"&gt;.justify-start&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"clearfix flex-grid flex justify-center\"&gt;\n\t&lt;div class=\"flex-grid-item col-3\"&gt;.justify-center&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"clearfix flex-grid flex justify-end\"&gt;\n\t&lt;div class=\"flex-grid-item col-3\"&gt;.justify-end&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"clearfix flex-grid height flex items-start\"&gt;\n\t&lt;div class=\"flex-grid-item col-3\"&gt;.items-start&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"clearfix flex-grid height flex items-center\"&gt;\n\t&lt;div class=\"flex-grid-item col-3\"&gt;.items-center&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"clearfix flex-grid height flex items-end\"&gt;\n\t&lt;div class=\"flex-grid-item col-3\"&gt;.items-end&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"clearfix flex-grid flex justify-between\"&gt;\n\t&lt;div class=\"flex-grid-item col-2\"&gt;.justify-between&lt;/div&gt;\n\t&lt;div class=\"flex-grid-item col-2\"&gt;.justify-between&lt;/div&gt;\n\t&lt;div class=\"flex-grid-item col-2\"&gt;.justify-between&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"clearfix flex-grid flex justify-around\"&gt;\n\t&lt;div class=\"flex-grid-item col-2\"&gt;.justify-between&lt;/div&gt;\n\t&lt;div class=\"flex-grid-item col-2\"&gt;.justify-between&lt;/div&gt;\n\t&lt;div class=\"flex-grid-item col-2\"&gt;.justify-between&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"clearfix flex-grid flex\"&gt;\n\t&lt;div class=\"flex-grid-item flex order-3 col-2\"&gt;.order-3&lt;/div&gt;\n\t&lt;div class=\"flex-grid-item flex order-2 col-2\"&gt;.order-2&lt;/div&gt;\n\t&lt;div class=\"flex-grid-item flex order-1 col-2\"&gt;.order-1&lt;/div&gt;\n&lt;/div&gt;"
+      }
+     ]
+    }
+   ],
+   "grid": [
+    {
+     "name": "Grid",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Grid"
+      }
+     ],
+     "description": "<p>This module contains responsive float and width utilities to create a variety of grid layouts. \nUse this module in combination with layout, white space, and other utilities. </p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<span>TBA</span>",
+       "path": "~/src/scss/config/_grid.scss",
+       "example": "\n<span>TBA</span>",
+       "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
+      }
+     ]
+    }
+   ],
+   "layout": [
+    {
+     "name": "Layout",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Layout"
+      }
+     ],
+     "description": "<p>Change the default document flow with these display, float, and other utilities.</p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<span>TBA</span>",
+       "path": "~/src/scss/config/_layout.scss",
+       "example": "\n<span>TBA</span>",
+       "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
+      }
+     ]
+    }
+   ],
+   "margin": [
+    {
+     "name": "Margin",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Margin"
+      }
+     ],
+     "description": "<p>Immutable margin utilities are based on a global white space scale defined with custom properties.</p>\n<p><h3>Naming Convention</h3>\nDue to the ubiquitous nature of setting margin, these utilities use a shorthand naming convention:</p>\n<table class=\"component-table\">\n  <thead>\n    <tr>\n        <th class=\"left-align\">Shorthand</th> \n        <th class=\"left-align\">Description</th>\n     </tr>\n    </thead>\n    <tbody>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.m</code></td><td>Margin</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.t</code></td><td>Top</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.r</code></td><td>Right</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.b</code></td><td>Bottom</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.l</code></td><td>Left</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.x</code></td><td>X-axis (left and right)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.y</code></td><td>Y-axis (top and bottom)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.n</code></td><td>Negative</td> </tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.0</code></td><td>0 reset</td> </tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.1</code></td><td>$space-1 (.25rem)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.2</code></td><td>$space-2 (.5rem)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.3</code></td><td>$space-3 (1rem)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.4</code></td><td>$space-4 (2rem)</td></tr>\n     <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.5</code></td><td>$space-5 (4rem)</td></tr>\n     <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.6</code></td><td>$space-6 (8rem)</td></tr>\n    </tbody>\n  </table>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<div class=\"component-box mt1\">\n\t<span>mt1</span>\n</div>\n<div class=\"component-box mt2\">\n\t<span>mt2</span>\n</div>\n<div class=\"component-box mt3\">\n\t<span>mt3</span>\n</div>",
+       "path": "~/src/scss/config/_margin.scss",
+       "example": "\n<div class=\"component-box mt1\">\n\t<span>mt1</span>\n</div>\n<div class=\"component-box mt2\">\n\t<span>mt2</span>\n</div>\n<div class=\"component-box mt3\">\n\t<span>mt3</span>\n</div>",
+       "escaped": "\n&lt;div class=\"component-box mt1\"&gt;\n\t&lt;span&gt;mt1&lt;/span&gt;\n&lt;/div&gt;\n&lt;div class=\"component-box mt2\"&gt;\n\t&lt;span&gt;mt2&lt;/span&gt;\n&lt;/div&gt;\n&lt;div class=\"component-box mt3\"&gt;\n\t&lt;span&gt;mt3&lt;/span&gt;\n&lt;/div&gt;"
+      }
+     ]
+    }
+   ],
+   "padding": [
+    {
+     "name": "Padding",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Padding"
+      }
+     ],
+     "description": "<p>Immutable padding utilities are based on a global white space scale defined with custom properties. </p>\n<p><h3>Naming Convention</h3>\nDue to the ubiquitous nature of setting padding, these utilities use a shorthand naming convention:</p>\n<table class=\"component-table\">\n    <thead>\n      <tr>\n        <th class=\"left-align\">Shorthand</th>\n        <th class=\"left-align\">Description</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">p</td><td>Padding</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">t</td><td>Top</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">r</td><td>Right</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">b</td><td>Bottom</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">l</td><td>Left</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">x</td><td>X-axis (left and right)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">y</td><td>Y-axis (top and bottom)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">n</td><td>Negative (margin only)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">0</td><td>0 reset</td> </tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">1</td><td>$space-1 (.25rem)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">2</td><td>$space-2 (.5rem)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">3</td><td>$space-3 (1rem)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">4</td><td>$space-4 (2rem)</td></tr>\n     <tr class=\"component-table__row\"><td><code class=\"component-section__code\">5</td><td>$space-5 (4rem)</td></tr>\n     <tr class=\"component-table__row\"><td><code class=\"component-section__code\">5</td><td>$space-6 (6rem)</td></tr>\n    </tbody>\n  </table>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<div class=\"pb1\">This will have a padding bottom</div>",
+       "path": "~/src/scss/config/_padding.scss",
+       "example": "\n<div class=\"pb1\">This will have a padding bottom</div>",
+       "escaped": "\n&lt;div class=\"pb1\"&gt;This will have a padding bottom&lt;/div&gt;"
+      }
+     ]
+    }
+   ],
+   "position": [
+    {
+     "name": "Position",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Position"
+      }
+     ],
+     "description": "<p>This module includes basic positioning utilities to alter the default document flow. \nUse positions with caution. They are often unnecessary and commonly misused.</p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "",
+       "path": "~/src/scss/config/_position.scss",
+       "example": "",
+       "escaped": ""
+      }
+     ]
+    }
+   ],
+   "typescale": [
+    {
+     "name": "Typescale",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Typescale"
+      }
+     ],
+     "description": "<p>This module provides utilities for adjusting font-size.</p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<p class=\"h1\">Heading 1</p>\n<p class=\"h2\">Heading 2</p>\n<p class=\"h3\">Heading 3</p>\n<p class=\"h4\">Heading 4</p>\n<p class=\"h5\">Heading 5</p>\n<p class=\"h6\">Heading 6</p>",
+       "path": "~/src/scss/config/_type-scale.scss",
+       "example": "\n<p class=\"h1\">Heading 1</p>\n<p class=\"h2\">Heading 2</p>\n<p class=\"h3\">Heading 3</p>\n<p class=\"h4\">Heading 4</p>\n<p class=\"h5\">Heading 5</p>\n<p class=\"h6\">Heading 6</p>",
+       "escaped": "\n&lt;p class=\"h1\"&gt;Heading 1&lt;/p&gt;\n&lt;p class=\"h2\"&gt;Heading 2&lt;/p&gt;\n&lt;p class=\"h3\"&gt;Heading 3&lt;/p&gt;\n&lt;p class=\"h4\"&gt;Heading 4&lt;/p&gt;\n&lt;p class=\"h5\"&gt;Heading 5&lt;/p&gt;\n&lt;p class=\"h6\"&gt;Heading 6&lt;/p&gt;"
+      }
+     ]
+    }
+   ],
+   "typography": [
+    {
+     "name": "Typography",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Typography"
+      }
+     ],
+     "description": "<p>Change typographic weights, styles, and alignment with these utility styles.</p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<p class=\"regular\">Regular</p>\n<p class=\"italic\">Italic</p>\n<p class=\"caps\">Capitalized</p>",
+       "path": "~/src/scss/config/_typography.scss",
+       "example": "\n<p class=\"regular\">Regular</p>\n<p class=\"italic\">Italic</p>\n<p class=\"caps\">Capitalized</p>",
+       "escaped": "\n&lt;p class=\"regular\"&gt;Regular&lt;/p&gt;\n&lt;p class=\"italic\"&gt;Italic&lt;/p&gt;\n&lt;p class=\"caps\"&gt;Capitalized&lt;/p&gt;"
+      }
+     ]
+    }
+   ]
+  },
   "components": {
+   "colors": [
+    {
+     "name": "Colors",
+     "description": "<p>Use to wrap articles.</p>\n",
+     "page": [
+      {
+       "nav": "Components",
+       "section": "Colors"
+      }
+     ],
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<div class=\"color\">\n\t<div class=\"color__block dark-blue\">\n\t</div>\n\t<div class=\"color__description\">\n\t\t<span class=\"color__section\">#0E5AA4</span>\n\t\t<span class=\"color__section\">.fill-dark-blue</span>\n\t\t<span class=\"color__section\">.background-dark-blue</span>\n\t\t<span class=\"color__section\">.text-dark-blue</span>\n\t</div>\n</div>\n<div class=\"color\">\n\t<div class=\"color__block blue\">\n\t</div>\n\t<div class=\"color__description\">\n\t\t<span class=\"color__section\">#6CA2D5</span>\n\t\t<span class=\"color__section\">.fill-blue</span>\n\t\t<span class=\"color__section\">.background-blue</span>\n\t\t<span class=\"color__section\">.text-blue</span>\n\t</div>\n</div>\n<div class=\"color\">\n\t<div class=\"color__block yellow\">\n\t</div>\n\t<div class=\"color__description\">\n\t\t<span class=\"color__section\">#FDB813</span>\n\t\t<span class=\"color__section\">.fill-yellow</span>\n\t\t<span class=\"color__section\">.background-yellow</span>\n\t\t<span class=\"color__section\">.text-yellow</span>\n\t</div>\n</div>",
+       "path": "~/src/scss/config/_colors.scss",
+       "example": "\n<div class=\"color\">\n\t<div class=\"color__block dark-blue\">\n\t</div>\n\t<div class=\"color__description\">\n\t\t<span class=\"color__section\">#0E5AA4</span>\n\t\t<span class=\"color__section\">.fill-dark-blue</span>\n\t\t<span class=\"color__section\">.background-dark-blue</span>\n\t\t<span class=\"color__section\">.text-dark-blue</span>\n\t</div>\n</div>\n<div class=\"color\">\n\t<div class=\"color__block blue\">\n\t</div>\n\t<div class=\"color__description\">\n\t\t<span class=\"color__section\">#6CA2D5</span>\n\t\t<span class=\"color__section\">.fill-blue</span>\n\t\t<span class=\"color__section\">.background-blue</span>\n\t\t<span class=\"color__section\">.text-blue</span>\n\t</div>\n</div>\n<div class=\"color\">\n\t<div class=\"color__block yellow\">\n\t</div>\n\t<div class=\"color__description\">\n\t\t<span class=\"color__section\">#FDB813</span>\n\t\t<span class=\"color__section\">.fill-yellow</span>\n\t\t<span class=\"color__section\">.background-yellow</span>\n\t\t<span class=\"color__section\">.text-yellow</span>\n\t</div>\n</div>",
+       "escaped": "\n&lt;div class=\"color\"&gt;\n\t&lt;div class=\"color__block dark-blue\"&gt;\n\t&lt;/div&gt;\n\t&lt;div class=\"color__description\"&gt;\n\t\t&lt;span class=\"color__section\"&gt;#0E5AA4&lt;/span&gt;\n\t\t&lt;span class=\"color__section\"&gt;.fill-dark-blue&lt;/span&gt;\n\t\t&lt;span class=\"color__section\"&gt;.background-dark-blue&lt;/span&gt;\n\t\t&lt;span class=\"color__section\"&gt;.text-dark-blue&lt;/span&gt;\n\t&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"color\"&gt;\n\t&lt;div class=\"color__block blue\"&gt;\n\t&lt;/div&gt;\n\t&lt;div class=\"color__description\"&gt;\n\t\t&lt;span class=\"color__section\"&gt;#6CA2D5&lt;/span&gt;\n\t\t&lt;span class=\"color__section\"&gt;.fill-blue&lt;/span&gt;\n\t\t&lt;span class=\"color__section\"&gt;.background-blue&lt;/span&gt;\n\t\t&lt;span class=\"color__section\"&gt;.text-blue&lt;/span&gt;\n\t&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"color\"&gt;\n\t&lt;div class=\"color__block yellow\"&gt;\n\t&lt;/div&gt;\n\t&lt;div class=\"color__description\"&gt;\n\t\t&lt;span class=\"color__section\"&gt;#FDB813&lt;/span&gt;\n\t\t&lt;span class=\"color__section\"&gt;.fill-yellow&lt;/span&gt;\n\t\t&lt;span class=\"color__section\"&gt;.background-yellow&lt;/span&gt;\n\t\t&lt;span class=\"color__section\"&gt;.text-yellow&lt;/span&gt;\n\t&lt;/div&gt;\n&lt;/div&gt;"
+      }
+     ]
+    }
+   ],
    "article": [
     {
      "name": "Article",
@@ -57,7 +279,7 @@
        "section": "Button"
       }
      ],
-     "description": "<p>Solid button color style for use with the .btn base style.</p>\n",
+     "description": "<p>An outlined button for secondary actions</p>\n",
      "state": [
       {
        "name": ":hover",
@@ -361,7 +583,7 @@
        "section": "Hero"
       }
      ],
-     "description": "<p>A Page Hero</p>\n",
+     "description": "<p>A Page Hero that uses a 16:4.5 aspect ratio for tablet and up, otherwise a 4:3 aspect ratio.</p>\n",
      "markup": [
       {
        "lang": "markup",
@@ -463,228 +685,6 @@
        "path": "~/src/scss/components/_table.scss",
        "example": "\n<table class=\"table\">\n    <thead>\n       <tr>\n           <th colspan=\"2\">What is good</th>\n       </tr>\n    </thead>\n    <tbody>\n        <tr class=\"table__subheader\">\n            <td>Good</td>\n            <td>Amount</td>\n        </tr>\n        </tr>\n            <td>Gingerbread</td>\n            <td>9</td>\n        </tr>\n        <tr>\n            <td>Jelly-o</td>\n            <td>8</td>\n        </tr>\n        <tr>\n            <td>Apple pie</td>\n            <td>10</td>\n        </tr>\n        <tr>\n            <td>Apple pie</td>\n            <td>10</td>\n        </tr>\n        <tr>\n            <td>Apple pie</td>\n            <td>10</td>\n        </tr>\n    </tbody>\n    <tfoot>\n        <tr>\n            <td colspan=\"3\">Table foot</td>\n        </tr>\n    </tfoot>\n</table>",
        "escaped": "\n&lt;table class=\"table\"&gt;\n    &lt;thead&gt;\n       &lt;tr&gt;\n           &lt;th colspan=\"2\"&gt;What is good&lt;/th&gt;\n       &lt;/tr&gt;\n    &lt;/thead&gt;\n    &lt;tbody&gt;\n        &lt;tr class=\"table__subheader\"&gt;\n            &lt;td&gt;Good&lt;/td&gt;\n            &lt;td&gt;Amount&lt;/td&gt;\n        &lt;/tr&gt;\n        &lt;/tr&gt;\n            &lt;td&gt;Gingerbread&lt;/td&gt;\n            &lt;td&gt;9&lt;/td&gt;\n        &lt;/tr&gt;\n        &lt;tr&gt;\n            &lt;td&gt;Jelly-o&lt;/td&gt;\n            &lt;td&gt;8&lt;/td&gt;\n        &lt;/tr&gt;\n        &lt;tr&gt;\n            &lt;td&gt;Apple pie&lt;/td&gt;\n            &lt;td&gt;10&lt;/td&gt;\n        &lt;/tr&gt;\n        &lt;tr&gt;\n            &lt;td&gt;Apple pie&lt;/td&gt;\n            &lt;td&gt;10&lt;/td&gt;\n        &lt;/tr&gt;\n        &lt;tr&gt;\n            &lt;td&gt;Apple pie&lt;/td&gt;\n            &lt;td&gt;10&lt;/td&gt;\n        &lt;/tr&gt;\n    &lt;/tbody&gt;\n    &lt;tfoot&gt;\n        &lt;tr&gt;\n            &lt;td colspan=\"3\"&gt;Table foot&lt;/td&gt;\n        &lt;/tr&gt;\n    &lt;/tfoot&gt;\n&lt;/table&gt;"
-      }
-     ]
-    }
-   ],
-   "colors": [
-    {
-     "name": "Colors",
-     "description": "<p>Use to wrap articles.</p>\n",
-     "page": [
-      {
-       "nav": "Components",
-       "section": "Colors"
-      }
-     ],
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<div class=\"color\">\n\t<div class=\"color__block dark-blue\">\n\t</div>\n\t<div class=\"color__description\">\n\t\t<span class=\"color__section\">#0E5AA4</span>\n\t\t<span class=\"color__section\">.fill-dark-blue</span>\n\t\t<span class=\"color__section\">.background-dark-blue</span>\n\t\t<span class=\"color__section\">.text-dark-blue</span>\n\t</div>\n</div>\n<div class=\"color\">\n\t<div class=\"color__block blue\">\n\t</div>\n\t<div class=\"color__description\">\n\t\t<span class=\"color__section\">#6CA2D5</span>\n\t\t<span class=\"color__section\">.fill-blue</span>\n\t\t<span class=\"color__section\">.background-blue</span>\n\t\t<span class=\"color__section\">.text-blue</span>\n\t</div>\n</div>\n<div class=\"color\">\n\t<div class=\"color__block yellow\">\n\t</div>\n\t<div class=\"color__description\">\n\t\t<span class=\"color__section\">#FDB813</span>\n\t\t<span class=\"color__section\">.fill-yellow</span>\n\t\t<span class=\"color__section\">.background-yellow</span>\n\t\t<span class=\"color__section\">.text-yellow</span>\n\t</div>\n</div>",
-       "path": "~/src/scss/config/_colors.scss",
-       "example": "\n<div class=\"color\">\n\t<div class=\"color__block dark-blue\">\n\t</div>\n\t<div class=\"color__description\">\n\t\t<span class=\"color__section\">#0E5AA4</span>\n\t\t<span class=\"color__section\">.fill-dark-blue</span>\n\t\t<span class=\"color__section\">.background-dark-blue</span>\n\t\t<span class=\"color__section\">.text-dark-blue</span>\n\t</div>\n</div>\n<div class=\"color\">\n\t<div class=\"color__block blue\">\n\t</div>\n\t<div class=\"color__description\">\n\t\t<span class=\"color__section\">#6CA2D5</span>\n\t\t<span class=\"color__section\">.fill-blue</span>\n\t\t<span class=\"color__section\">.background-blue</span>\n\t\t<span class=\"color__section\">.text-blue</span>\n\t</div>\n</div>\n<div class=\"color\">\n\t<div class=\"color__block yellow\">\n\t</div>\n\t<div class=\"color__description\">\n\t\t<span class=\"color__section\">#FDB813</span>\n\t\t<span class=\"color__section\">.fill-yellow</span>\n\t\t<span class=\"color__section\">.background-yellow</span>\n\t\t<span class=\"color__section\">.text-yellow</span>\n\t</div>\n</div>",
-       "escaped": "\n&lt;div class=\"color\"&gt;\n\t&lt;div class=\"color__block dark-blue\"&gt;\n\t&lt;/div&gt;\n\t&lt;div class=\"color__description\"&gt;\n\t\t&lt;span class=\"color__section\"&gt;#0E5AA4&lt;/span&gt;\n\t\t&lt;span class=\"color__section\"&gt;.fill-dark-blue&lt;/span&gt;\n\t\t&lt;span class=\"color__section\"&gt;.background-dark-blue&lt;/span&gt;\n\t\t&lt;span class=\"color__section\"&gt;.text-dark-blue&lt;/span&gt;\n\t&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"color\"&gt;\n\t&lt;div class=\"color__block blue\"&gt;\n\t&lt;/div&gt;\n\t&lt;div class=\"color__description\"&gt;\n\t\t&lt;span class=\"color__section\"&gt;#6CA2D5&lt;/span&gt;\n\t\t&lt;span class=\"color__section\"&gt;.fill-blue&lt;/span&gt;\n\t\t&lt;span class=\"color__section\"&gt;.background-blue&lt;/span&gt;\n\t\t&lt;span class=\"color__section\"&gt;.text-blue&lt;/span&gt;\n\t&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"color\"&gt;\n\t&lt;div class=\"color__block yellow\"&gt;\n\t&lt;/div&gt;\n\t&lt;div class=\"color__description\"&gt;\n\t\t&lt;span class=\"color__section\"&gt;#FDB813&lt;/span&gt;\n\t\t&lt;span class=\"color__section\"&gt;.fill-yellow&lt;/span&gt;\n\t\t&lt;span class=\"color__section\"&gt;.background-yellow&lt;/span&gt;\n\t\t&lt;span class=\"color__section\"&gt;.text-yellow&lt;/span&gt;\n\t&lt;/div&gt;\n&lt;/div&gt;"
-      }
-     ]
-    }
-   ]
-  },
-  "config": {
-   "align": [
-    {
-     "name": "Align",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Align"
-      }
-     ],
-     "description": "<p>Adjust vertical alignment with these utilities.</p>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<div>\n  <div class=\"table-cell\"><h1>Halland</h1></div>\n  <div class=\"table-cell align-baseline\">baseline</div>\n  <div class=\"table-cell align-top\">top</div>\n  <div class=\"table-cell align-middle\">middle</div>\n  <div class=\"table-cell align-bottom\">bottom</div>\n</div>",
-       "path": "~/src/scss/config/_align.scss",
-       "example": "\n<div>\n  <div class=\"table-cell\"><h1>Halland</h1></div>\n  <div class=\"table-cell align-baseline\">baseline</div>\n  <div class=\"table-cell align-top\">top</div>\n  <div class=\"table-cell align-middle\">middle</div>\n  <div class=\"table-cell align-bottom\">bottom</div>\n</div>",
-       "escaped": "\n&lt;div&gt;\n  &lt;div class=\"table-cell\"&gt;&lt;h1&gt;Halland&lt;/h1&gt;&lt;/div&gt;\n  &lt;div class=\"table-cell align-baseline\"&gt;baseline&lt;/div&gt;\n  &lt;div class=\"table-cell align-top\"&gt;top&lt;/div&gt;\n  &lt;div class=\"table-cell align-middle\"&gt;middle&lt;/div&gt;\n  &lt;div class=\"table-cell align-bottom\"&gt;bottom&lt;/div&gt;\n&lt;/div&gt;"
-      }
-     ]
-    }
-   ],
-   "flexbox": [
-    {
-     "name": "Flexbox",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Flexbox"
-      }
-     ],
-     "description": "<p>These flexbox-based utilities can replace the need for a grid system in many instances.</p>\n<table class=\"component-table\">\n  <thead>\n    <tr>\n            <th class=\"left-align\">Shorthand</th> \n            <th class=\"left-align\">Description</th>\n         </tr>\n    </thead>\n    <tbody>\n      <tr class=\"component-table__row\">\n          <td><code class=\"component-section__code\">.flex</code></td>\n          <td><code class=\"component-section__code\">display:flex;</code></td>\n      </tr>\n      <tr class=\"component-table__row\">\n          <td><code class=\"component-section__code\">.inline-flex</code></td>\n          <td><code class=\"component-section__code\">display:inline-flex;</code></td>\n      </tr>\n      <tr class=\"component-table__row\">\n          <td><code class=\"component-section__code\">.justify-start</code></td>\n          <td><code class=\"component-section__code\">justify-content:start;</code></td>\n      </tr>\n      <tr class=\"component-table__row\">\n          <td><code class=\"component-section__code\">.justify-center</code></td>\n          <td><code class=\"component-section__code\">justify-content:center;</code></td>\n      </tr>\n      <tr class=\"component-table__row\">\n          <td><code class=\"component-section__code\">.justify-end</code></td>\n          <td><code class=\"component-section__code\">justify-content:end;</code></td>\n      </tr>\n      <tr class=\"component-table__row\">\n          <td><code class=\"component-section__code\">.items-start</code></td>\n          <td><code class=\"component-section__code\">align-items:start;</code></td>\n      </tr>\n      <tr class=\"component-table__row\">\n          <td><code class=\"component-section__code\">.items-center</code></td>\n          <td><code class=\"component-section__code\">align-items:center;</code></td>\n      </tr>\n      <tr class=\"component-table__row\">\n          <td><code class=\"component-section__code\">.items-end</code></td>\n          <td><code class=\"component-section__code\">align-items:end;</code></td>\n      </tr>\n    </tbody>\n</table>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<div class=\"clearfix flex-grid flex justify-start\">\n\t<div class=\"flex-grid-item col-3\">.justify-start</div>\n</div>\n<div class=\"clearfix flex-grid flex justify-center\">\n\t<div class=\"flex-grid-item col-3\">.justify-center</div>\n</div>\n<div class=\"clearfix flex-grid flex justify-end\">\n\t<div class=\"flex-grid-item col-3\">.justify-end</div>\n</div>\n<div class=\"clearfix flex-grid height flex items-start\">\n\t<div class=\"flex-grid-item col-3\">.items-start</div>\n</div>\n<div class=\"clearfix flex-grid height flex items-center\">\n\t<div class=\"flex-grid-item col-3\">.items-center</div>\n</div>\n<div class=\"clearfix flex-grid height flex items-end\">\n\t<div class=\"flex-grid-item col-3\">.items-end</div>\n</div>\n<div class=\"clearfix flex-grid flex justify-between\">\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n</div>\n<div class=\"clearfix flex-grid flex justify-around\">\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n</div>\n<div class=\"clearfix flex-grid flex\">\n\t<div class=\"flex-grid-item flex order-3 col-2\">.order-3</div>\n\t<div class=\"flex-grid-item flex order-2 col-2\">.order-2</div>\n\t<div class=\"flex-grid-item flex order-1 col-2\">.order-1</div>\n</div>",
-       "path": "~/src/scss/config/_flexbox.scss",
-       "example": "\n<div class=\"clearfix flex-grid flex justify-start\">\n\t<div class=\"flex-grid-item col-3\">.justify-start</div>\n</div>\n<div class=\"clearfix flex-grid flex justify-center\">\n\t<div class=\"flex-grid-item col-3\">.justify-center</div>\n</div>\n<div class=\"clearfix flex-grid flex justify-end\">\n\t<div class=\"flex-grid-item col-3\">.justify-end</div>\n</div>\n<div class=\"clearfix flex-grid height flex items-start\">\n\t<div class=\"flex-grid-item col-3\">.items-start</div>\n</div>\n<div class=\"clearfix flex-grid height flex items-center\">\n\t<div class=\"flex-grid-item col-3\">.items-center</div>\n</div>\n<div class=\"clearfix flex-grid height flex items-end\">\n\t<div class=\"flex-grid-item col-3\">.items-end</div>\n</div>\n<div class=\"clearfix flex-grid flex justify-between\">\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n</div>\n<div class=\"clearfix flex-grid flex justify-around\">\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n\t<div class=\"flex-grid-item col-2\">.justify-between</div>\n</div>\n<div class=\"clearfix flex-grid flex\">\n\t<div class=\"flex-grid-item flex order-3 col-2\">.order-3</div>\n\t<div class=\"flex-grid-item flex order-2 col-2\">.order-2</div>\n\t<div class=\"flex-grid-item flex order-1 col-2\">.order-1</div>\n</div>",
-       "escaped": "\n&lt;div class=\"clearfix flex-grid flex justify-start\"&gt;\n\t&lt;div class=\"flex-grid-item col-3\"&gt;.justify-start&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"clearfix flex-grid flex justify-center\"&gt;\n\t&lt;div class=\"flex-grid-item col-3\"&gt;.justify-center&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"clearfix flex-grid flex justify-end\"&gt;\n\t&lt;div class=\"flex-grid-item col-3\"&gt;.justify-end&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"clearfix flex-grid height flex items-start\"&gt;\n\t&lt;div class=\"flex-grid-item col-3\"&gt;.items-start&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"clearfix flex-grid height flex items-center\"&gt;\n\t&lt;div class=\"flex-grid-item col-3\"&gt;.items-center&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"clearfix flex-grid height flex items-end\"&gt;\n\t&lt;div class=\"flex-grid-item col-3\"&gt;.items-end&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"clearfix flex-grid flex justify-between\"&gt;\n\t&lt;div class=\"flex-grid-item col-2\"&gt;.justify-between&lt;/div&gt;\n\t&lt;div class=\"flex-grid-item col-2\"&gt;.justify-between&lt;/div&gt;\n\t&lt;div class=\"flex-grid-item col-2\"&gt;.justify-between&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"clearfix flex-grid flex justify-around\"&gt;\n\t&lt;div class=\"flex-grid-item col-2\"&gt;.justify-between&lt;/div&gt;\n\t&lt;div class=\"flex-grid-item col-2\"&gt;.justify-between&lt;/div&gt;\n\t&lt;div class=\"flex-grid-item col-2\"&gt;.justify-between&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"clearfix flex-grid flex\"&gt;\n\t&lt;div class=\"flex-grid-item flex order-3 col-2\"&gt;.order-3&lt;/div&gt;\n\t&lt;div class=\"flex-grid-item flex order-2 col-2\"&gt;.order-2&lt;/div&gt;\n\t&lt;div class=\"flex-grid-item flex order-1 col-2\"&gt;.order-1&lt;/div&gt;\n&lt;/div&gt;"
-      }
-     ]
-    }
-   ],
-   "grid": [
-    {
-     "name": "Grid",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Grid"
-      }
-     ],
-     "description": "<p>This module contains responsive float and width utilities to create a variety of grid layouts. \nUse this module in combination with layout, white space, and other utilities. </p>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<span>TBA</span>",
-       "path": "~/src/scss/config/_grid.scss",
-       "example": "\n<span>TBA</span>",
-       "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
-      }
-     ]
-    }
-   ],
-   "layout": [
-    {
-     "name": "Layout",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Layout"
-      }
-     ],
-     "description": "<p>Change the default document flow with these display, float, and other utilities.</p>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<span>TBA</span>",
-       "path": "~/src/scss/config/_layout.scss",
-       "example": "\n<span>TBA</span>",
-       "escaped": "\n&lt;span&gt;TBA&lt;/span&gt;"
-      }
-     ]
-    }
-   ],
-   "margin": [
-    {
-     "name": "Margin",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Margin"
-      }
-     ],
-     "description": "<p>Immutable margin utilities are based on a global white space scale defined with custom properties.</p>\n<p><h3>Naming Convention</h3>\nDue to the ubiquitous nature of setting margin, these utilities use a shorthand naming convention:</p>\n<table class=\"component-table\">\n  <thead>\n    <tr>\n        <th class=\"left-align\">Shorthand</th> \n        <th class=\"left-align\">Description</th>\n     </tr>\n    </thead>\n    <tbody>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.m</code></td><td>Margin</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.t</code></td><td>Top</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.r</code></td><td>Right</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.b</code></td><td>Bottom</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.l</code></td><td>Left</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.x</code></td><td>X-axis (left and right)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.y</code></td><td>Y-axis (top and bottom)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.n</code></td><td>Negative</td> </tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.0</code></td><td>0 reset</td> </tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.1</code></td><td>$space-1 (.25rem)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.2</code></td><td>$space-2 (.5rem)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.3</code></td><td>$space-3 (1rem)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.4</code></td><td>$space-4 (2rem)</td></tr>\n     <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.5</code></td><td>$space-5 (4rem)</td></tr>\n     <tr class=\"component-table__row\"><td><code class=\"component-section__code\">.6</code></td><td>$space-6 (8rem)</td></tr>\n    </tbody>\n  </table>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<div class=\"component-box mt1\">\n\t<span>mt1</span>\n</div>\n<div class=\"component-box mt2\">\n\t<span>mt2</span>\n</div>\n<div class=\"component-box mt3\">\n\t<span>mt3</span>\n</div>",
-       "path": "~/src/scss/config/_margin.scss",
-       "example": "\n<div class=\"component-box mt1\">\n\t<span>mt1</span>\n</div>\n<div class=\"component-box mt2\">\n\t<span>mt2</span>\n</div>\n<div class=\"component-box mt3\">\n\t<span>mt3</span>\n</div>",
-       "escaped": "\n&lt;div class=\"component-box mt1\"&gt;\n\t&lt;span&gt;mt1&lt;/span&gt;\n&lt;/div&gt;\n&lt;div class=\"component-box mt2\"&gt;\n\t&lt;span&gt;mt2&lt;/span&gt;\n&lt;/div&gt;\n&lt;div class=\"component-box mt3\"&gt;\n\t&lt;span&gt;mt3&lt;/span&gt;\n&lt;/div&gt;"
-      }
-     ]
-    }
-   ],
-   "padding": [
-    {
-     "name": "Padding",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Padding"
-      }
-     ],
-     "description": "<p>Immutable padding utilities are based on a global white space scale defined with custom properties. </p>\n<p><h3>Naming Convention</h3>\nDue to the ubiquitous nature of setting padding, these utilities use a shorthand naming convention:</p>\n<table class=\"component-table\">\n    <thead>\n      <tr>\n        <th class=\"left-align\">Shorthand</th>\n        <th class=\"left-align\">Description</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">p</td><td>Padding</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">t</td><td>Top</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">r</td><td>Right</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">b</td><td>Bottom</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">l</td><td>Left</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">x</td><td>X-axis (left and right)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">y</td><td>Y-axis (top and bottom)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">n</td><td>Negative (margin only)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">0</td><td>0 reset</td> </tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">1</td><td>$space-1 (.25rem)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">2</td><td>$space-2 (.5rem)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">3</td><td>$space-3 (1rem)</td></tr>\n      <tr class=\"component-table__row\"><td><code class=\"component-section__code\">4</td><td>$space-4 (2rem)</td></tr>\n     <tr class=\"component-table__row\"><td><code class=\"component-section__code\">5</td><td>$space-5 (4rem)</td></tr>\n     <tr class=\"component-table__row\"><td><code class=\"component-section__code\">5</td><td>$space-6 (6rem)</td></tr>\n    </tbody>\n  </table>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<div class=\"pb1\">This will have a padding bottom</div>",
-       "path": "~/src/scss/config/_padding.scss",
-       "example": "\n<div class=\"pb1\">This will have a padding bottom</div>",
-       "escaped": "\n&lt;div class=\"pb1\"&gt;This will have a padding bottom&lt;/div&gt;"
-      }
-     ]
-    }
-   ],
-   "position": [
-    {
-     "name": "Position",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Position"
-      }
-     ],
-     "description": "<p>This module includes basic positioning utilities to alter the default document flow. \nUse positions with caution. They are often unnecessary and commonly misused.</p>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "",
-       "path": "~/src/scss/config/_position.scss",
-       "example": "",
-       "escaped": ""
-      }
-     ]
-    }
-   ],
-   "typescale": [
-    {
-     "name": "Typescale",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Typescale"
-      }
-     ],
-     "description": "<p>This module provides utilities for adjusting font-size.</p>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<p class=\"h1\">Heading 1</p>\n<p class=\"h2\">Heading 2</p>\n<p class=\"h3\">Heading 3</p>\n<p class=\"h4\">Heading 4</p>\n<p class=\"h5\">Heading 5</p>\n<p class=\"h6\">Heading 6</p>",
-       "path": "~/src/scss/config/_type-scale.scss",
-       "example": "\n<p class=\"h1\">Heading 1</p>\n<p class=\"h2\">Heading 2</p>\n<p class=\"h3\">Heading 3</p>\n<p class=\"h4\">Heading 4</p>\n<p class=\"h5\">Heading 5</p>\n<p class=\"h6\">Heading 6</p>",
-       "escaped": "\n&lt;p class=\"h1\"&gt;Heading 1&lt;/p&gt;\n&lt;p class=\"h2\"&gt;Heading 2&lt;/p&gt;\n&lt;p class=\"h3\"&gt;Heading 3&lt;/p&gt;\n&lt;p class=\"h4\"&gt;Heading 4&lt;/p&gt;\n&lt;p class=\"h5\"&gt;Heading 5&lt;/p&gt;\n&lt;p class=\"h6\"&gt;Heading 6&lt;/p&gt;"
-      }
-     ]
-    }
-   ],
-   "typography": [
-    {
-     "name": "Typography",
-     "page": [
-      {
-       "nav": "Config",
-       "section": "Typography"
-      }
-     ],
-     "description": "<p>Change typographic weights, styles, and alignment with these utility styles.</p>\n",
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<p class=\"regular\">Regular</p>\n<p class=\"italic\">Italic</p>\n<p class=\"caps\">Capitalized</p>",
-       "path": "~/src/scss/config/_typography.scss",
-       "example": "\n<p class=\"regular\">Regular</p>\n<p class=\"italic\">Italic</p>\n<p class=\"caps\">Capitalized</p>",
-       "escaped": "\n&lt;p class=\"regular\"&gt;Regular&lt;/p&gt;\n&lt;p class=\"italic\"&gt;Italic&lt;/p&gt;\n&lt;p class=\"caps\"&gt;Capitalized&lt;/p&gt;"
       }
      ]
     }
