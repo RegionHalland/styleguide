@@ -5,3 +5,4 @@ cache/
 dev/
 temp/
 .env
+*.log
