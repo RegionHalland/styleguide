@@ -1,6 +1,7 @@
 'use strict';
 
 import gulp from 'gulp';
+import replace from 'gulp-replace';
 import plumber from 'gulp-plumber';
 import gutil from 'gulp-util';
 import rename from 'gulp-rename';
@@ -15,7 +16,17 @@ import svgSprite from 'gulp-svg-sprite';
 import concat from 'gulp-concat';
 import uglify from 'gulp-uglify';
 import docs from 'gulp-docs';
+import dotenv from 'dotenv';
+dotenv.config()
 
+// Getters / Setters
+gulp.task('set-dev-node-env', function() {
+   return process.env.PRODUCTION = 'false';
+});
+
+gulp.task('set-prod-node-env', function() {
+   return process.env.PRODUCTION = 'true';
+});
 
 // Build CSS
 gulp.task('css:dist', () => {
@@ -60,6 +71,10 @@ gulp.task('css:dev', () => {
 // Build JS
 gulp.task('js:dist', () => {
 	gulp.src('./src/js/**/*.js')
+		.pipe(replace(
+			"'http://' + window.location.host + '/dist/icons/sprite.svg'", 
+			"'//regionhalland.github.io/styleguide/dist/icons/sprite.svg'"
+		))
 		.pipe(plumber())
 		.pipe(concat('app.js'))
 		.pipe(gulp.dest('dist/js'))
@@ -170,7 +185,7 @@ gulp.task('bs-reload', () => {
 });
 
 // Watch
-gulp.task('watch', ['css:dev', 'js:dev', 'fonts:dev', 'sprite:dist', 'docs', 'browsersync'], () => {
+gulp.task('watch', ['set-dev-node-env', 'css:dev', 'js:dev', 'fonts:dev', 'sprite:dist', 'docs', 'browsersync'], () => {
 	gulp.watch('./src/scss/**/*.scss', ['css:dev', 'docs', 'bs-reload']);
 	gulp.watch('./src/js/**/*.js', ['js:dev', 'docs', 'bs-reload']);
 	gulp.watch('./src/img/**/*', ['img:dist', 'docs', 'bs-reload']);
@@ -178,8 +193,5 @@ gulp.task('watch', ['css:dev', 'js:dev', 'fonts:dev', 'sprite:dist', 'docs', 'br
 	gulp.watch('./src/icons-template.mustache', ['sprite:dist', 'css:dev', 'docs', 'bs-reload']);
 });
 
-
 // Production
-gulp.task('dist', ['css:dist', 'sprite:dist', 'js:dist', 'fonts:dist', 'img:dist', 'docs' ], () => {
-
-});
+gulp.task('dist', ['set-prod-node-env', 'css:dist', 'sprite:dist', 'js:dist', 'fonts:dist', 'img:dist', 'docs' ]);
