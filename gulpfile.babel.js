@@ -175,7 +175,7 @@ gulp.task('img:dist', () => {
 // Browsersync
 gulp.task('browsersync', () => {
 	browsersync.init({
-		proxy: 'styleguide.app'
+		proxy: 'styleguide.test'
 	});
 });
 
