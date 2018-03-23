@@ -5,34 +5,40 @@
 // @description A panel can be used to highlight content.
 //
 // @markup
-// <div class="col col-12 mxn3">
-//   <div class="col col-6 px3">
-//     <div class="panel">
-//       <div class="panel__header">Städer</div>
-//       <div class="panel__body">De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. </div>
-//     </div>
-//   </div>
-//   <div class="col col-6 px3">
-//     <div class="panel">
-//       <div class="panel__header">Städer</div>
-//       <div class="panel__body">De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. </div>
-//     </div>
-//   </div>
+//
+// <div class="panel">
+//   <div class="panel__header">Städer</div>
+//   <div class="panel__body">De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. </div>
+// </div>
+//
+// <div class="panel">
+//   <div class="panel__body">De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. </div>
+// </div>
+//
+// <div class="panel panel--warning">
+//   <div class="panel__body">De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. </div>
 // </div>
 
+
 .panel {
-	border: 1px solid palette(grey, light)
-}
+	border: 1px solid palette(grey, light);
+	background: palette(white);
 
-.panel__header {
-	width: 100%;
-	padding: $space-1 $space-3;
-	background: palette(blue);
-	color: $white;
-	font-weight: $bold-font-weight;
-	text-align: center;
-}
+	@include modifier('warning') {
+		background: palette(light-red);
+		border: 1px solid palette(light-red, dark);
+	}
 
-.panel__body {
-	padding: $space-3;
+	@include element('header') {
+		width: 100%;
+		padding: $space-1 $space-3;
+		background: palette(blue);
+		color: $white;
+		font-weight: $bold-font-weight;
+		text-align: center;
+	}
+
+	@include element('body') {
+		padding: $space-3;
+	}
 }

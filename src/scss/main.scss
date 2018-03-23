@@ -4,6 +4,7 @@
 // Mixins
 @import 'mixins/spacing';
 @import 'mixins/palette';
+@import 'mixins/bem';
 
 // Base
 @import 'base/fonts';
@@ -32,8 +33,6 @@
 @import 'components/content-nav';
 @import 'components/breadcrumbs';
 @import 'components/button';
-@import 'components/button-primary';
-@import 'components/button-outline';
 @import 'components/table';
 @import 'components/panel';
 @import 'components/icons';
