@@ -30,7 +30,7 @@
 	border-radius: $border-radius;
 	vertical-align: middle;
 	-webkit-appearance: none;
-
+	
 	&:hover {
 		text-decoration: none;
 	}
@@ -41,7 +41,7 @@
 		box-shadow: 0 0 0 3px rgba(0, 0, 0, .25);
 	}
 	
-	@include element('small') {
+	@include modifier('small') {
 		line-height: 1rem;
 		padding: $space-2 $space-3;
 	}
@@ -49,8 +49,12 @@
 	@include modifier('primary') {
 		color: $white;
 	    background: $dark-blue;
-	    border: 1px solid palette(dark-blue, dark);
+	    border: 1px solid $dark-blue;
 	    text-shadow: 0 0 1px rgba(0, 0, 0, .3);
+		
+		.icon {
+			fill: $white;
+		}
 
 		&:hover {
 			background: palette(dark-blue, x-light);
@@ -61,7 +65,7 @@
 						inset 0 3px 4px 0 $darken-3,
 						0 0 1px $darken-2;
 		}
-
+		
 		&:disabled,
 		&.is-disabled {
 			opacity: .5;
@@ -70,10 +74,14 @@
 	}
 
 	@include modifier('secondary') {
-		color: palette(grey, xx-dark);
-	    background: palette(grey, dark);
-	    border: 1px solid palette(grey, dark);
+		color: $white;
+	    background: $blue;
+	    border: 1px solid palette(blue, dark);
 	    text-shadow: 0 0 0px rgba(0, 0, 0, .3);
+		
+		.icon {
+			fill: $white;
+		}
 
 		&:hover {
 			background: palette(grey, light);
@@ -93,24 +101,11 @@
 	}
 
 	@include modifier('outline') {
-		color: $dark-blue;
 		background:none;
-    	border: 1px solid $dark-blue;;
+		color: $dark-blue;
 
-		&:hover {
-			background: palette(light-blue, light);
-		}
-
-
-		&:active {
-			background: palette(light-blue, light);
-		}
-
-		&:disabled,
-		&.is-disabled {
-			opacity: .5;
-			pointer-events: none;
+		.icon {
+			fill: $dark-blue;
 		}
 	}
-
 }

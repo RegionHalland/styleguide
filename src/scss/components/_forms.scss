@@ -20,6 +20,7 @@
 // 
 // 
 
+label, 
 .label {
 	font-size: $h5;
 	font-weight: $bold-font-weight;
@@ -27,6 +28,10 @@
 	margin-bottom: $space-2;
 }
 
+input[type='text'], 
+input[type='email'], 
+input[type='password'], 
+input[type='url'], 
 .input {
 	font-family: inherit;
 	font-size: inherit;
@@ -47,6 +52,7 @@
 	}
 }
 
+select, 
 .select {
 	font-family: inherit;
 	font-size: inherit;
@@ -63,6 +69,7 @@
 	}
 }
 
+textarea, 
 .textarea {
 	font-family: inherit;
 	font-size: inherit;

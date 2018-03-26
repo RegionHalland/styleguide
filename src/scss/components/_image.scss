@@ -1,0 +1,27 @@
+//
+// @name Image
+// @page Components/Image
+//
+// @description 
+// Styles for images
+//
+//
+// @markup
+// <img class="img">
+// <img class="img img--round">
+
+//
+//
+
+.img {
+	@include modifier('round') {
+		border: 2px solid palette(grey, light);
+		border-radius: 500px;
+	}
+
+	@include modifier('64') {
+		width: 64px;
+		height: 64px;
+		overflow: auto;
+	}
+}
