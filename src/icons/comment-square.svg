@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="8px" height="9px" viewBox="0 0 8 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
-    <title>Untitled 3</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="comment-square" fill="#000000" fill-rule="nonzero">
-            <path d="M0,1.09 C0,1.04 0.03,1 0.1,0.99 L7.91,0.99 C7.96,0.99 8,1.02 8,1.08 L8,8.99 L6,6.99 L0.09,6.99 C0.04,6.99 0,6.95 0,6.9 L0,1.09 Z M1,2 L1,6 L7,6 L7,2 L1,2 Z" id="Combined-Shape"></path>
-        </g>
-    </g>
-</svg>
+<svg viewBox="0 0 8 9" xmlns="http://www.w3.org/2000/svg"><title>Untitled 3</title><path d="M0 1.09c0-.05.03-.09.1-.1h7.81c.05 0 .09.03.09.09v7.91l-2-2H.09A.09.09 0 0 1 0 6.9V1.09zM1 2v4h6V2H1z" fill="#000" fill-rule="nonzero"/></svg>

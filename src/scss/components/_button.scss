@@ -42,7 +42,7 @@
 	}
 	
 	@include modifier('small') {
-		line-height: 1rem;
+		
 		padding: $space-2 $space-3;
 	}
 	
@@ -103,6 +103,7 @@
 	@include modifier('outline') {
 		background:none;
 		color: $dark-blue;
+		border: 1px solid $dark-blue;
 
 		.icon {
 			fill: $dark-blue;
