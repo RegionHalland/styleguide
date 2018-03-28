@@ -39,9 +39,7 @@
 
 .border-box { box-sizing: border-box }
 
-.print-hide {
-	@media print { display: none; }
-}
+
 
 // Screen Reader only
 .sr-only {
