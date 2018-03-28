@@ -1,0 +1,19 @@
+@function breakpoint-min($name, $breaks: $breakpoints) {
+  $min: map-get($breaks, $name);
+  @return if($min != 0, $min, null);
+}
+
+@function breakpoint-infix($name, $breaks: $breakpoints) {
+  @return if(breakpoint-min($name, $breaks) == null, "", "-#{$name}");
+}
+
+@mixin media-breakpoint-up($name, $breaks: $breakpoints) {
+  $min: breakpoint-min($name, $breaks);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}

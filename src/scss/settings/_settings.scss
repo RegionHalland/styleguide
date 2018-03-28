@@ -148,6 +148,15 @@ $breakpoint-md: 65em;
 //Laptop and up
 $breakpoint-lg: 80em;
 
+$breakpoints: (
+  xs: 0,
+  sm: $breakpoint-sm,
+  md: $breakpoint-md,
+  lg: $breakpoint-lg,
+) !default;
+
+
+
 // Z-index
 $z1: 1;
 $z2: 2;
