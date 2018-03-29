@@ -7,6 +7,7 @@
    "navigation",
    "forms",
    "icons",
+   "image",
    "hero",
    "panel",
    "search",
@@ -15,6 +16,7 @@
   ],
   "config": [
    "align",
+   "display",
    "flexbox",
    "grid",
    "layout",
@@ -41,10 +43,10 @@
       {
        "lang": "markup",
        "description": "",
-       "modifier": "\n<article class=\"article\">\n  <h2>Halland</h2>\n  <p>Halland är ett landskap i sydvästra Sverige. Halland gränsar i söder till Skåne, i öster till Småland och i öster och norr till \n  Västergötland, samt har i väster kust mot Kattegatt. Landskapet Halland sammanfaller i stor utsträckning med det år 1719 bildade Hallands län. \n  Lindome distrikt i norra Halland tillhör dock Västra Götalands län medan Östra Karups distrikt i söder tillhör Skåne län och Lunds stift. \n  Övriga Halland är en del av Göteborgs stift. Hallands län omfattar dessutom delar av både Småland och Västergötland.</p>\n  <figure>\n  \t<img src=\"https:images.unsplash.com/photo-1489161587020-79aa193f04ff?auto=format&fit=crop&w=2702&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D\" alt=\"En kamel\">\n  \t<figcaption>\n  \t\tKamelen, ett ovanligt förekommande djur i Halland.\n\t\t</figcaption>\n  </figure>\n  <h3>Större tätorter</h3>\n  <p>Följande tätorter har fler än 10 000 invånare enligt tätortsavgränsningen 2010:</p>\n  <ol>\n  \t<li>Halmstad</li>\n  \t<li>Varberg</li>\n  \t<li>Falkenberg</li>\n  \t<li>Kungsbacka</li>\n  \t<li>Onsala</li>\n  \t<li>Lindome</li>\n  </ol>\n  <h3>Kända hallänningar</h3>\n  <ul>\n  \t<li>Elsa Grave</li>\n  \t<li>Basshunter</li>\n  \t<li>Åsa Svensson</li>\n  \t<li>Mona Gustafsson</li>\n  </ul>\n</article>",
+       "modifier": "\n<article class=\"article\">\n  <h2>Halland</h2>\n  <p class=\"preamble\">Jag är en ingress som får lite större utrymme i artikeln så att man får ett bra intro till det som kommer efter mig.</p>\n  <p>Halland är ett landskap i sydvästra Sverige. Halland gränsar i söder till Skåne, i öster till Småland och i öster och norr till \n  Västergötland, samt har i väster kust mot Kattegatt. Landskapet Halland sammanfaller i stor utsträckning med det år 1719 bildade Hallands län. \n  Lindome distrikt i norra Halland tillhör dock Västra Götalands län medan Östra Karups distrikt i söder tillhör Skåne län och Lunds stift. \n  Övriga Halland är en del av Göteborgs stift. Hallands län omfattar dessutom delar av både Småland och Västergötland.</p>\n  <figure>\n  \t<img src=\"https:images.unsplash.com/photo-1489161587020-79aa193f04ff?auto=format&fit=crop&w=2702&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D\" alt=\"En kamel\">\n  \t<figcaption>\n  \t\tKamelen, ett ovanligt förekommande djur i Halland.\n\t\t</figcaption>\n  </figure>\n  <h3>Större tätorter</h3>\n  <p>Följande tätorter har fler än 10 000 invånare enligt tätortsavgränsningen 2010:</p>\n  <ol>\n  \t<li>Halmstad</li>\n  \t<li>Varberg</li>\n  \t<li>Falkenberg</li>\n  \t<li>Kungsbacka</li>\n  \t<li>Onsala</li>\n  \t<li>Lindome</li>\n  </ol>\n  <h3>Kända hallänningar</h3>\n  <ul>\n  \t<li>Elsa Grave</li>\n  \t<li>Basshunter</li>\n  \t<li>Åsa Svensson</li>\n  \t<li>Mona Gustafsson</li>\n  </ul>\n</article>",
        "path": "~/src/scss/components/_article.scss",
-       "example": "\n<article class=\"article\">\n  <h2>Halland</h2>\n  <p>Halland är ett landskap i sydvästra Sverige. Halland gränsar i söder till Skåne, i öster till Småland och i öster och norr till \n  Västergötland, samt har i väster kust mot Kattegatt. Landskapet Halland sammanfaller i stor utsträckning med det år 1719 bildade Hallands län. \n  Lindome distrikt i norra Halland tillhör dock Västra Götalands län medan Östra Karups distrikt i söder tillhör Skåne län och Lunds stift. \n  Övriga Halland är en del av Göteborgs stift. Hallands län omfattar dessutom delar av både Småland och Västergötland.</p>\n  <figure>\n  \t<img src=\"https:images.unsplash.com/photo-1489161587020-79aa193f04ff?auto=format&fit=crop&w=2702&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D\" alt=\"En kamel\">\n  \t<figcaption>\n  \t\tKamelen, ett ovanligt förekommande djur i Halland.\n\t\t</figcaption>\n  </figure>\n  <h3>Större tätorter</h3>\n  <p>Följande tätorter har fler än 10 000 invånare enligt tätortsavgränsningen 2010:</p>\n  <ol>\n  \t<li>Halmstad</li>\n  \t<li>Varberg</li>\n  \t<li>Falkenberg</li>\n  \t<li>Kungsbacka</li>\n  \t<li>Onsala</li>\n  \t<li>Lindome</li>\n  </ol>\n  <h3>Kända hallänningar</h3>\n  <ul>\n  \t<li>Elsa Grave</li>\n  \t<li>Basshunter</li>\n  \t<li>Åsa Svensson</li>\n  \t<li>Mona Gustafsson</li>\n  </ul>\n</article>",
-       "escaped": "\n&lt;article class=\"article\"&gt;\n  &lt;h2&gt;Halland&lt;/h2&gt;\n  &lt;p&gt;Halland är ett landskap i sydvästra Sverige. Halland gränsar i söder till Skåne, i öster till Småland och i öster och norr till \n  Västergötland, samt har i väster kust mot Kattegatt. Landskapet Halland sammanfaller i stor utsträckning med det år 1719 bildade Hallands län. \n  Lindome distrikt i norra Halland tillhör dock Västra Götalands län medan Östra Karups distrikt i söder tillhör Skåne län och Lunds stift. \n  Övriga Halland är en del av Göteborgs stift. Hallands län omfattar dessutom delar av både Småland och Västergötland.&lt;/p&gt;\n  &lt;figure&gt;\n  \t&lt;img src=\"https:images.unsplash.com/photo-1489161587020-79aa193f04ff?auto=format&fit=crop&w=2702&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D\" alt=\"En kamel\"&gt;\n  \t&lt;figcaption&gt;\n  \t\tKamelen, ett ovanligt förekommande djur i Halland.\n\t\t&lt;/figcaption&gt;\n  &lt;/figure&gt;\n  &lt;h3&gt;Större tätorter&lt;/h3&gt;\n  &lt;p&gt;Följande tätorter har fler än 10 000 invånare enligt tätortsavgränsningen 2010:&lt;/p&gt;\n  &lt;ol&gt;\n  \t&lt;li&gt;Halmstad&lt;/li&gt;\n  \t&lt;li&gt;Varberg&lt;/li&gt;\n  \t&lt;li&gt;Falkenberg&lt;/li&gt;\n  \t&lt;li&gt;Kungsbacka&lt;/li&gt;\n  \t&lt;li&gt;Onsala&lt;/li&gt;\n  \t&lt;li&gt;Lindome&lt;/li&gt;\n  &lt;/ol&gt;\n  &lt;h3&gt;Kända hallänningar&lt;/h3&gt;\n  &lt;ul&gt;\n  \t&lt;li&gt;Elsa Grave&lt;/li&gt;\n  \t&lt;li&gt;Basshunter&lt;/li&gt;\n  \t&lt;li&gt;Åsa Svensson&lt;/li&gt;\n  \t&lt;li&gt;Mona Gustafsson&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;/article&gt;"
+       "example": "\n<article class=\"article\">\n  <h2>Halland</h2>\n  <p class=\"preamble\">Jag är en ingress som får lite större utrymme i artikeln så att man får ett bra intro till det som kommer efter mig.</p>\n  <p>Halland är ett landskap i sydvästra Sverige. Halland gränsar i söder till Skåne, i öster till Småland och i öster och norr till \n  Västergötland, samt har i väster kust mot Kattegatt. Landskapet Halland sammanfaller i stor utsträckning med det år 1719 bildade Hallands län. \n  Lindome distrikt i norra Halland tillhör dock Västra Götalands län medan Östra Karups distrikt i söder tillhör Skåne län och Lunds stift. \n  Övriga Halland är en del av Göteborgs stift. Hallands län omfattar dessutom delar av både Småland och Västergötland.</p>\n  <figure>\n  \t<img src=\"https:images.unsplash.com/photo-1489161587020-79aa193f04ff?auto=format&fit=crop&w=2702&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D\" alt=\"En kamel\">\n  \t<figcaption>\n  \t\tKamelen, ett ovanligt förekommande djur i Halland.\n\t\t</figcaption>\n  </figure>\n  <h3>Större tätorter</h3>\n  <p>Följande tätorter har fler än 10 000 invånare enligt tätortsavgränsningen 2010:</p>\n  <ol>\n  \t<li>Halmstad</li>\n  \t<li>Varberg</li>\n  \t<li>Falkenberg</li>\n  \t<li>Kungsbacka</li>\n  \t<li>Onsala</li>\n  \t<li>Lindome</li>\n  </ol>\n  <h3>Kända hallänningar</h3>\n  <ul>\n  \t<li>Elsa Grave</li>\n  \t<li>Basshunter</li>\n  \t<li>Åsa Svensson</li>\n  \t<li>Mona Gustafsson</li>\n  </ul>\n</article>",
+       "escaped": "\n&lt;article class=\"article\"&gt;\n  &lt;h2&gt;Halland&lt;/h2&gt;\n  &lt;p class=\"preamble\"&gt;Jag är en ingress som får lite större utrymme i artikeln så att man får ett bra intro till det som kommer efter mig.&lt;/p&gt;\n  &lt;p&gt;Halland är ett landskap i sydvästra Sverige. Halland gränsar i söder till Skåne, i öster till Småland och i öster och norr till \n  Västergötland, samt har i väster kust mot Kattegatt. Landskapet Halland sammanfaller i stor utsträckning med det år 1719 bildade Hallands län. \n  Lindome distrikt i norra Halland tillhör dock Västra Götalands län medan Östra Karups distrikt i söder tillhör Skåne län och Lunds stift. \n  Övriga Halland är en del av Göteborgs stift. Hallands län omfattar dessutom delar av både Småland och Västergötland.&lt;/p&gt;\n  &lt;figure&gt;\n  \t&lt;img src=\"https:images.unsplash.com/photo-1489161587020-79aa193f04ff?auto=format&fit=crop&w=2702&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D\" alt=\"En kamel\"&gt;\n  \t&lt;figcaption&gt;\n  \t\tKamelen, ett ovanligt förekommande djur i Halland.\n\t\t&lt;/figcaption&gt;\n  &lt;/figure&gt;\n  &lt;h3&gt;Större tätorter&lt;/h3&gt;\n  &lt;p&gt;Följande tätorter har fler än 10 000 invånare enligt tätortsavgränsningen 2010:&lt;/p&gt;\n  &lt;ol&gt;\n  \t&lt;li&gt;Halmstad&lt;/li&gt;\n  \t&lt;li&gt;Varberg&lt;/li&gt;\n  \t&lt;li&gt;Falkenberg&lt;/li&gt;\n  \t&lt;li&gt;Kungsbacka&lt;/li&gt;\n  \t&lt;li&gt;Onsala&lt;/li&gt;\n  \t&lt;li&gt;Lindome&lt;/li&gt;\n  &lt;/ol&gt;\n  &lt;h3&gt;Kända hallänningar&lt;/h3&gt;\n  &lt;ul&gt;\n  \t&lt;li&gt;Elsa Grave&lt;/li&gt;\n  \t&lt;li&gt;Basshunter&lt;/li&gt;\n  \t&lt;li&gt;Åsa Svensson&lt;/li&gt;\n  \t&lt;li&gt;Mona Gustafsson&lt;/li&gt;\n  &lt;/ul&gt;\n&lt;/article&gt;"
       }
      ]
     }
@@ -73,65 +75,6 @@
    ],
    "button": [
     {
-     "name": "Button Outline",
-     "page": [
-      {
-       "nav": "Components",
-       "section": "Button"
-      }
-     ],
-     "description": "<p>An outlined button for secondary actions</p>\n",
-     "state": [
-      {
-       "name": ":hover",
-       "escaped": ":hover",
-       "description": "Highlights when hovering."
-      },
-      {
-       "name": ".disabled",
-       "escaped": "disabled",
-       "description": "Disables button."
-      }
-     ],
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<button class=\"btn btn-outline\">Button</button>",
-       "path": "~/src/scss/components/_button-outline.scss",
-       "example": "\n<button class=\"btn btn-outline\">Button</button>",
-       "escaped": "\n&lt;button class=\"btn btn-outline\"&gt;Button&lt;/button&gt;"
-      }
-     ]
-    },
-    {
-     "name": "Button Primary",
-     "page": [
-      {
-       "nav": "Components",
-       "section": "Button"
-      }
-     ],
-     "description": "<p>Solid button color style for use with the .btn base style.</p>\n",
-     "state": [
-      {
-       "name": ":hover",
-       "escaped": ":hover",
-       "description": "Highlights when hovering."
-      }
-     ],
-     "markup": [
-      {
-       "lang": "markup",
-       "description": "",
-       "modifier": "\n<button class=\"btn btn-primary\">Button</button>",
-       "path": "~/src/scss/components/_button-primary.scss",
-       "example": "\n<button class=\"btn btn-primary\">Button</button>",
-       "escaped": "\n&lt;button class=\"btn btn-primary\"&gt;Button&lt;/button&gt;"
-      }
-     ]
-    },
-    {
      "name": "Button",
      "page": [
       {
@@ -139,22 +82,27 @@
        "section": "Button"
       }
      ],
-     "description": "<p>A really good component, fitting all your needs.</p>\n",
+     "description": "<p>It&#39;s a button, don&#39;t press it. Our should you?</p>\n",
      "state": [
       {
        "name": ":hover",
        "escaped": ":hover",
        "description": "Highlights when hovering."
+      },
+      {
+       "name": ":disabled",
+       "escaped": ":disabled",
+       "description": "Disables the button"
       }
      ],
      "markup": [
       {
        "lang": "markup",
        "description": "",
-       "modifier": "\n<button class=\"btn\">Button</button>",
+       "modifier": "\n<button class=\"btn\">Button</button>\n<button class=\"btn btn-primary\">Primary button</button>\n<button class=\"btn btn-secondary\">Secondary Button</button>\n<button class=\"btn btn-outline\">Outlined Button</button>",
        "path": "~/src/scss/components/_button.scss",
-       "example": "\n<button class=\"btn\">Button</button>",
-       "escaped": "\n&lt;button class=\"btn\"&gt;Button&lt;/button&gt;"
+       "example": "\n<button class=\"btn\">Button</button>\n<button class=\"btn btn-primary\">Primary button</button>\n<button class=\"btn btn-secondary\">Secondary Button</button>\n<button class=\"btn btn-outline\">Outlined Button</button>",
+       "escaped": "\n&lt;button class=\"btn\"&gt;Button&lt;/button&gt;\n&lt;button class=\"btn btn-primary\"&gt;Primary button&lt;/button&gt;\n&lt;button class=\"btn btn-secondary\"&gt;Secondary Button&lt;/button&gt;\n&lt;button class=\"btn btn-outline\"&gt;Outlined Button&lt;/button&gt;"
       }
      ]
     }
@@ -375,6 +323,28 @@
      ]
     }
    ],
+   "image": [
+    {
+     "name": "Image",
+     "page": [
+      {
+       "nav": "Components",
+       "section": "Image"
+      }
+     ],
+     "description": "<p>Styles for images</p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<img class=\"img\">\n<img class=\"img img--round\">",
+       "path": "~/src/scss/components/_image.scss",
+       "example": "\n<img class=\"img\">\n<img class=\"img img--round\">",
+       "escaped": "\n&lt;img class=\"img\"&gt;\n&lt;img class=\"img img--round\"&gt;"
+      }
+     ]
+    }
+   ],
    "hero": [
     {
      "name": "Page Hero",
@@ -411,10 +381,10 @@
       {
        "lang": "markup",
        "description": "",
-       "modifier": "\n<div class=\"col col-12 mxn3\">\n  <div class=\"col col-6 px3\">\n    <div class=\"panel\">\n      <div class=\"panel__header\">Städer</div>\n      <div class=\"panel__body\">De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. </div>\n    </div>\n  </div>\n  <div class=\"col col-6 px3\">\n    <div class=\"panel\">\n      <div class=\"panel__header\">Städer</div>\n      <div class=\"panel__body\">De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. </div>\n    </div>\n  </div>\n</div>",
+       "modifier": "\n<div class=\"panel\">\n  <div class=\"panel__header\">Städer</div>\n  <div class=\"panel__body\">De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. </div>\n</div>\n<div class=\"panel\">\n  <div class=\"panel__body\">De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. </div>\n</div>\n<div class=\"panel panel--warning\">\n  <div class=\"panel__body\">De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. </div>\n</div>",
        "path": "~/src/scss/components/_panel.scss",
-       "example": "\n<div class=\"col col-12 mxn3\">\n  <div class=\"col col-6 px3\">\n    <div class=\"panel\">\n      <div class=\"panel__header\">Städer</div>\n      <div class=\"panel__body\">De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. </div>\n    </div>\n  </div>\n  <div class=\"col col-6 px3\">\n    <div class=\"panel\">\n      <div class=\"panel__header\">Städer</div>\n      <div class=\"panel__body\">De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. </div>\n    </div>\n  </div>\n</div>",
-       "escaped": "\n&lt;div class=\"col col-12 mxn3\"&gt;\n  &lt;div class=\"col col-6 px3\"&gt;\n    &lt;div class=\"panel\"&gt;\n      &lt;div class=\"panel__header\"&gt;Städer&lt;/div&gt;\n      &lt;div class=\"panel__body\"&gt;De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. &lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n  &lt;div class=\"col col-6 px3\"&gt;\n    &lt;div class=\"panel\"&gt;\n      &lt;div class=\"panel__header\"&gt;Städer&lt;/div&gt;\n      &lt;div class=\"panel__body\"&gt;De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. &lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;"
+       "example": "\n<div class=\"panel\">\n  <div class=\"panel__header\">Städer</div>\n  <div class=\"panel__body\">De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. </div>\n</div>\n<div class=\"panel\">\n  <div class=\"panel__body\">De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. </div>\n</div>\n<div class=\"panel panel--warning\">\n  <div class=\"panel__body\">De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. </div>\n</div>",
+       "escaped": "\n&lt;div class=\"panel\"&gt;\n  &lt;div class=\"panel__header\"&gt;Städer&lt;/div&gt;\n  &lt;div class=\"panel__body\"&gt;De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"panel\"&gt;\n  &lt;div class=\"panel__body\"&gt;De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"panel panel--warning\"&gt;\n  &lt;div class=\"panel__body\"&gt;De fem gamla städerna i Halland, Falkenberg, Halmstad, Kungsbacka, Laholm och Varberg, inrättades som stadskommuner när 1862 års kommunalförordningar trädde i kraft. &lt;/div&gt;\n&lt;/div&gt;"
       }
      ]
     }
@@ -532,6 +502,28 @@
        "path": "~/src/scss/config/_align.scss",
        "example": "\n<div>\n  <div class=\"table-cell\"><h1>Halland</h1></div>\n  <div class=\"table-cell align-baseline\">baseline</div>\n  <div class=\"table-cell align-top\">top</div>\n  <div class=\"table-cell align-middle\">middle</div>\n  <div class=\"table-cell align-bottom\">bottom</div>\n</div>",
        "escaped": "\n&lt;div&gt;\n  &lt;div class=\"table-cell\"&gt;&lt;h1&gt;Halland&lt;/h1&gt;&lt;/div&gt;\n  &lt;div class=\"table-cell align-baseline\"&gt;baseline&lt;/div&gt;\n  &lt;div class=\"table-cell align-top\"&gt;top&lt;/div&gt;\n  &lt;div class=\"table-cell align-middle\"&gt;middle&lt;/div&gt;\n  &lt;div class=\"table-cell align-bottom\"&gt;bottom&lt;/div&gt;\n&lt;/div&gt;"
+      }
+     ]
+    }
+   ],
+   "display": [
+    {
+     "name": "Display",
+     "page": [
+      {
+       "nav": "Config",
+       "section": "Display"
+      }
+     ],
+     "description": "<p>Quickly and responsively toggle the display value of components and more with our display utilities. Includes support for some of the more common values, as well as some extras for controlling display when printing.</p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n <div class=\"d-print-none\">Screen Only (Hide on print only)</div>\n <div class=\"d-none d-print-block\">Print Only (Hide on screen only)</div>\n <div class=\"d-none d-lg-block d-print-block\">Hide up to large on screen, but always show on print</div>\n <table class=\"table\">\n <thead>\n   <tr>\n     <th colspan=\"2\">Screen display classes</th>\n   </tr>\n </thead>\n <tbody>\n    <tr class=\"table__subheader\">\n      <td>Screen Size</td>\n      <td>Class</td>\n   </tr>\n   <tr>\n     <td>Hidden on all</td>\n     <td>.d-none</td>\n   </tr>\n   <tr>\n     <td>Hidden only on xs</td>\n     <td>.d-none .d-sm-block</td>\n   </tr>\n   <tr>\n     <td>Hidden only on sm</td>\n     <td>.d-sm-none .d-md-block</td>\n   </tr>\n   <tr>\n     <td>Hidden only on md</td>\n     <td>.d-md-none .d-lg-block</td>\n   </tr>\n   <tr>\n     <td>Hidden only on lg</td>\n     <td>.d-lg-none</td>\n   </tr>\n   <tr>\n     <td>Visible on all</td>\n     <td>.d-block</td>\n   </tr>\n   <tr>\n     <td>Visible only on xs</td>\n     <td>.d-block .d-sm-none</td>\n   </tr>\n   <tr>\n     <td>Visible only on sm</td>\n     <td>.d-none .d-sm-block .d-md-none</td>\n   </tr>\n   <tr>\n     <td>Visible only on md</td>\n     <td>.d-none .d-md-block .d-lg-none</td>\n   </tr>\n   <tr>\n     <td>Visible only on lg</td>\n     <td>.d-none .d-lg-block</td>\n   </tr>\n </tbody>\n</table>\n <table class=\"table\">\n <thead>\n   <tr>\n     <th>Print display classes</th>\n   </tr>\n </thead>\n <tbody>\n    <tr class=\"table__subheader\">\n      <td>Class</td>\n   </tr>\n   <tr>\n     <td>.d-print-none</td>\n   </tr>\n   <tr>\n     <td>.d-print-inline</td>\n   </tr>\n   <tr>\n     <td>.d-print-inline-block</td>\n   </tr>\n   <tr>\n     <td>.d-print-block</td>\n   </tr>\n   <tr>\n     <td>.d-print-table</td>\n   </tr>\n   <tr>\n     <td>.d-print-table-row</td>\n   </tr>\n   <tr>\n     <td>.d-print-table-cell</td>\n   </tr>\n   <tr>\n     <td>.d-print-flex</td>\n   </tr>\n   <tr>\n     <td>.d-print-inline-flex</td>\n   </tr>\n </tbody>\n</table>",
+       "path": "~/src/scss/config/_display.scss",
+       "example": "\n <div class=\"d-print-none\">Screen Only (Hide on print only)</div>\n <div class=\"d-none d-print-block\">Print Only (Hide on screen only)</div>\n <div class=\"d-none d-lg-block d-print-block\">Hide up to large on screen, but always show on print</div>\n <table class=\"table\">\n <thead>\n   <tr>\n     <th colspan=\"2\">Screen display classes</th>\n   </tr>\n </thead>\n <tbody>\n    <tr class=\"table__subheader\">\n      <td>Screen Size</td>\n      <td>Class</td>\n   </tr>\n   <tr>\n     <td>Hidden on all</td>\n     <td>.d-none</td>\n   </tr>\n   <tr>\n     <td>Hidden only on xs</td>\n     <td>.d-none .d-sm-block</td>\n   </tr>\n   <tr>\n     <td>Hidden only on sm</td>\n     <td>.d-sm-none .d-md-block</td>\n   </tr>\n   <tr>\n     <td>Hidden only on md</td>\n     <td>.d-md-none .d-lg-block</td>\n   </tr>\n   <tr>\n     <td>Hidden only on lg</td>\n     <td>.d-lg-none</td>\n   </tr>\n   <tr>\n     <td>Visible on all</td>\n     <td>.d-block</td>\n   </tr>\n   <tr>\n     <td>Visible only on xs</td>\n     <td>.d-block .d-sm-none</td>\n   </tr>\n   <tr>\n     <td>Visible only on sm</td>\n     <td>.d-none .d-sm-block .d-md-none</td>\n   </tr>\n   <tr>\n     <td>Visible only on md</td>\n     <td>.d-none .d-md-block .d-lg-none</td>\n   </tr>\n   <tr>\n     <td>Visible only on lg</td>\n     <td>.d-none .d-lg-block</td>\n   </tr>\n </tbody>\n</table>\n <table class=\"table\">\n <thead>\n   <tr>\n     <th>Print display classes</th>\n   </tr>\n </thead>\n <tbody>\n    <tr class=\"table__subheader\">\n      <td>Class</td>\n   </tr>\n   <tr>\n     <td>.d-print-none</td>\n   </tr>\n   <tr>\n     <td>.d-print-inline</td>\n   </tr>\n   <tr>\n     <td>.d-print-inline-block</td>\n   </tr>\n   <tr>\n     <td>.d-print-block</td>\n   </tr>\n   <tr>\n     <td>.d-print-table</td>\n   </tr>\n   <tr>\n     <td>.d-print-table-row</td>\n   </tr>\n   <tr>\n     <td>.d-print-table-cell</td>\n   </tr>\n   <tr>\n     <td>.d-print-flex</td>\n   </tr>\n   <tr>\n     <td>.d-print-inline-flex</td>\n   </tr>\n </tbody>\n</table>",
+       "escaped": "\n &lt;div class=\"d-print-none\"&gt;Screen Only (Hide on print only)&lt;/div&gt;\n &lt;div class=\"d-none d-print-block\"&gt;Print Only (Hide on screen only)&lt;/div&gt;\n &lt;div class=\"d-none d-lg-block d-print-block\"&gt;Hide up to large on screen, but always show on print&lt;/div&gt;\n &lt;table class=\"table\"&gt;\n &lt;thead&gt;\n   &lt;tr&gt;\n     &lt;th colspan=\"2\"&gt;Screen display classes&lt;/th&gt;\n   &lt;/tr&gt;\n &lt;/thead&gt;\n &lt;tbody&gt;\n    &lt;tr class=\"table__subheader\"&gt;\n      &lt;td&gt;Screen Size&lt;/td&gt;\n      &lt;td&gt;Class&lt;/td&gt;\n   &lt;/tr&gt;\n   &lt;tr&gt;\n     &lt;td&gt;Hidden on all&lt;/td&gt;\n     &lt;td&gt;.d-none&lt;/td&gt;\n   &lt;/tr&gt;\n   &lt;tr&gt;\n     &lt;td&gt;Hidden only on xs&lt;/td&gt;\n     &lt;td&gt;.d-none .d-sm-block&lt;/td&gt;\n   &lt;/tr&gt;\n   &lt;tr&gt;\n     &lt;td&gt;Hidden only on sm&lt;/td&gt;\n     &lt;td&gt;.d-sm-none .d-md-block&lt;/td&gt;\n   &lt;/tr&gt;\n   &lt;tr&gt;\n     &lt;td&gt;Hidden only on md&lt;/td&gt;\n     &lt;td&gt;.d-md-none .d-lg-block&lt;/td&gt;\n   &lt;/tr&gt;\n   &lt;tr&gt;\n     &lt;td&gt;Hidden only on lg&lt;/td&gt;\n     &lt;td&gt;.d-lg-none&lt;/td&gt;\n   &lt;/tr&gt;\n   &lt;tr&gt;\n     &lt;td&gt;Visible on all&lt;/td&gt;\n     &lt;td&gt;.d-block&lt;/td&gt;\n   &lt;/tr&gt;\n   &lt;tr&gt;\n     &lt;td&gt;Visible only on xs&lt;/td&gt;\n     &lt;td&gt;.d-block .d-sm-none&lt;/td&gt;\n   &lt;/tr&gt;\n   &lt;tr&gt;\n     &lt;td&gt;Visible only on sm&lt;/td&gt;\n     &lt;td&gt;.d-none .d-sm-block .d-md-none&lt;/td&gt;\n   &lt;/tr&gt;\n   &lt;tr&gt;\n     &lt;td&gt;Visible only on md&lt;/td&gt;\n     &lt;td&gt;.d-none .d-md-block .d-lg-none&lt;/td&gt;\n   &lt;/tr&gt;\n   &lt;tr&gt;\n     &lt;td&gt;Visible only on lg&lt;/td&gt;\n     &lt;td&gt;.d-none .d-lg-block&lt;/td&gt;\n   &lt;/tr&gt;\n &lt;/tbody&gt;\n&lt;/table&gt;\n &lt;table class=\"table\"&gt;\n &lt;thead&gt;\n   &lt;tr&gt;\n     &lt;th&gt;Print display classes&lt;/th&gt;\n   &lt;/tr&gt;\n &lt;/thead&gt;\n &lt;tbody&gt;\n    &lt;tr class=\"table__subheader\"&gt;\n      &lt;td&gt;Class&lt;/td&gt;\n   &lt;/tr&gt;\n   &lt;tr&gt;\n     &lt;td&gt;.d-print-none&lt;/td&gt;\n   &lt;/tr&gt;\n   &lt;tr&gt;\n     &lt;td&gt;.d-print-inline&lt;/td&gt;\n   &lt;/tr&gt;\n   &lt;tr&gt;\n     &lt;td&gt;.d-print-inline-block&lt;/td&gt;\n   &lt;/tr&gt;\n   &lt;tr&gt;\n     &lt;td&gt;.d-print-block&lt;/td&gt;\n   &lt;/tr&gt;\n   &lt;tr&gt;\n     &lt;td&gt;.d-print-table&lt;/td&gt;\n   &lt;/tr&gt;\n   &lt;tr&gt;\n     &lt;td&gt;.d-print-table-row&lt;/td&gt;\n   &lt;/tr&gt;\n   &lt;tr&gt;\n     &lt;td&gt;.d-print-table-cell&lt;/td&gt;\n   &lt;/tr&gt;\n   &lt;tr&gt;\n     &lt;td&gt;.d-print-flex&lt;/td&gt;\n   &lt;/tr&gt;\n   &lt;tr&gt;\n     &lt;td&gt;.d-print-inline-flex&lt;/td&gt;\n   &lt;/tr&gt;\n &lt;/tbody&gt;\n&lt;/table&gt;"
       }
      ]
     }

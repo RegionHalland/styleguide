@@ -9,6 +9,7 @@
 // @markup
 // <article class="article">
 //   <h2>Halland</h2>
+//   <p class="preamble">Jag är en ingress som får lite större utrymme i artikeln så att man får ett bra intro till det som kommer efter mig.</p>
 //   <p>Halland är ett landskap i sydvästra Sverige. Halland gränsar i söder till Skåne, i öster till Småland och i öster och norr till 
 //   Västergötland, samt har i väster kust mot Kattegatt. Landskapet Halland sammanfaller i stor utsträckning med det år 1719 bildade Hallands län. 
 //   Lindome distrikt i norra Halland tillhör dock Västra Götalands län medan Östra Karups distrikt i söder tillhör Skåne län och Lunds stift. 
@@ -73,6 +74,14 @@
 	figure,
 	figcaption {
 		width: 100%;
+	}
+
+	.preamble {
+		@extend .h3;
+		font-family: 'Lato', sans-serif;
+		font-weight: normal;
+		color: palette(black, xx-dark);
+		
 	}
 
 	figure {

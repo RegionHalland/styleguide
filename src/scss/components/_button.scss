@@ -3,15 +3,18 @@
 // @page Components/Button
 //
 // @description 
-// A really good component, fitting all your needs.
+// It's a button, don't press it. Our should you?
 //
 // @state :hover - Highlights when hovering.
+// @state :disabled - Disables the button
 //
 // @markup
-//	<button class="btn">Button</button>
-// 
-// 
-
+// <button class="btn">Button</button>
+// <button class="btn btn-primary">Primary button</button>
+// <button class="btn btn-secondary">Secondary Button</button>
+// <button class="btn btn-outline">Outlined Button</button>
+//
+//
 
 .btn {
 	font-family: inherit;
@@ -27,9 +30,7 @@
 	border-radius: $border-radius;
 	vertical-align: middle;
 	-webkit-appearance: none;
-	color: inherit;
-	background-color: transparent;
-
+	
 	&:hover {
 		text-decoration: none;
 	}
@@ -38,5 +39,74 @@
 		outline: none;
 		border-color: rgba(0, 0, 0, .125);
 		box-shadow: 0 0 0 3px rgba(0, 0, 0, .25);
+	}
+	
+	@include modifier('small') {
+		
+		padding: $space-2 $space-3;
+	}
+	
+	@include modifier('primary') {
+		color: $white;
+	    background: $dark-blue;
+	    border: 1px solid $dark-blue;
+	    text-shadow: 0 0 1px rgba(0, 0, 0, .3);
+		
+		.icon {
+			fill: $white;
+		}
+
+		&:hover {
+			background: palette(dark-blue, x-light);
+		}
+
+		&:active {
+			box-shadow: inset 0 0 0 20rem $darken-2,
+						inset 0 3px 4px 0 $darken-3,
+						0 0 1px $darken-2;
+		}
+		
+		&:disabled,
+		&.is-disabled {
+			opacity: .5;
+			pointer-events: none;
+		}
+	}
+
+	@include modifier('secondary') {
+		color: $white;
+	    background: $blue;
+	    border: 1px solid palette(blue, dark);
+	    text-shadow: 0 0 0px rgba(0, 0, 0, .3);
+		
+		.icon {
+			fill: $white;
+		}
+
+		&:hover {
+			background: palette(grey, light);
+		}
+
+		&:active {
+			box-shadow: inset 0 0 0 20rem $darken-2,
+						inset 0 3px 4px 0 $darken-3,
+						0 0 1px $darken-2;
+		}
+
+		&:disabled,
+		&.is-disabled {
+			opacity: .5;
+			pointer-events: none;
+		}
+	}
+
+	@include modifier('outline') {
+		background:none;
+		color: $dark-blue;
+		border: 1px solid $dark-blue;
+
+		.icon {
+			fill: $dark-blue;
+		}
 	}
 }

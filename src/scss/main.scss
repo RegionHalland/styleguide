@@ -4,6 +4,8 @@
 // Mixins
 @import 'mixins/spacing';
 @import 'mixins/palette';
+@import 'mixins/bem';
+@import 'mixins/breakpoints';
 
 // Base
 @import 'base/fonts';
@@ -14,6 +16,7 @@
 @import 'config/type-scale';
 @import 'config/typography';
 @import 'config/layout';
+@import 'config/display';
 @import 'config/align';
 @import 'config/margin';
 @import 'config/padding';
@@ -24,6 +27,7 @@
 
 // Components
 @import 'components/container';
+@import 'components/image';
 @import 'components/article';
 @import 'components/page-hero';
 @import 'components/site-nav';
@@ -32,8 +36,6 @@
 @import 'components/content-nav';
 @import 'components/breadcrumbs';
 @import 'components/button';
-@import 'components/button-primary';
-@import 'components/button-outline';
 @import 'components/table';
 @import 'components/panel';
 @import 'components/icons';

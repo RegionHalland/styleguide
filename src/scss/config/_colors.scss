@@ -40,6 +40,7 @@
 
 
 .background-white     { background: $white}
+.background-grey      { background: $grey}
 .background-black     { background: $black}
 .background-dark-blue { background: $dark-blue}
 .background-blue      { background: $blue}
@@ -52,6 +53,7 @@
 .fill-yellow    { fill: $yellow}
 
 .text-white     { color: $white}
+.text-grey      { color: palette(black, x-light)}
 .text-black     { color: $black}
 .text-dark-blue { color: $dark-blue}
 .text-blue      { color: $blue}

@@ -42,6 +42,11 @@ $green: #438011;
 $yellow: #FDB813;
 $light-yellow: #FFF1CE;
 
+$dark-red: #C82828;
+$red: #F53131;
+$light-red: #FCC8C8;
+
+
 $palettes: (
 	grey: (
 		xx-light : lighten($grey, 7%),
@@ -58,6 +63,14 @@ $palettes: (
 		base     : $black,
 		dark     : darken($black, 8%),
 		x-dark   : darken($black, 24%)
+	),
+	white: (
+		xx-light : lighten($white, 35%),
+		x-light  : lighten($white, 22%),
+		light    : lighten($white, 10%),
+		base     : $white,
+		dark     : darken($white, 8%),
+		x-dark   : darken($white, 24%)
 	),
 	blue: (
 		light    : lighten($blue, 2.5%),
@@ -94,6 +107,21 @@ $palettes: (
 		base     : $light-yellow,
 		dark     : darken($light-yellow, 8%),
 	),
+	red: (
+		light    : lighten($red, 10%),
+		base     : $red,
+		dark     : darken($red, 8%),
+	),
+	light-red: (
+		light    : lighten($light-red, 10%),
+		base     : $light-red,
+		dark     : darken($light-red, 8%),
+	),
+	dark-red: (
+		light    : lighten($dark-red, 10%),
+		base     : $dark-red,
+		dark     : darken($dark-red, 8%),
+	),
 );
 
 // Darken
@@ -119,6 +147,15 @@ $breakpoint-sm: 40em;
 $breakpoint-md: 65em;
 //Laptop and up
 $breakpoint-lg: 80em;
+
+$breakpoints: (
+  xs: 0,
+  sm: $breakpoint-sm,
+  md: $breakpoint-md,
+  lg: $breakpoint-lg,
+) !default;
+
+
 
 // Z-index
 $z1: 1;
