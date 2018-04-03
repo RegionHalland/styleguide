@@ -1,0 +1,35 @@
+//
+// @name Featured Link
+// @description Treat your links like a princess
+//
+// @page Components/FeaturedLink
+//
+// @markup
+// <a href="#" class="featured-link">
+//     <h3 class="featured-link__title">
+//         Laboratoriemedicin
+//         <svg class="icon--sm"><use xlink:href="#chevron-right"/></svg> 
+//     </h3>	   
+//     <p class="featured-link__excerpt">I Hallands laboratorierverksamhet ingår avdelningarna för klinisk kemi , mikrobiologi, patologi och transfusionsmedicin.</p>
+// </a>
+
+.featured-link {
+	display: flex;
+	flex-wrap: wrap;
+	padding: $space-3 $space-3;
+	@extend %card;
+}
+
+.featured-link__title {
+	width: 100%;
+	color: palette(dark-blue, base);
+	fill:  palette(dark-blue, base);
+}
+
+.featured-link__excerpt {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 0.9375rem;
+	color: palette(black, base);
+}

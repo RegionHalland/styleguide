@@ -1,0 +1,10 @@
+%card {
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.04);
+	transition: box-shadow 0.125s ease-in-out;
+
+	&:hover,
+	&:active,
+	&:focus {
+		box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.04);
+	}
+}

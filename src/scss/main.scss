@@ -7,6 +7,9 @@
 @import 'mixins/bem';
 @import 'mixins/breakpoints';
 
+// Placeholders
+@import 'placeholders/card';
+
 // Base
 @import 'base/fonts';
 @import 'base/reset';
@@ -43,3 +46,4 @@
 @import 'components/support-header';
 @import 'components/search-header';
 @import 'components/search-result';
+@import 'components/featured-link';
