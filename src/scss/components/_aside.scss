@@ -42,8 +42,12 @@
 .aside {
 	
 	h1, h2, h3, h4, h5, h6 {
-		margin-top: $space-4;
-		margin-bottom: $space-1;
+		padding-top: $space-4;
+		padding-bottom: $space-1;
+
+		&:first-child {
+			margin-top: 0;
+		}
 	}
 
 	h1 {
