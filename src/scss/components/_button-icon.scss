@@ -1,0 +1,13 @@
+.btn-icon {
+	display: inline-flex;
+	align-items: center;
+}
+
+.btn-icon__label {
+	
+}
+
+.btn-icon__icon {
+	@extend .icon;
+	@extend .icon--sm;
+}
