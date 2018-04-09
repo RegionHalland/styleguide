@@ -18,6 +18,9 @@
 .italic  { font-style: italic }
 .caps    { text-transform: uppercase; letter-spacing: $caps-letter-spacing; }
 
+.small { font-size: 0.95em; }
+.big { font-size: 1.1em; }
+
 .left-align   { text-align: left }
 .center       { text-align: center }
 .right-align  { text-align: right }
@@ -34,6 +37,8 @@
 .list-style-none { list-style: none }
 .underline { text-decoration: underline }
 
+.light {color: palette(black, xx-light)};
+
 .truncate {
 	max-width: 100%;
 	overflow: hidden;
@@ -41,9 +46,7 @@
 	white-space: nowrap;
 }
 
-
-
-.list-reset {
-	list-style: none;
-	padding-left: 0;
+.blockquote {
+	margin-top:    $space-3;
+	margin-bottom: $space-3;
 }

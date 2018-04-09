@@ -1,0 +1,20 @@
+.list {
+	margin-top:    $space-3;
+	margin-bottom: $space-3;
+	padding-left: $space-4;
+
+	@include modifier('none') {
+		margin-top: none;
+		margin-bottom: none;
+		padding-left: none;
+		list-style-type: none;
+	}
+}
+
+ul.list {
+	list-style-type: disc;
+}
+
+ol.list {
+	list-style-type: decimal;
+}
