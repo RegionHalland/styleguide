@@ -16,7 +16,7 @@
 .featured-link {
 	display: flex;
 	flex-wrap: wrap;
-	padding: $space-3 $space-3;
+	padding: $space-3;
 	@extend %card;
 }
 
@@ -24,12 +24,13 @@
 	width: 100%;
 	color: palette(dark-blue, base);
 	fill:  palette(dark-blue, base);
+	margin-bottom: $space-1;
 }
 
 .featured-link__excerpt {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	font-size: 0.9375rem;
-	color: palette(black, base);
+	font-style: italic;
+	color: palette(black, xx-light);
 }
