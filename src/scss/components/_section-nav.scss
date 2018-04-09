@@ -1,0 +1,28 @@
+//
+// @name Section Navigation
+// @page Components/Navigation
+//
+// @description 
+// TBA
+//
+// @markup
+// <div class="section-nav">
+//     <ul class="section-nav__list">
+//         <li class="section-nav__item">
+//             <a href="#">Vårdgivarwebben</a>
+//         </li>
+//         <li class="section-nav__item">
+//             <a href="#">Vårdgivarwebben</a>
+//         </li>
+//         <li class="section-nav__item">
+//             <a href="#">Vårdgivarwebben</a>
+//         </li>
+//     </ul>
+// </div>
+
+.section-nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: stretch;
+	margin-top: -$space-4;
+}
