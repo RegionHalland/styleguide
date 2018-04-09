@@ -187,6 +187,26 @@
      ]
     },
     {
+     "name": "Section Navigation",
+     "page": [
+      {
+       "nav": "Components",
+       "section": "Navigation"
+      }
+     ],
+     "description": "<p>TBA</p>\n",
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<div class=\"section-nav\">\n    <ul class=\"section-nav__list\">\n        <li class=\"section-nav__item\">\n            <a href=\"#\">Vårdgivarwebben</a>\n        </li>\n        <li class=\"section-nav__item\">\n            <a href=\"#\">Vårdgivarwebben</a>\n        </li>\n        <li class=\"section-nav__item\">\n            <a href=\"#\">Vårdgivarwebben</a>\n        </li>\n    </ul>\n</div>",
+       "path": "~/src/scss/components/_section-nav.scss",
+       "example": "\n<div class=\"section-nav\">\n    <ul class=\"section-nav__list\">\n        <li class=\"section-nav__item\">\n            <a href=\"#\">Vårdgivarwebben</a>\n        </li>\n        <li class=\"section-nav__item\">\n            <a href=\"#\">Vårdgivarwebben</a>\n        </li>\n        <li class=\"section-nav__item\">\n            <a href=\"#\">Vårdgivarwebben</a>\n        </li>\n    </ul>\n</div>",
+       "escaped": "\n&lt;div class=\"section-nav\"&gt;\n    &lt;ul class=\"section-nav__list\"&gt;\n        &lt;li class=\"section-nav__item\"&gt;\n            &lt;a href=\"#\"&gt;Vårdgivarwebben&lt;/a&gt;\n        &lt;/li&gt;\n        &lt;li class=\"section-nav__item\"&gt;\n            &lt;a href=\"#\"&gt;Vårdgivarwebben&lt;/a&gt;\n        &lt;/li&gt;\n        &lt;li class=\"section-nav__item\"&gt;\n            &lt;a href=\"#\"&gt;Vårdgivarwebben&lt;/a&gt;\n        &lt;/li&gt;\n    &lt;/ul&gt;\n&lt;/div&gt;"
+      }
+     ]
+    },
+    {
      "name": "Site Navigation",
      "page": [
       {

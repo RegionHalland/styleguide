@@ -61,8 +61,6 @@
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: $space-2;
-	padding-right: $space-2;
 
 	@media screen and (min-width: $breakpoint-md) {
 		flex-wrap: no-wrap;
@@ -70,9 +68,13 @@
 }
 
 .site-nav-top {
-	padding-top: $space-2;
-	padding-bottom: $space-2;
+	padding: $space-2;
 	border-bottom: 1px solid rgba(231, 231, 231, 0.5);
+}
+
+.site-nav-bottom {
+	padding-right: $space-2;
+	padding-left: $space-2;
 }
 
 .site-nav__list {
