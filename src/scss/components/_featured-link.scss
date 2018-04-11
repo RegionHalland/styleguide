@@ -4,6 +4,8 @@
 //
 // @page Components/FeaturedLink
 //
+// @state .featured-link--external - Changes color to differenciate
+//
 // @markup
 // <a href="#" class="featured-link">
 //     <h3 class="featured-link__title">
@@ -45,4 +47,22 @@
 	font-style: italic;
 	color: palette(black, xx-light);
 	margin-top: $space-1;
+}
+
+.featured-link--external {
+	.icon-badge {
+		background: $yellow;
+		fill: palette(yellow, dark);
+	}
+
+	&::after {
+		content: '';
+		background: $yellow;
+		position: absolute;
+		height: 100%;
+		width: 7.5px;
+		left: 0;
+		top: 0;
+		bottom: 0;
+	}
 }
