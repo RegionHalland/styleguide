@@ -8,8 +8,8 @@
 // <a href="#" class="featured-link">
 //     <h3 class="featured-link__title">
 //         Laboratoriemedicin
-//         <svg class="icon--sm"><use xlink:href="#chevron-right"/></svg> 
-//     </h3>	   
+//     </h3>
+//     <svg class="featured-link__icon icon--sm"><use xlink:href="#chevron-right"/></svg> 	   
 //     <p class="featured-link__excerpt">I Hallands laboratorierverksamhet ingår avdelningarna för klinisk kemi , mikrobiologi, patologi och transfusionsmedicin.</p>
 // </a>
 
@@ -17,13 +17,25 @@
 	display: flex;
 	flex-wrap: wrap;
 	padding: $space-3;
+	position: relative;
 	@extend %card;
+}
+
+.featured-link__icon {
+	position: absolute;
+	top: 50%;
+	right: $space-3;
+	transform: translateY(-50%);
+
 }
 
 .featured-link__title {
 	width: 100%;
 	color: palette(dark-blue, base);
 	fill:  palette(dark-blue, base);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 	margin-bottom: $space-1;
 }
 
