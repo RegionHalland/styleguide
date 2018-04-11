@@ -310,19 +310,6 @@
 	}
 }
 
-// Breadcrumbs
-.breadcrumbs-container {
-	display: none;
-
-	@media screen and (min-width: $breakpoint-md) {
-		display: block;
-		background: rgba($blue, 0.1);
-		padding-top: $space-2;
-		padding-bottom: $space-2;
-		border-bottom: 1px solid palette(grey, base);
-	}
-}
-
 // Section nav
 .section-header {
 	background: rgba($blue, 0.1);
