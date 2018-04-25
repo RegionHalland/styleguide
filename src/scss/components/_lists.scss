@@ -1,13 +1,20 @@
 .list {
-	margin-top:    $space-3;
+	margin-top: $space-3;
 	margin-bottom: $space-3;
 	padding-left: $space-4;
 
 	@include modifier('none') {
-		margin-top: none;
-		margin-bottom: none;
-		padding-left: none;
-		list-style-type: none;
+		list-style-type: none !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+}
+
+.li {
+	@include modifier('border-bottom') {
+		border-bottom: 1px solid palette(grey);
+		margin-bottom: $space-3;
+		padding-bottom: $space-3;
 	}
 }
 

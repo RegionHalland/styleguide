@@ -1,0 +1,18 @@
+.comments {
+	li {
+		background: #fff;
+		border: 1px solid $darken-2;
+		margin-bottom: 2rem;
+
+		.comment-body {
+			padding: 1rem;
+		}
+
+		.children li {
+			border: none;
+			border-top: 1px solid $darken-2;
+			background: #f8fbfc;
+			margin-bottom: 0;
+		}
+	}
+}
