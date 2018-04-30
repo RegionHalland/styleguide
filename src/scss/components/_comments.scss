@@ -5,14 +5,21 @@
 		margin-bottom: 2rem;
 
 		.comment-body {
-			padding: 1rem;
+			padding-top: $space-3;
 		}
 
-		.children li {
+		ul li {
 			border: none;
-			border-top: 1px solid $darken-2;
-			background: #f8fbfc;
+			background: palette(light-blue, light);;
 			margin-bottom: 0;
 		}
+
+		li ul {
+			padding-left: $space-4;
+		}
+	}
+
+	article {
+		padding: $space-3;
 	}
 }
