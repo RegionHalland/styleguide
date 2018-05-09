@@ -10,9 +10,9 @@
 // <article class="article">
 //   <h2>Halland</h2>
 //   <p class="preamble">Jag är en ingress som får lite större utrymme i artikeln så att man får ett bra intro till det som kommer efter mig.</p>
-//   <p>Halland är ett landskap i sydvästra Sverige. Halland gränsar i söder till Skåne, i öster till Småland och i öster och norr till 
-//   Västergötland, samt har i väster kust mot Kattegatt. Landskapet Halland sammanfaller i stor utsträckning med det år 1719 bildade Hallands län. 
-//   Lindome distrikt i norra Halland tillhör dock Västra Götalands län medan Östra Karups distrikt i söder tillhör Skåne län och Lunds stift. 
+//   <p>Halland är ett landskap i sydvästra Sverige. Halland gränsar i söder till Skåne, i öster till Småland och i öster och norr till
+//   Västergötland, samt har i väster kust mot Kattegatt. Landskapet Halland sammanfaller i stor utsträckning med det år 1719 bildade Hallands län.
+//   Lindome distrikt i norra Halland tillhör dock Västra Götalands län medan Östra Karups distrikt i söder tillhör Skåne län och Lunds stift.
 //   Övriga Halland är en del av Göteborgs stift. Hallands län omfattar dessutom delar av både Småland och Västergötland.</p>
 //   <figure>
 //   	<img src="https://images.unsplash.com/photo-1489161587020-79aa193f04ff?auto=format&fit=crop&w=2702&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="En kamel">
@@ -40,7 +40,7 @@
 // </article>
 
 .article {
-	
+
 	h1, h2, h3, h4, h5, h6 {
 		margin-top: $space-4;
 		margin-bottom: $space-1;
@@ -95,12 +95,12 @@
 
 		&.alignright {
 			float: right;
-			margin: 0 0 1em 1em;
+			margin: $space-2 0 $space-2 $space-2;
 		}
 
 		&.alignleft {
 			float: left;
-			margin: 0 1em 1em 0;
+			margin: $space-2 $space-2 $space-2 0;
 		}
 	}
 
