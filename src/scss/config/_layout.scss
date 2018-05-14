@@ -2,12 +2,12 @@
 // @name Layout
 // @page Config/Layout
 //
-// @description 
+// @description
 // Change the default document flow with these display, float, and other utilities.
 //
 // @markup
 //   <span>TBA</span>
-// 
+//
 
 .inline        { display: inline }
 .block         { display: block }
@@ -42,7 +42,7 @@
 
 
 // Screen Reader only
-.sr-only {
+.sr-only, .screen-reader-text {
     clip: rect(0px, 0px, 0px, 0px);
     position: absolute;
     height: 1px;
