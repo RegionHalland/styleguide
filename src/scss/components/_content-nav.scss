@@ -18,8 +18,9 @@
 // 	</ul>
 // </nav>
 
-.content-nav__heading  {
-	font-weight: $bold-font-weight;
+.content-nav {
+	position: sticky;
+	top: $space-2;
 }
 
 .content-nav__item {
