@@ -474,6 +474,23 @@
      ]
     },
     {
+     "name": "Sidebar Navigation",
+     "page": [
+      {
+       "nav": "Components",
+       "section": "Navigation"
+      }
+     ],
+     "description": "<p>A component created for the purpose of sidebar navigation.</p>\n",
+     "state": [
+      {
+       "name": ":hover",
+       "escaped": ":hover",
+       "description": "Highlights when hovering."
+      }
+     ]
+    },
+    {
      "name": "Site Navigation",
      "page": [
       {

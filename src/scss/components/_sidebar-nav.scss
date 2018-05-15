@@ -1,0 +1,70 @@
+//
+// @name Sidebar Navigation
+// @page Components/Navigation
+//
+// @description 
+// A component created for the purpose of sidebar navigation.
+//
+// @state :hover - Highlights when hovering.
+//
+
+.sidebar-nav {
+	display: flex;
+}
+
+.sidebar-nav__list {
+	display: block;
+	width: 100%;
+	border: 1px solid palette(grey, base);
+}
+
+.sidebar-nav__item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+	border-bottom: 1px solid palette(grey, light);
+
+	&:last-of-type {
+		border-bottom: none;
+	}
+
+	&:not(.has-sublist) > .sidebar-nav__link {
+		font-weight: 400;
+	}
+
+	&.active {
+		.sidebar-nav__label {
+			background: palette(dark-blue, base);
+			color: $white;
+		}
+	}
+}
+
+.sidebar-nav__link,
+.sidebar-nav__label {
+	display: flex;
+	flex: 1;
+	font-weight: $bold-font-weight;
+	color: $black;
+	padding: $space-2;
+}
+
+.sidebar-nav__sublist {
+	width: 100%;
+}
+
+.sidebar-nav__toggle-btn {
+	background: palette(light-blue, dark);
+	border-radius: 50%;
+	margin-right: $space-2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 26px;
+	height: 26px;
+
+	svg {
+		fill: palette(dark-blue, base);
+	}
+}
