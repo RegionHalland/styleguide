@@ -18,27 +18,32 @@
 // 	</ul>
 // </nav>
 
+.content-nav-container {
+	width: 100%;
+}
+
 .content-nav {
 	position: sticky;
 	top: $space-2;
 }
 
 .content-nav__item {
-	margin-top:    $space-1;
-	margin-bottom: $space-1;
-
-	&.active {
-		padding-left: $space-2;
-		border-left: 3px solid palette(dark-blue, base);
-	}
+	display: block;
 
 	&.active .content-nav__link {
-		color: palette(black, base)
+		background: palette(grey, base);
+		outline: .25rem solid palette(grey, base);
 	}
 }
 
 .content-nav__link {
-	color: palette(grey, x-dark);
+	display: inline;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: .875rem;
+	border-radius: $border-radius;
+	color: palette(black, base);
 
 	&:hover {
 		color: palette(black, base);
