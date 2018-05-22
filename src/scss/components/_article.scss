@@ -52,6 +52,11 @@
 
 	a {
 		word-wrap: break-word;
+		text-decoration: underline;
+
+		&:visited {
+			color: $link-visited;
+		}
 	}
 
 	ul, ol, p, figure, blockquote {
@@ -61,20 +66,6 @@
 
 	ul, ol {
 		margin-left: $space-4;
-
-		&.tags {
-			margin-left: 0;
-			padding-left: 0;
-			list-style-type: none;
-
-			li {
-				float:left;
-				background: palette(light-blue);
-				padding: $space-1 $space-2;
-				margin: 0 $space-2 $space-2 0;
-				border-radius: $border-radius;
-			}
-		}
 	}
 
 	ul {
