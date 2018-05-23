@@ -153,6 +153,7 @@
 
 		&.active {
 			&::after {
+				content: '';
 				border-bottom: 5px solid palette(dark-blue, base);
 				transform: translateY(0);
 			}
@@ -160,11 +161,21 @@
 
 		&.open {
 			color: rgba($black, 1);
+
+			&::after {
+				content: '';
+				border-bottom: 5px solid palette(dark-blue, base);
+				transform: translateY(0);
+			}
 		}
 
-		&.open-sibling {
-			color: rgba($black, 0.35);
+		&.active.open-sibling {
+			&::after {
+				content: '';
+				border-bottom: none;
+			}
 		}
+
 
 		&:hover {
 			color: rgba($black, 1);
