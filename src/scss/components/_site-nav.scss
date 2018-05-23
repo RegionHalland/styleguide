@@ -60,7 +60,7 @@
 .site-nav__top {
 	width: 100%;
 	border-bottom: 1px solid palette(grey, light);
-	padding: $space-2;
+	padding: $space-2 $space-3;
 }
 
 .site-nav__menu-btn {
@@ -76,8 +76,8 @@
 	width: 100%;
 
 	@media screen and (min-width: $breakpoint-md) {
-		padding-right: $space-2;
-		padding-left: $space-2;
+		padding-right: $space-3;
+		padding-left: $space-3;
 	}
 }
 
@@ -131,7 +131,7 @@
 	position: relative;
 	overflow: hidden;
 	font-weight: $bold-font-weight;
-	padding: $space-3 $space-2;
+	padding: $space-3;
 
 	@media screen and (min-width: $breakpoint-md) {
 		padding: $space-3 0;

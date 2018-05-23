@@ -29,6 +29,9 @@
 
 .content-nav__item {
 	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 
 	&.active .content-nav__link {
 		background: palette(grey, base);
@@ -38,9 +41,6 @@
 
 .content-nav__link {
 	display: inline;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
 	font-size: .875rem;
 	border-radius: $border-radius;
 	color: palette(black, base);
