@@ -49,3 +49,10 @@
 		color: palette(black, base);
 	}
 }
+
+// Classes for Stickybit, position sticky polyfill
+// https://github.com/dollarshaveclub/stickybits
+.js--content-nav-is-stuck {
+	position: fixed;
+	max-width: 218px;
+}
