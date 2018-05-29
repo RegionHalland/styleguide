@@ -63,6 +63,15 @@
 	padding: $space-2 $space-3;
 }
 
+.site-nav__description {
+	margin-left: $space-2;
+
+	&::before {
+		content: '|';
+		margin-right: $space-2;
+	}
+}
+
 .site-nav__menu-btn {
 	display: block;
 	margin-left: auto;
@@ -83,6 +92,7 @@
 
 .site-nav__container {
 	display: flex;
+	align-items: center;
 	flex-wrap: wrap;
 	width: 100%;
 
@@ -136,7 +146,7 @@
 	@media screen and (min-width: $breakpoint-md) {
 		padding: $space-3 0;
 		display: inherit;
-		font-size: 0.9375rem;
+		font-size: 0.88889rem; // 16px
 
 		&::after {
 			content: '';
