@@ -33,7 +33,7 @@ i, .i { font-style: italic }
 
 a {
 	text-decoration: none;
-	color: palette(dark-blue, dark);
+	color: $link-default;
 }
 
 table {
