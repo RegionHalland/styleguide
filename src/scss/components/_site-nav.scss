@@ -68,6 +68,9 @@
 
 .site-nav__description {
 	margin-left: $space-2;
+	font-size: 120%;
+	margin-top: auto;
+	padding-bottom: 7px;
 
 	&::before {
 		content: '|';
