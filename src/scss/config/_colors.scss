@@ -39,12 +39,14 @@
 // </div>
 
 
-.background-white     { background: $white}
-.background-grey      { background: $grey}
-.background-black     { background: $black}
-.background-dark-blue { background: $dark-blue}
-.background-blue      { background: $blue}
-.background-yellow    { background: $yellow}
+.background-white      { background-color: $white}
+.background-grey       { background-color: $grey}
+.background-black      { background-color: $black}
+.background-blue       { background-color: $blue}
+.background-dark-blue  { background-color: $dark-blue}
+.background-light-blue { background-color: $light-blue }
+.background-yellow     { background-color: $yellow}
+
 
 .background-gradient-blue { background: linear-gradient(45deg, #257ccb, #2284ca) }
 
