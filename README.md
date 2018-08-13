@@ -137,7 +137,7 @@ $ sudo service nginx reload
 
 ## Deployment
 
-The styleguide is currently served via Github Pages and publishes whatever is in the `gh-pages` branch. Since Github Pages only supports static files, the `dist/` folder are not built server-side and has to be commited.
+The styleguide is temporarily served via Github Pages and publishes whatever is in the `gh-pages` branch. Since Github Pages only supports static files, the `dist/` folder are not built server-side and has to be commited. 
 
 1. Before pushing changes, build all files for production:
 ```sh
