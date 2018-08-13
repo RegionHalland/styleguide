@@ -1,7 +1,8 @@
 .DS_store
 /node_modules/
 vendor/
-cache/
+src/php/cache/*
+!src/php/cache/.gitkeep
 dev/
 temp/
 .env
