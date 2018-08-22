@@ -46,8 +46,6 @@ $dark-red: #c82828;
 $red: #f53131;
 $light-red: #fcc8c8;
 
-$link-visited: #909;
-
 $palettes: (
 	grey: (
 		xx-light : lighten($grey, 7%),
@@ -125,11 +123,14 @@ $palettes: (
 	),
 );
 
+$link-visited: #909;
+$link-default: #0041b0;
+$link-hover: palette(dark-blue, dark);
+
 // Darken
 $darken-1: rgba(0, 0, 0, 0.0625);
 $darken-2: rgba(0, 0, 0, 0.125);
 $darken-3: rgba(0, 0, 0, 0.25);
-
 
 // Widths
 $width-1: 24rem;
