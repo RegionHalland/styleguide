@@ -32,6 +32,8 @@
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	padding-left: $space-2;
+	border-left: 4px solid $grey;
 
 	&.active {
 		border-left: 4px solid $dark-blue;
@@ -39,28 +41,23 @@
 	}
 }
 
+.content-nav__level_h3 {
+	padding-left: $space-3;
+}
+
+.content-nav__level_h4 {
+	padding-left: $space-4;
+}
+
 .content-nav__link {
 	display: inline;
 	font-size: .875rem;
 	border-radius: $border-radius;
-	color: palette($dark-blue, dark);
+	color: palette(dark-blue, dark);
 
 	&:hover {
 		color: palette(black, base);
 	}
-}
-
-.content-nav__item {
-	padding-left: 1ex;
-	border-left: 4px solid $grey;
-}
-
-.content-nav__level_h3 {
-	padding-left: 2ex;
-}
-
-.content-nav__level_h4 {
-	padding-left: 3ex;
 }
 
 // Classes for Stickybit, position sticky polyfill
