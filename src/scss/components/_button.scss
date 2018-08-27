@@ -16,6 +16,20 @@
 //
 //
 
+//
+// @name Button
+// @page Components/Button
+//
+// @description 
+// A really good component, fitting all your needs.
+//
+// @state :hover - Highlights when hovering.
+//
+// @markup
+//	<button class="btn">Button</button>
+// 
+//
+
 .btn {
 	font-family: inherit;
 	font-size: 1rem;
@@ -24,114 +38,22 @@
 	display: inline-block;
 	line-height: 1.125rem;
 	padding: $space-3 $space-4;
+	margin: 0;
 	height: auto;
 	border: 1px solid transparent;
 	border-radius: $border-radius;
 	vertical-align: middle;
 	-webkit-appearance: none;
-	
+	color: inherit;
+	background-color: transparent;
+
 	&:hover {
 		text-decoration: none;
-	}
-
-	&:active {
-		box-shadow: inset 0 0 0 20rem $darken-2,
-					inset 0 0 10px 0 $darken-3,
-					0 0 1px $darken-2;
-		outline: none;
 	}
 	
 	&:focus {
 		outline: none;
 		border-color: rgba(0, 0, 0, .125);
 		box-shadow: 0 0 0 3px rgba(0, 0, 0, .25);
-	}
-	
-	@include modifier('small') {
-		
-		padding: $space-2 $space-3;
-	}
-	
-	@include modifier('primary') {
-		color: $white;
-	    background: $dark-blue;
-	    border: 1px solid $dark-blue;
-	    text-shadow: 0 0 1px rgba(0, 0, 0, .3);
-		
-		.icon {
-			fill: $white;
-		}
-
-		&:hover {
-			background: palette(dark-blue, x-light);
-		}
-		
-		&:disabled,
-		&.is-disabled {
-			opacity: .5;
-			pointer-events: none;
-		}
-	}
-
-	@include modifier('secondary') {
-		color: $white;
-	    background: $blue;
-	    border: 1px solid palette(blue, dark);
-	    text-shadow: 0 0 0px rgba(0, 0, 0, .3);
-		
-		.icon {
-			fill: $white;
-		}
-
-		&:hover {
-			background: palette(grey, light);
-		}
-
-		&:disabled,
-		&.is-disabled {
-			opacity: .5;
-			pointer-events: none;
-		}
-	}
-
-	@include modifier('outline') {
-		background:none;
-		color: $dark-blue;
-		border: 1px solid $dark-blue;
-
-		.icon {
-			fill: $dark-blue;
-		}
-	}
-
-	@include modifier('neutral') {
-		color: $black;
-	    background: palette(grey, x-light);
-	    border: 1px solid palette(grey, x-light);
-	    text-shadow: 0 0 0px rgba(0, 0, 0, .3);
-		
-		.icon {
-			fill: $white;
-		}
-
-		&:hover {
-			background: palette(grey, light);
-		}
-
-		&:disabled,
-		&.is-disabled {
-			opacity: .5;
-			pointer-events: none;
-		}
-	}
-
-	@include modifier('outline') {
-		background:none;
-		color: $dark-blue;
-		border: 1px solid $dark-blue;
-
-		.icon {
-			fill: $dark-blue;
-		}
 	}
 }

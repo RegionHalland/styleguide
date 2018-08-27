@@ -1,0 +1,35 @@
+//
+// @name Button Outline
+// @page Components/Button
+//
+// @description
+// An outlined button for secondary actions
+//
+// @state :hover - Highlights when hovering.
+// @state .disabled - Disables button.
+//
+// @markup
+// <button class="btn btn-outline">Button</button>
+// 
+// 
+
+.btn-outline {
+	color: $dark-blue;
+	background:none;
+    border: 1px solid $dark-blue;
+
+	&:hover {
+		background: palette(light-blue, light);
+	}
+
+
+	&:active {
+		background: palette(light-blue, light);
+	}
+
+	&:disabled,
+	&.is-disabled {
+		opacity: .5;
+		pointer-events: none;
+	}
+}

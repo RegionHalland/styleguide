@@ -100,6 +100,65 @@
    ],
    "button": [
     {
+     "name": "Button Outline",
+     "page": [
+      {
+       "nav": "Components",
+       "section": "Button"
+      }
+     ],
+     "description": "<p>An outlined button for secondary actions</p>\n",
+     "state": [
+      {
+       "name": ":hover",
+       "escaped": ":hover",
+       "description": "Highlights when hovering."
+      },
+      {
+       "name": ".disabled",
+       "escaped": "disabled",
+       "description": "Disables button."
+      }
+     ],
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<button class=\"btn btn-outline\">Button</button>",
+       "path": "~/src/scss/components/_button-outline.scss",
+       "example": "\n<button class=\"btn btn-outline\">Button</button>",
+       "escaped": "\n&lt;button class=\"btn btn-outline\"&gt;Button&lt;/button&gt;"
+      }
+     ]
+    },
+    {
+     "name": "Button Primary",
+     "page": [
+      {
+       "nav": "Components",
+       "section": "Button"
+      }
+     ],
+     "description": "<p>Solid button color style for use with the .btn base style.</p>\n",
+     "state": [
+      {
+       "name": ":hover",
+       "escaped": ":hover",
+       "description": "Highlights when hovering."
+      }
+     ],
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<button class=\"btn btn-primary\">Button</button>",
+       "path": "~/src/scss/components/_button-primary.scss",
+       "example": "\n<button class=\"btn btn-primary\">Button</button>",
+       "escaped": "\n&lt;button class=\"btn btn-primary\"&gt;Button&lt;/button&gt;"
+      }
+     ]
+    },
+    {
      "name": "Button",
      "page": [
       {
@@ -128,6 +187,33 @@
        "path": "~/src/scss/components/_button.scss",
        "example": "\n<button class=\"btn\">Button</button>\n<button class=\"btn btn-primary\">Primary button</button>\n<button class=\"btn btn-secondary\">Secondary Button</button>\n<button class=\"btn btn-outline\">Outlined Button</button>",
        "escaped": "\n&lt;button class=\"btn\"&gt;Button&lt;/button&gt;\n&lt;button class=\"btn btn-primary\"&gt;Primary button&lt;/button&gt;\n&lt;button class=\"btn btn-secondary\"&gt;Secondary Button&lt;/button&gt;\n&lt;button class=\"btn btn-outline\"&gt;Outlined Button&lt;/button&gt;"
+      }
+     ]
+    },
+    {
+     "name": "Button",
+     "page": [
+      {
+       "nav": "Components",
+       "section": "Button"
+      }
+     ],
+     "description": "<p>A really good component, fitting all your needs.</p>\n",
+     "state": [
+      {
+       "name": ":hover",
+       "escaped": ":hover",
+       "description": "Highlights when hovering."
+      }
+     ],
+     "markup": [
+      {
+       "lang": "markup",
+       "description": "",
+       "modifier": "\n<button class=\"btn\">Button</button>",
+       "path": "~/src/scss/components/_button.scss",
+       "example": "\n<button class=\"btn\">Button</button>",
+       "escaped": "\n&lt;button class=\"btn\"&gt;Button&lt;/button&gt;"
       }
      ]
     }
