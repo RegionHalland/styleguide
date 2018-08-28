@@ -99,4 +99,14 @@
 		margin-top: $space-2;
 		text-align: left;
 	}
+
+	.alignleft {
+		float: left;
+		margin-right: $space-2;
+	}
+
+	.alignright {
+		float: right;
+		margin-left: $space-2;
+	}
 }
