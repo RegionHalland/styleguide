@@ -1,15 +1,17 @@
 @extends('master')
 
 @section('content')
+
+@if(isset($data))
 <article class="col col-12 sm-col-9 px3">
-	@foreach ($section as $key => $value)
+	@foreach ($data as $key => $value)
 		<h2>{{$value->name}}</h2>
 		{!! $value->description !!}
-		@if (isset($section[0]->state))
+		@if (isset($data[0]->state))
 		<section class="component-section__modifers col col-12 py3">
 		    <h3>Modifiers</h3>
 		    <ul>
-		    @foreach ((array)$section[0]->state as $state)
+		    @foreach ($data[0]->state as $state)
 		        <li class="component-section__modifier">
 		            <code class="component-section__code">{{ $state->name }}</code> - {!! $state->description !!}
 		        </li>
@@ -25,4 +27,6 @@
 		<hr class="my4">
 	@endforeach
 </article>
+@endif
+
 @stop
