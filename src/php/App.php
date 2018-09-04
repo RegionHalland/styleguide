@@ -50,7 +50,7 @@ class App {
 		// Remove empty strings from array
 		$paths = $this->getPaths();
 
-		var_dump($this->getData());
+		//var_dump($this->getData());
 		
 		// If there are no paths, return home
 		if (empty($paths)) {
