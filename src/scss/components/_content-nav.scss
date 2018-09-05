@@ -18,64 +18,13 @@
 // 	</ul>
 // </nav>
 
-// From styleguide
-
 .content-nav-container {
 	width: 100%;
 }
 
 .content-nav {
-	position: fixed;
-	width: 100%;
-	top: 0;
-	left: 0;
-	background-color: $light-yellow;
-	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.03);
-
-	@media screen and (min-width: $breakpoint-md) {
-		position: sticky;
-		background-color: transparent;
-		box-shadow: none;
-	}
-}
-
-.content-nav__header {
-	display: flex;
-	justify-content: space-between;
-	padding: $space-1 $space-3;
-	align-items: center;
-
-	@media screen and (min-width: $breakpoint-md) {
-		display: block;
-		padding: 0;
-		margin-bottom: $space-2;
-	}
-}
-
-.content-nav__title {
-	font-size: $h5;
-
-	@media screen and (min-width: $breakpoint-md) {
-		font-size: inherit;
-	}
-}
-
-.content-nav__toggle-button {
-	@media screen and (min-width: $breakpoint-md) {
-		display: none;
-	}
-}
-
-.content-nav__list {
-	display: none;
-
-	&.open {
-		display: block;
-	}
-
-	@media screen and (min-width: $breakpoint-md) {
-		display: block;
-	}
+	position: sticky;
+	top: $space-2;
 }
 
 .content-nav__item {
@@ -102,7 +51,7 @@
 
 .content-nav__link {
 	display: inline;
-	font-size: 0.875rem;
+	font-size: .875rem;
 	border-radius: $border-radius;
 	color: palette(dark-blue, dark);
 
