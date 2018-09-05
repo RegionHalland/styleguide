@@ -20,17 +20,6 @@ class App {
 		$this->documentation = json_decode(file_get_contents($this->dssPath));
 		$view = $this->getView();
 
-		// // Bestämmer om HOME eller SECTION ska renderas
-		// $actual_link = explode("/", "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
-		// $this->view = last($actual_link) ?  "section" : 'home';
-
-		// //var_dump($_SERVER['REQUEST_URI']);
-
-		
-		// //var_dump($actual_link[3]);
-		// $this->pageParent = $actual_link[3] ? $actual_link[3] : '';
-		// //var_dump(last($actual_link));
-		// $this->page = last($actual_link) ? last($actual_link) : '';
 
 		$blade = new Blade($this->views, $this->cache);
 
@@ -49,8 +38,6 @@ class App {
 	{	
 		// Remove empty strings from array
 		$paths = $this->getPaths();
-
-		//var_dump($this->getData());
 		
 		// If there are no paths, return home
 		if (empty($paths)) {
@@ -70,8 +57,6 @@ class App {
 		$pages = $this->documentation->pages;
 
 		$data = [];
-
-		var_dump($paths);
 
 		foreach ($paths as $key => $value) {
 			if (!isset($pages->{"$value"}))
