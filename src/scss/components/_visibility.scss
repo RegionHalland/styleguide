@@ -1,0 +1,41 @@
+//
+// @name Visibility
+// @description
+//
+// @page Components/Visibility
+//
+// @description Use visibility to show/hide in different devices.
+//
+// @markup
+// <div class="hidden-sm">
+// This will NOT be shown within a mobile device
+// </div>
+// 
+// <div class="visible-sm">
+// This will ONLY be shown within a mobile device
+// </div>
+
+.hidden-sm {
+	display: none;
+	@media screen and (min-width: $breakpoint-sm) {
+		display: block;
+	}
+}
+
+.hidden-inline-sm {
+	display: none;
+	@media screen and (min-width: $breakpoint-sm) {
+		display: inline-block;
+	}
+}
+
+// Place in own file later on
+
+.padding_mobile_prl3 {
+	padding-right:  $space-3;
+	padding-left:   $space-3;
+	@media screen and (min-width: $breakpoint-sm) {
+		padding-right:  0;
+		padding-left:   0;
+	}
+}
