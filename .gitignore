@@ -1,9 +1,1 @@
-.DS_store
-/node_modules/
-vendor/
-src/php/cache/*
-!src/php/cache/.gitkeep
-dev/
-temp/
-.env
-*.log
+node_modules
