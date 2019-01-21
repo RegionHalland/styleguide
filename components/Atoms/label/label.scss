@@ -1,0 +1,13 @@
+.label {
+    display: inline-block;
+    background-color: blue;
+    padding: 0.3rem;
+
+    &--alert {
+        background-color: red;
+    }
+
+    &--success {
+        background-color: green;
+    }
+}

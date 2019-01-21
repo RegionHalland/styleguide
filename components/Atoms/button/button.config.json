@@ -1,0 +1,26 @@
+{
+	"title": "Button",
+    "status": "ready",
+	"context": {
+		"text": "Click Me",
+		"name": "button"
+	},
+	"variants": [
+		{
+			"name": "primary",
+			"status": "prototype",
+            "context": {
+        	    "modifier": "primary",
+				"text": "Primary Button"
+        	}
+		},
+		{
+			"name": "secondary",
+            "status": "prototype",
+            "context": {
+        	    "modifier": "secondary",
+				"text": "Secondary Button"
+        	}
+		}
+	]
+}

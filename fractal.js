@@ -20,7 +20,9 @@ fractal.set('project.title', 'Stilguide - Region Halland');
  * Tell Fractal where to look for components.
  */
 fractal.components.set('path', path.join(__dirname, 'components'));
-
+fractal.components.set('default.collated', true);
+fractal.components.set('default.prefix', 'rh-'); // default is null
+fractal.components.set('default.status', 'wip'); 
 /*
  * Tell Fractal where to look for documentation pages.
  */

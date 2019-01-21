@@ -1,0 +1,9 @@
+{
+	"title": "Search",
+    "status": "ready",
+	"context": {
+		"buttonLabel": "Sök",
+		"placeholder": "Skriv här för att söka",
+		"name": "button"
+	}
+}

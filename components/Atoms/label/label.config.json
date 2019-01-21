@@ -1,0 +1,25 @@
+{
+	"title": "Label",
+    "status": "ready",
+	"context": {
+		"modifier": "default",
+		"name": "label",
+		"text": "En text-etikett"
+	},
+	"variants": [
+		{
+			"name": "warning",
+			"status": "prototype",
+            "context": {
+        	    "modifier": "alert"
+        	}
+		},
+		{
+			"name": "success",
+            "status": "prototype",
+            "context": {
+        	    "modifier": "success"
+        	}
+		}
+	]
+}

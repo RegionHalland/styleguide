@@ -1,0 +1,13 @@
+.button {
+    display: inline-block;
+    background-color: grey;
+    padding: 0.3rem;
+
+    &--primary {
+        background-color: green;
+    }
+
+    &--secondary {
+        background-color: lightgreen;
+    }
+}
