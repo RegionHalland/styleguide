@@ -20,7 +20,8 @@ const myCustomisedTheme = mandelbrot({
     skin: "blue",
     styles: [
         "default",
-        "/css/skin.css"
+        "https://use.typekit.net/vip6kss.css",
+        "/theme/css/theme.css"
     ]
     // any other theme configuration values here
 });
@@ -80,6 +81,7 @@ fractal.web.theme(myCustomisedTheme);
 function start(cb) {
 
     gulp.watch('components/**/*', parallel(scss, images, js));
+    gulp.watch('assets/**/*', theme);
 
     const server = fractal.web.server({
         sync: true
@@ -92,25 +94,41 @@ function start(cb) {
     cb();
 }
 
-function release_images(cb) {
-    // TODO: hämta alla bilder som komponenterna använder och optimera dem + lägg dem i releases mappen
+
+function theme(cb) {
+
+    gulp.src('assets/**/*.scss')
+		.pipe(sourcemaps.init())
+  		.pipe(
+			sass.sync({
+				outputStyle: 'compressed'
+  			})
+			.on('error', sass.logError)
+		)
+        .pipe(concat('theme.css'))
+		.pipe(sourcemaps.write())
+  		.pipe(gulp.dest(fractal.web.get('static.path') + '/theme/css/'));
+
+    logger.success('Byggde temats CSS');
+	cb();
+
     cb();
 }
 
-function release_css(cb) {
+
+function release(cb) {
+
+
+    gulp.src('./public/images/components/**/*')
+        .pipe(gulp.dest('./releases/' + project.version + '/images/components'));
 
     scss(cb);
-
-
     gulp.src('./public/css/components.css')
-        .pipe(gulp.dest('./releases/' + project.version))
+        .pipe(gulp.dest('./releases/' + project.version + '/css'))
 
-    // TODO: hämta components.css och lägg i releases mappen
-    cb();
-}
+    gulp.src('./public/js/components.js')
+        .pipe(gulp.dest('./releases/' + project.version + '/js'))
 
-function release_js(cb) {
-    // TODO: hämta komponenternas JS och minifiera, concatenera och lägg i releases mappen
     cb();
 }
 
@@ -175,12 +193,6 @@ function build(cb) {
     cb();
 }
 
-
-gulp.task('version', function(cb){
-
-    cb();
-});
-
-exports.version = parallel(release_css, release_images, release_js);
+exports.version = release;
 exports.build = build;
 exports.default = start;

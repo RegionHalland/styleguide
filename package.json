@@ -1,6 +1,6 @@
 {
   "name": "Stilguide",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
     "gulp": "^4.0.0",
