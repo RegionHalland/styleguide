@@ -6,7 +6,24 @@ const { series, parallel, watch } = require('gulp');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const concat = require('gulp-concat');
+const image = require('gulp-image');
+const project = require('./package.json');
+const rename = require("gulp-rename");
+const babel = require('gulp-babel');
 
+
+const mandelbrot = require('@frctl/mandelbrot');
+const fractal = require('@frctl/fractal').create();
+const logger = fractal.cli.console; // keep a reference to the fractal CLI console utility
+
+const myCustomisedTheme = mandelbrot({
+    skin: "blue",
+    styles: [
+        "default",
+        "/css/skin.css"
+    ]
+    // any other theme configuration values here
+});
 /*
  * Configure a Fractal instance.
  *
@@ -15,7 +32,6 @@ const concat = require('gulp-concat');
  * i.e. const fractal = require('./my-fractal-config-file');
  */
 
-const fractal = require('@frctl/fractal').create();
 
 fractal.set('project.title', 'Stilguide - Region Halland');
 fractal.set('project.title', 'Stilguide - Region Halland');
@@ -38,18 +54,10 @@ fractal.components.set('default.status', 'wip');
 fractal.web.set('static.path', `${__dirname}/public`);
 fractal.web.set('builder.dest', `${__dirname}/build`);
 
-
-const mandelbrot = require('@frctl/mandelbrot'); // require the Mandelbrot theme module
+ // require the Mandelbrot theme module
 
 // create a new instance with custom config options
-const myCustomisedTheme = mandelbrot({
-    skin: "blue",
-    styles: [
-        "default",
-        "/css/skin.css"
-    ]
-    // any other theme configuration values here
-});
+
 
 fractal.web.theme(myCustomisedTheme);
 
@@ -57,7 +65,6 @@ fractal.web.theme(myCustomisedTheme);
 
 // any other configuration or customisation here
 
-const logger = fractal.cli.console; // keep a reference to the fractal CLI console utility
 
 /*
  * Start the Fractal server
@@ -72,7 +79,7 @@ const logger = fractal.cli.console; // keep a reference to the fractal CLI conso
 
 function start(cb) {
 
-    gulp.watch('components/**/*', scss);
+    gulp.watch('components/**/*', parallel(scss, images, js));
 
     const server = fractal.web.server({
         sync: true
@@ -82,6 +89,28 @@ function start(cb) {
         logger.success(`Fractal server is now running at ${server.url}`);
     });
 
+    cb();
+}
+
+function release_images(cb) {
+    // TODO: hämta alla bilder som komponenterna använder och optimera dem + lägg dem i releases mappen
+    cb();
+}
+
+function release_css(cb) {
+
+    scss(cb);
+
+
+    gulp.src('./public/css/components.css')
+        .pipe(gulp.dest('./releases/' + project.version))
+
+    // TODO: hämta components.css och lägg i releases mappen
+    cb();
+}
+
+function release_js(cb) {
+    // TODO: hämta komponenternas JS och minifiera, concatenera och lägg i releases mappen
     cb();
 }
 
@@ -96,11 +125,44 @@ function scss(cb) {
 		)
         .pipe(concat('components.css'))
 		.pipe(sourcemaps.write())
-  		.pipe(gulp.dest('./public/css/'));
+  		.pipe(gulp.dest(fractal.web.get('static.path') + '/css/'));
 
     logger.success('Byggde CSS');
 	cb();
 }
+
+
+function images(cb) {
+ 	gulp.src('components/**/*.{svg,png,gif,jpg}')
+        .pipe(image())
+        .pipe(rename(function (path) {
+            var p = path.dirname.split('/');
+            path.dirname = 'components/' + p[p.length -1];
+        }))
+  		.pipe(gulp.dest(fractal.web.get('static.path') + '/images/'));
+
+    logger.success('Optimerade bilder');
+	cb();
+}
+
+function js(cb) {
+ 	gulp.src('components/**/*.js')
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(rename(function (path) {
+            console.log(path);
+            var p = path.dirname.split('/');
+            path.dirname = 'components/' + p[p.length -1];
+        }))
+        .pipe(concat('components.js'))
+        .pipe(sourcemaps.write('.'))
+  		.pipe(gulp.dest(fractal.web.get('static.path') + '/js/'));
+
+    logger.success('Byggde component js');
+	cb();
+}
+
 
 
 function build(cb) {
@@ -114,9 +176,11 @@ function build(cb) {
 }
 
 
-gulp.task('fractal:build', function(){
+gulp.task('version', function(cb){
 
+    cb();
 });
 
+exports.version = parallel(release_css, release_images, release_js);
 exports.build = build;
 exports.default = start;
