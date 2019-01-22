@@ -194,5 +194,5 @@ function build(cb) {
 }
 
 exports.version = release;
-exports.build = build;
+exports.build = series(start, build);
 exports.default = start;
