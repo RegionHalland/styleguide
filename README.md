@@ -31,4 +31,5 @@ Alla bilder hamnar i ´public/images/components/[komponentensnamn]/fil.jpg´ eft
 #### Javascript
 
 **Bygg med ES6, gulpscriptet ser till att all JS körs genom Babel.**
+
 Finns det `.js` filer i komponentmappen så konkateneras de ihop och sparas i `/public/js/components.js`. Utöver det så bör de fungera out of the box.
