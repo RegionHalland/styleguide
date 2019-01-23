@@ -1,6 +1,5 @@
 'use strict';
 
-
 const gulp = require('gulp');
 const { series, parallel, watch } = require('gulp');
 const sass = require('gulp-sass');
@@ -11,72 +10,39 @@ const project = require('./package.json');
 const rename = require("gulp-rename");
 const babel = require('gulp-babel');
 
-
 const mandelbrot = require('@frctl/mandelbrot');
 const fractal = require('@frctl/fractal').create();
 const logger = fractal.cli.console; // keep a reference to the fractal CLI console utility
 
-const myCustomisedTheme = mandelbrot({
+const rh_theme = mandelbrot({
     skin: "blue",
     styles: [
-        "default",
         "https://use.typekit.net/vip6kss.css",
         "/theme/css/theme.css"
+    ],
+    scripts: [
+        'default',
+        'https://unpkg.com/feather-icons',
+        '/theme/js/theme.js'
     ]
     // any other theme configuration values here
 });
-/*
- * Configure a Fractal instance.
- *
- * This configuration could also be done in a separate file, provided that this file
- * then imported the configured fractal instance from it to work with in your Gulp tasks.
- * i.e. const fractal = require('./my-fractal-config-file');
- */
+
+rh_theme.addLoadPath(__dirname + '/assets/theme/views/');
 
 
 fractal.set('project.title', 'Stilguide - Region Halland');
-fractal.set('project.title', 'Stilguide - Region Halland');
 
-/*
- * Tell Fractal where to look for components.
- */
 fractal.components.set('path', `${__dirname}/components`);
 fractal.components.set('default.collated', false);
 fractal.components.set('default.prefix', 'rh-'); // default is null
 fractal.components.set('default.status', 'wip');
-/*
- * Tell Fractal where to look for documentation pages.
- */
- fractal.docs.set('path', `${__dirname}/docs`);
 
-/*
- * Tell the Fractal web preview plugin where to look for static assets.
- */
+fractal.docs.set('path', `${__dirname}/docs`);
+
 fractal.web.set('static.path', `${__dirname}/public`);
 fractal.web.set('builder.dest', `${__dirname}/build`);
-
- // require the Mandelbrot theme module
-
-// create a new instance with custom config options
-
-
-fractal.web.theme(myCustomisedTheme);
-
-
-
-// any other configuration or customisation here
-
-
-/*
- * Start the Fractal server
- *
- * In this example we are passing the option 'sync: true' which means that it will
- * use BrowserSync to watch for changes to the filesystem and refresh the browser automatically.
- * Obviously this is completely optional!
- *
- * This task will also log any errors to the console.
- */
-
+fractal.web.theme(rh_theme);
 
 function start(cb) {
 
@@ -97,9 +63,12 @@ function start(cb) {
 
 function theme(cb) {
 
-    gulp.src('assets/**/*.scss')
+    gulp.src('assets/scss/**/*.scss')
 		.pipe(sourcemaps.init())
-  		.pipe(
+        .pipe(sass({
+            includePaths: ['node_modules']
+        }))
+        .pipe(
 			sass.sync({
 				outputStyle: 'compressed'
   			})
@@ -109,10 +78,20 @@ function theme(cb) {
 		.pipe(sourcemaps.write())
   		.pipe(gulp.dest(fractal.web.get('static.path') + '/theme/css/'));
 
-    logger.success('Byggde temats CSS');
-	cb();
+    gulp.src('./assets/img/**/*')
+        .pipe(gulp.dest(fractal.web.get('static.path') + '/theme/img/'));
 
-    cb();
+    gulp.src('./assets/js/**/*')
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(concat('theme.js'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(fractal.web.get('static.path') + '/theme/js/'));
+
+    logger.success('Byggde temat');
+    	cb();
+
 }
 
 
@@ -137,7 +116,7 @@ function scss(cb) {
 		.pipe(sourcemaps.init())
   		.pipe(
 			sass.sync({
-				outputStyle: 'compressed'
+				outputStyle: 'compressed',
   			})
 			.on('error', sass.logError)
 		)

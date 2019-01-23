@@ -1,0 +1,62 @@
+$font-family-monospace: Hack, Consolas, Monaco, "Andale Mono", monospace !default;
+$font-family-sans-serif: "ff-scala-sans-pro", Arial, sans-serif !default;
+
+$color-link: #004890 !default;
+$color-text: #000000 !default;
+$color-heading: #000000 !default;
+
+$color-background: #fff !default;
+$color-background-offset: #F4F4F4 !default;
+
+$color-ui-hover: #B1B1B1 !default;
+$color-ui-active: #e4e4e4 !default;
+
+
+
+$color-header-background: #004890 !default;
+$color-header-content: #fff !default;
+
+$color-frame-border: #e4e4e4 !default;
+
+$color-sidebar-heading: #000000 !default;
+
+$highlight-theme: 'github' !default;
+
+
+@import "node_modules/@frctl/mandelbrot/assets/scss/core/all";
+
+@import "node_modules/@frctl/mandelbrot/assets/scss/components/asset-list";
+@import "node_modules/@frctl/mandelbrot/assets/scss/components/browser";
+@import "node_modules/@frctl/mandelbrot/assets/scss/components/code";
+@import "node_modules/@frctl/mandelbrot/assets/scss/components/document";
+@import "node_modules/@frctl/mandelbrot/assets/scss/components/error";
+@import "node_modules/@frctl/mandelbrot/assets/scss/components/file-browser";
+@import "node_modules/@frctl/mandelbrot/assets/scss/components/frame";
+@import "node_modules/@frctl/mandelbrot/assets/scss/components/header";
+@import "node_modules/@frctl/mandelbrot/assets/scss/components/meta";
+@import "node_modules/@frctl/mandelbrot/assets/scss/components/navigation";
+@import "node_modules/@frctl/mandelbrot/assets/scss/components/pen";
+@import "node_modules/@frctl/mandelbrot/assets/scss/components/preview";
+@import "node_modules/@frctl/mandelbrot/assets/scss/components/prose";
+@import "node_modules/@frctl/mandelbrot/assets/scss/components/status";
+@import "node_modules/@frctl/mandelbrot/assets/scss/components/tree";
+
+
+
+@import 'node_modules/@regionhalland/styleguide-v2/dist/css/main.min';
+
+
+svg {
+    display: inline-block;
+    vertical-align: text-bottom;
+    fill: none;
+}
+
+html,
+body {
+    font-family: ff-scala-sans-pro,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol !important;
+}
+
+.Header {
+    background: #004890;
+}

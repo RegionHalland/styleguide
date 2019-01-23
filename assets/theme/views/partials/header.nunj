@@ -1,0 +1,68 @@
+
+
+
+<div class="w-full bg-blue-light border-b z-50 text-black">
+    <div class="px-4 w-full max-w-2xl mx-auto">
+
+        <div class="py-4">
+
+            <span class="px-2 mr-1 py-1 text-sm no-underline hover:underline focus:underline text-white bg-blue-dark rounded-full inline-block">BETA</span>
+            Hej! Denna webbplats är under utveckling. <a href="https://github.com/RegionHalland/styleguide/issues/new">Bidra gärna med feedback</a>!
+        </div>
+
+        <nav class="-mb-px justify-between hidden md:flex">
+
+            <ul class="list-reset flex">
+
+
+		                <li class="-mb-px mr-1">
+		                    <a class="inline-block rounded-t py-2 px-4 text-blue-darker font-semibold" href="//design.regionhalland.se">
+								Design
+							</a>
+  		                </li>
+
+		                <li class="mr-1">
+		                    <a class="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-dark font-semibold" href="{{ path('/') }}">
+								Stilguide
+							</a>
+	                	</li>
+
+						<li class="mr-1">
+		                    <a class="inline-block rounded-t py-2 px-4 text-blue-darker font-semibold" href="http://arkitektur.regionhalland.se">
+								<i data-feather='lock' class='w-4 h-4 mr-2'></i> Arkitektur
+							</a>
+	                	</li>
+
+
+            </ul>
+
+            <ul class="list-reset flex border-b">
+                <li class="mr-1">
+                    <a class="bg-blue-lightest inline-block rounded-t py-2 px-4 text-blue-darker font-semibold" href="//regionhalland.se">
+                        <i data-feather='external-link' class='w-4 h-4 mr-2'></i>regionhalland.se
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+</div>
+
+
+
+<div class="w-full bg-white z-50 border-b">
+    <div class="p-4 max-w-2xl mx-auto flex justify-between items-center">
+        <div class="logo">
+
+			<a href="{{ path('/') }}">
+		    	<img src="/theme/img/logo.svg" alt="Region Hallands logotyp">
+			</a>
+        </div>
+        <div class="font-thin text-2xl text-black-light ml-6 flex-grow">
+            	<a href="{{ path('/') }}">Stilguide</a>
+        </div>
+		<a href="https://github.com/RegionHalland/styleguide/pulls" class="inline-flex no-underline text-black bg-yellow px-6 items-center justify-between py-2 text-lg rounded">
+			<i data-feather='github' class='w-4 h-4 mr-2'></i> Bidra <span class="hidden md:inline-block">&nbsp;på GitHub</span>
+		</a>
+    </div>
+</div>
