@@ -11,7 +11,7 @@ Få igång en lokal server genom att köra
 
 
 ## Generera en ny version av styleguiden
-1. `gulp version` genererar en ny version av komponent-CSS:en (inkl. assets) som läggs i ´/releases/[versionsnummer]/´
+1. `gulp version` genererar en ny version av komponent-CSS:en (inkl. assets) som läggs i ´/releases/[versionsnummer]/´. Dessa filer bör sedan bli ett NPM paket.
 
 
 ## Skapande av komponenter
@@ -33,3 +33,6 @@ Alla bilder hamnar i ´public/images/components/[komponentensnamn]/fil.jpg´ eft
 **Bygg med ES6, gulpscriptet ser till att all JS körs genom Babel.**
 
 Finns det `.js` filer i komponentmappen så konkateneras de ihop och sparas i `/public/js/components.js`. Utöver det så bör de fungera out of the box.
+
+## Publicera
+Genom att commita i branchen `production` så byggs en ny version av sajten på https://regionhalland-styleguide.netlify.com/index.html
