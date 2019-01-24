@@ -1,7 +1,7 @@
 'use strict';
 
 const gulp = require('gulp');
-const { series, parallel, watch } = require('gulp');
+const {task, series, parallel, watch } = require('gulp');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const concat = require('gulp-concat');
@@ -97,16 +97,23 @@ function theme(cb) {
 
 function release(cb) {
 
+    images(cb);
+    scss(cb);
+    js(cb);
 
     gulp.src('./public/images/components/**/*')
         .pipe(gulp.dest('./releases/' + project.version + '/images/components'));
 
-    scss(cb);
+
     gulp.src('./public/css/components.css')
         .pipe(gulp.dest('./releases/' + project.version + '/css'))
 
+
     gulp.src('./public/js/components.js')
         .pipe(gulp.dest('./releases/' + project.version + '/js'))
+
+
+    logger.success('Version ' + project.version + ' vänter på dig i /releases/! 👏👏👏')
 
     cb();
 }
@@ -124,7 +131,7 @@ function scss(cb) {
 		.pipe(sourcemaps.write())
   		.pipe(gulp.dest(fractal.web.get('static.path') + '/css/'));
 
-    logger.success('Byggde CSS');
+    logger.success('Kompilerade komponent SCSS');
 	cb();
 }
 
@@ -138,7 +145,7 @@ function images(cb) {
         }))
   		.pipe(gulp.dest(fractal.web.get('static.path') + '/images/'));
 
-    logger.success('Optimerade bilder');
+    logger.success('Optimerade komponent bilder');
 	cb();
 }
 
@@ -156,7 +163,7 @@ function js(cb) {
         .pipe(sourcemaps.write('.'))
   		.pipe(gulp.dest(fractal.web.get('static.path') + '/js/'));
 
-    logger.success('Byggde component js');
+    logger.success('Kompilerade komponent JS');
 	cb();
 }
 
