@@ -11,8 +11,6 @@
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
     <link rel="shortcut icon" href="themes/mandelbrot/favicon.ico" type="image/ico">
 
-<link rel="stylesheet" href="themes/mandelbrot/css/blue.css?cachebust=1.2.0" type="text/css">
-
 <link rel="stylesheet" href="https://use.typekit.net/vip6kss.css?cachebust=1.2.0" type="text/css">
 
 <link rel="stylesheet" href="theme/css/theme.css?cachebust=1.2.0" type="text/css">
@@ -28,20 +26,72 @@
 <div class="Frame" id="frame">
 
     <div class="Frame-header">
-        <div class="Header">
-    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
-        <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
-</svg>
+        
 
-        <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-</svg>
 
-    </button>
-    <a href="" class="Header-title" data-pjax>Stilguide - Region Halland</a>
+<div class="w-full bg-blue-light border-b z-50 text-black">
+    <div class="px-4 w-full max-w-2xl mx-auto">
+
+        <div class="py-4">
+
+            <span class="px-2 mr-1 py-1 text-sm no-underline hover:underline focus:underline text-white bg-blue-dark rounded-full inline-block">BETA</span>
+            Hej! Denna webbplats är under utveckling. <a href="https://github.com/RegionHalland/styleguide/issues/new">Bidra gärna med feedback</a>!
+        </div>
+
+        <nav class="-mb-px justify-between hidden md:flex">
+
+            <ul class="list-reset flex">
+
+		                <li class="-mb-px mr-1">
+		                    <a class="inline-block rounded-t py-2 px-4 text-blue-darker font-semibold" href="//design.regionhalland.se">
+								Design Guidelines
+							</a>
+  		                </li>
+
+		                <li class="mr-1">
+		                    <a class="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-dark font-semibold" href="">
+								Stilguide
+							</a>
+	                	</li>
+
+						<li class="mr-1">
+		                    <a class="inline-block rounded-t py-2 px-4 text-blue-darker font-semibold" href="http://arkitektur.regionhalland.se">
+								<i data-feather='lock' class='w-4 h-4 mr-2'></i> Arkitektur
+							</a>
+	                	</li>
+
+
+            </ul>
+
+            <ul class="list-reset flex border-b">
+                <li class="mr-1">
+                    <a class="bg-blue-lightest inline-block rounded-t py-2 px-4 text-blue-darker font-semibold" href="//regionhalland.se">
+                        <i data-feather='external-link' class='w-4 h-4 mr-2'></i>regionhalland.se
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+</div>
+
+
+
+<div class="w-full bg-white z-50 border-b">
+    <div class="p-4 max-w-2xl mx-auto flex justify-between items-center">
+        <div class="logo">
+
+			<a href="">
+		    	<img src="/theme/img/logo.svg" alt="Region Hallands logotyp">
+			</a>
+        </div>
+        <div class="font-thin text-2xl text-black-light ml-6 flex-grow">
+            	<a href="">Stilguide</a>
+        </div>
+		<a href="https://github.com/RegionHalland/styleguide/pulls" class="inline-flex no-underline text-black bg-yellow px-6 items-center justify-between py-2 text-lg rounded">
+			<i data-feather='github' class='w-4 h-4 mr-2'></i> Bidra <span class="hidden md:inline-block">&nbsp;på GitHub</span>
+		</a>
+    </div>
 </div>
 
     </div>
@@ -448,6 +498,10 @@
 
 
 <script src="themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.0"></script>
+
+<script src="https://unpkg.com/feather-icons?cachebust=1.2.0"></script>
+
+<script src="theme/js/theme.js?cachebust=1.2.0"></script>
 
 
 
