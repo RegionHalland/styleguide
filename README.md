@@ -1,18 +1,19 @@
 ## Lokal utveckling
 
-Få igång en lokal server genom att köra
+Få igång en lokal server genom att...
 
-1. `npm install`
-2. `gulp`
+1. Ta hem detta repos.
+1. Kör `npm install`
+2. Kör `gulp`
+3. Terminalen borde nu berätta för dig vilken lokal URL som servern kör på.
 
+## Gulp kommandon
 
-## Köra ett bygge
-1. Bygg en ny build genom att köra `gulp build`, då genereras de statiska HTML sidorna som driver sajten.
-
-
-## Generera en ny version av styleguiden
-1. `gulp version` genererar en ny version av komponent-CSS:en (inkl. assets) som läggs i ´/releases/[versionsnummer]/´. Dessa filer bör sedan bli ett NPM paket.
-
+|Kommando|Beskriving|
+|--------|----------|
+|`gulp`| Startar en lokal utvecklingsmiljö, inkl. browsersync.|
+|`gulp version`| Genererar en ny version av komponent-CSS:en (inkl. assets) som läggs i ´/releases/[versionsnummer]/´. Dessa filer bör sedan bli ett NPM paket.|
+|`gulp build`| Bygger nya statiska fractal filer. Bygger ***inte*** releasepaketen. |
 
 ## Skapande av komponenter
 
@@ -35,4 +36,4 @@ Alla bilder hamnar i ´public/images/components/[komponentensnamn]/fil.jpg´ eft
 Finns det `.js` filer i komponentmappen så konkateneras de ihop och sparas i `/public/js/components.js`. Utöver det så bör de fungera out of the box.
 
 ## Publicera
-Genom att commita i branchen `production` så byggs en ny version av sajten på https://regionhalland-styleguide.netlify.com/index.html
+Genom att commita i branchen `production` så byggs en ny version av sajten på https://stilguide.regionhalland.se
