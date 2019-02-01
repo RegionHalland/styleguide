@@ -179,6 +179,6 @@ function build(cb) {
     cb();
 }
 
-exports.version = release;
+exports.version = series(build, release);
 exports.build = series(start, build);
 exports.default = start;

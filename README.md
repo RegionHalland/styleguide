@@ -10,9 +10,13 @@ Få igång en lokal server genom att köra
 1. Bygg en ny build genom att köra `gulp build`, då genereras de statiska HTML sidorna som driver sajten.
 
 
-## Generera en ny version av styleguiden
-1. `gulp version` genererar en ny version av komponent-CSS:en (inkl. assets) som läggs i ´/releases/[versionsnummer]/´. Dessa filer bör sedan bli ett NPM paket.
+## Gulp kommandon
 
+|Kommando|Beskriving|
+|--------|----------|
+|`gulp`| Startar en lokal utvecklingsmiljö, inkl. browsersync.|
+|`gulp version`| Genererar en ny version av komponent-CSS:en (inkl. assets) som läggs i ´/releases/[versionsnummer]/´. Dessa filer bör sedan bli ett NPM paket.|
+|`gulp build`| Bygger nya statiska fractal filer. Bygger ***inte*** releasepaketen. |
 
 ## Skapande av komponenter
 
