@@ -36,4 +36,4 @@ Alla bilder hamnar i ´public/images/components/[komponentensnamn]/fil.jpg´ eft
 Finns det `.js` filer i komponentmappen så konkateneras de ihop och sparas i `/public/js/components.js`. Utöver det så bör de fungera out of the box.
 
 ## Publicera
-Genom att commita i branchen `production` så byggs en ny version av sajten på https://stilguide.regionhalland.
+Genom att commita i branchen `production` så byggs en ny version av sajten på https://stilguide.regionhalland.se
