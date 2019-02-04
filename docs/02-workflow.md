@@ -2,7 +2,7 @@ Komponenter för RegionHalland.se
 Arbetsdokument över processen för skapande av komponenter
 
 # Riktlinjer
-* Riktlinjerna för hur kodning ska ske är baserat på VGRegionens stilguide (http://stilguiden.vgregion.se/). Specifikt då avsnitten om SASS/CSS. 
+* Riktlinjerna för hur kodning ska ske är baserat på [VGRegionens stilguide](http://stilguiden.vgregion.se/). Specifikt då avsnitten om SASS/CSS. 
 
 # Arbetsprocess
 * Kolla på komponenterna i den ordning som de är prioriterade i en särskild spalt i general-repot
