@@ -1,0 +1,1 @@
+Information kring komponenten. 

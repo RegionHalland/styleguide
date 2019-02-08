@@ -1,0 +1,97 @@
+
+.rh-button-icon {
+   //position: absolute;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    display: inline-block;
+    height: $height-normal; 
+
+    background-color: $white;   
+    border: 1px solid $grey-base;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.35);
+
+    color: $black;
+    text-align: center;
+    line-height: 21px;
+    font-size: $font-size-normal;
+
+
+
+    &:hover{
+        text-decoration: underline;
+    }
+    &:active{
+        text-decoration: none;
+        background-color: $grey-lightest;
+        color: $black;
+        border: 1px solid $grey-base;
+    }
+    &:disabled{
+        text-decoration: none;
+        background-color: $grey-lighter;
+        color: $grey-base;
+        border: 0px;
+    }
+
+
+
+    &--primary {
+        background-color: $color-primary;
+        color: $white;
+        &:hover{
+            text-decoration: underline;
+        }
+        &:active{
+            text-decoration: none;
+            background-color: $white;
+            color: $color-primary;
+            border: 1px solid $color-primary;
+        }
+    }
+
+
+    &--secondary {
+        background-color: $color-secondary;
+        color: $white;
+        &:hover{
+            text-decoration: underline;
+        }
+        &:active{
+            text-decoration: none;
+            background-color: $white;
+            color: $color-secondary;
+            border: 1px solid $color-secondary;
+        }      
+    }
+
+    &--small {
+        padding-left: 6px;
+        padding-right: 6px;
+        height: $height-small; 
+        
+        font-size: $font-size-small;
+        line-height: $line-height-small;
+    }
+
+    &--large {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: $height-large;
+        
+        font-size: $font-size-large;
+        line-height: $line-height-large;
+    }
+
+    &:after{
+        display: inline-block;
+        margin-left: 16px;
+        //font-family: "FontAwesome"; 
+        //content: "\f002";
+        content:">"
+    }
+}
+
+

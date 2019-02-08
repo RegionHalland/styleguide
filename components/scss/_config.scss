@@ -1,0 +1,71 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+
+// Descriptive Base Colors
+
+$white    : #fff;
+$black    : #000;
+
+
+$grey-lightest	: #F4F4F4;
+$grey-lighter	: #E4E4E4;
+$grey-light 	: #D1D1D1;
+$grey-base 		: #B1B1B1;
+$grey-dark		: #7E7E7E;
+$grey-darker	: #575757;
+$grey-darkest 	: #2F2F2F;
+
+
+$djupbla-light		: #B2C8DE;
+$djupbla-base		: #004890;
+$djupbla-dark		: #003265;
+
+$havsbla-light      : #D0E3F3;
+$havsbla-base       : #61A2D8;
+$havsbla-dark       : #447197;
+
+$vaxtkraft-light    : #EDF1C9;
+$vaxtkraft-base     : #C3D04C;
+$vaxtkraft-dark     : #899235;
+
+$skogsgron-light    : #C3DCC1;
+$skogsgron-base     : #378A30;
+$skogsgron-dark     : #266122;
+
+$soluppgang-light	: #FEE7B9;
+$soluppgang-base	: #FCAF15;
+$soluppgang-dark	: #B07A0F;
+
+$livskraft-light    : #E3B7BE;
+$livskraft-base     : #A01026;
+$livskraft-dark     : #700B1B;
+
+
+
+// Color Usage
+
+$color-primary   : $djupbla-base;
+$color-secondary : $skogsgron-base;
+
+$color-shadow    : rgba($black, .2);
+
+// Text
+
+$base__font-size : 16px;
+$base__line      : 24px;
+
+$font-size-small  : 13px;
+$font-size-normal : 15px;
+$font-size-large  : 16px;
+
+$line-height-small 	: 16px;
+$line-height-normal : 21px;
+$line-height-large  : 24px;
+
+$height-small 	: 35px;
+$height-normal 	: 40px;
+$height-large  	: 45px;
+
+

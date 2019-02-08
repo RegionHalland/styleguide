@@ -1,0 +1,26 @@
+{
+	"title": "Button",
+    "status": "prototype",
+	"context": {
+		"text": "Button Default with Icon",
+		"name": "rh-button-icon"
+	},
+	"variants": [
+		{
+			"name": "primary",
+			"status": "prototype",
+            "context": {
+        	    "modifier": "primary",
+				"text": "Primary Button with Icon"
+        	}
+		},		
+		{
+			"name": "secondary",
+            "status": "prototype",
+            "context": {
+        	    "modifier": "secondary",
+				"text": "Secondary Button with Icon"
+        	}
+		}		
+	]
+}
