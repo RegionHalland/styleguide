@@ -1,3 +1,13 @@
-@import '_config';
+
+@import '_reset';
+@import '_breakpoints';
+@import '_base';
+@import '_color';
+@import '_typography';
+
+
+
+
+
 @import 'components/Atoms/rh-button/_rh-button.scss';
 @import 'components/Atoms/rh-button-icon/_rh-button-icon.scss';
