@@ -11,7 +11,7 @@
 			"status": "prototype",
             "context": {
         	    "modifier": "primary",
-				"text": "Primary Button"
+				"text": "Button Primary"
         	}
 		},		
 		{
@@ -19,7 +19,15 @@
             "status": "prototype",
             "context": {
         	    "modifier": "secondary",
-				"text": "Secondary Button"
+				"text": "Button Secondary"
+        	}
+		},		
+		{
+			"name": "with icon",
+            "status": "prototype",
+            "context": {
+        	    "modifier": "icon",
+				"text": "Button Default with Icon"
         	}
 		}		
 	]

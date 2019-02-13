@@ -1,42 +1,33 @@
 
 .rh-button {
-   //position: absolute;
-    padding-left: 8px;
-    padding-right: 8px;
-
+    position: absolute;
     display: inline-block;
-    height: 40px; 
-
+    padding: em(10) em(6);
     background-color: $white;   
     border: 1px solid $grey-base;
     border-radius: 4px;
-    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.35);
-
+    box-shadow: 1px 2px 6px $color-shadow;
     color: $black;
     text-align: center;
-    line-height: 21px;
-    font-size: $font-size-normal;
     font-family: inherit;
-
-
-
+    font-size: $font-size-small;
+    line-height: $line-height-small;
+        
     &:hover{
         text-decoration: underline;
     }
     &:active{
-        text-decoration: none;
         background-color: $grey-lightest;
-        color: $black;
         border: 1px solid $grey-base;
+        color: $black;
+        text-decoration: none;
     }
     &:disabled{
-        text-decoration: none;
         background-color: $grey-lighter;
         color: $grey-base;
         border: 0px;
+        text-decoration: none;
     }
-
-
 
     &--primary {
         background-color: $color-primary;
@@ -45,13 +36,12 @@
             text-decoration: underline;
         }
         &:active{
-            text-decoration: none;
             background-color: $white;
-            color: $color-primary;
             border: 1px solid $color-primary;
+            color: $color-primary;
+            text-decoration: none;
         }
     }
-
 
     &--secondary {
         background-color: $color-secondary;
@@ -60,27 +50,32 @@
             text-decoration: underline;
         }
         &:active{
-            text-decoration: none;
             background-color: $white;
-            color: $color-secondary;
             border: 1px solid $color-secondary;
+            color: $color-secondary;
+            text-decoration: none;
         }      
     }
 
-    &--small {
-        padding-left: 6px;
-        padding-right: 6px;
-        height: $height-small; 
-        
-        font-size: $font-size-small;
-        line-height: $line-height-small;
+    &--icon {
+
+        &:after{
+        display: inline-block;
+        margin-left: em(16);
+        //font-family: "FontAwesome"; 
+        //content: "\f002";
+        content:">"
+        }
+
     }
 
-    &--large {
-        padding-left: 10px;
-        padding-right: 10px;
-        height: $height-large;
-        
+    @include medium {
+        padding: em(8) em(8);
+        font-size: $font-size-medium;
+        line-height: $font-size-medium;
+    }
+    @include large {
+        padding: em(10) em(10);
         font-size: $font-size-large;
         line-height: $line-height-large;
     }

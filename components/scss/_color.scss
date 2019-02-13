@@ -13,35 +13,35 @@ $grey-darker	: #575757;
 $grey-darkest 	: #2F2F2F;
 
 
-$djupbla-light		: #B2C8DE;
-$djupbla-base		: #004890;
-$djupbla-dark		: #003265;
+$base1-light			: #B2C8DE;
+$base1					: #004890;
+$base1-dark				: #003265;
 
-$havsbla-light      : #D0E3F3;
-$havsbla-base       : #61A2D8;
-$havsbla-dark       : #447197;
+$base2-light      		: #D0E3F3;
+$base2		       		: #61A2D8;
+$base2-dark       		: #447197;
 
-$vaxtkraft-light    : #EDF1C9;
-$vaxtkraft-base     : #C3D04C;
-$vaxtkraft-dark     : #899235;
+$base3-light  			: #C3DCC1;
+$base3     				: #378A30;
+$base3-dark   			: #266122;
 
-$skogsgron-light    : #C3DCC1;
-$skogsgron-base     : #378A30;
-$skogsgron-dark     : #266122;
+$complementary1-light   : #EDF1C9;
+$complementary1    		: #C3D04C;
+$complementary1-dark    : #899235;
 
-$soluppgang-light	: #FEE7B9;
-$soluppgang-base	: #FCAF15;
-$soluppgang-dark	: #B07A0F;
+$complementary2-light	: #FEE7B9;
+$complementary2			: #FCAF15;
+$complementary2-dark	: #B07A0F;
 
-$livskraft-light    : #E3B7BE;
-$livskraft-base     : #A01026;
-$livskraft-dark     : #700B1B;
+$complementary3-light   : #E3B7BE;
+$complementary3     	: #A01026;
+$complementary3-dark    : #700B1B;
 
 
 
 // Color Usage
 
-$color-primary   : $djupbla-base;
-$color-secondary : $skogsgron-base;
+$color-primary   : $base1;
+$color-secondary : $base3;
 
-$color-shadow    : rgba($black, .2);
+$color-shadow   : rgba($black, 0.35);

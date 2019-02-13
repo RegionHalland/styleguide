@@ -1,66 +1,62 @@
 
-// Text
+// Typography
 
-$h1-small : 24px;
-$h2-small : 22px;
-$h3-small : 20px;
-$h4-small : 18px;
-$h5-small : 16px;
-$h6-small : 14px;
-$p-small  : 13px;
+$h1-small : em(24);
+$h2-small : em(22);
+$h3-small : em(20);
+$h4-small : em(18);
+$h5-small : em(16);
+$h6-small : em(14);
+$p-small  : em(13);
 
-$h1-medium : 32px;
-$h2-medium : 26px;
-$h3-medium : 22px;
-$h4-medium : 20px;
-$h5-medium : 18px;
-$h6-medium : 16px;
-$p-medium  : 15px;
+$h1-medium : em(32);
+$h2-medium : em(26);
+$h3-medium : em(22);
+$h4-medium : em(20);
+$h5-medium : em(18);
+$h6-medium : em(16);
+$p-medium  : em(15);
 
-$h1-large : 40px;
-$h2-large : 28px;
-$h3-large : 24px;
-$h4-large : 22px;
-$h5-large : 20px;
-$h6-large : 18px;
-$p-large  : 16px;
+$h1-large : em(40);
+$h2-large : em(28);
+$h3-large : em(24);
+$h4-large : em(22);
+$h5-large : em(20);
+$h6-large : em(18);
+$p-large  : em(16);
 
-$h1-line-height-small : 33px;
-$h2-line-height-small : 30px;
-$h3-line-height-small : 23px;
-$h4-line-height-small : 25px;
-$h5-line-height-small : 22px;
-$h6-line-height-small : 19px;
+$h1-line-height-small : em(33);
+$h2-line-height-small : em(30);
+$h3-line-height-small : em(23);
+$h4-line-height-small : em(25);
+$h5-line-height-small : em(22);
+$h6-line-height-small : em(19);
 
-$h1-line-height-medium : 44px;
-$h2-line-height-medium : 36px;
-$h3-line-height-medium : 25px;
-$h4-line-height-medium : 28px;
-$h5-line-height-medium : 25px;
-$h6-line-height-medium : 22px;
+$h1-line-height-medium : em(44);
+$h2-line-height-medium : em(36);
+$h3-line-height-medium : em(25);
+$h4-line-height-medium : em(28);
+$h5-line-height-medium : em(25);
+$h6-line-height-medium : em(22);
 
-$h1-line-height-large : 55px;
-$h2-line-height-large : 39px;
-$h3-line-height-large : 28px;
-$h4-line-height-large : 28px;
-$h5-line-height-large : 28px;
-$h6-line-height-large : 25px;
+$h1-line-height-large : em(55);
+$h2-line-height-large : em(39);
+$h3-line-height-large : em(28);
+$h4-line-height-large : em(28);
+$h5-line-height-large : em(28);
+$h6-line-height-large : em(25);
 
 
 $base__font-size : 16px;
 $base__line      : 24px;
 
-$font-size-small  : 13px;
-$font-size-normal : 15px;
-$font-size-large  : 16px;
+$font-size-small  : em(13);
+$font-size-medium : em(15);
+$font-size-large  : em(16);
 
-$line-height-small 	: 16px;
-$line-height-normal : 21px;
-$line-height-large  : 24px;
-
-$height-small 	: 35px;
-$height-normal 	: 40px;
-$height-large  	: 45px;
+$line-height-small 	: em(16);
+$line-height-medium : em(21);
+$line-height-large  : em(24);
 
 
 
@@ -79,10 +75,8 @@ h6 {
 p {
 	margin-bottom: 1.5em;
 	color: $black;
-
-	@include small {
-		font-size: $p-small;		
-	}
+	font-size: $p-small;		
+	
 	@include medium {
 	  	font-size: $p-medium;	
 	}
@@ -94,14 +88,11 @@ p {
   
 
 
-
-
-
 h1{
-	@include small {
-	  	font-size: $h1-small;	
-		line-height: $h1-line-height-small;
-	}
+
+	font-size: $h1-small;	
+	line-height: $h1-line-height-small;
+
 	@include medium {
 	  	font-size: $h1-medium;	
 		line-height: $h1-line-height-medium;
@@ -112,10 +103,9 @@ h1{
 	}
 }
 h2{
-	@include small {
-	  	font-size: $h2-small;	
-		line-height: $h2-line-height-small;
-	}
+	font-size: $h2-small;	
+	line-height: $h2-line-height-small;
+
 	@include medium {
 	  	font-size: $h2-medium;	
 		line-height: $h2-line-height-medium;
@@ -126,10 +116,9 @@ h2{
 	}
 }
 h3{
-	@include small {
-	  	font-size: $h3-small;	
-		line-height: $h3-line-height-small;
-	}
+	font-size: $h3-small;	
+	line-height: $h3-line-height-small;
+
 	@include medium {
 	  	font-size: $h3-medium;	
 		line-height: $h3-line-height-medium;
@@ -140,10 +129,10 @@ h3{
 	}
 }
 h4{
-	@include small {
-	  	font-size: $h4-small;	
-		line-height: $h4-line-height-small;
-	}
+
+	font-size: $h4-small;	
+	line-height: $h4-line-height-small;
+
 	@include medium {
 	  	font-size: $h4-medium;	
 		line-height: $h4-line-height-medium;
@@ -154,10 +143,10 @@ h4{
 	}
 }
 h5{
-	@include small {
-	  	font-size: $h5-small;	
-		line-height: $h5-line-height-small;
-	}
+
+	font-size: $h5-small;	
+	line-height: $h5-line-height-small;
+
 	@include medium {
 	  	font-size: $h5-medium;	
 		line-height: $h5-line-height-medium;
@@ -168,10 +157,9 @@ h5{
 	}
 }
 h6{
-	@include small {
-	  	font-size: $h6-small;	
-		line-height: $h6-line-height-small;
-	}
+	font-size: $h6-small;	
+	line-height: $h6-line-height-small;
+
 	@include medium {
 	  	font-size: $h6-medium;	
 		line-height: $h6-line-height-medium;
