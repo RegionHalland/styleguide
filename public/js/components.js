@@ -1,5 +1,13 @@
 "use strict";
 
+//look ES6!!
+var onBtnClick = function onBtnClick(element) {
+  element.innerHTML = 'You did it! 👍';
+  console.log('tadaa');
+};
+"use strict";
+"use strict";
+
 var videoPlayButton,
     videoWrapper = document.getElementsByClassName('rh-video')[0],
     video = document.getElementsByTagName('video')[0],
@@ -25,11 +33,3 @@ var videoPlayButton,
   }
 };
 videoMethods.renderVideoPlayButton();
-"use strict";
-
-//look ES6!!
-var onBtnClick = function onBtnClick(element) {
-  element.innerHTML = 'You did it! 👍';
-  console.log('tadaa');
-};
-"use strict";
