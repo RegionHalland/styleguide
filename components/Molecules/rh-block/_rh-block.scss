@@ -1,0 +1,40 @@
+
+.rh-block {
+	position: relative;
+  	width: 316px;
+  	text-align: left;
+	
+  	border-bottom: 4px solid $color-primary;
+  	
+  	.rh-text{
+  		margin-top: 0;
+		padding: em(15);
+		border: 1px solid $grey-lighter;
+		box-sizing: border-box;
+	  	h3{
+	  		color: $color-primary;
+	  		font-weight: normal;
+	  	}
+
+	  	p{
+	  		font-size: $font-size-small;
+	  	}
+  	}
+	img {
+ 		width: 100%;
+ 		margin-bottom: -10px;
+	}
+
+    @include medium {
+        width: 328px;
+	  	p{
+	  		font-size: $font-size-medium;
+	  	}
+    }
+    @include large {
+		width: 416px;
+	  	p{
+	  		font-size: $font-size-large;
+	  	}
+    }
+}

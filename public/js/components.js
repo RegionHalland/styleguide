@@ -6,7 +6,6 @@ var onBtnClick = function onBtnClick(element) {
   console.log('tadaa');
 };
 "use strict";
-"use strict";
 
 var videoPlayButton,
     videoWrapper = document.getElementsByClassName('rh-video')[0],
@@ -33,3 +32,4 @@ var videoPlayButton,
   }
 };
 videoMethods.renderVideoPlayButton();
+"use strict";
