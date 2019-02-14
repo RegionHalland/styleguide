@@ -1,0 +1,54 @@
+
+.rh-video-wrapper {
+    position: absolute;
+
+    video {
+    	width: 344px;
+
+        @include medium {
+            width: 509px;
+        }
+        @include large {
+    		width: 640px;
+        }
+	}
+	video.has-media-controls-hidden::-webkit-media-controls {
+   		display: none;
+	}
+}
+
+
+
+.video-overlay-play-button {
+    box-sizing: border-box;
+    width: 90%;
+    height: 90%;
+    padding: 10px calc(50% - 50px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    opacity: 0.95;
+    cursor: pointer;
+
+    @include medium {
+   	 	width: 100%;
+    	height: 100%;
+
+    }
+    @include large {
+    	width: 100%;
+    	height: 100%;
+
+    }
+
+
+}
+
+.video-overlay-play-button:hover {
+    opacity: 1;
+}
+
+.video-overlay-play-button.is-hidden {
+    display: none;
+}

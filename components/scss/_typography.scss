@@ -25,38 +25,17 @@ $h5-large : em(20);
 $h6-large : em(18);
 $p-large  : em(16);
 
-$h1-line-height-small : em(33);
-$h2-line-height-small : em(30);
-$h3-line-height-small : em(23);
-$h4-line-height-small : em(25);
-$h5-line-height-small : em(22);
-$h6-line-height-small : em(19);
 
-$h1-line-height-medium : em(44);
-$h2-line-height-medium : em(36);
-$h3-line-height-medium : em(25);
-$h4-line-height-medium : em(28);
-$h5-line-height-medium : em(25);
-$h6-line-height-medium : em(22);
-
-$h1-line-height-large : em(55);
-$h2-line-height-large : em(39);
-$h3-line-height-large : em(28);
-$h4-line-height-large : em(28);
-$h5-line-height-large : em(28);
-$h6-line-height-large : em(25);
-
-
-$base__font-size : 16px;
-$base__line      : 24px;
+$heading-line-height-small : em(35);
+$heading-line-height-medium-large : em(30);
 
 $font-size-small  : em(13);
 $font-size-medium : em(15);
 $font-size-large  : em(16);
 
-$line-height-small 	: em(16);
+$line-height-small 	: em(20);
 $line-height-medium : em(21);
-$line-height-large  : em(24);
+$line-height-large  : em(22);
 
 
 
@@ -68,6 +47,7 @@ h5,
 h6 {
   color: $black;
   font-weight: bold;
+  line-height: $heading-line-height-small;
 }
 
 
@@ -75,97 +55,126 @@ h6 {
 p {
 	margin-bottom: 1.5em;
 	color: $black;
-	font-size: $p-small;		
+	font-size: $p-small;
+	line-height: $line-height-small;
 	
 	@include medium {
 	  	font-size: $p-medium;	
+	  	line-height: $line-height-medium;
 	}
 	@include large {
-		font-size: $p-large;	
+		font-size: $p-large;
+		line-height: $line-height-large;	
 	}
 
 }
-  
 
+  a {
+    display: inline-block;
+    cursor: pointer;
+    font-size: inherit;
+    text-decoration: underline;
+  	color: $color-primary;
+
+    &:hover,
+    &:active {
+      color: $base1-dark; 
+      text-decoration: none;  
+    }
+
+    &:visited {
+      color: $link-visited;
+    }
+
+    &.external{
+    	&:after{
+       		display: inline-block;
+        	margin-left: em(8);
+        	//font-family: "FontAwesome"; 
+        	//content: "\f002";
+        	content:"@"
+        }
+    }
+    
+    &.container{
+        font-weight:bold;
+        text-decoration: none;
+    	&:before{
+       		display: inline-block;
+       		margin-right: em(8);
+        	//font-family: "FontAwesome"; 
+        	//content: "\f002";
+        	content:"€"
+        }
+    }    
+  }
+
+
+@mixin headline($size, $line-height: $heading-line-height-medium-large){
+	font-size: $size;	
+	line-height: $line-height;
+}
 
 h1{
 
 	font-size: $h1-small;	
-	line-height: $h1-line-height-small;
 
 	@include medium {
-	  	font-size: $h1-medium;	
-		line-height: $h1-line-height-medium;
+		@include headline($h1-medium);
 	}
 	@include large {
-	  	font-size: $h1-large;	
-		line-height: $h1-line-height-large;
+		@include headline($h1-large);
 	}
 }
 h2{
 	font-size: $h2-small;	
-	line-height: $h2-line-height-small;
 
 	@include medium {
-	  	font-size: $h2-medium;	
-		line-height: $h2-line-height-medium;
+		@include headline($h2-medium);
 	}
 	@include large {
-	  	font-size: $h2-large;	
-		line-height: $h2-line-height-large;
+		@include headline($h2-large);
 	}
 }
 h3{
 	font-size: $h3-small;	
-	line-height: $h3-line-height-small;
 
 	@include medium {
-	  	font-size: $h3-medium;	
-		line-height: $h3-line-height-medium;
+		@include headline($h3-medium);
 	}
 	@include large {
-	  	font-size: $h3-large;	
-		line-height: $h3-line-height-large;
+		@include headline($h3-large);
 	}
 }
 h4{
 
 	font-size: $h4-small;	
-	line-height: $h4-line-height-small;
 
 	@include medium {
-	  	font-size: $h4-medium;	
-		line-height: $h4-line-height-medium;
+		@include headline($h4-medium);
 	}
 	@include large {
-	  	font-size: $h4-large;	
-		line-height: $h4-line-height-large;
+		@include headline($h4-large);
 	}
 }
 h5{
 
 	font-size: $h5-small;	
-	line-height: $h5-line-height-small;
 
 	@include medium {
-	  	font-size: $h5-medium;	
-		line-height: $h5-line-height-medium;
+		@include headline($h5-medium);
 	}
 	@include large {
-	  	font-size: $h5-large;	
-		line-height: $h5-line-height-large;
+		@include headline($h5-large);
 	}
 }
 h6{
 	font-size: $h6-small;	
-	line-height: $h6-line-height-small;
 
 	@include medium {
-	  	font-size: $h6-medium;	
-		line-height: $h6-line-height-medium;
+		@include headline($h6-medium);
 	}
 	@include large {
-	  	font-size: $h6-large;	
-		line-height: $h6-line-height-large;
+		@include headline($h6-large);
 	}
 }

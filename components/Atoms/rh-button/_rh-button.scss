@@ -2,7 +2,10 @@
 .rh-button {
     position: absolute;
     display: inline-block;
-    padding: em(10) em(6);
+    padding-top: em(10);
+    padding-right: em(6);
+    padding-bottom: em(10);
+    padding-left: em(6);
     background-color: $white;   
     border: 1px solid $grey-base;
     border-radius: 4px;
@@ -11,7 +14,7 @@
     text-align: center;
     font-family: inherit;
     font-size: $font-size-small;
-    line-height: $line-height-small;
+    line-height: em(16);
         
     &:hover{
         text-decoration: underline;
@@ -70,14 +73,20 @@
     }
 
     @include medium {
-        padding: em(8) em(8);
+        padding-top: em(8);
+        padding-right: em(8);
+        padding-bottom: em(8);
+        padding-left: em(8);
         font-size: $font-size-medium;
-        line-height: $font-size-medium;
+        line-height: em(21);
     }
     @include large {
-        padding: em(10) em(10);
+        padding-top: em(10);
+        padding-right: em(10);
+        padding-bottom: em(10);
+        padding-left: em(10);
         font-size: $font-size-large;
-        line-height: $line-height-large;
+        line-height: em(24);
     }
 }
 
