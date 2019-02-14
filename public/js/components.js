@@ -1,7 +1,15 @@
 "use strict";
 
+//look ES6!!
+var onBtnClick = function onBtnClick(element) {
+  element.innerHTML = 'You did it! 👍';
+  console.log('tadaa');
+};
+"use strict";
+"use strict";
+
 var videoPlayButton,
-    videoWrapper = document.getElementsByClassName('rh-video-wrapper')[0],
+    videoWrapper = document.getElementsByClassName('rh-video')[0],
     video = document.getElementsByTagName('video')[0],
     videoMethods = {
   renderVideoPlayButton: function renderVideoPlayButton() {
@@ -14,10 +22,7 @@ var videoPlayButton,
   },
   formatVideoPlayButton: function formatVideoPlayButton() {
     videoWrapper.insertAdjacentHTML('beforeend', '\
-                <svg class="video-overlay-play-button" viewBox="0 0 200 200" alt="Play video">\
-                    <circle cx="100" cy="100" r="90" />\
-                    <polygon points="70, 55 70, 145 145, 100" fill="#fff"/>\
-                </svg>\
+            <div class="video-overlay-play-button"><div class="circle-content"> > </div></div>\
             ');
   },
   hideVideoPlayButton: function hideVideoPlayButton() {
@@ -28,25 +33,3 @@ var videoPlayButton,
   }
 };
 videoMethods.renderVideoPlayButton();
-/*
-<svg class="video-overlay-play-button" viewBox="0 0 200 200" alt="Play video">\
-    <circle cx="100" cy="100" r="90" />\
-    <polygon points="70, 55 70, 145 145, 100" fill="#fff"/>\
-</svg>
-
-
-
-<span class="fa-stack fa-4x">
-  <i class="fa fa-circle fa-stack-2x icon-background"></i>
-  <i class="fa fa-lock fa-stack-1x"></i>
-</span>
-
-*/
-"use strict";
-
-//look ES6!!
-var onBtnClick = function onBtnClick(element) {
-  element.innerHTML = 'You did it! 👍';
-  console.log('tadaa');
-};
-"use strict";
