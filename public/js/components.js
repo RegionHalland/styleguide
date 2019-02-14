@@ -1,12 +1,4 @@
 "use strict";
-"use strict";
-
-//look ES6!!
-var onBtnClick = function onBtnClick(element) {
-  element.innerHTML = 'You did it! 👍';
-  console.log('tadaa');
-};
-"use strict";
 
 var videoPlayButton,
     videoWrapper = document.getElementsByClassName('rh-video-wrapper')[0],
@@ -50,3 +42,11 @@ videoMethods.renderVideoPlayButton();
 </span>
 
 */
+"use strict";
+
+//look ES6!!
+var onBtnClick = function onBtnClick(element) {
+  element.innerHTML = 'You did it! 👍';
+  console.log('tadaa');
+};
+"use strict";
