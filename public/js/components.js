@@ -1,11 +1,4 @@
 "use strict";
-
-//look ES6!!
-var onBtnClick = function onBtnClick(element) {
-  element.innerHTML = 'You did it! 👍';
-  console.log('tadaa');
-};
-"use strict";
 "use strict";
 
 var videoPlayButton,
@@ -16,13 +9,13 @@ var videoPlayButton,
     if (videoWrapper.contains(video)) {
       this.formatVideoPlayButton();
       video.classList.add('has-media-controls-hidden');
-      videoPlayButton = document.getElementsByClassName('video-overlay-play-button')[0];
+      videoPlayButton = document.getElementsByClassName('video-button')[0];
       videoPlayButton.addEventListener('click', this.hideVideoPlayButton);
     }
   },
   formatVideoPlayButton: function formatVideoPlayButton() {
     videoWrapper.insertAdjacentHTML('beforeend', '\
-            <div class="video-overlay-play-button"><div class="circle-content"> > </div></div>\
+            <div class="video-button"><div class="video-button-content"> > </div></div>\
             ');
   },
   hideVideoPlayButton: function hideVideoPlayButton() {
@@ -33,3 +26,10 @@ var videoPlayButton,
   }
 };
 videoMethods.renderVideoPlayButton();
+"use strict";
+
+//look ES6!!
+var onBtnClick = function onBtnClick(element) {
+  element.innerHTML = 'You did it! 👍';
+  console.log('tadaa');
+};

@@ -6,14 +6,14 @@ var videoPlayButton,
             if (videoWrapper.contains(video)) {
 				this.formatVideoPlayButton()
                 video.classList.add('has-media-controls-hidden')
-                videoPlayButton = document.getElementsByClassName('video-overlay-play-button')[0]
+                videoPlayButton = document.getElementsByClassName('video-button')[0]
                 videoPlayButton.addEventListener('click', this.hideVideoPlayButton)
             }
         },
 
         formatVideoPlayButton: function() {
             videoWrapper.insertAdjacentHTML('beforeend', '\
-            <div class="video-overlay-play-button"><div class="circle-content"> > </div></div>\
+            <div class="video-button"><div class="video-button-content"> > </div></div>\
             ')
         },
 
