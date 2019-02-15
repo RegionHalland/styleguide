@@ -1,0 +1,180 @@
+
+// Typography
+
+$h1-small : em(24);
+$h2-small : em(22);
+$h3-small : em(20);
+$h4-small : em(18);
+$h5-small : em(16);
+$h6-small : em(14);
+$p-small  : em(13);
+
+$h1-medium : em(32);
+$h2-medium : em(26);
+$h3-medium : em(22);
+$h4-medium : em(20);
+$h5-medium : em(18);
+$h6-medium : em(16);
+$p-medium  : em(15);
+
+$h1-large : em(40);
+$h2-large : em(28);
+$h3-large : em(24);
+$h4-large : em(22);
+$h5-large : em(20);
+$h6-large : em(18);
+$p-large  : em(16);
+
+
+$heading-line-height-small : em(35);
+$heading-line-height-medium-large : em(30);
+
+$font-size-small  : em(13);
+$font-size-medium : em(15);
+$font-size-large  : em(16);
+
+$line-height-small 	: em(20);
+$line-height-medium : em(21);
+$line-height-large  : em(22);
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black;
+  font-weight: bold;
+  line-height: $heading-line-height-small;
+}
+
+
+
+p {
+	margin-bottom: em(8);
+	color: $black;
+	font-size: $p-small;
+	line-height: $line-height-small;
+	
+	@include medium {
+	  	font-size: $p-medium;	
+	  	line-height: $line-height-medium;
+	}
+	@include large {
+		font-size: $p-large;
+		line-height: $line-height-large;	
+	}
+
+}
+
+  a {
+    display: inline-block;
+    cursor: pointer;
+    font-size: inherit;
+    text-decoration: underline;
+  	color: $color-primary;
+
+    &:hover,
+    &:active {
+      color: $base1-dark; 
+      text-decoration: none;  
+    }
+
+    &:visited {
+      color: $link-visited;
+    }
+
+    &.external{
+    	&:after{
+       		display: inline-block;
+        	margin-left: em(8);
+        	//font-family: "FontAwesome"; 
+        	//content: "\f002";
+        	content:"@"
+        }
+    }
+    
+    &.container{
+        font-weight:bold;
+        text-decoration: none;
+    	&:before{
+       		display: inline-block;
+       		margin-right: em(8);
+        	//font-family: "FontAwesome"; 
+        	//content: "\f002";
+        	content:"€"
+        }
+    }    
+  }
+
+
+@mixin headline($size, $line-height: $heading-line-height-medium-large){
+	font-size: $size;	
+	line-height: $line-height;
+}
+
+h1{
+
+	font-size: $h1-small;	
+
+	@include medium {
+		@include headline($h1-medium);
+	}
+	@include large {
+		@include headline($h1-large);
+	}
+}
+h2{
+	font-size: $h2-small;	
+
+	@include medium {
+		@include headline($h2-medium);
+	}
+	@include large {
+		@include headline($h2-large);
+	}
+}
+h3{
+	font-size: $h3-small;	
+
+	@include medium {
+		@include headline($h3-medium);
+	}
+	@include large {
+		@include headline($h3-large);
+	}
+}
+h4{
+
+	font-size: $h4-small;	
+
+	@include medium {
+		@include headline($h4-medium);
+	}
+	@include large {
+		@include headline($h4-large);
+	}
+}
+h5{
+
+	font-size: $h5-small;	
+
+	@include medium {
+		@include headline($h5-medium);
+	}
+	@include large {
+		@include headline($h5-large);
+	}
+}
+h6{
+	font-size: $h6-small;	
+
+	@include medium {
+		@include headline($h6-medium);
+	}
+	@include large {
+		@include headline($h6-large);
+	}
+}
