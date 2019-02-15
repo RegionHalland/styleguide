@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e6de71e9-aa04-4c54-8562-c68501d3f755/deploy-status)](https://app.netlify.com/sites/regionhalland-styleguide/deploys)
+
 ## Lokal utveckling
 
 Få igång en lokal server genom att...

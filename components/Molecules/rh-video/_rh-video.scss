@@ -1,0 +1,67 @@
+.rh-video {
+    position: relative;
+
+    video {
+    	width: 344px;
+
+        @include medium {
+            width: 509px;
+        }
+        @include large {
+    		width: 640px;
+        }
+	}
+
+    .video-button {
+        position: absolute;
+        top: em(80);
+        left: em(150);
+        width: em(40);
+        height: em(40);
+        //box-sizing: border-box;
+        cursor: pointer;
+
+        background: $grey-base;
+        border-radius: 50%;
+
+        .video-button-content {
+            color: #fff;
+            float: left;
+            line-height: 1;
+            margin-top: -0.5em;
+            padding-top: 50%;
+            text-align: center;
+            width: 100%;
+            font-size: em(30); 
+            @include medium { font-size: em(80);}
+            @include large { font-size: em(80);}
+        }
+
+        @include medium {
+            top: em(90); 
+            left: em(210);
+            width: em(90);
+            height: em(90);
+        }
+        @include large {
+            top: em(120); 
+            left: em(278);
+            width: em(90);
+            height: em(90);
+        }
+    }
+    .video-button.is-hidden {
+        display: none;
+    }
+
+
+}        
+
+
+
+
+
+
+
+
+  

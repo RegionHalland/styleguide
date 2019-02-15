@@ -1,0 +1,8 @@
+{
+	"title": "#156 Bild med caption",
+    "status": "ready",
+	"context": {
+		"caption": "This is a image, with supporting caption",
+		"name": "rh-image-caption"
+	}		
+}

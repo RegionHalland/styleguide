@@ -1,0 +1,47 @@
+// Descriptive Base Colors
+
+$white    : #fff;
+$black    : #000;
+
+
+$grey-lightest	: #F4F4F4;
+$grey-lighter	: #E4E4E4;
+$grey-light 	: #D1D1D1;
+$grey-base 		: #B1B1B1;
+$grey-dark		: #7E7E7E;
+$grey-darker	: #575757;
+$grey-darkest 	: #2F2F2F;
+
+
+$base1-light			: #B2C8DE;
+$base1					: #004890;
+$base1-dark				: #003265;
+
+$base2-light      		: #D0E3F3;
+$base2		       		: #61A2D8;
+$base2-dark       		: #447197;
+
+$base3-light  			: #C3DCC1;
+$base3     				: #378A30;
+$base3-dark   			: #266122;
+
+$complementary1-light   : #EDF1C9;
+$complementary1    		: #C3D04C;
+$complementary1-dark    : #899235;
+
+$complementary2-light	: #FEE7B9;
+$complementary2			: #FCAF15;
+$complementary2-dark	: #B07A0F;
+
+$complementary3-light   : #E3B7BE;
+$complementary3     	: #A01026;
+$complementary3-dark    : #700B1B;
+
+$link-visited			: #551A8B;
+
+// Color Usage
+
+$color-primary   : $base1;
+$color-secondary : $base3;
+
+$color-shadow   : rgba($black, 0.35);
