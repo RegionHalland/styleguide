@@ -90,9 +90,8 @@ p {
     	&:after{
        		display: inline-block;
         	margin-left: em(8);
-        	//font-family: "FontAwesome"; 
-        	//content: "\f002";
-        	content:"@"
+        	font-family: "feather"; 
+        	content: "\e869";
         }
     }
     
@@ -102,9 +101,8 @@ p {
     	&:before{
        		display: inline-block;
        		margin-right: em(8);
-        	//font-family: "FontAwesome"; 
-        	//content: "\f002";
-        	content:"€"
+        	font-family: "feather"; 
+        	content: "\e872";
         }
     }    
   }

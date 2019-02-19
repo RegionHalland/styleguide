@@ -1,11 +1,5 @@
 .demo{	
-	max-width: 316px;
-	@include medium {
-       max-width: 328px;
-    }
-    @include large {
-		max-width: 416px;
-    }
+	max-width: 416px;
 
 	.rh-block {	
 		position: relative;

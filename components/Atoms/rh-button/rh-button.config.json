@@ -1,6 +1,6 @@
 {
 	"title": "Button",
-    "status": "prototype",
+    "status": "ready",
 	"context": {
 		"text": "Button Default",
 		"name": "rh-button"
@@ -8,7 +8,7 @@
 	"variants": [
 		{
 			"name": "primary",
-			"status": "prototype",
+			"status": "ready",
             "context": {
         	    "modifier": "primary",
 				"text": "Button Primary"
@@ -16,7 +16,7 @@
 		},		
 		{
 			"name": "secondary",
-            "status": "prototype",
+            "status": "ready",
             "context": {
         	    "modifier": "secondary",
 				"text": "Button Secondary"
@@ -24,7 +24,7 @@
 		},		
 		{
 			"name": "with icon",
-            "status": "prototype",
+            "status": "ready",
             "context": {
         	    "modifier": "icon",
 				"text": "Button Default with Icon"
