@@ -1,6 +1,6 @@
 {
 	"title": "#84 Puffar/block",
-    "status": "ready",
+    "status": "prototype",
 	"context": {
 		"caption": "This is a image, with supporting caption",
 		"name": "rh-image-caption"

@@ -1,6 +1,6 @@
 {
 	"title": "Links",
-    "status": "prototype",
+    "status": "ready",
 	"context": {
 		"text": "Link Alternative"
 
@@ -8,7 +8,7 @@
 	"variants": [
 		{
 			"name": "New window",
-			"status": "prototype",
+			"status": "ready",
             "context": {
         	    "modifier": "external",
 				"text": "An external link (new window)"
@@ -16,7 +16,7 @@
 		},		
 		{
 			"name": "Containing document",
-            "status": "prototype",
+            "status": "ready",
             "context": {
         	    "modifier": "container",
 				"text": "A link containing pdf (PDF, 380 KB)"

@@ -1,11 +1,21 @@
 "use strict";
-
-//look ES6!!
-var onBtnClick = function onBtnClick(element) {
-  element.innerHTML = 'You did it! 👍';
-  console.log('tadaa');
-};
 "use strict";
+
+var acc = document.getElementsByClassName("rh-linkgroup");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
 "use strict";
 
 var videoPlayButton,
@@ -22,7 +32,7 @@ var videoPlayButton,
   },
   formatVideoPlayButton: function formatVideoPlayButton() {
     videoWrapper.insertAdjacentHTML('beforeend', '\
-            <div class="video-button"><div class="video-button-content"> > </div></div>\
+            <div class="video-button"><div class="video-button-content"> <i class="feather icon-play"></i> </div></div>\
             ');
   },
   hideVideoPlayButton: function hideVideoPlayButton() {
@@ -33,3 +43,10 @@ var videoPlayButton,
   }
 };
 videoMethods.renderVideoPlayButton();
+"use strict";
+
+//look ES6!!
+var onBtnClick = function onBtnClick(element) {
+  element.innerHTML = 'You did it! 👍';
+  console.log('tadaa');
+};
