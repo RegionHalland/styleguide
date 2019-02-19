@@ -13,7 +13,7 @@ var videoPlayButton,
 
         formatVideoPlayButton: function() {
             videoWrapper.insertAdjacentHTML('beforeend', '\
-            <div class="video-button"><div class="video-button-content"> > </div></div>\
+            <div class="video-button"><div class="video-button-content"> <i class="feather icon-play"></i> </div></div>\
             ')
         },
 

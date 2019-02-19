@@ -15,6 +15,7 @@
     font-family: inherit;
     font-size: $font-size-small;
     line-height: em(16);
+    outline: none;
         
     &:hover{
         text-decoration: underline;
@@ -65,9 +66,8 @@
         &:after{
         display: inline-block;
         margin-left: em(16);
-        //font-family: "FontAwesome"; 
-        //content: "\f002";
-        content:">"
+        font-family: "feather"; 
+        content: "\e844";
         }
 
     }
