@@ -53,11 +53,11 @@
     border-radius: 50%;
 
     .avatar-content {
-        padding-top: 50%;
-        color: $black;
-        text-align: center;
-        font-weight: bold;
-        font-size: em(30); 
+      padding-top: 50%;
+      color: $black;
+      text-align: center;
+      font-weight: bold;
+      font-size: em(30); 
     }
   }
 
@@ -73,7 +73,6 @@
     float: left;
     width: 100%;
   }
-
 
   &::after {
     content: "";
