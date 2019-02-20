@@ -1,0 +1,37 @@
+
+.rh-image-caption {
+	position: absolute;
+  	width: 344px;
+  	text-align: left;
+  	font-size: em(12);
+ 	text-indent: 0;
+ 	color: $grey-darkest;
+
+	img {
+ 		width: 100%;
+	}
+
+	figcaption{
+		margin-top: -2px;
+		padding: 10px;
+		background-color: $grey-lightest;
+		
+	}
+
+    @include medium {
+        width: 509px;
+        font-size: em(14);
+    }
+    @include large {
+		width: 640px;
+		font-size: em(15);
+    }
+
+
+}
+
+
+
+
+	
+
