@@ -1,29 +1,84 @@
 
-.rh-personal-info {
-	position: relative;
-  	width: 344px;
-  	text-align: left;
-    box-shadow: 1px 2px 6px $color-shadow;
+.rh-personal-info { 
+  @include medium {
+    display: flex;
+    align-items: center;
+  }
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
+  box-shadow: 1px 2px 6px $color-shadow;
+	background-color: $white;
 
-  	background-color: $white;
-  	h6{
-  		font-weight: normal;
-  	}
+	h6{
+    display: block;
+		font-weight: normal;
+    line-height: 1.5em;
+
+    &.inline{
+      @include medium {
+        display: inline;
+        margin-right: 5px;
+      }
+    }
+
+	}
+
 	hr{
+    width: 100%;
 		margin-top: em(22);
 		margin-bottom: em(22);
 		border: em(1) solid $color-primary;
 	}
 
+  .rh-box-avatar {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
     @include medium {
-        width: 569px;
+      width: 30%;
     }
-    @include large {
-		width: 640px;
+  }
+
+  .rh-avatar {
+    width: em(150);
+    height: em(150);
+    @include medium {
+      width: em(180);
+      height: em(180);
     }
+    background: $base2-light;
+    border-radius: 50%;
+
+    .avatar-content {
+      padding-top: 50%;
+      color: $black;
+      text-align: center;
+      font-weight: bold;
+      font-size: em(30); 
+    }
+  }
+
+  .rh-box-info {
+    float: left;
+    width: 100%;
+    @include medium {
+      width: 70%;
+    }
+  }
+
+  .rh-box-info-alone {
+    float: left;
+    width: 100%;
+  }
+
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 }
 
-.rh-avatar{
-  float:left;
-}
