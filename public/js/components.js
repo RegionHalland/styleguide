@@ -1,19 +1,11 @@
 "use strict";
 
-//look ES6!!
-var onBtnClick = function onBtnClick(element) {
-  element.innerHTML = 'You did it! 👍';
-  console.log('tadaa');
-};
-"use strict";
-"use strict";
-
-var acc = document.getElementsByClassName("rh-linkgroup");
+var acc = document.getElementsByClassName("rh-accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
+    this.classList.toggle("rh-accordion-active");
     var panel = this.nextElementSibling;
 
     if (panel.style.maxHeight) {
@@ -50,3 +42,11 @@ var videoPlayButton,
   }
 };
 videoMethods.renderVideoPlayButton();
+"use strict";
+
+//look ES6!!
+var onBtnClick = function onBtnClick(element) {
+  element.innerHTML = 'You did it! 👍';
+  console.log('tadaa');
+};
+"use strict";
