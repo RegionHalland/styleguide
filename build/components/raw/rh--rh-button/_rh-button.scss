@@ -64,10 +64,18 @@
     &--icon {
 
         &:after{
+<<<<<<< HEAD
         display: inline-block;
         margin-left: em(16);
         font-family: "feather"; 
         content: "\e844";
+=======
+            color: red;
+            display: inline-block;
+            margin-left: em(16);
+            font-family: "feather";
+            content: "\e844";
+>>>>>>> bright-factory
         }
 
     }

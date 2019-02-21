@@ -1,8 +1,8 @@
 {
-	"title": "#84 Puffar/block",
-    "status": "prototype",
+	"title": "#192 Kontaktkort",
+    "status": "ready",
 	"context": {
-		"caption": "This is a image, with supporting caption",
-		"name": "rh-image-caption"
+		"caption": "",
+		"name": ""
 	}		
 }
