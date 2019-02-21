@@ -4,10 +4,10 @@
     display: flex;
     align-items: center;
   }
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-top: em(25);
+  padding-bottom: em(25);
+  padding-right: em(20);
+  padding-left: em(20);
   box-shadow: 1px 2px 6px $color-shadow;
 	background-color: $white;
 
@@ -19,7 +19,7 @@
     &.inline{
       @include medium {
         display: inline;
-        margin-right: 5px;
+        margin-right: em(5);
       }
     }
 
