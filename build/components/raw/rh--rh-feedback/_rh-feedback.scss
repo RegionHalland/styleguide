@@ -1,0 +1,18 @@
+.rh-feedback {
+
+	hr{
+		margin-top: em(22);
+		margin-bottom: em(22);
+		border: em(1) solid $grey-light;
+	}
+	.rh-button{
+		width: em(80);
+
+	    @include large {
+			width: em(100);
+	    }
+	}
+
+}
+
+

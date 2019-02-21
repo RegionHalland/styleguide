@@ -2,7 +2,8 @@
 	"title": "Links",
     "status": "ready",
 	"context": {
-		"text": "Link Alternative"
+		"text": "Link Alternative",
+		"name": "rh-link"
 
 	},
 	"variants": [

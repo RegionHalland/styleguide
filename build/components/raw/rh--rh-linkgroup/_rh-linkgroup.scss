@@ -1,0 +1,72 @@
+.rh-linkgroup {
+	background-color: $grey-lightest;
+	color: $black;
+	cursor: pointer;
+	padding-top: 15px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	width: 100%;
+	border-left: 4px solid $color-primary;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 0;
+	text-align: left;
+	outline: none;
+	font-size: 13px;
+	font-weight: bold;
+	
+
+	&:after {
+	//  content: '\002B';
+	  color: $black;
+	  font-weight: bold;
+	  float: right;
+	  margin-right: 10px;
+	}
+
+}
+
+.active {
+ 	background-color: $color-primary;
+ 	color: $white;
+}
+
+.active:after {
+	color: $white;
+ //	content: "\2212";
+ 	margin-right: 10px;
+}
+
+
+.rh-linkgroup-panel {
+ 	padding: 0 18px;
+ 	background-color: $grey-lightest;
+  	max-height: 0;
+  	overflow: hidden;
+  	transition: max-height 0.2s ease-out;
+}
+
+
+
+
+
+rh-linkgroup-icon:before {   
+	content: '\002B';
+    position: absolute;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+	  float: right;
+	  margin-right: 10px;
+}
+
+rh-linkgroup-icon:after {   
+    content: "\2212";
+    position: absolute;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+	  float: right;
+	  margin-right: 10px;
+}

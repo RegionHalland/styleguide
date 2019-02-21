@@ -1,72 +1,79 @@
 .rh-linkgroup {
-	background-color: $grey-lightest;
-	color: $black;
-	cursor: pointer;
-	padding-top: 15px;
-	padding-right: 10px;
-	padding-bottom: 15px;
-	padding-left: 10px;
-	width: 100%;
+	dispaly: block;
+   	overflow: auto;
+   	width: 100%;
+	padding-top: em(8);
+	padding-bottom: em(8);
+	padding-left: em(11);
+	padding-right: em(5);
 	border-left: 4px solid $color-primary;
 	border-top: 0;
 	border-right: 0;
 	border-bottom: 0;
-	text-align: left;
-	outline: none;
-	font-size: 13px;
-	font-weight: bold;
-	
+	background-color: $grey-lightest;
+	cursor: pointer;
 
-	&:after {
-	//  content: '\002B';
-	  color: $black;
-	  font-weight: bold;
-	  float: right;
-	  margin-right: 10px;
+	p{
+		display: inline-block;
+		float:left;	
+		margin-bottom: 0;
+		margin-top: em(7);
+		@include medium { margin-top: em(4);}
+		@include large { margin-top: em(4);}
+		color: $black;
+		font-weight: bold;
 	}
 
+	span:after {
+		display: inline-block;
+        float:right;
+        padding: em(8);
+		margin-right: 10px;
+		border-radius: 50%;
+		background-color: $color-primary;	
+		font-family: "feather"; 
+		content: "\e8b1";
+		color: $white;
+		font-size: em(14);
+	}
 }
 
 .active {
- 	background-color: $color-primary;
- 	color: $white;
-}
-
-.active:after {
-	color: $white;
- //	content: "\2212";
- 	margin-right: 10px;
+	background-color: $color-primary;
+	p{	 	
+	 	color: $white;
+	}
+	span:after {
+		background-color: $white;
+		font-family: "feather"; 
+		color: $color-primary;
+		content: "\e897";
+	}
 }
 
 
 .rh-linkgroup-panel {
- 	padding: 0 18px;
- 	background-color: $grey-lightest;
+	overflow: hidden;
   	max-height: 0;
-  	overflow: hidden;
-  	transition: max-height 0.2s ease-out;
+  	background-color: $grey-lightest;
+	transition: max-height 0.2s ease-out;
+	-webkit-transition: max-height 0.2s;
+
+  	ul{
+  		margin-left: em(10);
+  		margin-right: em(10);
+  		padding-top: em(30);
+  	}
+
+  	li{
+  		margin-bottom: em(35);
+  		font-size: $p-small;
+  		@include medium { font-size: $p-medium;}
+		@include large { font-size: $p-large;}
+	}		
+  				
 }
 
 
 
 
-
-rh-linkgroup-icon:before {   
-	content: '\002B';
-    position: absolute;
-    -webkit-transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
-	  float: right;
-	  margin-right: 10px;
-}
-
-rh-linkgroup-icon:after {   
-    content: "\2212";
-    position: absolute;
-    -webkit-transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
-	  float: right;
-	  margin-right: 10px;
-}

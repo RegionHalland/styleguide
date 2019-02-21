@@ -1,0 +1,33 @@
+.rh-badge {
+        position: relative;
+        width: em(110);
+        height: em(110);
+        //box-sizing: border-box;
+        cursor: pointer;
+
+        background: $base2-light;
+        border-radius: 50%;
+
+        .avatar-content {
+            color: $black;
+            float: left;
+            line-height: 1;
+            margin-top: -0.5em;
+            padding-top: 50%;
+            text-align: center;
+            width: 100%;
+            font-weight: bold;
+            font-size: em(20); 
+            @include medium { font-size: em(30);}
+            @include large { font-size: em(50);}
+        }
+
+        @include medium {
+            width: em(122);
+            height: em(122);
+        }
+        @include large {
+            width: em(162);
+            height: em(162);
+        }
+    }

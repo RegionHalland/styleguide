@@ -1,10 +1,6 @@
 
 .rh-video {
     position: relative;
-    max-width: 344px;
-
-    @include medium { max-width: 509px;}
-    @include large { max-width: 640px;}
 
     video{
         width: 100%;
@@ -25,10 +21,6 @@
             width: em(90);
             height: em(90);
         }
-        @include large {
-            width: em(90);
-            height: em(90);
-        }
 
         .video-button-content {
 
@@ -43,7 +35,6 @@
                 font-family:"feather" !important;
                 font-size: em(20); 
                 @include medium { font-size: em(50);}
-                @include large { font-size: em(50);}
                 font-style:normal;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
