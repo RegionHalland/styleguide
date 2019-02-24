@@ -1,4 +1,15 @@
 "use strict";
+<<<<<<< HEAD
+=======
+
+//look ES6!!
+var onBtnClick = function onBtnClick(element) {
+  element.innerHTML = 'You did it! 👍';
+  console.log('tadaa');
+};
+"use strict";
+"use strict";
+>>>>>>> 54576e3e19356fb5e2ae0860e712bebca924ae80
 
 var acc = document.getElementsByClassName("rh-accordion");
 var i;
