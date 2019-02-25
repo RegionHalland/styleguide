@@ -1,8 +1,0 @@
-{
-	"title": "Input",
-    "status": "ready",
-	"context": {
-		"placeholder": "Type something",
-		"name": "input"
-	}
-}
