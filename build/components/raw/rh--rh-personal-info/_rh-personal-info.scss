@@ -11,12 +11,21 @@
   box-shadow: 1px 2px 6px $color-shadow;
 	background-color: $white;
 
+<<<<<<< HEAD
 	h6{
+=======
+
+	&-text{
+>>>>>>> master
     display: block;
 		font-weight: normal;
     line-height: 1.5em;
 
+<<<<<<< HEAD
     &.inline{
+=======
+    &-inline{
+>>>>>>> master
       @include medium {
         display: inline;
         margin-right: em(5);
@@ -25,7 +34,11 @@
 
 	}
 
+<<<<<<< HEAD
 	hr{
+=======
+	.rh-personal-info-hr {
+>>>>>>> master
     width: 100%;
 		margin-top: em(22);
 		margin-bottom: em(22);
@@ -37,6 +50,7 @@
     margin-left: auto;
     margin-right: auto;
 
+<<<<<<< HEAD
     @include medium {
       width: 30%;
     }
@@ -59,6 +73,30 @@
       font-weight: bold;
       font-size: em(30); 
     }
+=======
+    @include medium {
+      width: 30%;
+    }
+  }
+
+  .rh-avatar {
+    width: em(150);
+    height: em(150);
+    @include medium {
+      width: em(180);
+      height: em(180);
+    }
+    background: $base2-light;
+    border-radius: 50%;
+
+    .avatar-content {
+      padding-top: 50%;
+      color: $black;
+      text-align: center;
+      font-weight: bold;
+      font-size: em(30); 
+    }
+>>>>>>> master
   }
 
   .rh-box-info {
