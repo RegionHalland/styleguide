@@ -8,7 +8,7 @@
 	"variants": [
 		{
 			"name": "primary",
-			"status": "ready",
+			"status": "wip",
             "context": {
         	    "modifier": "primary",
 				"text": "Button Primary"
@@ -16,7 +16,7 @@
 		},		
 		{
 			"name": "secondary",
-            "status": "ready",
+            "status": "wip",
             "context": {
         	    "modifier": "secondary",
 				"text": "Button Secondary"
@@ -24,7 +24,7 @@
 		},		
 		{
 			"name": "with icon",
-            "status": "ready",
+            "status": "wip",
             "context": {
         	    "modifier": "icon",
 				"text": "Button Default with Icon"

@@ -9,7 +9,7 @@
 	"variants": [
 		{
 			"name": "New window",
-			"status": "ready",
+			"status": "wip",
             "context": {
         	    "modifier": "external",
 				"text": "An external link (new window)"
@@ -17,7 +17,7 @@
 		},		
 		{
 			"name": "Containing document",
-            "status": "ready",
+            "status": "wip",
             "context": {
         	    "modifier": "container",
 				"text": "A link containing pdf (PDF, 380 KB)"
