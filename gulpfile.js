@@ -44,6 +44,30 @@ fractal.web.set('static.path', `${__dirname}/public`);
 fractal.web.set('builder.dest', `${__dirname}/build`);
 fractal.web.theme(rh_theme);
 
+fractal.components.set('statuses', {
+    prototype: {
+        label: "Skiss",
+        description: "Tidig prototyp. Implementera inte.",
+        color: '#F00'
+    },
+    wip: {
+        label: "Under utveckling",
+        description: "Under utveckling. Avvakta med att implementera.",
+        color: 'orange'
+    },
+    review: {
+        label: "Under granskning",
+        description: "Granskas för godkännande. Implementera med försiktighet.",
+        color: '#d4ff26'
+    },
+    ready: {
+        label: "Klar",
+        description: "Redo att implementeras",
+        color: "green"
+    },
+});
+
+
 function start(cb) {
 
     gulp.watch('components/**/*', parallel(scss, images, js));
