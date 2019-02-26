@@ -6,6 +6,7 @@ var onBtnClick = function onBtnClick(element) {
   console.log('tadaa');
 };
 "use strict";
+"use strict";
 
 var acc = document.getElementsByClassName("rh-accordion");
 var i;
@@ -49,4 +50,3 @@ var videoPlayButton,
   }
 };
 videoMethods.renderVideoPlayButton();
-"use strict";
