@@ -1,0 +1,61 @@
+
+.rh-navigation-card{
+	max-width: 350px;
+	margin-bottom: em(45);
+
+	.rh-navigation-card-title{
+   		display: flex;
+   		align-items: center;
+
+		&-icon {
+	        margin-left: auto;
+			&:after {
+				margin-left: em(10);
+				padding: em(8);
+				background: $base2-light;
+				border-radius: 50%;
+				font-weight: normal;
+		    	font-family: "feather"; 
+		    	content: "\e829";
+				font-size: $p-small;
+				@include medium { font-size: $p-medium;}
+				@include large { font-size: $p-large;}
+			}
+		}
+
+		&-link{
+		    display: inline-block;
+		    cursor: pointer;
+		    font-size: inherit;
+		    text-decoration: none;
+		  	color: $color-primary;
+		  	line-height: 1em;
+
+		    &:hover,
+		    &:active {
+		      text-decoration: underline;  
+		    }
+
+		    &:visited {
+		      color: $link-visited;
+		    }
+		}
+	}
+
+	.rh-navigation-card-title-extended{
+	   	display: flex;
+   		align-items: flex-start;
+   		@extend .rh-navigation-card-title;
+	}
+
+	.rh-navigation-card-description{
+		max-width: 95%;
+		color: $grey-dark;
+	}
+}
+
+
+
+
+
+
