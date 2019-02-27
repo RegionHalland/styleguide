@@ -1,7 +1,5 @@
 "use strict";
 "use strict";
-<<<<<<< HEAD
-=======
 
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
@@ -30,7 +28,6 @@ window.onclick = function (event) {
   }
 };
 "use strict";
->>>>>>> master
 
 var acc = document.getElementsByClassName("rh-accordion");
 var i;
