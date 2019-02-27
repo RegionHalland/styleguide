@@ -2,9 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86efe8f7-53aa-4e39-9dd1-6ab8c6882154" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/components/Atoms/rh-button/rh-button.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/components/Atoms/rh-button/rh-button.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Atoms/rh-filter/_rh-filter.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Atoms/rh-filter/rh-filter.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Atoms/rh-filter/rh-filter.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Atoms/rh-filter/rh-filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Atoms/rh-search-field/_rh-search-field.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Atoms/rh-search-field/rh-search-field.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Atoms/rh-search-field/rh-search-field.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Molecules/rh-navigation-card/_rh-navigation-card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Molecules/rh-navigation-card/rh-navigation-card.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Molecules/rh-navigation-card/rh-navigation-card.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Molecules/rh-secondary-nav/_rh-secondary-nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Molecules/rh-secondary-nav/rh-secondary-nav.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Molecules/rh-secondary-nav/rh-secondary-nav.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Molecules/rh-shortcuts/_rh-shortcuts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Molecules/rh-shortcuts/rh-shortcuts.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Molecules/rh-shortcuts/rh-shortcuts.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Organism/rh-breadcrums/_rh-breadcrums.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Organism/rh-breadcrums/rh-breadcrums.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Organism/rh-breadcrums/rh-breadcrums.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/components/Arkiv/figure/bild.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Atoms/rh-link/rh-link.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/components/Atoms/rh-link/rh-link.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Atoms/rh-text/rh-text.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/components/Atoms/rh-text/rh-text.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/components.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/components.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/components.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,49 +36,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="_rh-linkgroup.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/Molecules/rh-linkgroup/_rh-linkgroup.scss">
+      <file leaf-file-name="rh-link.config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/Atoms/rh-link/rh-link.config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1610">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="290">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="components.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/css/components.css">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="rh-linkgroup.config.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/Molecules/rh-linkgroup/rh-linkgroup.config.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="_rh-button.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/Atoms/rh-button/_rh-button.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gulpfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="62" column="10" lean-forward="true" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rh-avatar.config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/Atoms/rh-avatar/rh-avatar.config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rh-link.config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/Atoms/rh-link/rh-link.config.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
               <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
@@ -65,7 +59,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rh-text.config.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="rh-video.config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/Molecules/rh-video/rh-video.config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rh-main-nav.config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/Organism/rh-main-nav/rh-main-nav.config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rh-button.config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/Atoms/rh-button/rh-button.config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="598">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rh-text.config.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/Atoms/rh-text/rh-text.config.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
@@ -74,17 +95,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rh-badge.config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/Atoms/rh-badge/rh-badge.config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rh-button.config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/Atoms/rh-button/rh-button.config.json">
+      <file leaf-file-name="rh-block.config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/Molecules/rh-block/rh-block.config.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
               <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
@@ -92,11 +104,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="rh-feedback.config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/Molecules/rh-feedback/rh-feedback.config.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rh-image-caption.config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/Molecules/rh-image-caption/rh-image-caption.config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -118,8 +139,9 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/components/Atoms/rh-button/rh-button.config.json" />
-        <option value="$PROJECT_DIR$/components/Atoms/rh-link/rh-link.config.json" />
         <option value="$PROJECT_DIR$/components/Atoms/rh-text/rh-text.config.json" />
+        <option value="$PROJECT_DIR$/components/Atoms/rh-link/rh-link.config.json" />
+        <option value="$PROJECT_DIR$/public/css/components.css" />
       </list>
     </option>
   </component>
@@ -167,6 +189,49 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Atoms" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="styleguide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="styleguide" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Atoms" type="462c0819:PsiDirectoryNode" />
+              <item name="rh-button" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="styleguide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="styleguide" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Atoms" type="462c0819:PsiDirectoryNode" />
+              <item name="rh-link" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="styleguide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="styleguide" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Molecules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="styleguide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="styleguide" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Organism" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="styleguide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="styleguide" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="styleguide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="styleguide" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="styleguide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="styleguide" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -209,18 +274,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7712000" />
+    <option name="totallyTimeSpent" value="7769000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="500" y="0" width="2060" height="1440" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17087379" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.275" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50194174" side_tool="true" visible="true" weight="0.17320503" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5023438" side_tool="true" visible="true" weight="0.32911393" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49805826" visible="true" weight="0.17320503" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49765626" visible="true" weight="0.32911393" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -255,13 +321,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/components/Atoms/rh-link/rh-link.config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/components.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -375,7 +434,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/Molecules/rh-image-caption/rh-image-caption.config.json">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/Organism/rh-feedback/_rh-feedback.scss" />
     <entry file="file://$PROJECT_DIR$/components/Molecules/rh-block/_rh-block.scss">
@@ -442,9 +505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/components.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/Molecules/rh-personal-info/_rh-personal-info.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
@@ -453,7 +513,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/Molecules/rh-linkgroup/rh-linkgroup.config.json">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/components/Atoms/rh-button/_rh-button.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -462,16 +526,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/Arkiv/button/button.hbs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/Arkiv/button/button.config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Arkiv/button/button.hbs" />
+    <entry file="file://$PROJECT_DIR$/components/Arkiv/button/button.config.json" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -488,8 +544,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/Atoms/rh-button/rh-button.config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="598">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -516,8 +572,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/Atoms/rh-link/rh-link.config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="290">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
@@ -530,6 +586,16 @@
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Molecules/rh-personal-info/rh-personal-info.config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/components.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
