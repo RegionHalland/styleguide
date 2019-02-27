@@ -1,0 +1,37 @@
+
+.rh-logo-sitename{
+    display: flex;
+    align-items: center;  
+	width: 100%;
+
+	&-logo{
+	width: em(172);
+	margin-right: em(21);
+
+		@include medium {
+			width: em(172);
+			margin-right: em(21);
+		}
+
+		@include large {
+			width: em(308);
+			margin-right: em(29);
+		}
+	}
+
+	&-title{
+		font-weight: normal;
+		color: $black;
+		font-size: em(14);
+
+		@include medium {
+			font-size: em(14);
+		}
+
+		@include large {
+			font-size: em(20);
+		}
+	}
+}
+
+

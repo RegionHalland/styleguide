@@ -1,0 +1,19 @@
+.rh-news-info{
+	display: flex;
+	font-size: em(11);
+	@include medium { font-size: em(15); }
+	@include large { font-size: em(16); }
+
+	.rh-news-info-title{
+		margin-right: 30px;
+	}
+
+	.rh-news-info-text{
+		color: $grey-darkest;
+	}
+
+	.rh-news-info-text-link{
+		color: $color-primary;
+	}
+}
+

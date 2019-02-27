@@ -1,0 +1,39 @@
+.rh-label{
+	display: inline-block;
+	background-color: $base2-light;
+	color: $black;
+	text-align: center;
+  	white-space: nowrap;
+  	line-height: 1;
+  	vertical-align: baseline;
+
+
+	min-width: em(10);
+	padding-top: em(3);
+	padding-bottom: em(3);
+	padding-right: em(7);
+	padding-left: em(7);
+	border-radius: em(10);
+	font-size: em(9);
+
+	@include medium{
+		min-width: em(11);
+		padding-top: em(4);
+		padding-bottom: em(4);
+		padding-right: em(8);
+		padding-left: em(8);
+		border-radius: em(11);
+		font-size: em(11);
+	}
+
+	@include large{
+		min-width: em(12);
+		padding-top: em(5);
+		padding-bottom: em(5);
+		padding-right: em(9);
+		padding-left: em(9);
+		border-radius: em(12);
+		font-size: em(14);
+	}
+
+}
