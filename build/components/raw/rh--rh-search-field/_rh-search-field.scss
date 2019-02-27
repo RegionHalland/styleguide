@@ -1,0 +1,67 @@
+.rh-search-field {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  .rh-search-term {
+    border: 1px solid $grey-light;
+    padding: 10px; 
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    color: $grey-darker;
+    font-size: $p-small;
+    @include medium { font-size: $p-medium;}
+    @include large { font-size: $p-large;}
+  }
+
+  .rh-search-button {
+    padding: 10px;
+    border: 1px solid $color-primary;
+    border-radius: 0 4px 4px 0;
+    background: $color-primary;
+    text-align: center;
+    color: $white;
+    cursor: pointer;
+    font-size: $p-small;
+    @include medium { font-size: $p-medium;}
+    @include large { font-size: $p-large;}
+  }
+
+}
+
+
+
+
+
+.rh-search-field {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  
+  .rh-search-term {
+    width: 100%;
+    border: 1px solid $grey-light;
+    padding: 10px; 
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    color: $grey-darker;
+    font-size: $p-small;
+    @include medium { font-size: $p-medium;}
+    @include large { font-size: $p-large;}
+  }
+
+  .rh-search-button {
+    padding: 10px;
+    border: 1px solid $color-primary;
+    border-radius: 0 4px 4px 0;
+    background: $color-primary;
+    text-align: center;
+    color: $white;
+    cursor: pointer;
+    font-size: $p-small;
+    @include medium { font-size: $p-medium;}
+    @include large { font-size: $p-large;}
+  }
+
+}
+

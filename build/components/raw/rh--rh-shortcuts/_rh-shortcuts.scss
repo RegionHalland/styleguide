@@ -1,0 +1,93 @@
+.rh-shortcut-title{
+	color: $white;
+}
+
+.rh-shortcut-listgroup {
+	padding: em(15);
+	background-color: $white;
+	border-top: 5px solid $base2;
+	border-radius: 4px;	
+
+	.rh-shortcut-item {
+		margin-bottom: em(35);
+		color: $black;
+		font-size: $p-small;
+		@include medium { font-size: $p-medium;}
+		@include large { font-size: $p-large;}
+
+		&:last-child{
+			margin-bottom: em(0);
+		}
+	}
+
+	.rh-shortcut-link{
+	    display: inline-block;
+	    cursor: pointer;
+	    font-size: inherit;
+	    text-decoration: underline;
+	  	color: $black;
+
+	    &:hover,
+	    &:active {
+	      color: $color-primary; 
+	      text-decoration: none;  
+	    }
+
+	    &:visited {
+	      color: $link-visited;
+	    }
+	}	
+}
+
+
+.rh-shortcut-title-2{
+	color: $black;
+	line-height: 1em;
+}
+
+.rh-shortcut-hr{
+    width: 100%;
+	margin-bottom: em(22);
+	border-top: 0.5px solid $complementary2;
+	border-left: 0;
+	border-bottom: 0;
+	border-right: 0;
+	@include medium { border: 2px solid $complementary2;}
+}
+
+.rh-shortcut-listgroup-2 {
+	padding: em(15);
+	background-color: $complementary2-light;
+	border-left: 5px solid $complementary2;
+	border-radius: 4px;	
+
+	.rh-shortcut-item-2 {
+		margin-bottom: em(35);
+		color: $black;
+		font-size: $p-small;
+		@include medium { font-size: $p-medium;}
+		@include large { font-size: $p-large;}
+
+		&:last-child{
+			margin-bottom: em(0);
+		}
+	}
+
+	.rh-shortcut-link-2{
+	    display: inline-block;
+	    cursor: pointer;
+	    font-size: inherit;
+	    text-decoration: underline;
+	  	color: $black;
+
+	    &:hover,
+	    &:active {
+	      color: $color-primary; 
+	      text-decoration: none;  
+	    }
+
+	    &:visited {
+	      color: $link-visited;
+	    }
+	}	
+}
