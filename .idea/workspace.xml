@@ -2,30 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86efe8f7-53aa-4e39-9dd1-6ab8c6882154" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Atoms/rh-filter/_rh-filter.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Atoms/rh-filter/rh-filter.config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Atoms/rh-filter/rh-filter.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Atoms/rh-filter/rh-filter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Atoms/rh-search-field/_rh-search-field.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Atoms/rh-search-field/rh-search-field.config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Atoms/rh-search-field/rh-search-field.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Molecules/rh-navigation-card/_rh-navigation-card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Molecules/rh-navigation-card/rh-navigation-card.config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Molecules/rh-navigation-card/rh-navigation-card.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Molecules/rh-secondary-nav/_rh-secondary-nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Molecules/rh-secondary-nav/rh-secondary-nav.config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Molecules/rh-secondary-nav/rh-secondary-nav.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Molecules/rh-shortcuts/_rh-shortcuts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Molecules/rh-shortcuts/rh-shortcuts.config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Molecules/rh-shortcuts/rh-shortcuts.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Organism/rh-breadcrums/_rh-breadcrums.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Organism/rh-breadcrums/rh-breadcrums.config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Organism/rh-breadcrums/rh-breadcrums.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/components/Arkiv/figure/bild.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Atoms/rh-link/rh-link.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/components/Atoms/rh-link/rh-link.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--button--default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--button--primary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--button--secondary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--button.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--figure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--input.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--label--default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--label--success.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--label--warning.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--label.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--preview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-avatar.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-avatar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-badge.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-badge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-block.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-block.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-button--default.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-button--default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-button--primary.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-button--primary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-button--secondary.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-button--secondary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-button--with-icon.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-button--with-icon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-button.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-button.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-feedback-last-updated.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-feedback-last-updated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-feedback.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-feedback.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-image-caption.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-image-caption.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-last-updated.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-last-updated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-link--containing-document.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-link--containing-document.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-link--default.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-link--default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-link--new-window.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-link--new-window.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-link.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-link.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-linkgroup.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-linkgroup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-main-nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-main-nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-personal-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-personal-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-text.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-text.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-video.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/preview/rh--button--default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/preview/rh--button--primary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/preview/rh--button--secondary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/preview/rh--button.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/preview/rh--figure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/preview/rh--input.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/preview/rh--label--default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/preview/rh--label--success.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/preview/rh--label--warning.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/preview/rh--label.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/preview/rh--search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/raw/rh--button/button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/raw/rh--button/button.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/raw/rh--figure/bild.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/raw/rh--figure/figure.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/raw/rh--input/input.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/raw/rh--label/label.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/render/rh--button--default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/render/rh--button--primary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/render/rh--button--secondary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/render/rh--button.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/render/rh--figure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/render/rh--input.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/render/rh--label--default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/render/rh--label--success.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/render/rh--label--warning.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/render/rh--label.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/render/rh--search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/components.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/components.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/docs/workflow.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/docs/workflow.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/components.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Molecules/rh-navigation-card/rh-navigation-card.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/components/Molecules/rh-navigation-card/rh-navigation-card.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Molecules/rh-secondary-nav/rh-secondary-nav.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/components/Molecules/rh-secondary-nav/rh-secondary-nav.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Organism/rh-breadcrums/rh-breadcrums.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/components/Organism/rh-breadcrums/rh-breadcrums.config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/components.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/components.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/components.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/releases/1.3.0/css/components.css" beforeDir="false" afterPath="$PROJECT_DIR$/releases/1.3.0/css/components.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/releases/1.3.0/js/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/releases/1.3.0/js/components.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,9 +93,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="components.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="components.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/components.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6474" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rh-breadcrums.config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/Organism/rh-breadcrums/rh-breadcrums.config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rh-secondary-nav.config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/Molecules/rh-secondary-nav/rh-secondary-nav.config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_rh-navigation-card.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/Molecules/rh-navigation-card/_rh-navigation-card.scss">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="rh-navigation-card.config.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/components/Molecules/rh-navigation-card/rh-navigation-card.config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="rh-linkgroup.config.json" pinned="false" current-in-tab="false">
@@ -55,24 +137,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
               <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rh-video.config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/Molecules/rh-video/rh-video.config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rh-main-nav.config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/Organism/rh-main-nav/rh-main-nav.config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -88,24 +152,6 @@
       </file>
       <file leaf-file-name="rh-text.config.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/Atoms/rh-text/rh-text.config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rh-block.config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/Molecules/rh-block/rh-block.config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rh-feedback.config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/Molecules/rh-feedback/rh-feedback.config.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
               <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
@@ -142,6 +188,9 @@
         <option value="$PROJECT_DIR$/components/Atoms/rh-text/rh-text.config.json" />
         <option value="$PROJECT_DIR$/components/Atoms/rh-link/rh-link.config.json" />
         <option value="$PROJECT_DIR$/public/css/components.css" />
+        <option value="$PROJECT_DIR$/components/Organism/rh-breadcrums/rh-breadcrums.config.json" />
+        <option value="$PROJECT_DIR$/components/Molecules/rh-secondary-nav/rh-secondary-nav.config.json" />
+        <option value="$PROJECT_DIR$/components/Molecules/rh-navigation-card/rh-navigation-card.config.json" />
       </list>
     </option>
   </component>
@@ -213,13 +262,28 @@
               <item name="styleguide" type="b2602c69:ProjectViewProjectNode" />
               <item name="styleguide" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Molecules" type="462c0819:PsiDirectoryNode" />
+              <item name="rh-navigation-card" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="styleguide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="styleguide" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Molecules" type="462c0819:PsiDirectoryNode" />
+              <item name="rh-secondary-nav" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="styleguide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="styleguide" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Organism" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="styleguide" type="b2602c69:ProjectViewProjectNode" />
               <item name="styleguide" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
+              <item name="Organism" type="462c0819:PsiDirectoryNode" />
+              <item name="rh-breadcrums" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="styleguide" type="b2602c69:ProjectViewProjectNode" />
@@ -274,22 +338,23 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7769000" />
+    <option name="totallyTimeSpent" value="8238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.275" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5023438" side_tool="true" visible="true" weight="0.32911393" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50078124" side_tool="true" visible="true" weight="0.32911393" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49765626" visible="true" weight="0.32911393" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49765626" weight="0.32911393" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.275" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49921876" visible="true" weight="0.32911393" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -309,7 +374,6 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5023438" side_tool="true" visible="true" weight="0.32911393" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
@@ -321,38 +385,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/components.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/scss/_base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="1" selection-start-line="16" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/scss/_normalize.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/scss/_functions.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/scss/_color.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/scss/_breakpoints.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/scss/_reset.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/scss/_typography.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/Atoms/rh-link/rh-link.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -595,7 +627,61 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/components.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6474" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Molecules/rh-video/rh-video.config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Organism/rh-breadcrums/rh-breadcrums.config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Organism/rh-main-nav/rh-main-nav.config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Molecules/rh-secondary-nav/rh-secondary-nav.config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Molecules/rh-block/rh-block.config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Molecules/rh-navigation-card/_rh-navigation-card.scss">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Molecules/rh-feedback/rh-feedback.config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/Molecules/rh-navigation-card/rh-navigation-card.config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
