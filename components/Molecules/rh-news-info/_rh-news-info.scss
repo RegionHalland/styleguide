@@ -14,6 +14,18 @@
 
 	.rh-news-info-text-link{
 		color: $color-primary;
+	    cursor: pointer;
+	    font-size: inherit;
+	    text-decoration: none;
+
+	    &:hover,
+	    &:active {
+	      text-decoration: underline;  
+	    }
+
+	    &:visited {
+	      color: $link-visited;
+	    }
 	}
 }
 
