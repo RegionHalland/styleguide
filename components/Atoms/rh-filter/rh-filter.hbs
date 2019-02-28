@@ -1,0 +1,14 @@
+
+<button onclick="toggleMenu()" class="{{name}}" id="dropdownBtn">	
+  {{ text }}
+  <span class="rh-filter-icon"></span>
+</button>
+<div id="myDropdown" class="rh-filter-menu" aria-labelledby="dropdownBtn">
+  <div class="rh-filter-menu-triangle"></div>
+  <div class="rh-filter-menu-border"></div>
+  <ul class="rh-filter-menu-content">
+    <li class="rh-filter-menu-item" onclick="selectItem(this)">Placeholder1</li>      
+    <li class="rh-filter-menu-item" onclick="selectItem(this)">Placeholder2</li>
+    <li class="rh-filter-menu-item" onclick="selectItem(this)">Placeholder3</li>
+  </ul>
+</div>
