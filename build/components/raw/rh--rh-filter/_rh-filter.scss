@@ -1,13 +1,21 @@
+<<<<<<< HEAD
 .show {display:block!important;}
 .selected {color:black!important;}
 .container {width: em(250);}
 
 .rh-filter {
   width: 100%;
+=======
+.rh-filter {
+  display: flex;
+  align-items: center;
+  width: 90%;
+>>>>>>> bright-factory
   border: 1px solid $grey-light;
   border-radius: 4px;
   outline: none;
   background-color: $white;
+<<<<<<< HEAD
   padding: 11px 11px 2px 15px;
   line-height: 16px;
   font-size: 13px;
@@ -74,12 +82,52 @@
 	line-height: 24px;
 	font-size: 16px
   }
+=======
+  padding-left: em(15);
+  padding-top: em(10);
+  padding-right: em(15);
+  padding-bottom: em(10);
+  font-size: $p-small;
+  color: $grey-dark;
+  cursor: pointer;
+  
+  &-icon {
+    margin-left:auto;
+    color: $black;
+
+	  &:after {
+      display: inline-block;
+      margin: 0;
+      font-size: $h4-small;
+      font-family: "feather"; 
+      content: "\e842";
+	  }
+
+    @include medium { font-size: $h4-medium; }
+    @include large { font-size: $h4-large; }
+  } 
+
+  &:hover {
+    border: 1px solid $grey-dark;
+  }
+
+  &:disabled {
+    background-color: $grey-lightest;
+    border: 1px solid $grey-light;
+    color: $grey-base;
+    cursor: unset;
+  }
+
+  @include medium { font-size: $p-medium; }
+  @include large { font-size: $p-large; }
+>>>>>>> bright-factory
 }
 
 .rh-filter-menu {
   z-index: 1;
   position:relative;
   display: none;
+<<<<<<< HEAD
   width:  110%;
   margin-top: 5px;
   -webkit-border-radius: 5px;
@@ -95,11 +143,28 @@
     left: 15px;
     border-top: 15px solid transparent;
     border-bottom: 15px solid #fff;
+=======
+  width: 100%;
+  margin-top: em(5);
+  -webkit-border-radius: em(5);
+  -webkit-box-shadow: 1px 2px 6px $color-shadow;
+  border: 1px solid $complementary2;
+  background-color: $white;
+
+  &-triangle {
+	  position: absolute;
+	  z-index: 3;
+    top: em(-28);
+    left: em(15);
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid $white;
+>>>>>>> bright-factory
     border-right: 15px solid transparent;
     border-left: 15px solid transparent;
   }
 
   &-border {        
+<<<<<<< HEAD
 	position: absolute;
 	z-index: 2;
     top: -29px;
@@ -107,11 +172,21 @@
     margin-top: -1px;
     border-top: 15px solid transparent;
     border-bottom: 15px solid #FCAF15;
+=======
+	  position: absolute;
+	  z-index: 2;
+    top: em(-29);
+    left: em(15);
+    margin-top: em(-1);
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid $complementary2;
+>>>>>>> bright-factory
     border-right: 15px solid transparent;
     border-left: 15px solid transparent;
   }
 
   &-content {
+<<<<<<< HEAD
     padding:4px 0;
   }	
 
@@ -133,6 +208,43 @@
 	&:hover {
       cursor: pointer;
   	}
+=======
+    padding-top: em(4);
+    padding-bottom: em(4);
+  }	
+
+  &-item {
+    padding-left: em(16);
+    padding-top: em(9);
+    padding-right: em(16);
+    padding-bottom: em(9);
+	  font-size: $p-small;
+
+	  &:hover {
+      font-weight: bold;
+      cursor: pointer;
+  	}
+
+    @include medium { font-size: $p-medium; }
+    @include large { font-size: $p-large; }
+  }
+}
+
+.rh-filter-show {
+  display:block!important;
+}
+
+.rh-filter-selected {
+  color:black!important;
+}
+
+.rh-filter-active {
+  background-color: $yellow-background!important;
+  border: 1px solid $complementary2!important;    
+
+  .rh-filter-icon:after {
+    content: "\e845";
+>>>>>>> bright-factory
   }
 }
 

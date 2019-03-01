@@ -1,4 +1,5 @@
 .rh-search-field {
+<<<<<<< HEAD
   display: flex;
   align-items: center;
   width: 100%;
@@ -8,10 +9,26 @@
     padding: 10px; 
     border-radius: 4px 0 0 4px;
     outline: none;
+=======
+    display: flex;
+    align-items: center;  
+    width: 100%;
+
+  .rh-search-term {
+    width: 100%;
+    padding: em(10);
+    margin-right:-5px;
+    border-top: 1px solid $grey-light;
+    border-left: 1px solid $grey-light;
+    border-bottom: 1px solid $grey-light;
+    border-right: 0; 
+    border-radius: 4px 0 0 4px;
+>>>>>>> bright-factory
     color: $grey-darker;
     font-size: $p-small;
     @include medium { font-size: $p-medium;}
     @include large { font-size: $p-large;}
+<<<<<<< HEAD
   }
 
   .rh-search-button {
@@ -52,6 +69,61 @@
 
   .rh-search-button {
     padding: 10px;
+=======
+    outline: none;
+
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: $grey-darker;
+      opacity: 1; /* Firefox */
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: $grey-darker;
+    }
+
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color: $grey-darker;
+    }
+
+    &:focus{
+      border-top: 1px solid $color-primary;
+      border-left: 1px solid $color-primary;
+      border-bottom: 1px solid $color-primary;
+      border-right: 0; 
+
+    }
+
+    &-larger{
+      font-size: $p-large;
+      padding: em(15);
+      @include large {padding: em(20);}
+    }
+
+    &:disabled{
+      cursor: not-allowed;
+      border: 1px solid $grey-light;
+      background-color: $grey-lightest;
+
+      &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $grey-base;
+        opacity: 1; /* Firefox */
+      }
+      
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $grey-base;
+      }
+
+      &::-ms-input-placeholder { /* Microsoft Edge */
+        color: $grey-base;
+      }
+
+    }
+
+  }
+
+  .rh-search-button {
+    padding: em(10);
+>>>>>>> bright-factory
     border: 1px solid $color-primary;
     border-radius: 0 4px 4px 0;
     background: $color-primary;
@@ -61,7 +133,35 @@
     font-size: $p-small;
     @include medium { font-size: $p-medium;}
     @include large { font-size: $p-large;}
+<<<<<<< HEAD
+=======
+
+    &:active{
+      border: 1px solid $complementary2;
+      background: $complementary2;
+    }
+
+    &-larger{
+      font-size: $p-large;
+      padding: em(15);
+      @include large {padding: em(20);}
+    }
+
+    &:disabled{
+      cursor: not-allowed;
+      border: 1px solid $grey-light;
+      background-color: $grey-light;
+      color: $grey-dark;
+    }
+
+
+>>>>>>> bright-factory
   }
 
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> bright-factory

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use strict";
 "use strict";
 
@@ -71,3 +72,5 @@ var videoPlayButton,
   }
 };
 videoMethods.renderVideoPlayButton();
+=======
+>>>>>>> bright-factory
