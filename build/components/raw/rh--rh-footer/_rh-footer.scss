@@ -1,0 +1,36 @@
+.rh-footer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: $grey-lightest;
+
+	.rh-footer-section {
+		padding-top: em(20);
+		padding-right: em(30);
+		padding-bottom: em(20);
+		padding-left: em(30);
+		flex-basis: 100%;
+		@include medium { flex-basis: 33.33%;}
+		@include large {flex-basis: 33.33%;}
+	}
+
+	.rh-footer-title-hr {
+    	width: 100%;
+		margin-top: em(0);
+		margin-bottom: em(25);
+		border: em(1) solid $base2;
+	}
+
+	.rh-footer-item{
+		margin-bottom: em(20);
+		font-size: $p-small;
+		@include medium { font-size: $p-medium;}
+		@include large { font-size: $p-large;}
+
+	    &:last-child{
+	       margin-bottom: 0;
+	    }
+
+	}
+
+}

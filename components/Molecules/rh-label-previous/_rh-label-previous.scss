@@ -1,0 +1,24 @@
+.rh-label-previous{
+	display: flex;
+	align-items: center;
+		
+	&-icon {
+		&:after {
+			margin-right: em(10);
+			padding: em(8);
+			background: $base2-light;
+			border-radius: 50%;
+	    	font-family: "feather"; 
+	    	content: "\e828";
+			font-size: $p-small;
+			@include medium { font-size: $p-large;}
+		}
+	}
+
+	&-title{
+	    margin: 0;
+	  	color: $black;
+  		font-size: $p-small;
+		@include medium { font-size: $p-large;}
+	}
+}

@@ -1,0 +1,19 @@
+.rh-hero{
+	position: relative;
+	height: 400px;
+	@include medium{ height: 300px;}
+	@include large{ height: 420px;}
+	max-width: 1441px;
+	overflow: hidden;
+	display: block;
+
+	.rh-image-hero{
+	    height: 100%;
+		@include medium{ 
+			height: auto;
+			width: 100%;
+		}
+	}
+}
+
+
