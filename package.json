@@ -1,6 +1,10 @@
 {
   "name": "Stilguide",
+<<<<<<< HEAD
   "version": "1.3.0",
+=======
+  "version": "2.0.0",
+>>>>>>> bright-factory
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
     "@frctl/mandelbrot": "^1.2.0",
