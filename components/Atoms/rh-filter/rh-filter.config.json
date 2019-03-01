@@ -1,6 +1,6 @@
 {
 	"title": "#180 Filter",
-    "status": "prototype",
+    "status": "ready",
 	"context": {
 		"text": "Placeholder",
 		"name": "rh-filter"
