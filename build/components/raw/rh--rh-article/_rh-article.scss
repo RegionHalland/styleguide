@@ -1,0 +1,30 @@
+.rh-article{
+
+	&-title{
+		color: $color-primary;
+
+		&-link{
+		    cursor: pointer;
+		    font-size: inherit;
+		    text-decoration: none;
+		  	color: inherit;
+
+		    &:hover,
+		    &:active {
+		      text-decoration: underline;  
+		    }
+
+		    &:visited {
+		      color: $link-visited;
+		    }
+		}
+	}
+
+	&-published{
+		color: $grey-dark;
+	}
+
+	&-description{
+		color: $black;
+	}
+}

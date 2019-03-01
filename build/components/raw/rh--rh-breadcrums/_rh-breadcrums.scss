@@ -1,0 +1,52 @@
+
+.rh-breadcrumb-group {
+  list-style: none;
+  background-color: $white;
+  padding-bottom: em(15);
+  padding-top: em(15);
+  border-top: 1px solid $grey-lighter;
+  border-bottom: 1px solid $grey-lighter;
+
+  &-item{
+    display: inline;
+    padding-top: em(15);
+    padding-bottom: em(16);
+    @include medium { padding-bottom: em(14);}
+    @include large { padding-bottom: em(14);}
+    margin-left: em(12);
+    font-size: em(18);
+    color: $black;
+    font-size: $p-small;
+    @include medium { font-size: $p-medium;}
+    @include large { font-size: $p-large;}
+
+    &:after {
+      margin-left: em(12);
+      color: $grey-base;
+      font-weight: normal;
+      font-family: "feather"; 
+      content: "\e844";
+    }
+    &:last-child{
+      &:after {
+       margin-left: 0;
+        content: "";
+      }
+    }
+
+    &:active {
+      border-bottom: 3px solid $color-primary;
+    }
+
+    .rh-breadcrumb-group-link{
+      color: $black;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+}
