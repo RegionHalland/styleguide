@@ -1,88 +1,11 @@
-<<<<<<< HEAD
-.show {display:block!important;}
-.selected {color:black!important;}
-.container {width: em(250);}
-
-.rh-filter {
-  width: 100%;
-=======
 .rh-filter {
   display: flex;
   align-items: center;
   width: 90%;
->>>>>>> bright-factory
   border: 1px solid $grey-light;
   border-radius: 4px;
   outline: none;
   background-color: $white;
-<<<<<<< HEAD
-  padding: 11px 11px 2px 15px;
-  line-height: 16px;
-  font-size: 13px;
-  cursor: pointer;
-
-  &:hover {
-    border: 1px solid $grey-dark;
-  }
-
-  &:focus {
-    background-color: #FEF9EE;
-    border: 1px solid $complementary2;    
-
-    .rh-filter-icon:after {
-	  content: "\e845";
-    }
-    .rh-filter-header {
-	  content: "\e845";
-	  color: $black;
-    }
-  }
-
-  &-icon {
-    float: right;
-    color: black;
-    font-family: "feather"; 
-	font-size: em(20);
-
-	&:after {
-	  content: "\e842";  
-	}
-  } 
-
-  &-header {
-    float: left;
-    line-height: 16px;
-    font-size: 13px;
-    color: $grey-dark;
-
-    @include medium { 
-	  line-height: 21px;
-	  font-size: 15px;
-    }
-
-    @include large { 
-	  line-height: 24px;
-	  font-size: 16px
-    }
-  }
-
-  &:disabled {
-    background-color: #F4F4F4;
-    border: 1px solid #D1D1D1;
-    color: #B1B1B1;
-    cursor: unset;
-  }
-
-  @include medium { 
-	line-height: 21px;
-	font-size: 15px;
-  }
-
-  @include large { 
-	line-height: 24px;
-	font-size: 16px
-  }
-=======
   padding-left: em(15);
   padding-top: em(10);
   padding-right: em(15);
@@ -120,30 +43,12 @@
 
   @include medium { font-size: $p-medium; }
   @include large { font-size: $p-large; }
->>>>>>> bright-factory
 }
 
 .rh-filter-menu {
   z-index: 1;
   position:relative;
   display: none;
-<<<<<<< HEAD
-  width:  110%;
-  margin-top: 5px;
-  -webkit-border-radius: 5px;
-  -webkit-box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.25);
-  border: 1px solid #FCAF15;
-  background-color: white;
-
-
-  &-triangle {
-	position: absolute;
-	z-index: 3;
-    top: -28px;
-    left: 15px;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid #fff;
-=======
   width: 100%;
   margin-top: em(5);
   -webkit-border-radius: em(5);
@@ -158,21 +63,11 @@
     left: em(15);
     border-top: 15px solid transparent;
     border-bottom: 15px solid $white;
->>>>>>> bright-factory
     border-right: 15px solid transparent;
     border-left: 15px solid transparent;
   }
 
   &-border {        
-<<<<<<< HEAD
-	position: absolute;
-	z-index: 2;
-    top: -29px;
-    left: 15px;
-    margin-top: -1px;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid #FCAF15;
-=======
 	  position: absolute;
 	  z-index: 2;
     top: em(-29);
@@ -180,35 +75,11 @@
     margin-top: em(-1);
     border-top: 15px solid transparent;
     border-bottom: 15px solid $complementary2;
->>>>>>> bright-factory
     border-right: 15px solid transparent;
     border-left: 15px solid transparent;
   }
 
   &-content {
-<<<<<<< HEAD
-    padding:4px 0;
-  }	
-
-  &-item {
-	padding: 9px 16px;
-	line-height: 16px;
-	font-size: 13px;
-
-	@include medium { 
-	  line-height: 21px;
-	  font-size: 15px;
-	}
-
-	@include large { 
-	  line-height: 24px;
-	  font-size: 16px
-	}
-  
-	&:hover {
-      cursor: pointer;
-  	}
-=======
     padding-top: em(4);
     padding-bottom: em(4);
   }	
@@ -244,7 +115,6 @@
 
   .rh-filter-icon:after {
     content: "\e845";
->>>>>>> bright-factory
   }
 }
 

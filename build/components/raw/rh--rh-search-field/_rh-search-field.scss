@@ -1,15 +1,4 @@
 .rh-search-field {
-<<<<<<< HEAD
-  display: flex;
-  align-items: center;
-  width: 100%;
-
-  .rh-search-term {
-    border: 1px solid $grey-light;
-    padding: 10px; 
-    border-radius: 4px 0 0 4px;
-    outline: none;
-=======
     display: flex;
     align-items: center;  
     width: 100%;
@@ -23,53 +12,10 @@
     border-bottom: 1px solid $grey-light;
     border-right: 0; 
     border-radius: 4px 0 0 4px;
->>>>>>> bright-factory
     color: $grey-darker;
     font-size: $p-small;
     @include medium { font-size: $p-medium;}
     @include large { font-size: $p-large;}
-<<<<<<< HEAD
-  }
-
-  .rh-search-button {
-    padding: 10px;
-    border: 1px solid $color-primary;
-    border-radius: 0 4px 4px 0;
-    background: $color-primary;
-    text-align: center;
-    color: $white;
-    cursor: pointer;
-    font-size: $p-small;
-    @include medium { font-size: $p-medium;}
-    @include large { font-size: $p-large;}
-  }
-
-}
-
-
-
-
-
-.rh-search-field {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  
-  .rh-search-term {
-    width: 100%;
-    border: 1px solid $grey-light;
-    padding: 10px; 
-    border-radius: 4px 0 0 4px;
-    outline: none;
-    color: $grey-darker;
-    font-size: $p-small;
-    @include medium { font-size: $p-medium;}
-    @include large { font-size: $p-large;}
-  }
-
-  .rh-search-button {
-    padding: 10px;
-=======
     outline: none;
 
     &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -123,7 +69,6 @@
 
   .rh-search-button {
     padding: em(10);
->>>>>>> bright-factory
     border: 1px solid $color-primary;
     border-radius: 0 4px 4px 0;
     background: $color-primary;
@@ -133,8 +78,6 @@
     font-size: $p-small;
     @include medium { font-size: $p-medium;}
     @include large { font-size: $p-large;}
-<<<<<<< HEAD
-=======
 
     &:active{
       border: 1px solid $complementary2;
@@ -155,13 +98,9 @@
     }
 
 
->>>>>>> bright-factory
   }
 
 }
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> bright-factory
