@@ -60,11 +60,7 @@ for (i = 0; i < acc.length; i++) {
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
-<<<<<<< HEAD
-      panel.style.maxHeight = panel.scrollHeight + "px";
-=======
       panel.style.maxHeight = panel.scrollHeight + 100 + "px";
->>>>>>> 27700ed8d0aca826b5799955050aaabf88e5c791
     }
   });
 }
