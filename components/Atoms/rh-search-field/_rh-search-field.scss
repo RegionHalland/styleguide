@@ -30,25 +30,12 @@
       color: $grey-darker;
     }
 
-    &--active{
-      border-top: 1px solid $complementary2;
-      border-left: 1px solid $complementary2;
-      border-bottom: 1px solid $complementary2;
-      border-right: 0;
-      color: $black;
+    &:focus{
+      border-top: 1px solid $color-primary;
+      border-left: 1px solid $color-primary;
+      border-bottom: 1px solid $color-primary;
+      border-right: 0; 
 
-      &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: $black;
-        opacity: 1; /* Firefox */
-      }
-
-      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-        color: $black;
-      }
-
-      &::-ms-input-placeholder { /* Microsoft Edge */
-        color: $black;
-      }
     }
 
     &-larger{
@@ -91,7 +78,7 @@
     @include medium { font-size: $p-medium;}
     @include large { font-size: $p-large;}
 
-    &--active{
+    &:active{
       border: 1px solid $complementary2;
       background: $complementary2;
     }

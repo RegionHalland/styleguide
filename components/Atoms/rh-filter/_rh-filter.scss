@@ -1,5 +1,3 @@
-$yellow-background : #FEF9EE;
-
 .rh-filter {
   display: flex;
   align-items: center;
@@ -91,15 +89,15 @@ $yellow-background : #FEF9EE;
     padding-top: em(9);
     padding-right: em(16);
     padding-bottom: em(9);
-	  font-size: $font-size-small;
+	  font-size: $p-small;
 
 	  &:hover {
       font-weight: bold;
       cursor: pointer;
   	}
 
-    @include medium { font-size: $font-size-medium; }
-    @include large { font-size: $font-size-large; }
+    @include medium { font-size: $p-medium; }
+    @include large { font-size: $p-large; }
   }
 }
 
@@ -112,7 +110,7 @@ $yellow-background : #FEF9EE;
 }
 
 .rh-filter-active {
-  background-color: #FEF9EE!important;
+  background-color: $yellow-background!important;
   border: 1px solid $complementary2!important;    
 
   .rh-filter-icon:after {
