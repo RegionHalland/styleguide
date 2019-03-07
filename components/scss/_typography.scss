@@ -108,6 +108,21 @@ a.rh-link{
   }
 
 
+.rh-ingress{
+	font-size: em(15);
+	line-height: em(21);
+	color: $black;
+
+	@include medium {
+		font-size: em(18);
+		line-height: em(25);
+	}
+	@include large {
+		font-size: em(20);
+		line-height: em(28);
+	}
+}
+
 @mixin headline($size, $line-height: $heading-line-height-medium-large){
 	font-size: $size;	
 	line-height: $line-height;
