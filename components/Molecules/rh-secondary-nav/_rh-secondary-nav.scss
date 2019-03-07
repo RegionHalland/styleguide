@@ -28,7 +28,6 @@
 	   	@include rh-secondary-nav-item();
 	   	&:active, &:hover{
 			background-color: $base2-light;
-			font-weight: bold;
 		}
 	}
 
@@ -58,7 +57,6 @@
 
 	   	&:active, &:hover{
 			background-color: $base2-light;
-			font-weight: bold;
 			.rh-secondary-nav-item-icon {
 		        margin-left: auto;
 				&:after {
@@ -81,7 +79,6 @@
 	   	@include rh-secondary-nav-item($grey-lightest);
 		border-left: 4px solid $color-primary;
 	   	&:active, &:hover{
-			font-weight: bold;
 		}
 	}
 }
