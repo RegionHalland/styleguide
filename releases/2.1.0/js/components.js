@@ -1,6 +1,4 @@
 "use strict";
-<<<<<<< HEAD
-=======
 
 //look ES6!!
 var onBtnClick = function onBtnClick(element) {
@@ -8,7 +6,6 @@ var onBtnClick = function onBtnClick(element) {
   console.log('tadaa');
 };
 "use strict";
->>>>>>> bright-factory
 "use strict";
 
 function toggleMenu() {

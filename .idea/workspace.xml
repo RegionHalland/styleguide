@@ -4,6 +4,7 @@
     <list default="true" id="86efe8f7-53aa-4e39-9dd1-6ab8c6882154" name="Default" comment="">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/components/detail/rh--button--default.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/components/detail/rh--button--primary.html" beforeDir="false" />
@@ -159,17 +160,19 @@
       <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-search-field.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-search-field.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-secondary-nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-secondary-nav.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-shortcuts.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-shortcuts.html" afterDir="false" />
+=======
+>>>>>>> bright-factory
       <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-text.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-text.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--rh-video.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--rh-video.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/detail/rh--search.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/detail/rh--search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/raw/rh--rh-linkgroup/_rh-linkgroup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/raw/rh--rh-linkgroup/_rh-linkgroup.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/raw/rh--rh-linkgroup/rh-linkgroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/raw/rh--rh-linkgroup/rh-linkgroup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/docs/workflow.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/docs/workflow.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/preview/rh--rh-text.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/preview/rh--rh-text.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/components/render/rh--rh-text.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/render/rh--rh-text.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/components.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+<<<<<<< HEAD
 >>>>>>> bright-factory
       <change beforePath="$PROJECT_DIR$/public/css/components.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/components.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/components.js" afterDir="false" />
+>>>>>>> bright-factory
+=======
 >>>>>>> bright-factory
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -180,6 +183,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
 <<<<<<< HEAD
       <file leaf-file-name="rh-link.config.json" pinned="false" current-in-tab="false">
@@ -218,6 +222,9 @@
       </file>
 <<<<<<< HEAD
 =======
+=======
+    <leaf>
+>>>>>>> bright-factory
       <file leaf-file-name="components.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/components.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -273,7 +280,7 @@
       <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
+            <state relative-caret-position="598">
               <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
 >>>>>>> bright-factory
             </state>
@@ -294,6 +301,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="rh-button.config.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/Atoms/rh-button/rh-button.config.json">
           <provider selected="true" editor-type-id="text-editor">
@@ -325,6 +333,8 @@
 >>>>>>> bright-factory
         </entry>
       </file>
+=======
+>>>>>>> bright-factory
       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
@@ -385,9 +395,16 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="500" />
     <option name="width" value="2060" />
     <option name="height" value="1440" />
+=======
+    <option name="x" value="30" />
+    <option name="y" value="1" />
+    <option name="width" value="2060" />
+    <option name="height" value="800" />
+>>>>>>> bright-factory
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -403,6 +420,7 @@
               <item name="styleguide" type="b2602c69:ProjectViewProjectNode" />
               <item name="styleguide" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
 <<<<<<< HEAD
             <path>
               <item name="styleguide" type="b2602c69:ProjectViewProjectNode" />
@@ -474,11 +492,18 @@
 =======
               <item name="css" type="462c0819:PsiDirectoryNode" />
 >>>>>>> bright-factory
+=======
+            <path>
+              <item name="styleguide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="styleguide" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+>>>>>>> bright-factory
             </path>
             <path>
               <item name="styleguide" type="b2602c69:ProjectViewProjectNode" />
               <item name="styleguide" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
 <<<<<<< HEAD
               <item name="css" type="462c0819:PsiDirectoryNode" />
 =======
@@ -486,6 +511,10 @@
 >>>>>>> bright-factory
             </path>
 =======
+>>>>>>> bright-factory
+=======
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
 >>>>>>> bright-factory
           </expand>
           <select />
@@ -531,6 +560,7 @@
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="8238000" />
 =======
     <option name="totallyTimeSpent" value="5846000" />
@@ -538,46 +568,54 @@
 =======
     <option name="totallyTimeSpent" value="6152000" />
 >>>>>>> bright-factory
+=======
+    <option name="totallyTimeSpent" value="6278000" />
+>>>>>>> bright-factory
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <frame x="30" y="1" width="2060" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50078124" side_tool="true" visible="true" weight="0.32911393" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49765626" weight="0.32911393" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.275" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49921876" visible="true" weight="0.32911393" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info id="Gulp" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49765626" visible="true" weight="0.32911393" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13046876" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49765626" visible="true" weight="0.32911393" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5023438" side_tool="true" visible="true" weight="0.32911393" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
       <window_info anchor="bottom" id="Find" order="1" />
 >>>>>>> bright-factory
       <window_info anchor="bottom" id="Terminal" order="7" />
+=======
+      <window_info anchor="bottom" id="Message" order="0" />
+>>>>>>> bright-factory
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
@@ -939,18 +977,18 @@
     <entry file="file://$PROJECT_DIR$/public/js/components.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/theme.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/components.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
+        <state relative-caret-position="598">
           <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/theme.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
