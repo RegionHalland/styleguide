@@ -1,0 +1,176 @@
+#rh-table-container {
+    width: em(1000); 
+    overflow-x:scroll;  
+    padding-left:em(209);
+    overflow-y:visible;
+    padding-bottom: em(1);
+}
+
+.rh-table {
+	width: 100%;
+	overflow: auto;
+	border-collapse: separate;
+
+	&-header {
+		background: $base1;
+		border: 1px solid $grey-light;
+		padding-top: em(14);
+		padding-bottom: em(14);
+	  	font-size: $p-small;
+	  	width: em(120);
+        white-space:nowrap;
+
+		&-icon {	
+	        float: right;
+	        padding-right: em(10);
+			margin-top: em(10);
+			cursor: pointer;
+
+	        &:after {
+				margin-left: em(10);
+				padding: em(8);
+				background: $white;
+				border-radius: 50%;
+		    	font-family: "feather"; 
+		    	content: "\e842";
+			}
+		}
+
+		&--dock {
+			min-width: em(210)!important;
+			position:absolute; 
+            width:5em; 
+            left:0;
+            margin-left: em(15);
+		}
+
+		&-link {
+			color: white;
+			font-weight: bold;
+			text-decoration: none;
+			padding: em(10);	
+			float: left;
+			white-space: nowrap;
+		}
+
+		&-shadow {
+			box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+
+			&-icon {	
+		        float: right;
+		        padding-right: em(10);
+
+		        &:after {
+					margin-left: em(10);
+					padding: em(8);
+					background: $white;
+					border-radius: 50%;
+			    	font-family: "feather"; 
+			    	content: "\e842";
+					font-size: $p-small;
+
+					@include medium { font-size: $p-medium;}
+					@include large { font-size: $p-large;}
+				}
+			}
+		}
+
+		@include medium { font-size: $p-medium; }
+	  	@include large { font-size: $p-large; }
+	}
+
+	&-cell {
+		border: 1px solid $grey-light;
+		padding-top: em(6);
+		padding-bottom: em(6);
+        white-space: nowrap;
+
+		&-icon {	
+	        float: right;
+	        padding-right: em(10);
+			margin-top: em(10);
+			display: none;
+
+	        &:after {
+				margin-left: em(10);
+				padding: em(8);
+				background: $base2-light;
+				border-radius: 50%;
+		    	font-family: "feather"; 
+		    	content: "\e8f9";
+			}
+		}
+
+		&-link {
+			color: $black;
+			text-decoration: none;
+			padding: em(10);	
+			float: left;
+			font-size: $p-small;
+		    white-space: nowrap;
+
+			@include medium { font-size: $p-medium;}
+			@include large { font-size: $p-large;}
+		}
+
+		&--bold {
+			border: 1px solid $grey-light;
+			font-weight: bold;            
+			position: absolute; 
+            width: 5em; 
+            left:0;
+            min-width: em(210);
+            margin-left: em(15);
+    		padding-left: em(6);
+    		padding-top: em(6);
+    		padding-right: em(6);
+    		padding-bottom: em(6);
+    		background: inherit;
+		}
+
+		&-shadow {
+			box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+			
+			&-icon {	
+		        float: right;
+		        padding-right: em(10);
+
+		        &:after {
+					margin-left: em(10);
+					padding-top: em(8);
+					padding-right: em(8);
+					padding-bottom: em(8);
+					padding-left: em(8);
+					background: $white;
+					border-radius: 50%;
+			    	font-family: "feather"; 
+			    	content: "\e8f9";
+					font-size: $p-small;
+
+					@include medium { font-size: $p-medium;}
+					@include large { font-size: $p-large;}
+				}
+			}
+		}
+	}
+
+	&-row:nth-child(odd) {
+		background: #F5F8FB;
+	}
+	&-row:nth-child(even) {
+		background: $white;
+	}
+}
+
+.show-icon {
+	.rh-table-cell {
+		&-link {
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    max-width: 80%;
+		}
+		&-icon {
+			display: block!important;
+		}
+	}
+}

@@ -1,0 +1,43 @@
+<div id="rh-table-container">
+	<table class="rh-table" id="rh-table">
+		<tr>
+			<th class="rh-table-header {{#if modifier}} rh-table-header--{{ modifier }}{{/if}}">
+				<a class="rh-table-header-link" href="">{{text}}</a>
+				<span class="rh-table-header-icon" onclick="sortByName()"></span>
+			</th>
+			{{#each titles}}
+				<th class="rh-table-header">
+					<a class="rh-table-header-link" href="">{{this.name}}</a>
+				</th>
+			{{/each}}
+		</tr>
+		{{#each tableObjs}}
+			<tr class="rh-table-row">	
+				<td class="rh-table-cell--bold">
+					<a class="rh-table-cell-link" href="">{{this.name}}</a>
+					<span class="rh-table-cell-icon"></span>
+				</td>
+				<td class="rh-table-cell">
+					<a class="rh-table-cell-link" href="">{{this.substance}}</a>
+					<span class="rh-table-cell-icon"></span>
+				</td>
+				<td class="rh-table-cell">
+					<a class="rh-table-cell-link" href="">{{this.indication}}</a>
+					<span class="rh-table-cell-icon"></span>
+				</td>
+				<td class="rh-table-cell">
+					<a class="rh-table-cell-link" href="">{{this.introduce}}</a>
+					<span class="rh-table-cell-icon"></span>
+				</td>
+				<td class="rh-table-cell">
+					<a class="rh-table-cell-link" href="">{{this.decision}}</a>
+					<span class="rh-table-cell-icon"></span>
+				</td>
+				<td class="rh-table-cell">
+					<a class="rh-table-cell-link" href="">{{this.nt}}</a>
+					<span class="rh-table-cell-icon"></span>
+				</td>
+			</tr>
+		{{/each}}
+	</table>
+</div>
