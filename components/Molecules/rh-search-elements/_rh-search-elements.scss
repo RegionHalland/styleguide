@@ -1,0 +1,65 @@
+.rh-search-elements{
+	margin-bottom: em(35);
+	&-title{
+		line-height: 1.25em;	
+		&-link{
+		    cursor: pointer;
+		    font-size: inherit;
+		    text-decoration: none;
+		  	color: inherit;
+
+		    &:hover,
+		    &:active {
+		      text-decoration: underline;  
+		    }
+
+		    &:visited {
+		      color: $link-visited;
+		    }
+		}
+	}
+
+	&-inline{
+		display: inline-block;
+		color: $grey-darkest;
+		font-size: em(10);
+		@include medium {font-size: em(12);}
+		@include large {font-size: em(13);}
+
+	}
+	&-breadcrums{
+		color: $grey-dark;
+		&:after {
+			margin-left: em(5);
+	    	font-family: "feather"; 
+	    	content: "\e844";
+		}
+	    &:last-child{
+	      &:after {
+	       margin-left: 0;
+	        content: "";
+	      }
+	    }
+	}
+	&-description-pdf{
+		display: flex;
+		align-items: flex-start;
+			&-icon {
+		        margin-left: auto;
+		        margin-top: em(5);
+				&:after {
+					margin-left: em(15);
+					padding: em(8);
+					background: $base2-light;
+					border-radius: 50%;
+					font-weight: normal;
+			    	font-family: "feather"; 
+			    	content: "\e864";
+					font-size: $p-small;
+					@include medium { font-size: $p-medium;}
+					@include large { font-size: $p-large;}
+				}
+			}
+	}
+
+}
