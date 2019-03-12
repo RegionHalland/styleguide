@@ -1,10 +1,10 @@
-.rh-search-external{
+.rh-search-external-1177{
 	padding-top: em(10); 	
 	padding-bottom: em(10); 	
 	padding-left: em(15); 	
 	padding-right: em(15); 	
-	background-color: $grey-lightest;
-	border: 1px solid $base2;
+	background-color: $white;
+	border: 1px solid $complementary3;
 	border-radius: 4px;
 
 	&-title{
@@ -40,7 +40,7 @@
 		&:before {
 			margin-right: em(10);
 			padding: em(8);
-			background: $base2;
+			background: $complementary3;
 			border-radius: 50%;
 			font-weight: normal;
 	    	font-family: "feather"; 

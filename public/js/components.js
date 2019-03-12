@@ -48,6 +48,7 @@ window.onclick = function (event) {
   }
 };
 "use strict";
+"use strict";
 
 var acc = document.getElementsByClassName("rh-accordion");
 var i;
