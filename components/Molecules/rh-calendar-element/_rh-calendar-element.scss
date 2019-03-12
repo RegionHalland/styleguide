@@ -1,5 +1,5 @@
 .rh-calendar-element {
-  min-width: em(275);
+  width: em(285);
 
   &-month {
     display: flex;
@@ -31,7 +31,7 @@
 
     @include medium { font-size: $h3-small; }
     @include large { font-size: $h2-small; }
-}
+  }
 
   &-days {
     padding-top: em(5);
@@ -75,26 +75,12 @@
         text-align: center;
         font-size: $p-small;
 
-        @include medium { font-size: $p-medium; }
-        @include large { font-size: $p-large; }
-
         &--option {
           display: flex;
           flex-direction: column;
-          width: 13.6%;
           padding-top: em(14);
           padding-bottom: em(5);
-          border-bottom: 1px solid $grey-lighter;
-          border-right: 1px solid $grey-lighter;
-          background: #fff;
           font-size: $p-small;
-
-          @include medium { 
-            font-size: $p-medium; 
-          }
-          @include large { 
-            font-size: $p-large; 
-          }
 
           &:after {
             font-family: "feather"; 
@@ -111,17 +97,27 @@
         }
 
         &--inactive {
-          width: 13.6%;
-          padding-top: em(14);
-          padding-bottom: em(14);
           background: $grey-lighter;
           color: $grey-dark;
-          font-size: $p-small;
-
-          @include medium { font-size: $p-medium; }
-          @include large { font-size: $p-large; }
         }
+
+        &--active {
+          background: $base2-light;
+          color: $black;
+        }
+
+        &--today {
+          background: $base2;
+          font-weight: bold;
+          color: $white;
+        }
+
+        @include medium { font-size: $p-medium; }
+        @include large { font-size: $p-large; }
       }
     }
   }
+
+  @include medium { width: em(310); }
+  @include large { width: em(350); }
 }

@@ -6,13 +6,13 @@ $base2-lighter    : #F5F8FB;
 	position: relative;
 
 	&-scroller {
-		margin-left: 19px;
+		margin-left: em(19);
 		overflow-x: scroll;
 		overflow-y: visible;
 		border: 1px solid $grey-light;
 
-		@include medium { margin-left: 46px; }
-		@include large { margin-left: 61px; }
+		@include medium { margin-left: em(46); }
+		@include large { margin-left: em(61); }
 	}
 }
 
