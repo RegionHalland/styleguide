@@ -1,0 +1,89 @@
+{
+	"title": "#163 Tabell",
+    "status": "wip",
+	"context": {
+		"name": "rh-table",
+		"text": "Läkemedelsnamn",
+		"modifier": "dock",
+		"titles": [
+	    	{"id": "1", "name": "Substans"},
+	    	{"id": "2", "name": "Indikation"},
+	    	{"id": "3", "name": "Införa eller avstå"},
+	    	{"id": "4", "name": "Regionalt beslut"},
+	    	{"id": "5", "name": "Rek. NT-råd"}
+	  	],
+	  	"tableObjs": [{
+	  	  "id": "0",
+	      "name": "Inituniv",
+	      "substance": "guanfacin",
+	      "indication": "ADHD",
+	      "introduce": "Införa",
+	      "decision": "2016-07-21",
+	      "nt": "2016-05-03"
+	    },
+	    {
+	      "id": "1",
+	      "name": "Cinqaero",
+	      "substance": "reslizumab",
+	      "indication": "Eosinofil astma",
+	      "introduce": "Införa",
+	      "decision": "2016-07-21",
+	      "nt": "2016-05-03"
+	    },
+	    {
+	      "id": "2",
+	      "name": "Entresto",
+	      "substance": "sakubitril",
+	      "indication": "Hjärtsvikt",
+	      "introduce": "Införa",
+	      "decision": "2016-07-21",
+	      "nt": "2016-05-03"
+	    },
+	    {
+	      "id": "3",
+	      "name": "Jinarc",
+	      "substance": "tolvaptan",
+	      "indication": "Autosomal dominant polycystisk njursjukdom",
+	      "introduce": "Införa",
+	      "decision": "2016-07-21",
+	      "nt": "2016-05-03"
+	    },
+	    {
+	      "id": "4",
+	      "name": "Keytruda",
+	      "substance": "pembrolizumba",
+	      "indication": "Icke-småcellig",
+	      "introduce": "Införa",
+	      "decision": "2016-07-21",
+	      "nt": "2016-05-03"
+	    },
+	    {
+	      "id": "5",
+	      "name": "Keytruda",
+	      "substance": "pembrolizumba",
+	      "indication": "Icke-småcellig",
+	      "introduce": "Införa",
+	      "decision": "2016-07-21",
+	      "nt": "2016-05-03"
+	    },
+	    {
+	      "id": "6",
+	      "name": "Keytruda",
+	      "substance": "pembrolizumba",
+	      "indication": "Urotelial cancer",
+	      "introduce": "Införa",
+	      "decision": "2016-07-21",
+	      "nt": "2016-05-03"
+	    },
+	    {
+	      "id": "7",
+	      "name": "Kyprolis (uppdat)",
+	      "substance": "karfilzombi",
+	      "indication": "Multipelt myelom",
+	      "introduce": "Införa",
+	      "decision": "2016-07-21",
+	      "nt": "2016-05-03"
+	    }
+	  ]
+	}
+}
