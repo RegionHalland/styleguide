@@ -1,0 +1,26 @@
+.rh-filter-alphabet{
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid $grey-dark;
+	border-radius: 4px;
+	@include medium {max-width: 843px;}
+	@include large {max-width: 898px;}
+
+	&-link {
+	  padding-top: em(15);
+	  padding-bottom: em(15);
+	  padding-left: em(10);
+	  padding-right: em(10);
+	  text-decoration: none;
+	  color: $black;
+	  font-size: $p-small;
+	  @include medium {font-size: $p-medium;}
+	  @include large {font-size: $p-large;}
+
+	  &:active, &:hover {
+	    background-color: $color-primary;
+	    color: white;
+	  }
+	}
+}
+

@@ -3,7 +3,7 @@ var videoPlayButton,
     video = document.getElementsByTagName('video')[0],
     videoMethods = {
         renderVideoPlayButton: function() {
-            if (videoWrapper.contains(video)) {
+            if (videoWrapper !== undefined && videoWrapper.contains(video)) {
 				this.formatVideoPlayButton()
                 video.classList.add('has-media-controls-hidden')
                 videoPlayButton = document.getElementsByClassName('video-button')[0]

@@ -1,0 +1,295 @@
+$base2-lighter    : #F5F8FB;
+
+.rh-table-container {
+    max-width: em(1000); 
+    padding-left: em(168);
+	position: relative;
+
+	&-scroller {
+		margin-left: em(19);
+		overflow-x: scroll;
+		overflow-y: visible;
+		border: 1px solid $grey-light;
+
+		@include medium { margin-left: em(46); }
+		@include large { margin-left: em(61); }
+	}
+}
+
+.rh-table {
+	border-collapse: separate;
+	width: 100%;
+	border-spacing: 0;
+	overflow: auto;
+
+	&-header {
+		max-width: em(225);
+		background: $base1;
+		padding-top: em(14);
+		padding-bottom: em(14);
+		border-left: 1px solid $grey-light;
+        white-space: nowrap;
+
+		&-icon {	
+	        float: right;
+	        margin-top: em(6);
+	        padding-right: em(10);
+			cursor: pointer;
+
+	        &:after {
+				margin-left: em(10);
+				padding: em(4);
+				background: $white;
+				border-radius: 50%;
+		    	font-family: "feather"; 
+		    	content: "\e842";
+			}
+
+			@include medium { 
+				margin-top: em(8);
+				
+				&:after {
+					padding: em(6);
+				}			
+			}
+			@include large { 
+				margin-top: em(10);
+
+				&:after {
+					padding: em(8);
+				}
+			}
+		}
+
+		&--dock {
+			position:absolute; 
+            left: 0;
+            top: 0;
+            min-width: em(189);
+			max-width: em(225); 
+			border: 1px solid $grey-light;
+
+            @include medium { 
+    			min-width: em(216);
+    			max-width: em(245); 
+    		}
+			@include large { 
+				min-width: em(231);
+				max-width: em(270); 
+			}
+		}
+
+		&-link {
+			float: left;
+			padding: em(10);
+			white-space: nowrap;
+			color: $white;
+			font-weight: bold;
+			text-decoration: none;
+			font-size: $p-small;
+
+			@include medium { font-size: $p-medium; }
+			@include large { font-size: $p-large; }
+		}
+
+		&-shadow {
+			box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+
+			&-icon {	
+		        float: right;
+		        padding-right: em(10);
+
+		        &:after {
+					margin-left: em(10);
+					padding: em(8);
+					background: $white;
+					border-radius: 50%;
+			    	font-family: "feather"; 
+			    	content: "\e842";
+					font-size: $p-small;
+
+					@include medium { font-size: $p-medium; }
+					@include large { font-size: $p-large; }
+				}
+			}
+		}
+
+		@include medium { max-width: em(225); }
+		@include large { max-width: em(270); }
+	}
+
+	&-cell {
+		vertical-align: middle!important;
+		max-width: em(175);
+		padding-top: em(6);
+		padding-bottom: em(6);
+		border-left: 1px solid $grey-light;
+		border-top: 1px solid $grey-light;
+        white-space: nowrap;	
+
+		&-icon {	
+	        float: right;
+	        padding-right: em(10);
+			margin-top: em(10);
+			display: none;
+
+	        &:after {
+				margin-left: em(10);
+				padding: em(8);
+				background: $base2-light;
+				border-radius: 50%;
+		    	font-family: "feather"; 
+		    	content: "\e89b";
+			}
+		}
+
+		&-link {
+			float: left;
+			padding: em(10);	
+			font-size: $p-small;
+			color: $black;
+			text-decoration: none;
+		    white-space: nowrap;
+
+			@include medium { font-size: $p-medium; }
+			@include large { font-size: $p-large; }
+		}
+
+		&--bold {
+			position: absolute; 
+            left: 0;
+            top: auto;
+            min-width: em(189);
+			max-width: em(225); 
+    		padding-top: em(6);
+    		padding-bottom: em(6);
+			border: 1px solid $grey-light;
+			font-weight: bold;            
+    		background: inherit;
+
+    		@include medium { 
+    			min-width: em(216);
+    			max-width: em(245); 
+    		}
+			@include large { 
+				min-width: em(231);
+				max-width: em(270); 
+			}
+		}
+
+		&-shadow {
+			box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+			
+			&-icon {	
+		        float: right;
+		        padding-right: em(10);
+
+		        &:after {
+					margin-left: em(10);
+					border-radius: 50%;
+					padding-top: em(8);
+					padding-right: em(8);
+					padding-bottom: em(8);
+					padding-left: em(8);
+					background: $white;
+			    	font-family: "feather"; 
+			    	content: "\e8f9";
+					font-size: $p-small;
+
+					@include medium { font-size: $p-medium;}
+					@include large { font-size: $p-large;}
+				}
+			}
+		}
+
+		@include medium { max-width: em(245); }
+		@include large { max-width: em(270); }
+	}
+
+	&-row:nth-child(odd) {
+		background: $base2-lighter;
+	}
+	&-row:nth-child(even) {
+		background: $white;
+	}
+	&-row:last-child td {
+		border-bottom: 1px solid $grey-light;
+	}
+}
+
+.show-icon {
+	.rh-table-cell {
+		&-link {
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    max-width: 70%!important;
+
+		    @include medium { max-width: 75%!important; }
+			@include large { max-width: 80%!important; }
+		}
+
+		&-icon {
+			display: block!important;
+			margin-top: em(6);
+
+			&:after {
+				padding: em(4);
+			}	
+
+			@include medium { 
+				margin-top: em(10);
+				
+				&:after {
+					padding: em(6);
+				}	
+			}
+			@include large { 
+				margin-top: em(10);
+
+				&:after {
+					padding: em(8);
+				}
+			}
+		}
+	}
+}
+
+.selected {
+	max-width: none!important;
+
+	.rh-table-cell {
+		&-link {
+		    max-width: none!important;
+		}
+
+		&-icon {	
+			display: none!important;
+		}
+	}
+}
+
+::-webkit-scrollbar {
+  height: em(20);
+  width: em(50);
+}
+
+::-webkit-scrollbar-track {
+  background: $white; 
+  background-clip: content-box;
+  border-top: 2px solid $white;
+  width: em(50);
+}
+ 
+::-webkit-scrollbar-thumb:horizontal {
+  background: $grey-base;
+  border-radius: em(10);
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $grey-dark; 
+  border-radius: em(10);
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
