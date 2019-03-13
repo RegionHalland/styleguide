@@ -87,6 +87,23 @@ var videoPlayButton,
 videoMethods.renderVideoPlayButton();
 "use strict";
 
+var acc = document.getElementsByClassName("rh-search-accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("rh-search-active");
+    var panel = this.nextElementSibling;
+
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 100 + "px";
+    }
+  });
+}
+"use strict";
+
 window.onload = function () {
   var table, rows, i, x, y;
   table = document.getElementById("rh-table");
@@ -179,21 +196,4 @@ function setShadow() {
       cols[0].classList.add("rh-table-cell-shadow");
     }
   }
-}
-"use strict";
-
-var acc = document.getElementsByClassName("rh-search-accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("rh-search-active");
-    var panel = this.nextElementSibling;
-
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + 100 + "px";
-    }
-  });
 }
