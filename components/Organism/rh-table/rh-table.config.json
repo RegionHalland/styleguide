@@ -1,6 +1,6 @@
 {
 	"title": "#163 Tabell",
-    "status": "ready",
+    "status": "wip",
 	"context": {
 		"name": "rh-table",
 		"text": "Läkemedelsnamn",
