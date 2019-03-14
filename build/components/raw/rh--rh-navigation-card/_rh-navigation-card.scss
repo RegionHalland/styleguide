@@ -11,7 +11,7 @@
 	        margin-left: auto;
 			&:after {
 				margin-left: em(10);
-				padding: em(8);
+				padding: em(6);
 				background: $base2-light;
 				border-radius: 50%;
 				font-weight: normal;
@@ -51,6 +51,7 @@
 	.rh-navigation-card-description{
 		max-width: 95%;
 		color: $grey-dark;
+		padding-top: 1ex;
 	}
 }
 
