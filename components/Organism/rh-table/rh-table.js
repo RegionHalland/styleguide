@@ -88,7 +88,7 @@ function setShadow() {
     var cols = rows[row].cells;
 
     if (0 >= 0 && 0 < cols.length) {
-        cols[0].classList.add("rh-table-cell-shadow");
+        cols[0].classList.add("rh-table-cell--shadow");
     }
   }
 }
