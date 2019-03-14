@@ -1,59 +1,4 @@
 "use strict";
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
-//look ES6!!
-var onBtnClick = function onBtnClick(element) {
-  element.innerHTML = 'You did it! 👍';
-  console.log('tadaa');
-};
-=======
-var acc = document.getElementsByClassName("rh-accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("rh-accordion-active");
-    var panel = this.nextElementSibling;
-
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + 100 + "px";
-    }
-  });
-}
-"use strict";
-
-var videoPlayButton,
-    videoWrapper = document.getElementsByClassName('rh-video')[0],
-    video = document.getElementsByTagName('video')[0],
-    videoMethods = {
-  renderVideoPlayButton: function renderVideoPlayButton() {
-    if (videoWrapper !== undefined && videoWrapper.contains(video)) {
-      this.formatVideoPlayButton();
-      video.classList.add('has-media-controls-hidden');
-      videoPlayButton = document.getElementsByClassName('video-button')[0];
-      videoPlayButton.addEventListener('click', this.hideVideoPlayButton);
-    }
-  },
-  formatVideoPlayButton: function formatVideoPlayButton() {
-    videoWrapper.insertAdjacentHTML('beforeend', '\
-            <div class="video-button"><div class="video-button-content"> <i class="feather icon-play"></i> </div></div>\
-            ');
-  },
-  hideVideoPlayButton: function hideVideoPlayButton() {
-    video.play();
-    videoPlayButton.classList.add('is-hidden');
-    video.classList.remove('has-media-controls-hidden');
-    video.setAttribute('controls', 'controls');
-  }
-};
-videoMethods.renderVideoPlayButton();
->>>>>>> f34c8ad6266ee2a8104c53990cf64d79ea183272
-"use strict";
->>>>>>> bright-factory
 "use strict";
 
 function toggleMenu() {
@@ -98,55 +43,6 @@ window.onclick = function (event) {
 "use strict";
 "use strict";
 
-<<<<<<< HEAD
-var acc = document.getElementsByClassName("rh-accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("rh-accordion-active");
-    var panel = this.nextElementSibling;
-
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + 100 + "px";
-    }
-  });
-}
-"use strict";
-
-var videoPlayButton,
-    videoWrapper = document.getElementsByClassName('rh-video')[0],
-    video = document.getElementsByTagName('video')[0],
-    videoMethods = {
-  renderVideoPlayButton: function renderVideoPlayButton() {
-    if (videoWrapper !== undefined && videoWrapper.contains(video)) {
-      this.formatVideoPlayButton();
-      video.classList.add('has-media-controls-hidden');
-      videoPlayButton = document.getElementsByClassName('video-button')[0];
-      videoPlayButton.addEventListener('click', this.hideVideoPlayButton);
-    }
-  },
-  formatVideoPlayButton: function formatVideoPlayButton() {
-    videoWrapper.insertAdjacentHTML('beforeend', '\
-            <div class="video-button"><div class="video-button-content"> <i class="feather icon-play"></i> </div></div>\
-            ');
-  },
-  hideVideoPlayButton: function hideVideoPlayButton() {
-    video.play();
-    videoPlayButton.classList.add('is-hidden');
-    video.classList.remove('has-media-controls-hidden');
-    video.setAttribute('controls', 'controls');
-  }
-};
-videoMethods.renderVideoPlayButton();
-"use strict";
-
-<<<<<<< HEAD
-=======
-=======
->>>>>>> f34c8ad6266ee2a8104c53990cf64d79ea183272
 var acc = document.getElementsByClassName("rh-search-accordion");
 var i;
 
@@ -164,7 +60,6 @@ for (i = 0; i < acc.length; i++) {
 }
 "use strict";
 
->>>>>>> bright-factory
 window.onload = function () {
   var table, rows, i, x, y;
   table = document.getElementById("rh-table");
@@ -257,16 +152,15 @@ function setShadow() {
       cols[0].classList.add("rh-table-cell--shadow");
     }
   }
-<<<<<<< HEAD
 }
 "use strict";
 
-var acc = document.getElementsByClassName("rh-search-accordion");
+var acc = document.getElementsByClassName("rh-accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
-    this.classList.toggle("rh-search-active");
+    this.classList.toggle("rh-accordion-active");
     var panel = this.nextElementSibling;
 
     if (panel.style.maxHeight) {
@@ -276,17 +170,30 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-=======
-<<<<<<< HEAD
-}
-=======
-}
 "use strict";
 
-//look ES6!!
-var onBtnClick = function onBtnClick(element) {
-  element.innerHTML = 'You did it! 👍';
-  console.log('tadaa');
+var videoPlayButton,
+    videoWrapper = document.getElementsByClassName('rh-video')[0],
+    video = document.getElementsByTagName('video')[0],
+    videoMethods = {
+  renderVideoPlayButton: function renderVideoPlayButton() {
+    if (videoWrapper !== undefined && videoWrapper.contains(video)) {
+      this.formatVideoPlayButton();
+      video.classList.add('has-media-controls-hidden');
+      videoPlayButton = document.getElementsByClassName('video-button')[0];
+      videoPlayButton.addEventListener('click', this.hideVideoPlayButton);
+    }
+  },
+  formatVideoPlayButton: function formatVideoPlayButton() {
+    videoWrapper.insertAdjacentHTML('beforeend', '\
+            <div class="video-button"><div class="video-button-content"> <i class="feather icon-play"></i> </div></div>\
+            ');
+  },
+  hideVideoPlayButton: function hideVideoPlayButton() {
+    video.play();
+    videoPlayButton.classList.add('is-hidden');
+    video.classList.remove('has-media-controls-hidden');
+    video.setAttribute('controls', 'controls');
+  }
 };
->>>>>>> f34c8ad6266ee2a8104c53990cf64d79ea183272
->>>>>>> bright-factory
+videoMethods.renderVideoPlayButton();
