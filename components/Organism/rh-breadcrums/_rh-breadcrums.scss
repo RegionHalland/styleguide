@@ -1,11 +1,14 @@
+.rh-breadcrumbs {
+  border-top: 1px solid $grey-lighter;
+  border-bottom: 1px solid $grey-lighter;
+}
 
 .rh-breadcrumb-group {
   list-style: none;
   background-color: $white;
   padding-bottom: em(15);
   padding-top: em(15);
-  border-top: 1px solid $grey-lighter;
-  border-bottom: 1px solid $grey-lighter;
+
 
   &-item{
     display: inline;
