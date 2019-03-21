@@ -8,9 +8,12 @@
 @import '_color';
 @import '_typography';
 
-
-
-
+@import 'components/Utilities/_grid.scss';
+@import 'components/Utilities/_layout.scss';
+@import 'components/Utilities/_margin.scss';
+@import 'components/Utilities/_padding.scss';
+@import 'components/Utilities/_type_scale.scss';
+@import 'components/Utilities/_typography_utilities.scss';
 
 @import 'components/Atoms/rh-button/_rh-button.scss';
 @import 'components/Atoms/rh-avatar/_rh-avatar.scss';
