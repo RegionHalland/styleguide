@@ -8,12 +8,12 @@
 @import '_color';
 @import '_typography';
 
-@import 'components/Utilities/_grid.scss';
-@import 'components/Utilities/_layout.scss';
-@import 'components/Utilities/_margin.scss';
-@import 'components/Utilities/_padding.scss';
-@import 'components/Utilities/_type_scale.scss';
-@import 'components/Utilities/_typography_utilities.scss';
+@import '_grid.scss';
+@import '_layout.scss';
+@import '_margin.scss';
+@import '_padding.scss';
+@import '_type_scale.scss';
+@import '_typography_utilities.scss';
 
 @import 'components/Atoms/rh-button/_rh-button.scss';
 @import 'components/Atoms/rh-avatar/_rh-avatar.scss';
