@@ -7,9 +7,8 @@
    		align-items: center;
 
 		&-icon {
-	        margin-left: auto;
 			&:after {
-				margin-left: em(10);
+				margin-right: 1ex;
 				padding: em(6);
 				background: $base2-light;
 				border-radius: 50%;
