@@ -1,3 +1,27 @@
+.rh-xpad-A {
+    padding-left: 0; padding-right: 0;
+
+    @media (min-width: $breakpoint-sm) {
+        padding-left:   $space-2; padding-right:  $space-2;
+    }
+
+    @media (min-width: $breakpoint-md) {
+        padding-left:   $space-3; padding-right:  $space-3;
+    }
+}
+
+.rh-xpad-B {
+  padding-left: $space-2; padding-right: $space-2;
+
+  @media (min-width: $breakpoint-sm) {
+    padding-left:   $space-2; padding-right:  $space-2;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    padding-left:   $space-3; padding-right:  $space-3;
+  }
+}
+
 .p0  { padding: 0 }
 .pt0 { padding-top: 0 }
 .pr0 { padding-right: 0 }
