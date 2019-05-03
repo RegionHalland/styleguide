@@ -1,6 +1,8 @@
 
 .rh-navigation-card{
 	margin-bottom: em(45);
+	@include medium { height: 6em; }
+	@include large { height: 5em; }
 
 	.rh-navigation-card-title{
 

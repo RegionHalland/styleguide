@@ -1,0 +1,12 @@
+.rh-blurb {
+	border-bottom: 4px solid #C3DCC1;
+	border-left: 1px solid #E4E4E4;
+	border-right: 1px solid #E4E4E4;
+
+	.rh-blurb__description {
+        overflow:hidden;
+        min-height: 20ex;
+        @include medium { height: 23ex; }
+        @include large { height: 20ex; }
+    }
+}

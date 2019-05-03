@@ -22,6 +22,21 @@
   }
 }
 
+.rh-xpad--left {
+  padding-left: 0;
+  padding-right: 0;
+
+  @media (min-width: $breakpoint-md) {
+    padding-left: $space-3;
+    padding-right: $space-3;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    padding-left: $space-3;
+    padding-right: 0;
+  }
+}
+
 .p0  { padding: 0 }
 .pt0 { padding-top: 0 }
 .pr0 { padding-right: 0 }

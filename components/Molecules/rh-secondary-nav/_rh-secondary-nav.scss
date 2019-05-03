@@ -27,7 +27,7 @@
 	.rh-secondary-nav-item-toplevel{
 	   	@include rh-secondary-nav-item();
 	   	&:active, &:hover{
-			background-color: $base2-light;
+			background-color: $base3-light;
 		}
 	}
 
@@ -56,7 +56,7 @@
 		}
 
 	   	&:active, &:hover{
-			background-color: $base2-light;
+			background-color: $base3-light;
 			.rh-secondary-nav-item-icon {
 		        margin-left: auto;
 				&:after {
