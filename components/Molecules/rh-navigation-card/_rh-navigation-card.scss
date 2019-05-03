@@ -1,21 +1,20 @@
 
 .rh-navigation-card{
-	max-width: 350px;
 	margin-bottom: em(45);
+	@include medium { height: 6em; }
+	@include large { height: 5em; }
 
 	.rh-navigation-card-title{
-   		display: flex;
-   		align-items: center;
 
 		&-icon {
-	        margin-left: auto;
 			&:after {
-				margin-left: em(10);
+				margin-right: 1ex;
 				padding: em(6);
-				background: $base2-light;
+				background: $base3;
+				color: white;
 				border-radius: 50%;
 				font-weight: normal;
-		    	font-family: "feather"; 
+		    	font-family: "feather";
 		    	content: "\e829";
 				font-size: $p-small;
 				@include medium { font-size: $p-medium;}
@@ -40,12 +39,6 @@
 		      color: $link-visited;
 		    }
 		}
-	}
-
-	.rh-navigation-card-title-extended{
-	   	display: flex;
-   		align-items: flex-start;
-   		@extend .rh-navigation-card-title;
 	}
 
 	.rh-navigation-card-description{

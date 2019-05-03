@@ -6,12 +6,27 @@
 		&:after {
 			margin-right: em(10);
 			padding: em(8);
-			background: $base2-light;
+			background: $base3;
+			color: white;
 			border-radius: 50%;
 	    	font-family: "feather"; 
 	    	content: "\e828";
 			font-size: $p-small;
 			@include medium { font-size: $p-large;}
+		}
+
+		&--blue {
+			&:after {
+				margin-right: em(10);
+				padding: em(8);
+				background: $base1;
+				color: white;
+				border-radius: 50%;
+				font-family: "feather";
+				content: "\e828";
+				font-size: $p-small;
+				@include medium { font-size: $p-large;}
+			}
 		}
 	}
 
