@@ -15,14 +15,14 @@
 @import '_flexbox.scss';
 @import '_type_scale.scss';
 
-@import 'components/Atoms/rh-button/_rh-button.scss';
-@import 'components/Atoms/rh-avatar/_rh-avatar.scss';
-@import 'components/Atoms/rh-search-field/_rh-search-field.scss';
-@import 'components/Atoms/rh-labels/_rh-labels.scss';
-@import 'components/Atoms/rh-caption-hero/_rh-caption-hero.scss';
-@import 'components/Atoms/rh-filter/_rh-filter.scss';
-@import 'components/Atoms/rh-pagination-elements/_rh-pagination-elements.scss';
-@import 'components/Atoms/rh-form/_rh-form.scss';
+@import 'components/Atoms/button/_button.scss';
+@import 'components/Atoms/avatar/_avatar.scss';
+@import 'components/Atoms/search-field/_search-field.scss';
+@import 'components/Atoms/labels/_labels.scss';
+@import 'components/Atoms/caption-hero/_caption-hero.scss';
+@import 'components/Atoms/filter/_filter.scss';
+@import 'components/Atoms/pagination-elements/_pagination-elements.scss';
+@import 'components/Atoms/form/_form.scss';
 
 @import 'components/Molecules/rh-image-caption/_rh-image-caption.scss';
 @import 'components/Molecules/rh-video/_rh-video.scss';
