@@ -35,7 +35,7 @@ fractal.set('project.title', 'Stilguide - Region Halland');
 
 fractal.components.set('path', `${__dirname}/components`);
 fractal.components.set('default.collated', false);
-fractal.components.set('default.prefix', 'rh-'); // default is null
+fractal.components.set('default.prefix', ''); // default is null
 fractal.components.set('default.status', 'wip');
 
 fractal.docs.set('path', `${__dirname}/docs`);
