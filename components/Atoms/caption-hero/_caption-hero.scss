@@ -4,6 +4,7 @@
 	bottom: em(40);
 	left: em(16);
 	margin-right: em(15);
+	color: $white;
 	@include medium {
 		max-width: 530px;
 		bottom: em(30);
@@ -15,10 +16,5 @@
 	}
 	padding: em(15);
 	background-color: $black;
-	
-	&-title{
-		color: $white;
-	}
-
 }
 	
