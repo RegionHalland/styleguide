@@ -1,19 +1,31 @@
 .rh-hero{
+	/* Positionering */
 	position: relative;
+
+	/* Box-modell/beteende */
+	display: block;
 	height: 400px;
-	@include medium{ height: 300px;}
-	@include large{ height: 420px;}
 	max-width: 1441px;
 	overflow: hidden;
-	display: block;
+
+	@include medium{
+		/* Box-modell/beteende */
+		height: 300px;
+	}
+
+	@include large{
+		/* Box-modell/beteende */
+		height: 420px;
+	}
 
 	.rh-image-hero{
+		/* Box-modell/beteende */
 	    height: 100%;
-		@include medium{ 
+
+		@include medium{
+			/* Box-modell/beteende */
 			height: auto;
 			width: 100%;
 		}
 	}
 }
-
-
