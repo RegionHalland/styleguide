@@ -5,6 +5,8 @@
 	left: em(16);
 	margin-right: em(15);
 	color: $white;
+	font-size: $h2-medium;
+
 	@include medium {
 		max-width: 530px;
 		bottom: em(30);
@@ -13,6 +15,7 @@
 	@include large {
 		bottom: em(50);
 		left: em(170);
+		font-size: $h2-medium;
 	}
 	padding: em(15);
 	background-color: $black;
