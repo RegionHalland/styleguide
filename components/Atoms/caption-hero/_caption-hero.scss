@@ -1,24 +1,36 @@
 .rh-caption-hero{
+	/* Positionering */
 	position: absolute;
-	max-width: 344px;
 	bottom: em(40);
 	left: em(16);
+
+	/* Box-modell/beteende */
+	max-width: 344px;
 	margin-right: em(15);
+	padding: em(15);
+
+	/* Visuellt */
+	background-color: $black;
+
+	/* Typografi */
+	color: $white;
+	font-size: $h2-medium;
+
 	@include medium {
-		max-width: 530px;
+		/* Positionering */
 		bottom: em(30);
 		left: em(73);
+
+		/* Box-modell/beteende */
+		max-width: 530px;
 	}
 	@include large {
+		/* Positionering */
 		bottom: em(50);
 		left: em(170);
-	}
-	padding: em(15);
-	background-color: $black;
-	
-	&-title{
-		color: $white;
-	}
 
+		/* Typografi */
+		font-size: $h2-medium;
+	}
 }
 	
