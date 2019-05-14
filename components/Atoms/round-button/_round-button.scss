@@ -1,0 +1,22 @@
+
+.rh-round-button  {
+  /* Visuellt */
+  background: $base3;
+  border: 1px solid $color-secondary;
+  border-radius: 50%;
+  padding: em(6);
+
+  /* Typografi */
+  color: white;
+  font-family: "feather" !important;
+  font-size: $h4-small;
+  text-decoration: none;
+
+  &:hover,&:active{
+    /* Visuellt */
+    background-color: $white;
+
+    /* Typografi */
+    color: $color-secondary;
+  }
+}
