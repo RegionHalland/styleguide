@@ -1,5 +1,6 @@
 
-.rh-round-button  {
+.rh-round-button {
+
   /* Visuellt */
   background: $base3;
   border: 1px solid $color-secondary;
@@ -12,11 +13,14 @@
   font-size: $h4-small;
   text-decoration: none;
 
-  &:hover,&:active{
+  &:hover,&:active {
+
     /* Visuellt */
     background-color: $white;
 
     /* Typografi */
     color: $color-secondary;
+
   }
+
 }
