@@ -16,18 +16,30 @@
 	color: $white;
 	font-size: $h2-medium;
 
+	&--secondary {
+		/* Visuellt */
+		background-color: $white;
+
+		/* Typografi */
+		color: $black;
+	}
+
+	&--rounded {
+		border-radius: 0.4ex;
+	}
+
 	@include medium {
 		/* Positionering */
-		bottom: em(30);
-		left: em(73);
+		bottom: em(16);
+		left: em(40);
 
 		/* Box-modell/beteende */
 		max-width: 530px;
 	}
 	@include large {
 		/* Positionering */
-		bottom: em(50);
-		left: em(170);
+		bottom: em(25);
+		left: em(60);
 
 		/* Typografi */
 		font-size: $h2-medium;
