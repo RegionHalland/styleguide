@@ -1,7 +1,5 @@
 <!-- OBS! Demodiv för att kunna se hela komponenten -->
-<div style="padding-top: 50px; padding-bottom:50px; background-color: #E4E4E4;"> 
-
-
+<div style="padding-top: 50px; padding-bottom:50px; background-color: #E4E4E4;">
 
 	<div class="rh-header">
 		<div class="rh-header-logo">
@@ -11,14 +9,7 @@
 			</div>
 		</div>
 
-        <div class="rh-toplinks">
-            <ul class="rh-toplinks-nav" aria-label="Genvägar i sidhuvudet">
-                <li class="rh-toplinks-nav-item">
-                    <i class="feather icon-headphones rh-toplinks-nav-link-icon"></i>
-                    <a class="rh-toplinks-nav-link" href="#">Talande webb</a>
-                </li>
-            </ul>
-        </div>
+        {{> @rh-toplinks }}
 
 		<div class="rh-header-search-desktop">
 			<div class="rh-search-field">
@@ -29,11 +20,9 @@
 			</div>
 		</div>
 		<div class="rh-header-menu">
-			<button class="rh-header-button rh-header-button--search"></button>
-			<button class="rh-header-button rh-header-button--menu"></button>
+			<i class="icon-search rh-round-button"></i>
+			<i class="icon-menu rh-round-button"></i>
 		</div>
 	</div>
-
-
 
 </div>	<!-- OBS! Demodiv slut -->
