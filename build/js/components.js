@@ -1,5 +1,6 @@
 
 "use strict";
+"use strict";
 
 function toggleMenu() {
   document.getElementById("myDropdown").classList.toggle("rh-filter-show");
@@ -153,7 +154,6 @@ function setShadow() {
     }
   }
 }
-"use strict";
 "use strict";
 
 var acc = document.getElementsByClassName("rh-accordion");

@@ -16,8 +16,7 @@
 	&-item{
 		margin-top: em(8);
 		margin-bottom: em(8);
-		height: 21px;
-		@include medium{ height: 30px;}
+		height: 30px;
 		@include large{ height: 45px;}
 		opacity: 0.5;
 
