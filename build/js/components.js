@@ -1,7 +1,5 @@
 
 "use strict";
-"use strict";
-"use strict";
 
 function toggleMenu() {
   document.getElementById("myDropdown").classList.toggle("rh-filter-show");
@@ -42,6 +40,7 @@ window.onclick = function (event) {
     }
   }
 };
+"use strict";
 "use strict";
 
 var acc = document.getElementsByClassName("rh-search-accordion");
@@ -154,6 +153,7 @@ function setShadow() {
     }
   }
 }
+"use strict";
 "use strict";
 
 var acc = document.getElementsByClassName("rh-accordion");
