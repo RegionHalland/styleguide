@@ -1,0 +1,14 @@
+.rh-link {
+  &--navigation {
+    /* Visuellt */
+    color: black;
+
+    /* Typografi */
+    text-decoration: none;
+  }
+
+  &--navigation:active, &:hover {
+    /* Typografi */
+    text-decoration: underline;
+  }
+}
