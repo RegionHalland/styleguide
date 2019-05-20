@@ -13,6 +13,10 @@
   font-size: $h4-small;
   text-decoration: none;
 
+  &--small {
+    padding: em(4);
+  }
+
   &:hover,&:active {
 
     /* Visuellt */
@@ -21,6 +25,20 @@
     /* Typografi */
     color: $color-secondary;
 
+  }
+
+  &--vuxhalland {
+    /* Visuellt */
+    background: $vuxhalland;
+    border: 1px solid $vuxhalland;
+
+    /* Typografi */
+    color: black;
+  }
+
+  &--vuxhalland:hover,&:active {
+    /* Typografi */
+    color: black;
   }
 
 }
