@@ -1,6 +1,6 @@
 {
   "name": "Stilguide",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
     "@frctl/mandelbrot": "^1.2.0",
