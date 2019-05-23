@@ -3,26 +3,21 @@
 	vertical-align: baseline;
 	white-space: nowrap;
 	min-width: em(11);
-	padding-top: em(4);
-	padding-bottom: em(4);
-	padding-right: em(8);
-	padding-left: em(8);
+	padding-top: em(5);
+	padding-bottom: em(5);
+	padding-right: em(9);
+	padding-left: em(9);
+	border-radius: em(12);
+	font-size: em(14);
 	margin-right: em(10);
 	background-color: $base3-light;
 	color: $black;
 	text-align: center;
   	line-height: 1;
-	border-radius: em(12);
-	font-size: em(11);
-	
+
 	@include large{
 		min-width: em(12);
-		padding-top: em(5);
-		padding-bottom: em(5);
-		padding-right: em(9);
-		padding-left: em(9);
-		border-radius: em(12);
-		font-size: em(14);
+
 	}
 
 }
