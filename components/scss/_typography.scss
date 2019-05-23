@@ -37,6 +37,16 @@ $line-height-small 	: em(20);
 $line-height-medium : em(21);
 $line-height-large  : em(22);
 
+.rh-responsive-headline {
+	font-size: $h3-medium;
+	@include medium {
+		font-size: $h1-medium;
+	}
+
+	@include large {
+		font-size: $h1-medium;
+	}
+}
 
 
 h1,
