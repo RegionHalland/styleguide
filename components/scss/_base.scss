@@ -6,8 +6,24 @@ body {
   font-family: Arial;
 }
 
+.rh-block-on-mobile {
+	display: block;
+
+	@include medium {
+		display: inline;
+	}
+}
+
 #hidden{
 	display: none;
+}
+
+.hidden-sm {
+	display: none;
+
+	@include medium {
+		display: block;
+	}
 }
 
 .center{
