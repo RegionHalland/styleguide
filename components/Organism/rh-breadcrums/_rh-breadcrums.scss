@@ -1,55 +1,70 @@
-.rh-breadcrumbs {
-  border-top: 1px solid $grey-lighter;
-  border-bottom: 1px solid $grey-lighter;
-}
 
-.rh-breadcrumb-group {
-  list-style: none;
+.rh-breadcrumbs {
+
+  /* Visuellt */
   background-color: $white;
+  border-bottom: 1px solid $grey-lighter;
+  border-top: 1px solid $grey-lighter;
+  list-style: none;
   padding-bottom: em(15);
   padding-top: em(15);
+}
 
+.rh-breadcrumbs__item{
 
-  &-item{
-    display: inline;
-    padding-top: em(15);
-    padding-bottom: em(16);
-    @include medium { padding-bottom: em(14);}
-    @include large { padding-bottom: em(14);}
+  /* Box-modell/beteende */
+  display: inline;
+
+  &:after {
+
+    /* Visuellt */
     margin-left: em(12);
-    font-size: em(18);
-    color: $black;
-    font-size: $p-small;
-    @include medium { font-size: $p-medium;}
-    @include large { font-size: $p-large;}
 
-    &:after {
-      margin-left: em(12);
-      color: $grey-base;
-      font-weight: normal;
-      font-family: "feather"; 
-      content: "\e844";
-    }
-    &:last-child{
-      &:after {
-       margin-left: 0;
-        content: "";
-      }
-    }
+    /* Typografi */
+    color: $grey-base;
+    font-weight: normal;
+    font-family: "feather";
 
-    &:active {
-      border-bottom: 3px solid $color-primary;
-    }
-
-    .rh-breadcrumb-group-link{
-      color: $black;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-
+    /* Visuellt */
+    content: "\e844";
   }
 
+  &:last-child {
+    &:after {
+
+      /* Visuellt */
+      margin-left: 0;
+      content: "";
+    }
+  }
+}
+
+.rh-breadcrumbs__link{
+
+  /* Visuellt */
+  color: $black;
+  margin-left: em(12);
+  padding-top: em(15);
+  padding-bottom: em(16);
+  @include medium { padding-bottom: em(14);}
+  @include large { padding-bottom: em(14);}
+
+  /* Typografi */
+  color: $black;
+  font-size: $p-small;
+  @include medium { font-size: $p-medium;}
+  @include large { font-size: $p-large;}
+  text-decoration: none;
+
+  &:hover,&:active,&:focus {
+    /* Visuellt */
+    border-bottom: 3px solid $color-primary;
+  }
+
+  &--vuxhalland {
+    &:hover,&:active,&:focus {
+      /* Visuellt */
+      border-bottom: 3px solid $vuxhalland2;
+    }
+  }
 }
