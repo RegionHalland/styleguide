@@ -203,6 +203,24 @@ function build(cb) {
     cb();
 }
 
+function tmp(cb) {
+    gulp.src('components/scss/tmp.scss')
+        .pipe(sourcemaps.init())
+        .pipe(
+            sass.sync({
+                outputStyle: 'compressed',
+            })
+            .on('error', sass.logError)
+        )
+        .pipe(concat('tmp.css'))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(fractal.web.get('static.path') + '/css/'));
+
+    logger.success('Kompilerade komponent SCSS');
+    cb();
+}
+
 exports.version = series(build, release);
 exports.build = series(start, build);
+exports.tmp = series(tmp);
 exports.default = start;
