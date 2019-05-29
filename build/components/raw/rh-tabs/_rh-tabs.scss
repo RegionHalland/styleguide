@@ -16,13 +16,23 @@
 				border-right: 1px solid $grey-lighter;
 			}
 			&-text{
-				margin-right: em(20);
 				margin-bottom: 0;
 				color: $black;
 				font-size: $p-small;
-				@include medium {font-size: $p-medium;}
+				@include medium {
+					font-size: $p-medium;
+					margin-right: em(20);
+				}
 				@include large {font-size: $p-large;}
 			}
+
+			&-text .rh-labels {
+				display: none;
+				@include medium {
+					display: inline;
+				}
+			}
+
 			&-icon{
 				margin-left: auto;
 				&:after {
@@ -36,6 +46,7 @@
 					@include large { font-size: em(13);}
 				}
 			}
+
 			&:hover, &:active{
 				background-color: $white;
 				border-top: 4px solid $complementary2;
@@ -46,6 +57,18 @@
 				    	content: "\e8f6";
 					}
 				}	
+			}
+
+			&--active{
+				background-color: $white;
+				border-top: 4px solid $complementary2;
+				.rh-tabs-list-item-icon{
+					&:after {
+						background: $complementary2-light;
+						font-family: "feather";
+						content: "\e8f6";
+					}
+				}
 			}
 		}
 	}
