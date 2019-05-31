@@ -1,0 +1,15 @@
+.rh-card {
+    /* Visuellt */
+    border-bottom: 1px solid $grey-base;
+    border-left: 1px solid $grey-base;
+    border-right: 1px solid $grey-base;
+    border-top: 8px solid $base2;
+
+    @include medium {
+        /* Visuellt */
+        border-bottom: 1px solid $grey-base;
+        border-left: 8px solid $base2;
+        border-right: 1px solid $grey-base;
+        border-top: 1px solid $grey-base;
+    }
+}
