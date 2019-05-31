@@ -5,6 +5,10 @@
 
     /* Typografi */
     text-align: center;
+
+    @include medium {
+        justify-content: left;
+    }
 }
 
 .rh-buttongroup__button {
