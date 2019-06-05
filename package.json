@@ -1,9 +1,14 @@
 {
   "name": "Stilguide",
   "version": "5.0.0",
+  "version_driftinfo": "1.0.0",
+  "version_musikhallandia": "2.0.0",
+  "version_regionhalland": "3.0.0",
+  "version_vardgivare": "4.0.0",
+  "version_vuxhalland": "5.0.0",
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
-    "@frctl/mandelbrot": "^1.2.0",
+    "@frctl/mandelbrot": "^1.2.1",
     "feather-icons": "^4.10.0",
     "gulp": "^4.0.0",
     "gulp-cli": "^2.0.1",
@@ -19,6 +24,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-copy": "^4.0.1",
     "gulp-image": "^4.4.1",
+    "gulp-js-import": "^1.0.6",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
