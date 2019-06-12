@@ -1,8 +1,8 @@
 {
-	"title": "Avatar",
+	"title": "Badge",
     "status": "prototype",
 	"context": {
-		"text": "Button Default",
-		"name": "rh-button"
+		"text": "Badge Default",
+		"name": "rh-badge"
 	}
 }
