@@ -33,11 +33,11 @@
     }
 
     @include medium {
-        width: em(122);
         height: em(122);
+        width: em(122);
     }
     @include large {
-        width: em(162);
         height: em(162);
+        width: em(162);
     }
 }
