@@ -212,7 +212,7 @@
     <code class="Code Code--lang-html">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-avatar"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-content"</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"feather icon-wind"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-content"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"feather icon-wind"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -221,7 +221,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-c6799da0161bc4ab3b171d3b88eab1fe-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-avatar"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-content"</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"feather icon-wind"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-avatar"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-content"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"feather icon-wind"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
 
@@ -231,8 +231,8 @@
         
             
             <pre>{
-  <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Button Default"</span>,
-  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"rh-button"</span>
+  <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Avatar Default"</span>,
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"rh-avatar"</span>
 }</pre>
             
         
@@ -265,37 +265,47 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
                                 <pre><span class="hljs-selector-class">.rh-avatar</span> {
-        <span class="hljs-attribute">position</span>: relative;
-        <span class="hljs-attribute">width</span>: em(<span class="hljs-number">110</span>);
-        <span class="hljs-attribute">height</span>: em(<span class="hljs-number">110</span>);
-        <span class="hljs-comment">//box-sizing: border-box;</span>
-        <span class="hljs-attribute">cursor</span>: pointer;
+    <span class="hljs-comment">/* Positionering */</span>
+    <span class="hljs-attribute">position</span>: relative;
 
-        <span class="hljs-attribute">background</span>: <span class="hljs-variable">$base2-light</span>;
-        <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+    <span class="hljs-comment">/* Box-modell/beteende */</span>
+    <span class="hljs-attribute">height</span>: em(<span class="hljs-number">110</span>);
+    <span class="hljs-attribute">width</span>: em(<span class="hljs-number">110</span>);
+    <span class="hljs-comment">//box-sizing: border-box;</span>
+    
+    <span class="hljs-comment">/* Visuellt */</span>
+    <span class="hljs-attribute">background</span>: <span class="hljs-variable">$base2-light</span>;
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+    
+    <span class="hljs-comment">/* Blandat/övrigt */</span>
+    <span class="hljs-attribute">cursor</span>: pointer;
 
-        <span class="hljs-selector-class">.avatar-content</span> {
-            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$black</span>;
-            <span class="hljs-attribute">float</span>: left;
-            <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1</span>;
-            <span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">0.5em</span>;
-            <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">50%</span>;
-            <span class="hljs-attribute">text-align</span>: center;
-            <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-            <span class="hljs-attribute">font-weight</span>: bold;
-            <span class="hljs-attribute">font-size</span>: em(<span class="hljs-number">20</span>); 
-            @<span class="hljs-keyword">include</span> medium { <span class="hljs-attribute">font-size</span>: em(<span class="hljs-number">30</span>);}
-            @<span class="hljs-keyword">include</span> large { <span class="hljs-attribute">font-size</span>: em(<span class="hljs-number">50</span>);}
-        }
+    <span class="hljs-selector-class">.avatar-content</span> {
+        <span class="hljs-comment">/* Box-modell/beteende */</span>
+        <span class="hljs-attribute">float</span>: left;
+        <span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">0.5em</span>;
+        <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">50%</span>;
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
 
-        @<span class="hljs-keyword">include</span> medium {
-            <span class="hljs-attribute">width</span>: em(<span class="hljs-number">122</span>);
-            <span class="hljs-attribute">height</span>: em(<span class="hljs-number">122</span>);
-        }
-        @<span class="hljs-keyword">include</span> large {
-            <span class="hljs-attribute">width</span>: em(<span class="hljs-number">162</span>);
-            <span class="hljs-attribute">height</span>: em(<span class="hljs-number">162</span>);
-        }
+        <span class="hljs-comment">/* Typografi */</span>
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$black</span>;
+        <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1</span>;
+        <span class="hljs-attribute">text-align</span>: center;
+        <span class="hljs-attribute">font-weight</span>: bold;
+
+        <span class="hljs-comment">// font-size: em(20); </span>
+        <span class="hljs-comment">// @include medium { font-size: em(30);}</span>
+        <span class="hljs-comment">// @include large { font-size: em(50);}</span>
+    }
+
+    @<span class="hljs-keyword">include</span> medium {
+        <span class="hljs-attribute">height</span>: em(<span class="hljs-number">122</span>);
+        <span class="hljs-attribute">width</span>: em(<span class="hljs-number">122</span>);
+    }
+    @<span class="hljs-keyword">include</span> large {
+        <span class="hljs-attribute">height</span>: em(<span class="hljs-number">162</span>);
+        <span class="hljs-attribute">width</span>: em(<span class="hljs-number">162</span>);
+    }
 }
 </pre>
                             </code>
@@ -313,7 +323,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">798 Bytes</span>
+                    <span class="Meta-value">864 Bytes</span>
                 </li>
             </ul>
         </div>
