@@ -1,8 +1,8 @@
 {
-	"title": "#81 Sökruta",
+	"title": "Search",
     "status": "wip",
 	"context": {
-		"caption": "",
-		"name": ""
+		"caption": "Search field",
+		"name": "rh-search-field"
 	}		
 }

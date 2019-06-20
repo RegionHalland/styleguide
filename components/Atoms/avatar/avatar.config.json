@@ -2,7 +2,7 @@
 	"title": "Avatar",
     "status": "prototype",
 	"context": {
-		"text": "Button Default",
-		"name": "rh-button"
+		"text": "Avatar Default",
+		"name": "rh-avatar"
 	}
 }

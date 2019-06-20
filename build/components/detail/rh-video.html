@@ -252,44 +252,15 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-5baf832265d5930c43913304b6ed5bff">.DS_Store</option>
+                <option value="file-ef2f40c106bf1cbb543dbbd27d7f3c04">_rh-video.scss</option>
                 
-                <option value="file-26e9f7e70252ff09438ec06695b2e879">_rh-video.scss</option>
-                
-                <option value="file-ecc229baa486354867a49a41a296b478">rh-video.js</option>
+                <option value="file-9f659a89d10e9b65dcca8e4c3689298c">rh-video.js</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-5baf832265d5930c43913304b6ed5bff" data-role="resource-preview">
-            <ul class="Meta">
-                <li class="Meta-item">
-                    <strong class="Meta-key">Content:</strong>
-                    <span class="Meta-value">
-                        <div class="FileBrowser-itemPreview">
-                            
-                            <p><em>Previews are currently not available for this file type.</em></p>
-                            
-                        </div>
-                    </span>
-                </li>
-                <li class="Meta-item">
-                    <strong class="Meta-key">URL:</strong>
-                    <span class="Meta-value"><a data-no-pjax href="../raw/rh-video/.DS_Store.html"><span>/components/raw/rh-video/.DS_Store</span></a></span>
-                </li>
-                <li class="Meta-item">
-                    <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">components\Molecules\rh-video\.DS_Store</span>
-                </li>
-                <li class="Meta-item">
-                    <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">6.1 KB</span>
-                </li>
-            </ul>
-        </div>
-        
-        <div class="FileBrowser-item" id="file-26e9f7e70252ff09438ec06695b2e879" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-ef2f40c106bf1cbb543dbbd27d7f3c04" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -367,16 +338,16 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">components\Molecules\rh-video\_rh-video.scss</span>
+                    <span class="Meta-value">components/Molecules/rh-video/_rh-video.scss</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.2 KB</span>
+                    <span class="Meta-value">1.1 KB</span>
                 </li>
             </ul>
         </div>
         
-        <div class="FileBrowser-item" id="file-ecc229baa486354867a49a41a296b478" data-role="resource-preview">
+        <div class="FileBrowser-item" id="file-9f659a89d10e9b65dcca8e4c3689298c" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -384,30 +355,30 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-JavaScript FileBrowser-code">
-                                <pre>var videoPlayButton,
-	videoWrapper = document.getElementsByClassName('rh-video')[0],
-    video = document.getElementsByTagName('video')[0],
+                                <pre><span class="hljs-keyword">var</span> videoPlayButton,
+	videoWrapper = <span class="hljs-built_in">document</span>.getElementsByClassName(<span class="hljs-string">'rh-video'</span>)[<span class="hljs-number">0</span>],
+    video = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">'video'</span>)[<span class="hljs-number">0</span>],
     videoMethods = {
-        renderVideoPlayButton: function() {
-            if (videoWrapper !== undefined &amp;&amp; videoWrapper.contains(video)) {
-				this.formatVideoPlayButton()
-                video.classList.add('has-media-controls-hidden')
-                videoPlayButton = document.getElementsByClassName('video-button')[0]
-                videoPlayButton.addEventListener('click', this.hideVideoPlayButton)
+        <span class="hljs-attr">renderVideoPlayButton</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">if</span> (videoWrapper !== <span class="hljs-literal">undefined</span> &amp;&amp; videoWrapper.contains(video)) {
+				<span class="hljs-keyword">this</span>.formatVideoPlayButton()
+                video.classList.add(<span class="hljs-string">'has-media-controls-hidden'</span>)
+                videoPlayButton = <span class="hljs-built_in">document</span>.getElementsByClassName(<span class="hljs-string">'video-button'</span>)[<span class="hljs-number">0</span>]
+                videoPlayButton.addEventListener(<span class="hljs-string">'click'</span>, <span class="hljs-keyword">this</span>.hideVideoPlayButton)
             }
         },
 
-        formatVideoPlayButton: function() {
-            videoWrapper.insertAdjacentHTML('beforeend', '\
+        <span class="hljs-attr">formatVideoPlayButton</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            videoWrapper.insertAdjacentHTML(<span class="hljs-string">'beforeend'</span>, <span class="hljs-string">'\
             &lt;div class="video-button"&gt;&lt;div class="video-button-content"&gt; &lt;i class="feather icon-play"&gt;&lt;/i&gt; &lt;/div&gt;&lt;/div&gt;\
-            ')
+            '</span>)
         },
 
-        hideVideoPlayButton: function() {
+        <span class="hljs-attr">hideVideoPlayButton</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
             video.play()
-            videoPlayButton.classList.add('is-hidden')
-            video.classList.remove('has-media-controls-hidden')
-            video.setAttribute('controls', 'controls')
+            videoPlayButton.classList.add(<span class="hljs-string">'is-hidden'</span>)
+            video.classList.remove(<span class="hljs-string">'has-media-controls-hidden'</span>)
+            video.setAttribute(<span class="hljs-string">'controls'</span>, <span class="hljs-string">'controls'</span>)
         }
 	}
 
@@ -425,7 +396,7 @@ videoMethods.renderVideoPlayButton()
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">components\Molecules\rh-video\rh-video.js</span>
+                    <span class="Meta-value">components/Molecules/rh-video/rh-video.js</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
@@ -470,7 +441,7 @@ videoMethods.renderVideoPlayButton()
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">components\Molecules\rh-video\rh-video.hbs</span>
+            <span class="Meta-value">components/Molecules/rh-video/rh-video.hbs</span>
         </li>
         
         
