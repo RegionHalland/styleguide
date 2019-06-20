@@ -1,8 +1,8 @@
 {
-	"title": "#183 Paginering elements",
+	"title": "Paginering elements",
     "status": "wip",
 	"context": {
-		"caption": "",
-		"name": ""
+		"caption": "Paginering elements Default",
+		"name": "rh-pagination-link"
 	}		
 }
