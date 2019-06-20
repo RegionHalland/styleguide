@@ -1,8 +1,8 @@
 {
-	"title": "#180 Filter",
+	"title": "Filter",
     "status": "wip",
 	"context": {
-		"text": "Placeholder",
+		"text": "Filter",
 		"name": "rh-filter"
 	}
 }
