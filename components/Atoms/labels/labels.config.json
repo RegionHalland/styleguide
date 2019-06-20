@@ -1,8 +1,8 @@
 {
-	"title": "#83 Labels",
+	"title": "Labels",
     "status": "wip",
 	"context": {
-		"caption": "",
-		"name": ""
+		"caption": "Labels Default",
+		"name": "rh-labels"
 	}		
 }
