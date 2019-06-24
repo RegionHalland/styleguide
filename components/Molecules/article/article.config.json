@@ -5,7 +5,7 @@
         "title": "This is the article title",
         "published": "Publicerad: 28 mars 2018",
         "description": "This is an excerpt that is meant to convey the full article content. Read first and pick the article you want afterwards.",
-        "label": [{
+        "labels": [{
             "text": "Example 1"
         },
         {
