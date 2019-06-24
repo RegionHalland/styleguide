@@ -4,7 +4,7 @@
     
 	<p class="rh-article-description">{{description}}</p>
 
-	<span class="rh-labels">{{labelText}}</span>
-    <span class="rh-labels">{{labelText}}</span>
-    <span class="rh-labels">{{labelText}}</span>
-</div>	
+    {{#each label}}
+        <span class="rh-labels">{{text}}</span>
+    {{/each}}
+</div>
