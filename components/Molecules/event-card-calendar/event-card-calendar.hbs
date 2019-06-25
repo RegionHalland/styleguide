@@ -1,18 +1,14 @@
 {{#each events}}
 <div class="rh-event-card-calendar">
     <div class="rh-event-card-calendar-date">
-        {{#with date as |eventDate|}}
-        <h4 class="rh-event-card-calendar-date-day">{{eventDate.day}}</h4>
-        <h6 class="rh-event-card-calendar-date-month">{{eventDate.month}}</h6>
-        {{/with}}
+        <h4 class="rh-event-card-calendar-date-day">{{date.day}}</h4>
+        <h6 class="rh-event-card-calendar-date-month">{{date.month}}</h6>
     </div>
 
     <div class="rh-event-card-calendar-description">
-        <h5 class="rh-event-card-calendar-title"> <a class="rh-event-card-calendar-title-link">{{title}}</a></h5>
+        <h5 class="rh-event-card-calendar-title"><a class="rh-event-card-calendar-title-link">{{title}}</a></h5>
         <p class="rh-event-card-calendar-inline rh-event-card-calendar-time">
-            {{#with time as |eventTime|}}
-            {{eventTime.start}} - {{eventTime.end}}
-            {{/with}}
+            {{time.start}} - {{time.end}}
         </p>
 
         <p class="rh-event-card-calendar-inline">|</p>
