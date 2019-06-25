@@ -1,0 +1,56 @@
+{
+    "title": "Träfflistekort Kalender",
+    "status": "wip",
+    "context": {
+        "events": [
+            {
+                "title": "Lorem ipsum dolor sit amet",
+                "date": {
+                    "day": "14",
+                    "month": "sep"
+                },
+                "time": {
+                    "start": "18.30",
+                    "end": "21.30"
+                },
+                "placeStatus": false,
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco  laboris nisi ut aliquip ex ea commodo consequat.",
+                "tags": [
+                    {
+                        "name": "Kultur"
+                    },
+                    {
+                        "name": "Kulturevenemang"
+                    },
+                    {
+                        "name": "Dans"
+                    }
+                ]
+            },
+            {
+                "title": "Sed ut perspiciatis unde omnis iste natus",
+                "date": {
+                    "day": "01",
+                    "month": "oct"
+                },
+                "time": {
+                    "start": "08.30",
+                    "end": "09.30"
+                },
+                "placeStatus": true,
+                "description": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+                "tags": [
+                    {
+                        "name": "Utveckling"
+                    },
+                    {
+                        "name": "Politik"
+                    },
+                    {
+                        "name": "Karriär"
+                    }
+                ]
+            }
+        ]
+    }
+}
