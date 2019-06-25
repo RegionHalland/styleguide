@@ -1,0 +1,30 @@
+{
+	"title": "Länklista",
+    "status": "wip",
+	"context": {
+        "mainTitle": "Länkar till styrdokument",
+        "groupTitle": "Lorem ipsum dolor sit amet",
+        "links": [
+            {
+                "linkTitle": "Förklara vart länken leder",
+                "linkTo": "",
+                "linkText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
+            },
+            {
+                "linkTitle": "Förklara vart länken leder",
+                "linkTo": "",
+                "linkText": "Ut enim ad minima veniam, quis nostrum"
+            },
+            {
+                "linkTitle": "Förklara vart länken leder",
+                "linkTo": "",
+                "linkText": "Quis autem vel eum iure reprehenderit"
+            },
+            {
+                "linkTitle": "Förklara vart länken leder",
+                "linkTo": "",
+                "linkText": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit"
+            }
+        ]
+	}		
+}
