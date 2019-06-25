@@ -6,24 +6,24 @@
         "groupTitle": "Lorem ipsum dolor sit amet",
         "links": [
             {
-                "linkTitle": "Förklara vart länken leder",
-                "linkTo": "",
-                "linkText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
+                "title": "Förklara vart länken leder",
+                "toPage": "",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
             },
             {
-                "linkTitle": "Förklara vart länken leder",
-                "linkTo": "",
-                "linkText": "Ut enim ad minima veniam, quis nostrum"
+                "title": "Förklara vart länken leder",
+                "toPage": "",
+                "text": "Ut enim ad minima veniam, quis nostrum"
             },
             {
-                "linkTitle": "Förklara vart länken leder",
-                "linkTo": "",
-                "linkText": "Quis autem vel eum iure reprehenderit"
+                "title": "Förklara vart länken leder",
+                "toPage": "",
+                "text": "Quis autem vel eum iure reprehenderit"
             },
             {
-                "linkTitle": "Förklara vart länken leder",
-                "linkTo": "",
-                "linkText": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit"
+                "title": "Förklara vart länken leder",
+                "toPage": "",
+                "text": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit"
             }
         ]
 	}		
