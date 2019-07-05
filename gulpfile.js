@@ -15,6 +15,8 @@ const mandelbrot = require('@frctl/mandelbrot');
 const fractal = require('@frctl/fractal').create();
 const logger = fractal.cli.console; // keep a reference to the fractal CLI console utility
 
+const { buildSites, releaseSites } = require('./sites.building');
+
 const rh_theme = mandelbrot({
     skin: "blue",
     styles: [
@@ -532,4 +534,6 @@ exports.version = series(build, release);
 exports.build = series(start, build);
 exports.default = start;
 
-
+// Sites building
+exports.buildsites = buildSites;
+exports.releasesites = releaseSites;
