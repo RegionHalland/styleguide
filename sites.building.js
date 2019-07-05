@@ -44,10 +44,14 @@ function findFirstByProperty(objectArray, sPropertyName, sSeekingValue) {
  */
 function build_js(cb, jsFilename, jsResources, destPath) {
     return new Promise((resolve, reject) => {
+        const gulpOptions = {
+            allowEmpty: true
+        };
+
         const jsFullFilename = `${jsFilename}.js`;
         const jsDestPath = destPath;
 
-        src(jsResources)
+        src(jsResources, gulpOptions)
             .pipe(sourcemaps.init())
             .pipe(babel({
                 presets: ['@babel/env']
@@ -64,10 +68,14 @@ function build_js(cb, jsFilename, jsResources, destPath) {
 
 function build_scss(cb, cssFilename, scssResource, destPath) {
     return new Promise((resolve, reject) => {
+        const gulpOptions = {
+            allowEmpty: true
+        };
+
         const cssFullFilename = `${cssFilename}.css`;
         const cssDestPath = destPath;
 
-        src(scssResource)
+        src(scssResource, gulpOptions)
             .pipe(sourcemaps.init())
             .pipe(
                 sass.sync({ outputStyle: 'compressed' })

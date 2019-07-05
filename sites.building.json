@@ -36,14 +36,6 @@
             }
         },
         {
-            "name": "test-driftinfo",
-            "version": "1.8.0",
-            "resources": {
-                "jsComponents": [],
-                "scssComponents": [ "sites/test-driftinfo/test-driftinfo.scss" ]
-            }
-        },
-        {
             "name": "vardgivare",
             "version": "2.0.0",
             "resources": {

@@ -1,11 +1,10 @@
 // Main
 
 // Settings
-@import '_settings-main';
-
-@import '_reset';
-@import '_breakpoints';
 @import '_functions';
+@import '_breakpoints';
+@import '_settings-main';
+@import '_reset';
 @import '_base';
 @import '_typography';
 
@@ -34,7 +33,7 @@
 @import 'components/Molecules/rh-video/_rh-video.scss';
 @import 'components/Molecules/buttongroup/_buttongroup.scss';
 @import 'components/Molecules/block/_block.scss';
-@import 'components/Molecules/rblurbs/_rh-blurbs.scss';
+@import 'components/Molecules/blurbs/_blurbs.scss';
 @import 'components/Molecules/rh-feedback/_rh-feedback.scss';
 @import 'components/Molecules/rh-personal-info/_rh-personal-info.scss';
 @import 'components/Molecules/rh-linkgroup/_rh-linkgroup.scss';
