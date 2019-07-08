@@ -14,8 +14,8 @@ The sites building add-on is using __ONLY__ for the Styleguide application at Re
 ### Command
 |Command|Default destination|
 |---|---|
-|`$ gulp builds <-option> <sitename>`|`/cdn/public`|
-|`$ gulp releases <-option> <sitename>`|`/cdn/releases`|
+|`$ gulp builds <[-option][--alias]> <sitename>`|`/cdn/public`|
+|`$ gulp releases <[-option][--alias]> <sitename>`|`/cdn/releases`|
 
 ### Options and alias
 |Option|Alias|Argument (*)|Description|
@@ -23,13 +23,16 @@ The sites building add-on is using __ONLY__ for the Styleguide application at Re
 |`-a`|`--all`||All sites|
 |`-s`|`--site`|`<sitename>`|A specific site|
 |`-u`|`--usage`||View the help information|
+
 (*) Must have
 
 ### The special option
 The option is only used when you release a specific website. Be careful what you do!
+
 |Option|Alias|Description|
 |---|---|---|
 |`-o`|`--overwrite`|Overwrite a release of a specific site|
+
 Example:
 * `$ gulp releases -s asitename -o`
 * `$ gulp releases --site onlyonesite --overwrite`
