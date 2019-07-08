@@ -1,19 +1,11 @@
 {
     "name": "sites-building",
-    "version": "1.0.0-alpha.1.0.0",
+    "version": "1.0.0-alpha.1.0.1",
     "description": "Using for the automatic build and release the web styling",
     "sites": [
         {
             "name": "driftinfo",
-            "version": "1.0.1",
-            "resources": {
-                "jsComponents": [ "components/Molecules/rh-video/rh-video.js" ],
-                "scssComponents": [ "sites/driftinfo/driftinfo.scss" ]
-            }
-        },
-        {
-            "name": "driftinfo",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "resources": {
                 "jsComponents": [ "components/Molecules/rh-video/rh-video.js" ],
                 "scssComponents": [ "sites/driftinfo/driftinfo.scss" ]
@@ -37,7 +29,7 @@
         },
         {
             "name": "vardgivare",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "resources": {
                 "jsComponents": [],
                 "scssComponents": [ "sites/vardgivare/vardgivare.scss" ]

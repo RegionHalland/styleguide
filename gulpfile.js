@@ -535,5 +535,5 @@ exports.build = series(start, build);
 exports.default = start;
 
 // Sites building
-exports.buildsites = buildSites;
-exports.releasesites = releaseSites;
+exports.builds = buildSites;
+exports.releases = releaseSites;
