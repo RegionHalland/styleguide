@@ -1,19 +1,19 @@
 {
     "name": "sites-building",
-    "version": "1.0.0-alpha.1.0.1",
+    "version": "1.0.0",
     "description": "Using for the automatic build and release the web styling",
     "sites": [
         {
             "name": "driftinfo",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "resources": {
-                "jsComponents": [ "components/Molecules/rh-video/rh-video.js" ],
+                "jsComponents": [],
                 "scssComponents": [ "sites/driftinfo/driftinfo.scss" ]
             }
         },
         {
             "name": "musikhallandia",
-            "version": "1.0.1",
+            "version": "1.0.0",
             "resources": {
                 "jsComponents": [],
                 "scssComponents": [ "sites/musikhallandia/musikhallandia.scss" ]
@@ -21,7 +21,7 @@
         },
         {
             "name": "regionhalland",
-            "version": "1.0.5",
+            "version": "1.0.0",
             "resources": {
                 "jsComponents": [],
                 "scssComponents": [ "sites/regionhalland/regionhalland.scss" ]
@@ -29,7 +29,7 @@
         },
         {
             "name": "vardgivare",
-            "version": "2.0.1",
+            "version": "1.0.0",
             "resources": {
                 "jsComponents": [],
                 "scssComponents": [ "sites/vardgivare/vardgivare.scss" ]
@@ -37,7 +37,7 @@
         },
         {
             "name": "vuxhalland",
-            "version": "3.1.0",
+            "version": "1.0.0",
             "resources": {
                 "jsComponents": [],
                 "scssComponents": [ "sites/vuxhalland/vuxhalland.scss" ]
@@ -45,7 +45,7 @@
         },
         {
             "name": "stilguide",
-            "version": "6.0.0",
+            "version": "1.0.0",
             "resources": {
                 "jsComponents": [
                     "components/Molecules/rh-video/rh-video.js", 
@@ -58,7 +58,7 @@
         }
     ],
     "building": {
-        "publicPath": "cdn/public",
-        "releasePath": "cdn/releases"
+        "publicPath": "cdn/build",
+        "releasePath": "../RH-cdn/releases"
     }
 }

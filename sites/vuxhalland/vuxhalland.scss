@@ -1,19 +1,32 @@
 // Functions
-@import 'components/scss/_breakpoints';
-@import 'components/scss/_functions';
-
-// Settings
+@import 'components/scss/_functions.scss';
+@import 'components/scss/_breakpoints.scss';
 @import '_settings-vuxhalland';
+@import 'components/scss/_reset.scss';
+@import 'components/scss/_base.scss';
+@import 'components/scss/_typography.scss';
+@import 'components/scss/_grid.scss';
+@import 'components/scss/_layout.scss';
+@import 'components/scss/_margin.scss';
+@import 'components/scss/_padding.scss';
+@import 'components/scss/_flexbox.scss';
+@import 'components/scss/_type_scale.scss';
 
-@import 'components/Atoms/button/_button.scss';
-@import 'components/Atoms/round-button/_round-button.scss';
-@import 'components/Atoms/avatar/_avatar.scss';
-@import 'components/Atoms/search-field/_search-field.scss';
-@import 'components/Atoms/labels/_labels.scss';
+// Atoms
 @import 'components/Atoms/caption-hero/_caption-hero.scss';
-@import 'components/Atoms/filter/_filter.scss';
-@import 'components/Atoms/pagination-elements/_pagination-elements.scss';
-@import 'components/Atoms/form/_form.scss';
+@import 'components/Atoms/labels/_labels.scss';
 @import 'components/Atoms/link/_link.scss';
-@import 'components/Atoms/card/_card.scss';
-@import 'components/Atoms/visual-element/_visual-element.scss';
+@import 'components/Atoms/round-button/_round-button.scss';
+
+// Molecules
+@import 'components/Molecules/article/_article.scss';
+@import 'components/Molecules/blurbs/_blurbs.scss';
+@import 'components/Molecules/rh-cookie-notice/_rh-cookie-notice.scss';
+@import 'components/Molecules/rh-image-hero/_rh-image-hero.scss';
+@import 'components/Molecules/rh-navigation-card/_rh-navigation-card.scss';
+
+// Organism
+@import 'components/Organism/rh-breadcrums/_rh-breadcrums.scss';
+@import 'components/Organism/rh-footer/_rh-footer.scss';
+@import 'components/Organism/rh-footer-logo/_rh-footer-logo.scss';
+@import 'components/Organism/rh-toplinks/_rh-toplinks.scss';
