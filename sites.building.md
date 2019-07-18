@@ -14,7 +14,7 @@ The sites building add-on is using __ONLY__ for the Styleguide application at Re
 ### Command
 |Command|Default destination|
 |---|---|
-|`$ gulp builds <[-option][--alias]> <sitename>`|`/cdn/public`|
+|`$ gulp builds <[-option][--alias]> <sitename>`|`/cdn/build`|
 |`$ gulp releases <[-option][--alias]> <sitename>`|`/cdn/releases`|
 
 ### Options and alias
