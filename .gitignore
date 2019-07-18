@@ -7,11 +7,6 @@
 # Node
 node_modules
 
-# public
-cdn/public/*
-!cdn/public/.gitkeep
-
-# releases
-cdn/releases/*
-!cdn/releases/.git
-!cdn/releases/.gitkeep
+# build-mappen
+cdn/build/*
+!cdn/build/.gitkeep
