@@ -203,11 +203,12 @@ function build_styling_for_one_site(cb, sitename) {
         const siteInfo = findFirstByProperty(sites, 'name', sitename);
 
         if (siteInfo) {
-            const { name, resources } = siteInfo;
+            const { name, resources } = siteInfo,
+                sitePublicPath = `${publicPath}/${name}`;
 
             if (name && resources) {
-                build_process(cb, name, resources, publicPath)
-                    .then(({ result }) => console.log(`\n\x1b[32m✓ Build\x1b[0m -> \x1b[90m/${publicPath}/\x1b[0m -> ${result}`))
+                build_process(cb, name, resources, sitePublicPath)
+                    .then(({ result }) => console.log(`\n\x1b[32m✓ Build\x1b[0m -> \x1b[90m/${sitePublicPath}/\x1b[0m -> ${result}`))
                     .catch((error) => console.error(error));
             }
         } else {
@@ -223,11 +224,12 @@ function build_styling_for_all_sites(cb) {
 
     if (sitesLength > 0) {
         for (let i = 0; i < sitesLength; i++) {
-            const { name, resources } = sites[i];
+            const { name, resources } = sites[i],
+                sitePublicPath = `${publicPath}/${name}`;
 
             if (name && resources) {
-                build_process(cb, name, resources, publicPath)
-                    .then(({ result }) => console.log(`\n\x1b[32m✓ Build\x1b[0m -> \x1b[90m/${publicPath}/\x1b[0m -> ${result}`))
+                build_process(cb, name, resources, sitePublicPath)
+                    .then(({ result }) => console.log(`\n\x1b[32m✓ Build\x1b[0m -> \x1b[90m/${sitePublicPath}/\x1b[0m -> ${result}`))
                     .catch((error) => console.error(error));
             } else {
                 console.error(`\n\x1b[31m✗\x1b[0m Can not build the site ${name}`);
@@ -243,8 +245,11 @@ function release_styling_for_one_site(cb, sitename, options = {}) {
         const siteInfo = findFirstByProperty(sites, 'name', sitename);
 
         if (siteInfo) {
-            release_process(cb, siteInfo, releasePath, options)
-                .then((results) => console.log(`\n\x1b[32m✓ Release\x1b[0m -> \x1b[90m/${releasePath}/\x1b[0m -> ${results}`))
+            const { name } = siteInfo,
+                siteReleasePath = `${releasePath}/${name}`;
+
+            release_process(cb, siteInfo, siteReleasePath, options)
+                .then((results) => console.log(`\n\x1b[32m✓ Release\x1b[0m -> \x1b[90m/${siteReleasePath}/\x1b[0m -> ${results}`))
                 .catch((error) => console.error(`\n\x1b[31m✗\x1b[0m ${error}`));
         } else {
             console.error(`\n\x1b[31m✗ Error\x1b[0m The site ${sitename} is not found for release\n`);
@@ -259,8 +264,11 @@ function release_styling_for_all_sites(cb) {
 
     if (sitesLength > 0) {
         for (let i = 0; i < sitesLength; i++) {
-            release_process(cb, sites[i], releasePath)
-                .then((results) => console.log(`\n\x1b[32m✓ Release\x1b[0m -> \x1b[90m/${releasePath}/\x1b[0m -> ${results}`))
+            const { name } = sites[i],
+                siteReleasePath = `${releasePath}/${name}`;
+
+            release_process(cb, sites[i], siteReleasePath)
+                .then((results) => console.log(`\n\x1b[32m✓ Release\x1b[0m -> \x1b[90m/${siteReleasePath}/\x1b[0m -> ${results}`))
                 .catch((error) => console.error(`\n\x1b[31m✗\x1b[0m ${error}`));
         }
     } else {
@@ -323,7 +331,7 @@ function releaseSites(cb) {
 
     } else if (getOptionsHelper("-s", "--site")) {
         const sitename = getOptionsHelper("-s", "--site");
-        
+
         // Special parameter
         const options = {
             overWrite: getOptionsHelper("-o", "--overwrite") || false
