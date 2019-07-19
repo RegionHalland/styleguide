@@ -203,10 +203,11 @@ function build_styling_for_one_site(cb, sitename) {
         const siteInfo = findFirstByProperty(sites, 'name', sitename);
 
         if (siteInfo) {
-            const { name, resources } = siteInfo,
-                sitePublicPath = `${publicPath}/${name}`;
+            const { name, resources } = siteInfo;
 
             if (name && resources) {
+                const sitePublicPath = `${publicPath}/${name}`;
+
                 build_process(cb, name, resources, sitePublicPath)
                     .then(({ result }) => console.log(`\n\x1b[32m✓ Build\x1b[0m -> \x1b[90m/${sitePublicPath}/\x1b[0m -> ${result}`))
                     .catch((error) => console.error(error));
@@ -222,12 +223,13 @@ function build_styling_for_one_site(cb, sitename) {
 function build_styling_for_all_sites(cb) {
     const sitesLength = sites.length;
 
-    if (sitesLength > 0) {
+    if (sitesLength) {
         for (let i = 0; i < sitesLength; i++) {
-            const { name, resources } = sites[i],
-                sitePublicPath = `${publicPath}/${name}`;
+            const { name, resources } = sites[i];
 
             if (name && resources) {
+                const sitePublicPath = `${publicPath}/${name}`;
+
                 build_process(cb, name, resources, sitePublicPath)
                     .then(({ result }) => console.log(`\n\x1b[32m✓ Build\x1b[0m -> \x1b[90m/${sitePublicPath}/\x1b[0m -> ${result}`))
                     .catch((error) => console.error(error));
@@ -245,12 +247,17 @@ function release_styling_for_one_site(cb, sitename, options = {}) {
         const siteInfo = findFirstByProperty(sites, 'name', sitename);
 
         if (siteInfo) {
-            const { name } = siteInfo,
-                siteReleasePath = `${releasePath}/${name}`;
+            const { name, resources } = siteInfo;
 
-            release_process(cb, siteInfo, siteReleasePath, options)
-                .then((results) => console.log(`\n\x1b[32m✓ Release\x1b[0m -> \x1b[90m/${siteReleasePath}/\x1b[0m -> ${results}`))
-                .catch((error) => console.error(`\n\x1b[31m✗\x1b[0m ${error}`));
+            if (name && resources) {
+                const siteReleasePath = `${releasePath}/${name}`;
+
+                release_process(cb, siteInfo, siteReleasePath, options)
+                    .then((results) => console.log(`\n\x1b[32m✓ Release\x1b[0m -> \x1b[90m/${siteReleasePath}/\x1b[0m -> ${results}`))
+                    .catch((error) => console.error(`\n\x1b[31m✗\x1b[0m ${error}`));
+            } else {
+                console.error(`\n\x1b[31m✗\x1b[0m Can not release the site ${name}`);
+            }
         } else {
             console.error(`\n\x1b[31m✗ Error\x1b[0m The site ${sitename} is not found for release\n`);
         }
@@ -262,14 +269,20 @@ function release_styling_for_one_site(cb, sitename, options = {}) {
 function release_styling_for_all_sites(cb) {
     const sitesLength = sites.length;
 
-    if (sitesLength > 0) {
+    if (sitesLength) {
         for (let i = 0; i < sitesLength; i++) {
-            const { name } = sites[i],
-                siteReleasePath = `${releasePath}/${name}`;
+            const siteInfo = sites[i],
+                { name, resources } = siteInfo || {};
 
-            release_process(cb, sites[i], siteReleasePath)
-                .then((results) => console.log(`\n\x1b[32m✓ Release\x1b[0m -> \x1b[90m/${siteReleasePath}/\x1b[0m -> ${results}`))
-                .catch((error) => console.error(`\n\x1b[31m✗\x1b[0m ${error}`));
+            if (name && resources) {
+                const siteReleasePath = `${releasePath}/${name}`;
+
+                release_process(cb, siteInfo, siteReleasePath)
+                    .then((results) => console.log(`\n\x1b[32m✓ Release\x1b[0m -> \x1b[90m/${siteReleasePath}/\x1b[0m -> ${results}`))
+                    .catch((error) => console.error(`\n\x1b[31m✗\x1b[0m ${error}`));
+            } else {
+                console.error(`\n\x1b[31m✗\x1b[0m Can not release the site ${name}`);
+            }
         }
     } else {
         console.error(`\n\x1b[31m✗\x1b[0m No site to release`);
@@ -334,7 +347,7 @@ function releaseSites(cb) {
 
         // Special parameter
         const options = {
-            overWrite: getOptionsHelper("-o", "--overwrite") || false
+            overWrite: getOptionsHelper("-o", "--overwrite") || false // Default
         }
 
         if (typeof sitename === "string") {
