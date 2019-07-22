@@ -1,0 +1,9 @@
+{
+	"title": "Tillbaka-navigering",
+    "status": "wip",
+	"context": {
+		"caption": "",
+        "name": "",
+        "previousText": "Link to previous page"
+	}		
+}
