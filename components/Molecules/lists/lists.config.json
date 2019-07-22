@@ -1,0 +1,25 @@
+{
+	"title": "Listningar",
+    "status": "wip",
+	"context": {
+        "listTitle": "Title lorem ipsum",
+		"listItems": [
+            {
+                "textLeft": "Lorem ipsum",
+                "textRight": "Lorem ipsum"
+            },
+            {
+                "textLeft": "Lorem ipsum",
+                "textRight": "Lorem ipsum"
+            },
+            {
+                "textLeft": "Lorem ipsum",
+                "textRight": "Lorem ipsum"
+            },
+            {
+                "textLeft": "Lorem ipsum",
+                "textRight": "Lorem ipsum"
+            }
+        ]
+	}		
+}
