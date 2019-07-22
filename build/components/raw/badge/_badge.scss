@@ -1,33 +1,43 @@
 .rh-badge {
-        position: relative;
-        width: em(110);
-        height: em(110);
-        //box-sizing: border-box;
-        cursor: pointer;
+    /* Positionering */
+    position: relative;
 
-        background: $base2-light;
-        border-radius: 50%;
+    /* Box-modell/beteende */
+    height: em(110);
+    width: em(110);
+    //box-sizing: border-box;
 
-        .avatar-content {
-            color: $black;
-            float: left;
-            line-height: 1;
-            margin-top: -0.5em;
-            padding-top: 50%;
-            text-align: center;
-            width: 100%;
-            font-weight: bold;
-            font-size: em(20); 
-            @include medium { font-size: em(30);}
-            @include large { font-size: em(50);}
-        }
+    /* Visuellt */
+    background: $base2-light;
+    border-radius: 50%;
+    
+    /* Blandat/övrigt */
+    cursor: pointer;
 
-        @include medium {
-            width: em(122);
-            height: em(122);
-        }
-        @include large {
-            width: em(162);
-            height: em(162);
-        }
+    .badge-content {
+        /* Box-modell/beteende */
+        float: left;
+        margin-top: -0.5em;
+        padding-top: 50%;
+        width: 100%;
+
+        /* Typografi */
+        color: $black;
+        line-height: 1;
+        text-align: center;
+        font-weight: bold;
+        
+        // font-size: em(20); 
+        // @include medium { font-size: em(30);}
+        // @include large { font-size: em(50);}
     }
+
+    @include medium {
+        height: em(122);
+        width: em(122);
+    }
+    @include large {
+        height: em(162);
+        width: em(162);
+    }
+}

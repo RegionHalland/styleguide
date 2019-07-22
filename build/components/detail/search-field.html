@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="../../theme/css/theme.css?cachebust=1.2.1" type="text/css">
 
 
-<title>#81 Sökruta | Stilguide - Region Halland</title>
+<title>Search | Stilguide - Region Halland</title>
 
 </head>
 <body>
@@ -113,7 +113,7 @@
     <div class="Pen-panel Pen-header">
     <h1 class="Pen-title">
         <a class="Pen-previewLink" href="../preview/search-field.html" title="Component preview">
-            #81 Sökruta
+            Search
             <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
@@ -300,8 +300,8 @@
         
             
             <pre>{
-  <span class="hljs-attr">"caption"</span>: <span class="hljs-literal">null</span>,
-  <span class="hljs-attr">"name"</span>: <span class="hljs-literal">null</span>
+  <span class="hljs-attr">"caption"</span>: <span class="hljs-string">"Search field"</span>,
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"rh-search-field"</span>
 }</pre>
             
         
@@ -319,13 +319,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-16619e0e2722b6d7ded141dc9f058ac5">_search-field.scss</option>
+                <option value="file-069f991af88a31aaf0de7548b852a095">_search-field.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-16619e0e2722b6d7ded141dc9f058ac5" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-069f991af88a31aaf0de7548b852a095" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -334,113 +334,182 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
                                 <pre><span class="hljs-selector-class">.rh-search-field</span> {
+    <span class="hljs-comment">/* Positionering */</span>
+    <span class="hljs-attribute">align-items</span>: center;
+
+    <span class="hljs-comment">/* Box-modell/beteende */</span>
     <span class="hljs-attribute">display</span>: flex;
-    <span class="hljs-attribute">align-items</span>: center;  
     <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
 
-  <span class="hljs-selector-class">.rh-search-term</span> {
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-    <span class="hljs-attribute">padding</span>: em(<span class="hljs-number">10</span>);
-    <span class="hljs-attribute">margin-right</span>:-<span class="hljs-number">5px</span>;
-    <span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey-light</span>;
-    <span class="hljs-attribute">border-left</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey-light</span>;
-    <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey-light</span>;
-    <span class="hljs-attribute">border-right</span>: <span class="hljs-number">0</span>; 
-    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">4px</span>;
-    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey-darker</span>;
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-small</span>;
-    @<span class="hljs-keyword">include</span> medium { <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-medium</span>;}
-    @<span class="hljs-keyword">include</span> large { <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-large</span>;}
-    <span class="hljs-attribute">outline</span>: none;
+    <span class="hljs-selector-class">.rh-search-term</span> {
+        <span class="hljs-comment">/* Box-modell/beteende */</span>
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+        <span class="hljs-attribute">padding</span>: em(<span class="hljs-number">10</span>);
+        <span class="hljs-attribute">margin-right</span>: -<span class="hljs-number">5px</span>;
 
-    &amp;::placeholder { /* Chrome, Firefox, Opera, Safari <span class="hljs-number">10.1</span>+ */
-      color: <span class="hljs-variable">$grey-darker</span>;
-      <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>; <span class="hljs-comment">/* Firefox */</span>
+        <span class="hljs-comment">/* Visuellt */</span>
+        <span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey-light</span>;
+        <span class="hljs-attribute">border-left</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey-light</span>;
+        <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey-light</span>;
+        <span class="hljs-attribute">border-right</span>: <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">4px</span>;
+
+        <span class="hljs-comment">/* Typografi */</span>
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey-darker</span>;
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-small</span>;
+
+        <span class="hljs-comment">/* Blandat/övrigt */</span>
+        <span class="hljs-attribute">outline</span>: none;
+
+        @<span class="hljs-keyword">include</span> medium {
+            <span class="hljs-comment">/* Typografi */</span>
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-medium</span>;
+        }
+
+        @<span class="hljs-keyword">include</span> large {
+            <span class="hljs-comment">/* Typografi */</span>
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-large</span>;
+        }
+
+        &amp;::placeholder {
+            /* Chrome, Firefox, Opera, Safari <span class="hljs-number">10.1</span>+ */
+            
+            /* Typografi */
+            color: <span class="hljs-variable">$grey-darker</span>;
+
+            <span class="hljs-comment">/* Blandat/övrigt */</span>
+            <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+            <span class="hljs-comment">/* Firefox */</span>
+        }
+
+        &amp;:-ms-input-placeholder {
+            /* Internet Explorer <span class="hljs-number">10</span>-<span class="hljs-number">11</span> */
+
+            /* Typografi */
+            color: <span class="hljs-variable">$grey-darker</span>;
+        }
+
+        &amp;::-ms-input-placeholder {
+            /* Microsoft Edge */
+
+            /* Typografi */
+            color: <span class="hljs-variable">$grey-darker</span>;
+        }
+
+        &amp;:focus {
+            <span class="hljs-comment">/* Visuellt */</span>
+            <span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> solid black;
+            <span class="hljs-attribute">border-left</span>: <span class="hljs-number">1px</span> solid black;
+            <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid black;
+            <span class="hljs-attribute">border-right</span>: <span class="hljs-number">0</span>;
+        }
+
+        &amp;-larger {
+            <span class="hljs-comment">/* Box-modell/beteende */</span>
+            <span class="hljs-attribute">padding</span>: em(<span class="hljs-number">15</span>);
+
+            <span class="hljs-comment">/* Typografi */</span>
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-large</span>;
+
+            @<span class="hljs-keyword">include</span> large {
+                <span class="hljs-comment">/* Box-modell/beteende */</span>
+                <span class="hljs-attribute">padding</span>: em(<span class="hljs-number">20</span>);
+            }
+        }
+
+        &amp;:disabled {
+            <span class="hljs-comment">/* Visuellt */</span>
+            <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey-light</span>;
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey-lightest</span>;
+            
+            <span class="hljs-comment">/* Blandat/övrigt */</span>
+            <span class="hljs-attribute">cursor</span>: not-allowed;
+            
+            &amp;::placeholder {
+                /* Chrome, Firefox, Opera, Safari <span class="hljs-number">10.1</span>+ */
+                
+                /* Typografi */
+                color: <span class="hljs-variable">$grey-base</span>;
+
+                <span class="hljs-comment">/* Blandat/övrigt */</span>
+                <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+                <span class="hljs-comment">/* Firefox */</span>
+            }
+
+            &amp;:-ms-input-placeholder {
+                /* Internet Explorer <span class="hljs-number">10</span>-<span class="hljs-number">11</span> */
+                /* Typografi */
+                color: <span class="hljs-variable">$grey-base</span>;
+            }
+
+            &amp;::-ms-input-placeholder {
+                /* Microsoft Edge */
+                /* Typografi */
+                color: <span class="hljs-variable">$grey-base</span>;
+            }
+        }
     }
 
-    &amp;:-ms-input-placeholder { /* Internet Explorer <span class="hljs-number">10</span>-<span class="hljs-number">11</span> */
-      color: <span class="hljs-variable">$grey-darker</span>;
+    <span class="hljs-selector-class">.rh-search-button</span> {
+        <span class="hljs-comment">/* Box-modell/beteende */</span>
+        <span class="hljs-attribute">padding</span>: em(<span class="hljs-number">10</span>);
+
+        <span class="hljs-comment">/* Visuellt */</span>
+        <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$base3-dark</span>;
+        <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">0</span> <span class="hljs-number">4px</span> <span class="hljs-number">4px</span> <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">background</span>: <span class="hljs-variable">$base3</span>;
+
+        <span class="hljs-comment">/* Typografi */</span>
+        <span class="hljs-attribute">color</span>: white;
+        <span class="hljs-attribute">text-align</span>: center;
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-small</span>;
+
+        <span class="hljs-comment">/* Blandat/övrigt */</span>
+        <span class="hljs-attribute">cursor</span>: pointer;
+
+        @<span class="hljs-keyword">include</span> medium {
+            <span class="hljs-comment">/* Typografi */</span>
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-medium</span>;
+        }
+
+        @<span class="hljs-keyword">include</span> large {
+            <span class="hljs-comment">/* Typografi */</span>
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-large</span>;
+        }
+
+        &amp;:active {
+            <span class="hljs-comment">/* Visuellt */</span>
+            <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$complementary2</span>;
+            <span class="hljs-attribute">background</span>: <span class="hljs-variable">$complementary2</span>;
+        }
+
+        &amp;-larger {
+            <span class="hljs-comment">/* Box-modell/beteende */</span>
+            <span class="hljs-attribute">padding</span>: em(<span class="hljs-number">15</span>);
+
+            <span class="hljs-comment">/* Typografi */</span>
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-large</span>;
+
+            @<span class="hljs-keyword">include</span> large {
+                <span class="hljs-comment">/* Box-modell/beteende */</span>
+                <span class="hljs-attribute">padding</span>: em(<span class="hljs-number">20</span>);
+            }
+        }
+
+        &amp;:disabled {
+            <span class="hljs-comment">/* Visuellt */</span>
+            <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey-light</span>;
+            <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey-light</span>;
+
+            <span class="hljs-comment">/* Typografi */</span>
+            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey-dark</span>;
+
+            <span class="hljs-comment">/* Blandat/övrigt */</span>
+            <span class="hljs-attribute">cursor</span>: not-allowed;
+        }
     }
-
-    &amp;::-ms-input-placeholder { /* Microsoft Edge */
-      color: <span class="hljs-variable">$grey-darker</span>;
-    }
-
-    &amp;:focus{
-      <span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> solid black;
-      <span class="hljs-attribute">border-left</span>: <span class="hljs-number">1px</span> solid black;
-      <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid black;
-      <span class="hljs-attribute">border-right</span>: <span class="hljs-number">0</span>; 
-
-    }
-
-    &amp;-larger{
-      <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-large</span>;
-      <span class="hljs-attribute">padding</span>: em(<span class="hljs-number">15</span>);
-      @<span class="hljs-keyword">include</span> large {<span class="hljs-attribute">padding</span>: em(<span class="hljs-number">20</span>);}
-    }
-
-    &amp;:disabled{
-      <span class="hljs-attribute">cursor</span>: not-allowed;
-      <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey-light</span>;
-      <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey-lightest</span>;
-
-      &amp;::placeholder { /* Chrome, Firefox, Opera, Safari <span class="hljs-number">10.1</span>+ */
-        color: <span class="hljs-variable">$grey-base</span>;
-        <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>; <span class="hljs-comment">/* Firefox */</span>
-      }
-      
-      &amp;:-ms-input-placeholder { /* Internet Explorer <span class="hljs-number">10</span>-<span class="hljs-number">11</span> */
-        color: <span class="hljs-variable">$grey-base</span>;
-      }
-
-      &amp;::-ms-input-placeholder { /* Microsoft Edge */
-        color: <span class="hljs-variable">$grey-base</span>;
-      }
-
-    }
-
-  }
-
-  <span class="hljs-selector-class">.rh-search-button</span> {
-    <span class="hljs-attribute">padding</span>: em(<span class="hljs-number">10</span>);
-    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$base3-dark</span>;
-    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">0</span> <span class="hljs-number">4px</span> <span class="hljs-number">4px</span> <span class="hljs-number">0</span>;
-    <span class="hljs-attribute">background</span>: <span class="hljs-variable">$base3</span>;
-    <span class="hljs-attribute">color</span>: white;
-    <span class="hljs-attribute">text-align</span>: center;
-    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-    <span class="hljs-attribute">cursor</span>: pointer;
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-small</span>;
-    @<span class="hljs-keyword">include</span> medium { <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-medium</span>;}
-    @<span class="hljs-keyword">include</span> large { <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-large</span>;}
-
-    &amp;:active{
-      <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$complementary2</span>;
-      <span class="hljs-attribute">background</span>: <span class="hljs-variable">$complementary2</span>;
-    }
-
-    &amp;-larger{
-      <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-large</span>;
-      <span class="hljs-attribute">padding</span>: em(<span class="hljs-number">15</span>);
-      @<span class="hljs-keyword">include</span> large {<span class="hljs-attribute">padding</span>: em(<span class="hljs-number">20</span>);}
-    }
-
-    &amp;:disabled{
-      <span class="hljs-attribute">cursor</span>: not-allowed;
-      <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey-light</span>;
-      <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey-light</span>;
-      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey-dark</span>;
-    }
-
-
-  }
-
-}
-
-
-
-</pre>
+}</pre>
                             </code>
                             
                         </div>
@@ -452,11 +521,11 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">components/Atoms/search-field/_search-field.scss</span>
+                    <span class="Meta-value">components\Atoms\search-field\_search-field.scss</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.2 KB</span>
+                    <span class="Meta-value">4.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -497,7 +566,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">components/Atoms/search-field/search-field.hbs</span>
+            <span class="Meta-value">components\Atoms\search-field\search-field.hbs</span>
         </li>
         
         
@@ -1059,8 +1128,104 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="article.html" data-pjax>
+                <span>Article</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="block.html" data-pjax>
+                <span>Block</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="blurbs.html" data-pjax>
+                <span>Blurbs</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="buttongroup.html" data-pjax>
                 <span>Buttongroup</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="calendar-element.html" data-pjax>
+                <span>Calendar Element</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1093,102 +1258,6 @@
 
 
 <span class="Status-dot" style="border-color: #F00;" title="Skiss"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="rh-article.html" data-pjax>
-                <span>Rh Article</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="rh-block.html" data-pjax>
-                <span>Rh Block</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="rh-blurbs.html" data-pjax>
-                <span>Rh Blurbs</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="rh-calendar-element.html" data-pjax>
-                <span>Rh Calendar Element</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
 
 
 </div>
