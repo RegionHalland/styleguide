@@ -1,0 +1,11 @@
+{
+	"title": "Logga + sajtnamn",
+    "status": "wip",
+	"context": {
+		"siteLogo": {
+            "imageUrl": "/images/components/rh-logo-sitename/navigation_logo.svg",
+            "imageAlt": "Region Halland"
+        },
+        "siteTitle": "Vårdgivare Halland"
+	}		
+}

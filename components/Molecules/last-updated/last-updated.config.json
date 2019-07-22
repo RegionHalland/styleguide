@@ -1,0 +1,12 @@
+{
+	"title": "Last updated",
+    "status": "wip",
+	"context": {
+        "txtUpdated": "Senast uppdaterad",
+		"datetime": {
+            "text": "30 augusti 2018",
+            "attrValue": "2018-08-30"
+        },
+        "txtContactPerson": "Kontakta sidansvarig"
+	}
+}

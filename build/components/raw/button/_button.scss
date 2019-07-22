@@ -1,7 +1,12 @@
 
 .rh-button {
+    /* Positionering */
     position: relative;
+
+    /* Box-modell/beteende */
     display: inline-block;
+
+    /* Visuellt */
     padding-top: em(10);
     padding-right: em(6);
     padding-bottom: em(10);
@@ -10,52 +15,77 @@
     border: 1px solid $grey-base;
     border-radius: 4px;
     box-shadow: 1px 2px 6px $color-shadow;
+
+    /* Typografi */
     color: $black;
     text-align: center;
     font-family: inherit;
     font-size: $font-size-small;
     line-height: em(16);
+
+    /* Blandat/övrigt */
     outline: none;
         
     &:hover{
+        /* Typografi */
         text-decoration: underline;
     }
     &:active{
+        /* Visuellt */
         background-color: $grey-lightest;
         border: 1px solid $grey-base;
+
+        /* Typografi */
         color: $black;
         text-decoration: none;
     }
     &:disabled{
+        /* Visuellt */
         background-color: $grey-lighter;
-        color: $grey-base;
         border: 0px;
+
+        /* Typografi */
+        color: $grey-base;
         text-decoration: none;
     }
 
     &--primary {
+        /* Visuellt */
         background-color: $color-primary;
+
+        /* Typografi */
         color: $white;
         &:hover{
+            /* Typografi */
             text-decoration: underline;
         }
         &:active{
+            /* Visuellt */
             background-color: $white;
             border: 1px solid $color-primary;
+
+            /* Typografi */
             color: $color-primary;
             text-decoration: none;
         }
     }
 
     &--secondary {
+        /* Visuellt */
         background-color: $color-secondary;
+
+        /* Typografi */
         color: $white;
         &:hover{
+            /* Typografi */
             text-decoration: underline;
         }
         &:active{
+            /* Visuellt */
             background-color: $white;
             border: 1px solid $color-secondary;
+
+            /* Typografi */
             color: $color-secondary;
             text-decoration: none;
         }      
@@ -64,27 +94,37 @@
     &--icon {
 
         &:after{
+            /* Box-modell/beteende */
             display: inline-block;
             margin-left: em(16);
+
+            /* Typografi */
             font-family: "feather";
+
+            /* Blandat/övrigt */
             content: "\e844";
         }
-
     }
 
     @include medium {
+        /* Visuellt */
         padding-top: em(8);
         padding-right: em(8);
         padding-bottom: em(8);
         padding-left: em(8);
+
+        /* Typografi */
         font-size: $font-size-medium;
         line-height: em(21);
     }
     @include large {
+        /* Visuellt */
         padding-top: em(10);
         padding-right: em(10);
         padding-bottom: em(10);
         padding-left: em(10);
+
+        /* Typografi */
         font-size: $font-size-large;
         line-height: em(24);
     }

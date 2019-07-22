@@ -1,107 +1,177 @@
 .rh-search-field {
+    /* Positionering */
+    align-items: center;
+
+    /* Box-modell/beteende */
     display: flex;
-    align-items: center;  
     width: 100%;
 
-  .rh-search-term {
-    width: 100%;
-    padding: em(10);
-    margin-right:-5px;
-    border-top: 1px solid $grey-light;
-    border-left: 1px solid $grey-light;
-    border-bottom: 1px solid $grey-light;
-    border-right: 0; 
-    border-radius: 4px 0 0 4px;
-    color: $grey-darker;
-    font-size: $p-small;
-    @include medium { font-size: $p-medium;}
-    @include large { font-size: $p-large;}
-    outline: none;
+    .rh-search-term {
+        /* Box-modell/beteende */
+        width: 100%;
+        padding: em(10);
+        margin-right: -5px;
 
-    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-      color: $grey-darker;
-      opacity: 1; /* Firefox */
+        /* Visuellt */
+        border-top: 1px solid $grey-light;
+        border-left: 1px solid $grey-light;
+        border-bottom: 1px solid $grey-light;
+        border-right: 0;
+        border-radius: 4px 0 0 4px;
+
+        /* Typografi */
+        color: $grey-darker;
+        font-size: $p-small;
+
+        /* Blandat/övrigt */
+        outline: none;
+
+        @include medium {
+            /* Typografi */
+            font-size: $p-medium;
+        }
+
+        @include large {
+            /* Typografi */
+            font-size: $p-large;
+        }
+
+        &::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            
+            /* Typografi */
+            color: $grey-darker;
+
+            /* Blandat/övrigt */
+            opacity: 1;
+            /* Firefox */
+        }
+
+        &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+
+            /* Typografi */
+            color: $grey-darker;
+        }
+
+        &::-ms-input-placeholder {
+            /* Microsoft Edge */
+
+            /* Typografi */
+            color: $grey-darker;
+        }
+
+        &:focus {
+            /* Visuellt */
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+            border-right: 0;
+        }
+
+        &-larger {
+            /* Box-modell/beteende */
+            padding: em(15);
+
+            /* Typografi */
+            font-size: $p-large;
+
+            @include large {
+                /* Box-modell/beteende */
+                padding: em(20);
+            }
+        }
+
+        &:disabled {
+            /* Visuellt */
+            border: 1px solid $grey-light;
+            background-color: $grey-lightest;
+            
+            /* Blandat/övrigt */
+            cursor: not-allowed;
+            
+            &::placeholder {
+                /* Chrome, Firefox, Opera, Safari 10.1+ */
+                
+                /* Typografi */
+                color: $grey-base;
+
+                /* Blandat/övrigt */
+                opacity: 1;
+                /* Firefox */
+            }
+
+            &:-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                /* Typografi */
+                color: $grey-base;
+            }
+
+            &::-ms-input-placeholder {
+                /* Microsoft Edge */
+                /* Typografi */
+                color: $grey-base;
+            }
+        }
     }
 
-    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-      color: $grey-darker;
+    .rh-search-button {
+        /* Box-modell/beteende */
+        padding: em(10);
+
+        /* Visuellt */
+        border: 1px solid $base3-dark;
+        border-radius: 0 4px 4px 0;
+        background: $base3;
+
+        /* Typografi */
+        color: white;
+        text-align: center;
+        color: $white;
+        font-size: $p-small;
+
+        /* Blandat/övrigt */
+        cursor: pointer;
+
+        @include medium {
+            /* Typografi */
+            font-size: $p-medium;
+        }
+
+        @include large {
+            /* Typografi */
+            font-size: $p-large;
+        }
+
+        &:active {
+            /* Visuellt */
+            border: 1px solid $complementary2;
+            background: $complementary2;
+        }
+
+        &-larger {
+            /* Box-modell/beteende */
+            padding: em(15);
+
+            /* Typografi */
+            font-size: $p-large;
+
+            @include large {
+                /* Box-modell/beteende */
+                padding: em(20);
+            }
+        }
+
+        &:disabled {
+            /* Visuellt */
+            border: 1px solid $grey-light;
+            background-color: $grey-light;
+
+            /* Typografi */
+            color: $grey-dark;
+
+            /* Blandat/övrigt */
+            cursor: not-allowed;
+        }
     }
-
-    &::-ms-input-placeholder { /* Microsoft Edge */
-      color: $grey-darker;
-    }
-
-    &:focus{
-      border-top: 1px solid black;
-      border-left: 1px solid black;
-      border-bottom: 1px solid black;
-      border-right: 0; 
-
-    }
-
-    &-larger{
-      font-size: $p-large;
-      padding: em(15);
-      @include large {padding: em(20);}
-    }
-
-    &:disabled{
-      cursor: not-allowed;
-      border: 1px solid $grey-light;
-      background-color: $grey-lightest;
-
-      &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: $grey-base;
-        opacity: 1; /* Firefox */
-      }
-      
-      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-        color: $grey-base;
-      }
-
-      &::-ms-input-placeholder { /* Microsoft Edge */
-        color: $grey-base;
-      }
-
-    }
-
-  }
-
-  .rh-search-button {
-    padding: em(10);
-    border: 1px solid $base3-dark;
-    border-radius: 0 4px 4px 0;
-    background: $base3;
-    color: white;
-    text-align: center;
-    color: $white;
-    cursor: pointer;
-    font-size: $p-small;
-    @include medium { font-size: $p-medium;}
-    @include large { font-size: $p-large;}
-
-    &:active{
-      border: 1px solid $complementary2;
-      background: $complementary2;
-    }
-
-    &-larger{
-      font-size: $p-large;
-      padding: em(15);
-      @include large {padding: em(20);}
-    }
-
-    &:disabled{
-      cursor: not-allowed;
-      border: 1px solid $grey-light;
-      background-color: $grey-light;
-      color: $grey-dark;
-    }
-
-
-  }
-
 }
-
-
-
