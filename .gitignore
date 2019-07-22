@@ -1,27 +1,12 @@
+# General
+.vs
+.vscode
+.idea
+.DS_Store
+
 # Node
 node_modules
 
-# Driftinfo
-releases/driftinfo/*
-!releases/driftinfo/.git
-!releases/driftinfo/README.md
-
-# Musikhallandia
-releases/musikhallandia/*
-!releases/musikhallandia/.git
-!releases/musikhallandia/README.md
-
-# Region Halland
-releases/regionhalland/*
-!releases/regionhalland/.git
-!releases/regionhalland/README.md
-
-# Vårdgivare
-releases/vardgivare/*
-!releases/vardgivare/.git
-!releases/vardgivare/README.md
-
-# Vuxhalland
-releases/vuxhalland/*
-!releases/vuxhalland/.git
-!releases/vuxhalland/README.md
+# build-mappen
+cdn/build/*
+!cdn/build/.gitkeep
