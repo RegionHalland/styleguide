@@ -1,0 +1,203 @@
+.rh-calendar-element {
+    /* Box-modell/beteende */
+    width: em(285);
+
+    &-month {
+        /* Positionering */
+        align-items: center;
+
+        /* Box-modell/beteende */
+        display: flex;
+        justify-content: space-between;
+        padding: em(10);
+
+        /* Visuellt */
+        background: $grey-lightest;
+
+        /* Typografi */
+        text-align: center;
+        font-size: $h5-small;
+
+        &-icon {
+            &-prev {
+                /* Typografi */
+                font-size: $h2-small;
+
+                &:after {
+                    /* Typografi */
+                    font-family: "feather";
+
+                    /* Blandat/övrigt */
+                    content: "\e843";
+                }
+            }
+
+            &-next {
+                /* Typografi */
+                font-size: $h2-small;
+
+                &:after {
+                    /* Typografi */
+                    font-family: "feather";
+
+                    /* Blandat/övrigt */
+                    content: "\e844";
+                }
+            }
+        }
+
+        @include medium {
+            /* Typografi */
+            font-size: $h3-small;
+        }
+
+        @include large {
+            /* Typografi */
+            font-size: $h2-small;
+        }
+    }
+
+    &-days {
+        /* Box-modell/beteende */
+        padding-top: em(5);
+        padding-right: em(10);
+        padding-bottom: em(35);
+        padding-left: em(10);
+
+        /* Visuellt */
+        background: $grey-lighter;
+
+        &-list {
+            /* Box-modell/beteende */
+            display: flex;
+            justify-content: center;
+            padding-top: em(20);
+            padding-bottom: em(20);
+
+            &-item {
+                /* Box-modell/beteende */
+                display: inline-block;
+                width: 13.6%;
+
+                /* Typografi */
+                color: $grey-darker;
+                text-align: center;
+                font-size: $p-small;
+
+                @include medium {
+                    /* Typografi */
+                    font-size: $p-medium;
+                }
+
+                @include large {
+                    /* Typografi */
+                    font-size: $p-large;
+                }
+            }
+        }
+
+        &-date {
+            /* Box-modell/beteende */
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            /* Typografi */
+            text-align: center;
+
+            &-item {
+                /* Box-modell/beteende */
+                display: inline-block;
+                width: 13.6%;
+                padding-top: em(14);
+                padding-bottom: em(14);
+
+                /* Visuellt */
+                border-bottom: 1px solid $grey-lighter;
+                border-right: 1px solid $grey-lighter;
+                background: $white;
+
+                /* Typografi */
+                text-align: center;
+                font-size: $p-small;
+
+                &--option {
+                    /* Box-modell/beteende */
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: em(14);
+                    padding-bottom: em(5);
+
+                    /* Typografi */
+                    font-size: $p-small;
+
+                    &:after {
+                        /* Box-modell/beteende */
+                        margin-top: -3px;
+
+                        /* Typografi */
+                        font-family: "feather";
+
+                        /* Blandat/övrigt */
+                        content: "\e89b";
+
+                        @include medium {
+                            /* Box-modell/beteende */
+                            margin-top: -5px;
+                        }
+
+                        @include large {
+                            /* Box-modell/beteende */
+                            margin-top: -5px;
+                        }
+                    }
+                }
+
+                &--inactive {
+                    /* Visuellt */
+                    background: $grey-lighter;
+
+                    /* Typografi */
+                    color: $grey-dark;
+                }
+
+                &--active {
+                    /* Visuellt */
+                    background: $base2-light;
+
+                    /* Typografi */
+                    color: $black;
+                }
+
+                &--today {
+                    /* Visuellt */
+                    background: $base2;
+
+                    /* Typografi */
+                    font-weight: bold;
+                    color: $white;
+                }
+
+                @include medium {
+                    /* Typografi */
+                    font-size: $p-medium;
+                }
+
+                @include large {
+                    /* Typografi */
+                    font-size: $p-large;
+                }
+            }
+        }
+    }
+
+    @include medium {
+        /* Box-modell/beteende */
+        width: em(310);
+    }
+
+    @include large {
+        /* Box-modell/beteende */
+        width: em(350);
+    }
+}
