@@ -1,0 +1,98 @@
+{
+	"title": "Form control - Text",
+    "status": "prototype",
+    "version": "0.0.0",
+	"context": {
+        "name": "form-control__text",
+        "extendClass": ""
+    },
+    "variants": [
+        {
+            "name": "default",
+            "status": "prototype",
+            "context": {
+                "modifier": "",
+                "labelData": {
+                    "text": "",
+                    "forControlId": "",
+                    "extendClass": "",
+                    "requirement": {
+                        "text": ""
+                    }
+                },
+                "controlData": {
+                    "controlId": "",
+                    "placeholder":"Default placeholder",
+                    "autocompleteType": "",
+                    "extendClass": ""
+                }
+            }
+        },
+        {
+            "name": "disabled",
+            "status": "prototype",
+            "context": {
+                "modifier": "",
+                "isDisabled": true,
+                "labelData": {
+                    "text": "",
+                    "forControlId": "disabledId",
+                    "extendClass": "",
+                    "requirement": {
+                        "text": ""
+                    }
+                },
+                "controlData": {
+                    "controlId": "disabledId",
+                    "placeholder":"Disabled",
+                    "autocompleteType": "",
+                    "extendClass": ""
+                }
+            }
+        },
+        {
+            "name": "success",
+            "status": "prototype",
+            "context": {
+                "modifier": "success",
+                "icon": true,
+                "labelData": {
+                    "text": "Success input text control",
+                    "forControlId": "successId",
+                    "extendClass": "",
+                    "requirement": {
+                        "text": ""
+                    }
+                },
+                "controlData": {
+                    "controlId": "successId",
+                    "placeholder":"Success placeholder",
+                    "autocompleteType": "",
+                    "extendClass": ""
+                }
+            }
+        },
+        {
+            "name": "error",
+            "status": "prototype",
+            "context": {
+                "modifier": "error",
+                "icon": true,
+                "labelData": {
+                    "text": "Error input text control",
+                    "forControlId": "errorId",
+                    "extendClass": "",
+                    "requirement": {
+                        "text": ""
+                    }
+                },
+                "controlData": {
+                    "controlId": "errorId",
+                    "placeholder":"Error placeholder",
+                    "autocompleteType": "",
+                    "extendClass": ""
+                }
+            }
+        }
+    ]
+}

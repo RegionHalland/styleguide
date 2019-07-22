@@ -1,0 +1,51 @@
+{
+	"title": "Form control - Textarea",
+    "status": "prototype",
+    "version": "0.0.0",
+	"context": {
+        "name": "form-control__textarea",
+        "extendClass": ""
+    },
+    "variants": [
+        {
+            "name": "default",
+            "status": "prototype",
+            "context": {
+                "modifier": "",
+                "labelData": {
+                    "text": "",
+                    "forControlId": "textareaId",
+                    "extendClass": "",
+                    "requirement": {
+                        "text": ""
+                    }
+                },
+                "controlData": {
+                    "controlId": "textareaId",
+                    "placeholder":"Default placeholder",
+                    "extendClass": ""
+                }
+            }
+        },
+        {
+            "name": "with label",
+            "status": "prototype",
+            "context": {
+                "modifier": "",
+                "labelData": {
+                    "text": "The sample text",
+                    "forControlId": "textareaId",
+                    "extendClass": "",
+                    "requirement": {
+                        "text": ""
+                    }
+                },
+                "controlData": {
+                    "controlId": "textareaId",
+                    "placeholder":"Placeholder",
+                    "extendClass": ""
+                }
+            }
+        }
+    ]
+}

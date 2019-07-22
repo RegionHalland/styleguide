@@ -19,13 +19,15 @@
 @import 'components/Atoms/caption-hero/_caption-hero.scss';
 @import 'components/Atoms/card/_card.scss';
 @import 'components/Atoms/filter/_filter.scss';
-@import 'components/Atoms/form/_form.scss';
+//@import 'components/Atoms/form/_form.scss';
 @import 'components/Atoms/labels/_labels.scss';
 @import 'components/Atoms/link/_link.scss';
 @import 'components/Atoms/pagination-elements/_pagination-elements.scss';
 @import 'components/Atoms/round-button/_round-button.scss';
 @import 'components/Atoms/search-field/_search-field.scss';
 @import 'components/Atoms/visual-element/_visual-element.scss';
+@import 'components/Atoms/form-control-text/_form-control-text.scss';
+@import 'components/Atoms/form-control-textarea/_form-control-textarea.scss';
 
 // Molecules
 @import 'components/Molecules/article/_article.scss';
@@ -57,6 +59,7 @@
 @import 'components/Molecules/rh-tabs/_rh-tabs.scss';
 @import 'components/Molecules/rh-unit-info/_rh-unit-info.scss';
 @import 'components/Molecules/rh-video/_rh-video.scss';
+@import 'components/Molecules/feedback-form/_feedback-form.scss';
 
 // Organism
 @import 'components/Organism/rh-breadcrums/_rh-breadcrums.scss';
