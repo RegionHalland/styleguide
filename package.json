@@ -1,11 +1,6 @@
 {
   "name": "Stilguide",
-  "version": "5.0.0",
-  "version_driftinfo": "1.0.0",
-  "version_musikhallandia": "2.0.0",
-  "version_regionhalland": "3.0.0",
-  "version_vardgivare": "4.0.0",
-  "version_vuxhalland": "5.0.0",
+  "version": "5.1.0",
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
     "@frctl/mandelbrot": "^1.2.1",
