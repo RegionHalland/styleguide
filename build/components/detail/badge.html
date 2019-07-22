@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="../../theme/css/theme.css?cachebust=1.2.1" type="text/css">
 
 
-<title>Avatar | Stilguide - Region Halland</title>
+<title>Badge | Stilguide - Region Halland</title>
 
 </head>
 <body>
@@ -113,7 +113,7 @@
     <div class="Pen-panel Pen-header">
     <h1 class="Pen-title">
         <a class="Pen-previewLink" href="../preview/badge.html" title="Component preview">
-            Avatar
+            Badge
             <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
@@ -211,8 +211,8 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-e78122fe0270584638c66e840b4e436a-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-avatar"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-content"</span>&gt;</span> JM <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-badge"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge-content"</span>&gt;</span>JM<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -221,7 +221,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-e78122fe0270584638c66e840b4e436a-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-avatar"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"avatar-content"</span>&gt;</span> JM <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-badge"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"badge-content"</span>&gt;</span>JM<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
 
@@ -231,8 +231,8 @@
         
             
             <pre>{
-  <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Button Default"</span>,
-  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"rh-button"</span>
+  <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Badge Default"</span>,
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"rh-badge"</span>
 }</pre>
             
         
@@ -250,13 +250,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-c846d6f3dbaa657b60dfe46a634734f0">_badge.scss</option>
+                <option value="file-321c26eeb7216e4c2172a2197d77a033">_badge.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-c846d6f3dbaa657b60dfe46a634734f0" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-321c26eeb7216e4c2172a2197d77a033" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -265,38 +265,48 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
                                 <pre><span class="hljs-selector-class">.rh-badge</span> {
-        <span class="hljs-attribute">position</span>: relative;
-        <span class="hljs-attribute">width</span>: em(<span class="hljs-number">110</span>);
-        <span class="hljs-attribute">height</span>: em(<span class="hljs-number">110</span>);
-        <span class="hljs-comment">//box-sizing: border-box;</span>
-        <span class="hljs-attribute">cursor</span>: pointer;
+    <span class="hljs-comment">/* Positionering */</span>
+    <span class="hljs-attribute">position</span>: relative;
 
-        <span class="hljs-attribute">background</span>: <span class="hljs-variable">$base2-light</span>;
-        <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+    <span class="hljs-comment">/* Box-modell/beteende */</span>
+    <span class="hljs-attribute">height</span>: em(<span class="hljs-number">110</span>);
+    <span class="hljs-attribute">width</span>: em(<span class="hljs-number">110</span>);
+    <span class="hljs-comment">//box-sizing: border-box;</span>
 
-        <span class="hljs-selector-class">.avatar-content</span> {
-            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$black</span>;
-            <span class="hljs-attribute">float</span>: left;
-            <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1</span>;
-            <span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">0.5em</span>;
-            <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">50%</span>;
-            <span class="hljs-attribute">text-align</span>: center;
-            <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-            <span class="hljs-attribute">font-weight</span>: bold;
-            <span class="hljs-attribute">font-size</span>: em(<span class="hljs-number">20</span>); 
-            @<span class="hljs-keyword">include</span> medium { <span class="hljs-attribute">font-size</span>: em(<span class="hljs-number">30</span>);}
-            @<span class="hljs-keyword">include</span> large { <span class="hljs-attribute">font-size</span>: em(<span class="hljs-number">50</span>);}
-        }
+    <span class="hljs-comment">/* Visuellt */</span>
+    <span class="hljs-attribute">background</span>: <span class="hljs-variable">$base2-light</span>;
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+    
+    <span class="hljs-comment">/* Blandat/övrigt */</span>
+    <span class="hljs-attribute">cursor</span>: pointer;
 
-        @<span class="hljs-keyword">include</span> medium {
-            <span class="hljs-attribute">width</span>: em(<span class="hljs-number">122</span>);
-            <span class="hljs-attribute">height</span>: em(<span class="hljs-number">122</span>);
-        }
-        @<span class="hljs-keyword">include</span> large {
-            <span class="hljs-attribute">width</span>: em(<span class="hljs-number">162</span>);
-            <span class="hljs-attribute">height</span>: em(<span class="hljs-number">162</span>);
-        }
+    <span class="hljs-selector-class">.badge-content</span> {
+        <span class="hljs-comment">/* Box-modell/beteende */</span>
+        <span class="hljs-attribute">float</span>: left;
+        <span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">0.5em</span>;
+        <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">50%</span>;
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+
+        <span class="hljs-comment">/* Typografi */</span>
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$black</span>;
+        <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1</span>;
+        <span class="hljs-attribute">text-align</span>: center;
+        <span class="hljs-attribute">font-weight</span>: bold;
+        
+        <span class="hljs-comment">// font-size: em(20); </span>
+        <span class="hljs-comment">// @include medium { font-size: em(30);}</span>
+        <span class="hljs-comment">// @include large { font-size: em(50);}</span>
     }
+
+    @<span class="hljs-keyword">include</span> medium {
+        <span class="hljs-attribute">height</span>: em(<span class="hljs-number">122</span>);
+        <span class="hljs-attribute">width</span>: em(<span class="hljs-number">122</span>);
+    }
+    @<span class="hljs-keyword">include</span> large {
+        <span class="hljs-attribute">height</span>: em(<span class="hljs-number">162</span>);
+        <span class="hljs-attribute">width</span>: em(<span class="hljs-number">162</span>);
+    }
+}
 </pre>
                             </code>
                             
@@ -309,11 +319,11 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">components/Atoms/badge/_badge.scss</span>
+                    <span class="Meta-value">components\Atoms\badge\_badge.scss</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">801 Bytes</span>
+                    <span class="Meta-value">909 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -354,7 +364,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">components/Atoms/badge/badge.hbs</span>
+            <span class="Meta-value">components\Atoms\badge\badge.hbs</span>
         </li>
         
         
@@ -916,8 +926,104 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="article.html" data-pjax>
+                <span>Article</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="block.html" data-pjax>
+                <span>Block</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="blurbs.html" data-pjax>
+                <span>Blurbs</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="buttongroup.html" data-pjax>
                 <span>Buttongroup</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="calendar-element.html" data-pjax>
+                <span>Calendar Element</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -950,102 +1056,6 @@
 
 
 <span class="Status-dot" style="border-color: #F00;" title="Skiss"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="rh-article.html" data-pjax>
-                <span>Rh Article</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="rh-block.html" data-pjax>
-                <span>Rh Block</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="rh-blurbs.html" data-pjax>
-                <span>Rh Blurbs</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="rh-calendar-element.html" data-pjax>
-                <span>Rh Calendar Element</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
 
 
 </div>
