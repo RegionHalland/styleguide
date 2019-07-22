@@ -1,0 +1,83 @@
+.rh-message {
+    /* Box-modell/beteende */
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+    padding: em(30);
+    
+    /* Visuellt */
+    background-color: $complementary3-light;
+    
+    /* Typografi */
+	text-align: center;
+    line-height: 1em;
+    
+	@include medium {
+        /* Box-modell/beteende */
+		flex-wrap: nowrap;
+		padding-top: em(20);
+        padding-bottom: em(20);
+        
+        /* Typografi */
+		text-align: left;
+	}
+	
+	&-icon {
+        /* Box-modell/beteende */
+		margin-left: auto;
+        margin-right: auto;
+        
+      	@include medium {
+            /* Box-modell/beteende */
+      		margin-top: em(40);
+      		margin-bottom: em(40);
+      		margin-right: em(40);
+      		margin-left: em(20);
+      	}
+		&:after {
+            /* Box-modell/beteende */
+            padding: em(8);
+            
+            /* Visuellt */
+            background: $complementary3-dark;
+            border-radius: 50%;
+            
+            /* Typografi */
+			color: $white;
+			font-weight: normal;
+	    	font-family: "feather"; 
+            font-size: $p-small;
+            
+            /* Blandat/övrigt */
+            content: "\e81e";
+            
+            /* Typografi */
+			@include medium { font-size: $h4-medium;}
+			@include large { font-size: $h2-large;}
+		}
+	}
+
+	&-text{
+		/* Box-modell/beteende */
+		@include medium { max-width: 539px;}
+		@include large { max-width: 865px;}
+
+		&-title	{
+            /* Typografi */
+			color: $complementary3-dark;
+		}
+
+		&-link {
+            /* Typografi */
+			text-decoration: underline;
+			color: $black;
+
+			&:hover{
+                /* Typografi */
+				text-decoration: none;
+				color: $black;
+			}
+		}
+	}
+}  
