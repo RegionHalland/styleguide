@@ -33,7 +33,6 @@
 @import 'components/Molecules/blurbs/_blurbs.scss';
 @import 'components/Molecules/buttongroup/_buttongroup.scss';
 @import 'components/Molecules/calendar-element/_calendar-element.scss';
-@import 'components/Molecules/rh-cookie-notice/_rh-cookie-notice.scss';
 @import 'components/Molecules/rh-event-card-calendar/_rh-event-card-calendar.scss';
 @import 'components/Molecules/rh-feedback/_rh-feedback.scss';
 @import 'components/Molecules/rh-filter-alphabet/_rh-filter-alphabet.scss';
@@ -57,6 +56,9 @@
 @import 'components/Molecules/rh-tabs/_rh-tabs.scss';
 @import 'components/Molecules/rh-unit-info/_rh-unit-info.scss';
 @import 'components/Molecules/rh-video/_rh-video.scss';
+@import 'components/Molecules/cookie-notice/_cookie-notice.scss';
+@import 'components/Molecules/rh-filter-alphabet/_rh-filter-alphabet.scss';
+@import 'components/Molecules/rh-calendar-element/_rh-calendar-element.scss';
 
 // Organism
 @import 'components/Organism/rh-breadcrums/_rh-breadcrums.scss';

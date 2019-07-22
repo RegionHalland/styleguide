@@ -1,0 +1,74 @@
+.rh-cookie {
+    /* Positionering */
+    justify-content: center;
+    align-items: center;
+
+    /* Box-modell/beteende */
+    display: flex;
+    flex-wrap: wrap;
+    padding: em(20);
+
+    /* Visuellt */
+    background-color: $base2-light;
+
+    @include medium {
+        /* Box-modell/beteende */
+        flex-wrap: nowrap;
+        padding-top: em(10);
+        padding-bottom: em(10);
+    }
+
+    &-description {
+        /* Box-modell/beteende */
+        margin-bottom: em(15);
+        margin-top: em(15);
+        margin-right: 0;
+
+        @include medium {
+            /* Box-modell/beteende */
+            margin-bottom: 0;
+            margin-top: 0;
+            margin-right: em(40);
+        }
+    }
+
+    &-icon {
+        @include medium {
+            /* Box-modell/beteende */
+            margin: em(20);
+        }
+
+        &:after {
+            /* Box-modell/beteende */
+            padding: em(8);
+
+            /* Visuellt */
+            background: transparent;
+
+            /* Typografi */
+            color: $black;
+            border-radius: 50%;
+            font-weight: normal;
+            font-family: "feather";
+            font-size: $p-small;
+
+            /* Blandat/övrigt */
+            content: "\e81c";
+
+            @include medium {
+                /* Typografi */
+                font-size: $h4-medium;
+            }
+
+            @include large {
+                /* Typografi */
+                font-size: $h2-large;
+            }
+        }
+    }
+}
+
+.cookie-button {
+    /* Typografi */
+    white-space: nowrap;
+}
