@@ -1,0 +1,64 @@
+{
+    "name": "sites-building",
+    "version": "1.0.0",
+    "description": "Using for the automatic build and release the web styling",
+    "sites": [
+        {
+            "name": "driftinfo",
+            "version": "1.1.0",
+            "resources": {
+                "jsComponents": [],
+                "scssComponents": [ "sites/driftinfo/driftinfo.scss" ]
+            }
+        },
+        {
+            "name": "musikhallandia",
+            "version": "1.0.0",
+            "resources": {
+                "jsComponents": [],
+                "scssComponents": [ "sites/musikhallandia/musikhallandia.scss" ]
+            }
+        },
+        {
+            "name": "regionhalland",
+            "version": "1.0.0",
+            "resources": {
+                "jsComponents": [],
+                "scssComponents": [ "sites/regionhalland/regionhalland.scss" ]
+            }
+        },
+        {
+            "name": "vardgivare",
+            "version": "1.0.0",
+            "resources": {
+                "jsComponents": [],
+                "scssComponents": [ "sites/vardgivare/vardgivare.scss" ]
+            }
+        },
+        {
+            "name": "vuxhalland",
+            "version": "1.0.0",
+            "resources": {
+                "jsComponents": [],
+                "scssComponents": [ "sites/vuxhalland/vuxhalland.scss" ]
+            }
+        },
+        {
+            "name": "stilguide",
+            "version": "1.0.0",
+            "resources": {
+                "jsComponents": [
+                    "components/Molecules/rh-video/rh-video.js", 
+                    "components/Molecules/rh-linkgroup/rh-linkgroup.js",
+                    "components/Organism/rh-search/rh-search.js",
+                    "components/Organism/rh-table/rh-table.js"
+                ],
+                "scssComponents": [ "components/scss/main.scss" ]
+            }
+        }
+    ],
+    "building": {
+        "publicPath": "cdn/build",
+        "releasePath": "../RH-cdn/releases"
+    }
+}

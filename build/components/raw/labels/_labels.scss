@@ -1,23 +1,27 @@
-.rh-labels{
+.rh-labels {
+	/* Box-modell/beteende */
 	display: inline-block;
 	vertical-align: baseline;
-	white-space: nowrap;
 	min-width: em(11);
 	padding-top: em(5);
 	padding-bottom: em(5);
 	padding-right: em(9);
 	padding-left: em(9);
 	border-radius: em(12);
-	font-size: em(14);
 	margin-right: em(10);
+
+	/* Visuellt */
 	background-color: $base3-light;
+
+	/* Typografi */
+	font-size: em(14);
 	color: $black;
 	text-align: center;
-  	line-height: 1;
-
-	@include large{
+	line-height: 1;
+	white-space: nowrap;
+    
+	@include large {
+		/* Box-modell/beteende */
 		min-width: em(12);
-
 	}
-
 }

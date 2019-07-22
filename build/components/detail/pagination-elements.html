@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="../../theme/css/theme.css?cachebust=1.2.1" type="text/css">
 
 
-<title>#183 Paginering elements | Stilguide - Region Halland</title>
+<title>Paginering elements | Stilguide - Region Halland</title>
 
 </head>
 <body>
@@ -113,7 +113,7 @@
     <div class="Pen-panel Pen-header">
     <h1 class="Pen-title">
         <a class="Pen-previewLink" href="../preview/pagination-elements.html" title="Component preview">
-            #183 Paginering elements
+            Paginering elements
             <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
@@ -237,8 +237,8 @@
         
             
             <pre>{
-  <span class="hljs-attr">"caption"</span>: <span class="hljs-literal">null</span>,
-  <span class="hljs-attr">"name"</span>: <span class="hljs-literal">null</span>
+  <span class="hljs-attr">"caption"</span>: <span class="hljs-string">"Paginering elements Default"</span>,
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"rh-pagination-link"</span>
 }</pre>
             
         
@@ -256,13 +256,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-72c3b57d66f9fb04676da6772d3ae043">_pagination-elements.scss</option>
+                <option value="file-61ecb558238cea6ab3265eb2d673048f">_pagination-elements.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-72c3b57d66f9fb04676da6772d3ae043" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-61ecb558238cea6ab3265eb2d673048f" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -271,31 +271,51 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
                                 <pre><span class="hljs-selector-class">.rh-pagination-link</span> {
-  <span class="hljs-attribute">padding-top</span>: em(<span class="hljs-number">10</span>);
-  <span class="hljs-attribute">padding-bottom</span>: em(<span class="hljs-number">10</span>);
-  <span class="hljs-attribute">padding-left</span>: em(<span class="hljs-number">15</span>);
-  <span class="hljs-attribute">padding-right</span>: em(<span class="hljs-number">15</span>);
-  <span class="hljs-attribute">text-decoration</span>: none;
-  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$black</span>;
-  <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-small</span>;
-  @<span class="hljs-keyword">include</span> medium {<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-medium</span>;}
-  @<span class="hljs-keyword">include</span> large {<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-large</span>;}
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">0.75px</span> solid <span class="hljs-variable">$grey-dark</span>;
+    <span class="hljs-comment">/* Box-modell/beteende */</span>
+    <span class="hljs-attribute">padding-top</span>: em(<span class="hljs-number">10</span>);
+    <span class="hljs-attribute">padding-bottom</span>: em(<span class="hljs-number">10</span>);
+    <span class="hljs-attribute">padding-left</span>: em(<span class="hljs-number">15</span>);
+    <span class="hljs-attribute">padding-right</span>: em(<span class="hljs-number">15</span>);
 
-  &amp;:active, &amp;:hover {
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$base3</span>;
-    <span class="hljs-attribute">color</span>: white;
-  }
-  &amp;-previous {
-    <span class="hljs-attribute">border-top-left-radius</span>: <span class="hljs-number">4px</span>;
-    <span class="hljs-attribute">border-bottom-left-radius</span>: <span class="hljs-number">4px</span>;
-  }
-  &amp;-next {
-    <span class="hljs-attribute">border-top-right-radius</span>: <span class="hljs-number">4px</span>;
-    <span class="hljs-attribute">border-bottom-right-radius</span>: <span class="hljs-number">4px</span>;
-  }
-}
-</pre>
+    <span class="hljs-comment">/* Visuellt */</span>
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">0.75px</span> solid <span class="hljs-variable">$grey-dark</span>;
+
+    <span class="hljs-comment">/* Typografi */</span>
+    <span class="hljs-attribute">text-decoration</span>: none;
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$black</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-small</span>;
+
+    @<span class="hljs-keyword">include</span> medium {
+        <span class="hljs-comment">/* Typografi */</span>
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-medium</span>;
+    }
+
+    @<span class="hljs-keyword">include</span> large {
+        <span class="hljs-comment">/* Typografi */</span>
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-large</span>;
+    }
+
+    &amp;:active,
+    &amp;:hover {
+        <span class="hljs-comment">/* Visuellt */</span>
+        <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$base3</span>;
+
+        <span class="hljs-comment">/* Typografi */</span>
+        <span class="hljs-attribute">color</span>: white;
+    }
+
+    &amp;-previous {
+        <span class="hljs-comment">/* Visuellt */</span>
+        <span class="hljs-attribute">border-top-left-radius</span>: <span class="hljs-number">4px</span>;
+        <span class="hljs-attribute">border-bottom-left-radius</span>: <span class="hljs-number">4px</span>;
+    }
+
+    &amp;-next {
+        <span class="hljs-comment">/* Visuellt */</span>
+        <span class="hljs-attribute">border-top-right-radius</span>: <span class="hljs-number">4px</span>;
+        <span class="hljs-attribute">border-bottom-right-radius</span>: <span class="hljs-number">4px</span>;
+    }
+}</pre>
                             </code>
                             
                         </div>
@@ -307,11 +327,11 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">components/Atoms/pagination-elements/_pagination-elements.scss</span>
+                    <span class="Meta-value">components\Atoms\pagination-elements\_pagination-elements.scss</span>
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">553 Bytes</span>
+                    <span class="Meta-value">902 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -352,7 +372,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">components/Atoms/pagination-elements/pagination-elements.hbs</span>
+            <span class="Meta-value">components\Atoms\pagination-elements\pagination-elements.hbs</span>
         </li>
         
         
@@ -914,8 +934,104 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="article.html" data-pjax>
+                <span>Article</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="block.html" data-pjax>
+                <span>Block</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="blurbs.html" data-pjax>
+                <span>Blurbs</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="buttongroup.html" data-pjax>
                 <span>Buttongroup</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="calendar-element.html" data-pjax>
+                <span>Calendar Element</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -948,102 +1064,6 @@
 
 
 <span class="Status-dot" style="border-color: #F00;" title="Skiss"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="rh-article.html" data-pjax>
-                <span>Rh Article</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="rh-block.html" data-pjax>
-                <span>Rh Block</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="rh-blurbs.html" data-pjax>
-                <span>Rh Blurbs</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="rh-calendar-element.html" data-pjax>
-                <span>Rh Calendar Element</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
 
 
 </div>
