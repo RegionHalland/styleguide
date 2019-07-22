@@ -1,0 +1,24 @@
+{
+	"title": "Sekundär navigering",
+    "status": "wip",
+	"context": {
+		"cards": [
+            {
+                "link": {
+                    "title": "Förklara vart länken leder",
+                    "toPage": "",
+                    "text": "Link to subpage"
+                },
+                "description": "This text describes the content that can be found on the subpage"
+            },
+            {
+                "link": {
+                    "title": "Förklara vart länken leder",
+                    "toPage": "",
+                    "text": "Link to another subpage"
+                },
+                "description": "This text describes the content that can be found on the subpage"
+            }
+        ]
+	}		
+}
