@@ -1,0 +1,74 @@
+.rh-navigation-card{
+    /* Box-modell/beteende */
+	margin-bottom: em(45);
+	@include medium { height: 6em; }
+	@include large { height: 5em; }
+
+	.rh-navigation-card-title{
+
+		&-icon {
+			&:after {
+                /* Box-modell/beteende */
+				margin-right: 1ex;
+                padding: em(6);
+                
+                /* Visuellt */
+                background: $base3;
+				border-radius: 50%;
+                
+                /* Typografi */
+				color: white;
+				font-weight: normal;
+		    	font-family: "feather";
+                font-size: $p-small;
+                
+                /* Blandat/övrigt */
+                content: "\e829";
+                
+                /* Typografi */
+				@include medium { font-size: $p-medium;}
+				@include large { font-size: $p-large;}
+			}
+		}
+
+		&-link{
+            /* Box-modell/beteende */
+            display: inline-block;
+            
+            /* Typografi */
+		    font-size: inherit;
+		    text-decoration: none;
+            color: $color-primary;
+            line-height: 1em;
+
+            /* Blandat/övrigt */
+		    cursor: pointer;
+
+		    &:hover,
+		    &:active {
+                /* Typografi */
+		        text-decoration: underline;  
+		    }
+
+		    &:visited {
+                /* Typografi */
+		        color: $link-visited;
+		    }
+		}
+	}
+
+	.rh-navigation-card-description{
+        /* Box-modell/beteende */
+		max-width: 95%;
+        padding-top: 1ex;
+        
+        /* Typografi */
+		color: $grey-dark;
+	}
+}
+
+
+
+
+
+
