@@ -1,0 +1,27 @@
+<div class="rh-feedback-form" aria-label="Ge feedback information">
+    <div>
+        <p class="rh-feedback-form__header__title">{{title}}</p>
+    </div>
+    <div class="rh-feedback-form__body">
+        <form action="#">
+            <p class="rh-form__text--muted">
+                <span class="rh-form__text--required">*</span> =
+                Obligatorisk uppgift</p>
+            <p class="rh-form__text--muted">
+                <span class="rh-form__text--required">**</span> ==
+                Icke Obligatorisk uppgift</p>
+
+            {{render '@form-control-textarea' message merge=true}}
+
+            <div class="rh-feedback-form__body__description">
+                <p class="rh-feedback-form__body__description-text">{{privacyDescription}}</p>
+                <p class="rh-feedback-form__body__description-text">{{render '@link' linkToPrivacy merge=true}}
+                </p>
+            </div>
+
+            {{render '@form-control-text' email merge=true}}
+            {{render '@button--primary' btnSend merge=true}}
+
+        </form>
+    </div>
+</div>

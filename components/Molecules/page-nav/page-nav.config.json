@@ -1,0 +1,29 @@
+{
+    "title": "Hitta på sidan",
+    "status": "wip",
+    "context": {
+        "title": "Sidans innehåll",
+        "links": [
+            {
+                "title": "",
+                "toPage": "",
+                "text": "Link Alternative"
+            },
+            {
+                "title": "",
+                "toPage": "",
+                "text": "Link Alternative"
+            },
+            {
+                "title": "",
+                "toPage": "",
+                "text": "Link Alternative"
+            },
+            {
+                "title": "",
+                "toPage": "",
+                "text": "Link Alternative"
+            }
+        ]
+    }
+}

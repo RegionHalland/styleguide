@@ -1,0 +1,154 @@
+.rh-event-card-calendar {
+    /* Positionering */
+    align-items: flex-start;
+
+    /* Box-modell/beteende */
+    display: flex;
+
+    &-small {
+        /* Positionering */
+        align-items: center;
+
+        /* Box-modell/beteende */
+        margin-top: em(2);
+    }
+
+    &-date {
+        /* Positionering */
+        align-content: center;
+
+        /* Box-modell/beteende */
+        flex: 0 0 60px;
+        height: 60px;
+        width: 60px;
+
+        /* Visuellt */
+        background-color: $base2;
+
+        /* Typografi */
+        text-align: center;
+
+        @include medium {
+            /* Box-modell/beteende */
+            flex: 0 0 80px;
+            height: 80px;
+            width: 80px;
+        }
+
+        &-day {
+            /* Box-modell/beteende */
+            margin-top: em(8);
+
+            /* Typografi */
+            color: $white;
+            line-height: 1.25em;
+
+            @include medium {
+                /* Box-modell/beteende */
+                margin-top: em(12);
+            }
+
+            @include large {
+                /* Box-modell/beteende */
+                margin-top: em(10);
+            }
+        }
+
+        &-month {
+            /* Typografi */
+            color: $white;
+            line-height: 1em;
+            font-weight: normal;
+        }
+    }
+
+    &-description {
+        /* Box-modell/beteende */
+        margin-left: em(20);
+    }
+
+    &-title {
+        /* Typografi */
+        line-height: 1.25em;
+
+        &-link {
+            /* Typografi */
+            font-size: inherit;
+            text-decoration: none;
+            color: inherit;
+
+            /* Blandat/övrigt */
+            cursor: pointer;
+
+            &:hover,
+            &:active {
+                /* Typografi */
+                text-decoration: underline;
+            }
+
+            &:visited {
+                /* Typografi */
+                color: $link-visited;
+            }
+        }
+    }
+
+    &-inline {
+        /* Box-modell/beteende */
+        display: inline-block;
+    }
+
+
+    &-time {
+        /* Typografi */
+        color: $grey-darkest;
+
+        &:before {
+            /* Typografi */
+            font-family: "feather";
+
+            /* Blandat/övrigt */
+            content: "\e84d";
+        }
+
+        &-small {
+            /* Box-modell/beteende */
+            margin-bottom: 0;
+
+            /* Typografi */
+            line-height: em(10);
+        }
+    }
+
+    &-place {
+        /* Typografi */
+        color: $grey-darkest;
+
+        &:before {
+            /* Typografi */
+            font-family: "feather";
+            color: $color-secondary;
+
+            /* Blandat/övrigt */
+            content: "\e83f";
+        }
+
+        &-small {
+            /* Box-modell/beteende */
+            margin-bottom: 0;
+
+            /* Typografi */
+            line-height: em(10);
+        }
+    }
+
+    &__place--busy {
+        &:before {
+            /* Typografi */
+            color: $warning;
+
+            /* Blandat/övrigt */
+            content: "\e8f6";
+        }
+    }
+}

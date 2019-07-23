@@ -1,0 +1,24 @@
+<div class="rh-form-group{{#if icon}} rh-form-group--has-icon{{/if}}">
+    {{!-- Label for the control --}}
+    {{#if labelData.text}}
+    <label for="{{labelData.forControlId}}" class="rh-form__label{{#if labelData.extendClass}} {{labelData.extendClass}}{{/if}}">
+        {{labelData.text}}
+        {{!-- Extend text for requirement --}}
+        {{#if labelData.requirement.text}}
+        <span class="rh-form__label-text--required">{{labelData.requirement.text}}</span>
+        {{/if}}
+    </label>
+    {{/if}}
+    {{!-- Input text control --}}
+    {{#if controlData}}
+    <input id="{{controlData.controlId}}" type="text" class="rh-form__control{{#if modifier}} rh-form__control--{{modifier}}{{/if}}{{#if controlData.extendClass}} {{controlData.extendClass}}{{/if}}"
+        placeholder="{{controlData.placeholder}}" {{#if controlData.autocompleteType}}autocomplete="{{controlData.autocompleteType}}" {{/if}}
+        {{#if isDisabled}}disabled{{/if}}>
+    {{/if}}
+    {{!-- Icon is within control --}}
+    {{#if icon}}
+    {{#if modifier}}
+    <span class="rh-form-icon rh-form-icon--{{modifier}} rh-form-icon__placeholder"></span>
+    {{/if}}
+    {{/if}}
+</div>

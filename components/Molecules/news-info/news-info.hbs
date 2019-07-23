@@ -1,0 +1,15 @@
+<div class="rh-news-info">
+	<div class="rh-news-info-title">
+		<p class="rh-news-info-text"> {{publishInfo.text}}:</p>
+		<p class="rh-news-info-text"> {{subjectInfo.text}}:</p>
+	</div>
+
+	<div class="rh-news-info-description">
+		<p class="rh-news-info-text"><time datetime="{{publishInfo.datetime.attrValue}}">{{publishInfo.datetime.text}}</time></p>
+		<p>
+            {{#each subjectInfo.subjects}}
+            <a class="rh-news-info-text-link">{{text}}</a>, 
+            {{/each}}
+        </p>
+	</div>
+</div>

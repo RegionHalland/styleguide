@@ -1,0 +1,40 @@
+.demo {
+    /* Box-modell/beteende */
+    max-width: 416px;
+
+    .rh-block {
+        /* Positionering */
+        position: relative;
+
+        /* Box-modell/beteende */
+        width: 100%;
+
+        /* Visuellt */
+        border-bottom: 4px solid $color-primary;
+        
+        /* Typografi */
+        text-align: left;
+
+        .rh-text {
+            /* Box-modell/beteende */
+            margin-top: 0;
+            padding: em(15);
+            box-sizing: border-box;
+
+            /* Visuellt */
+            border: 1px solid $grey-lighter;
+
+            h3 {
+                /* Typografi */
+                color: $color-primary;
+                font-weight: normal;
+            }
+        }
+
+        img {
+            /* Box-modell/beteende */
+            width: 100%;
+            margin-bottom: -10px;
+        }
+    }
+}

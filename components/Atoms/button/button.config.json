@@ -3,7 +3,8 @@
     "status": "wip",
 	"context": {
 		"text": "Button Default",
-		"name": "rh-button"
+		"name": "rh-button",
+        "extendClass": ""
 	},
 	"variants": [
 		{
