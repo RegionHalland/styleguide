@@ -1,0 +1,31 @@
+{
+    "title": "Caption mini",
+    "status": "prototype",
+    "version": "0.0.0",
+    "variants": [
+        {
+            "name": "default",
+            "status": "prototype",
+            "context": {
+                "modifier": "--square",
+                "extendClass": "",
+                "text": {
+                    "content": "20 november",
+                    "extendClass": ""
+                }
+            }
+        },
+        {
+            "name": "has-triangle",
+            "status": "prototype",
+            "context": {
+                "modifier": "--has-triangle",
+                "extendClass": "",
+                "text": {
+                    "content": "1 april",
+                    "extendClass": ""
+                }
+            }
+        }
+    ]
+}
