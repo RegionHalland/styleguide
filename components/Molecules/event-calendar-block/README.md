@@ -1,5 +1,5 @@
 # Event calendar block
-Många andra komponenter har importerats in i komponenten:
+Återanväning:
 * Atoms/caption-mini
 
 __TIPS!__

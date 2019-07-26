@@ -1,0 +1,47 @@
+{
+    "title": "Image block",
+    "status": "prototype",
+    "version": "0.0.0",
+    "variants": [
+        {
+            "name":"default",
+            "status":"prototype",
+            "context": {
+                "extendClass": "",
+                "heroImage": {
+                    "src": "/images/components/Molecules/event-calendar-block/event-calendar-block.png",
+                    "alt": "",
+                    "extendClass": ""
+                },
+                "caption": {
+                    "modifier": "--under-image",
+                    "extendClass": "rh-image-block-extend__caption",
+                    "text": {
+                        "content": "Copyright by someone",
+                        "extendClass": "rh-image-block-extend__caption__text"
+                    }
+                }
+            }
+        },
+        {
+            "name":"over image",
+            "status":"prototype",
+            "context": {
+                "extendClass": "",
+                "heroImage": {
+                    "src": "/images/components/Molecules/event-calendar-block/event-calendar-block.png",
+                    "alt": "",
+                    "extendClass": ""
+                },
+                "caption": {
+                    "modifier": "--square",
+                    "extendClass": "rh-image-block-extend__caption rh-image-block-extend__caption--over-image--right-bottom",
+                    "text": {
+                        "content": "Copyright by someone",
+                        "extendClass": "rh-image-block-extend__caption__text"
+                    }
+                }
+            }
+        }
+    ]
+}
