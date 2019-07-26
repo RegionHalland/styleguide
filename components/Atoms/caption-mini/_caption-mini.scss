@@ -16,7 +16,7 @@
         left: $caption-mini--left;
     }
 
-    // Använd en av dem åt gången (--has-triangle ELLER --square)
+    // Använd en av dem åt gången (--has-triangle ELLER --square ELLER --under-image)
     &--has-triangle {
         /* Box modell/beteende */
         height: 0;
@@ -33,10 +33,26 @@
     }
 
     &--square {
+        /* Box modell/beteende */
+        width: $caption-mini--square--width;
+        padding: $caption-mini--square--padding;
+
+        /* Visuellt */
         background-color: $caption-mini--square--background-color;
         border-radius: $caption-mini--square--border-radius;
-        padding: $caption-mini--square--padding;
-        width: $caption-mini--square--width;
+    }
+
+    &--under-image {
+        /* Positionering */
+        position: static; // IE11 - Reset position
+
+        /* Box modell/beteende */
+        width: $caption-mini--under-image--width;
+        padding: $caption-mini--under-image--padding;
+
+        /* Visuellt */
+        background-color: $caption-mini--under-image--background-color;
+        border-radius: $caption-mini--under-image--border-radius;
     }
 
     &-text {

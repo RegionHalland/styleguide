@@ -26,6 +26,18 @@
                     "extendClass": ""
                 }
             }
+        },
+        {
+            "name": "under-image",
+            "status": "prototype",
+            "context": {
+                "modifier": "--under-image",
+                "extendClass": "",
+                "text": {
+                    "content": "6 juni",
+                    "extendClass": ""
+                }
+            }
         }
     ]
 }

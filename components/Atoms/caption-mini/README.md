@@ -29,8 +29,8 @@ __TIPS!__ Titta gärna komponenten `Event Calendar Block` för att veta hur man 
 Man kan också använda extra CSS klasser som ska vara i "extendClass" för att skriva över befintliga CSS klasser i komponenten.
 
 Om att byta bakgrundsfärg:
-* `--square` ---> Byta färg för `background-color`
-* `--has-triangle` ---> Byta färg för `border-...`
+* `--square` och `--under-image` ---> Använd `background-color`
+* `--has-triangle` ---> Använd `border-...`
 
 ## 2. Referens
 * [Including Sub-components](https://fractal.build/guide/components/including-sub-components.html)
