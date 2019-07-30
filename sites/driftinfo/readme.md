@@ -7,6 +7,9 @@
 
 ## Versionhistorik
 
+### 1.3.0
+- Inkluderade molekylen "Cookie notice" då den saknades 
+
 ### 1.2.0
 - Inkluderade atomen "button" då den saknades
 
