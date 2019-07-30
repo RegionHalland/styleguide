@@ -5,7 +5,7 @@
     "sites": [
         {
             "name": "driftinfo",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "resources": {
                 "jsComponents": [],
                 "scssComponents": [ "sites/driftinfo/driftinfo.scss" ]

@@ -7,6 +7,9 @@
 
 ## Versionhistorik
 
+### 1.2.0
+- Inkluderade atomen "button" då den saknades
+
 ### 1.1.0
 - Inkluderade molekylen "buttongroup" då den saknades 
 
