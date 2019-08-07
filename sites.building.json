@@ -1,6 +1,6 @@
 {
     "name": "sites-building",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Using for the automatic build and release the web styling",
     "sites": [
         {
