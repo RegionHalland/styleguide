@@ -200,7 +200,7 @@ function build(cb) {
 }
 
 function tmpBuildScss(cb) {
-    gulp.src('sites/tmp/tmp.scss')
+    gulp.src('tmp/tmp.scss')
         .pipe(sourcemaps.init())
         .pipe(
             sass.sync({
