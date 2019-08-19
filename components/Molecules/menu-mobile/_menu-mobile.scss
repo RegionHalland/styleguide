@@ -1,0 +1,270 @@
+@import 'menu-mobile.settings.scss';
+
+/* Mobile dropdown menu - Displays only in SM mode with screen size < 768px*/
+.rh-menu-dropdown {
+    /* Positionering */
+    position: $menu-dropdown__position; // Using when JS is inactivated
+    top: $menu-dropdown__position--top;
+    z-index: $menu-dropdown--z-index;
+
+    /* Box-modell/beteende */
+    width: $menu-dropdown--width;
+    min-width: $menu-dropdown--min-width;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+    &__header {
+        /* Box-modell/beteende */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        height: $menu-dropdown__header--height;
+        padding: $menu-dropdown__header--padding;
+        overflow: hidden;
+        -webkit-transition: $menu-dropdown__header-effect-webkit;
+        transition: $menu-dropdown__header-effect;
+
+        /* Typografi */
+        background-color: $menu-dropdown__color-background-header;
+
+        &-logo-container {
+            /* Box-modell/beteende */
+            display: block;
+            width: $menu-dropdown__header-logo-container--width;
+            max-height: $menu-dropdown__header-logo-container--max-height;
+            max-width: $menu-dropdown__header-logo-container--max-width;
+        }
+
+        &-logo {
+            /* Box-modell/beteende */
+            display: block;
+            width: $menu-dropdown__header-logo--width;
+        }
+
+        &--minimize {
+            /* Box-modell/beteende */
+            height: 0;
+        }
+
+        &--shadow {
+            /* Box-modell/beteende */
+            box-shadow: $menu-dropdown__header-effect--box-shadow;
+        }
+    }
+
+    &__body {
+        /* Box-modell/beteende */
+        width: $menu-dropdown__body--width;
+        background-color: $menu-dropdown__color-background-body;
+
+        @if $menu-dropdown__body--min-width {
+            min-width: $menu-dropdown__body--min-width;
+        }
+        @if $menu-dropdown__body--max-width {
+            max-width: $menu-dropdown__body--max-width;
+        }
+
+        // Right body menu is using with max-width
+        @if $menu-dropdown__body-position == right {
+            /* Positionering */
+            position: absolute;
+            right: 0px;
+        }
+    }
+
+    &__text {
+        margin: 0;
+
+        /* Typografi */
+        font-size: $menu-dropdown__text--font-size;
+        line-height: $menu-dropdown__text--line-height;
+
+        &--active {
+            font-weight: $menu-dropdown__text--active--font-weight;
+        }
+    }
+
+    &__icon {
+        &-menu {
+            /* Box-modell/beteende */
+            display: block;
+            margin: $menu-dropdown__icon-menu--margin;
+        }
+
+        &-item {
+            /* Box-modell/beteende */
+            display: block;
+            margin: $menu-dropdown__icon-item--margin;
+        }
+    }
+
+    &__menu {
+        &-round-button {
+            /* Box-modell/beteende */
+            padding: $menu-dropdown__button-main-menu--padding;
+            height: $menu-dropdown__button-main-menu--height;
+            width: $menu-dropdown__button-main-menu--width;
+
+            /* Visuellt */
+            border: $menu-dropdown__button-main-menu--border;
+            text-align: center;
+
+            /* Typografi */
+            color: $menu-dropdown__color-text--active;
+            background-color: $menu-dropdown__color-main;
+
+            /* Blandat/övrigt */
+            cursor: pointer;
+
+            &:hover,
+            &:active {
+                /* Typografi */
+                color: $menu-dropdown__color-text--active;
+                background-color: $menu-dropdown__color-main;
+            }
+
+            &--open {
+                /* Typografi */
+                color: $menu-dropdown__color-main;
+                background-color: $menu-dropdown__color-background--active;
+
+                &:hover,
+                &:active {
+                    /* Typografi */
+                    color: $menu-dropdown__color-main;
+                    background-color: $menu-dropdown__color_background--active;
+                }
+            }
+        }
+    }
+
+    &__item {
+        /* Box-modell/beteende */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        min-height: $menu-dropdown__item--min-height;
+        padding: $menu-dropdown__item--padding;
+
+        /* Boder style */
+        border-style: $menu-dropdown__item--border-style;
+        border-color: $menu-dropdown__item--border-color;
+        border-width: $menu-dropdown__item--border-width; // 1px
+
+        /* Typografi */
+        background-color: $menu-dropdown__color-background-item;
+
+        &-round-button {
+            /* Box-modell/beteende */
+            margin: $menu-dropdown__item-button--margin;
+            height: $menu-dropdown__item-button--height;
+            width: $menu-dropdown__item-button--width;
+
+            /* Visuellt */
+            border: $menu-dropdown__item-button--border;
+
+            /* Typografi */
+            color: $menu-dropdown__color-text--active;
+            background-color: $menu-dropdown__color-main;
+
+            /* Blandat/övrigt */
+            cursor: pointer;
+
+            &:hover,
+            &:active {
+                /* Typografi */
+                color: $menu-dropdown__color-text--active;
+                background-color: $menu-dropdown__color-main;
+            }
+
+            &--open {
+                /* Visuellt */
+                border: $menu-dropdown__item-button--open--border;
+
+                /* Typografi */
+                color: $menu-dropdown__color-main;
+                background-color: $menu-dropdown__color-background--active;
+
+                &:hover,
+                &:active {
+                    /* Typografi */
+                    color: $menu-dropdown__color-main;
+                    background-color: $menu-dropdown__color-background--active;
+                }
+            }
+        }
+
+        &__sub {
+            &-container {
+                /* Box-modell/beteende */
+                display: block;
+            }
+
+            &-item {
+                /* Typografi */
+                background-color: $menu-dropdown__color-background-item-sub;
+            }
+        }
+
+        &--active {
+            /* Typografi */
+            font-weight: bold;
+            background-color: $menu-dropdown__color-main;
+
+            .rh-menu-dropdown__item-round-button {
+                /* Typografi */
+                color: $menu-dropdown__color-main;
+                background-color: $menu-dropdown__color-background--active;
+            }
+
+            .rh-menu-dropdown__footer-text {
+                /* Typografi */
+                color: $black;
+            }
+        }
+    }
+
+    &__footer {
+        /* Box-modell/beteende */
+        min-height: $menu-dropdown__footer--min-height;
+
+        &-text {
+            /* Typografi */
+            color: $menu-dropdown__color-text-footer;
+        }
+    }
+
+    &__spacing {
+        &-after {
+            &--active {
+                /* Box-modell/beteende */
+                height: $menu-dropdown__header--height;
+
+                @include medium {
+                    /* Box-modell/beteende */
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &--open {
+        /* Positionering */
+        right: $menu-dropdown__position--right;
+        bottom: $menu-dropdown__position--bottom;
+        left: $menu-dropdown__position--left;
+
+        /* Box-modell/beteende */
+        overflow-y: scroll;
+        overscroll-behavior: contain;
+        
+        /* Typografi */
+        background-color: $menu-dropdown__color-overlay;
+    }
+}
