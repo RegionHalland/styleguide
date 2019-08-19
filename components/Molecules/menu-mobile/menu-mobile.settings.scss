@@ -1,0 +1,67 @@
+// Position
+$menu-dropdown--z-index: 30;
+$menu-dropdown__position: relative;
+$menu-dropdown__position--top: 0;
+$menu-dropdown__position--right: 0;
+$menu-dropdown__position--bottom: 0;
+$menu-dropdown__position--left: 0;
+
+$menu-dropdown__color-main: $base3-dark; //Example: #FA3CB4;
+
+$menu-dropdown__color-background-header: #EEE7DB;
+$menu-dropdown__color-background-body: #FBF9F4;
+$menu-dropdown__color-background-item: #FBF9F4;
+$menu-dropdown__color-background-item-sub: #EEE7DB;
+
+$menu-dropdown__color-overlay: rgba(0, 0, 0, 0.3);
+$menu-dropdown__color-background--active: $white;
+$menu-dropdown__color-text--active: $white;
+$menu-dropdown__color-text-footer: $grey-darker;
+
+// Size
+$menu-dropdown--width: 100%;
+$menu-dropdown--min-width: 20em; // 320px iPhone 5
+$menu-dropdown--max-width: false; // Default is false (max-width: 100%)
+
+$menu-dropdown__text--font-size: 1.125em; // 18px
+$menu-dropdown__text--line-height: 3em;
+$menu-dropdown__text--active--font-weight: bold;
+
+$menu-dropdown__button-main-menu--padding: 0 .55em;
+$menu-dropdown__button-main-menu--height: 2.1875em;
+$menu-dropdown__button-main-menu--width: 2.1875em;
+$menu-dropdown__button-main-menu--border: 0.0625em solid $menu-dropdown__color-main;
+
+$menu-dropdown__icon-menu--margin: 0.565em 0 0 0;
+$menu-dropdown__icon-item--margin: 0.09375em 1.875em 0 0.03125em;
+
+$menu-dropdown__header--height: 5em;
+$menu-dropdown__header--padding: 0 0.75em 0 0.4em;
+$menu-dropdown__header-effect: height .3s ease-in-out;
+$menu-dropdown__header-effect-webkit: height .3s; /* Older Safari */
+$menu-dropdown__header-effect--box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+
+$menu-dropdown__header-logo--width: 100%;
+$menu-dropdown__header-logo-container--width: 85%;
+$menu-dropdown__header-logo-container--max-width: 20.625em;
+$menu-dropdown__header-logo-container--max-height: 4.5em;
+
+$menu-dropdown__body-position: false; // Position is only false (left) or right - Using with $menu-dropdown__body--max-width
+$menu-dropdown__body--width: 100%;
+$menu-dropdown__body--min-width: false;
+$menu-dropdown__body--max-width: false;
+
+$menu-dropdown__item--padding: 0 0 0 1em;
+$menu-dropdown__item--min-height: 3.5em;
+
+$menu-dropdown__item--border-style: solid;
+$menu-dropdown__item--border-color: #d3d3d2;
+$menu-dropdown__item--border-width: 0 0 0.0625em 0;
+
+$menu-dropdown__item-button--border: 1px solid $menu-dropdown__color-main;
+$menu-dropdown__item-button--margin: 0 1em 0 0;
+$menu-dropdown__item-button--height: 1.667em;
+$menu-dropdown__item-button--width: 1.667em;
+$menu-dropdown__item-button--open--border: 0.0625em solid $menu-dropdown__color-main;
+
+$menu-dropdown__footer--min-height: 5.625em;
