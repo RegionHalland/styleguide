@@ -6,7 +6,7 @@
     $("body").css({ "padding": "", "margin": "", "min-width": "320px" });
 </script>
 
-<!-- The sample content is using for simulation of existing components on your site  -->
+<!-- The sample content is only using for demo  -->
 <div style="height: 2em; background-color:#c2c2c2;text-align:center;overflow: hidden;">
     <p style="line-height: 2em;">En del av Region Halland</p>
 </div>
@@ -14,6 +14,9 @@
 {{render '@cookie-notice'}}
 
 <!-- MENU BEGIN -->
+<!-- The script is important for the menu on iOS -->
+<script src="/js/bodyScrollLock-2.6.4.js"></script>
+
 <div id="menu-dropdown-anchor"></div>
 <div class="rh-menu-dropdown rh-display-only-sm">
     <div class="rh-menu-dropdown__header">
