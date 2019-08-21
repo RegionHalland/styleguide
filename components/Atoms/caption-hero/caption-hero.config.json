@@ -1,8 +1,9 @@
 {
-	"title": "#86 Textruta till Herobild",
-    "status": "wip",
+	"title": "Textruta till Herobild",
+    "status": "review",
+    "version": "0.0.0",
 	"context": {
-		"caption": "",
-		"name": ""
+        "text": "A Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
+        "extendClass": ""
 	}		
 }
