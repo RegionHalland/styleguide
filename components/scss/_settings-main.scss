@@ -25,19 +25,25 @@ $h5                     : 0.875rem;
 $h6                     : 0.75rem;
 
 // Breakpoints Small Tablets
-$breakpoint-sm          : 40em;
+//$breakpoint-sm          : 40em;
+$breakpoint-sm          : 36em;
 
 // Breakpoints Tablet
-$breakpoint-md          : 65em;
+//$breakpoint-md          : 65em;
+$breakpoint-md          : 48em;
 
 // Breakpoints Laptop and up
-$breakpoint-lg          : 80em;
+//$breakpoint-lg          : 80em;
+$breakpoint-lg          : 62em;
+
+$breakpoint-xl          : 75em; // new variable 2019-08-23
 
 $breakpoints: (
 				xs: 0,
 				sm: $breakpoint-sm,
 				md: $breakpoint-md,
-				lg: $breakpoint-lg,
+                lg: $breakpoint-lg,
+                xl: $breakpoint-xl
 ) !default;
 
 // Widths

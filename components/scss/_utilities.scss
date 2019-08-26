@@ -9,14 +9,6 @@
 
     // Display
     &-display {
-        &-only-sm {
-            display: block;
-
-            @include medium {
-                display: none;
-            }
-        }
-
         &--show {
             display: block;
         }
@@ -24,13 +16,9 @@
         &--none {
             display: none;
         }
-
-        &--hide {
-            display: hidden;
-        }
     }
 
-    // Padding-left
+    // padding-left - Useful for menu
     &-pl {
         &-05 {
             padding-left: 0.3125em; //5px
