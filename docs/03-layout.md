@@ -1,14 +1,27 @@
 __INNEHÅLL__
-1. [Containers](#1-containers)
-   * [1.1. rh-container-px](#11-rh-container-px)
-   * [1.2. rh-container--auto](#12-rh-container--auto)
-   * [1.3. Annan container](#13-annan-container)
-2. [Breakpoints](#2-breakpoints)
+1. [Breakpoints](#1-breakpoints)
+2. [Containers](#2-containers)
+   * [2.1. rh-container-px](#21-rh-container-px)
+   * [2.2. rh-container--auto](#22-rh-container--auto)
+   * [2.3. Annan containers](#23-annan-containers)
 3. [Grid](#3-grid)
    * [3.1. Kolumner i en rad har lika höjd](#31-kolumner-i-en-rad-har-lika-h%c3%b6jd)
 
-## 1. Containers
-### 1.1. `rh-container-px`
+## 1. Breakpoints
+| Klassnamn | min-width | Pixel | Beskrivning |
+|:---:|---:|---:|---|
+|xs|0|< 576px |"Mobile first" - xs är standardläge|
+|`small`|36em|>= 576px| |
+|`medium`|48em|>= 768px| |
+|`large`|62em|>= 992px| |
+|`xlarge`|75em|>= 1200px| |
+
+__Användning__
+
+`@include medium {...}`
+
+## 2. Containers
+### 2.1. `rh-container-px`
 - Filplats: `/components/scss/_utilities.scss`
 - Beskrivning: container med både `padding-left` och `padding-right` för respektive breakpoint.
 
@@ -26,7 +39,7 @@ __Användning__
 </div>
 ```
 
-### 1.2. `rh-container--auto`
+### 2.2. `rh-container--auto`
 - Filplats: `/components/scss/_utilities.scss`
 - Beskrivning: container är i mitten av användares skärm med detaljen är nedan.
 ```
@@ -44,7 +57,7 @@ __Användning__
 </div>
 ```
 
-### 1.3. Annan containers
+### 2.3. Annan containers
 - `rh-container--center`: aligna en container i mitten av användares skärm.
 - `rh-container--min-width`: applicera bara `min-width: 20em;` som definieras i global.
 - `rh-container--max-width`: applicera bara `max-width: 90em;` som definieras i global.
@@ -63,19 +76,6 @@ __Användning__
     <!-- Content här -->
 </div>
 ```
-
-## 2. Breakpoints
-| Klassnamn | min-width | Pixel | Beskrivning |
-|:---:|---:|---:|---|
-|xs|0|< 576px |"Mobile first" - xs är standardläge|
-|`small`|36em|>= 576px| |
-|`medium`|48em|>= 768px| |
-|`large`|62em|>= 992px| |
-|`xlarge`|75em|>= 1200px| |
-
-__Användning__
-
-`@include medium {...}`
 
 ## 3. Grid
 
