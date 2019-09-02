@@ -24,20 +24,18 @@ $h4                     : 1rem;
 $h5                     : 0.875rem;
 $h6                     : 0.75rem;
 
-// Breakpoints Small Tablets
-$breakpoint-sm          : 40em;
-
-// Breakpoints Tablet
-$breakpoint-md          : 65em;
-
-// Breakpoints Laptop and up
-$breakpoint-lg          : 80em;
+// Breakpoint definition
+$breakpoint-sm          : 36em; // Small devices - 576px and up
+$breakpoint-md          : 48em; // Medium devices - 768px and up
+$breakpoint-lg          : 62em; // Large devices - 992px and up
+$breakpoint-xl          : 75em; // Extra large devices - 1200px and up
 
 $breakpoints: (
 				xs: 0,
 				sm: $breakpoint-sm,
 				md: $breakpoint-md,
-				lg: $breakpoint-lg,
+                lg: $breakpoint-lg,
+                xl: $breakpoint-xl
 ) !default;
 
 // Widths
@@ -167,3 +165,12 @@ $font-size-large       : em(16);
 $line-height-small 	   : em(20);
 $line-height-medium    : em(21);
 $line-height-large     : em(22);
+
+// Container
+$page__container--min-width: 20em; //320px - iPhone 5
+$page__container--max-width: 90em; //1440px
+
+$page__container--padding-x: 1em; //16px
+$page__container-medium--padding-x: 1.875em; //30px
+$page__container-large--padding-x: 3.75em; //60px
+$page__container-xlarge--padding-x: 5em; //80px

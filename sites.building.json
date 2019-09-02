@@ -51,7 +51,8 @@
                     "components/Molecules/rh-video/rh-video.js", 
                     "components/Molecules/rh-linkgroup/rh-linkgroup.js",
                     "components/Organism/rh-search/rh-search.js",
-                    "components/Organism/rh-table/rh-table.js"
+                    "components/Organism/rh-table/rh-table.js",
+                    "components/Molecules/menu-mobile/menu-mobile.js"
                 ],
                 "scssComponents": [ "components/scss/main.scss" ]
             }

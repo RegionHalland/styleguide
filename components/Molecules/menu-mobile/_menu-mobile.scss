@@ -1,4 +1,7 @@
-@import 'menu-mobile.settings.scss';
+/* Needed components
+@import '../../Atoms/link/_link.scss';
+@import '../../Atoms/round-button/_round-button.scss';
+*/
 
 /* Mobile dropdown menu - Displays only in SM mode with screen size < 768px*/
 .rh-menu-dropdown {
@@ -266,5 +269,21 @@
         
         /* Typografi */
         background-color: $menu-dropdown__color-overlay;
+    }
+
+    &-position {
+        &--fixed {
+            position: fixed;
+        }
+    }
+
+    &-display {
+        &--none {
+            display: none;
+        }
+
+        &--show {
+            display: block;
+        }
     }
 }

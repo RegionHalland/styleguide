@@ -2,21 +2,13 @@
 .rh {
     // Position
     &-position {
-        &-fixed {
+        &--fixed {
             position: fixed;
         }
     }
 
     // Display
     &-display {
-        &-only-sm {
-            display: block;
-
-            @include medium {
-                display: none;
-            }
-        }
-
         &--show {
             display: block;
         }
@@ -24,13 +16,9 @@
         &--none {
             display: none;
         }
-
-        &--hide {
-            display: hidden;
-        }
     }
 
-    // Padding-left
+    // padding-left - Useful for menu
     &-pl {
         &-05 {
             padding-left: 0.3125em; //5px
@@ -117,5 +105,52 @@
         overflow: hidden;
         -webkit-overflow-scrolling: auto; // Stops body scrolling for iOS
         height: 100%;
+    }
+}
+
+// Container
+.rh {
+    &-container {
+        &-px {
+            padding-left: $page__container--padding-x; //16px
+            padding-right: $page__container--padding-x;
+
+            @include medium {
+                padding-left: $page__container-medium--padding-x; //30px
+                padding-right: $page__container-medium--padding-x;
+            }
+
+            @include large {
+                padding-left: $page__container-large--padding-x; //60px
+                padding-right: $page__container-large--padding-x;
+            }
+
+            @include xlarge {
+                padding-left: $page__container-xlarge--padding-x; //80px
+                padding-right: $page__container-xlarge--padding-x;
+            }
+        }
+
+        &--auto {
+            width: 100%;
+            min-width: $page__container--min-width;
+            max-width: $page__container--max-width;
+            
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &--center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &--min-width {
+            min-width: $page__container--min-width;
+        }
+
+        &--max-width {
+            max-width: $page__container--max-width;
+        }
     }
 }

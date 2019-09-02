@@ -1,7 +1,7 @@
 // Functions
 @import '_functions';
-@import '_breakpoints';
 @import '_settings-main';
+@import '_breakpoints';
 @import '_reset';
 @import '_base';
 @import '_typography';
@@ -11,6 +11,14 @@
 @import '_padding.scss';
 @import '_flexbox.scss';
 @import '_type_scale.scss';
+@import '_utilities.scss';
+
+// Components settings
+@import '_settings-components.scss';
+
+//-> Temporary importing for testing site styling in Style guide before compiling
+//-> It will be removed after the project development
+//@import '../../../RH-sites/RhSettingsVardgivare/_settings-components';
 
 // Atoms
 @import 'components/Atoms/avatar/_avatar.scss';
@@ -81,7 +89,8 @@
 @import 'components/Molecules/cookie-notice/_cookie-notice.scss';
 //@import 'components/Molecules/rh-filter-alphabet/_rh-filter-alphabet.scss';
 //@import 'components/Molecules/rh-calendar-element/_rh-calendar-element.scss';
-@import '../Molecules/menu-mobile/_menu-mobile.scss';
+@import 'components/Molecules/menu-mobile/_menu-mobile.scss';
+@import 'components/Molecules/navigation-block/_navigation-block.scss';
 
 // Organism
 @import 'components/Organism/rh-breadcrums/_rh-breadcrums.scss';
@@ -92,5 +101,4 @@
 @import 'components/Organism/rh-search/_rh-search.scss';
 @import 'components/Organism/rh-table/_rh-table.scss';
 @import 'components/Organism/rh-toplinks/_rh-toplinks.scss';
-
-@import '_utilities.scss'
+@import 'components/Organism/navigation-block-group/_navigation-block-group.scss';

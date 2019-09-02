@@ -1,7 +1,7 @@
 {
 	"title": "Form control - Text",
-    "status": "prototype",
-    "version": "0.0.0",
+    "status": "review",
+    "version": "1.0.0",
 	"context": {
         "name": "form-control__text",
         "extendClass": ""
