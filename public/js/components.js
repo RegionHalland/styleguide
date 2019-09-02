@@ -60,21 +60,19 @@ for (i = 0; i < acc.length; i++) {
 }
 "use strict";
 
-$("#menu-dropdown-anchor").length && $(document).ready(function () {
+$(document).ready(function () {
   // Global variables
-  var gbTimer; // Global timer is using for menu delaying
-
   var scrollbarWidth = calculateScrollbarWidth(),
       isMenuPositionTypeFixed = false,
       menuLastPosition = 0,
-      menuDelayTime = 30,
       isMinimize = false;
   var onloadScreenSize = $(document).width(),
       maxScreenSizeForDisplaying = 767,
       // 767px
   isMobileScreen = onloadScreenSize <= maxScreenSizeForDisplaying; // Menu's element definitions
 
-  var $menuDropDownAnchorId = $("#menu-dropdown-anchor"),
+  var $body = $("body"),
+      $menuDropDownAnchorId = $("#menu-dropdown-anchor"),
       $menuSpacingAfter = $(".rh-menu-dropdown__spacing-after"),
       $menuDropDown = $(".rh-menu-dropdown"),
       $menuDropDownHeader = $(".rh-menu-dropdown__header"),
@@ -82,8 +80,8 @@ $("#menu-dropdown-anchor").length && $(document).ready(function () {
       $menuDropDownSubContainers = $(".rh-menu-dropdown__item__sub-container"),
       $menuSubItemIcons = $(".rh-menu-dropdown__icon-item"); // Initial state for the menu when JS is activated in web browser
 
-  $menuDropDownBody.addClass("rh-display--none");
-  $menuDropDownSubContainers.addClass("rh-display--none");
+  $menuDropDownBody.addClass("rh-menu-dropdown-display--none");
+  $menuDropDownSubContainers.addClass("rh-menu-dropdown-display--none");
   $menuSubItemIcons.toggleClass("icon-minus icon-plus"); // Check screen size
 
   $(window).resize(function () {
@@ -100,7 +98,7 @@ $("#menu-dropdown-anchor").length && $(document).ready(function () {
     }
   }); // EventListener for the menu
 
-  $(window).scroll(function () {
+  $(document).scroll(throttle(function () {
     if (isMobileScreen) {
       // Determine the menu's type (fixed or relative)
       var menuPosInfo = getElementTopById($menuDropDownAnchorId);
@@ -125,29 +123,25 @@ $("#menu-dropdown-anchor").length && $(document).ready(function () {
 
       if (menuCurrentPosition < menuLastPosition) {
         if (isMinimize) {
-          delayNow(function () {
-            $menuDropDownHeader.removeClass("rh-menu-dropdown__header--minimize");
-            isMinimize = !isMinimize;
-          }, menuDelayTime);
+          $menuDropDownHeader.removeClass("rh-menu-dropdown__header--minimize");
+          isMinimize = !isMinimize;
         }
       } // Scroll down
       else if (menuCurrentPosition > menuLastPosition) {
           if (!isMinimize && menuPosInfo.isOverViewport && menuSpacingAfterPosInfo.viewportTop <= menuOffset) {
-            delayNow(function () {
-              $menuDropDownHeader.addClass("rh-menu-dropdown__header--minimize");
-              isMinimize = !isMinimize;
-            }, menuDelayTime);
+            $menuDropDownHeader.addClass("rh-menu-dropdown__header--minimize");
+            isMinimize = !isMinimize;
           }
         }
 
       menuLastPosition = menuCurrentPosition;
     }
-  }); // Main menu button
+  }, 100)); // Main menu button
 
   $(".rh-menu-dropdown__menu-round-button").click(function () {
     $(this).toggleClass("rh-menu-dropdown__menu-round-button--open").find(".rh-menu-dropdown__icon-menu").toggleClass("icon-x icon-menu");
     $menuDropDown.toggleClass("rh-menu-dropdown--open");
-    $menuDropDownBody.toggleClass("rh-display--none rh-display--show");
+    $menuDropDownBody.toggleClass("rh-menu-dropdown-display--none rh-menu-dropdown-display--show");
     /* Enhanced */
 
     var menuCurrentPosInfo = getElementTopById($menuDropDownAnchorId);
@@ -160,7 +154,7 @@ $("#menu-dropdown-anchor").length && $(document).ready(function () {
         // Menu is on top
         //-> Change position from "relative" to "fixed" by add fixed-class
         var topPos = menuCurrentPosInfo.bodyTop ? menuCurrentPosInfo.viewportTop : // Offset for above elements
-        menuCurrentPosInfo.onTop;
+        menuCurrentPosInfo.fromTop;
         changeToFixedPosition(true, function () {
           $menuDropDown.css({
             "top": topPos
@@ -190,7 +184,7 @@ $("#menu-dropdown-anchor").length && $(document).ready(function () {
         $menuItemSubContainer = $("#sub" + $menuItemButton.attr('id')); // Menu item's sub container ID
 
     $menuItemButton.toggleClass("rh-menu-dropdown__item-round-button--open").find(".rh-menu-dropdown__icon-item").toggleClass("icon-minus icon-plus");
-    $menuItemSubContainer.toggleClass("rh-display--none rh-display--show");
+    $menuItemSubContainer.toggleClass("rh-menu-dropdown-display--none rh-menu-dropdown-display--show");
   }); // Item link
 
   $(".rh-menu-dropdown__body a").click(function () {
@@ -205,12 +199,12 @@ $("#menu-dropdown-anchor").length && $(document).ready(function () {
     var done = false;
 
     if (status && !isMenuPositionTypeFixed) {
-      $menuDropDown.addClass("rh-position-fixed");
+      $menuDropDown.addClass("rh-menu-dropdown-position--fixed");
       $menuSpacingAfter.addClass("rh-menu-dropdown__spacing-after--active");
       isMenuPositionTypeFixed = !isMenuPositionTypeFixed;
       done = true;
     } else if (!status && isMenuPositionTypeFixed) {
-      $menuDropDown.removeClass("rh-position-fixed");
+      $menuDropDown.removeClass("rh-menu-dropdown-position--fixed");
       $menuSpacingAfter.removeClass("rh-menu-dropdown__spacing-after--active");
       isMenuPositionTypeFixed = !isMenuPositionTypeFixed;
       done = true;
@@ -220,17 +214,17 @@ $("#menu-dropdown-anchor").length && $(document).ready(function () {
   }
 
   function lockBodyScrolling(status, fnCallback) {
-    // bodyScrollLock exported from the library Body scroll block (//github.com/willmcpo/body-scroll-lock)
+    //github.com/willmcpo/body-scroll-lock
     var disableBodyScroll = bodyScrollLock.disableBodyScroll,
         enableBodyScroll = bodyScrollLock.enableBodyScroll;
     var targetElement = document.querySelector(".rh-menu-dropdown");
 
     if (status) {
-      $("body").addClass("rh-noscroll");
-      disableBodyScroll(targetElement);
+      $body.addClass("rh-noscroll");
+      isMobileDevice() && disableBodyScroll(targetElement);
     } else {
-      $("body").removeClass("rh-noscroll");
-      enableBodyScroll(targetElement);
+      $body.removeClass("rh-noscroll");
+      isMobileDevice() && enableBodyScroll(targetElement);
     }
 
     typeof fnCallback === 'function' && fnCallback();
@@ -238,22 +232,13 @@ $("#menu-dropdown-anchor").length && $(document).ready(function () {
 
   function makeScrollBarOffset(status) {
     if (status) {
-      $("body").css({
+      $body.css({
         "margin-right": scrollbarWidth
       });
     } else {
-      $("body").css({
+      $body.css({
         "margin-right": ""
       }); // Reset to default
-    }
-  }
-
-  function delayNow(fnCallback, millisecond) {
-    // Using gbTimer variable on global
-    if (gbTimer) clearTimeout(gbTimer);
-
-    if (typeof fnCallback === 'function') {
-      gbTimer = setTimeout(fnCallback, millisecond);
     }
   }
   /* Helpers */
@@ -270,7 +255,7 @@ $("#menu-dropdown-anchor").length && $(document).ready(function () {
         isOverViewportTop = bodyTop >= elementTop;
     return {
       bodyTop: bodyTop,
-      onTop: elementTop,
+      fromTop: elementTop,
       viewportTop: viewportTop,
       isOverViewport: isOverViewportTop
     };
@@ -279,7 +264,36 @@ $("#menu-dropdown-anchor").length && $(document).ready(function () {
   function calculateScrollbarWidth() {
     return window.innerWidth - $(document).width();
   }
-});
+
+  function isMobileDevice() {
+    return !!navigator.platform && /iPad|iPhone|iPod/g.test(navigator.platform);
+  }
+}); // ************************************
+// *** Javascript throttle function ***
+// ************************************
+// https://remysharp.com/2010/07/21/throttling-function-calls
+
+function throttle(fn, threshhold, scope) {
+  threshhold || (threshhold = 250);
+  var last, deferTimer;
+  return function () {
+    var context = scope || this;
+    var now = +new Date(),
+        args = arguments;
+
+    if (last && now < last + threshhold) {
+      // hold on to it
+      clearTimeout(deferTimer);
+      deferTimer = setTimeout(function () {
+        last = now;
+        fn.apply(context, args);
+      }, threshhold);
+    } else {
+      last = now;
+      fn.apply(context, args);
+    }
+  };
+}
 "use strict";
 
 var videoPlayButton,

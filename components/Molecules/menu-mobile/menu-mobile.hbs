@@ -3,14 +3,10 @@
     It resets Fractal's styling for <body> tag.
 -->
 <script>
-    $("body").css({ "padding": "", "margin": "", "min-width": "320px" });
+    $("body").css({ "padding": "", "margin": "" });
 </script>
 
 <!-- The sample content is only using for demo  -->
-<div style="height: 2em; background-color:#c2c2c2;text-align:center;overflow: hidden;">
-    <p style="line-height: 2em;">En del av Region Halland</p>
-</div>
-
 {{render '@cookie-notice'}}
 
 <!-- MENU BEGIN -->
@@ -18,7 +14,7 @@
 <script src="/js/bodyScrollLock-2.6.4.js"></script>
 
 <div id="menu-dropdown-anchor"></div>
-<div class="rh-menu-dropdown rh-display-only-sm">
+<div class="rh-menu-dropdown only-sm">
     <div class="rh-menu-dropdown__header">
         <div class="rh-menu-dropdown__header-logo-container">
             <a href="{{header.link}}">

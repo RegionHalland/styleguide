@@ -1,6 +1,4 @@
-/* Be careful when using font-size by EM unit */
+/* Atoms - Form control text */
 $form-control--font-size: .875em;
 $form-text--muted--font-size: .875em;
-
-// Color
-$form-text--required: $warning; // Mapping from the global variable
+$form-text--required: $warning;

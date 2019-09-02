@@ -1,0 +1,14 @@
+/* Atoms - Round button */
+$round-button--background: $base3;
+$round-button--border: 1px solid $color-secondary;
+$round-button--border-radius: 50%;
+$round-button--padding: 0.375em; //em(6)
+$round-button--padding-small: 0.25em; //em(4)
+
+$round-button--color: $white;
+$round-button--background-color-hover-active: $white;
+$round-button--color-hover-active: $color-secondary;
+
+$round-button--font-family: "feather";// !important
+$round-button--font-size: $h4-small;
+$round-button--text-decoration: none;

@@ -1,0 +1,22 @@
+{{#unless withContainer}}
+    {{!-- Default --}}
+    <div class="clearfix">
+        <div class="row row-eq-height">
+            {{#each blocks}}
+                <div class="col col-12 md-col-6 lg-col-4 xl-col-3 rh-navigation-block-group__item-container">
+                    {{render '@navigation-block' itemData merge=true}}
+                </div>
+            {{/each}}
+        </div>
+    </div>
+{{else}}
+    <div class="clearfix rh-navigation-block-group__container-p">
+        <div class="row row-eq-height">
+            {{#each blocks}}
+                <div class="col col-12 md-col-6 lg-col-4 rh-navigation-block-group__item-container">
+                    {{render '@navigation-block' itemData merge=true}}
+                </div>
+            {{/each}}
+        </div>
+    </div>
+{{/unless}}

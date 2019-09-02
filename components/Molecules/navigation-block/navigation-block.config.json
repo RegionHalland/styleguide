@@ -1,0 +1,12 @@
+{
+	"title": "Navigation block",
+    "status": "wip",
+    "version": "1.0.0",
+	"context": {
+        "title": "Om Region Halland",
+        "description": {
+            "text": "Vi är på väg. ”Halland – bästa livsplatsen” är vår vision. Välkommen att följa oss på vägen dit!",
+            "extendClass": ""
+        }
+    }		
+}

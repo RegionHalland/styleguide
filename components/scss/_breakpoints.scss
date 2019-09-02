@@ -1,4 +1,4 @@
-// Mixins
+// Media queries definition
 @mixin small { @media (min-width: $breakpoint-sm) {@content;} } // Small devices - 576px
 @mixin medium { @media (min-width: $breakpoint-md) {@content;} } // Medium Tablet - 768px
 @mixin large { @media (min-width: $breakpoint-lg) {@content;} } // Large Desktop - 992px
