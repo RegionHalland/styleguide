@@ -1,13 +1,15 @@
 .rh-caption-hero{
 	/* Positionering */
-	position: absolute;
-	bottom: em(40);
-	left: em(16);
+    position: relative;
+    
+	//bottom: 2.5em; //em(40);
+	//left: 1em; //em(16);
 
 	/* Box-modell/beteende */
-	max-width: 344px;
-	margin-right: em(15);
-	padding: em(15);
+	//max-width: 21.5em; //344px
+	//margin-right: .9375em; // em(15);
+    padding: .9375em; //em(15);
+    
 
 	/* Visuellt */
 	background-color: $black;
@@ -25,24 +27,31 @@
 	}
 
 	&--rounded {
-		border-radius: 0.4ex;
+        // border-radius: 0.4ex;
+        border-radius: 0;
+        
+        @include medium {
+            border-radius: 0.4ex;
+        }
 	}
 
 	@include medium {
-		/* Positionering */
-		bottom: em(16);
-		left: em(40);
+        /* Positionering */
+        position: absolute;
+
+		bottom: 1em; //em(16);
+		left: 2.5em; //em(40);
 
 		/* Box-modell/beteende */
-		max-width: 530px;
+        max-width: 20.385em; //530px;
 	}
 	@include large {
 		/* Positionering */
-		bottom: em(25);
-		left: em(60);
+		bottom: 1.5625em; //em(25);
+		left: 3.75em; //em(60);
 
 		/* Typografi */
 		font-size: $h2-medium;
 	}
 }
-	
+

@@ -1,10 +1,6 @@
-/* 
-The component uses the common classes at _form-control-text.scss
--> View more information at /components/form-control-text/_form-control-text.scss
--> Prefix "rh-form" is important.
+/* Needed components
+@import '../../Atoms/form-control-text/_form-control-text.scss';
 */
-
-@import './form-control-textarea.settings.scss';
 
 .rh-form__textarea {
     height: 9em;

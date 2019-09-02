@@ -1,0 +1,64 @@
+/* Needed components
+@import '../../Atoms/link/_link.scss';
+@import '../../Atoms/round-button/_round-button.scss';
+@import '../../Molecules/navigation-block/_navigation-block.scss';
+*/
+
+.rh-navigation-block-group {
+    &__item-container {
+        /* Box-modell/beteende */
+        padding-top: $navigation-block-group__item-container--padding-top;
+        padding-right: $navigation-block-group__item-container--padding-right;
+        padding-bottom: $navigation-block-group__item-container--padding-bottom;
+        padding-left: $navigation-block-group__item-container--padding-left;
+
+        .rh-navigation-block {
+            height: $navigation-block-group__item--height;
+        }
+
+        @include medium {
+            padding-top: $navigation-block-group__item-container--padding-medium-top;
+            padding-right: $navigation-block-group__item-container--padding-medium-right;
+            padding-bottom: $navigation-block-group__item-container--padding-medium-bottom;
+            padding-left: $navigation-block-group__item-container--padding-medium-left;
+        }
+    }
+
+    &__container {
+        &-py {
+            padding-top: $navigation-block-group__container--padding-y;
+            padding-bottom: $navigation-block-group__container--padding-y - $navigation-block-group__item-container--padding-bottom; //30px
+        }
+
+        &-px {
+            padding-left: $page__container--padding-x; //16px - Defined in global
+            padding-right: $page__container--padding-x;
+
+            // Using offset for grid system
+            @include medium {
+                padding-left: $page__container-medium--padding-x - $navigation-block-group__item-container--padding-medium-left; //30px
+                padding-right: $page__container-medium--padding-x - $navigation-block-group__item-container--padding-medium-right; //30px
+            }
+
+            @include large {
+                padding-left: $page__container-large--padding-x - $navigation-block-group__item-container--padding-medium-left; //80px
+                padding-right: $page__container-large--padding-x -$navigation-block-group__item-container--padding-medium-right; //80px
+            }
+
+            @include xlarge {
+                padding-left: $page__container-xlarge--padding-x - $navigation-block-group__item-container--padding-medium-left; //80px
+                padding-right: $page__container-xlarge--padding-x -$navigation-block-group__item-container--padding-medium-right; //80px
+            }
+        }
+
+        &-p {
+            @extend .rh-navigation-block-group__container-py;
+            @extend .rh-navigation-block-group__container-px;
+
+            /* Visuellt */
+            @if $navigation-block-group__container--background-color {
+                background-color: $navigation-block-group__container--background-color;
+            }
+        }
+    }
+}

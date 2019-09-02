@@ -2,28 +2,28 @@
 .rh-round-button {
 
   /* Visuellt */
-  background: $base3;
-  border: 1px solid $color-secondary;
-  border-radius: 50%;
-  padding: em(6);
+  background: $round-button--background;
+  border: $round-button--border;
+  border-radius: $round-button--border-radius;
+  padding: $round-button--padding;
 
   /* Typografi */
-  color: white;
-  font-family: "feather" !important;
-  font-size: $h4-small;
-  text-decoration: none;
+  color: $round-button--color;
+  font-family: $round-button--font-family;
+  font-size: $round-button--font-size;
+  text-decoration: $round-button--text-decoration;
 
   &--small {
-    padding: em(4);
+    padding: $round-button--padding-small;
   }
 
   &:hover,&:active {
 
     /* Visuellt */
-    background-color: $white;
+    background-color: $round-button--background-color-hover-active;
 
     /* Typografi */
-    color: $color-secondary;
+    color: $round-button--color-hover-active;
 
   }
 
