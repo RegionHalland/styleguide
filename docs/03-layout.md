@@ -84,7 +84,7 @@ __Användning__
 ### 3.1. Kolumner i en rad har lika höjd
 - Klassnamn: `row row-eq-height`
 - Filplats: `/components/scss/_grid.scss`
-- Beskrivning: Alla kolumner har samma höjden i en rad. Man bör sätta själv `height: 100%` på varje element i griden.
+- Beskrivning: Alla kolumner i en rad har samma höjden. Man bör sätta själv `height: 100%` på varje element i griden.
 
 __Användning__
 ```
@@ -103,7 +103,7 @@ __Användning__
 * Anledning: IE11 räknar inte bra när det är odda nummer lik som: 33.3333333333...%. Det renderar om mycket och blinkar när bredden är nära begränsningarna.
 * Lösning: `max-width` används för att IE11 renderar bättre. Se mer i filen `/components/scss/_grid.scss`
 
-|Klassnamn|%|
+|Klassnamn|`max-width` (%)|
 |:---:|---:|
 |*-col-1|8.33%|
 |*-col-2|16.66%|
