@@ -6,27 +6,29 @@ __INNEHÅLL__
    * [2.3. Annan containers](#23-annan-containers)
 3. [Grid](#3-grid)
    * [3.1. Kolumner i en rad har lika höjd](#31-kolumner-i-en-rad-har-lika-h%c3%b6jd)
+   * [3.2. Lösning för IE11 ](#32-lösning-för-ie11)
 
 ## 1. Breakpoints
 | Klassnamn | min-width | Pixel | Beskrivning |
 |:---:|---:|---:|---|
-|xs|0|< 576px |"Mobile first" - xs är standardläge|
-|`small`|36em|>= 576px| |
-|`medium`|48em|>= 768px| |
-|`large`|62em|>= 992px| |
-|`xlarge`|75em|>= 1200px| |
+||0|<576px|xs - Phones - Standardläge|
+|`small`|36em|≥576px|Landscape phones|
+|`medium`|48em|≥768px|Tablets|
+|`large`|62em|≥992px|Desktops|
+|`xlarge`|75em|≥1200px|Large desktops|
 
 __Användning__
 
-`@include medium {...}`
+Exempel: `@include medium {...}`
 
 ## 2. Containers
 ### 2.1. `rh-container-px`
 - Filplats: `/components/scss/_utilities.scss`
-- Beskrivning: container med både `padding-left` och `padding-right` för respektive breakpoint.
+- Beskrivning: container har både `padding-left` och `padding-right` för respektive breakpoint.
 
 | Breakpoint | padding-x| Pixel |
 |:---:|---:|---:|
+|xs|1em|16px|
 |`small`|1em|16px|
 |`medium`|1.875em|30px|
 |`large`|3.75em|60px|
