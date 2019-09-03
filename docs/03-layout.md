@@ -96,3 +96,22 @@ __Användning__
     </div>
 </div>
 ```
+
+### 3.2 Lösning för IE11
+* Anledning: IE11 räknar inte bra när det är odda nummer lik som: 33.3333333333...%. Det renderar om mycket och blinkar när bredden är nära begränsningarna.
+* Lösning: `max-width` används för att IE11 renderar bättre. Se mer i filen `/components/scss/_grid.scss`
+
+|Klassnamn|%|
+|:---:|---:|
+|*-col-1|8.33%|
+|*-col-2|16.66%|
+|*-col-3|25%|
+|*-col-4|33.33%|
+|*-col-5|41.66%|
+|*-col-6|50%|
+|*-col-7|58.33%|
+|*-col-8|66.66%|
+|*-col-9|75%|
+|*-col-10|83.33%|
+|*-col-11|91.66%|
+|*-col-12|100%|
