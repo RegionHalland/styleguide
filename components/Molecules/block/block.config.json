@@ -1,18 +1,9 @@
 {
-    "title": "Puffar/block",
-    "status": "wip",
+    "title": "Block",
+    "status": "review",
     "context": {
-        "blocks": [
-            {
-                "title": "This is the block title 1",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim venia, quis nostrud exercitation ullmaco laboris nisi ut aliquap ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolor eu fugiat nulla pariatur.",
-                "imageUrl": ""
-            },
-            {
-                "title": "This is the block title 2",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim venia, quis nostrud exercitation ullmaco laboris nisi ut aliquap ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolor eu fugiat nulla pariatur.",
-                "imageUrl": "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-            }
-        ]
+        "title": "This is the block title 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim venia, quis nostrud exercitation ullmaco laboris nisi ut aliquap ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolor eu fugiat nulla pariatur.",
+        "imageUrl": "https://www.regionhalland.se/app/uploads/2019/07/delaolika.jpg"
     }
 }

@@ -26,8 +26,14 @@
 
     &__container {
         &-py {
-            padding-top: $navigation-block-group__container--padding-y;
-            padding-bottom: $navigation-block-group__container--padding-y - $navigation-block-group__item-container--padding-bottom; //30px
+            padding-top: $navigation-block-group__container--padding-y; //30px
+            padding-bottom: $navigation-block-group__container--padding-y - $block-group__item-container--padding-bottom;
+
+            // Using offset for grid system
+            @include medium {
+                padding-top: $navigation-block-group__container--padding-y - $navigation-block-group__item-container--padding-medium-top; //30px
+                padding-bottom: $navigation-block-group__container--padding-y - $navigation-block-group__item-container--padding-medium-bottom;
+            }
         }
 
         &-px {

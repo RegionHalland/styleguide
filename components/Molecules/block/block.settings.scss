@@ -1,0 +1,19 @@
+/* Molecules - Block */
+$block--width: 100%;
+
+$block--text-align: left;
+$block__text-container--padding: 0.9375em;
+$block__text-title--color: $color-primary;
+$block__text-title--font-weight: bold;
+
+$block__img--width: 100%;
+$block__img--margin-bottom: -0.625em; //-10px
+
+$block__box--max-width: false; //26em; //416px
+
+$block__box--border-top: 0.0625em solid $grey-lighter;
+$block__box--border-right: 0.0625em solid $grey-lighter;
+$block__box--border-bottom: 0.25em solid $color-primary;
+$block__box--border-left: 0.0625em solid $grey-lighter;
+
+$block__box--border-radius: 0.375em;

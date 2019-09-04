@@ -71,7 +71,9 @@
             background: $cookie-notice--background;
 
             /* Typografi */
-            color: $cookie-notice__icon--color;
+            @if $cookie-notice__icon--color {
+                color: $cookie-notice__icon--color;
+            }
             border-radius: 50%;
             font-weight: $cookie-notice__icon--font-weight;
             font-family: "feather";

@@ -65,6 +65,7 @@
 
 .col-12 {
     width: 100%;
+    max-width: 100%;
 }
 
 
@@ -137,8 +138,8 @@
 
     .sm-col-12 {
         width: 100%;
+        max-width: 100%;
     }
-
 }
 
 
@@ -211,8 +212,8 @@
 
     .md-col-12 {
         width: 100%;
+        max-width: 100%;
     }
-
 }
 
 
@@ -285,8 +286,8 @@
 
     .lg-col-12 {
         width: 100%;
+        max-width: 100%;
     }
-
 }
 
 @media (min-width: $breakpoint-xl) {
@@ -358,6 +359,7 @@
 
     .xl-col-12 {
         width: 100%;
+        max-width: 100%;
     }
 }
 

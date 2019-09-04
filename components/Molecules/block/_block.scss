@@ -1,40 +1,51 @@
-.demo {
+.rh-block {
+    /* Positionering */
+    position: relative;
+
     /* Box-modell/beteende */
-    max-width: 416px;
+    width: $block--width;
 
-    .rh-block {
-        /* Positionering */
-        position: relative;
+    /* Visuellt */
+    //border-bottom: 0.25em solid $color-primary;
+    
+    /* Typografi */
+    text-align: $block--text-align;
 
+    &-text {
         /* Box-modell/beteende */
-        width: 100%;
+        margin-top: 0;
+        padding: $block__text-container--padding;
+        box-sizing: border-box;
 
         /* Visuellt */
-        border-bottom: 4px solid $color-primary;
-        
-        /* Typografi */
-        text-align: left;
+        //border: 0.0625em solid $grey-lighter;
 
-        .rh-text {
-            /* Box-modell/beteende */
-            margin-top: 0;
-            padding: em(15);
-            box-sizing: border-box;
-
-            /* Visuellt */
-            border: 1px solid $grey-lighter;
-
-            h3 {
-                /* Typografi */
-                color: $color-primary;
-                font-weight: normal;
+        &-title {
+            /* Typografi */
+            @if $block__text-title--color {
+                color: $block__text-title--color;
             }
+            font-weight: $block__text-title--font-weight;
+        }
+    }
+
+    img {
+        /* Box-modell/beteende */
+        width: $block__img--width;
+        margin-bottom: $block__img--margin-bottom;
+        border-radius: $block__box--border-radius $block__box--border-radius 0 0;
+    }
+
+    &-box {
+        /* Box-modell/beteende */
+        @if $block__box--max-width {
+            max-width: $block__box--max-width;
         }
 
-        img {
-            /* Box-modell/beteende */
-            width: 100%;
-            margin-bottom: -10px;
-        }
+        border-top: $block__box--border-top;
+        border-right: $block__box--border-right;
+        border-bottom: $block__box--border-bottom;
+        border-left: $block__box--border-left;
+        border-radius: $block__box--border-radius;
     }
 }

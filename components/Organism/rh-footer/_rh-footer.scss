@@ -2,16 +2,22 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	background-color: $grey-lightest;
+	//background-color: $grey-lightest;
 
 	.rh-footer-section {
 		padding-top: em(20);
-		padding-right: em(30);
+		//padding-right: em(30);
 		padding-bottom: em(20);
-		padding-left: em(30);
+		//padding-left: em(30);
 		flex-basis: 100%;
-		@include medium { flex-basis: 33.33%;}
-		@include large {flex-basis: 33.33%;}
+		@include medium { 
+            flex-basis: 33.33%;
+        }
+		@include large {
+            padding-right: em(60);
+            
+            flex-basis: 33.33%;
+        }
 	}
 
 	.rh-footer-title-hr {

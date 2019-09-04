@@ -22,6 +22,9 @@
     font-family: inherit;
     font-size: $button-text--font-size; //$font-size-small
     line-height: $button-text--line-height; //em(16)
+    @if $button--text-decoration {
+        text-decoration: $button--text-decoration;
+    }
 
     /* Blandat/övrigt */
     outline: none;
@@ -106,18 +109,24 @@
     }
 
     &--icon {
+        @if $button--icon-background-color {
+            background-color: $button--icon-background-color;
+        }
+        @if $button--icon-color {
+            color: $button--icon-color;
+        }
 
         &:after{
             /* Box-modell/beteende */
             display: inline-block;
-            margin-left: $button-icon--margin-left; //em(16)
+            margin-left: $button--icon-margin-left; //em(16)
             
             /* Typografi */
             font-family: "feather";
-            text-decoration: $button-icon--text-decoration;
+            text-decoration: $button--icon-text-decoration;
 
             /* Blandat/övrigt */
-            content: $button-icon;
+            content: $button--icon;
         }
     }
 

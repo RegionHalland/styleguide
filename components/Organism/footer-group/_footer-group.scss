@@ -1,0 +1,120 @@
+.rh-footer-group {
+    @if $footer-group--background-color {
+        background-color: $footer-group--background-color;
+    }
+
+    // Reset global settings
+    p {
+        margin: 0;
+        font-size: 1em;
+    }
+
+    &__item {
+
+        p,
+        a {
+            line-height: 1.6;
+        }
+
+        margin-bottom: 2.5em;
+        height: 100%;
+
+        @if $footer-group__text--color {
+            color: $footer-group__text--color;
+        }
+
+        @include medium {
+            margin-bottom: 0;
+        }
+
+        &-header {
+            margin-bottom: .8em;
+
+            border-bottom-width: 0.125em;
+            border-bottom-style: solid;
+
+            @if $footer-group__header--border-bottom-color {
+                border-bottom-color: $footer-group__header--border-bottom-color;
+            }
+
+            &-title {
+                font-size: 1em;
+                font-weight: bold;
+                line-height: 1.4;
+
+            }
+        }
+
+        &-body {
+            font-size: 0.875em; //14px
+            word-break: break-word;
+            line-height: 1.6;
+
+            &-address {
+                margin: .8em 0;
+            }
+
+            &-link {
+                @if $footer-group__link--color {
+                    color: $footer-group__link--color;
+                }
+            }
+        }
+
+        &-column {
+            &-first {
+                @include medium {
+                    margin-right: 1em;
+                }
+
+                @include large {
+                    margin-right: 2em;
+                }
+
+                @include xlarge {
+                    margin-right: 4em;
+                }
+            }
+
+            &-between {
+                @include medium {
+                    margin-left: .5em;
+                    margin-right: .5em;
+                }
+
+                @include large {
+                    margin-left: 1em;
+                    margin-right: 1em;
+                }
+
+                @include xlarge {
+                    margin-left: 2em;
+                    margin-right: 2em;
+                }
+            }
+
+            &-last {
+                margin-bottom: 0;
+
+                @include medium {
+                    margin-left: 1em;
+                }
+
+                @include large {
+                    margin-left: 2em;
+                }
+
+                @include xlarge {
+                    margin-left: 4em;
+                }
+            }
+        }
+    }
+
+    &__container {
+        &-py {
+            padding-top: $footer-group__container-py;
+            padding-bottom: $footer-group__container-py;
+        }
+    }
+}
