@@ -1,14 +1,14 @@
 /* Utilities */
 .rh {
     // Position
-    &-position {
+    &-pos {
         &--fixed {
             position: fixed;
         }
     }
 
     // Display
-    &-display {
+    &-dp {
         &--show {
             display: block;
         }

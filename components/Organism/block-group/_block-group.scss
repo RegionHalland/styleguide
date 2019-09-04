@@ -1,0 +1,66 @@
+/* Needed components
+...
+*/
+
+.rh-block-group {
+    &__item {
+        padding-top: $block-group__item-container--padding-top;
+        padding-right: $block-group__item-container--padding-right;
+        padding-bottom: $block-group__item-container--padding-bottom;
+        padding-left: $block-group__item-container--padding-left;
+        
+        .rh-block-box {
+            height: $block-group__item--height;
+        }
+    
+        @include medium {
+            padding-top: $block-group__item-container--padding-medium-top;
+            padding-right: $block-group__item-container--padding-medium-right;
+            padding-bottom: $block-group__item-container--padding-medium-bottom;
+            padding-left: $block-group__item-container--padding-medium-left;
+        }
+    }
+
+    &__container {
+        &-py {
+            padding-top: $block-group__container--padding-y;
+            padding-bottom: $block-group__container--padding-y - $block-group__item-container--padding-bottom; //30px
+
+            @include medium {
+                padding-top: $block-group__container--padding-y - $block-group__item-container--padding-medium-top;
+                padding-bottom: $block-group__container--padding-y - $block-group__item-container--padding-medium-bottom; //30px
+            }
+        }
+
+        &-px {
+            padding-left: $page__container--padding-x; //16px - Defined in global
+            padding-right: $page__container--padding-x;
+
+            // Using offset for grid system
+            @include medium {
+                padding-left: $page__container-medium--padding-x - $block-group__item-container--padding-medium-left; //30px
+                padding-right: $page__container-medium--padding-x - $block-group__item-container--padding-medium-right; //30px
+            }
+
+            @include large {
+                padding-left: $page__container-large--padding-x - $block-group__item-container--padding-medium-left; //80px
+                padding-right: $page__container-large--padding-x -$block-group__item-container--padding-medium-right; //80px
+            }
+
+            @include xlarge {
+                padding-left: $page__container-xlarge--padding-x - $block-group__item-container--padding-medium-left; //80px
+                padding-right: $page__container-xlarge--padding-x -$block-group__item-container--padding-medium-right; //80px
+            }
+        }
+
+        &-p {
+            @extend .rh-block-group__container-py;
+            @extend .rh-block-group__container-px;
+
+            /* Visuellt */
+            @if $block-group__container--background-color {
+                background-color: $block-group__container--background-color;
+            }
+        }
+    }
+}

@@ -29,6 +29,7 @@ $button-text--font-size-medium: $font-size-medium;
 $button-text--line-height-medium: 1.3125em;
 $button-text--font-size-large: $font-size-large;
 $button-text--line-height-large: 1.5em;
+$button--text-decoration: none;
 
 $button--hover-text-decoration: underline; // Can be false
 
@@ -58,6 +59,8 @@ $button--secondary-active-border: 0.0625em solid $color-secondary;
 $button--secondary-active-color: $color-secondary;
 $button--secondary-active-text-decoration: none; // Can be false
 
-$button-icon: "\e844";
-$button-icon--margin-left: 1em;
-$button-icon--text-decoration: none;
+$button--icon: "\e844";
+$button--icon-margin-left: 1em;
+$button--icon-text-decoration: none;
+$button--icon-background-color: false;
+$button--icon-color: false;
