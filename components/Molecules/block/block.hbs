@@ -1,15 +1,16 @@
-{{#each blocks}}
-<div class="demo">
+<div class="rh-block-box">
 	<div class="rh-block">
         {{#if imageUrl}}
             <img src="{{imageUrl}}" alt="Text som beskriver bilden" aria-labelledby="334455">
         {{/if}}
-		<div class="rh-text">
-			<h3>{{title}}</h3>
+		<div class="rh-block-text">
+			<p class="h3">
+                <a href="#" class="rh-block-text-title rh-link--navigation">
+                    {{title}}
+                </a>
+            </p>
+
 			<p>{{description}}</p>
 		</div>	
 	</div>
-<div>
-    
-<div style="height:100px"></div>
-{{/each}}
+</div>
