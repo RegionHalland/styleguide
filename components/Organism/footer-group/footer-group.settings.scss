@@ -1,11 +1,15 @@
 /* Organism - Footer group */
-$footer-group--background-color: #f4f4f4;
-$footer-group-main-color: false;
-$footer-group__text--color: $footer-group-main-color;
-$footer-group__link--color: $footer-group-main-color;
+$footer-group--background-color: $base3-light; //Can use "false"
+$footer-group-main-color: false; //Can use "false"
+
+$footer-group__text--color: $footer-group-main-color;//Can use "false"
+$footer-group__text--line-height: 1.6em;
+
+$footer-group__link--color: $footer-group-main-color;//Can use "false"
+$footer-group__link--line-height: 2.75em; //44px
 
 $footer-group__header--border-bottom-width: 0.125em;
 $footer-group__header--border-bottom-style: solid;
-$footer-group__header--border-bottom-color: $footer-group-main-color;
+$footer-group__header--border-bottom-color: $footer-group-main-color;//Can use "false"
 
-$footer-group__container-py: 2.5em;
+$footer-group__container-py: 2.5em; //40px

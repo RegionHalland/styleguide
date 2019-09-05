@@ -33,8 +33,13 @@
         }
 
         &-px {
-            padding-left: $page__container--padding-x; //16px - Defined in global
+            padding-left: $page__container--padding-x; //8px - Defined in global
             padding-right: $page__container--padding-x;
+
+            @include small {
+                padding-left: $page__container-small--padding-x; //16px - Defined in global
+                padding-right: $page__container-small--padding-x;
+            }
 
             // Using offset for grid system
             @include medium {

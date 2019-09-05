@@ -1,14 +1,20 @@
 .rh-link {
   &--navigation {
     /* Visuellt */
-    color: black;
+    @if $link--color {
+        color: $link--color;
+    }
 
     /* Typografi */
-    text-decoration: none;
+    @if $link--text-decoration {
+        text-decoration: $link--text-decoration;
+    }
   }
 
   &--navigation:active, &--navigation:hover {
     /* Typografi */
-    text-decoration: underline;
+    @if $link--active-hover-text-decoration {
+        text-decoration: $link--active-hover-text-decoration;
+    }
   }
 }
