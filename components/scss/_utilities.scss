@@ -16,6 +16,51 @@
         &--none {
             display: none;
         }
+
+        // Display from 0 to sm (small) mode
+        &-sm {
+            display: block;
+
+            @include medium {
+                display: none;
+            }
+        }
+
+        &-from {
+            // Display from lg mode (large) and upp
+            &-lg {
+                display: none;
+
+                @include large {
+                    display: block;
+                }
+            }
+        }
+
+        // On ONLY specific mode
+        &-only {
+            &-sm {
+                display: none;
+
+                @include small {
+                    display: block;
+                }
+                @include medium {
+                    display: none;
+                }
+            }
+
+            &-md {
+                display: none;
+
+                @include medium {
+                    display: block;
+                }
+                @include large {
+                    display: none;
+                }
+            }
+        }
     }
 
     // padding-left - Useful for menu
@@ -112,9 +157,13 @@
 .rh {
     &-container {
         &-px {
-            padding-left: $page__container--padding-x; //16px
+            padding-left: $page__container--padding-x; //11.2px
             padding-right: $page__container--padding-x;
 
+            @include small {
+                padding-left: $page__container-small--padding-x; //16px
+                padding-right: $page__container-small--padding-x;
+            }
             @include medium {
                 padding-left: $page__container-medium--padding-x; //30px
                 padding-right: $page__container-medium--padding-x;

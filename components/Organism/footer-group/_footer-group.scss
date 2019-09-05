@@ -1,19 +1,22 @@
 .rh-footer-group {
-    @if $footer-group--background-color {
-        background-color: $footer-group--background-color;
-    }
-
     // Reset global settings
     p {
         margin: 0;
         font-size: 1em;
     }
 
+    @if $footer-group--background-color {
+        background-color: $footer-group--background-color;
+    }
+
     &__item {
 
-        p,
+        p {
+            line-height: $footer-group__text--line-height;
+        }
+
         a {
-            line-height: 1.6;
+            line-height: $footer-group__link--line-height; //44px
         }
 
         margin-bottom: 2.5em;
