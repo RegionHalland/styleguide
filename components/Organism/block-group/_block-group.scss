@@ -1,5 +1,5 @@
 /* Needed components
-...
+-> /components/Molecules/block/_block.scss
 */
 
 .rh-block-group {
@@ -33,11 +33,11 @@
         }
 
         &-px {
-            padding-left: $page__container--padding-x; //8px - Defined in global
+            padding-left: $page__container--padding-x; //0.7em - Defined in global
             padding-right: $page__container--padding-x;
 
             @include small {
-                padding-left: $page__container-small--padding-x; //16px - Defined in global
+                padding-left: $page__container-small--padding-x; //1em - Defined in global
                 padding-right: $page__container-small--padding-x;
             }
 

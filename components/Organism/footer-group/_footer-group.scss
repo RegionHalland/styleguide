@@ -1,114 +1,69 @@
 .rh-footer-group {
     // Reset global settings
-    p {
-        margin: 0;
-        font-size: 1em;
-    }
-
-    @if $footer-group--background-color {
-        background-color: $footer-group--background-color;
-    }
+    p { margin: 0; }
 
     &__item {
+        padding-top: $footer-group__item-container--padding-top;
+        padding-right: $footer-group__item-container--padding-right;
+        padding-bottom: $footer-group__item-container--padding-bottom;
+        padding-left: $footer-group__item-container--padding-left;
 
-        p {
-            line-height: $footer-group__text--line-height;
-        }
-
-        a {
-            line-height: $footer-group__link--line-height; //44px
-        }
-
-        margin-bottom: 2.5em;
-        height: 100%;
+        height: $footer-group__item--height;
 
         @if $footer-group__text--color {
             color: $footer-group__text--color;
         }
 
         @include medium {
-            margin-bottom: 0;
+            padding-top: $footer-group__item-container--padding-medium-top;
+            padding-right: $footer-group__item-container--padding-medium-right;
+            padding-bottom: $footer-group__item-container--padding-medium-bottom;
+            padding-left: $footer-group__item-container--padding-medium-left;
         }
 
         &-header {
-            margin-bottom: .8em;
+            margin-bottom: $footer-group__header--margin-bottom;
 
-            border-bottom-width: 0.125em;
-            border-bottom-style: solid;
+            border-bottom-width: $footer-group__header--border-bottom-width;
+            border-bottom-style: $footer-group__header--border-bottom-style;
 
             @if $footer-group__header--border-bottom-color {
                 border-bottom-color: $footer-group__header--border-bottom-color;
             }
 
             &-title {
-                font-size: 1em;
-                font-weight: bold;
-                line-height: 1.4;
+                font-size: $footer-group__header-title--font-size;
+                font-weight: $footer-group__header-title--font-weight;
+                line-height: $footer-group__header-title--line-height;
 
+                @include large {
+                    font-size: $footer-group__header-title--font-size-large;
+                }
             }
         }
 
         &-body {
-            font-size: 0.875em; //14px
-            word-break: break-word;
-            line-height: 1.6;
+            p {
+                font-size: $footer-group__body--font-size;
+                word-break: $footer-group__body--word-break;
+                
+                @include large {
+                    font-size: $footer-group__body--font-size-large;
+                }
+            }
+            p { line-height: $footer-group__text--line-height; }
+            a { line-height: $footer-group__link--line-height; }
 
             &-address {
-                margin: .8em 0;
+                margin: $footer-group__body-address--margin;
+                p,a {
+                    line-height: $footer-group__text--line-height;
+                }
             }
 
             &-link {
                 @if $footer-group__link--color {
                     color: $footer-group__link--color;
-                }
-            }
-        }
-
-        &-column {
-            &-first {
-                @include medium {
-                    margin-right: 1em;
-                }
-
-                @include large {
-                    margin-right: 2em;
-                }
-
-                @include xlarge {
-                    margin-right: 4em;
-                }
-            }
-
-            &-between {
-                @include medium {
-                    margin-left: .5em;
-                    margin-right: .5em;
-                }
-
-                @include large {
-                    margin-left: 1em;
-                    margin-right: 1em;
-                }
-
-                @include xlarge {
-                    margin-left: 2em;
-                    margin-right: 2em;
-                }
-            }
-
-            &-last {
-                margin-bottom: 0;
-
-                @include medium {
-                    margin-left: 1em;
-                }
-
-                @include large {
-                    margin-left: 2em;
-                }
-
-                @include xlarge {
-                    margin-left: 4em;
                 }
             }
         }
@@ -118,6 +73,45 @@
         &-py {
             padding-top: $footer-group__container-py;
             padding-bottom: $footer-group__container-py;
+
+            @include medium {
+                padding-top: $footer-group__container-py - $footer-group__item-container--padding-medium-top;
+                padding-bottom: $footer-group__container-py - $footer-group__item-container--padding-medium-bottom;
+            }
+        }
+
+        &-px {
+            padding-left: $page__container--padding-x; //0.7em - Defined in global
+            padding-right: $page__container--padding-x;
+
+            @include small {
+                padding-left: $page__container-small--padding-x; //1em - Defined in global
+                padding-right: $page__container-small--padding-x;
+            }
+
+            @include medium {
+                padding-left: $page__container-medium--padding-x - $footer-group__item-container--padding-medium-left; //1em - Defined in global
+                padding-right: $page__container-medium--padding-x - $footer-group__item-container--padding-medium-right;
+            }
+
+            @include large {
+                padding-left: $page__container-large--padding-x - $footer-group__item-container--padding-medium-left; //80px
+                padding-right: $page__container-large--padding-x -$footer-group__item-container--padding-medium-right; //80px
+            }
+
+            @include xlarge {
+                padding-left: $page__container-xlarge--padding-x - $footer-group__item-container--padding-medium-left; //80px
+                padding-right: $page__container-xlarge--padding-x -$footer-group__item-container--padding-medium-right; //80px
+            }
+        }
+
+        &-p {
+            @extend .rh-footer-group__container-py;
+            @extend .rh-footer-group__container-px;
+
+            @if $footer-group--background-color {
+                background-color: $footer-group--background-color;
+            }
         }
     }
 }
