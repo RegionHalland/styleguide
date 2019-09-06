@@ -28,7 +28,7 @@ Exempel: `@include medium {...}`
 
 | Breakpoint | padding-x| Pixel |
 |:---:|---:|---:|
-|xs|1em|16px|
+|xs|0.7em|11.2px|
 |`small`|1em|16px|
 |`medium`|1.875em|30px|
 |`large`|3.75em|60px|
@@ -80,6 +80,21 @@ __Användning__
 ```
 
 ## 3. Grid
+Hudvud struktur:
+```
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <!-- Content här -->
+        </div>
+
+        <div class="col">
+            <!-- Content här -->
+        </div>
+    </div>
+</div>
+```
+_Klasserna `container, row, col` är bara förklaring om struktur och finnas inte allt i Stilguiden._
 
 ### 3.1. Kolumner i en rad har lika höjd
 - Klassnamn: `row row-eq-height`

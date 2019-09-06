@@ -1,12 +1,12 @@
 {
     "title": "Block group",
-    "status": "wip",
+    "status": "review",
     "version": "1.0.0",
     "context": {},
     "variants": [
         {
             "name": "default",
-            "status": "wip",
+            "status": "review",
             "context": {
                 "withContainer": false,
                 "blocks": [
@@ -39,8 +39,8 @@
             }
         },
         {
-            "name": "with container",
-            "status": "wip",
+            "name": "Built-in container",
+            "status": "review",
             "context": {
                 "withContainer": true,
                 "blocks": [

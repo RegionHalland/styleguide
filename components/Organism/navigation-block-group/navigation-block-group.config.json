@@ -77,7 +77,7 @@
             }
         },
         {
-            "name": "with container",
+            "name": "Built-in container",
             "status": "review",
             "context": {
                 "withContainer": true,
