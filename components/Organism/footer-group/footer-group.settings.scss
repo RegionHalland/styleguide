@@ -1,5 +1,5 @@
 /* Organism - Footer group */
-$footer-group--background-color: $base3-light; //Can use "false"
+$footer-group__container--background-color: $base3-light; //Can use "false"
 $footer-group-main-color: false; //Can use "false"
 
 $footer-group__text--color: $footer-group-main-color;//Can use "false"
@@ -23,7 +23,7 @@ $footer-group__body--font-size-large: 1em; //16px
 $footer-group__body--word-break: break-word;
 $footer-group__body-address--margin: .8em 0;
 
-$footer-group__container-py: 2.5em; //40px
+$footer-group__container--padding-y: 2.5em; //40px
 
 $footer-group__item-container--padding-top: 0;
 $footer-group__item-container--padding-right: 0;

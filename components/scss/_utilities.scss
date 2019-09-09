@@ -27,7 +27,7 @@
         }
 
         &-from {
-            // Display from lg mode (large) and upp
+            // Display from lg (large) mode and up
             &-lg {
                 display: none;
 
@@ -37,7 +37,7 @@
             }
         }
 
-        // On ONLY specific mode
+        // ONLY using for a specific mode
         &-only {
             &-sm {
                 display: none;
@@ -156,7 +156,12 @@
 // Container
 .rh {
     &-container {
-        &-px {
+        $prefix: "rh-container";
+        $container-px: $prefix + "-px";
+
+        @include create-container-px($container-px);
+
+        /* &-px {
             padding-left: $page__container--padding-x; //11.2px
             padding-right: $page__container--padding-x;
 
@@ -178,7 +183,7 @@
                 padding-left: $page__container-xlarge--padding-x; //80px
                 padding-right: $page__container-xlarge--padding-x;
             }
-        }
+        } */
 
         &--auto {
             width: 100%;

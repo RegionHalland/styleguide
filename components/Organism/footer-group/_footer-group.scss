@@ -1,6 +1,9 @@
 .rh-footer-group {
-    // Reset global settings
-    p { margin: 0; }
+
+    // Reset global settings for HTML tag
+    p {
+        margin: 0;
+    }
 
     &__item {
         padding-top: $footer-group__item-container--padding-top;
@@ -46,17 +49,25 @@
             p {
                 font-size: $footer-group__body--font-size;
                 word-break: $footer-group__body--word-break;
-                
+
                 @include large {
                     font-size: $footer-group__body--font-size-large;
                 }
             }
-            p { line-height: $footer-group__text--line-height; }
-            a { line-height: $footer-group__link--line-height; }
+
+            p {
+                line-height: $footer-group__text--line-height;
+            }
+
+            a {
+                line-height: $footer-group__link--line-height;
+            }
 
             &-address {
                 margin: $footer-group__body-address--margin;
-                p,a {
+
+                p,
+                a {
                     line-height: $footer-group__text--line-height;
                 }
             }
@@ -70,7 +81,30 @@
     }
 
     &__container {
-        &-py {
+        // Definition
+        $prefix: "rh-footer-group__container";
+        $container-py: $prefix + "-py";
+        $container-px: $prefix + "-px";
+        $container-p: $prefix + "-p";
+
+        // Offset calculation for grid system
+        $container-py-offset-top: $footer-group__container--padding-y - $footer-group__item-container--padding-medium-top;
+        $container-py-offset-bottom: $footer-group__container--padding-y - $footer-group__item-container--padding-medium-bottom;
+
+        $container-px-offset-left: $footer-group__item-container--padding-medium-left;
+        $container-px-offset-right: $footer-group__item-container--padding-medium-right;
+
+        // CSS Generation
+        @include create-container-py($container-py, $footer-group__container--padding-y, $container-py-offset-top, $container-py-offset-bottom);
+        @include create-container-px($container-px, $container-px-offset-left, $container-px-offset-right);
+
+        @include create-container-p($container-p, $container-py, $container-px) {
+            @if $footer-group__container--background-color {
+                background-color: $footer-group__container--background-color;
+            }
+        }
+
+        /* &-py {
             padding-top: $footer-group__container-py;
             padding-bottom: $footer-group__container-py;
 
@@ -78,9 +112,9 @@
                 padding-top: $footer-group__container-py - $footer-group__item-container--padding-medium-top;
                 padding-bottom: $footer-group__container-py - $footer-group__item-container--padding-medium-bottom;
             }
-        }
+        } */
 
-        &-px {
+        /* &-px {
             padding-left: $page__container--padding-x; //0.7em - Defined in global
             padding-right: $page__container--padding-x;
 
@@ -103,15 +137,15 @@
                 padding-left: $page__container-xlarge--padding-x - $footer-group__item-container--padding-medium-left; //80px
                 padding-right: $page__container-xlarge--padding-x -$footer-group__item-container--padding-medium-right; //80px
             }
-        }
+        } */
 
-        &-p {
+        /* &-p {
             @extend .rh-footer-group__container-py;
             @extend .rh-footer-group__container-px;
 
             @if $footer-group--background-color {
                 background-color: $footer-group--background-color;
             }
-        }
+        } */
     }
 }
