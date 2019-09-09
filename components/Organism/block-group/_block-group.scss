@@ -22,7 +22,30 @@
     }
 
     &__container {
-        &-py {
+        // Definition
+        $prefix: "rh-block-group__container";
+        $container-py: $prefix + "-py";
+        $container-px: $prefix + "-px";
+        $container-p: $prefix + "-p";
+
+        // Offset calculation for grid system
+        $container-py-offset-top: $block-group__container--padding-y - $block-group__item-container--padding-medium-top;
+        $container-py-offset-bottom: $block-group__container--padding-y - $block-group__item-container--padding-medium-bottom;
+
+        $container-px-offset-left: $block-group__item-container--padding-medium-left;
+        $container-px-offset-right: $block-group__item-container--padding-medium-right;
+
+        // CSS Generation
+        @include create-container-py($container-py, $block-group__container--padding-y, $container-py-offset-top, $container-py-offset-bottom);
+        @include create-container-px($container-px, $container-px-offset-left, $container-px-offset-right);
+
+        @include create-container-p($container-p, $container-py, $container-px) {
+            @if $block-group__container--background-color {
+                background-color: $block-group__container--background-color;
+            }
+        }
+
+        /* &-py {
             padding-top: $block-group__container--padding-y;
             padding-bottom: $block-group__container--padding-y - $block-group__item-container--padding-bottom; //30px
 
@@ -30,9 +53,9 @@
                 padding-top: $block-group__container--padding-y - $block-group__item-container--padding-medium-top;
                 padding-bottom: $block-group__container--padding-y - $block-group__item-container--padding-medium-bottom; //30px
             }
-        }
+        } */
 
-        &-px {
+        /* &-px {
             padding-left: $page__container--padding-x; //0.7em - Defined in global
             padding-right: $page__container--padding-x;
 
@@ -56,16 +79,15 @@
                 padding-left: $page__container-xlarge--padding-x - $block-group__item-container--padding-medium-left; //80px
                 padding-right: $page__container-xlarge--padding-x -$block-group__item-container--padding-medium-right; //80px
             }
-        }
+        } */
 
-        &-p {
+        /* &-p {
             @extend .rh-block-group__container-py;
             @extend .rh-block-group__container-px;
 
-            /* Visuellt */
             @if $block-group__container--background-color {
                 background-color: $block-group__container--background-color;
             }
-        }
+        } */
     }
 }
