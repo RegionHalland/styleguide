@@ -19,6 +19,7 @@
 
 //-> Temporary importing for testing site styling in Style guide before compiling
 //-> It will be removed after the project development
+//@import '../../../RH-sites/RhSettingsVardgivare/_settings-vardgivare.scss';
 //@import '../../../RH-sites/RhSettingsVardgivare/_settings-components-vardgivare.scss';
 
 // Atoms
@@ -52,6 +53,7 @@
 //@import 'components/Molecules/rh-event-card-calendar/_rh-event-card-calendar.scss';
 @import 'components/Molecules/rh-personal-info/_rh-personal-info.scss';
 @import 'components/Molecules/navigation-card/_navigation-card.scss';
+@import 'components/Molecules/navigation-left/_navigation-left.scss';
 @import 'components/Molecules/linkgroup/_linkgroup.scss';
 //@import 'components/Molecules/rh-filter-alphabet/_rh-filter-alphabet.scss';
 //@import 'components/Molecules/rh-image-caption/_rh-image-caption.scss';
