@@ -26,12 +26,52 @@
             }
         }
 
+        &-md {
+            display: block;
+
+            @include large {
+                display: none;
+            }
+        }
+
+        &-lg {
+            display: block;
+
+            @include xlarge {
+                display: none;
+            }
+        }
+
         &-from {
+            &-sm {
+                display: none;
+
+                @include small {
+                    display: block;
+                }
+            }
+
+            &-md {
+                display: none;
+
+                @include medium {
+                    display: block;
+                }
+            }
+
             // Display from lg (large) mode and up
             &-lg {
                 display: none;
 
                 @include large {
+                    display: block;
+                }
+            }
+
+            &-xl {
+                display: none;
+
+                @include xlarge {
                     display: block;
                 }
             }
@@ -58,6 +98,25 @@
                 }
                 @include large {
                     display: none;
+                }
+            }
+
+            &-lg {
+                display: none;
+
+                @include large {
+                    display: block;
+                }
+                @include xlarge {
+                    display: none;
+                }
+            }
+
+            &-xl {
+                display: none;
+
+                @include xlarge {
+                    display: block;
                 }
             }
         }
