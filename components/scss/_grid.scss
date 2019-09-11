@@ -363,6 +363,21 @@
     }
 }
 
+// The same with .clearfix
+.row {
+    //margin-right: -15px;//Does not neeed in our case
+    //margin-left: -15px;//Does not neeed in our case
+
+    &:before, &:after {
+        display: table;
+        content: " ";
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
 //-> https://codepen.io/bootstrapped/details/RrabNe/
 .row.row-eq-height {
     display: flex;
