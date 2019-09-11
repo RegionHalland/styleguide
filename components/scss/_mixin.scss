@@ -1,13 +1,11 @@
-/*
- * $name {string} is container's name
- * $padding-y {number} is using for both padding-top and padding-bottom
+// $name {string} is container's name
+// $padding-y {number} is using for both padding-top and padding-bottom
 
- * "OFFSET" depends on glutter (spacing between cells) when using grid system
- * $offset-top {number} creates "offset" on top
- * $offset-bottom {number} creates "offset" on bottom
+// "OFFSET" depends on glutter (spacing between cells) when using grid system
+// $offset-top {number} creates "offset" on top
+// $offset-bottom {number} creates "offset" on bottom
 
- * @content {callback} is using for extend code
-*/
+// @content {callback} is using for extend code
 @mixin create-container-py($name, $padding-y: 0, $offset-top: 0, $offset-bottom: 0) {
     @if $name {
         @at-root .#{$name} {
@@ -24,16 +22,14 @@
     }
 }
 
-/*
- * $name {string} is container's name
- * $page__container*--padding-x {number} is already defined on global
+// $name {string} is container's name
+// $page__container*--padding-x {number} is already defined on global
 
- * "OFFSET" depends on glutter (spacing between cells) when using grid system
- * $offset-left {number} creates "offset" on left
- * $offset-right {number} creates "offset" on right
- 
- * @content {callback} is using for extend code
-*/
+// "OFFSET" depends on glutter (spacing between cells) when using grid system
+// $offset-left {number} creates "offset" on left
+// $offset-right {number} creates "offset" on right
+
+// @content {callback} is using for extend code
 @mixin create-container-px($name, $offset-left: 0, $offset-right: 0) {
     @if $name {
         @at-root .#{$name} {
@@ -65,14 +61,12 @@
     }
 }
 
-/*
- * Creates an extend CSS class from "container-py" and "container-px" for a completed container by using padding-*
- * $name {string} is container's name
- * $container-py {string}
- * $container-px {string}
- 
- * @content {callback} is using for extend code
-*/
+// Creates an extend CSS class from "container-py" and "container-px" for a completed container by using padding-*
+// $name {string} is container's name
+// $container-py {string}
+// $container-px {string}
+
+// @content {callback} is using for extend code
 @mixin create-container-p($name, $container-py, $container-px) {
     @if $name and $container-py and $container-px {
         @at-root .#{$name} {
