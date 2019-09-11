@@ -4,6 +4,9 @@
 */
 
 .rh-navigation-block {
+    // Reset p tag's settings on global
+    p { margin-bottom: 0; }
+
     /* Box-modell/beteende */
     min-height: $navigation-block--min-height;
 
@@ -95,7 +98,9 @@
 
     &__description {
         /* Box-modell/beteende */
-        margin: $navigation-block__description--margin;
+        @if $navigation-block__description--margin {
+            margin: $navigation-block__description--margin;
+        }
 
         &-text {
 
