@@ -21,14 +21,14 @@
 
     /* Visuellt */
     @if $round-button--background-color-hover-active {
-      background-color: $round-button--background-color-hover-active;
-    }
-    
-    /* Typografi */
-    @if $round-button--color-hover-active {
-      color: $round-button--color-hover-active;
+        background-color: $round-button--background-color-hover-active;
     }
 
+    /* Typografi */
+    @if $round-button--color-hover-active {
+        color: $round-button--color-hover-active;
+    }
+    
   }
 
   &--vuxhalland {
