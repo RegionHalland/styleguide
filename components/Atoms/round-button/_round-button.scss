@@ -20,10 +20,14 @@
   &:hover,&:active {
 
     /* Visuellt */
-    background-color: $round-button--background-color-hover-active;
+    @if $round-button--background-color-hover-active {
+        background-color: $round-button--background-color-hover-active;
+    }
 
     /* Typografi */
-    color: $round-button--color-hover-active;
+    @if $round-button--color-hover-active {
+        color: $round-button--color-hover-active;
+    }
 
   }
 
