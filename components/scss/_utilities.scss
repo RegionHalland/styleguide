@@ -1,7 +1,19 @@
-/* Utilities */
+// Utilities
 .rh {
     // Position
     &-pos {
+        &--static {
+            position: static; // Default value
+        }
+
+        &--relative {
+            position: relative;
+        }
+
+        &--absolute {
+            position: absolute;
+        }
+
         &--fixed {
             position: fixed;
         }
@@ -17,7 +29,7 @@
             display: none;
         }
 
-        // Display from 0 to sm (small) mode
+        // FROM a specific mode and down
         &-sm {
             display: block;
 
@@ -42,7 +54,9 @@
             }
         }
 
+        // FROM a specific mode and up
         &-from {
+            // Displays from sm (small) mode and up
             &-sm {
                 display: none;
 
@@ -59,7 +73,6 @@
                 }
             }
 
-            // Display from lg (large) mode and up
             &-lg {
                 display: none;
 
@@ -77,7 +90,7 @@
             }
         }
 
-        // ONLY using for a specific mode
+        // Displays ONLY in a specific mode
         &-only {
             &-sm {
                 display: none;
@@ -109,14 +122,6 @@
                 }
                 @include xlarge {
                     display: none;
-                }
-            }
-
-            &-xl {
-                display: none;
-
-                @include xlarge {
-                    display: block;
                 }
             }
         }
@@ -212,7 +217,7 @@
     }
 }
 
-// Container
+// Containers
 .rh {
     &-container {
         $prefix: "rh-container";
@@ -220,34 +225,14 @@
 
         @include create-container-px($container-px);
 
-        /* &-px {
-            padding-left: $page__container--padding-x; //11.2px
-            padding-right: $page__container--padding-x;
-
-            @include small {
-                padding-left: $page__container-small--padding-x; //16px
-                padding-right: $page__container-small--padding-x;
-            }
-            @include medium {
-                padding-left: $page__container-medium--padding-x; //30px
-                padding-right: $page__container-medium--padding-x;
-            }
-
-            @include large {
-                padding-left: $page__container-large--padding-x; //60px
-                padding-right: $page__container-large--padding-x;
-            }
-
-            @include xlarge {
-                padding-left: $page__container-xlarge--padding-x; //80px
-                padding-right: $page__container-xlarge--padding-x;
-            }
-        } */
-
         &--auto {
             width: 100%;
-            min-width: $page__container--min-width;
-            max-width: $page__container--max-width;
+            @if $page__container--min-width {
+                min-width: $page__container--min-width;
+            }
+            @if $page__container--max-width {
+                max-width: $page__container--max-width;
+            }
             
             margin-left: auto;
             margin-right: auto;
@@ -256,14 +241,6 @@
         &--center {
             margin-left: auto;
             margin-right: auto;
-        }
-
-        &--min-width {
-            min-width: $page__container--min-width;
-        }
-
-        &--max-width {
-            max-width: $page__container--max-width;
         }
     }
 }
