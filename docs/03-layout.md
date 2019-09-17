@@ -43,7 +43,7 @@ __Användning__
 
 ### 2.2. `rh-container--auto`
 - Filplats: `/components/scss/_utilities.scss`
-- Beskrivning: container är i mitten av användares skärm med detaljen är nedan.
+- Beskrivning: justera en container i mitten med detaljen är nedan.
 ```
     width: 100%;
     min-width: 20em; //320px
@@ -55,27 +55,29 @@ __Användning__
 __Användning__
 ```
 <div class="rh-container--auto">
-    <!-- Content här -->
+    <!-- Content -->
 </div>
 ```
 
 ### 2.3. Annan containers
-- `rh-container--center`: aligna en container i mitten av användares skärm.
-- `rh-container--min-width`: applicera bara `min-width: 20em;` som definieras i global.
-- `rh-container--max-width`: applicera bara `max-width: 90em;` som definieras i global.
+|Klassnamn|Beskrivning|
+|---|---|
+|rh-container--center|Justera en container i mitten|
+|rh-container--min-width|Applicera __bara__ `min-width: 20em` _(definieras i global)_|
+|rh-container--max-width|Applicera bara `max-width: 90em` _(definieras i global)_|
 
 __Användning__
 ```
 <div class="rh-container--center">
-    <!-- Content här -->
+    <!-- Content -->
 </div>
 
 <div class="rh-container--min-width">
-    <!-- Content här -->
+    <!-- Content -->
 </div>
 
 <div class="rh-container--max-width">
-    <!-- Content här -->
+    <!-- Content -->
 </div>
 ```
 
@@ -85,16 +87,16 @@ Hudvud struktur:
 <div class="container">
     <div class="row">
         <div class="col">
-            <!-- Content här -->
+            <!-- Content 1 -->
         </div>
 
         <div class="col">
-            <!-- Content här -->
+            <!-- Content 2 -->
         </div>
     </div>
 </div>
 ```
-_Klasserna `container, row, col` är bara förklaring om struktur och finnas inte allt i Stilguiden._
+___OBS!__ Klassen `container` är bara en förklaring för ett grid systems struktur._
 
 ### 3.1. Kolumner i en rad har lika höjd
 - Klassnamn: `row row-eq-height`
@@ -103,18 +105,30 @@ _Klasserna `container, row, col` är bara förklaring om struktur och finnas int
 
 __Användning__
 ```
-<div class="clearfix row row-eq-height">
-    <div class="col col-12 md-col-6 lg-col-4">
-        <!-- Element 1 -->
-    </div>
-    
-    <div class="col col-12 md-col-6 lg-col-4">
-        <!-- Element 2 -->
+// CSS
+.item {
+    height: 100%;
+}
+
+// HTML
+<div class="container">
+    <div class="row row-eq-height">
+        <div class="col col-12 md-col-6 lg-col-4">
+            <div class="item">
+                <!-- Item 1 -->
+            </div>
+        </div>
+        
+        <div class="col col-12 md-col-6 lg-col-4">
+            <div class="item">
+                <!-- Item 2 -->
+            </div>
+        </div>
     </div>
 </div>
 ```
 
-### 3.2 Lösning för IE11
+### 3.2 Lösning för IE11s rendering
 * Anledning: IE11 räknar inte bra när det är odda nummer lik som: 33.3333333333...%. Det renderar om mycket och blinkar när bredden är nära begränsningarna.
 * Lösning: `max-width` används för att IE11 renderar bättre. Se mer i filen `/components/scss/_grid.scss`
 
