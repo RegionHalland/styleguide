@@ -1,48 +1,118 @@
-
 .rh-round-button {
 
-  /* Visuellt */
-  background: $round-button--background;
-  border: $round-button--border;
-  border-radius: $round-button--border-radius;
-  padding: $round-button--padding;
-
-  /* Typografi */
-  color: $round-button--color;
-  font-family: $round-button--font-family;
-  font-size: $round-button--font-size;
-  text-decoration: $round-button--text-decoration;
-
-  &--small {
-    padding: $round-button--padding-small;
-  }
-
-  &:hover,&:active {
-
     /* Visuellt */
-    @if $round-button--background-color-hover-active {
-        background-color: $round-button--background-color-hover-active;
+    background: $round-button--background;
+
+    @if $round-button--border {
+        border: $round-button--border;
     }
 
+    border-radius: $round-button--border-radius;
+    padding: $round-button--padding;
+
     /* Typografi */
-    @if $round-button--color-hover-active {
-        color: $round-button--color-hover-active;
+    color: $round-button--color;
+    font-family: $round-button--font-family;
+    font-size: $round-button--font-size;
+    text-decoration: $round-button--text-decoration;
+
+    &--small {
+        padding: $round-button--padding-small;
     }
-    
-  }
 
-  &--vuxhalland {
-    /* Visuellt */
-    background: $vuxhalland;
-    border: 1px solid $vuxhalland;
+    &:hover,
+    &:active {
 
-    /* Typografi */
-    color: black;
-  }
+        /* Visuellt */
+        @if $round-button--background-color-hover-active {
+            background-color: $round-button--background-color-hover-active;
+        }
 
-  &--vuxhalland:hover,&:active {
-    /* Typografi */
-    color: black;
-  }
+        /* Typografi */
+        @if $round-button--color-hover-active {
+            color: $round-button--color-hover-active;
+        }
+
+    }
+
+    // New version for round button by using div tag - More flexible
+    &-fx {
+        /* Box-modell/beteende */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* Visuellt */
+        background: $round-button-fx--background;
+
+        @if $round-button-fx--border {
+            border: $round-button-fx--border;
+        }
+
+        border-radius: $round-button-fx--border-radius;
+
+        /* Typografi */
+        font-family: $round-button-fx--font-family;
+        color: $round-button-fx--color;
+        text-decoration: $round-button-fx--text-decoration;
+
+        &:hover,
+        &:active {
+
+            /* Visuellt */
+            @if $round-button-fx--background-color-hover-active {
+                background-color: $round-button-fx--background-color-hover-active;
+            }
+
+            /* Typografi */
+            @if $round-button-fx--color-hover-active {
+                color: $round-button-fx--color-hover-active;
+            }
+        }
+
+        &-small {
+            /* Box-modell/beteende */
+            height: $round-button-fx-small--height;
+            min-height: $round-button-fx-small--height; //IE11 fix
+            width: $round-button-fx-small--width;
+            min-width: $round-button-fx-small--width; //IE11 fix
+        }
+
+        &-responsive {
+            /* Box-modell/beteende */
+            height: $round-button-fx-responsive--height;
+            min-height: $round-button-fx-responsive--height;
+            width: $round-button-fx-responsive--width;
+            min-width: $round-button-fx-responsive--width;
+
+            @include medium {
+                /* Box-modell/beteende */
+                height: $round-button-fx-responsive--height-medium;
+                min-height: $round-button-fx-responsive--height-medium;
+                width: $round-button-fx-responsive--width-medium;
+                min-width: $round-button-fx-responsive--width-medium;
+
+                &>span {
+                    /* Typografi */
+                    font-size: $round-button-fx-responsive--icon-font-size-medium;
+                }
+            }
+        }
+    }
+
+    &--vuxhalland {
+        /* Visuellt */
+        background: $vuxhalland;
+        border: 1px solid $vuxhalland;
+
+        /* Typografi */
+        color: black;
+    }
+
+    &--vuxhalland:hover,
+    &:active {
+        /* Typografi */
+        color: black;
+    }
 
 }

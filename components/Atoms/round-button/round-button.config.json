@@ -1,6 +1,34 @@
 {
-  "title": "Round button",
-  "status": "review",
-  "version": "1.0.0",
-  "context": {}
+    "title": "Round button",
+    "status": "review",
+    "version": "1.0.0",
+    "context": {},
+    "variants": [
+        {
+            "name": "default",
+            "status": "review",
+            "context": {
+                "isDefault": true,
+                "icon": "icon-log-in"
+            }
+        },
+        {
+            "name": "fx-small",
+            "status": "review",
+            "context": {
+                "isDefault": false,
+                "suffix": "fx-small",
+                "icon": "icon-plus"
+            }
+        },
+        {
+            "name": "fx-responsive",
+            "status": "review",
+            "context": {
+                "isDefault": false,
+                "suffix": "fx-responsive",
+                "icon": "icon-menu"
+            }
+        }
+    ]
 }
