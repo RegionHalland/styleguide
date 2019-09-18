@@ -3,7 +3,9 @@
 
   /* Visuellt */
   background: $round-button--background;
-  border: $round-button--border;
+  @if $round-button--border {
+    border: $round-button--border;
+  }
   border-radius: $round-button--border-radius;
   padding: $round-button--padding;
 
