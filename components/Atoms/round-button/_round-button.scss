@@ -43,7 +43,9 @@
         align-items: center;
 
         /* Visuellt */
-        background: $round-button-fx--background;
+        @if $round-button-fx--background {
+            background: $round-button-fx--background;
+        }
 
         @if $round-button-fx--border {
             border: $round-button-fx--border;
@@ -53,7 +55,11 @@
 
         /* Typografi */
         font-family: $round-button-fx--font-family;
-        color: $round-button-fx--color;
+
+        @if $round-button-fx--color {
+            color: $round-button-fx--color;
+        }
+
         text-decoration: $round-button-fx--text-decoration;
 
         &:hover,

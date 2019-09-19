@@ -1,0 +1,26 @@
+/* Atoms - Search field */
+$search-field__term--padding: 0.625em;
+
+$search-field__term--border-styling: 0.0625em solid $grey-light;
+$search-field__term--border-top: $search-field__term--border-styling;
+$search-field__term--border-left: $search-field__term--border-styling;
+$search-field__term--border-bottom: $search-field__term--border-styling;
+$search-field__term--border-right: 0;
+$search-field__term--border-radius: 0.25em 0 0 0.25em;
+
+$search-field__term--color: $grey-darker;
+$search-field__term--font-size: $p-small;
+$search-field__term--font-size-medium: $p-medium;
+$search-field__term--font-size-large: $p-large;
+
+$search-field__button--padding-top: 0.625em;
+$search-field__button--padding-right: 0;
+$search-field__button--padding-bottom: 0.625em;
+$search-field__button--padding-left: 0;
+
+$search-field__button--border: 0.0625em solid $base3-dark;
+$search-field__button--border-radius: 0 0.25em 0.25em 0;
+$search-field__button--background: $base3;
+$search-field__button--color: #ffffff;
+$search-field__button--font-size: $p-small;
+$search-field__button--font-weight: normal;
