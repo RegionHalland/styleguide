@@ -9,31 +9,39 @@
     .rh-search-term {
         /* Box-modell/beteende */
         width: 100%;
-        padding: em(10);
+        padding: $search-field__term--padding; //em(10);
         margin-right: -5px;
 
         /* Visuellt */
-        border-top: 1px solid $grey-light;
-        border-left: 1px solid $grey-light;
-        border-bottom: 1px solid $grey-light;
-        border-right: 0;
-        border-radius: 4px 0 0 4px;
+        border-top: $search-field__term--border-top; //1px solid $grey-light;
+        border-left: $search-field__term--border-left; //1px solid $grey-light;
+        border-bottom: $search-field__term--border-bottom; //1px solid $grey-light;
+        border-right: $search-field__term--border-right; //0;
+        border-radius: $search-field__term--border-radius; //4px 0 0 4px;
 
         /* Typografi */
-        color: $grey-darker;
-        font-size: $p-small;
+        @if $search-field__term--color {
+            color: $search-field__term--color;
+        }
+        @if $search-field__term--font-size {
+            font-size: $search-field__term--font-size;
+        }
 
         /* Blandat/övrigt */
         outline: none;
 
         @include medium {
-            /* Typografi */
-            font-size: $p-medium;
+            @if $search-field__term--font-size-medium {
+                /* Typografi */
+                font-size: $search-field__term--font-size-medium;
+            }
         }
 
         @include large {
-            /* Typografi */
-            font-size: $p-large;
+            @if $search-field__term--font-size-large {
+                /* Typografi */
+                font-size: $search-field__term--font-size-large;
+            }
         }
 
         &::placeholder {
@@ -117,18 +125,25 @@
 
     .rh-search-button {
         /* Box-modell/beteende */
-        padding: em(10);
+        padding-top: $search-field__button--padding-top; //em(10);
+        padding-right: $search-field__button--padding-right; //em(10);
+        padding-bottom: $search-field__button--padding-bottom; //em(10);
+        padding-left: $search-field__button--padding-left; //em(10);
 
         /* Visuellt */
-        border: 1px solid $base3-dark;
-        border-radius: 0 4px 4px 0;
-        background: $base3;
+        @if $search-field__button--border {
+            border: $search-field__button--border;
+        }
+        border-radius: $search-field__button--border-radius;
+        background: $search-field__button--background;
 
         /* Typografi */
-        color: white;
+        color: $search-field__button--color;
         text-align: center;
-        color: $white;
-        font-size: $p-small;
+        font-size: $search-field__button--font-size;
+        font-weight: $search-field__button--font-weight;
+
+        min-width: 4em;
 
         /* Blandat/övrigt */
         cursor: pointer;
