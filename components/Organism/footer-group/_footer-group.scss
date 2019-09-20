@@ -95,7 +95,9 @@
         $container-px-offset-right: $footer-group__item-container--padding-medium-right;
 
         // CSS Generation
-        @include create-container-py($container-py, $footer-group__container--padding-y, $container-py-offset-top, $container-py-offset-bottom);
+        @include create-container-py($container-py, $footer-group__container--padding-y, $container-py-offset-top, $container-py-offset-bottom){
+            padding-bottom: $footer-group__container--padding-y - $footer-group__item-container--padding-bottom;
+        };
         @include create-container-px($container-px, $container-px-offset-left, $container-px-offset-right);
 
         @include create-container-p($container-p, $container-py, $container-px) {
@@ -103,49 +105,5 @@
                 background-color: $footer-group__container--background-color;
             }
         }
-
-        /* &-py {
-            padding-top: $footer-group__container-py;
-            padding-bottom: $footer-group__container-py;
-
-            @include medium {
-                padding-top: $footer-group__container-py - $footer-group__item-container--padding-medium-top;
-                padding-bottom: $footer-group__container-py - $footer-group__item-container--padding-medium-bottom;
-            }
-        } */
-
-        /* &-px {
-            padding-left: $page__container--padding-x; //0.7em - Defined in global
-            padding-right: $page__container--padding-x;
-
-            @include small {
-                padding-left: $page__container-small--padding-x; //1em - Defined in global
-                padding-right: $page__container-small--padding-x;
-            }
-
-            @include medium {
-                padding-left: $page__container-medium--padding-x - $footer-group__item-container--padding-medium-left; //1em - Defined in global
-                padding-right: $page__container-medium--padding-x - $footer-group__item-container--padding-medium-right;
-            }
-
-            @include large {
-                padding-left: $page__container-large--padding-x - $footer-group__item-container--padding-medium-left; //80px
-                padding-right: $page__container-large--padding-x -$footer-group__item-container--padding-medium-right; //80px
-            }
-
-            @include xlarge {
-                padding-left: $page__container-xlarge--padding-x - $footer-group__item-container--padding-medium-left; //80px
-                padding-right: $page__container-xlarge--padding-x -$footer-group__item-container--padding-medium-right; //80px
-            }
-        } */
-
-        /* &-p {
-            @extend .rh-footer-group__container-py;
-            @extend .rh-footer-group__container-px;
-
-            @if $footer-group--background-color {
-                background-color: $footer-group--background-color;
-            }
-        } */
     }
 }

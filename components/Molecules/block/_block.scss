@@ -3,11 +3,10 @@
     position: relative;
 
     /* Box-modell/beteende */
-    width: $block--width;
+    @if $block--width {
+        width: $block--width;
+    }
 
-    /* Visuellt */
-    //border-bottom: 0.25em solid $color-primary;
-    
     /* Typografi */
     text-align: $block--text-align;
 
@@ -16,9 +15,6 @@
         margin-top: 0;
         padding: $block__text-container--padding;
         box-sizing: border-box;
-
-        /* Visuellt */
-        //border: 0.0625em solid $grey-lighter;
 
         &-title {
             /* Typografi */
