@@ -26,6 +26,9 @@
         @if $search-field__term--font-size {
             font-size: $search-field__term--font-size;
         }
+        @if $search-field__term--font-family {
+            font-family: $search-field__term--font-family;
+        }
 
         /* Blandat/övrigt */
         outline: none;
