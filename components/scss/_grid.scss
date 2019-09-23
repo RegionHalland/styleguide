@@ -382,6 +382,7 @@
 
     &>[class*='col-'] {
         display: flex;
+        flex-direction: column;
     }
 
     &:before,

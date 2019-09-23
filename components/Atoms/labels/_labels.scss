@@ -11,11 +11,11 @@
 	margin-right: em(10);
 
 	/* Visuellt */
-	background-color: $base3-light;
+	background-color: $labels--background-color;
 
 	/* Typografi */
 	font-size: em(14);
-	color: $black;
+	color: $labels--text-color;
 	text-align: center;
 	line-height: 1;
 	white-space: nowrap;
