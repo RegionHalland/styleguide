@@ -39,7 +39,9 @@
         $container-px-offset-right: $navigation-block-group__item-container--padding-medium-right;
 
         // CSS Generation
-        @include create-container-py($container-py, $navigation-block-group__container--padding-y, $container-py-offset-top, $container-py-offset-bottom);
+        @include create-container-py($container-py, $navigation-block-group__container--padding-y, $container-py-offset-top, $container-py-offset-bottom){
+            padding-bottom: $navigation-block-group__container--padding-y - $navigation-block-group__item-container--padding-bottom;
+        };
         @include create-container-px($container-px, $container-px-offset-left, $container-px-offset-right);
 
         @include create-container-p($container-p, $container-py, $container-px) {
@@ -47,51 +49,5 @@
                 background-color: $navigation-block-group__container--background-color;
             }
         }
-
-        /* &-py {
-            padding-top: $navigation-block-group__container--padding-y; //30px
-            padding-bottom: $navigation-block-group__container--padding-y - $block-group__item-container--padding-bottom;
-
-            // Using offset for grid system
-            @include medium {
-                padding-top: $navigation-block-group__container--padding-y - $navigation-block-group__item-container--padding-medium-top; //30px
-                padding-bottom: $navigation-block-group__container--padding-y - $navigation-block-group__item-container--padding-medium-bottom;
-            }
-        } */
-
-        /* &-px {
-            padding-left: $page__container--padding-x; //8px - Defined in global
-            padding-right: $page__container--padding-x;
-
-            @include small {
-                padding-left: $page__container-small--padding-x; //16px - Defined in global
-                padding-right: $page__container-small--padding-x;
-            }
-
-            // Using offset for grid system
-            @include medium {
-                padding-left: $page__container-medium--padding-x - $navigation-block-group__item-container--padding-medium-left; //30px
-                padding-right: $page__container-medium--padding-x - $navigation-block-group__item-container--padding-medium-right; //30px
-            }
-
-            @include large {
-                padding-left: $page__container-large--padding-x - $navigation-block-group__item-container--padding-medium-left; //80px
-                padding-right: $page__container-large--padding-x -$navigation-block-group__item-container--padding-medium-right; //80px
-            }
-
-            @include xlarge {
-                padding-left: $page__container-xlarge--padding-x - $navigation-block-group__item-container--padding-medium-left; //80px
-                padding-right: $page__container-xlarge--padding-x -$navigation-block-group__item-container--padding-medium-right; //80px
-            }
-        } */
-
-        /* &-p {
-            @extend .rh-navigation-block-group__container-py;
-            @extend .rh-navigation-block-group__container-px;
-
-            @if $navigation-block-group__container--background-color {
-                background-color: $navigation-block-group__container--background-color;
-            }
-        } */
     }
 }

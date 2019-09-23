@@ -1,6 +1,6 @@
 /* Molecules - Navigation block */
 $navigation-block--min-height: 3.75em; //60px
-$navigation-block--width: false; //100%
+$navigation-block--width: 100%; // Can using "false" - 100% is useful when using grid system
 $navigation-block--min-width: false; //18em
 $navigation-block--max-width: false;
 
