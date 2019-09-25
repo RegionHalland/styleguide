@@ -2,8 +2,13 @@
 
     /* Visuellt */
     background-color: $white;
-    border-bottom: 1px solid $grey-lighter;
-    border-top: 1px solid $grey-lighter;
+    @if $breadcrums--border-bottom {
+        border-bottom: $breadcrums--border-bottom;
+    }
+
+    @if $breadcrums--border-top {
+        border-top: 1px solid $breadcrums--border-top;
+    }
     list-style: none;
     padding-bottom: em(15);
     padding-top: em(15);
