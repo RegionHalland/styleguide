@@ -11,6 +11,7 @@
         width: 100%;
         padding: $search-field__term--padding; //em(10);
         margin-right: -5px;
+        height: $search-field__box-height; //40px
 
         /* Visuellt */
         border-top: $search-field__term--border-top; //1px solid $grey-light;
@@ -82,6 +83,9 @@
 
         &-larger {
             /* Box-modell/beteende */
+            @if $search-field__box-height-larger {
+                height: $search-field__box-height-larger;
+            }
             padding: em(15);
 
             /* Typografi */
@@ -128,10 +132,20 @@
 
     .rh-search-button {
         /* Box-modell/beteende */
-        padding-top: $search-field__button--padding-top; //em(10);
-        padding-right: $search-field__button--padding-right; //em(10);
-        padding-bottom: $search-field__button--padding-bottom; //em(10);
-        padding-left: $search-field__button--padding-left; //em(10);
+        height: $search-field__box-height; //40px
+        
+        @if $search-field__button--padding-top {
+            padding-top: $search-field__button--padding-top; //em(10);
+        }
+        @if $search-field__button--padding-right {
+            padding-right: $search-field__button--padding-right; //em(10);
+        }
+        @if $search-field__button--padding-bottom {
+            padding-bottom: $search-field__button--padding-bottom; //em(10);
+        }
+        @if $search-field__button--padding-left {
+            padding-left: $search-field__button--padding-left; //em(10);
+        }
 
         /* Visuellt */
         @if $search-field__button--border {
@@ -169,6 +183,9 @@
 
         &-larger {
             /* Box-modell/beteende */
+            @if $search-field__box-height-larger {
+                height: $search-field__box-height-larger;
+            }
             padding: em(15);
 
             /* Typografi */
