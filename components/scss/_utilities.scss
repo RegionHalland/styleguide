@@ -21,14 +21,6 @@
 
     // Display
     &-dp {
-        &--show {
-            display: block;
-        }
-
-        &--none {
-            display: none;
-        }
-
         // FROM a specific mode and down
         &-sm {
             display: block;
@@ -124,6 +116,14 @@
                     display: none;
                 }
             }
+        }
+
+        &--show {
+            display: block;
+        }
+
+        &--none {
+            display: none;
         }
     }
 
