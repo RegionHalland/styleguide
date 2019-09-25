@@ -1,0 +1,111 @@
+.rh-circle-button {
+    /* Box-modell/beteende */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Visuellt */
+    @if $circle-button--background {
+        background: $circle-button--background;
+    }
+
+    border-radius: 50%;
+
+    /* Typografi */
+    font-family: $circle-button--font-family;
+
+    @if $circle-button--text-color {
+        color: $circle-button--text-color;
+    }
+
+    text-decoration: none;
+
+    @if $circle-button--cursor {
+        cursor: $circle-button--cursor;
+    }
+
+    // The empty class is needed when using large and xlarge sizes
+    &__icon {}
+
+    // Sizes
+    &--small {
+        height: $circle-button--small-size;
+        min-height: $circle-button--small-size; //IE11
+        max-height: $circle-button--small-size; //IE11
+
+        width: $circle-button--small-size;
+        min-width: $circle-button--small-size; //IE11
+        max-width: $circle-button--small-size; //IE11
+    }
+
+    &--medium {
+        height: $circle-button--medium-size;
+        min-height: $circle-button--medium-size;
+        max-height: $circle-button--medium-size;
+
+        width: $circle-button--medium-size;
+        min-width: $circle-button--medium-size;
+        max-width: $circle-button--medium-size;
+    }
+
+    &--large {
+        height: $circle-button--large-size;
+        min-height: $circle-button--large-size;
+        max-height: $circle-button--large-size;
+
+        width: $circle-button--large-size;
+        min-width: $circle-button--large-size;
+        max-width: $circle-button--large-size;
+
+        .rh-circle-button__icon {
+            font-size: $circle-button--large-icon-font-size;
+        }
+    }
+
+    &--xlarge {
+        height: $circle-button--xlarge-size;
+        min-height: $circle-button--xlarge-size;
+        max-height: $circle-button--xlarge-size;
+
+        width: $circle-button--xlarge-size;
+        min-width: $circle-button--xlarge-size;
+        max-width: $circle-button--xlarge-size;
+
+        .rh-circle-button__icon {
+            font-size: $circle-button--xlarge-icon-font-size;
+        }
+    }
+
+    // Effects
+    @if $circle-button--border {
+        &--border {
+            border: $circle-button--border;
+        }
+    }
+
+    &:hover {
+
+        /* Visuellt */
+        @if $circle-button--background-color-hover {
+            background-color: $circle-button--background-color-hover;
+        }
+
+        /* Typografi */
+        @if $circle-button--text-color-hover {
+            color: $circle-button--text-color-hover;
+        }
+    }
+
+    &:active {
+
+        /* Visuellt */
+        @if $circle-button--background-color-active {
+            background-color: $circle-button--background-color-active;
+        }
+
+        /* Typografi */
+        @if $circle-button--text-color-active {
+            color: $circle-button--text-color-active;
+        }
+    }
+}
