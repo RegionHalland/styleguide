@@ -1,5 +1,7 @@
 # Circle button
-* Prefix: `rh-circle-button*`
+* Komponenten justerar automatiskt ikon i mitten och det ger bara en grund form för en flexibel återanvändning.
+* Komponents prefix: `rh-circle-button*`
+* Filplats: `/components/Atoms/circle-button`
 
 ## 1. Varianter
 |Klassnamn|Fullständigt namn|Em|Pixel|
@@ -17,7 +19,7 @@
 |:active selector|-|
 
 ## 3. Ikon
-* `rh-circle-button__icon` används för att kontrollera ikons storlek när man använder storlekarna `large` och `xlarge`.
+`rh-circle-button__icon` används för att kontrollera ikons storlek när man använder storlekarna `large` och `xlarge`. Man kan också justera ikons position genom att påverka klassen av `padding*` property.
 
 ## 4. Användning
 * `rh-circle-button <variantnamn> [effect]`
