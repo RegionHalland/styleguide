@@ -89,7 +89,7 @@
     &:active,
     &:focus {
         /* Visuellt */
-        border-bottom: 3px solid $color-primary;
+        border-bottom: $breadcrumbs__item--border-bottom;
     }
 
     &--vuxhalland {

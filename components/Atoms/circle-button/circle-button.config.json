@@ -9,7 +9,8 @@
             "status": "review",
             "context": {
                 "type": "small",
-                "icon": "icon-arrow-right"
+                "icon": "icon-arrow-right",
+                "extendClass": ""
             }
         },
         {
@@ -17,7 +18,8 @@
             "status": "review",
             "context": {
                 "type": "medium",
-                "icon": "icon-log-in"
+                "icon": "icon-log-in",
+                "extendClass": ""
             }
         },
         {
@@ -25,7 +27,8 @@
             "status": "review",
             "context": {
                 "type": "large",
-                "icon": "icon-corner-left-up"
+                "icon": "icon-corner-left-up",
+                "extendClass": ""
             }
         },
         {
@@ -33,7 +36,8 @@
             "status": "review",
             "context": {
                 "type": "xlarge",
-                "icon": "icon-chevron-up"
+                "icon": "icon-chevron-up",
+                "extendClass": ""
             }
         },
         {
@@ -42,7 +46,8 @@
             "context": {
                 "type": "xlarge",
                 "icon": "icon-menu",
-                "hasBorder": true
+                "hasBorder": true,
+                "extendClass": ""
             }
         }
     ]

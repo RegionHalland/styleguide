@@ -1,0 +1,53 @@
+.rh-back-to-top {
+
+    /* Visuellt */
+    @if $back-to-top--background-color {
+        background-color: $back-to-top--background-color;
+    }
+
+    /* Blandat/övrigt */
+    @if $back-to-top--cursor {
+        cursor: $back-to-top--cursor;
+    }
+
+    // Effect
+    @if $back-to-top--background-color-hover-active {
+
+        &:hover,
+        &:active {
+            background-color: $back-to-top--background-color-hover-active;
+        }
+    }
+
+    @if $back-to-top--isResponsive {
+        @include medium {
+            /* Box-modell/beteende */
+            width: $back-to-top--button-size-medium;
+            min-width: $back-to-top--button-size-medium; //IE11
+            max-width: $back-to-top--button-size-medium; //IE11
+
+            height: $back-to-top--button-size-medium;
+            min-height: $back-to-top--button-size-medium;
+            max-height: $back-to-top--button-size-medium;
+
+            .rh-circle-button__icon {
+                /* Typografi */
+                font-size: $back-to-top--icon-size-medium;
+            }
+        }
+    }
+
+    &__container {
+        /* Positionering */
+        position: fixed;
+        bottom: 0;
+        right: 0;
+
+        /* Box-modell/beteende */
+        padding: $back-to-top__container--padding;
+
+        & > a {
+            text-decoration: none;
+        }
+    }
+}
