@@ -12,8 +12,8 @@
     "select2": "^4.0.10"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
     "@regionhalland/styleguide-v2": "0.8.2",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
