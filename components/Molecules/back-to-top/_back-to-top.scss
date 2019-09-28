@@ -11,11 +11,23 @@
     }
 
     // Effect
-    @if $back-to-top--background-color-hover-active {
+    &:hover {
+        @if $back-to-top--background-color-hover {
+            background-color: $back-to-top--background-color-hover;
+        }
 
-        &:hover,
-        &:active {
-            background-color: $back-to-top--background-color-hover-active;
+        @if $back-to-top--text-color-hover {
+            color: $back-to-top--text-color-hover;
+        }
+    }
+
+    &:active {
+        @if $back-to-top--background-color-active {
+            background-color: $back-to-top--background-color-active;
+        }
+
+        @if $back-to-top--text-color-active {
+            color: $back-to-top--text-color-active;
         }
     }
 
@@ -46,7 +58,8 @@
         /* Box-modell/beteende */
         padding: $back-to-top__container--padding;
 
-        & > a {
+        & a:hover,
+        & a:active {
             text-decoration: none;
         }
     }

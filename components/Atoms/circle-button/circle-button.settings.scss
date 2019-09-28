@@ -1,8 +1,8 @@
 /* Atoms - Circle button */
 // Basic
-$circle-button--background: $base3; //"false"
+$circle-button--background: $base3; //false
 $circle-button--font-family: "feather";
-$circle-button--text-color: #ffffff; //"false"
+$circle-button--text-color: #ffffff; //false
 $circle-button--border: 0.0625em solid $base3-dark;
 
 // Sizes
@@ -16,9 +16,10 @@ $circle-button--xlarge-size: 3.125em; //50px
 $circle-button--xlarge-icon-font-size: 1.6em; //50px
 
 // Effects
-$circle-button--background-color-hover: false; //$base3-light; //false
-$circle-button--text-color-hover: false; //$base3-dark;
-$circle-button--background-color-active: false; //$base3-light; //false
-$circle-button--text-color-active: false; //$base3-dark;
+$circle-button--background-color-hover: $base3-light; //false
+$circle-button--text-color-hover: $base3-dark; //false
+
+$circle-button--background-color-active: $base3-light; //false
+$circle-button--text-color-active: $base3-dark; //false
 
 $circle-button--cursor: false; //Ex: pointer

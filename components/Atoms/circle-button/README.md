@@ -4,36 +4,59 @@
 * Filplats: `/components/Atoms/circle-button`
 
 ## 1. Varianter
-|Klassnamn|Fullständigt namn|Em|Pixel|
+|Klassnamn|Fullständigt namn|Mått i em|Mått i pixel|
 |---|---|---:|---:|
 |`--small`|`rh-circle-button--small`|1.875em|30px|
 |`--medium`|`rh-circle-button--medium`|2.1875em|35px|
 |`--large`|`rh-circle-button--large`|2.5em|40px|
 |`--xlarge`|`rh-circle-button--xlarge`|3.125em|50px|
 
-## 2. Effects
-|Klassnamn|Fullständigt namn|
-|---|---|
-|`--border`|`rh-circle-button--border`|
-|:hover selector|-|
-|:active selector|-|
+## 2. Effekt
+|Klassnamn|Fullständigt namn|Beskrivning|
+|---|---|---|
+|`--border`|`rh-circle-button--border`|"Border" är runt om komponenten. Standard är utan "border"|
+|:hover selector||Det kan kontrolleras via inställningar|
+|:active selector||Det kan kontrolleras via inställningar|
 
 ## 3. Ikon
-`rh-circle-button__icon` används för att kontrollera ikons storlek när man använder storlekarna `large` och `xlarge`. Man kan också justera ikons position genom att påverka klassen av `padding*` property.
+Klassen `rh-circle-button__icon` används för att man kan kontrollera ikons stil _(storlek, färg o.s.v.)_. Man kan också justera ikons position genom att skapa en ny CSS klass och påverka `padding*` property.
+
+__Exempel:__
+```
+.align-icon {
+    padding-top: 0.1em;
+}
+
+<div class="rh-circle-button rh-circle-button--xlarge align-icon">
+    <span class="icon-arrow-right rh-circle-button__icon"></span>
+</div>
+```
 
 ## 4. Användning
-* `rh-circle-button <variantnamn> [effect]`
+`rh-circle-button  <variantnamn>  [effect]`
 
-Exempel:
-
+### 4.1. Standard
 ```
 <div class="rh-circle-button rh-circle-button--small">
     <span class="icon-plus"></span>
 </div>
+```
 
+### 4.2. Effect
+```
 <div class="rh-circle-button rh-circle-button--large rh-circle-button--border">
     <span class="icon-arrow-right rh-circle-button__icon"></span>
 </div>
+```
+
+### 4.3. Länkbar
+Man kan också använda `<a>` tag runt om komponenten för att det blir länkbar.
+```
+<a href="#">
+    <div class="rh-circle-button rh-circle-button--small">
+        <span class="icon-plus"></span>
+    </div>
+</a>
 ```
 
 ## 5. Version

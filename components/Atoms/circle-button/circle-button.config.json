@@ -2,10 +2,15 @@
     "title": "Circle button",
     "status": "review",
     "version": "1.0.0",
-    "context": {},
+    "context": {
+        "name": "default",
+        "type": "small",
+        "icon": "icon-home",
+        "extendClass": ""
+    },
     "variants": [
         {
-            "name": "default",
+            "name": "small",
             "status": "review",
             "context": {
                 "type": "small",

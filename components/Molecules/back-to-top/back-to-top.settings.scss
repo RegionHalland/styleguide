@@ -1,8 +1,14 @@
 /* Molecules - Back to top */
 $back-to-top--isResponsive: true;
-
 $back-to-top--background-color: $base3;
-$back-to-top--background-color-hover-active: $base3-dark;
+
+// Effects
+$back-to-top--background-color-hover: $base3-light; //false
+$back-to-top--text-color-hover: $base3-dark; //false
+
+$back-to-top--background-color-active: $base3-light; //false
+$back-to-top--text-color-active: $base3-dark; //false
+
 $back-to-top--cursor: pointer;
 
 $back-to-top--button-size-medium: 3.125em; //50px
