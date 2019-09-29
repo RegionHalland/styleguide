@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "context": {
         "name": "default",
-        "type": "small",
+        "modifier": "small",
         "icon": "icon-home",
         "extendClass": ""
     },
@@ -13,7 +13,7 @@
             "name": "small",
             "status": "review",
             "context": {
-                "type": "small",
+                "modifier": "small",
                 "icon": "icon-arrow-right",
                 "extendClass": ""
             }
@@ -22,7 +22,7 @@
             "name": "medium",
             "status": "review",
             "context": {
-                "type": "medium",
+                "modifier": "medium",
                 "icon": "icon-log-in",
                 "extendClass": ""
             }
@@ -31,7 +31,7 @@
             "name": "large",
             "status": "review",
             "context": {
-                "type": "large",
+                "modifier": "large",
                 "icon": "icon-corner-left-up",
                 "extendClass": ""
             }
@@ -40,7 +40,7 @@
             "name": "xlarge",
             "status": "review",
             "context": {
-                "type": "xlarge",
+                "modifier": "xlarge",
                 "icon": "icon-chevron-up",
                 "extendClass": ""
             }
@@ -49,7 +49,7 @@
             "name": "has-border",
             "status": "review",
             "context": {
-                "type": "xlarge",
+                "modifier": "xlarge",
                 "icon": "icon-menu",
                 "hasBorder": true,
                 "extendClass": ""

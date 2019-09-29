@@ -24,6 +24,39 @@
         cursor: $circle-button--cursor;
     }
 
+    // Effects
+    @if $circle-button--border {
+        &--border {
+            border: $circle-button--border;
+        }
+    }
+
+    &:hover {
+
+        /* Visuellt */
+        @if $circle-button--background-color-hover {
+            background-color: $circle-button--background-color-hover;
+        }
+
+        /* Typografi */
+        @if $circle-button--text-color-hover {
+            color: $circle-button--text-color-hover;
+        }
+    }
+
+    &:active {
+
+        /* Visuellt */
+        @if $circle-button--background-color-active {
+            background-color: $circle-button--background-color-active;
+        }
+
+        /* Typografi */
+        @if $circle-button--text-color-active {
+            color: $circle-button--text-color-active;
+        }
+    }
+
     // The empty class is needed when using large and xlarge sizes
     &__icon {}
 
@@ -73,39 +106,6 @@
 
         .rh-circle-button__icon {
             font-size: $circle-button--xlarge-icon-font-size;
-        }
-    }
-
-    // Effects
-    @if $circle-button--border {
-        &--border {
-            border: $circle-button--border;
-        }
-    }
-
-    &:hover {
-
-        /* Visuellt */
-        @if $circle-button--background-color-hover {
-            background-color: $circle-button--background-color-hover;
-        }
-
-        /* Typografi */
-        @if $circle-button--text-color-hover {
-            color: $circle-button--text-color-hover;
-        }
-    }
-
-    &:active {
-
-        /* Visuellt */
-        @if $circle-button--background-color-active {
-            background-color: $circle-button--background-color-active;
-        }
-
-        /* Typografi */
-        @if $circle-button--text-color-active {
-            color: $circle-button--text-color-active;
         }
     }
 }

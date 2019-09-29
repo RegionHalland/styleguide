@@ -2,5 +2,18 @@
     "title": "Back to top",
     "status": "review",
     "version": "1.0.0",
-    "context": {}
+    "context": {
+        "name": "default",
+        "isStandard": true
+    },
+    "variants": [
+        {
+            "name": "with container",
+            "status": "review",
+            "context": {
+                "isStandard": false,
+                "hasContainer": true
+            }
+        }
+    ]
 }

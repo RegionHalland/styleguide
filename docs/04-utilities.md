@@ -12,7 +12,7 @@
 |-only-sm|rh-dp-only-sm|Det synas __bara__ i `small` läge|
 |-only-md|rh-dp-only-md|-|
 |-only-lg|rh-dp-only-lg|-|
-|-from-sm|rh-dp-from-sm|Det synas f.o.m `small` läge och upp åt|
+|-from-sm|rh-dp-from-sm|Det synas f.o.m. `small` läge och upp åt|
 |-from-md|rh-dp-from-md|-|
 |-from-lg|rh-dp-from-lg|-|
 |-from-xl|rh-dp-from-xl|-|
@@ -49,5 +49,8 @@
 
 |Klassnamn|Fullständigt namn|Beskrivning|
 |---|---|---|
+|--static|rh-pos--static|`position: static`|
+|--relative|rh-pos--relative|`position: relative`|
+|--absolute|rh-pos--absolute|`position: absolute`|
 |--fixed|rh-pos--fixed|`position: fixed`|
 |-no-scroll|rh-noscroll|Det låser scrollbar|

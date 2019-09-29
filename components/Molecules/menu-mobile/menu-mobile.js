@@ -1,3 +1,5 @@
+// Needed function:
+// throttle() - /public/library.js
 $(document).ready(function () {
     // Global variables
     var scrollbarWidth = calculateScrollbarWidth(),
@@ -198,11 +200,11 @@ $(document).ready(function () {
     /* Helpers */
     function getElementTopById($elementId) {
         if (!$elementId) {
-            throw new Error("$element ID is missing");
+            throw new Error("$elementId is missing");
         }
 
         var bodyTop = $(window).scrollTop(),
-            elementTop = $elementId.position().top,
+            elementTop = $elementId.length ? $elementId.position().top : 0,
             viewportTop = elementTop - bodyTop,
             isOverViewportTop = bodyTop >= elementTop;
 
@@ -222,30 +224,3 @@ $(document).ready(function () {
         return !!navigator.platform && /iPad|iPhone|iPod/g.test(navigator.platform);
     }
 });
-
-// ************************************
-// *** Javascript throttle function ***
-// ************************************
-// https://remysharp.com/2010/07/21/throttling-function-calls
-function throttle(fn, threshhold, scope) {
-    threshhold || (threshhold = 250);
-    var last,
-        deferTimer;
-    return function () {
-        var context = scope || this;
-
-        var now = +new Date,
-            args = arguments;
-        if (last && now < last + threshhold) {
-            // hold on to it
-            clearTimeout(deferTimer);
-            deferTimer = setTimeout(function () {
-                last = now;
-                fn.apply(context, args);
-            }, threshhold);
-        } else {
-            last = now;
-            fn.apply(context, args);
-        }
-    };
-}

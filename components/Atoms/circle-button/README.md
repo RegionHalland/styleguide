@@ -19,21 +19,30 @@
 |:active selector||Det kan kontrolleras via inställningar|
 
 ## 3. Ikon
-Klassen `rh-circle-button__icon` används för att man kan kontrollera ikons stil _(storlek, färg o.s.v.)_. Man kan också justera ikons position genom att skapa en ny CSS klass och påverka `padding*` property.
+Klassen `rh-circle-button__icon` används för att man kan kontrollera ikons stil _(storlek, färg o.s.v.)_. Klassen behövs också när man använder storlekarna `large` och `xlarge`.
 
-__Exempel:__
+Exempel:
+```
+<div class="rh-circle-button rh-circle-button--large">
+    <span class="icon-arrow-right rh-circle-button__icon"></span>
+</div>
+```
+
+Man kan också justera ikons position genom att skapa en ny CSS klass och påverka `padding*` property.
+
+Exempel:
 ```
 .align-icon {
     padding-top: 0.1em;
 }
 
-<div class="rh-circle-button rh-circle-button--xlarge align-icon">
-    <span class="icon-arrow-right rh-circle-button__icon"></span>
+<div class="rh-circle-button rh-circle-button--medium align-icon">
+    <span class="icon-arrow-right"></span>
 </div>
 ```
 
 ## 4. Användning
-`rh-circle-button  <variantnamn>  [effect]`
+`rh-circle-button <variantnamn> [effect]`
 
 ### 4.1. Standard
 ```
@@ -42,7 +51,7 @@ __Exempel:__
 </div>
 ```
 
-### 4.2. Effect
+### 4.2. Border
 ```
 <div class="rh-circle-button rh-circle-button--large rh-circle-button--border">
     <span class="icon-arrow-right rh-circle-button__icon"></span>

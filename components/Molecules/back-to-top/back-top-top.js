@@ -1,3 +1,5 @@
+// Needed function:
+// throttle() - /public/library.js
 $(document).ready(function () {
     var $buttonBackToTop = $("#back-to-top");
 
@@ -10,8 +12,8 @@ $(document).ready(function () {
     }, 200));
 
     $buttonBackToTop.hide();
-    $buttonBackToTop.click(function () {
+    $buttonBackToTop.click(function (e) {
+        e.stopPropagation();
         $('body,html').animate({ scrollTop: 0 }, 800);
-        return false;
     });
 });

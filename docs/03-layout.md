@@ -6,7 +6,7 @@ __INNEHÅLL__
    * [2.3. Annan containers](#23-annan-containers)
 3. [Grid](#3-grid)
    * [3.1. Kolumner i en rad har lika höjd](#31-kolumner-i-en-rad-har-lika-h%c3%b6jd)
-   * [3.2. Lösning för IE11 ](#32-lösning-för-ie11)
+   * [3.2. Lösning för IE11s rendering ](#32-lösning-för-ie11s-rendering)
 
 ## 1. Breakpoints
 | Klassnamn | min-width | Pixel | Beskrivning |

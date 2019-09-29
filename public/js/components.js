@@ -43,118 +43,8 @@ window.onclick = function (event) {
 "use strict";
 "use strict";
 
-var acc = document.getElementsByClassName("rh-search-accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("rh-search-active");
-    var panel = this.nextElementSibling;
-
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + 100 + "px";
-    }
-  });
-}
-"use strict";
-
-window.onload = function () {
-  var table, rows, i, x, y;
-  table = document.getElementById("rh-table");
-
-  if (table) {
-    rows = table.rows;
-
-    for (var i = 1, row; row = rows[i]; i++) {
-      for (var j = 0, col; col = row.cells[j]; j++) {
-        x = rows[i].getElementsByTagName("TD")[j];
-
-        if (x.innerText.length > 20) {
-          x.classList.add('show-icon');
-        }
-      }
-    }
-  }
-};
-
-function sortByName() {
-  var table,
-      rows,
-      switching,
-      i,
-      x,
-      y,
-      shouldSwitch,
-      dir,
-      switchcount = 0;
-  table = document.getElementById("rh-table");
-  switching = true;
-  dir = "asc";
-
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("TR");
-
-    for (i = 1; i < rows.length - 1; i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("TD")[1];
-      y = rows[i + 1].getElementsByTagName("TD")[1];
-      var xContent = isNaN(x.innerHTML) ? x.innerHTML.toLowerCase() === '-' ? 0 : x.innerHTML.toLowerCase() : parseFloat(x.innerHTML);
-      var yContent = isNaN(y.innerHTML) ? y.innerHTML.toLowerCase() === '-' ? 0 : y.innerHTML.toLowerCase() : parseFloat(y.innerHTML);
-
-      if (dir == "asc") {
-        if (xContent > yContent) {
-          shouldSwitch = true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (xContent < yContent) {
-          shouldSwitch = true;
-          break;
-        }
-      }
-    }
-
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount++;
-    } else {
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
-
-function expand() {
-  var rows = document.getElementById('rh-table').rows;
-
-  for (var row = 0; row < rows.length; row++) {
-    var cols = rows[row].cells;
-
-    if (2 >= 0 && 2 < cols.length) {
-      cols[2].classList.toggle("selected");
-    }
-  }
-}
-
-function setShadow() {
-  var rows = document.getElementById('rh-table').rows;
-
-  for (var row = 0; row < rows.length; row++) {
-    var cols = rows[row].cells;
-
-    if (0 >= 0 && 0 < cols.length) {
-      cols[0].classList.add("rh-table-cell--shadow");
-    }
-  }
-}
-"use strict";
-
+// Needed function:
+// throttle() - /public/library.js
 $(document).ready(function () {
   var $buttonBackToTop = $("#back-to-top");
   $(window).scroll(throttle(function () {
@@ -165,11 +55,11 @@ $(document).ready(function () {
     }
   }, 200));
   $buttonBackToTop.hide();
-  $buttonBackToTop.click(function () {
+  $buttonBackToTop.click(function (e) {
+    e.stopPropagation();
     $('body,html').animate({
       scrollTop: 0
     }, 800);
-    return false;
   });
 });
 "use strict";
@@ -191,6 +81,8 @@ for (i = 0; i < acc.length; i++) {
 }
 "use strict";
 
+// Needed function:
+// throttle() - /public/library.js
 $(document).ready(function () {
   // Global variables
   var scrollbarWidth = calculateScrollbarWidth(),
@@ -377,11 +269,11 @@ $(document).ready(function () {
 
   function getElementTopById($elementId) {
     if (!$elementId) {
-      throw new Error("$element ID is missing");
+      throw new Error("$elementId is missing");
     }
 
     var bodyTop = $(window).scrollTop(),
-        elementTop = $elementId.position().top,
+        elementTop = $elementId.length ? $elementId.position().top : 0,
         viewportTop = elementTop - bodyTop,
         isOverViewportTop = bodyTop >= elementTop;
     return {
@@ -399,32 +291,7 @@ $(document).ready(function () {
   function isMobileDevice() {
     return !!navigator.platform && /iPad|iPhone|iPod/g.test(navigator.platform);
   }
-}); // ************************************
-// *** Javascript throttle function ***
-// ************************************
-// https://remysharp.com/2010/07/21/throttling-function-calls
-
-function throttle(fn, threshhold, scope) {
-  threshhold || (threshhold = 250);
-  var last, deferTimer;
-  return function () {
-    var context = scope || this;
-    var now = +new Date(),
-        args = arguments;
-
-    if (last && now < last + threshhold) {
-      // hold on to it
-      clearTimeout(deferTimer);
-      deferTimer = setTimeout(function () {
-        last = now;
-        fn.apply(context, args);
-      }, threshhold);
-    } else {
-      last = now;
-      fn.apply(context, args);
-    }
-  };
-}
+});
 "use strict";
 
 var videoPlayButton,
@@ -452,3 +319,115 @@ var videoPlayButton,
   }
 };
 videoMethods.renderVideoPlayButton();
+"use strict";
+
+var acc = document.getElementsByClassName("rh-search-accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("rh-search-active");
+    var panel = this.nextElementSibling;
+
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 100 + "px";
+    }
+  });
+}
+"use strict";
+
+window.onload = function () {
+  var table, rows, i, x, y;
+  table = document.getElementById("rh-table");
+
+  if (table) {
+    rows = table.rows;
+
+    for (var i = 1, row; row = rows[i]; i++) {
+      for (var j = 0, col; col = row.cells[j]; j++) {
+        x = rows[i].getElementsByTagName("TD")[j];
+
+        if (x.innerText.length > 20) {
+          x.classList.add('show-icon');
+        }
+      }
+    }
+  }
+};
+
+function sortByName() {
+  var table,
+      rows,
+      switching,
+      i,
+      x,
+      y,
+      shouldSwitch,
+      dir,
+      switchcount = 0;
+  table = document.getElementById("rh-table");
+  switching = true;
+  dir = "asc";
+
+  while (switching) {
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+
+    for (i = 1; i < rows.length - 1; i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[1];
+      y = rows[i + 1].getElementsByTagName("TD")[1];
+      var xContent = isNaN(x.innerHTML) ? x.innerHTML.toLowerCase() === '-' ? 0 : x.innerHTML.toLowerCase() : parseFloat(x.innerHTML);
+      var yContent = isNaN(y.innerHTML) ? y.innerHTML.toLowerCase() === '-' ? 0 : y.innerHTML.toLowerCase() : parseFloat(y.innerHTML);
+
+      if (dir == "asc") {
+        if (xContent > yContent) {
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (xContent < yContent) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount++;
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+function expand() {
+  var rows = document.getElementById('rh-table').rows;
+
+  for (var row = 0; row < rows.length; row++) {
+    var cols = rows[row].cells;
+
+    if (2 >= 0 && 2 < cols.length) {
+      cols[2].classList.toggle("selected");
+    }
+  }
+}
+
+function setShadow() {
+  var rows = document.getElementById('rh-table').rows;
+
+  for (var row = 0; row < rows.length; row++) {
+    var cols = rows[row].cells;
+
+    if (0 >= 0 && 0 < cols.length) {
+      cols[0].classList.add("rh-table-cell--shadow");
+    }
+  }
+}
