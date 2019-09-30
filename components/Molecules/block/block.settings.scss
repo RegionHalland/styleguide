@@ -3,7 +3,7 @@ $block--width: 100%; // Can using "false" - 100% is useful when using grid syste
 
 $block--text-align: left;
 $block__text-container--padding: 0.9375em;
-$block__text-title--color: $color-primary;
+$block__text-title--color: false;//false
 $block__text-title--font-weight: bold;
 
 $block__img--width: 100%;
@@ -13,7 +13,25 @@ $block__box--max-width: false; //26em; //416px
 
 $block__box--border-top: 0.0625em solid $grey-lighter;
 $block__box--border-right: 0.0625em solid $grey-lighter;
-$block__box--border-bottom: 0.25em solid $color-primary;
+$block__box--border-bottom: 0.25em solid $base3;
 $block__box--border-left: 0.0625em solid $grey-lighter;
 
 $block__box--border-radius: 0.375em;
+
+// Clickable
+$block__box--isClickable: true; //false
+
+// Clickable -> Hover
+$block__box-clickable--text-color: false;
+$block__box-clickable--text-decoration: underline;
+
+$block__box-clickable__title--text-color-hover: $block__box-clickable--text-color; //false
+$block__box-clickable__title--text-decoration-hover: $block__box-clickable--text-decoration; //false
+$block__box-clickable__description--text-color-hover: $block__box-clickable--text-color; //false
+$block__box-clickable__description--text-decoration-hover: false; //false
+
+$block__box-clickable__title--text-color-active: $block__box-clickable--text-color; //false
+$block__box-clickable__title--text-decoration-active: $block__box-clickable--text-decoration; //false
+$block__box-clickable__description--text-color-active: $block__box-clickable--text-color; //false
+$block__box-clickable__description--text-decoration-active: false; //false
+

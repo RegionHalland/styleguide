@@ -10,19 +10,24 @@
     /* Typografi */
     text-align: $block--text-align;
 
-    &-text {
+    &-content {
         /* Box-modell/beteende */
         margin-top: 0;
         padding: $block__text-container--padding;
         box-sizing: border-box;
 
-        &-title {
+        &__title {
+
             /* Typografi */
             @if $block__text-title--color {
                 color: $block__text-title--color;
             }
+
             font-weight: $block__text-title--font-weight;
         }
+
+        // The empty class is using for clickable effect
+        &__description {}
     }
 
     img {
@@ -33,6 +38,9 @@
     }
 
     &-box {
+        /* Positionering */
+        position: relative;
+
         /* Box-modell/beteende */
         @if $block__box--max-width {
             max-width: $block__box--max-width;
@@ -43,5 +51,51 @@
         border-bottom: $block__box--border-bottom;
         border-left: $block__box--border-left;
         border-radius: $block__box--border-radius;
+
+        @if $block__box--isClickable {
+            // Hover
+            &:hover .rh-block-content__title {
+                @if $block__box-clickable__title--text-color-hover {
+                    color: $block__box-clickable__title--text-color-hover;
+                }
+                @if $block__box-clickable__title--text-decoration-hover {
+                    text-decoration: $block__box-clickable__title--text-decoration-hover;
+                }
+            }
+            &:hover .rh-block-content__description {
+                @if $block__box-clickable__description--text-color-hover {
+                    color: $block__box-clickable__description--text-color-hover;
+                }
+                @if $block__box-clickable__description--text-decoration-hover {
+                    text-decoration: $block__box-clickable__description--text-decoration-hover;
+                }
+            }
+    
+            &:active .rh-block-content__title {
+                @if $block__box-clickable__title--text-color-active {
+                    color: $block__box-clickable__title--text-color-active;
+                }
+                @if $block__box-clickable__title--text-decoration-active {
+                    text-decoration: $block__box-clickable__title--text-decoration-active;
+                }
+            }
+            &:active .rh-block-content__description {
+                @if $block__box-clickable__description--text-color-active {
+                    color: $block__box-clickable__description--text-color-active;
+                }
+                @if $block__box-clickable__description--text-decoration-active {
+                    text-decoration: $block__box-clickable__description--text-decoration-active;
+                }
+            }
+        }
+    }
+
+    &--clickable {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
     }
 }

@@ -1,16 +1,38 @@
-<div class="rh-block-box">
-	<div class="rh-block">
-        {{#if imageUrl}}
-            <img src="{{imageUrl}}" alt="Text som beskriver bilden" aria-labelledby="334455">
-        {{/if}}
-		<div class="rh-block-text">
-			<p class="h3">
-                <a href="#" class="rh-block-text-title rh-link--navigation">
-                    {{title}}
-                </a>
-            </p>
+{{#unless isClickable}}
+    <!-- Default template - View Notes to know how to use the component-->
+    <div class="rh-block-box">
+        <div class="rh-block">
+            {{#if imageUrl}}
+                <img src="{{imageUrl}}" alt="Text som beskriver bilden" aria-labelledby="334455">
+            {{/if}}
+            <div class="rh-block-content">
+                <p class="h3">
+                    <a href="#" class="rh-block-content__title rh-link--navigation">{{title}}</a>
+                </p>
 
-			<p>{{description}}</p>
-		</div>	
-	</div>
-</div>
+                <p class="rh-block-content__description">{{description}}</p>
+            </div>
+        </div>
+    </div>
+{{/unless}}
+
+{{#if isClickable}}
+    <!-- Clickable template - View Notes to know how to use the component-->
+    <div class="rh-block-box">
+        {{!-- The <a> tag is using for clickable feature --}}
+        <a href="#" class="rh-link--navigation rh-block--clickable"></a>
+
+        <div class="rh-block">
+            {{#if imageUrl}}
+                <img src="{{imageUrl}}" alt="Text som beskriver bilden" aria-labelledby="334455">
+            {{/if}}
+            <div class="rh-block-content">
+                <p class="h3">
+                    <a href="#" class="rh-block-content__title rh-link--navigation">{{title}}</a>
+                </p>
+
+                <p class="rh-block-content__description">{{description}}</p>
+            </div>
+        </div>
+    </div>
+{{/if}}
