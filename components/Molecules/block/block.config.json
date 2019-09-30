@@ -4,6 +4,6 @@
     "context": {
         "title": "This is the block title 1",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim venia, quis nostrud exercitation ullmaco laboris nisi ut aliquap ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolor eu fugiat nulla pariatur.",
-        "imageUrl": "https://www.regionhalland.se/app/uploads/2019/07/delaolika.jpg"
+        "imageUrl": "/images/pressbild.jpg"
     }
 }
