@@ -46,30 +46,35 @@
                 "blocks": [
                     {
                         "itemData": {
+                            "isClickable": true,
                             "title": "Utveckling och tillväxt",
                             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id diam in erat egestas vehicula eu accumsan ligula."
                         }
                     },
                     {
                         "itemData": {
+                            "isClickable": true,
                             "title": "Terapirekommendationer",
                             "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae."
                         }
                     },
                     {
                         "itemData": {
+                            "isClickable": true,
                             "title": "Analysförteckning",
                             "description": "Aldu integer id metus pellentesque, suscipit mauris vel, placerat purus. Vestibulum diam elit."
                         }
                     },
                     {
                         "itemData": {
+                            "isClickable": true,
                             "title": "VAS",
                             "description": "Mauris id consectetur lorem. Cras volutpat massa leo. Sed a enim ultricies, dapibus ex nec."
                         }
                     },
                     {
                         "itemData": {
+                            "isClickable": true,
                             "title": "Avgiftshandboken",
                             "description": "Mauris id consectetur lorem. Cras volutpat massa leo. Sed a enim ultricies, dapibus ex nec."
                         }

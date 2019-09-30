@@ -1,3 +1,22 @@
+// Common styling generation
+@mixin rh-block-effect-creator($text-color, $text-decoration) {
+    @if $text-color {
+        color: $text-color;
+    }
+
+    @if $text-decoration {
+        text-decoration: $text-decoration;
+    }
+}
+
+@mixin rh-block-tabbing-focus {
+    border-top: $block__box-tabbing-focus--border-top;
+    border-right: $block__box-tabbing-focus--border-right;
+    border-left: $block__box-tabbing-focus--border-left;
+    box-shadow: $block__box-tabbing-focus--box-shadow;
+}
+
+// Component styling
 .rh-block {
     /* Positionering */
     position: relative;
@@ -52,60 +71,50 @@
         border-left: $block__box--border-left;
         border-radius: $block__box--border-radius;
 
+        // Effects are enabled when the component is clickable
         @if $block__box--isClickable {
+
             // Hover
-            &:hover .rh-block-content__title {
-                @if $block__box-clickable__title--text-color-hover {
-                    color: $block__box-clickable__title--text-color-hover;
+            &:hover {
+                .rh-block-content__title {
+                    @include rh-block-effect-creator($block__box-clickable__title--text-color-hover, $block__box-clickable__title--text-decoration-hover)
                 }
-                @if $block__box-clickable__title--text-decoration-hover {
-                    text-decoration: $block__box-clickable__title--text-decoration-hover;
-                }
-            }
-            &:hover .rh-block-content__description {
-                @if $block__box-clickable__description--text-color-hover {
-                    color: $block__box-clickable__description--text-color-hover;
-                }
-                @if $block__box-clickable__description--text-decoration-hover {
-                    text-decoration: $block__box-clickable__description--text-decoration-hover;
-                }
-            }
-    
-            // Active
-            &:active .rh-block-content__title {
-                @if $block__box-clickable__title--text-color-active {
-                    color: $block__box-clickable__title--text-color-active;
-                }
-                @if $block__box-clickable__title--text-decoration-active {
-                    text-decoration: $block__box-clickable__title--text-decoration-active;
-                }
-            }
-            &:active .rh-block-content__description {
-                @if $block__box-clickable__description--text-color-active {
-                    color: $block__box-clickable__description--text-color-active;
-                }
-                @if $block__box-clickable__description--text-decoration-active {
-                    text-decoration: $block__box-clickable__description--text-decoration-active;
+
+                .rh-block-content__description {
+                    @include rh-block-effect-creator($block__box-clickable__description--text-color-hover, $block__box-clickable__description--text-decoration-hover);
                 }
             }
 
-            // Focus
-            &:focus .rh-block-content__title {
-                @if $block__box-clickable__title--text-color-focus {
-                    color: $block__box-clickable__title--text-color-focus;
+            &:active {
+                .rh-block-content__title {
+                    @include rh-block-effect-creator($block__box-clickable__title--text-color-active, $block__box-clickable__title--text-decoration-active);
                 }
-                @if $block__box-clickable__title--text-decoration-focus {
-                    text-decoration: $block__box-clickable__title--text-decoration-focus;
-                }
-            }
-            &:focus .rh-block-content__description {
-                @if $block__box-clickable__description--text-color-focus {
-                    color: $block__box-clickable__description--text-color-focus;
-                }
-                @if $block__box-clickable__description--text-decoration-focus {
-                    text-decoration: $block__box-clickable__description--text-decoration-focus;
+
+                .rh-block-content__description {
+                    @include rh-block-effect-creator($block__box-clickable__description--text-color-active, $block__box-clickable__description--text-decoration-active);
                 }
             }
+
+            &:focus-within {
+                .rh-block-content__title {
+                    @include rh-block-effect-creator($block__box-clickable__title--text-color-focus, $block__box-clickable__title--text-decoration-focus);
+                }
+
+                .rh-block-content__description {
+                    @include rh-block-effect-creator($block__box-clickable__description--text-color-focus, $block__box-clickable__description--text-decoration-focus);
+                }
+            }
+        }
+
+        // Common effects
+        &:hover,
+        &:active {
+            @include rh-block-tabbing-focus;
+        }
+
+        // Using separate for SASS generating
+        &:focus-within {
+            @include rh-block-tabbing-focus;
         }
     }
 
@@ -116,5 +125,9 @@
         width: 100%;
         height: 100%;
         z-index: 1;
+    }
+
+    &--focus {
+        @include rh-block-tabbing-focus;
     }
 }

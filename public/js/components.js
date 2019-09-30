@@ -1,4 +1,5 @@
 "use strict";
+"use strict";
 
 function toggleMenu() {
   document.getElementById("myDropdown").classList.toggle("rh-filter-show");
@@ -41,7 +42,6 @@ window.onclick = function (event) {
 };
 "use strict";
 "use strict";
-"use strict";
 
 // Needed function:
 // throttle() - /public/library.js
@@ -60,6 +60,18 @@ $(document).ready(function () {
     $('body,html').animate({
       scrollTop: 0
     }, 800);
+  });
+});
+"use strict";
+
+$(document).ready(function () {
+  $(".rh-block-box").focusin(function (e) {
+    e.stopPropagation();
+    $(this).addClass("rh-block--focus");
+  });
+  $(".rh-block-box").focusout(function (e) {
+    e.stopPropagation();
+    $(this).removeClass("rh-block--focus");
   });
 });
 "use strict";
