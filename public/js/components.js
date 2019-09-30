@@ -46,12 +46,16 @@ window.onclick = function (event) {
 // Needed function:
 // throttle() - /public/library.js
 $(document).ready(function () {
-  var $buttonBackToTop = $("#back-to-top");
+  var $buttonBackToTop = $("#back-to-top"),
+      btnBackToTopLimitOnHead = 500,
+      btnBackToTopCurrentPos;
   $(window).scroll(throttle(function () {
-    if ($(this).scrollTop() > 500) {
-      $buttonBackToTop.fadeIn("slow");
+    btnBackToTopCurrentPos = $(this).scrollTop(); // Update current position
+
+    if (btnBackToTopCurrentPos > btnBackToTopLimitOnHead) {
+      !$buttonBackToTop.is(':visible') && $buttonBackToTop.fadeIn("slow");
     } else {
-      $buttonBackToTop.fadeOut("slow");
+      $buttonBackToTop.is(':visible') && $buttonBackToTop.fadeOut("slow");
     }
   }, 200));
   $buttonBackToTop.hide();
