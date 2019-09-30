@@ -1,0 +1,46 @@
+/* Needed components
+@import '../../Atoms/link/_link.scss';
+*/
+
+.rh-navigation-left {
+    p { margin-bottom: 0; } // Reset
+
+    &__header {
+        padding: $navigation-left__header--padding;
+        background-color: $navigation-left__header--background-color;
+        border-radius: $navigation-left__header--border-radius;
+
+        &-text {
+            color: $navigation-left__header-text--color;
+            font-size: $navigation-left__header-text--font-size;
+            font-weight: $navigation-left__header-text--font-weight;
+            word-break: $navigation-left__header-text--word-break;
+            line-height: $navigation-left__header-text--line-height;
+        }
+    }
+
+    &__item {
+        min-height: $navigation-left__item--min-height;
+
+        border-style: $navigation-left__item--border-style;
+        border-width: $navigation-left__item--border-width;
+        border-color: $navigation-left__item--border-color;
+
+        &:hover {
+            background-color: $navigation-left__item--hover-background-color;
+        }
+
+        &-box {
+            display: $navigation-left__item-box--display;
+            padding: $navigation-left__item-box--padding;
+        }
+
+        &-text {
+            line-height: $navigation-left__item-text--line-height;
+        }
+
+        &-link {
+            color: $navigation-left__item-link--color;
+        }
+    }
+}

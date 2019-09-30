@@ -1,0 +1,192 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/components.css">
+    <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_o5hd5vvqpoqiwwmi.css">
+    <title>Preview</title>
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/library.js"></script>
+</head>
+<body style="padding: 1rem;">
+
+<!-- 
+    The script is only using for demo.
+    It resets Fractal's styling for <body> tag.
+-->
+<script>
+    $("body").css({ "padding": "", "margin": "" });
+</script>
+
+<!-- The sample content is only using for demo  -->
+<div class="rh-cookie rh-container--auto">
+    <span class="rh-cookie-icon"></span>
+    <p class="rh-cookie-description">På den här webbplatsen använder vi cookies (kakor) för att webbplatsen ska fungera på ett bra sätt för dig. Genom att klicka vidare eller på “Jag förstår” godkänner du att vi använder cookies.</p>
+    <button class="rh-button rh-button--primary rh-cookie-button"
+        aria-label="Text som förklarar funktionen om man lyssnar med talsyntes utan att se kontexten"
+        role="button">Jag förstår</button>
+</div>
+
+<!-- MENU BEGIN -->
+<!-- The script is important for the menu on iOS -->
+<script src="/js/bodyScrollLock-2.6.4.js"></script>
+
+<div id="menu-dropdown-anchor"></div>
+<div class="rh-menu-dropdown only-sm">
+    <div class="rh-menu-dropdown__header">
+        <div class="rh-menu-dropdown__header-logo-container">
+            <a href="#">
+                <img class="rh-menu-dropdown__header-logo" src="/images/logo.svg">
+            </a>
+        </div>
+        
+        <div class="rh-round-button rh-menu-dropdown__menu-round-button">
+            <span class="icon-menu rh-menu-dropdown__icon-menu"></span>
+        </div>
+    </div>
+    
+    <div class="rh-menu-dropdown__body">
+        
+            <div>
+                <div class="rh-menu-dropdown__item">
+                    <a href="#" class="rh-link--navigation rh-menu-dropdown__text">Startsida</a>
+                </div>
+
+                            </div>
+
+            <div>
+                <div class="rh-menu-dropdown__item">
+                    <a href="#" class="rh-link--navigation rh-menu-dropdown__text">Evenemang</a>
+                </div>
+
+                            </div>
+
+            <div>
+                <div class="rh-menu-dropdown__item">
+                    <a href="#" class="rh-link--navigation rh-menu-dropdown__text">Vad vi gör</a>
+                    <div id="3" class="rh-round-button rh-round-button--small rh-menu-dropdown__item-round-button">
+                        <span class="icon-minus rh-menu-dropdown__icon-item"></span>
+                    </div>
+                </div>
+
+                 
+                <div id="sub3" class="rh-menu-dropdown__item__sub-container">
+                    <div class="rh-menu-dropdown__item rh-menu-dropdown__item__sub-item rh-pl-3">
+                        <a href="#" class="rh-link--navigation rh-menu-dropdown__text">Imagine</a>
+                    </div>
+
+                                    </div>
+            </div>
+
+            <div>
+                <div class="rh-menu-dropdown__item">
+                    <a href="#" class="rh-link--navigation rh-menu-dropdown__text">Om oss</a>
+                    <div id="4" class="rh-round-button rh-round-button--small rh-menu-dropdown__item-round-button">
+                        <span class="icon-minus rh-menu-dropdown__icon-item"></span>
+                    </div>
+                </div>
+
+                 
+                <div id="sub4" class="rh-menu-dropdown__item__sub-container">
+                    <div class="rh-menu-dropdown__item rh-menu-dropdown__item__sub-item rh-pl-3">
+                        <a href="#" class="rh-link--navigation rh-menu-dropdown__text">Vår vision</a>
+                    </div>
+
+                                        <div class="rh-menu-dropdown__item rh-menu-dropdown__item__sub-item rh-pl-3">
+                        <a href="#" class="rh-link--navigation rh-menu-dropdown__text">Kontakt</a>
+                        <div id="42" class="rh-round-button rh-round-button--small rh-menu-dropdown__item-round-button">
+                            <span class="icon-minus rh-menu-dropdown__icon-item"></span>
+                        </div>
+                    </div>
+
+                    
+                    <div id="sub42" class="rh-menu-dropdown__item__sub-container">
+                        <div class="rh-menu-dropdown__item rh-menu-dropdown__item__sub-item rh-pl-5">
+                            <a href="#" class="rh-link--navigation rh-menu-dropdown__text">Anna Larsson</a>
+                        </div>
+                        <div class="rh-menu-dropdown__item rh-menu-dropdown__item__sub-item rh-pl-5">
+                            <a href="#" class="rh-link--navigation rh-menu-dropdown__text">Eva Andersson</a>
+                        </div>
+                        <div class="rh-menu-dropdown__item rh-menu-dropdown__item__sub-item rh-pl-5">
+                            <a href="#" class="rh-link--navigation rh-menu-dropdown__text">Filip Aurel</a>
+                        </div>
+                        <div class="rh-menu-dropdown__item rh-menu-dropdown__item__sub-item rh-pl-5">
+                            <a href="#" class="rh-link--navigation rh-menu-dropdown__text">Joh Ahlin</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="rh-menu-dropdown__item">
+                    <a href="#" class="rh-link--navigation rh-menu-dropdown__text">För press</a>
+                </div>
+
+                            </div>
+
+        <div>
+            <div class="rh-menu-dropdown__item rh-menu-dropdown__footer">
+                <a href="#" class="rh-link--navigation rh-menu-dropdown__text rh-menu-dropdown__footer-text">In English</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="rh-menu-dropdown__spacing-after"></div>
+<!-- MENU END -->
+
+<!-- Using only for scrolling testing -->
+<div>
+    <p class="h3">Scale your screen to under 768px for viewing how the menu works!</p>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+        Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+        Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+        Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+        Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+        Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+        Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+        Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+<!-- End of test area -->
+
+<script src="../../js/components.js"></script>
+</body>
+</html>
+

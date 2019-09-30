@@ -6,7 +6,7 @@
     padding-right: em(15);
 
     /* Visuellt */
-    border: 0.75px solid $grey-dark;
+    border: $pagination-link--border;
 
     /* Typografi */
     text-decoration: none;
@@ -26,10 +26,10 @@
     &:active,
     &:hover {
         /* Visuellt */
-        background-color: $base3;
+        background-color: $pagination-link--hover-background-color;
 
         /* Typografi */
-        color: white;
+        color: $pagination-link--hover-text-color;
     }
 
     &-previous {

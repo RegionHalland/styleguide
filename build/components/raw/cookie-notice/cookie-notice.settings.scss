@@ -1,0 +1,29 @@
+/* Molecules - Cookie notice */
+$cookie-notice--background-color: $base2-light;
+$cookie-notice--background: transparent;
+$cookie-notice--border: false; //1px solid #000000
+
+$cookie-notice--padding-top: 1.25em;
+$cookie-notice--padding-right: false;
+$cookie-notice--padding-bottom: 1.25em;
+$cookie-notice--padding-left: false;
+$cookie-notice--padding-medium-top: 0.625em;
+$cookie-notice--padding-medium-bottom: 0.625em;
+
+$cookie-notice__description--margin-top: 0.9375em;
+$cookie-notice__description--margin-right: 0;
+$cookie-notice__description--margin-bottom: 0.9375em;
+$cookie-notice__description--margin-medium-top: 0;
+$cookie-notice__description--margin-medium-right: 2.5em;
+$cookie-notice__description--margin-medium-bottom: 0;
+
+$cookie-notice__icon: "\e81c";
+$cookie-notice__icon--margin-medium: 1.25em 1.25em 1.25em 0;
+$cookie-notice__icon--padding: 0;
+$cookie-notice__icon--color: $black;
+$cookie-notice__icon--font-size: $p-small;
+$cookie-notice__icon--font-size-medium: $h4-medium;
+$cookie-notice__icon--font-size-large: $h2-large;
+$cookie-notice__icon--font-weight: normal;
+
+$cookie-notice__button--min-width: 13ex;
