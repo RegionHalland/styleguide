@@ -1,0 +1,53 @@
+/* Needed components
+@import '../../Atoms/link/_link.scss';
+@import '../../Atoms/round-button/_round-button.scss';
+@import '../../Molecules/navigation-block/_navigation-block.scss';
+*/
+
+.rh-navigation-block-group {
+    &__item-container {
+        /* Box-modell/beteende */
+        padding-top: $navigation-block-group__item-container--padding-top;
+        padding-right: $navigation-block-group__item-container--padding-right;
+        padding-bottom: $navigation-block-group__item-container--padding-bottom;
+        padding-left: $navigation-block-group__item-container--padding-left;
+
+        .rh-navigation-block {
+            height: $navigation-block-group__item--height;
+        }
+
+        @include medium {
+            padding-top: $navigation-block-group__item-container--padding-medium-top;
+            padding-right: $navigation-block-group__item-container--padding-medium-right;
+            padding-bottom: $navigation-block-group__item-container--padding-medium-bottom;
+            padding-left: $navigation-block-group__item-container--padding-medium-left;
+        }
+    }
+
+    &__container {
+        // Definition
+        $prefix: "rh-navigation-block-group__container";
+        $container-py: $prefix + "-py";
+        $container-px: $prefix + "-px";
+        $container-p: $prefix + "-p";
+
+        // Offset calculation for grid system
+        $container-py-offset-top: $navigation-block-group__container--padding-y - $navigation-block-group__item-container--padding-medium-top;
+        $container-py-offset-bottom: $navigation-block-group__container--padding-y - $navigation-block-group__item-container--padding-medium-bottom;
+
+        $container-px-offset-left: $navigation-block-group__item-container--padding-medium-left;
+        $container-px-offset-right: $navigation-block-group__item-container--padding-medium-right;
+
+        // CSS Generation
+        @include create-container-py($container-py, $navigation-block-group__container--padding-y, $container-py-offset-top, $container-py-offset-bottom){
+            padding-bottom: $navigation-block-group__container--padding-y - $navigation-block-group__item-container--padding-bottom;
+        };
+        @include create-container-px($container-px, $container-px-offset-left, $container-px-offset-right);
+
+        @include create-container-p($container-p, $container-py, $container-px) {
+            @if $navigation-block-group__container--background-color {
+                background-color: $navigation-block-group__container--background-color;
+            }
+        }
+    }
+}

@@ -39,10 +39,10 @@ Example:
 
 ### Examples
 ```
-$ gulp builds -a
-$ gulp builds -s samplesitename
-$ gulp releases -a
-$ gulp releases -s othersitename
+$ gulp builds -a                   // Builds all sites
+$ gulp builds -s samplesitename    // Builds a specific site
+$ gulp releases -a                 // Releases all sites
+$ gulp releases -s othersitename   // Releases a specific site
 
 // Using alias
 $ gulp builds --all
@@ -55,30 +55,32 @@ $ gulp builds -u
 $ gulp releases -u
 ```
 
-
-### Config
+### Configuration
 * The main files are `sites.building.js` and `sites.building.json`.
-* Change the add-on configs in this file `/sites.building.json` for your reason.
-* View the `/gulpfile.js` to know how the add-on is used.
-
-## To-Do
-* [ ] gulp build
-* [ ] gulp build --all
-* [ ] gulp build --site sitename
-* [ ] gulp release
-* [ ] gulp release --all
-* [ ] gulp release --site sitename
+* Change the configs in `/sites.building.json` for your reason.
+* View more in `/gulpfile.js` to know how the add-on works.
 
 ## Release notes:
+### 1.0.1 (2019-08-07)
+* [__Improvement__]
+    * Changed the release file's name to the below structure:
+        * `<sitename>.<version>-<styleguideversion>.<extension>`
+        * Example: `anewsite.1.0.1-5.1.0.css` and `anewsite.1.0.1-5.1.0.js`
+    * Updated README.md
+
+### 1.0.0 (2019-07-17)
+* The first version
+
 ### 1.0.0-alpha.1.0.1 (2019-07-08)
-* Added new features:
+* [__New__] Added the new features:
     * Options and alias system.
     * Using only for the release tasks:
         * File checking when a file exists. 
         * A new option `-o` to overwrite a file when it exists.
     * Help information.
-* Improved error handling.
-* Changed the command to `builds` and `releases`. It's shorter and simpler to run a command.
+* [__Improvement__]
+    * Improved error handling.
+    * Changed the command to `builds` and `releases`. It's shorter and simpler to run a command.
 
 ### 1.0.0-alpha.1.0.0 (2019-07-05)
-* The first version.
+* The test version.

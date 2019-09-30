@@ -1,4 +1,6 @@
 <div class="rh-hero">
-	<img class="rh-image-hero" src="https://images.pexels.com/photos/905874/pexels-photo-905874.jpeg" alt="Nature">
-	{{> @caption-hero }}
+    <div class="rh-hero__image-container">
+        <img class="rh-hero__image" src="{{imageUrl}}" alt="">
+    </div>
+    {{render '@caption-hero' captionData merge=true}}
 </div>

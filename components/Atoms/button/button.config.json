@@ -1,6 +1,6 @@
 {
 	"title": "Button",
-    "status": "wip",
+    "status": "review",
 	"context": {
 		"text": "Button Default",
 		"name": "rh-button",
@@ -9,7 +9,7 @@
 	"variants": [
 		{
 			"name": "primary",
-			"status": "wip",
+			"status": "review",
             "context": {
         	    "modifier": "primary",
 				"text": "Button Primary"
@@ -17,7 +17,7 @@
 		},		
 		{
 			"name": "secondary",
-            "status": "wip",
+            "status": "review",
             "context": {
         	    "modifier": "secondary",
 				"text": "Button Secondary"
@@ -25,7 +25,7 @@
 		},		
 		{
 			"name": "with icon",
-            "status": "wip",
+            "status": "review",
             "context": {
         	    "modifier": "icon",
 				"text": "Button Default with Icon"

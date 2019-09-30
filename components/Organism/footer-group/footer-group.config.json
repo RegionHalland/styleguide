@@ -1,0 +1,22 @@
+{
+    "title": "Footer group",
+    "status": "review",
+    "version": "1.0.0",
+    "context": {},
+    "variants": [
+        {
+            "name": "default",
+            "status": "review",
+            "context": {
+                "withContainer": false
+            }
+        },
+        {
+            "name": "Built-in container",
+            "status": "review",
+            "context": {
+                "withContainer": true
+            }
+        }
+    ]
+}

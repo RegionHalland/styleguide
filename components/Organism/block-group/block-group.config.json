@@ -1,0 +1,81 @@
+{
+    "title": "Block group",
+    "status": "review",
+    "version": "1.0.0",
+    "context": {},
+    "variants": [
+        {
+            "name": "default",
+            "status": "review",
+            "context": {
+                "withContainer": false,
+                "blocks": [
+                    {
+                        "itemData": {
+                            "title": "Utveckling och tillväxt"
+                        }
+                    },
+                    {
+                        "itemData": {
+                            "title": "Utveckling och tillväxt"
+                        }
+                    },
+                    {
+                        "itemData": {
+                            "title": "Utveckling och tillväxt"
+                        }
+                    },
+                    {
+                        "itemData": {
+                            "title": "Utveckling och tillväxt"
+                        }
+                    },
+                    {
+                        "itemData": {
+                            "title": "Utveckling och tillväxt"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Built-in container",
+            "status": "review",
+            "context": {
+                "withContainer": true,
+                "blocks": [
+                    {
+                        "itemData": {
+                            "title": "Utveckling och tillväxt",
+                            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id diam in erat egestas vehicula eu accumsan ligula."
+                        }
+                    },
+                    {
+                        "itemData": {
+                            "title": "Terapirekommendationer",
+                            "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae."
+                        }
+                    },
+                    {
+                        "itemData": {
+                            "title": "Analysförteckning",
+                            "description": "Aldu integer id metus pellentesque, suscipit mauris vel, placerat purus. Vestibulum diam elit."
+                        }
+                    },
+                    {
+                        "itemData": {
+                            "title": "VAS",
+                            "description": "Mauris id consectetur lorem. Cras volutpat massa leo. Sed a enim ultricies, dapibus ex nec."
+                        }
+                    },
+                    {
+                        "itemData": {
+                            "title": "Avgiftshandboken",
+                            "description": "Mauris id consectetur lorem. Cras volutpat massa leo. Sed a enim ultricies, dapibus ex nec."
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

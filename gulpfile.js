@@ -151,7 +151,7 @@ function scss(cb) {
 			.on('error', sass.logError)
 		)
         .pipe(concat('components.css'))
-		.pipe(sourcemaps.write())
+		.pipe(sourcemaps.write('.'))
   		.pipe(gulp.dest(fractal.web.get('static.path') + '/css/'));
 
     logger.success('Kompilerade komponent SCSS');
@@ -200,7 +200,7 @@ function build(cb) {
 }
 
 function tmpBuildScss(cb) {
-    gulp.src('sites/tmp/tmp.scss')
+    gulp.src('tmp/tmp.scss')
         .pipe(sourcemaps.init())
         .pipe(
             sass.sync({

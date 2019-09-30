@@ -1,0 +1,59 @@
+{
+    "title": "Circle button",
+    "status": "review",
+    "version": "1.0.0",
+    "context": {
+        "name": "default",
+        "modifier": "small",
+        "icon": "icon-home",
+        "extendClass": ""
+    },
+    "variants": [
+        {
+            "name": "small",
+            "status": "review",
+            "context": {
+                "modifier": "small",
+                "icon": "icon-arrow-right",
+                "extendClass": ""
+            }
+        },
+        {
+            "name": "medium",
+            "status": "review",
+            "context": {
+                "modifier": "medium",
+                "icon": "icon-log-in",
+                "extendClass": ""
+            }
+        },
+        {
+            "name": "large",
+            "status": "review",
+            "context": {
+                "modifier": "large",
+                "icon": "icon-corner-left-up",
+                "extendClass": ""
+            }
+        },
+        {
+            "name": "xlarge",
+            "status": "review",
+            "context": {
+                "modifier": "xlarge",
+                "icon": "icon-chevron-up",
+                "extendClass": ""
+            }
+        },
+        {
+            "name": "has-border",
+            "status": "review",
+            "context": {
+                "modifier": "xlarge",
+                "icon": "icon-menu",
+                "hasBorder": true,
+                "extendClass": ""
+            }
+        }
+    ]
+}

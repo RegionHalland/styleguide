@@ -1,0 +1,31 @@
+/* Molecules - Navigation block */
+$navigation-block--min-height: 3.75em; //60px
+$navigation-block--width: 100%; // Can using "false" - 100% is useful when using grid system
+$navigation-block--min-width: false; //18em
+$navigation-block--max-width: false;
+
+$navigation-block--border: 0.0625em solid $base3;
+$navigation-block--border-radius: 0.375em; //6px
+$navigation-block--padding: 0.875em; //14px
+$navigation-block--background-color: false; //#417795
+
+$navigation-block__header-round-button--height: 1.875em; //30px
+$navigation-block__header-round-button--width: 1.875em; //30px
+$navigation-block__header-round-button--padding: .4em;
+$navigation-block__header-round-button-icon: "\e829";
+$navigation-block__header-round-button--font-size: 1em;
+$navigation-block__header-round-button--background-color-hover-active: false;
+$navigation-block__header-round-button--color-hover-active: false;
+
+$navigation-block__header-title--margin: 0.15em 0 0 0.8em; //15px
+$navigation-block__header-title--margin-large: 0.05em 0 0 0.7778em;
+
+$navigation-block__header-title-link--color: false;
+$navigation-block__header-title-link--font-size: 1.125em; //18px
+$navigation-block__header-title-link--font-size-large: 1.25em;
+$navigation-block__header-title-link--font-weight: bold;
+$navigation-block__header-title-link--line-height: 1.4em;
+$navigation-block__header-title-link--word-break: break-word;
+
+$navigation-block__description--margin: .5em 0 0 0; //Can using "false"
+$navigation-block__description-text--color: false;

@@ -1,4 +1,8 @@
 {
-  "title": "Round button",
-  "status": "prototype"
+    "title": "Round button",
+    "status": "review",
+    "version": "1.0.0",
+    "context": {
+        "icon": "icon-log-in"
+    }
 }

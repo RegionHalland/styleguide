@@ -1,14 +1,14 @@
 .flex { display: flex }
 
-@media ($breakpoint-sm) {
+@media (min-width: $breakpoint-sm) {
   .sm-flex { display: flex }
 }
 
-@media ($breakpoint-md) {
+@media (min-width: $breakpoint-md) {
   .md-flex { display: flex }
 }
 
-@media ($breakpoint-lg) {
+@media (min-width: $breakpoint-lg) {
   .lg-flex { display: flex }
 }
 

@@ -1,40 +1,120 @@
-.demo {
-    /* Box-modell/beteende */
-    max-width: 416px;
+.rh-block {
+    /* Positionering */
+    position: relative;
 
-    .rh-block {
+    /* Box-modell/beteende */
+    @if $block--width {
+        width: $block--width;
+    }
+
+    /* Typografi */
+    text-align: $block--text-align;
+
+    &-content {
+        /* Box-modell/beteende */
+        margin-top: 0;
+        padding: $block__text-container--padding;
+        box-sizing: border-box;
+
+        &__title {
+
+            /* Typografi */
+            @if $block__text-title--color {
+                color: $block__text-title--color;
+            }
+
+            font-weight: $block__text-title--font-weight;
+        }
+
+        // The empty class is using for clickable effect
+        &__description {}
+    }
+
+    img {
+        /* Box-modell/beteende */
+        width: $block__img--width;
+        margin-bottom: $block__img--margin-bottom;
+        border-radius: $block__box--border-radius $block__box--border-radius 0 0;
+    }
+
+    &-box {
         /* Positionering */
         position: relative;
 
         /* Box-modell/beteende */
-        width: 100%;
+        @if $block__box--max-width {
+            max-width: $block__box--max-width;
+        }
 
-        /* Visuellt */
-        border-bottom: 4px solid $color-primary;
-        
-        /* Typografi */
-        text-align: left;
+        border-top: $block__box--border-top;
+        border-right: $block__box--border-right;
+        border-bottom: $block__box--border-bottom;
+        border-left: $block__box--border-left;
+        border-radius: $block__box--border-radius;
 
-        .rh-text {
-            /* Box-modell/beteende */
-            margin-top: 0;
-            padding: em(15);
-            box-sizing: border-box;
+        @if $block__box--isClickable {
+            // Hover
+            &:hover .rh-block-content__title {
+                @if $block__box-clickable__title--text-color-hover {
+                    color: $block__box-clickable__title--text-color-hover;
+                }
+                @if $block__box-clickable__title--text-decoration-hover {
+                    text-decoration: $block__box-clickable__title--text-decoration-hover;
+                }
+            }
+            &:hover .rh-block-content__description {
+                @if $block__box-clickable__description--text-color-hover {
+                    color: $block__box-clickable__description--text-color-hover;
+                }
+                @if $block__box-clickable__description--text-decoration-hover {
+                    text-decoration: $block__box-clickable__description--text-decoration-hover;
+                }
+            }
+    
+            // Active
+            &:active .rh-block-content__title {
+                @if $block__box-clickable__title--text-color-active {
+                    color: $block__box-clickable__title--text-color-active;
+                }
+                @if $block__box-clickable__title--text-decoration-active {
+                    text-decoration: $block__box-clickable__title--text-decoration-active;
+                }
+            }
+            &:active .rh-block-content__description {
+                @if $block__box-clickable__description--text-color-active {
+                    color: $block__box-clickable__description--text-color-active;
+                }
+                @if $block__box-clickable__description--text-decoration-active {
+                    text-decoration: $block__box-clickable__description--text-decoration-active;
+                }
+            }
 
-            /* Visuellt */
-            border: 1px solid $grey-lighter;
-
-            h3 {
-                /* Typografi */
-                color: $color-primary;
-                font-weight: normal;
+            // Focus
+            &:focus .rh-block-content__title {
+                @if $block__box-clickable__title--text-color-focus {
+                    color: $block__box-clickable__title--text-color-focus;
+                }
+                @if $block__box-clickable__title--text-decoration-focus {
+                    text-decoration: $block__box-clickable__title--text-decoration-focus;
+                }
+            }
+            &:focus .rh-block-content__description {
+                @if $block__box-clickable__description--text-color-focus {
+                    color: $block__box-clickable__description--text-color-focus;
+                }
+                @if $block__box-clickable__description--text-decoration-focus {
+                    text-decoration: $block__box-clickable__description--text-decoration-focus;
+                }
             }
         }
+    }
 
-        img {
-            /* Box-modell/beteende */
-            width: 100%;
-            margin-bottom: -10px;
-        }
+    &--clickable {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
     }
 }

@@ -6,10 +6,11 @@ const babel = require('gulp-babel');
 const fs = require("fs");
 
 const settings = require('./sites.building.json');
+const styleguideConfig = require('./package.json');
 
 const { sites, building } = settings;
 const { publicPath, releasePath } = building; // Public path and release path
-
+const styleguideVersion = styleguideConfig.version || '';
 
 /* ----------------------------------- HELPERS ------------------------------- */
 /**
@@ -160,8 +161,8 @@ function release_process(cb, siteInfo = {}, destPath, options = {}) {
         const { name, resources, version } = siteInfo;
         const { overWrite } = options;
 
-        if (name && resources && version) {
-            const releaseName = `${name}.${version}`,
+        if (name && resources && version && styleguideVersion) {
+            const releaseName = `${name}.${version}-${styleguideVersion}`,
                 releaseLatestName = `${name}.latest`;
 
             if (!overWrite) {
@@ -176,7 +177,9 @@ function release_process(cb, siteInfo = {}, destPath, options = {}) {
                 }
             }
 
-            // Create the files <filename>.<version>.css and <filename>.<version>.js
+            /* Create the files:
+                <filename>.<version>-<styleguideversion>.css 
+                <filename>.<version>-<styleguideversion>.js */
             const releaseTask = build_process(cb, releaseName, resources, destPath, options)
                 .then(({ result }) => result)
                 .catch((error) => error);

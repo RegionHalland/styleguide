@@ -1,0 +1,35 @@
+/* Atoms - Round button */
+$round-button--background: $base3;
+$round-button--border: 0.0625em solid $color-secondary;
+$round-button--border-radius: 50%;
+$round-button--padding: 0.375em; //em(6)
+$round-button--padding-small: 0.25em; //em(4)
+
+$round-button--color: $white;
+$round-button--background-color-hover-active: $white;
+$round-button--color-hover-active: $color-secondary;
+
+$round-button--font-family: "feather";// !important
+$round-button--font-size: $h4-small;
+$round-button--text-decoration: none;
+
+// New version for round button
+$round-button-fx--background: $base3; //Can using "false"
+$round-button-fx--border: 0.0625em solid $color-secondary; //Can using "false"
+$round-button-fx--border-radius: 50%;
+$round-button-fx--color: $white; //Can using "false"
+$round-button-fx--font-family: "feather";
+$round-button-fx--text-decoration: none;
+
+$round-button-fx--background-color-hover-active: $white; //Can using "false"
+$round-button-fx--color-hover-active: $color-secondary; //Can using "false"
+
+$round-button-fx-small--height: 1.875em;
+$round-button-fx-small--width: 1.875em;
+
+$round-button-fx-responsive--height: 2.1875em;
+$round-button-fx-responsive--width: 2.1875em;
+$round-button-fx-responsive--height-medium: 2.5em;
+$round-button-fx-responsive--width-medium: 2.5em;
+
+$round-button-fx-responsive--icon-font-size-medium: 1.2em;

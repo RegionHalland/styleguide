@@ -1,0 +1,113 @@
+/* Needed components
+@import '../../Atoms/link/_link.scss';
+@import '../../Atoms/round-button/_round-button.scss';
+*/
+
+.rh-navigation-block {
+    // Reset p tag's settings on global
+    p { margin-bottom: 0; }
+
+    /* Box-modell/beteende */
+    min-height: $navigation-block--min-height;
+
+    @if $navigation-block--width {
+        width: $navigation-block--width;
+    }
+
+    @if $navigation-block--min-width {
+        min-width: $navigation-block--min-width;
+    }
+
+    @if $navigation-block--max-width {
+        max-width: $navigation-block--max-width;
+    }
+
+    @if $navigation-block--background-color {
+        background-color: $navigation-block--background-color;
+    }
+
+    padding: $navigation-block--padding;
+
+    /* Visuellt */
+    border: $navigation-block--border;
+    border-radius: $navigation-block--border-radius;
+
+    &__header {
+        /* Box-modell/beteende */
+        display: flex;
+        align-items: flex-start;
+
+        &-round-button {
+            /* Box-modell/beteende */
+            height: $navigation-block__header-round-button--height;
+            min-height: $navigation-block__header-round-button--height; // Fix for IE11
+            width: $navigation-block__header-round-button--width;
+            min-width: $navigation-block__header-round-button--width; // Fix for IE11
+            padding: $navigation-block__header-round-button--padding;
+
+            /* Typografi */
+            font-size: $navigation-block__header-round-button--font-size;
+
+            &:hover,
+            &:active {
+
+                /* Visuellt */
+                @if $navigation-block__header-round-button--background-color-hover-active {
+                    background-color: $navigation-block__header-round-button--background-color-hover-active;
+                }
+
+                /* Typografi */
+                @if $navigation-block__header-round-button--color-hover-active {
+                    color: $navigation-block__header-round-button--color-hover-active;
+                }
+            }
+
+            &-icon {
+                &:after {
+                    content: $navigation-block__header-round-button-icon;
+                }
+            }
+        }
+
+        &-title {
+            /* Box-modell/beteende */
+            margin: $navigation-block__header-title--margin;
+
+            @include large {
+                margin: $navigation-block__header-title--margin-large;
+            }
+
+            &-link {
+
+                /* Typografi */
+                @if $navigation-block__header-title-link--color {
+                    color: $navigation-block__header-title-link--color;
+                }
+
+                font-size: $navigation-block__header-title-link--font-size;
+                font-weight: $navigation-block__header-title-link--font-weight;
+                line-height: $navigation-block__header-title-link--line-height;
+                word-break: $navigation-block__header-title-link--word-break;
+
+                @include large {
+                    font-size: $navigation-block__header-title-link--font-size-large;
+                }
+            }
+        }
+    }
+
+    &__description {
+        /* Box-modell/beteende */
+        @if $navigation-block__description--margin {
+            margin: $navigation-block__description--margin;
+        }
+
+        &-text {
+
+            /* Typografi */
+            @if $navigation-block__description-text--color {
+                color: $navigation-block__description-text--color;
+            }
+        }
+    }
+}

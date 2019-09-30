@@ -1,7 +1,7 @@
 // Functions
 @import '_functions';
-@import '_breakpoints';
 @import '_settings-main';
+@import '_breakpoints';
 @import '_reset';
 @import '_base';
 @import '_typography';
@@ -11,6 +11,16 @@
 @import '_padding.scss';
 @import '_flexbox.scss';
 @import '_type_scale.scss';
+@import '_mixin.scss';
+@import '_utilities.scss';
+
+// Components settings
+@import '_settings-components.scss';
+
+//-> Temporary importing for testing site styling in Style guide before compiling
+//-> It will be removed after the project development
+//@import '../../../RH-sites/RhSettingsVardgivare/_settings-vardgivare.scss';
+//@import '../../../RH-sites/RhSettingsVardgivare/_settings-components-vardgivare.scss';
 
 // Atoms
 @import 'components/Atoms/avatar/_avatar.scss';
@@ -18,6 +28,7 @@
 @import 'components/Atoms/button/_button.scss';
 @import 'components/Atoms/caption-hero/_caption-hero.scss';
 @import 'components/Atoms/card/_card.scss';
+@import 'components/Atoms/circle-button/_circle-button.scss';
 @import 'components/Atoms/filter/_filter.scss';
 //@import 'components/Atoms/form/_form.scss';
 @import 'components/Atoms/labels/_labels.scss';
@@ -33,6 +44,7 @@
 
 // Molecules
 @import 'components/Molecules/article/_article.scss';
+@import 'components/Molecules/back-to-top/_back-to-top.scss';
 @import 'components/Molecules/block/_block.scss';
 @import 'components/Molecules/blurbs/_blurbs.scss';
 @import 'components/Molecules/buttongroup/_buttongroup.scss';
@@ -43,6 +55,7 @@
 //@import 'components/Molecules/rh-event-card-calendar/_rh-event-card-calendar.scss';
 @import 'components/Molecules/rh-personal-info/_rh-personal-info.scss';
 @import 'components/Molecules/navigation-card/_navigation-card.scss';
+@import 'components/Molecules/navigation-left/_navigation-left.scss';
 @import 'components/Molecules/linkgroup/_linkgroup.scss';
 //@import 'components/Molecules/rh-filter-alphabet/_rh-filter-alphabet.scss';
 //@import 'components/Molecules/rh-image-caption/_rh-image-caption.scss';
@@ -62,7 +75,7 @@
 //@import 'components/Molecules/rh-news-info/_rh-news-info.scss';
 @import 'components/Molecules/rh-unit-info/_rh-unit-info.scss';
 @import 'components/Molecules/lists/_lists.scss';
-@import 'components/Molecules/event-card-calendar/_event-card-calendar.scss';
+//@import 'components/Molecules/event-card-calendar/_event-card-calendar.scss';
 @import 'components/Molecules/rh-search-elements/_rh-search-elements.scss';
 @import 'components/Molecules/rh-pagination/_rh-pagination.scss';
 @import 'components/Molecules/rh-personal-info/_rh-personal-info.scss';
@@ -81,13 +94,18 @@
 @import 'components/Molecules/cookie-notice/_cookie-notice.scss';
 //@import 'components/Molecules/rh-filter-alphabet/_rh-filter-alphabet.scss';
 //@import 'components/Molecules/rh-calendar-element/_rh-calendar-element.scss';
+@import 'components/Molecules/menu-mobile/_menu-mobile.scss';
+@import 'components/Molecules/navigation-block/_navigation-block.scss';
 
 // Organism
 @import 'components/Organism/rh-breadcrums/_rh-breadcrums.scss';
 @import 'components/Organism/rh-footer/_rh-footer.scss';
+@import 'components/Organism/footer-group/_footer-group.scss';
 @import 'components/Organism/rh-footer-logo/_rh-footer-logo.scss';
 @import 'components/Organism/rh-header/_rh-header.scss';
 @import 'components/Organism/rh-main-nav/_rh-main-nav.scss';
 @import 'components/Organism/rh-search/_rh-search.scss';
 @import 'components/Organism/rh-table/_rh-table.scss';
 @import 'components/Organism/rh-toplinks/_rh-toplinks.scss';
+@import 'components/Organism/block-group/_block-group.scss';
+@import 'components/Organism/navigation-block-group/_navigation-block-group.scss';

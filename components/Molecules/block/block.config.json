@@ -1,18 +1,24 @@
 {
-    "title": "Puffar/block",
-    "status": "wip",
+    "title": "Block",
+    "status": "review",
     "context": {
-        "blocks": [
-            {
-                "title": "This is the block title 1",
+        "name": "default",
+        "status": "review",
+        "isClickable": false,
+        "title": "Det finns många olika varianter",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim venia, quis nostrud exercitation ullmaco laboris nisi ut aliquap ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolor eu fugiat nulla pariatur.",
+        "imageUrl": "/images/pressbild.jpg"
+    },
+    "variants": [
+        {
+            "name": "clickable",
+            "status": "review",
+            "context": {
+                "isClickable": true,
+                "title": "Lorem Ipsum är en utfyllnadstext",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim venia, quis nostrud exercitation ullmaco laboris nisi ut aliquap ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolor eu fugiat nulla pariatur.",
-                "imageUrl": ""
-            },
-            {
-                "title": "This is the block title 2",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim venia, quis nostrud exercitation ullmaco laboris nisi ut aliquap ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolor eu fugiat nulla pariatur.",
-                "imageUrl": "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                "imageUrl": "/images/pressbild.jpg"
             }
-        ]
-    }
+        }
+    ]
 }
