@@ -71,6 +71,7 @@
                 }
             }
     
+            // Active
             &:active .rh-block-content__title {
                 @if $block__box-clickable__title--text-color-active {
                     color: $block__box-clickable__title--text-color-active;
@@ -85,6 +86,24 @@
                 }
                 @if $block__box-clickable__description--text-decoration-active {
                     text-decoration: $block__box-clickable__description--text-decoration-active;
+                }
+            }
+
+            // Focus
+            &:focus .rh-block-content__title {
+                @if $block__box-clickable__title--text-color-focus {
+                    color: $block__box-clickable__title--text-color-focus;
+                }
+                @if $block__box-clickable__title--text-decoration-focus {
+                    text-decoration: $block__box-clickable__title--text-decoration-focus;
+                }
+            }
+            &:focus .rh-block-content__description {
+                @if $block__box-clickable__description--text-color-focus {
+                    color: $block__box-clickable__description--text-color-focus;
+                }
+                @if $block__box-clickable__description--text-decoration-focus {
+                    text-decoration: $block__box-clickable__description--text-decoration-focus;
                 }
             }
         }

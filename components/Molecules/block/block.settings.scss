@@ -25,13 +25,20 @@ $block__box--isClickable: true; //false
 $block__box-clickable--text-color: false;
 $block__box-clickable--text-decoration: underline;
 
+// Hover
 $block__box-clickable__title--text-color-hover: $block__box-clickable--text-color; //false
 $block__box-clickable__title--text-decoration-hover: $block__box-clickable--text-decoration; //false
 $block__box-clickable__description--text-color-hover: $block__box-clickable--text-color; //false
 $block__box-clickable__description--text-decoration-hover: false; //false
 
+// Active
 $block__box-clickable__title--text-color-active: $block__box-clickable--text-color; //false
 $block__box-clickable__title--text-decoration-active: $block__box-clickable--text-decoration; //false
 $block__box-clickable__description--text-color-active: $block__box-clickable--text-color; //false
 $block__box-clickable__description--text-decoration-active: false; //false
 
+// Focus
+$block__box-clickable__title--text-color-focus: $block__box-clickable--text-color; //false
+$block__box-clickable__title--text-decoration-focus: $block__box-clickable--text-decoration; //false
+$block__box-clickable__description--text-color-focus: $block__box-clickable--text-color; //false
+$block__box-clickable__description--text-decoration-focus: false; //false
