@@ -10,14 +10,15 @@
 }
 
 @mixin rh-block-effect-hover-active {
-    border-top: $block__box-tabbing-focus--border-top;
-    border-right: $block__box-tabbing-focus--border-right;
-    border-left: $block__box-tabbing-focus--border-left;
-    box-shadow: $block__box-tabbing-focus--box-shadow;
+    border-top: $block__box--hover-border-top;
+    border-right: $block__box--hover-border-right;
+    border-left: $block__box--hover-border-left;
+    box-shadow: $block__box--hover-box-shadow;
 }
 
 @mixin rh-block-effect-tabbing-focus {
     @include rh-block-effect-hover-active;
+    box-shadow: $block__box-tabbing--focus-box-shadow;
 }
 
 // Component styling
