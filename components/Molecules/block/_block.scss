@@ -9,11 +9,15 @@
     }
 }
 
-@mixin rh-block-tabbing-focus {
+@mixin rh-block-effect-hover-active {
     border-top: $block__box-tabbing-focus--border-top;
     border-right: $block__box-tabbing-focus--border-right;
     border-left: $block__box-tabbing-focus--border-left;
     box-shadow: $block__box-tabbing-focus--box-shadow;
+}
+
+@mixin rh-block-effect-tabbing-focus {
+    @include rh-block-effect-hover-active;
 }
 
 // Component styling
@@ -53,7 +57,7 @@
         /* Box-modell/beteende */
         width: $block__img--width;
         margin-bottom: $block__img--margin-bottom;
-        border-radius: $block__box--border-radius $block__box--border-radius 0 0;
+        border-radius: $block__img--border-radius;
     }
 
     &-box {
@@ -71,10 +75,9 @@
         border-left: $block__box--border-left;
         border-radius: $block__box--border-radius;
 
-        // Effects are enabled when the component is clickable
+        // The effects are enabled when the component is clickable
         @if $block__box--isClickable {
 
-            // Hover
             &:hover {
                 .rh-block-content__title {
                     @include rh-block-effect-creator($block__box-clickable__title--text-color-hover, $block__box-clickable__title--text-decoration-hover)
@@ -109,25 +112,29 @@
         // Common effects
         &:hover,
         &:active {
-            @include rh-block-tabbing-focus;
+            @include rh-block-effect-hover-active;
         }
 
         // Using separate for SASS generating
         &:focus-within {
-            @include rh-block-tabbing-focus;
+            @include rh-block-effect-tabbing-focus;
         }
     }
 
     &--clickable {
+        /* Positionering */
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
         z-index: 1;
+
+        /* Box-modell/beteende */
+        height: 100%;
+        width: 100%;
+        outline: none;
     }
 
     &--focus {
-        @include rh-block-tabbing-focus;
+        @include rh-block-effect-tabbing-focus;
     }
 }
