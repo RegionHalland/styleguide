@@ -60,7 +60,7 @@ fractal.components.set('statuses', {
     review: {
         label: "Under granskning",
         description: "Granskas för godkännande. Implementera med försiktighet.",
-        color: '#d4ff26'
+        color: '#4b7070'
     },
     ready: {
         label: "Klar",
