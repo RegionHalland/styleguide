@@ -24,7 +24,7 @@
 // Component styling
 .rh-block {
     /* Positionering */
-    position: relative;
+    //position: relative;
 
     /* Box-modell/beteende */
     @if $block--width {
@@ -62,8 +62,6 @@
     }
 
     &-box {
-        /* Positionering */
-        position: relative;
 
         /* Box-modell/beteende */
         @if $block__box--max-width {
@@ -76,41 +74,14 @@
         border-left: $block__box--border-left;
         border-radius: $block__box--border-radius;
 
-        // The effects are enabled when the component is clickable
-        @if $block__box--isClickable {
+        // The component's hove-active-focus behavior can placing here (within this class - box)
+    }
 
-            &:hover {
-                .rh-block-content__title {
-                    @include rh-block-effect-creator($block__box-clickable__title--text-color-hover, $block__box-clickable__title--text-decoration-hover)
-                }
+    &--clickable {
+        /* Positionering */
+        position: relative;
 
-                .rh-block-content__description {
-                    @include rh-block-effect-creator($block__box-clickable__description--text-color-hover, $block__box-clickable__description--text-decoration-hover);
-                }
-            }
-
-            &:active {
-                .rh-block-content__title {
-                    @include rh-block-effect-creator($block__box-clickable__title--text-color-active, $block__box-clickable__title--text-decoration-active);
-                }
-
-                .rh-block-content__description {
-                    @include rh-block-effect-creator($block__box-clickable__description--text-color-active, $block__box-clickable__description--text-decoration-active);
-                }
-            }
-
-            &:focus-within {
-                .rh-block-content__title {
-                    @include rh-block-effect-creator($block__box-clickable__title--text-color-focus, $block__box-clickable__title--text-decoration-focus);
-                }
-
-                .rh-block-content__description {
-                    @include rh-block-effect-creator($block__box-clickable__description--text-color-focus, $block__box-clickable__description--text-decoration-focus);
-                }
-            }
-        }
-
-        // Common effects
+        // Common effects for the box
         &:hover,
         &:active {
             @include rh-block-effect-hover-active;
@@ -120,19 +91,50 @@
         &:focus-within {
             @include rh-block-effect-tabbing-focus;
         }
-    }
 
-    &--clickable {
-        /* Positionering */
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
+        // The specific effects for content
+        &:hover {
+            .rh-block-content__title {
+                @include rh-block-effect-creator($block__box-clickable__title--text-color-hover, $block__box-clickable__title--text-decoration-hover)
+            }
 
-        /* Box-modell/beteende */
-        height: 100%;
-        width: 100%;
-        outline: none;
+            .rh-block-content__description {
+                @include rh-block-effect-creator($block__box-clickable__description--text-color-hover, $block__box-clickable__description--text-decoration-hover);
+            }
+        }
+
+        &:active {
+            .rh-block-content__title {
+                @include rh-block-effect-creator($block__box-clickable__title--text-color-active, $block__box-clickable__title--text-decoration-active);
+            }
+
+            .rh-block-content__description {
+                @include rh-block-effect-creator($block__box-clickable__description--text-color-active, $block__box-clickable__description--text-decoration-active);
+            }
+        }
+
+        &:focus-within {
+            .rh-block-content__title {
+                @include rh-block-effect-creator($block__box-clickable__title--text-color-focus, $block__box-clickable__title--text-decoration-focus);
+            }
+
+            .rh-block-content__description {
+                @include rh-block-effect-creator($block__box-clickable__description--text-color-focus, $block__box-clickable__description--text-decoration-focus);
+            }
+        }
+
+        &-link {
+            /* Positionering */
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+
+            /* Box-modell/beteende */
+            height: 100%;
+            width: 100%;
+            outline: none;
+        }
     }
 
     &--focus {

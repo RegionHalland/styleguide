@@ -17,10 +17,8 @@ $block__img--width: 100%;
 $block__img--margin-bottom: -0.625em; //-10px
 $block__img--border-radius: $block__box--border-radius $block__box--border-radius 0 0;
 
-// Clickable
-$block__box--isClickable: true; //false
-
-// Clickable -> Common variables
+// ---clickable
+// Common variables
 $block__box-clickable__title--text-color: false;
 $block__box-clickable__title--text-decoration: underline;
 $block__box-clickable__description--text-color: false;

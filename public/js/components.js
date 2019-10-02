@@ -69,6 +69,7 @@ $(document).ready(function () {
 "use strict";
 
 $(document).ready(function () {
+  // This code fixs :focus-within behavior on IE11 and older browsers
   var $blockBoxItems = $(".rh-block-box");
   $blockBoxItems.focusin(function (e) {
     e.stopPropagation();
