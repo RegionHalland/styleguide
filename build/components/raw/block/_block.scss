@@ -1,6 +1,30 @@
+// Common styling generation
+@mixin rh-block-effect-creator($text-color, $text-decoration) {
+    @if $text-color {
+        color: $text-color;
+    }
+
+    @if $text-decoration {
+        text-decoration: $text-decoration;
+    }
+}
+
+@mixin rh-block-effect-hover-active {
+    border-top: $block__box--hover-border-top;
+    border-right: $block__box--hover-border-right;
+    border-left: $block__box--hover-border-left;
+    box-shadow: $block__box--hover-box-shadow;
+}
+
+@mixin rh-block-effect-tabbing-focus {
+    @include rh-block-effect-hover-active;
+    box-shadow: $block__box-tabbing--focus-box-shadow;
+}
+
+// Component styling
 .rh-block {
     /* Positionering */
-    position: relative;
+    //position: relative;
 
     /* Box-modell/beteende */
     @if $block--width {
@@ -34,12 +58,10 @@
         /* Box-modell/beteende */
         width: $block__img--width;
         margin-bottom: $block__img--margin-bottom;
-        border-radius: $block__box--border-radius $block__box--border-radius 0 0;
+        border-radius: $block__img--border-radius;
     }
 
     &-box {
-        /* Positionering */
-        position: relative;
 
         /* Box-modell/beteende */
         @if $block__box--max-width {
@@ -52,69 +74,70 @@
         border-left: $block__box--border-left;
         border-radius: $block__box--border-radius;
 
-        @if $block__box--isClickable {
-            // Hover
-            &:hover .rh-block-content__title {
-                @if $block__box-clickable__title--text-color-hover {
-                    color: $block__box-clickable__title--text-color-hover;
-                }
-                @if $block__box-clickable__title--text-decoration-hover {
-                    text-decoration: $block__box-clickable__title--text-decoration-hover;
-                }
-            }
-            &:hover .rh-block-content__description {
-                @if $block__box-clickable__description--text-color-hover {
-                    color: $block__box-clickable__description--text-color-hover;
-                }
-                @if $block__box-clickable__description--text-decoration-hover {
-                    text-decoration: $block__box-clickable__description--text-decoration-hover;
-                }
-            }
-    
-            // Active
-            &:active .rh-block-content__title {
-                @if $block__box-clickable__title--text-color-active {
-                    color: $block__box-clickable__title--text-color-active;
-                }
-                @if $block__box-clickable__title--text-decoration-active {
-                    text-decoration: $block__box-clickable__title--text-decoration-active;
-                }
-            }
-            &:active .rh-block-content__description {
-                @if $block__box-clickable__description--text-color-active {
-                    color: $block__box-clickable__description--text-color-active;
-                }
-                @if $block__box-clickable__description--text-decoration-active {
-                    text-decoration: $block__box-clickable__description--text-decoration-active;
-                }
-            }
-
-            // Focus
-            &:focus .rh-block-content__title {
-                @if $block__box-clickable__title--text-color-focus {
-                    color: $block__box-clickable__title--text-color-focus;
-                }
-                @if $block__box-clickable__title--text-decoration-focus {
-                    text-decoration: $block__box-clickable__title--text-decoration-focus;
-                }
-            }
-            &:focus .rh-block-content__description {
-                @if $block__box-clickable__description--text-color-focus {
-                    color: $block__box-clickable__description--text-color-focus;
-                }
-                @if $block__box-clickable__description--text-decoration-focus {
-                    text-decoration: $block__box-clickable__description--text-decoration-focus;
-                }
-            }
-        }
+        // The component's hove-active-focus behavior can placing here (within this class - box)
     }
 
     &--clickable {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
+        /* Positionering */
+        position: relative;
+
+        // Common effects for the box
+        &:hover,
+        &:active {
+            @include rh-block-effect-hover-active;
+        }
+
+        // Using separate for SASS generating
+        &:focus-within {
+            @include rh-block-effect-tabbing-focus;
+        }
+
+        // The specific effects for content
+        &:hover {
+            .rh-block-content__title {
+                @include rh-block-effect-creator($block__box-clickable__title--text-color-hover, $block__box-clickable__title--text-decoration-hover)
+            }
+
+            .rh-block-content__description {
+                @include rh-block-effect-creator($block__box-clickable__description--text-color-hover, $block__box-clickable__description--text-decoration-hover);
+            }
+        }
+
+        &:active {
+            .rh-block-content__title {
+                @include rh-block-effect-creator($block__box-clickable__title--text-color-active, $block__box-clickable__title--text-decoration-active);
+            }
+
+            .rh-block-content__description {
+                @include rh-block-effect-creator($block__box-clickable__description--text-color-active, $block__box-clickable__description--text-decoration-active);
+            }
+        }
+
+        &:focus-within {
+            .rh-block-content__title {
+                @include rh-block-effect-creator($block__box-clickable__title--text-color-focus, $block__box-clickable__title--text-decoration-focus);
+            }
+
+            .rh-block-content__description {
+                @include rh-block-effect-creator($block__box-clickable__description--text-color-focus, $block__box-clickable__description--text-decoration-focus);
+            }
+        }
+
+        &-link {
+            /* Positionering */
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+
+            /* Box-modell/beteende */
+            height: 100%;
+            width: 100%;
+            outline: none;
+        }
+    }
+
+    &--focus {
+        @include rh-block-effect-tabbing-focus;
     }
 }

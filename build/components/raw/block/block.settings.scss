@@ -6,39 +6,46 @@ $block__text-container--padding: 0.9375em;
 $block__text-title--color: false;//false
 $block__text-title--font-weight: bold;
 
-$block__img--width: 100%;
-$block__img--margin-bottom: -0.625em; //-10px
-
 $block__box--max-width: false; //26em; //416px
-
 $block__box--border-top: 0.0625em solid $grey-lighter;
 $block__box--border-right: 0.0625em solid $grey-lighter;
 $block__box--border-bottom: 0.25em solid $base3;
 $block__box--border-left: 0.0625em solid $grey-lighter;
-
 $block__box--border-radius: 0.375em;
 
-// Clickable
-$block__box--isClickable: true; //false
+$block__img--width: 100%;
+$block__img--margin-bottom: -0.625em; //-10px
+$block__img--border-radius: $block__box--border-radius $block__box--border-radius 0 0;
 
-// Clickable -> Hover
-$block__box-clickable--text-color: false;
-$block__box-clickable--text-decoration: underline;
+// ---clickable
+// Common variables
+$block__box-clickable__title--text-color: false;
+$block__box-clickable__title--text-decoration: underline;
+$block__box-clickable__description--text-color: false;
+$block__box-clickable__description--text-decoration: false;
 
 // Hover
-$block__box-clickable__title--text-color-hover: $block__box-clickable--text-color; //false
-$block__box-clickable__title--text-decoration-hover: $block__box-clickable--text-decoration; //false
-$block__box-clickable__description--text-color-hover: $block__box-clickable--text-color; //false
-$block__box-clickable__description--text-decoration-hover: false; //false
+$block__box-clickable__title--text-color-hover: $block__box-clickable__title--text-color; //false
+$block__box-clickable__title--text-decoration-hover: $block__box-clickable__title--text-decoration; //false
+$block__box-clickable__description--text-color-hover: $block__box-clickable__description--text-color; //false
+$block__box-clickable__description--text-decoration-hover: $block__box-clickable__description--text-decoration; //false
 
 // Active
-$block__box-clickable__title--text-color-active: $block__box-clickable--text-color; //false
-$block__box-clickable__title--text-decoration-active: $block__box-clickable--text-decoration; //false
-$block__box-clickable__description--text-color-active: $block__box-clickable--text-color; //false
-$block__box-clickable__description--text-decoration-active: false; //false
+$block__box-clickable__title--text-color-active: $block__box-clickable__title--text-color; //false
+$block__box-clickable__title--text-decoration-active: $block__box-clickable__title--text-decoration; //false
+$block__box-clickable__description--text-color-active: $block__box-clickable__description--text-color; //false
+$block__box-clickable__description--text-decoration-active: $block__box-clickable__description--text-decoration; //false
 
-// Focus
-$block__box-clickable__title--text-color-focus: $block__box-clickable--text-color; //false
-$block__box-clickable__title--text-decoration-focus: $block__box-clickable--text-decoration; //false
-$block__box-clickable__description--text-color-focus: $block__box-clickable--text-color; //false
-$block__box-clickable__description--text-decoration-focus: false; //false
+// Focus-within
+$block__box-clickable__title--text-color-focus: $block__box-clickable__title--text-color; //false
+$block__box-clickable__title--text-decoration-focus: $block__box-clickable__title--text-decoration; //false
+$block__box-clickable__description--text-color-focus: $block__box-clickable__description--text-color; //false
+$block__box-clickable__description--text-decoration-focus: $block__box-clickable__description--text-decoration; //false
+
+// Mixin
+$block__box--hover-border-top: 0.0625em solid $base3;
+$block__box--hover-border-right: 0.0625em solid $base3;
+$block__box--hover-border-left: 0.0625em solid $base3;
+$block__box--hover-box-shadow: 0 0.125em 0.5em rgba(0, 0, 0, 0.3);
+
+$block__box-tabbing--focus-box-shadow: 0 0.125em 0.5em rgba(0, 0, 0, 0.3);

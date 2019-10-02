@@ -125,7 +125,7 @@
 
 <div class="Status Status--tag">
 
-<label class="Status-label" style="background-color: #d4ff26; border-color: #d4ff26;">Under granskning</label>
+<label class="Status-label" style="background-color: #4b7070; border-color: #4b7070;">Under granskning</label>
 
 </div>
 
@@ -509,6 +509,7 @@
         <span class="hljs-attribute">position</span>: fixed;
         <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
         <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">z-index</span>: <span class="hljs-variable">$back-to-top--z-index</span>;
 
         <span class="hljs-comment">/* Box-modell/beteende */</span>
         <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$back-to-top__container--padding</span>;
@@ -550,13 +551,14 @@
                                 <pre><span class="hljs-comment">/* Molecules - Back to top */</span>
 <span class="hljs-variable">$back-to-top--isResponsive</span>: true;
 <span class="hljs-variable">$back-to-top--background-color</span>: <span class="hljs-variable">$base3</span>;
+<span class="hljs-variable">$back-to-top--z-index</span>: <span class="hljs-number">10</span>;
 
 <span class="hljs-comment">// Effects</span>
-<span class="hljs-variable">$back-to-top--background-color-hover</span>: <span class="hljs-variable">$base3-light</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$back-to-top--text-color-hover</span>: <span class="hljs-variable">$base3-dark</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$back-to-top--background-color-hover</span>: <span class="hljs-variable">$base3-dark</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$back-to-top--text-color-hover</span>: <span class="hljs-number">#ffffff</span>; <span class="hljs-comment">//false</span>
 
-<span class="hljs-variable">$back-to-top--background-color-active</span>: <span class="hljs-variable">$base3-light</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$back-to-top--text-color-active</span>: <span class="hljs-variable">$base3-dark</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$back-to-top--background-color-active</span>: <span class="hljs-variable">$base3-dark</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$back-to-top--text-color-active</span>: <span class="hljs-number">#ffffff</span>; <span class="hljs-comment">//false</span>
 
 <span class="hljs-variable">$back-to-top--cursor</span>: pointer;
 
@@ -579,7 +581,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">505 Bytes</span>
+                    <span class="Meta-value">522 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -595,13 +597,17 @@
                                 <pre><span class="hljs-comment">// Needed function:</span>
 <span class="hljs-comment">// throttle() - /public/library.js</span>
 $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-    <span class="hljs-keyword">var</span> $buttonBackToTop = $(<span class="hljs-string">"#back-to-top"</span>);
+    <span class="hljs-keyword">var</span> $buttonBackToTop = $(<span class="hljs-string">"#back-to-top"</span>),
+        btnBackToTopLimitOnHead = <span class="hljs-number">500</span>,
+        btnBackToTopCurrentPos;
 
     $(<span class="hljs-built_in">window</span>).scroll(throttle(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-        <span class="hljs-keyword">if</span> ($(<span class="hljs-keyword">this</span>).scrollTop() &gt; <span class="hljs-number">500</span>) {
-            $buttonBackToTop.fadeIn(<span class="hljs-string">"slow"</span>);
+        btnBackToTopCurrentPos = $(<span class="hljs-keyword">this</span>).scrollTop(); <span class="hljs-comment">// Update current position</span>
+
+        <span class="hljs-keyword">if</span> (btnBackToTopCurrentPos &gt; btnBackToTopLimitOnHead) {
+            !$buttonBackToTop.is(<span class="hljs-string">':visible'</span>) &amp;&amp; $buttonBackToTop.fadeIn(<span class="hljs-string">"slow"</span>);
         } <span class="hljs-keyword">else</span> {
-            $buttonBackToTop.fadeOut(<span class="hljs-string">"slow"</span>);
+            $buttonBackToTop.is(<span class="hljs-string">':visible'</span>) &amp;&amp; $buttonBackToTop.fadeOut(<span class="hljs-string">"slow"</span>);
         }
     }, <span class="hljs-number">200</span>));
 
@@ -627,7 +633,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">519 Bytes</span>
+                    <span class="Meta-value">766 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -840,7 +846,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -864,7 +870,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -888,7 +894,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -912,7 +918,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -941,7 +947,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -1000,7 +1006,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -1024,7 +1030,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -1048,7 +1054,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -1072,7 +1078,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -1096,7 +1102,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -1120,7 +1126,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -1509,7 +1515,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -1656,7 +1662,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -1680,7 +1686,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -1720,7 +1726,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -1744,7 +1750,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -1845,7 +1851,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -1917,7 +1923,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2013,7 +2019,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2157,7 +2163,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2253,7 +2259,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2592,7 +2598,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2616,7 +2622,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2656,7 +2662,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2680,7 +2686,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2720,7 +2726,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2744,7 +2750,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>

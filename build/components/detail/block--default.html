@@ -125,7 +125,7 @@
 
 <div class="Status Status--tag">
 
-<label class="Status-label" style="background-color: #d4ff26; border-color: #d4ff26;">Under granskning</label>
+<label class="Status-label" style="background-color: green; border-color: green;">Klar</label>
 
 </div>
 
@@ -214,7 +214,7 @@
         <pre><span class="hljs-comment">&lt;!-- Default template - View Notes to know how to use the component--&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-box"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/images/pressbild.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Text som beskriver bilden"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"334455"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/images/pressbild.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Text som beskriver bilden"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-content"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-content__title rh-link--navigation"</span>&gt;</span>Det finns många olika varianter<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -237,7 +237,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-box"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block"</span>&gt;</span>
             </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> imageUrl}}</span><span class="xml">
-                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{imageUrl}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Text som beskriver bilden"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"334455"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{imageUrl}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Text som beskriver bilden"</span>&gt;</span>
             </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-content"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3"</span>&gt;</span>
@@ -248,17 +248,15 @@
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">unless</span></span>}}</span><span class="xml">
-
-</span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> isClickable}}</span><span class="xml">
+</span><span class="hljs-template-variable">{{<span class="hljs-builtin-name">else</span>}}</span><span class="xml">
     <span class="hljs-comment">&lt;!-- Clickable template - View Notes to know how to use the component--&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-box"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-box rh-block--clickable"</span>&gt;</span>
         </span><span class="hljs-comment">{{!-- The &lt;a&gt; tag is using for clickable feature --}}</span><span class="xml">
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-link--navigation rh-block--clickable"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-link--navigation rh-block--clickable-link"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{title}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block"</span>&gt;</span>
             </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> imageUrl}}</span><span class="xml">
-                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{imageUrl}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Text som beskriver bilden"</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">"334455"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{imageUrl}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Text som beskriver bilden"</span>&gt;</span>
             </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-content"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3"</span>&gt;</span>
@@ -269,7 +267,7 @@
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"></span></pre>
+</span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">unless</span></span>}}</span><span class="xml"></span></pre>
     </code>
 </div>
 
@@ -304,6 +302,8 @@
                 
                 <option value="file-e869a182d774c9a2036ad1f2374ec1c8">_block.scss</option>
                 
+                <option value="file-6105b1ac3f930fe7f6b80058c3194bf3">block.js</option>
+                
                 <option value="file-8c0af6343153a1f9be1423ab7563e974">block.settings.scss</option>
                 
             </select>
@@ -318,9 +318,33 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre><span class="hljs-selector-class">.rh-block</span> {
+                                <pre><span class="hljs-comment">// Common styling generation</span>
+@<span class="hljs-keyword">mixin</span> rh-block-effect-creator(<span class="hljs-variable">$text-color</span>, <span class="hljs-variable">$text-decoration</span>) {
+    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$text-color</span> {
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$text-color</span>;
+    }
+
+    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$text-decoration</span> {
+        <span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$text-decoration</span>;
+    }
+}
+
+@<span class="hljs-keyword">mixin</span> rh-block-effect-hover-active {
+    <span class="hljs-attribute">border-top</span>: <span class="hljs-variable">$block__box--hover-border-top</span>;
+    <span class="hljs-attribute">border-right</span>: <span class="hljs-variable">$block__box--hover-border-right</span>;
+    <span class="hljs-attribute">border-left</span>: <span class="hljs-variable">$block__box--hover-border-left</span>;
+    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-variable">$block__box--hover-box-shadow</span>;
+}
+
+@<span class="hljs-keyword">mixin</span> rh-block-effect-tabbing-focus {
+    @<span class="hljs-keyword">include</span> rh-block-effect-hover-active;
+    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-variable">$block__box-tabbing--focus-box-shadow</span>;
+}
+
+<span class="hljs-comment">// Component styling</span>
+<span class="hljs-selector-class">.rh-block</span> {
     <span class="hljs-comment">/* Positionering */</span>
-    <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-comment">//position: relative;</span>
 
     <span class="hljs-comment">/* Box-modell/beteende */</span>
     @<span class="hljs-keyword">if</span> <span class="hljs-variable">$block--width</span> {
@@ -354,12 +378,10 @@
         <span class="hljs-comment">/* Box-modell/beteende */</span>
         <span class="hljs-attribute">width</span>: <span class="hljs-variable">$block__img--width</span>;
         <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$block__img--margin-bottom</span>;
-        <span class="hljs-attribute">border-radius</span>: <span class="hljs-variable">$block__box--border-radius</span> <span class="hljs-variable">$block__box--border-radius</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">border-radius</span>: <span class="hljs-variable">$block__img--border-radius</span>;
     }
 
     &amp;-box {
-        <span class="hljs-comment">/* Positionering */</span>
-        <span class="hljs-attribute">position</span>: relative;
 
         <span class="hljs-comment">/* Box-modell/beteende */</span>
         @<span class="hljs-keyword">if</span> <span class="hljs-variable">$block__box--max-width</span> {
@@ -372,70 +394,71 @@
         <span class="hljs-attribute">border-left</span>: <span class="hljs-variable">$block__box--border-left</span>;
         <span class="hljs-attribute">border-radius</span>: <span class="hljs-variable">$block__box--border-radius</span>;
 
-        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$block__box--isClickable</span> {
-            <span class="hljs-comment">// Hover</span>
-            &amp;:hover <span class="hljs-selector-class">.rh-block-content__title</span> {
-                @<span class="hljs-keyword">if</span> <span class="hljs-variable">$block__box-clickable__title--text-color-hover</span> {
-                    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$block__box-clickable__title--text-color-hover</span>;
-                }
-                @<span class="hljs-keyword">if</span> <span class="hljs-variable">$block__box-clickable__title--text-decoration-hover</span> {
-                    <span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$block__box-clickable__title--text-decoration-hover</span>;
-                }
-            }
-            &amp;:hover <span class="hljs-selector-class">.rh-block-content__description</span> {
-                @<span class="hljs-keyword">if</span> <span class="hljs-variable">$block__box-clickable__description--text-color-hover</span> {
-                    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$block__box-clickable__description--text-color-hover</span>;
-                }
-                @<span class="hljs-keyword">if</span> <span class="hljs-variable">$block__box-clickable__description--text-decoration-hover</span> {
-                    <span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$block__box-clickable__description--text-decoration-hover</span>;
-                }
-            }
-    
-            <span class="hljs-comment">// Active</span>
-            &amp;:active <span class="hljs-selector-class">.rh-block-content__title</span> {
-                @<span class="hljs-keyword">if</span> <span class="hljs-variable">$block__box-clickable__title--text-color-active</span> {
-                    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$block__box-clickable__title--text-color-active</span>;
-                }
-                @<span class="hljs-keyword">if</span> <span class="hljs-variable">$block__box-clickable__title--text-decoration-active</span> {
-                    <span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$block__box-clickable__title--text-decoration-active</span>;
-                }
-            }
-            &amp;:active <span class="hljs-selector-class">.rh-block-content__description</span> {
-                @<span class="hljs-keyword">if</span> <span class="hljs-variable">$block__box-clickable__description--text-color-active</span> {
-                    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$block__box-clickable__description--text-color-active</span>;
-                }
-                @<span class="hljs-keyword">if</span> <span class="hljs-variable">$block__box-clickable__description--text-decoration-active</span> {
-                    <span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$block__box-clickable__description--text-decoration-active</span>;
-                }
-            }
-
-            <span class="hljs-comment">// Focus</span>
-            &amp;:focus <span class="hljs-selector-class">.rh-block-content__title</span> {
-                @<span class="hljs-keyword">if</span> <span class="hljs-variable">$block__box-clickable__title--text-color-focus</span> {
-                    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$block__box-clickable__title--text-color-focus</span>;
-                }
-                @<span class="hljs-keyword">if</span> <span class="hljs-variable">$block__box-clickable__title--text-decoration-focus</span> {
-                    <span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$block__box-clickable__title--text-decoration-focus</span>;
-                }
-            }
-            &amp;:focus <span class="hljs-selector-class">.rh-block-content__description</span> {
-                @<span class="hljs-keyword">if</span> <span class="hljs-variable">$block__box-clickable__description--text-color-focus</span> {
-                    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$block__box-clickable__description--text-color-focus</span>;
-                }
-                @<span class="hljs-keyword">if</span> <span class="hljs-variable">$block__box-clickable__description--text-decoration-focus</span> {
-                    <span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$block__box-clickable__description--text-decoration-focus</span>;
-                }
-            }
-        }
+        <span class="hljs-comment">// The component's hove-active-focus behavior can placing here (within this class - box)</span>
     }
 
     &amp;--clickable {
-        <span class="hljs-attribute">position</span>: absolute;
-        <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
-        <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-        <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
-        <span class="hljs-attribute">z-index</span>: <span class="hljs-number">1</span>;
+        <span class="hljs-comment">/* Positionering */</span>
+        <span class="hljs-attribute">position</span>: relative;
+
+        <span class="hljs-comment">// Common effects for the box</span>
+        &amp;:hover,
+        &amp;:active {
+            @<span class="hljs-keyword">include</span> rh-block-effect-hover-active;
+        }
+
+        <span class="hljs-comment">// Using separate for SASS generating</span>
+        &amp;:focus-within {
+            @<span class="hljs-keyword">include</span> rh-block-effect-tabbing-focus;
+        }
+
+        <span class="hljs-comment">// The specific effects for content</span>
+        &amp;:hover {
+            <span class="hljs-selector-class">.rh-block-content__title</span> {
+                @<span class="hljs-keyword">include</span> rh-block-effect-creator(<span class="hljs-variable">$block__box-clickable__title--text-color-hover</span>, <span class="hljs-variable">$block__box-clickable__title--text-decoration-hover</span>)
+            }
+
+            .rh-block-content__description {
+                @<span class="hljs-keyword">include</span> rh-block-effect-creator(<span class="hljs-variable">$block__box-clickable__description--text-color-hover</span>, <span class="hljs-variable">$block__box-clickable__description--text-decoration-hover</span>);
+            }
+        }
+
+        &amp;:active {
+            <span class="hljs-selector-class">.rh-block-content__title</span> {
+                @<span class="hljs-keyword">include</span> rh-block-effect-creator(<span class="hljs-variable">$block__box-clickable__title--text-color-active</span>, <span class="hljs-variable">$block__box-clickable__title--text-decoration-active</span>);
+            }
+
+            <span class="hljs-selector-class">.rh-block-content__description</span> {
+                @<span class="hljs-keyword">include</span> rh-block-effect-creator(<span class="hljs-variable">$block__box-clickable__description--text-color-active</span>, <span class="hljs-variable">$block__box-clickable__description--text-decoration-active</span>);
+            }
+        }
+
+        &amp;:focus-within {
+            <span class="hljs-selector-class">.rh-block-content__title</span> {
+                @<span class="hljs-keyword">include</span> rh-block-effect-creator(<span class="hljs-variable">$block__box-clickable__title--text-color-focus</span>, <span class="hljs-variable">$block__box-clickable__title--text-decoration-focus</span>);
+            }
+
+            <span class="hljs-selector-class">.rh-block-content__description</span> {
+                @<span class="hljs-keyword">include</span> rh-block-effect-creator(<span class="hljs-variable">$block__box-clickable__description--text-color-focus</span>, <span class="hljs-variable">$block__box-clickable__description--text-decoration-focus</span>);
+            }
+        }
+
+        &amp;-<span class="hljs-selector-tag">link</span> {
+            <span class="hljs-comment">/* Positionering */</span>
+            <span class="hljs-attribute">position</span>: absolute;
+            <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+            <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+            <span class="hljs-attribute">z-index</span>: <span class="hljs-number">1</span>;
+
+            <span class="hljs-comment">/* Box-modell/beteende */</span>
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+            <span class="hljs-attribute">outline</span>: none;
+        }
+    }
+
+    &amp;--focus {
+        @<span class="hljs-keyword">include</span> rh-block-effect-tabbing-focus;
     }
 }</pre>
                             </code>
@@ -458,6 +481,48 @@
             </ul>
         </div>
         
+        <div class="FileBrowser-item" id="file-6105b1ac3f930fe7f6b80058c3194bf3" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-JavaScript FileBrowser-code">
+                                <pre>$(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// This code fixs :focus-within behavior on IE11 and older browsers</span>
+    <span class="hljs-keyword">var</span> $blockBoxItems = $(<span class="hljs-string">".rh-block-box"</span>);
+
+    $blockBoxItems.focusin(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+        e.stopPropagation();
+        $(<span class="hljs-keyword">this</span>).addClass(<span class="hljs-string">"rh-block--focus"</span>);
+    });
+
+    $blockBoxItems.focusout(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+        e.stopPropagation();
+        $(<span class="hljs-keyword">this</span>).removeClass(<span class="hljs-string">"rh-block--focus"</span>);
+    });
+});</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/block/block.js"><span>/components/raw/block/block.js</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">components/Molecules/block/block.js</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">405 Bytes</span>
+                </li>
+            </ul>
+        </div>
+        
         <div class="FileBrowser-item" id="file-8c0af6343153a1f9be1423ab7563e974" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
@@ -474,43 +539,49 @@
 <span class="hljs-variable">$block__text-title--color</span>: false;<span class="hljs-comment">//false</span>
 <span class="hljs-variable">$block__text-title--font-weight</span>: bold;
 
-<span class="hljs-variable">$block__img--width</span>: <span class="hljs-number">100%</span>;
-<span class="hljs-variable">$block__img--margin-bottom</span>: -<span class="hljs-number">0.625em</span>; <span class="hljs-comment">//-10px</span>
-
 <span class="hljs-variable">$block__box--max-width</span>: false; <span class="hljs-comment">//26em; //416px</span>
-
 <span class="hljs-variable">$block__box--border-top</span>: <span class="hljs-number">0.0625em</span> solid <span class="hljs-variable">$grey-lighter</span>;
 <span class="hljs-variable">$block__box--border-right</span>: <span class="hljs-number">0.0625em</span> solid <span class="hljs-variable">$grey-lighter</span>;
 <span class="hljs-variable">$block__box--border-bottom</span>: <span class="hljs-number">0.25em</span> solid <span class="hljs-variable">$base3</span>;
 <span class="hljs-variable">$block__box--border-left</span>: <span class="hljs-number">0.0625em</span> solid <span class="hljs-variable">$grey-lighter</span>;
-
 <span class="hljs-variable">$block__box--border-radius</span>: <span class="hljs-number">0.375em</span>;
 
-<span class="hljs-comment">// Clickable</span>
-<span class="hljs-variable">$block__box--isClickable</span>: true; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$block__img--width</span>: <span class="hljs-number">100%</span>;
+<span class="hljs-variable">$block__img--margin-bottom</span>: -<span class="hljs-number">0.625em</span>; <span class="hljs-comment">//-10px</span>
+<span class="hljs-variable">$block__img--border-radius</span>: <span class="hljs-variable">$block__box--border-radius</span> <span class="hljs-variable">$block__box--border-radius</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
 
-<span class="hljs-comment">// Clickable -&gt; Hover</span>
-<span class="hljs-variable">$block__box-clickable--text-color</span>: false;
-<span class="hljs-variable">$block__box-clickable--text-decoration</span>: underline;
+<span class="hljs-comment">// ---clickable</span>
+<span class="hljs-comment">// Common variables</span>
+<span class="hljs-variable">$block__box-clickable__title--text-color</span>: false;
+<span class="hljs-variable">$block__box-clickable__title--text-decoration</span>: underline;
+<span class="hljs-variable">$block__box-clickable__description--text-color</span>: false;
+<span class="hljs-variable">$block__box-clickable__description--text-decoration</span>: false;
 
 <span class="hljs-comment">// Hover</span>
-<span class="hljs-variable">$block__box-clickable__title--text-color-hover</span>: <span class="hljs-variable">$block__box-clickable--text-color</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$block__box-clickable__title--text-decoration-hover</span>: <span class="hljs-variable">$block__box-clickable--text-decoration</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$block__box-clickable__description--text-color-hover</span>: <span class="hljs-variable">$block__box-clickable--text-color</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$block__box-clickable__description--text-decoration-hover</span>: false; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$block__box-clickable__title--text-color-hover</span>: <span class="hljs-variable">$block__box-clickable__title--text-color</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$block__box-clickable__title--text-decoration-hover</span>: <span class="hljs-variable">$block__box-clickable__title--text-decoration</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$block__box-clickable__description--text-color-hover</span>: <span class="hljs-variable">$block__box-clickable__description--text-color</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$block__box-clickable__description--text-decoration-hover</span>: <span class="hljs-variable">$block__box-clickable__description--text-decoration</span>; <span class="hljs-comment">//false</span>
 
 <span class="hljs-comment">// Active</span>
-<span class="hljs-variable">$block__box-clickable__title--text-color-active</span>: <span class="hljs-variable">$block__box-clickable--text-color</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$block__box-clickable__title--text-decoration-active</span>: <span class="hljs-variable">$block__box-clickable--text-decoration</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$block__box-clickable__description--text-color-active</span>: <span class="hljs-variable">$block__box-clickable--text-color</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$block__box-clickable__description--text-decoration-active</span>: false; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$block__box-clickable__title--text-color-active</span>: <span class="hljs-variable">$block__box-clickable__title--text-color</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$block__box-clickable__title--text-decoration-active</span>: <span class="hljs-variable">$block__box-clickable__title--text-decoration</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$block__box-clickable__description--text-color-active</span>: <span class="hljs-variable">$block__box-clickable__description--text-color</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$block__box-clickable__description--text-decoration-active</span>: <span class="hljs-variable">$block__box-clickable__description--text-decoration</span>; <span class="hljs-comment">//false</span>
 
-<span class="hljs-comment">// Focus</span>
-<span class="hljs-variable">$block__box-clickable__title--text-color-focus</span>: <span class="hljs-variable">$block__box-clickable--text-color</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$block__box-clickable__title--text-decoration-focus</span>: <span class="hljs-variable">$block__box-clickable--text-decoration</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$block__box-clickable__description--text-color-focus</span>: <span class="hljs-variable">$block__box-clickable--text-color</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$block__box-clickable__description--text-decoration-focus</span>: false; <span class="hljs-comment">//false</span>
-</pre>
+<span class="hljs-comment">// Focus-within</span>
+<span class="hljs-variable">$block__box-clickable__title--text-color-focus</span>: <span class="hljs-variable">$block__box-clickable__title--text-color</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$block__box-clickable__title--text-decoration-focus</span>: <span class="hljs-variable">$block__box-clickable__title--text-decoration</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$block__box-clickable__description--text-color-focus</span>: <span class="hljs-variable">$block__box-clickable__description--text-color</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$block__box-clickable__description--text-decoration-focus</span>: <span class="hljs-variable">$block__box-clickable__description--text-decoration</span>; <span class="hljs-comment">//false</span>
+
+<span class="hljs-comment">// Mixin</span>
+<span class="hljs-variable">$block__box--hover-border-top</span>: <span class="hljs-number">0.0625em</span> solid <span class="hljs-variable">$base3</span>;
+<span class="hljs-variable">$block__box--hover-border-right</span>: <span class="hljs-number">0.0625em</span> solid <span class="hljs-variable">$base3</span>;
+<span class="hljs-variable">$block__box--hover-border-left</span>: <span class="hljs-number">0.0625em</span> solid <span class="hljs-variable">$base3</span>;
+<span class="hljs-variable">$block__box--hover-box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0.125em</span> <span class="hljs-number">0.5em</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.3</span>);
+
+<span class="hljs-variable">$block__box-tabbing--focus-box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0.125em</span> <span class="hljs-number">0.5em</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.3</span>);</pre>
                             </code>
                             
                         </div>
@@ -526,7 +597,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.9 KB</span>
+                    <span class="Meta-value">2.6 KB</span>
                 </li>
             </ul>
         </div>
@@ -629,19 +700,42 @@
 </tbody>
 </table>
 <h2 id="2-anv-ndning">2. Användning</h2>
-<p>Man kan kontrollera komponenten via variabel <code>$block__box--isClickable</code> i filen <code>block.settings.scss</code>.</p>
+<p>Man kan återanvända <code>Clickable</code> funktion i andra komponenter för att de blir klickbar med att använda klasserna <code>rh-block--clickable</code> och <code>rh-block--clickable-link</code>.</p>
 <h3 id="2-1-default-standard-">2.1. Default (Standard)</h3>
 <ul>
-<li>Inaktivera variabel <code>$block__box--isClickable: false;</code> i filen <code>block.settings.scss</code>.</li>
 <li>Använd <code>Default</code> template.</li>
 </ul>
 <h3 id="2-2-clickable-hela-puffen-r-klickbar-">2.2. Clickable (Hela puffen är klickbar)</h3>
 <ul>
-<li>Aktivera variabel <code>$block__box--isClickable: true;</code> i filen <code>block.settings.scss</code>.</li>
-<li>Många andra beteende aktiveras automatiska och man kan också justera i komponentens inställningar.</li>
 <li>Använd <code>Clickable</code> template.</li>
+<li>Standard beteende aktiveras automatiska av klassen <code>rh-block--clickable</code> och man kan också justera i komponentens inställningar.<ul>
+<li>:hover</li>
+<li>:active</li>
+<li>:focus-within</li>
 </ul>
-<h2 id="3-version">3. Version</h2>
+</li>
+</ul>
+<p><strong>Huvud principen:</strong></p>
+<ul>
+<li>En <code>&lt;div&gt;</code> är container och det är runt om komponenten med <code>position: relative;</code>.</li>
+<li>En länk <code>&lt;a&gt;</code> tag ska ligga ovan på hela div:n med <code>position: absolute; z-index: 1;</code>.</li>
+</ul>
+<p><strong>Implementation:</strong></p>
+<p>Användning av standard beteende:</p>
+<code><pre>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-block--clickable"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block--clickable-link"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span>
+
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Komponents innehåll --&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre></code><p>Återanvändning i andra komponenter <em>(Man får bygga själv beteenden :hover, :active, :focus-within när man inte använder klassen <code>rh-block--clickable</code>)</em>:</p>
+<code><pre>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-pos--relative"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block--clickable-link"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span>
+
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Komponents innehåll --&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre></code><h2 id="3-version">3. Version</h2>
 <h3 id="1-0-0-2019-09-30-">1.0.0 (2019-09-30)</h3>
 <ul>
 <li>Första version.</li>
@@ -761,7 +855,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -785,7 +879,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -809,7 +903,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -833,7 +927,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -862,7 +956,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -921,7 +1015,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -945,7 +1039,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -969,7 +1063,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -993,7 +1087,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -1017,7 +1111,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -1041,7 +1135,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -1430,7 +1524,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -1577,7 +1671,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -1601,7 +1695,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -1641,7 +1735,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -1665,7 +1759,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -1766,7 +1860,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -1838,7 +1932,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -1934,7 +2028,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2078,7 +2172,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2174,7 +2268,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2513,7 +2607,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2537,7 +2631,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2577,7 +2671,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2601,7 +2695,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2641,7 +2735,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2665,7 +2759,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #d4ff26;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
