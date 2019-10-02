@@ -10,3 +10,21 @@ node_modules
 # build-mappen
 cdn/build/*
 !cdn/build/.gitkeep
+
+# Vendor
+vendor/*
+
+# Composer
+composer.lock
+
+# Atoms
+components/vAtoms/*
+!components/vAtoms/.gitkeep
+
+# Molecules
+components/Molecules/*
+!components/Molecules/.gitkeep
+
+# Organism
+components/Organism/*
+!components/Organism/.gitkeep
