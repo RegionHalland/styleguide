@@ -3,7 +3,7 @@
     <div class="rh-block-box">
         <div class="rh-block">
             {{#if imageUrl}}
-                <img src="{{imageUrl}}" alt="Text som beskriver bilden" aria-labelledby="334455">
+                <img src="{{imageUrl}}" alt="Text som beskriver bilden">
             {{/if}}
             <div class="rh-block-content">
                 <p class="h3">
@@ -14,17 +14,15 @@
             </div>
         </div>
     </div>
-{{/unless}}
-
-{{#if isClickable}}
+{{else}}
     <!-- Clickable template - View Notes to know how to use the component-->
-    <div class="rh-block-box">
+    <div class="rh-block-box rh-block--clickable">
         {{!-- The <a> tag is using for clickable feature --}}
-        <a href="#" class="rh-link--navigation rh-block--clickable"></a>
+        <a href="#" class="rh-link--navigation rh-block--clickable-link" title="{{title}}"></a>
 
         <div class="rh-block">
             {{#if imageUrl}}
-                <img src="{{imageUrl}}" alt="Text som beskriver bilden" aria-labelledby="334455">
+                <img src="{{imageUrl}}" alt="Text som beskriver bilden">
             {{/if}}
             <div class="rh-block-content">
                 <p class="h3">
@@ -35,4 +33,4 @@
             </div>
         </div>
     </div>
-{{/if}}
+{{/unless}}

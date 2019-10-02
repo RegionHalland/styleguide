@@ -54,6 +54,7 @@
         position: fixed;
         bottom: 0;
         right: 0;
+        z-index: $back-to-top--z-index;
 
         /* Box-modell/beteende */
         padding: $back-to-top__container--padding;

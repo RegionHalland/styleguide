@@ -9,16 +9,46 @@
 |Clickable|Hela puffen är klickbar|
 
 ## 2. Användning
-Man kan kontrollera komponenten via variabel `$block__box--isClickable` i filen `block.settings.scss`.
+Man kan återanvända `Clickable` funktion i andra komponenter för att de blir klickbar med att använda klasserna `rh-block--clickable` och `rh-block--clickable-link`.
 
 ### 2.1. Default (Standard)
-* Inaktivera variabel `$block__box--isClickable: false;` i filen `block.settings.scss`.
 * Använd `Default` template.
 
 ### 2.2. Clickable (Hela puffen är klickbar)
-* Aktivera variabel `$block__box--isClickable: true;` i filen `block.settings.scss`.
-* Många andra beteende aktiveras automatiska och man kan också justera i komponentens inställningar.
 * Använd `Clickable` template.
+* Standard beteende aktiveras automatiska av klassen `rh-block--clickable` och man kan också justera i komponentens inställningar.
+    * :hover
+    * :active
+    * :focus-within
+
+__Huvud principen:__
+* En `<div>` är container och det är runt om komponenten med `position: relative;`.
+* En länk `<a>` tag ska ligga ovan på hela div:n med `position: absolute; z-index: 1;`.
+
+__Implementation:__
+
+Användning av standard beteende:
+```
+<div class="rh-block--clickable">
+    <a href="#" class="rh-block--clickable-link"></a>
+
+    <div>
+        <!-- Komponents innehåll -->
+    </div>
+</div>
+```
+
+Återanvändning i andra komponenter _(Man får bygga själv beteenden :hover, :active, :focus-within när man inte använder klassen `rh-block--clickable`)_:
+
+```
+<div class="rh-pos--relative">
+    <a href="#" class="rh-block--clickable-link"></a>
+
+    <div>
+        <!-- Komponents innehåll -->
+    </div>
+</div>
+```
 
 ## 3. Version
 ### 1.0.0 (2019-09-30)
