@@ -1,6 +1,7 @@
 /* Molecules - Back to top */
 $back-to-top--isResponsive: true;
 $back-to-top--background-color: $base3;
+$back-to-top--z-index: 10;
 
 // Effects
 $back-to-top--background-color-hover: $base3-dark; //false
