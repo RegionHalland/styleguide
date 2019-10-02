@@ -1,6 +1,6 @@
 {
     "title": "Block",
-    "status": "review",
+    "status": "ready",
     "context": {
         "name": "default",
         "status": "review",
@@ -12,7 +12,7 @@
     "variants": [
         {
             "name": "clickable",
-            "status": "review",
+            "status": "ready",
             "context": {
                 "isClickable": true,
                 "title": "Lorem Ipsum är en utfyllnadstext",
