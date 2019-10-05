@@ -58,6 +58,9 @@
 
         /* Box-modell/beteende */
         padding: $back-to-top__container--padding;
+        
+        transform: translate3d(0,0,0); //iOS
+        -webkit-transform: translate3d(0,0,0); //iOS
 
         & a:hover,
         & a:active {
