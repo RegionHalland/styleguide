@@ -1,0 +1,14 @@
+<div class="rh-article-group">
+    <div class="rh-article-group__header">
+        <h2 id="" class="rh-article-group__header-title">{{title}}</h2>
+    </div>
+
+    {{#each articles}}
+    {{render '@article-block' itemData merge=true}}
+    
+    {{/each}}
+
+    <div class="rh-article-group__view-more">
+        {{render '@button--with-icon' btnViewMore merge=true}}
+    </div>
+</div>
