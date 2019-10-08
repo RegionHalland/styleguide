@@ -1,7 +1,7 @@
 {
   "name": "Styleguide",
   "type": "project",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "description": "Styleguide",
   "homepage": "https://regionhalland.se",
   "authors": [
@@ -23,30 +23,35 @@
       "url": "https://wpackagist.org"
     },
     {
-      "type": "vcs",
-      "url": "https://github.com/RegionHalland/test-a.git"
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomAvatar"
     },
     {
-      "type": "vcs",
-      "url": "https://github.com/RegionHalland/test-m.git"
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeBlock"
     },
     {
-      "type": "vcs",
-      "url": "https://github.com/RegionHalland/test-o.git"
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismBreadcrums"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/repo.RhWpPlugIns/_git/RhComposerCustomInstaller"
     }
   ],
   "require": {
     "php": ">=5.6",
     "composer/installers": "^1.4",
-    "regionhalland/test-a": "3.0.0",
-    "regionhalland/test-m": "3.0.0",
-    "regionhalland/test-o": "3.0.0"
+    "regionhalland/region-halland-composer-custom-installer": "1.0.0",
+    "regionhalland/avatar": "1.1.0",
+    "regionhalland/block": "1.1.0",
+    "regionhalland/breadcrums": "1.1.0"
   },
   "extra": {
-    "installer-paths": {
-      "components/vAtoms/{$name}/": ["type:whmcs-addons"],
-      "components/vMolecules/{$name}/": ["type:whmcs-fraud"],
-      "components/vOrganism/{$name}/": ["type:whmcs-gateways"]
+    "custom-installer": {
+      "components/vAtoms/{$name}/": ["type:styleguide-atom"],
+      "components/vMolecules/{$name}/": ["type:styleguide-molecule"],
+      "components/vOrganism/{$name}/": ["type:styleguide-organism"]
     }
   }
 }

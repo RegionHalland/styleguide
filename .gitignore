@@ -22,9 +22,9 @@ components/vAtoms/*
 !components/vAtoms/.gitkeep
 
 # Molecules
-components/Molecules/*
-!components/Molecules/.gitkeep
+components/vMolecules/*
+!components/vMolecules/.gitkeep
 
 # Organism
-components/Organism/*
-!components/Organism/.gitkeep
+components/vOrganism/*
+!components/vOrganism/.gitkeep
