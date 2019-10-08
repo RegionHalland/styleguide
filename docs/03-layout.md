@@ -5,8 +5,9 @@ __INNEHÅLL__
    * [2.2. rh-container--auto](#22-rh-container--auto)
    * [2.3. Annan containers](#23-annan-containers)
 3. [Grid](#3-grid)
-   * [3.1. Kolumner i en rad har lika höjd](#31-kolumner-i-en-rad-har-lika-h%c3%b6jd)
-   * [3.2. Lösning för IE11s rendering ](#32-lösning-för-ie11s-rendering)
+   * [3.1. Elementer i en rad har lika höjd](#31-elementer-i-en-rad-har-lika-h%c3%b6jd)
+   * [3.2. Rännor (gutters)](#32-rännor-gutters)
+   * [3.3. Lösning för IE11s rendering ](#32-lösning-för-ie11s-rendering)
 
 ## 1. Breakpoints
 | Klassnamn | min-width | Pixel | Beskrivning |
@@ -82,44 +83,59 @@ __Användning__
 ```
 
 ## 3. Grid
+Standard är utan rännor mellan elementer.
+
+![Grid standard](/images/docs/grid-standard.jpg)
+
 Hudvud struktur:
 ```
 <div class="container">
     <div class="row">
         <div class="col">
-            <!-- Content 1 -->
+            <div class="item">
+                <!-- Content 1 -->
+            </div>
         </div>
 
         <div class="col">
-            <!-- Content 2 -->
+            <div class="item">
+                <!-- Content 2 -->
+            </div>
         </div>
     </div>
 </div>
 ```
-___OBS!__ Klassen `container` är bara en förklaring för ett grid systems struktur._
+__OBS!__ Klassen `container` är bara en förklaring för en grid systems struktur.
 
-### 3.1. Kolumner i en rad har lika höjd
-- Klassnamn: `row row-eq-height`
+### 3.1. Elementer i en rad har lika höjd
+- Klassnamn används: 
+    * `row-eq-height`
+    * `col-item-eq-height`
 - Filplats: `/components/scss/_grid.scss`
-- Beskrivning: Alla kolumner i en rad har samma höjden. Man bör sätta själv `height: 100%` på varje element i griden.
+- Beskrivning: Alla elementer i en rad har samma höjden.
+
+|Klassnamn|Beskrivning|
+|---|---|
+|`row-eq-height`|Det gör alla kolumner i en rad har samma höjden.|
+|`col-item-eq-height`|Det adderar `height: 100%` på `<div>` element som är direkt barn.|
 
 __Användning__
 ```
 // CSS
 .item {
-    height: 100%;
+    background-color: #f4f4f4;
 }
 
 // HTML
 <div class="container">
     <div class="row row-eq-height">
-        <div class="col col-12 md-col-6 lg-col-4">
+        <div class="col col-12 md-col-6 lg-col-4 col-item-eq-height">
             <div class="item">
                 <!-- Item 1 -->
             </div>
         </div>
         
-        <div class="col col-12 md-col-6 lg-col-4">
+        <div class="col col-12 md-col-6 lg-col-4 col-item-eq-height">
             <div class="item">
                 <!-- Item 2 -->
             </div>
@@ -128,7 +144,65 @@ __Användning__
 </div>
 ```
 
-### 3.2 Lösning för IE11s rendering
+### 3.2. Rännor (gutters)
+
+![Grid gutters](/images/docs/grid-gutters.jpg)
+
+- Klassnamn används: 
+    * `row-gutters`
+    * `row-gutters--around`
+- Filplats: `/components/scss/_grid.scss`
+- Beskrivning: Det skapar utrymmen runt om en element.
+
+|Klassnamn|Bredd i em|Bredd i pixel|Beskrivning|
+|---|---:|---:|---|
+|`row-gutters`|1.4em|22.4px|Det skapar bara rännor mellan elementer __utan__ runt om hela raden.|
+|`row-gutters--around`|1.4em|22.4px|Det adderar rännor runt om hela raden.|
+
+__Användning__
+```
+// CSS
+.item {
+    background-color: #f4f4f4;
+}
+
+// HTML för row-gutters
+<div class="rh-overflow--hidden">
+    <div class="row row-eq-height row-gutters">
+        <div class="col col-12 md-col-6 col-item-eq-height">
+            <div class="item">
+                <!-- Item 1 -->
+            </div>
+        </div>
+
+        <div class="col col-12 md-col-6 col-item-eq-height">
+            <div class="item">
+                <!-- Item 2 -->
+            </div>
+        </div>
+    </div>
+</div>
+
+// HTML för row-gutters--around
+<div class="rh-overflow--hidden">
+    <div class="row row-eq-height row-gutters row-gutters--around">
+        <div class="col col-12 md-col-6 col-item-eq-height">
+            <div class="item">
+                <!-- Item 3 -->
+            </div>
+        </div>
+
+        <div class="col col-12 md-col-6 col-item-eq-height">
+            <div class="item">
+                <!-- Item 4 -->
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+
+### 3.3 Lösning för IE11s rendering
 * Anledning: IE11 räknar inte bra när det är odda nummer lik som: 33.3333333333...%. Det renderar om mycket och blinkar när bredden är nära begränsningarna.
 * Lösning: `max-width` används för att IE11 renderar bättre. Se mer i filen `/components/scss/_grid.scss`
 

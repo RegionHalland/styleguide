@@ -390,3 +390,23 @@
         display: flex;
     }
 }
+
+.row.row-gutters {
+    padding: 0;
+    margin: -$grid-gutter-half-width; //Offset for a child element's padding
+
+    >[class*="col-"] {
+        padding: $grid-gutter-half-width;
+    }
+
+    &--around {
+        padding: $grid-gutter-half-width;
+        margin: 0;
+    }
+}
+
+.col.col-item-eq-height {
+    >div {
+        height: 100%;
+    }
+}

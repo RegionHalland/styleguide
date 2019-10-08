@@ -175,3 +175,7 @@ $page__container-small--padding-x: 1em; //16px
 $page__container-medium--padding-x: 1.875em; //30px
 $page__container-large--padding-x: 3.75em; //60px
 $page__container-xlarge--padding-x: 5em; //80px
+
+// Grid settings
+$grid-gutter-width: 1.4em;
+$grid-gutter-half-width: $grid-gutter-width/2;
