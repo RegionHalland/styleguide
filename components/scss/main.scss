@@ -12,6 +12,7 @@
 @import '_flexbox.scss';
 @import '_type_scale.scss';
 @import '_mixin.scss';
+@import '_mixin-components.scss';
 @import '_utilities.scss';
 
 // Components settings
@@ -44,6 +45,7 @@
 
 // Molecules
 @import 'components/Molecules/article/_article.scss';
+@import 'components/Molecules/article-block/_article-block.scss';
 @import 'components/Molecules/back-to-top/_back-to-top.scss';
 @import 'components/Molecules/block/_block.scss';
 @import 'components/Molecules/blurbs/_blurbs.scss';

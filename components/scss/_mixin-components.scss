@@ -1,0 +1,64 @@
+@mixin create-article-header($borderBottom: false) {
+    @if $borderBottom {
+        border-bottom: $borderBottom; //2px
+    }
+
+    @content;
+}
+
+@mixin create-article-header-title($textColor: false) {
+    line-height: 1.375em; //25px
+    margin-bottom: .1em;
+
+    font-size: 1.125em; //18px
+    font-weight: bold;
+
+    @if ($textColor) {
+        color: $textColor
+    }
+
+    @include large {
+        font-size: 1.5em; //24px
+    }
+
+    @content;
+}
+
+@mixin create-article-item-title($textColor: false) {
+    line-height: 1.3125em;
+    margin-bottom: .1em;
+
+    font-size: 1em;
+    font-weight: bold;
+
+    @if ($textColor) {
+        color: $textColor
+    }
+
+    @include medium {
+        line-height: 1.375em;
+    }
+
+    @include large {
+        font-size: 1.25em; //20px
+    }
+
+    @content;
+}
+
+@mixin create-article-item-description($textColor: false) {
+    margin-top: .5em;
+    margin-bottom: .5em;
+
+    font-size: 0.9375em; //15px
+
+    @if ($textColor) {
+        color: $textColor
+    }
+
+    @include large {
+        font-size: 1em; //16px
+    }
+
+    @content;
+}
