@@ -7,13 +7,13 @@
     "feather-icons": "^4.24.1",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.2.0",
-    "gulp-zip": "^5.0.0",
+    "gulp-zip": "^5.0.1",
     "highlight.js": "^9.15.10",
     "select2": "^4.0.10"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.2",
-    "@babel/preset-env": "^7.6.2",
+    "@babel/core": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
     "@regionhalland/styleguide-v2": "0.8.2",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
