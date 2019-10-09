@@ -2,5 +2,18 @@
     "title": "Footer logo group",
     "status": "review",
     "version": "1.0.0-201910111300",
-    "context": {}
+    "context": {
+        "name": "default",
+        "status": "review",
+        "hasContainer": false
+    },
+    "variants": [
+        {
+            "name": "with container",
+            "status": "review",
+            "context": {
+                "hasContainer": true
+            }
+        }
+    ]
 }

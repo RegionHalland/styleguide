@@ -1,16 +1,16 @@
-$footer-logo-group-gutters: .2em;
-$footer-logo-group-gutters-medium: .4em;
-
 .footer-logo-group {
-    //background-color: #f4f4f4;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    /* Box-modell/beteende */
+    padding-top: $footer-logo-group--padding-top;
+    padding-bottom: $footer-logo-group--padding-bottom;
 
+    // Specifik rännor skapning
     &__logo-container {
-        background-color: #ffffff;
-
-        padding: 1em 0 0 0;
+        /* Box-modell/beteende */
+        padding: 0;
         margin: -$footer-logo-group-gutters;
+        
+        /* Visuellt */
+        background-color: #ffffff;
 
         @include medium {
             margin:  -$footer-logo-group-gutters-medium;
@@ -26,33 +26,37 @@ $footer-logo-group-gutters-medium: .4em;
     }
 
     &__item {
+        /* Box-modell/beteende */
         display: block;
-
-        max-height: 30px;
+        max-height: $footer-logo-group__item--max-height;
         max-width: 100%;
+        margin-bottom: $footer-logo-group__item--margin-bottom;
 
-        margin-bottom: 1em;
-        opacity: 0.5;
+        /* Blandat/övrigt */
+        opacity: $footer-logo-group__item--opacity;
         
         @include small {
-            max-height: 50px; // Default value
+            max-height: $footer-logo-group__item--max-height-small;
         }
 
         &:hover {
-            opacity: 1;
+            opacity: $footer-logo-group__item--opacity-hover;
         }
 
         &--center {
+            /* Box-modell/beteende */
             margin-left: auto;
             margin-right: auto;
         }
 
         &--right {
+            /* Box-modell/beteende */
             margin-left: auto;
         }
 
         // Align right only in sm mode
         &--right-sm {
+            /* Box-modell/beteende */
             margin-left: auto;
 
             @include medium {
@@ -62,31 +66,36 @@ $footer-logo-group-gutters-medium: .4em;
     }
 
     &__link {
-        font-size: 0.875em; //14px
+        /* Typografi */
+        font-size: $footer-logo-group__link--font-size;
 
         &-icon {
             font-family: "feather";
         }
 
         &-item {
-            margin-bottom: 1em;
+            /* Box-modell/beteende */
+            margin-bottom: $footer-logo-group__link-item--margin-bottom;
 
             @include medium {
-                padding-left: 2em;
+                padding-left: $footer-logo-group__link-item--margin-bottom;
             }
         }
 
         &-container {
-            margin-top: 1em;
+            /* Box-modell/beteende */
+            margin-top: $footer-logo-group__link-container--margin-top;
 
             @include medium {
-                text-align: right;
+                /* Typografi */
+                text-align: $footer-logo-group__link-container--text-align-medium;
             }
         }
 
         &-list {
             &>li {
                 @include medium {
+                    /* Typografi */
                     display: inline;
                 }
             }
