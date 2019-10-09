@@ -1,0 +1,95 @@
+$footer-logo-group-gutters: .2em;
+$footer-logo-group-gutters-medium: .4em;
+
+.footer-logo-group {
+    //background-color: #f4f4f4;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    &__logo-container {
+        background-color: #ffffff;
+
+        padding: 1em 0 0 0;
+        margin: -$footer-logo-group-gutters;
+
+        @include medium {
+            margin:  -$footer-logo-group-gutters-medium;
+        }
+
+        >[class*="col-"] {
+            padding: $footer-logo-group-gutters;
+
+            @include medium {
+                padding: $footer-logo-group-gutters-medium;
+            }
+        }
+    }
+
+    &__item {
+        display: block;
+
+        max-height: 30px;
+        max-width: 100%;
+
+        margin-bottom: 1em;
+        opacity: 0.5;
+        
+        @include small {
+            max-height: 50px; // Default value
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &--center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &--right {
+            margin-left: auto;
+        }
+
+        // Align right only in sm mode
+        &--right-sm {
+            margin-left: auto;
+
+            @include medium {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &__link {
+        font-size: 0.875em; //14px
+
+        &-icon {
+            font-family: "feather";
+        }
+
+        &-item {
+            margin-bottom: 1em;
+
+            @include medium {
+                padding-left: 2em;
+            }
+        }
+
+        &-container {
+            margin-top: 1em;
+
+            @include medium {
+                text-align: right;
+            }
+        }
+
+        &-list {
+            &>li {
+                @include medium {
+                    display: inline;
+                }
+            }
+        }
+    }
+}
