@@ -1,7 +1,7 @@
 'use strict';
 
 const gulp = require('gulp');
-const {task, series, parallel, watch } = require('gulp');
+const { series, parallel, watch, src, dest } = require('gulp');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const concat = require('gulp-concat');
@@ -9,7 +9,7 @@ const image = require('gulp-image');
 const project = require('./package.json');
 const rename = require("gulp-rename");
 const babel = require('gulp-babel');
-const jsImport = require('gulp-js-import');
+const browserSync = require('browser-sync').create();
 
 const mandelbrot = require('@frctl/mandelbrot');
 const fractal = require('@frctl/fractal').create();
@@ -216,6 +216,81 @@ function tmpBuildScss(cb) {
     cb();
 }
 
+// [Experiment feature] DevServe
+function devServe(cb) {
+    const devServeConfig = {
+        "fractalServer": {
+            "port": 3010
+        },
+        "localServer": {
+            "port": 3000
+        }
+    }
+
+    // Fractal server
+    const server = fractal.web.server({
+        port: devServeConfig.fractalServer.port,
+        sync: false, // BrowserSync takes care about reloading
+        watch: true
+    });
+
+    server.on('error', (err) => console.error(err.message));
+
+    server.start().then(function(){
+        console.log(`Fractal server is now running at ${server.url}`);
+    });
+
+    // BrowserSync server
+    browserSync.init({
+        proxy: 'http://localhost:' + devServeConfig.fractalServer.port, // Fractal server
+        browser: "chrome",
+        port: devServeConfig.localServer.port, // BrowserSync server
+        open: false,
+        notify: false,
+        scrollThrottle: 100,
+        reloadThrottle: 200,
+        watchOptions: {
+            ignoreInitial: true,
+            ignored: /node_modules|build|cdn|docs|releases|tmp|vendor/
+        }
+    });
+
+    // Gulp watching
+    watch('components/**/*.scss', scssCompilation); // Watching SCSS files for CSS injecting
+    watch('components/**/*.hbs').on('change', browserSync.reload);
+    watch('components/**/*.js').on('change', series(js, reloadPage));
+    watch('components/**/*.{svg,png,gif,jpg}').on('all', series(images, reloadPage));
+    //watch('assets/**/*').on('change', series(theme, reloadPage));
+
+    cb();
+}
+
+function reloadPage(cb){
+    browserSync.reload();
+    cb();
+}
+
+function scssCompilation(cb) {
+    const cssDesPath = fractal.web.get('static.path') + '/css/';
+
+    src('components/scss/main.scss')
+        .pipe(sourcemaps.init())
+        .pipe(
+            sass
+                .sync({ outputStyle: 'compressed' })
+                .on('error', sass.logError)
+        )
+        .pipe(concat('components.css'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(dest(cssDesPath))
+        .pipe(browserSync.stream({
+            match: "**/*.css"
+        }));
+
+    cb();
+}
+// End of DevServe
+
 // Main
 exports.version = series(build, release);
 exports.build = series(start, build);
@@ -227,3 +302,6 @@ exports.tmp = tmpBuildScss;
 // Sites building
 exports.builds = buildSites;
 exports.releases = releaseSites;
+
+// DevServe
+exports.dev = devServe;

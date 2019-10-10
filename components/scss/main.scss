@@ -18,11 +18,6 @@
 // Components settings
 @import '_settings-components.scss';
 
-//-> Temporary importing for testing site styling in Style guide before compiling
-//-> It will be removed after the project development
-//@import '../../../RH-sites/RhSettingsVardgivare/_settings-vardgivare.scss';
-//@import '../../../RH-sites/RhSettingsVardgivare/_settings-components-vardgivare.scss';
-
 // Atoms
 @import 'components/Atoms/avatar/_avatar.scss';
 @import 'components/Atoms/badge/_badge.scss';
