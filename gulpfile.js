@@ -248,7 +248,7 @@ function devServe(cb) {
         open: false,
         notify: false,
         scrollThrottle: 100,
-        reloadThrottle: 200,
+        reloadThrottle: 250,
         watchOptions: {
             ignoreInitial: true,
             ignored: /node_modules|build|cdn|docs|releases|tmp|vendor/
@@ -275,17 +275,14 @@ function scssCompilation(cb) {
 
     src('components/scss/main.scss')
         .pipe(sourcemaps.init())
-        .pipe(
-            sass
-                .sync({ outputStyle: 'compressed' })
-                .on('error', sass.logError)
+        .pipe(sass()
+            //.sync({ outputStyle: 'compressed' })
+            //.on('error', sass.logError)
         )
         .pipe(concat('components.css'))
         .pipe(sourcemaps.write('.'))
         .pipe(dest(cssDesPath))
-        .pipe(browserSync.stream({
-            match: "**/*.css"
-        }));
+        .pipe(browserSync.stream({ match: "**/*.css" }));
 
     cb();
 }

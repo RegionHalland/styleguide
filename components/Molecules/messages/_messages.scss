@@ -4,20 +4,21 @@
 	align-items: center;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-    padding: em(30);
+    padding: $message--padding; //em(30);
     
     /* Visuellt */
-    background-color: $complementary3-light;
+    background-color: $message--background-color;
     
     /* Typografi */
-	text-align: center;
-    line-height: 1em;
+	text-align: $message--text-align;
+    line-height: $message--line-height;
     
 	@include medium {
         /* Box-modell/beteende */
 		flex-wrap: nowrap;
-		padding-top: em(20);
-        padding-bottom: em(20);
+		//padding-top: em(20);
+        //padding-bottom: em(20);
+        padding: $message--padding-medium;
         
         /* Typografi */
 		text-align: left;
@@ -30,53 +31,54 @@
         
       	@include medium {
             /* Box-modell/beteende */
-      		margin-top: em(40);
-      		margin-bottom: em(40);
-      		margin-right: em(40);
-      		margin-left: em(20);
+      		//margin-top: em(40);
+      		//margin-bottom: em(40);
+      		//margin-right: em(40);
+            //margin-left: 0; //em(20);
+            margin: $message__icon--margin-medium;
       	}
 		&:after {
             /* Box-modell/beteende */
-            padding: em(8);
+            padding: $message__icon--padding; //em(8);
             
             /* Visuellt */
-            background: $complementary3-dark;
+            background: $message__icon--color; //$complementary3-dark;
             border-radius: 50%;
             
             /* Typografi */
-			color: $white;
-			font-weight: normal;
-	    	font-family: "feather"; 
-            font-size: $p-small;
+			color: $message__icon--text-color; //$white;
+			font-weight: $message__icon--font-weight;
+	    	font-family: $message__icon--font-family; 
+            font-size: $message__icon--font-size;
             
             /* Blandat/övrigt */
-            content: "\e81e";
+            content: $message__icon--content;
             
             /* Typografi */
-			@include medium { font-size: $h4-medium;}
-			@include large { font-size: $h2-large;}
+			@include medium { font-size: $message__icon--font-size-medium;}
+			@include large { font-size: $message__icon--font-size-large;}
 		}
 	}
 
 	&-text{
 		/* Box-modell/beteende */
-		@include medium { max-width: 539px;}
-		@include large { max-width: 865px;}
+		//@include medium { max-width: 539px;}
+		//@include large { max-width: 865px;}
 
 		&-title	{
             /* Typografi */
-			color: $complementary3-dark;
+			color: $message__text-title--color;
 		}
 
 		&-link {
             /* Typografi */
-			text-decoration: underline;
-			color: $black;
+			text-decoration: $message__link--text-decoration;
+			color: $message__link--color;
 
 			&:hover{
                 /* Typografi */
-				text-decoration: none;
-				color: $black;
+				text-decoration: $message__link--text-decoration-hover;
+				color: $message__link--color-hover;
 			}
 		}
 	}
