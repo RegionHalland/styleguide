@@ -7,6 +7,8 @@ __INNEHÅLL__
 3. [Grid](#3-grid)
    * [3.1. Elementer i en rad har lika höjd](#31-elementer-i-en-rad-har-lika-h%c3%b6jd)
    * [3.2. Rännor (gutters)](#32-rännor-gutters)
+        * [3.2.1. Standard gutters](#321-standard-gutters)
+        * [3.2.2. Section gutters](#322-section-gutters)
    * [3.3. Lösning för IE11s rendering ](#32-lösning-för-ie11s-rendering)
 
 ## 1. Breakpoints
@@ -145,14 +147,15 @@ __Användning__
 ```
 
 ### 3.2. Rännor (gutters)
+- Filplats: `/components/scss/_grid.scss`
+- Beskrivning: Det skapar utrymmen runt om en element.
 
+#### 3.2.1 Standard gutters
 ![Grid gutters](/images/docs/grid-gutters.jpg)
 
 - Klassnamn används: 
     * `row-gutters`
     * `row-gutters--around`
-- Filplats: `/components/scss/_grid.scss`
-- Beskrivning: Det skapar utrymmen runt om en element.
 
 |Klassnamn|Bredd i em|Bredd i pixel|Beskrivning|
 |---|---:|---:|---|
@@ -200,7 +203,38 @@ __Användning__
     </div>
 </div>
 ```
+#### 3.2.2 Section gutters
 
+![Section gutters för large och xlarge](/images/docs/section-gutters.jpg)
+
+- Det skapar rännor mellan många sektioner i en sida. Det använder samma princip som standard gutters och det påverkar alla kolumners padding i en rad.
+- Klassnamn används: `row-section-gutters`
+
+| Läge |Rännors bredd i em|Rännors bredd i pixel|
+|:---:|---:|---:|
+|≤ `medium`|0.7em x 2|11.2px x 2 = 22.4px|
+|`large`|0.9375em x 2|15px x 2 = 30px|
+|`xlarge`|1.875em x 2|30px x 2 = 60px|
+
+__Användning__
+```
+<div class="rh-overflow--hidden">
+    <div class="row row-section-gutters">
+        <div class="col col-12 md-col-6">
+            <div class="item">
+                <!-- Item 1 -->
+            </div>
+        </div>
+
+        <div class="col col-12 md-col-6">
+            <div class="item">
+                <!-- Item 2 -->
+            </div>
+        </div>
+    </div>
+</div>
+```
+__TIPS!__ Man kan använda också `rh-overflow--hidden` i container nivå _(eller row nivå)_ för att content i rutsystem inte påverkar annan elementer som är utanför i nåt speciellt läge.
 
 ### 3.3 Lösning för IE11s rendering
 * Anledning: IE11 räknar inte bra när det är odda nummer lik som: 33.3333333333...%. Det renderar om mycket och blinkar när bredden är nära begränsningarna.

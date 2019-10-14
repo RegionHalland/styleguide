@@ -257,7 +257,7 @@ function devServe(cb) {
 
     // Gulp watching
     watch('components/**/*.scss', scssCompilation); // Watching SCSS files for CSS injecting
-    watch('components/**/*.hbs').on('change', browserSync.reload);
+    watch(['components/**/*.{hbs,md}', 'docs/**/*.md']).on('change', browserSync.reload);
     watch('components/**/*.js').on('change', series(js, reloadPage));
     watch('components/**/*.{svg,png,gif,jpg}').on('all', series(images, reloadPage));
     //watch('assets/**/*').on('change', series(theme, reloadPage));

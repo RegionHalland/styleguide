@@ -405,6 +405,32 @@
     }
 }
 
+// Gutters are between sections on a page
+.row.row-section-gutters {
+    padding: 0;
+    margin: -$section-gutters; //Offset for a child element's padding
+
+    @include large {
+        margin: -$section-gutters-large; //15px
+    }
+
+    @include xlarge {
+        margin: -$section-gutters-xlarge; //30px
+    }
+
+    >[class*="col-"] {
+        padding: $section-gutters; //11.2px
+
+        @include large {
+            padding: $section-gutters-large; //15px
+        }
+
+        @include xlarge {
+            padding: $section-gutters-xlarge; //30px
+        }
+    }
+}
+
 .col.col-item-eq-height {
     >div {
         height: 100%;

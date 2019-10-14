@@ -477,6 +477,24 @@ h6 {
     padding: 0.7em;
     margin: 0; }
 
+.row.row-section-gutters {
+  padding: 0;
+  margin: -0.7em; }
+  @media (min-width: 62em) {
+    .row.row-section-gutters {
+      margin: -0.9375em; } }
+  @media (min-width: 75em) {
+    .row.row-section-gutters {
+      margin: -1.875em; } }
+  .row.row-section-gutters > [class*="col-"] {
+    padding: 0.7em; }
+    @media (min-width: 62em) {
+      .row.row-section-gutters > [class*="col-"] {
+        padding: 0.9375em; } }
+    @media (min-width: 75em) {
+      .row.row-section-gutters > [class*="col-"] {
+        padding: 1.875em; } }
+
 .col.col-item-eq-height > div {
   height: 100%; }
 
@@ -1308,6 +1326,7 @@ h6, .h6 {
 /* Molecules - Filter alphabet */
 /* Molecules - Menu mobile */
 /* Older Safari */
+/* Molecules - Message */
 /* Molecules - Navigation block */
 /* Molecules - Navigation left */
 /* Organism - Article group */
@@ -1785,6 +1804,18 @@ h6, .h6 {
     background-color: #378A30;
     /* Typografi */
     color: #ffffff; }
+  .rh-pagination-link--current {
+    /* Visuellt */
+    background-color: #f4c870;
+    /* Typografi */
+    color: #000000;
+    font-weight: bold; }
+    .rh-pagination-link--current:hover, .rh-pagination-link--current:active {
+      /* Visuellt */
+      background-color: #f4c870;
+      /* Typografi */
+      color: #000000;
+      font-weight: bold; }
   .rh-pagination-link-previous {
     /* Visuellt */
     border-top-left-radius: 4px;

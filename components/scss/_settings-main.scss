@@ -179,3 +179,8 @@ $page__container-xlarge--padding-x: 5em; //80px
 // Grid settings
 $grid-gutter-width: 1.4em;
 $grid-gutter-half-width: $grid-gutter-width/2;
+
+// Section gutters
+$section-gutters: 0.7em; //11.2px x 2 = 22.4px
+$section-gutters-large: 0.9375em; //15px x 2 = 30px
+$section-gutters-xlarge: 1.875em; //30px x 2 = 60px
