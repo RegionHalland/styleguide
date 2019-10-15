@@ -2471,7 +2471,8 @@ h6, .h6 {
         font-size: 1em; } }
   .rh-contact-info__body-link {
     font-size: 0.9375em;
-    color: #004890; }
+    color: #004890;
+    line-height: 1.5em; }
     @media (min-width: 62em) {
       .rh-contact-info__body-link {
         font-size: 1em; } }
