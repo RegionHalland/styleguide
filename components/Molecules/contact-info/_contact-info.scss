@@ -1,4 +1,8 @@
 .rh-contact-info {
+
+    //Prohibit iOS increase font-size automatic
+    @include iOSNoIncreaseFontSize;
+
     &__header {
         @include create-article-header($contact-info__header--border);
 
@@ -26,12 +30,16 @@
         }
 
         &-subject {
+            
             font-weight: bold;
         }
 
         tr>td:first-child {
             width: 3em;
             height: 1.8em;
+        }
+        td {
+            vertical-align: middle;
         }
 
         &-content {
@@ -53,6 +61,6 @@
     }
 
     &-space-top {
-        margin-top: 1em;
+        margin-top: 1.6em;
     }
 }

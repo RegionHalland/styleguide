@@ -55,3 +55,8 @@
         }
     }
 }
+
+//Prohibit iOS increase font-size automatic
+@mixin iOSNoIncreaseFontSize {
+    div, p, a, li, td { -webkit-text-size-adjust:none; }
+}
