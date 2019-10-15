@@ -1,0 +1,19 @@
+.rh-contact-info {
+    &__header {
+        @include create-article-header($contact-info__header--border);
+
+        &-title {
+            @include create-article-header-title;
+        }
+    }
+
+    &__body {
+        padding: 1.5625em 1em; //25px 16px
+        
+        &-icon-phone {
+            font-family: "feather";
+        }
+
+        
+    }
+}

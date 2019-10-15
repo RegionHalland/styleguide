@@ -2431,6 +2431,22 @@ h6, .h6 {
   color: black;
   text-decoration: none; }
 
+.rh-contact-info__header {
+  border-bottom: 1px solid #61A2D8; }
+  .rh-contact-info__header-title {
+    line-height: 1.375em;
+    margin-bottom: .1em;
+    font-size: 1.125em;
+    font-weight: bold; }
+    @media (min-width: 62em) {
+      .rh-contact-info__header-title {
+        font-size: 1.5em; } }
+
+.rh-contact-info__body {
+  padding: 1.5625em 1em; }
+  .rh-contact-info__body-icon-phone {
+    font-family: "feather"; }
+
 .rh-feedback hr {
   /* Box-modell/beteende */
   margin-top: 1.375em;
