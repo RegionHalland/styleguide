@@ -2446,12 +2446,16 @@ h6, .h6 {
         font-size: 1.5em; } }
 
 .rh-contact-info__body {
+  /* Box-modell/beteende */
   padding: 1.5625em 1em;
+  /* Visuellt */
   background-color: #F2F9FC; }
   .rh-contact-info__body-icon {
+    /* Typografi */
     font-family: "feather";
     color: #004890; }
   .rh-contact-info__body-title {
+    /* Typografi */
     font-size: 1em;
     font-weight: bold; }
     @media (min-width: 62em) {
@@ -2460,16 +2464,19 @@ h6, .h6 {
   .rh-contact-info__body-subject {
     font-weight: bold; }
   .rh-contact-info__body tr > td:first-child {
-    width: 3em;
-    height: 1.8em; }
+    /* Box-modell/beteende */
+    height: 1.8em;
+    width: 3em; }
   .rh-contact-info__body td {
     vertical-align: middle; }
   .rh-contact-info__body-content {
+    /* Typografi */
     font-size: 0.9375em; }
     @media (min-width: 62em) {
       .rh-contact-info__body-content {
         font-size: 1em; } }
   .rh-contact-info__body-link {
+    /* Typografi */
     font-size: 0.9375em;
     color: #004890;
     line-height: 1.5em; }
@@ -2478,6 +2485,7 @@ h6, .h6 {
         font-size: 1em; } }
 
 .rh-contact-info-space-top {
+  /* Box-modell/beteende */
   margin-top: 1.6em; }
 
 .rh-feedback hr {
