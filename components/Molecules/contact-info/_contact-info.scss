@@ -1,0 +1,58 @@
+.rh-contact-info {
+    &__header {
+        @include create-article-header($contact-info__header--border);
+
+        &-title {
+            @include create-article-header-title;
+        }
+    }
+
+    &__body {
+        padding: 1.5625em 1em; //25px 16px
+        background-color: #F2F9FC;
+
+        &-icon {
+            font-family: "feather";
+            color: #004890;
+        }
+
+        &-title {
+            font-size: 1em;
+            font-weight: bold;
+
+            @include large {
+                font-size: 1.125em; //18px
+            }
+        }
+
+        &-subject {
+            font-weight: bold;
+        }
+
+        tr>td:first-child {
+            width: 3em;
+            height: 1.8em;
+        }
+
+        &-content {
+            font-size: 0.9375em; //15px
+
+            @include large {
+                font-size: 1em; //16px
+            }
+        }
+
+        &-link {
+            font-size: 0.9375em; //15px
+            color: #004890;
+
+            @include large {
+                font-size: 1em; //16px
+            }
+        }
+    }
+
+    &-space-top {
+        margin-top: 1em;
+    }
+}
