@@ -53,6 +53,7 @@
         &-link {
             font-size: 0.9375em; //15px
             color: #004890;
+            line-height: 1.5em;
 
             @include large {
                 font-size: 1em; //16px
