@@ -32,6 +32,25 @@
         color: $pagination-link--hover-text-color;
     }
 
+    &--current {
+        /* Visuellt */
+        background-color: $pagination-link-current--background-color;
+
+        /* Typografi */
+        color: $pagination-link-current--text-color;
+        font-weight: $pagination-link-current--font-weight;
+
+        &:hover,
+        &:active {
+            /* Visuellt */
+            background-color: $pagination-link-current--background-color-hover-active;
+
+            /* Typografi */
+            color: $pagination-link-current--text-color-hover-active;
+            font-weight: $pagination-link-current--font-weight-hover-active;
+        }
+    }
+
     &-previous {
         /* Visuellt */
         border-top-left-radius: 4px;

@@ -1,0 +1,23 @@
+/* Molecules - Message */
+$message--padding: 1.875em 0; //30px
+$message--padding-medium: 1.25em 0; //20px
+$message--background-color: #E3B7BE;
+$message--text-align: center;
+$message--line-height: 1em;
+
+$message__icon--content: "\e81e";
+$message__icon--margin-medium: 2.5em 2.5em 2.5em 0;
+$message__icon--padding: 0.5em; //8px
+$message__icon--color: #700B1B;
+$message__icon--text-color: #ffffff;
+$message__icon--font-weight: normal;
+$message__icon--font-family: "feather";
+$message__icon--font-size: $p-small;
+$message__icon--font-size-medium: $h4-medium;
+$message__icon--font-size-large: $h2-large;
+
+$message__text-title--color: #700B1B;
+$message__link--color: $black;
+$message__link--color-hover: $black;
+$message__link--text-decoration: underline;
+$message__link--text-decoration-hover: none;

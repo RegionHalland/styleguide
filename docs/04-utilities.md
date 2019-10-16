@@ -14,18 +14,19 @@ Filplats: `/components/scss/_utilities.scss`
 
 |Klassnamn|Fullständigt namn|Beskrivning|
 |---|---|---|
-|--show|rh-dp--show|`display: block`|
-|--none|rh-dp--none|`display: none`|
 |-sm|rh-dp-sm|Det synas f.o.m. `small` läge och ner åt|
 |-md|rh-dp-md|-|
 |-lg|rh-dp-lg|-|
-|-only-sm|rh-dp-only-sm|Det synas __bara__ i `small` läge|
-|-only-md|rh-dp-only-md|-|
-|-only-lg|rh-dp-only-lg|-|
 |-from-sm|rh-dp-from-sm|Det synas f.o.m. `small` läge och upp åt|
 |-from-md|rh-dp-from-md|-|
 |-from-lg|rh-dp-from-lg|-|
 |-from-xl|rh-dp-from-xl|-|
+|-only-sm|rh-dp-only-sm|Det synas __bara__ i `small` läge|
+|-only-md|rh-dp-only-md|-|
+|-only-lg|rh-dp-only-lg|-|
+|--show|rh-dp--show|`display: block`|
+|--inline-block|rh-dp--inline-block|`display: inline-block`|
+|--none|rh-dp--none|`display: none`|
 
 ## 2. Padding left
 * Prefix: `rh-pl*`
