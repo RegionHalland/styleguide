@@ -48,6 +48,7 @@ Komponenterna har liknande beteende och behövs ordning.
 
 ## Otydlig komponent
 Komponenter behövs ha tydligare exempel _(*.hbs)_ för att det blir enklare att förstå hur det fungerar.
+
 |Grupp|Namn|
 |---|---|
 |Molecules|article|
