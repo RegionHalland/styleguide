@@ -123,10 +123,22 @@
 
     
     
-    <h2 id="1-display">1. Display</h2>
+    <p><strong>INNEHÅLL</strong></p>
+<ol>
+<li><a href="#1-display">Display</a></li>
+<li><a href="#2-padding-left">Padding left</a></li>
+<li><a href="#3-overflow">Overflow</a></li>
+<li><a href="#4-section-gutters">Section gutters</a><ul>
+<li><a href="#41-section-gutter-lx">4.1. section-gutter-lx</a></li>
+</ul>
+</li>
+<li><a href="#5-position">Position</a></li>
+<li><a href="#6-övriga">Övriga</a></li>
+</ol>
+<p>Filplats: <code>/components/scss/_utilities.scss</code></p>
+<h2 id="1-display">1. Display</h2>
 <ul>
 <li>Prefix: <code>rh-dp*</code></li>
-<li>Filplats: <code>/components/scss/_utilities.scss</code></li>
 </ul>
 <table>
 <thead>
@@ -202,14 +214,14 @@
 <h2 id="2-padding-left">2. Padding left</h2>
 <ul>
 <li>Prefix: <code>rh-pl*</code></li>
-<li>Det är användbart för att skapa en meny komponent.</li>
+<li>Tips! Det är användbart för att skapa en meny komponent som har många nivåer.</li>
 </ul>
 <table>
 <thead>
 <tr>
 <th>Fullständigt klassnamn</th>
-<th style="text-align:right">EM</th>
-<th style="text-align:right">Pixel</th>
+<th style="text-align:right">Mått i em</th>
+<th style="text-align:right">mått i pixel</th>
 </tr>
 </thead>
 <tbody>
@@ -315,10 +327,79 @@
 </tr>
 </tbody>
 </table>
-<h2 id="3-vriga">3. Övriga</h2>
+<h2 id="3-overflow">3. Overflow</h2>
 <ul>
-<li>Filplats: <code>/components/scss/_utilities.scss</code></li>
+<li>Prefix: <code>rh-overflow*</code></li>
 </ul>
+<table>
+<thead>
+<tr>
+<th>Klassnamn</th>
+<th>Fullständigt namn</th>
+<th>Beskrivning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>–visible</td>
+<td>rh-overflow–visible</td>
+<td><code>overflow: visible</code></td>
+</tr>
+<tr>
+<td>–auto</td>
+<td>rh-overflow–auto</td>
+<td><code>overflow: auto</code></td>
+</tr>
+<tr>
+<td>–scroll</td>
+<td>rh-overflow–scroll</td>
+<td><code>overflow: scroll</code></td>
+</tr>
+<tr>
+<td>–hidden</td>
+<td>rh-overflow–hidden</td>
+<td><code>overflow: hidden</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-section-gutters">4. Section gutters</h2>
+<h3 id="4-1-section-gutter-lx">4.1. section-gutter-lx</h3>
+<ul>
+<li>Prefix: <code>rh-section-gutter-lx*</code></li>
+<li>Det används för endast lägen <code>large</code> och <code>xlarge</code>. Det skapar avstånd mellan kolumner.</li>
+</ul>
+<p><img src="/images/docs/section-gutters.jpg" alt="Section gutters för large och xlarge"></p>
+<table>
+<thead>
+<tr>
+<th>Klassnamn</th>
+<th>Fullständigt namn</th>
+<th style="text-align:right">Avstånd i <code>large</code> läge</th>
+<th style="text-align:right">Avstånd i <code>xlarge</code> läge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>__left-side</td>
+<td>rh-section-gutter-lx__left-side</td>
+<td style="text-align:right">0.9375em (15px)</td>
+<td style="text-align:right">1.875em (30px)</td>
+</tr>
+<tr>
+<td>__between-side</td>
+<td>rh-section-gutter-lx__between-side</td>
+<td style="text-align:right">0.9375em - 0.9375em</td>
+<td style="text-align:right">1.875em - 1.875em</td>
+</tr>
+<tr>
+<td>__right-side</td>
+<td>rh-section-gutter-lx__right-side</td>
+<td style="text-align:right">0.9375em</td>
+<td style="text-align:right">1.875em</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5-position">5. Position</h2>
 <table>
 <thead>
 <tr>
@@ -348,6 +429,18 @@
 <td>rh-pos–fixed</td>
 <td><code>position: fixed</code></td>
 </tr>
+</tbody>
+</table>
+<h2 id="6-vriga">6. Övriga</h2>
+<table>
+<thead>
+<tr>
+<th>Klassnamn</th>
+<th>Fullständigt namn</th>
+<th>Beskrivning</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td>-no-scroll</td>
 <td>rh-noscroll</td>
@@ -626,7 +719,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -650,7 +743,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -674,7 +767,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -698,7 +791,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -722,7 +815,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -746,7 +839,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -1248,6 +1341,30 @@
 
 
 <span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/article-block.html" data-pjax>
+                <span>Article Block</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2196,6 +2313,30 @@
             
     
         
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/article-group.html" data-pjax>
+                <span>Article Group</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
         <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-block-group">
             <h4 class="Tree-collectionLabel" data-role="toggle">
                 <span>Block Group</span>
@@ -2299,6 +2440,70 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../components/detail/footer-group--built-in-container.html" data-pjax>
                 <span>Built In Container</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-footer-logo-group">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Footer Logo Group</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/footer-logo-group--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/footer-logo-group--with-container.html" data-pjax>
+                <span>With Container</span>
                 
 
 <div class="Status Status--unlabelled">

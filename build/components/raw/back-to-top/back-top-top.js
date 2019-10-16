@@ -1,22 +1,23 @@
 // Needed function:
 // throttle() - /public/library.js
 $(document).ready(function () {
-    var $buttonBackToTop = $("#back-to-top"),
+    var $btnBackToTop = $("#back-to-top"),
         btnBackToTopLimitOnHead = 500,
-        btnBackToTopCurrentPos;
+        btnBackToTopCurrentPos = $(window).scrollTop(); // Initial state
+
+    btnBackToTopCurrentPos < btnBackToTopLimitOnHead ? $btnBackToTop.hide() : $btnBackToTop.show();
 
     $(window).scroll(throttle(function () {
         btnBackToTopCurrentPos = $(this).scrollTop(); // Update current position
 
         if (btnBackToTopCurrentPos > btnBackToTopLimitOnHead) {
-            !$buttonBackToTop.is(':visible') && $buttonBackToTop.fadeIn("slow");
+            !$btnBackToTop.is(':visible') && $btnBackToTop.fadeIn("slow");
         } else {
-            $buttonBackToTop.is(':visible') && $buttonBackToTop.fadeOut("slow");
+            $btnBackToTop.is(':visible') && $btnBackToTop.fadeOut("slow");
         }
     }, 200));
 
-    $buttonBackToTop.hide();
-    $buttonBackToTop.click(function (e) {
+    $btnBackToTop.click(function (e) {
         e.stopPropagation();
         $('body,html').animate({ scrollTop: 0 }, 800);
     });

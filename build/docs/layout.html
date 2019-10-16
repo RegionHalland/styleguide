@@ -133,8 +133,13 @@
 </ul>
 </li>
 <li><a href="#3-grid">Grid</a><ul>
-<li><a href="#31-kolumner-i-en-rad-har-lika-h%c3%b6jd">3.1. Kolumner i en rad har lika höjd</a></li>
-<li><a href="#32-lösning-för-ie11s-rendering">3.2. Lösning för IE11s rendering </a></li>
+<li><a href="#31-elementer-i-en-rad-har-lika-h%c3%b6jd">3.1. Elementer i en rad har lika höjd</a></li>
+<li><a href="#32-rännor-gutters">3.2. Rännor (gutters)</a><ul>
+<li><a href="#321-standard-gutters">3.2.1. Standard gutters</a></li>
+<li><a href="#322-section-gutters">3.2.2. Section gutters</a></li>
+</ul>
+</li>
+<li><a href="#32-lösning-för-ie11s-rendering">3.3. Lösning för IE11s rendering </a></li>
 </ul>
 </li>
 </ol>
@@ -275,46 +280,198 @@
 <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-container--max-width"</span>&gt;</span>
     <span class="hljs-comment">&lt;!-- Content --&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre></code><h2 id="3-grid">3. Grid</h2>
+<p>Standard är utan rännor mellan elementer.</p>
+<p><img src="/images/docs/grid-standard.jpg" alt="Grid standard"></p>
 <p>Hudvud struktur:</p>
 <code><pre>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"container"</span>&gt;
     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col"</span>&gt;</span>
-            <span class="hljs-comment">&lt;!-- Content 1 --&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+                <span class="hljs-comment">&lt;!-- Content 1 --&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col"</span>&gt;</span>
-            <span class="hljs-comment">&lt;!-- Content 2 --&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+                <span class="hljs-comment">&lt;!-- Content 2 --&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
-<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre></code><p><strong>_OBS!</strong> Klassen <code>container</code> är bara en förklaring för ett grid systems struktur._</p>
-<h3 id="3-1-kolumner-i-en-rad-har-lika-h-jd">3.1. Kolumner i en rad har lika höjd</h3>
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre></code><p><strong>OBS!</strong> Klassen <code>container</code> är bara en förklaring för en grid systems struktur.</p>
+<h3 id="3-1-elementer-i-en-rad-har-lika-h-jd">3.1. Elementer i en rad har lika höjd</h3>
 <ul>
-<li>Klassnamn: <code>row row-eq-height</code></li>
-<li>Filplats: <code>/components/scss/_grid.scss</code></li>
-<li>Beskrivning: Alla kolumner i en rad har samma höjden. Man bör sätta själv <code>height: 100%</code> på varje element i griden.</li>
+<li>Klassnamn används: <ul>
+<li><code>row-eq-height</code></li>
+<li><code>col-item-eq-height</code></li>
 </ul>
+</li>
+<li>Filplats: <code>/components/scss/_grid.scss</code></li>
+<li>Beskrivning: Alla elementer i en rad har samma höjden.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Klassnamn</th>
+<th>Beskrivning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>row-eq-height</code></td>
+<td>Det gör alla kolumner i en rad har samma höjden.</td>
+</tr>
+<tr>
+<td><code>col-item-eq-height</code></td>
+<td>Det adderar <code>height: 100%</code> på <code>&lt;div&gt;</code> element som är direkt barn.</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Användning</strong></p>
-<code><pre><span class="hljs-comment">// CSS</span>
+<code><pre>// CSS
 .item {
-    <span class="hljs-attr">height</span>: <span class="hljs-number">100</span>%;
+    background-color: #f4f4f4;
 }
 
-<span class="hljs-comment">// HTML</span>
-&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"container"</span>&gt;
-    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row row-eq-height"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col col-12 md-col-6 lg-col-4"</span>&gt;</span>
+// HTML
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row row-eq-height"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col col-12 md-col-6 lg-col-4 col-item-eq-height"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
                 <span class="hljs-comment">&lt;!-- Item 1 --&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col col-12 md-col-6 lg-col-4"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col col-12 md-col-6 lg-col-4 col-item-eq-height"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+                <span class="hljs-comment">&lt;!-- Item 2 --&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre></code><h3 id="3-2-r-nnor-gutters-">3.2. Rännor (gutters)</h3>
+<ul>
+<li>Filplats: <code>/components/scss/_grid.scss</code></li>
+<li>Beskrivning: Det skapar utrymmen runt om en element.</li>
+</ul>
+<h4 id="3-2-1-standard-gutters">3.2.1 Standard gutters</h4>
+<p><img src="/images/docs/grid-gutters.jpg" alt="Grid gutters"></p>
+<ul>
+<li>Klassnamn används: <ul>
+<li><code>row-gutters</code></li>
+<li><code>row-gutters--around</code></li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Klassnamn</th>
+<th style="text-align:right">Bredd i em</th>
+<th style="text-align:right">Bredd i pixel</th>
+<th>Beskrivning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>row-gutters</code></td>
+<td style="text-align:right">1.4em</td>
+<td style="text-align:right">22.4px</td>
+<td>Det skapar bara rännor mellan elementer <strong>utan</strong> runt om hela raden.</td>
+</tr>
+<tr>
+<td><code>row-gutters--around</code></td>
+<td style="text-align:right">1.4em</td>
+<td style="text-align:right">22.4px</td>
+<td>Det adderar rännor runt om hela raden.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Användning</strong></p>
+<code><pre>// CSS
+.item {
+    background-color: #f4f4f4;
+}
+
+// HTML för row-gutters
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-overflow--hidden"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row row-eq-height row-gutters"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col col-12 md-col-6 col-item-eq-height"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+                <span class="hljs-comment">&lt;!-- Item 1 --&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col col-12 md-col-6 col-item-eq-height"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+                <span class="hljs-comment">&lt;!-- Item 2 --&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+// HTML för row-gutters--around
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-overflow--hidden"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row row-eq-height row-gutters row-gutters--around"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col col-12 md-col-6 col-item-eq-height"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+                <span class="hljs-comment">&lt;!-- Item 3 --&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col col-12 md-col-6 col-item-eq-height"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+                <span class="hljs-comment">&lt;!-- Item 4 --&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre></code><h4 id="3-2-2-section-gutters">3.2.2 Section gutters</h4>
+<p><img src="/images/docs/section-gutters.jpg" alt="Section gutters för large och xlarge"></p>
+<ul>
+<li>Det skapar rännor mellan många sektioner i en sida. Det använder samma princip som standard gutters och det påverkar alla kolumners padding i en rad.</li>
+<li>Klassnamn används: <code>row-section-gutters</code></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Läge</th>
+<th style="text-align:right">Rännors bredd i em</th>
+<th style="text-align:right">Rännors bredd i pixel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">≤ <code>medium</code></td>
+<td style="text-align:right">0.7em x 2</td>
+<td style="text-align:right">11.2px x 2 = 22.4px</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>large</code></td>
+<td style="text-align:right">0.9375em x 2</td>
+<td style="text-align:right">15px x 2 = 30px</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>xlarge</code></td>
+<td style="text-align:right">1.875em x 2</td>
+<td style="text-align:right">30px x 2 = 60px</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Användning</strong></p>
+<code><pre>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-overflow--hidden"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row row-section-gutters"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col col-12 md-col-6"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
+                <span class="hljs-comment">&lt;!-- Item 1 --&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col col-12 md-col-6"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"item"</span>&gt;</span>
                 <span class="hljs-comment">&lt;!-- Item 2 --&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
-<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre></code><h3 id="3-2-l-sning-f-r-ie11s-rendering">3.2 Lösning för IE11s rendering</h3>
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre></code><p><strong>TIPS!</strong> Man kan använda också <code>rh-overflow--hidden</code> i container nivå <em>(eller row nivå)</em> för att content i rutsystem inte påverkar annan elementer som är utanför i nåt speciellt läge.</p>
+<h3 id="3-3-l-sning-f-r-ie11s-rendering">3.3 Lösning för IE11s rendering</h3>
 <ul>
 <li>Anledning: IE11 räknar inte bra när det är odda nummer lik som: 33.3333333333…%. Det renderar om mycket och blinkar när bredden är nära begränsningarna.</li>
 <li>Lösning: <code>max-width</code> används för att IE11 renderar bättre. Se mer i filen <code>/components/scss/_grid.scss</code></li>
@@ -648,7 +805,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -672,7 +829,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -696,7 +853,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -720,7 +877,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -744,7 +901,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -768,7 +925,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -1270,6 +1427,30 @@
 
 
 <span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/article-block.html" data-pjax>
+                <span>Article Block</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2218,6 +2399,30 @@
             
     
         
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/article-group.html" data-pjax>
+                <span>Article Group</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
         <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-block-group">
             <h4 class="Tree-collectionLabel" data-role="toggle">
                 <span>Block Group</span>
@@ -2321,6 +2526,70 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../components/detail/footer-group--built-in-container.html" data-pjax>
                 <span>Built In Container</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-footer-logo-group">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Footer Logo Group</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/footer-logo-group--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/footer-logo-group--with-container.html" data-pjax>
+                <span>With Container</span>
                 
 
 <div class="Status Status--unlabelled">

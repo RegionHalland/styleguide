@@ -1,0 +1,25 @@
+/* Needed component 
+* Molecules/article-block
+*/
+
+.rh-article-group {
+
+    // Control article items
+    .rh-article-block {
+        @if $article-group-items--margin {
+            margin: $article-group-items--margin;
+        }
+    }
+
+    &__header {
+        @include create-article-header($article-group--border-bottom);
+
+        &-title {
+            @include create-article-header-title;
+        }
+    }
+
+    &__view-more {
+        margin-top: $article-group__footer--margin-top;
+    }
+}

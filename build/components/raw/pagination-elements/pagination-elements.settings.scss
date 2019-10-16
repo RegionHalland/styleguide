@@ -2,3 +2,11 @@
 $pagination-link--border: 0.046875em solid $grey-dark;
 $pagination-link--hover-background-color: $base3;
 $pagination-link--hover-text-color: #ffffff;
+
+$pagination-link-current--background-color: #f4c870;
+$pagination-link-current--text-color: #000000;
+$pagination-link-current--font-weight: bold;
+
+$pagination-link-current--background-color-hover-active: #f4c870;
+$pagination-link-current--text-color-hover-active: #000000;
+$pagination-link-current--font-weight-hover-active: bold;

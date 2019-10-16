@@ -265,7 +265,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-back-to-top__container"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Scrolla till toppen"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Scrolla till toppen"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-link--navigation"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Scrolla till toppen"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-link--navigation"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"back-to-top"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-circle-button rh-circle-button--large rh-back-to-top"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-chevron-up rh-circle-button__icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -399,7 +399,7 @@
 
 </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> hasContainer}}</span><span class="xml">
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-back-to-top__container"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Scrolla till toppen"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Scrolla till toppen"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-link--navigation"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Scrolla till toppen"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-link--navigation"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"back-to-top"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-circle-button rh-circle-button--large rh-back-to-top"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-chevron-up rh-circle-button__icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -513,6 +513,9 @@
 
         <span class="hljs-comment">/* Box-modell/beteende */</span>
         <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$back-to-top__container--padding</span>;
+        
+        <span class="hljs-attribute">transform</span>: translate3d(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>); <span class="hljs-comment">//iOS</span>
+        -webkit-<span class="hljs-attribute">transform</span>: translate3d(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>); <span class="hljs-comment">//iOS</span>
 
         &amp; <span class="hljs-selector-tag">a</span>:hover,
         &amp; <span class="hljs-selector-tag">a</span>:active {
@@ -535,7 +538,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.7 KB</span>
+                    <span class="Meta-value">1.8 KB</span>
                 </li>
             </ul>
         </div>
@@ -597,22 +600,23 @@
                                 <pre><span class="hljs-comment">// Needed function:</span>
 <span class="hljs-comment">// throttle() - /public/library.js</span>
 $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-    <span class="hljs-keyword">var</span> $buttonBackToTop = $(<span class="hljs-string">"#back-to-top"</span>),
+    <span class="hljs-keyword">var</span> $btnBackToTop = $(<span class="hljs-string">"#back-to-top"</span>),
         btnBackToTopLimitOnHead = <span class="hljs-number">500</span>,
-        btnBackToTopCurrentPos;
+        btnBackToTopCurrentPos = $(<span class="hljs-built_in">window</span>).scrollTop(); <span class="hljs-comment">// Initial state</span>
+
+    btnBackToTopCurrentPos &lt; btnBackToTopLimitOnHead ? $btnBackToTop.hide() : $btnBackToTop.show();
 
     $(<span class="hljs-built_in">window</span>).scroll(throttle(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
         btnBackToTopCurrentPos = $(<span class="hljs-keyword">this</span>).scrollTop(); <span class="hljs-comment">// Update current position</span>
 
         <span class="hljs-keyword">if</span> (btnBackToTopCurrentPos &gt; btnBackToTopLimitOnHead) {
-            !$buttonBackToTop.is(<span class="hljs-string">':visible'</span>) &amp;&amp; $buttonBackToTop.fadeIn(<span class="hljs-string">"slow"</span>);
+            !$btnBackToTop.is(<span class="hljs-string">':visible'</span>) &amp;&amp; $btnBackToTop.fadeIn(<span class="hljs-string">"slow"</span>);
         } <span class="hljs-keyword">else</span> {
-            $buttonBackToTop.is(<span class="hljs-string">':visible'</span>) &amp;&amp; $buttonBackToTop.fadeOut(<span class="hljs-string">"slow"</span>);
+            $btnBackToTop.is(<span class="hljs-string">':visible'</span>) &amp;&amp; $btnBackToTop.fadeOut(<span class="hljs-string">"slow"</span>);
         }
     }, <span class="hljs-number">200</span>));
 
-    $buttonBackToTop.hide();
-    $buttonBackToTop.click(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+    $btnBackToTop.click(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
         e.stopPropagation();
         $(<span class="hljs-string">'body,html'</span>).animate({ <span class="hljs-attr">scrollTop</span>: <span class="hljs-number">0</span> }, <span class="hljs-number">800</span>);
     });
@@ -633,7 +637,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">766 Bytes</span>
+                    <span class="Meta-value">861 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -1006,7 +1010,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -1030,7 +1034,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -1054,7 +1058,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -1078,7 +1082,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -1102,7 +1106,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -1126,7 +1130,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -1628,6 +1632,30 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 
 
 <span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="article-block.html" data-pjax>
+                <span>Article Block</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2576,6 +2604,30 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
             
     
         
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="article-group.html" data-pjax>
+                <span>Article Group</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
         <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-block-group">
             <h4 class="Tree-collectionLabel" data-role="toggle">
                 <span>Block Group</span>
@@ -2679,6 +2731,70 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="footer-group--built-in-container.html" data-pjax>
                 <span>Built In Container</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-footer-logo-group">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Footer Logo Group</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="footer-logo-group--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="footer-logo-group--with-container.html" data-pjax>
+                <span>With Container</span>
                 
 
 <div class="Status Status--unlabelled">
