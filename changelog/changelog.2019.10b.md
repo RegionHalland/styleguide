@@ -1,5 +1,6 @@
 # Ändringslogg
-Period: 2019-10-16 - 2019-10-xx
+* Version 6.1.1 (2019-10-17)
+* Period: 2019-10-16 - 2019-10-17
 
 ## Nya komponenter
 * Molecules/contact-info - Det kommer bli en ersättning för komponenten Molecules/rh-unit-info

@@ -1,5 +1,6 @@
 # Ändringslogg
-Period: 2019-10-01 - 2019-10-15
+* Version 5.2.0 (2019-10-15)
+* Period: 2019-10-01 - 2019-10-15
 
 ## Nya komponenter
 Vi börjar använda versions formatet `[versionnumber]-[timestamp]` för alpha, beta o.s.v. ([Se mer på design.regionhalland.se](https://design.regionhalland.se/verktyg/versionshantering/))
