@@ -1,7 +1,7 @@
 'use strict';
 
 const gulp = require('gulp');
-const { series, parallel, watch, src, dest } = require('gulp');
+const { series, parallel, watch, src, dest, task } = require('gulp');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const concat = require('gulp-concat');
@@ -15,7 +15,7 @@ const mandelbrot = require('@frctl/mandelbrot');
 const fractal = require('@frctl/fractal').create();
 const logger = fractal.cli.console; // keep a reference to the fractal CLI console utility
 
-const { buildSites, releaseSites } = require('./sites.building');
+const { buildSites, releaseSites, getOptionsHelper } = require('./sites.building');
 
 const rh_theme = mandelbrot({
     skin: "blue",
@@ -218,6 +218,14 @@ function tmpBuildScss(cb) {
 
 // [Experiment feature] DevServe
 function devServe(cb) {
+    getOptionsHelper("-r", "--recompile") ?
+        (series(scss, images, js)()) : // ONLY recompiling
+        devServer(cb); // Starting development server
+
+    cb();
+}
+
+function devServer(cb) {
     const devServeConfig = {
         "fractalServer": {
             "port": 3010
@@ -235,7 +243,6 @@ function devServe(cb) {
     });
 
     server.on('error', (err) => console.error(err.message));
-
     server.start().then(function(){
         console.log(`Fractal server is now running at ${server.url}`);
     });
@@ -257,10 +264,9 @@ function devServe(cb) {
 
     // Gulp watching
     watch('components/**/*.scss', scssCompilation); // Watching SCSS files for CSS injecting
-    watch(['components/**/*.{hbs,md}', 'docs/**/*.md']).on('change', browserSync.reload);
+    watch(['components/**/*.{hbs,json,md}', 'docs/**/*.md']).on('change', browserSync.reload);
     watch('components/**/*.js').on('change', series(js, reloadPage));
     watch('components/**/*.{svg,png,gif,jpg}').on('all', series(images, reloadPage));
-    //watch('assets/**/*').on('change', series(theme, reloadPage));
 
     cb();
 }

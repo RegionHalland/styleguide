@@ -371,5 +371,6 @@ function releaseSites(cb) {
 
 module.exports = {
     buildSites,
-    releaseSites
+    releaseSites,
+    getOptionsHelper
 };
