@@ -1,0 +1,75 @@
+.rh-contact-info {
+
+    //Prohibit iOS increase font-size automatic
+    @include iOSNoIncreaseFontSize;
+
+    &__header {
+        @include create-article-header($contact-info__header--border);
+
+        &-title {
+            @include create-article-header-title;
+        }
+    }
+
+    &__body {
+        /* Box-modell/beteende */
+        padding: $contact-info__body--padding;
+
+        /* Visuellt */
+        background-color: $contact-info__body--background-color;
+
+        &-icon {
+            /* Typografi */
+            font-family: $contact-info__body-icon--font-family;
+            color: $contact-info__body-icon--color;
+        }
+
+        &-title {
+            /* Typografi */
+            font-size: $contact-info__body-title--font-size;
+            font-weight: $contact-info__body-title--font-weight;
+
+            @include large {
+                font-size: $contact-info__body-title--font-size-large; //18px
+            }
+        }
+
+        &-subject {
+            font-weight: $contact-info__body-subject--font-weight;
+        }
+
+        tr>td:first-child {
+            /* Box-modell/beteende */
+            height: $contact-info__body-table-first-cell--height;
+            width: $contact-info__body-table-first-cell--width;
+        }
+        td {
+            vertical-align: $contact-info__body-table-text--vertical-align;
+        }
+
+        &-content {
+            /* Typografi */
+            font-size: $contact-info__body-content--font-size;
+
+            @include large {
+                font-size: $contact-info__body-content--font-size-large;
+            }
+        }
+
+        &-link {
+            /* Typografi */
+            font-size: $contact-info__body-link--font-size;
+            color: $contact-info__body-link--color;
+            line-height: $contact-info__body-link--line-height;
+
+            @include large {
+                font-size: $contact-info__body-link--font-size-large;
+            }
+        }
+    }
+
+    &-space-top {
+        /* Box-modell/beteende */
+        margin-top: $contact-info__space-top;
+    }
+}

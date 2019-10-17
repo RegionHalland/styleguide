@@ -12,12 +12,12 @@ Vi börjar använda versions formatet `[versionnumber]-[timestamp]` för alpha, 
 * Atoms/pagination-elements - en ny klass `--current` skapas för återanvändning.
 * Molecules/message - Använda inställningar
 * Grid system
-    * [row-gutters](/docs/layout#321-standard-gutters)
-    * [col-item-eq-height](/docs/layout#321-standard-gutters)
-    * [row-section-gutters](/docs/layout#322-section-gutters)
+    * [row-gutters](/docs/03-layout.md#321-standard-gutters)
+    * [col-item-eq-height](/docs/03-layout.md#321-standard-gutters)
+    * [row-section-gutters](/docs/03-layout.md#322-section-gutters)
 * Verktyg
-    * [rh-overflow*](/docs/utilities#3-overflow)
-    * [rh-section-gutter-lx*](/docs/utilities#41-section-gutter-lx)
+    * [rh-overflow*](/docs/04-utilities.md#3-overflow)
+    * [rh-section-gutter-lx*](/docs/04-utilities.md#41-section-gutter-lx)
 * Dokumentation för grid system och verktyg.
 
 ## Byggmiljö
