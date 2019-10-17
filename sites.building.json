@@ -29,7 +29,7 @@
         },
         {
             "name": "vardgivare",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "resources": {
                 "jsComponents": [],
                 "scssComponents": [ "../RH-sites/RhSettingsVardgivare/vardgivare.scss" ]
@@ -52,8 +52,48 @@
             }
         },
         {
+            "name": "katrineberg",
+            "version": "1.1.0",
+            "resources": {
+                "jsComponents": [],
+                "scssComponents": [ "../RH-sites/RhSettingsKatrineberg/katrineberg.scss" ]
+            }
+        },
+        {
+            "name": "loftadalen",
+            "version": "1.1.0",
+            "resources": {
+                "jsComponents": [],
+                "scssComponents": [ "../RH-sites/RhSettingsLoftadalen/loftadalen.scss" ]
+            }
+        },
+        {
+            "name": "munkagard",
+            "version": "1.1.0",
+            "resources": {
+                "jsComponents": [],
+                "scssComponents": [ "../RH-sites/RhSettingsMunkagard/munkagard.scss" ]
+            }
+        },
+        {
+            "name": "design",
+            "version": "1.1.0",
+            "resources": {
+                "jsComponents": [],
+                "scssComponents": [ "../RH-sites/RhSettingsDesign/design.scss" ]
+            }
+        },
+        {
+            "name": "template",
+            "version": "1.1.0",
+            "resources": {
+                "jsComponents": [],
+                "scssComponents": [ "../RH-sites/RhSettingsTemplate/template.scss" ]
+            }
+        },
+        {
             "name": "stilguide",
-            "version": "6.0.1",
+            "version": "6.1.0",
             "resources": {
                 "jsComponents": [
                     "components/Molecules/rh-video/rh-video.js", 
