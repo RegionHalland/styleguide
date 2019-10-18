@@ -23,3 +23,9 @@ $circle-button--background-color-active: $base3-light; //false
 $circle-button--text-color-active: $base3-dark; //false
 
 $circle-button--cursor: false; //Ex: pointer
+
+// Secondary style
+$circle-button--background-secondary: $base3-light;
+$circle-button--text-color-secondary: #000000; //false
+$circle-button--background-color-hover-secondary: $base3; //false
+$circle-button--text-color-hover-secondary: #ffffff; //false

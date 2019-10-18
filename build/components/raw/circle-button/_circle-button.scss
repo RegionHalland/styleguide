@@ -108,4 +108,22 @@
             font-size: $circle-button--xlarge-icon-font-size;
         }
     }
+
+    &--secondary {
+        background: $circle-button--background-secondary;
+        color: $circle-button--text-color-secondary; //false
+
+        &:hover {
+
+            /* Visuellt */
+            @if $circle-button--background-color-hover-secondary {
+                background-color: $circle-button--background-color-hover-secondary;
+            }
+
+            /* Typografi */
+            @if $circle-button--text-color-hover-secondary {
+                color: $circle-button--text-color-hover-secondary;
+            }
+        }
+    }
 }

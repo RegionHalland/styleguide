@@ -221,7 +221,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-fbbd087d95ff436b099406f414e71621-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-circle-button rh-circle-button--</span></span></span><span class="hljs-template-variable">{{modifier}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"></span></span></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> hasBorder}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> rh-circle-button--border</span></span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"></span></span></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> extendClass}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{extendClass}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"></span></span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-circle-button rh-circle-button--</span></span></span><span class="hljs-template-variable">{{modifier}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"></span></span></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> hasBorder}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> rh-circle-button--border</span></span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"></span></span></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> extendClass}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{extendClass}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"></span></span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"></span></span></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> priority}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> rh-circle-button--</span></span></span><span class="hljs-template-variable">{{priority}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"></span></span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{icon}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> rh-circle-button__icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
@@ -383,6 +383,24 @@
             <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$circle-button--xlarge-icon-font-size</span>;
         }
     }
+
+    &amp;--secondary {
+        <span class="hljs-attribute">background</span>: <span class="hljs-variable">$circle-button--background-secondary</span>;
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$circle-button--text-color-secondary</span>; <span class="hljs-comment">//false</span>
+
+        &amp;:hover {
+
+            <span class="hljs-comment">/* Visuellt */</span>
+            @<span class="hljs-keyword">if</span> <span class="hljs-variable">$circle-button--background-color-hover-secondary</span> {
+                <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$circle-button--background-color-hover-secondary</span>;
+            }
+
+            <span class="hljs-comment">/* Typografi */</span>
+            @<span class="hljs-keyword">if</span> <span class="hljs-variable">$circle-button--text-color-hover-secondary</span> {
+                <span class="hljs-attribute">color</span>: <span class="hljs-variable">$circle-button--text-color-hover-secondary</span>;
+            }
+        }
+    }
 }</pre>
                             </code>
                             
@@ -399,7 +417,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.8 KB</span>
+                    <span class="Meta-value">3.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -436,7 +454,14 @@
 <span class="hljs-variable">$circle-button--background-color-active</span>: <span class="hljs-variable">$base3-light</span>; <span class="hljs-comment">//false</span>
 <span class="hljs-variable">$circle-button--text-color-active</span>: <span class="hljs-variable">$base3-dark</span>; <span class="hljs-comment">//false</span>
 
-<span class="hljs-variable">$circle-button--cursor</span>: false; <span class="hljs-comment">//Ex: pointer</span></pre>
+<span class="hljs-variable">$circle-button--cursor</span>: false; <span class="hljs-comment">//Ex: pointer</span>
+
+<span class="hljs-comment">// Secondary style</span>
+<span class="hljs-variable">$circle-button--background-secondary</span>: <span class="hljs-variable">$base3-light</span>;
+<span class="hljs-variable">$circle-button--text-color-secondary</span>: <span class="hljs-number">#000000</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$circle-button--background-color-hover-secondary</span>: <span class="hljs-variable">$base3</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$circle-button--text-color-hover-secondary</span>: <span class="hljs-number">#ffffff</span>; <span class="hljs-comment">//false</span>
+</pre>
                             </code>
                             
                         </div>
@@ -452,7 +477,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">806 Bytes</span>
+                    <span class="Meta-value">1.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -516,7 +541,7 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(6)</em>:</strong>
+            <strong class="Meta-key">Variants <em class="Meta-count">(7)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="circle-button--default.html">
@@ -541,6 +566,10 @@
             
                 <a href="">
                     <span>Has Border</span>
+                </a>, 
+            
+                <a href="circle-button--secondary.html">
+                    <span>Secondary</span>
                 </a>
             
             </span>
@@ -674,6 +703,10 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-plus"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></pre></code><h2 id="5-versionhistorik">5. Versionhistorik</h2>
+<h3 id="1-1-0">1.1.0</h3>
+<ul>
+<li>Modifier <code>--secondary</code> introducerades.</li>
+</ul>
 <h3 id="1-0-0">1.0.0</h3>
 <ul>
 <li>Första version</li>
@@ -2994,6 +3027,30 @@
         <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
             <a class="Tree-entityLink" href="" data-pjax>
                 <span>Has Border</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="circle-button--secondary.html" data-pjax>
+                <span>Secondary</span>
                 
 
 <div class="Status Status--unlabelled">
