@@ -1,6 +1,6 @@
 {
     "title": "Back to top",
-    "status": "review",
+    "status": "ready",
     "version": "1.0.0",
     "context": {
         "name": "default",
@@ -9,7 +9,7 @@
     "variants": [
         {
             "name": "with container",
-            "status": "review",
+            "status": "ready",
             "context": {
                 "isStandard": false,
                 "hasContainer": true
