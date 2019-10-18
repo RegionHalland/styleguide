@@ -1,6 +1,6 @@
 /* DEFAULT COMPONENTS SETTINGS */
 @import '../Atoms/button/button.settings.scss';
-@import '../Atoms/circle-button/circle-button.settings.scss';
+@import '../vAtoms/circle-button/circle-button.settings.scss'; //-> vAtoms
 @import '../Atoms/round-button/round-button.settings.scss';
 @import '../Atoms/labels/labels.settings.scss';
 @import '../Atoms/link/link.settings.scss';
@@ -11,7 +11,8 @@
 
 @import '../Molecules/article-block/article-block.settings.scss';
 @import '../Molecules/back-to-top/back-to-top.settings.scss';
-@import '../Molecules/block/block.settings.scss';
+@import '../vMolecules/block/block.settings.scss'; //-> vMolecules
+@import '../Molecules/contact-info/contact-info.settings.scss';
 @import '../Molecules/cookie-notice/cookie-notice.settings.scss';
 @import '../Molecules/feedback-form/feedback-form.settings.scss';
 @import '../Molecules/filter-alphabet/filter-alphabet.settings.scss';

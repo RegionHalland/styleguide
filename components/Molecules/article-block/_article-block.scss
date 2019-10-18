@@ -17,6 +17,10 @@
             font-family: "feather";
             font-size: $article-block__publish-date-icon--font-size;
             margin: $article-block__publish-date-icon--margin;
+
+            @include large {
+                margin: $article-block__publish-date-icon--margin-large;
+            }
         }
     }
 
