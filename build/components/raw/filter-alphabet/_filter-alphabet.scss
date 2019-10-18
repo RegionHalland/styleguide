@@ -1,0 +1,52 @@
+.rh-filter-alphabet {
+    /* Box-modell/beteende */
+    display: flex;
+    flex-wrap: wrap;
+
+    /* Visuellt */
+    border: $filter-alphabet--border;
+    border-radius: $filter-alphabet--border-radius;
+
+    @include medium {
+        /* Box-modell/beteende */
+        max-width: 843px;
+    }
+
+    @include large {
+        /* Box-modell/beteende */
+        max-width: 898px;
+    }
+
+    &-link {
+        /* Box-modell/beteende */
+        padding-top: em(15);
+        padding-bottom: em(15);
+        padding-left: em(10);
+        padding-right: em(10);
+
+        /* Typografi */
+        text-decoration: none;
+        color: $black;
+        font-size: $p-small;
+
+        @include medium {
+            /* Typografi */
+            font-size: $p-medium;
+        }
+
+        @include large {
+            /* Typografi */
+            font-size: $p-large;
+        }
+
+        &:active,
+        &:hover,
+        &--active {
+            /* Visuellt */
+            background-color: $filter-alphabet--background-color-active-hover;
+            
+            /* Typografi */
+            color: $filter-alphabet--text-color-active-hover;
+        }
+    }
+}

@@ -1,0 +1,104 @@
+.footer-logo-group {
+    /* Box-modell/beteende */
+    padding-top: $footer-logo-group--padding-top;
+    padding-bottom: $footer-logo-group--padding-bottom;
+
+    // Specifik rännor skapning
+    &__logo-container {
+        /* Box-modell/beteende */
+        padding: 0;
+        margin: -$footer-logo-group-gutters;
+        
+        /* Visuellt */
+        background-color: #ffffff;
+
+        @include medium {
+            margin:  -$footer-logo-group-gutters-medium;
+        }
+
+        >[class*="col-"] {
+            padding: $footer-logo-group-gutters;
+
+            @include medium {
+                padding: $footer-logo-group-gutters-medium;
+            }
+        }
+    }
+
+    &__item {
+        /* Box-modell/beteende */
+        display: block;
+        max-height: $footer-logo-group__item--max-height;
+        max-width: 100%;
+        margin-bottom: $footer-logo-group__item--margin-bottom;
+
+        /* Blandat/övrigt */
+        opacity: $footer-logo-group__item--opacity;
+        
+        @include small {
+            max-height: $footer-logo-group__item--max-height-small;
+        }
+
+        &:hover {
+            opacity: $footer-logo-group__item--opacity-hover;
+        }
+
+        &--center {
+            /* Box-modell/beteende */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &--right {
+            /* Box-modell/beteende */
+            margin-left: auto;
+        }
+
+        // Align right only in sm mode
+        &--right-sm {
+            /* Box-modell/beteende */
+            margin-left: auto;
+
+            @include medium {
+                margin-left: 0;
+            }
+        }
+    }
+
+    &__link {
+        /* Typografi */
+        font-size: $footer-logo-group__link--font-size;
+
+        &-icon {
+            font-family: "feather";
+        }
+
+        &-item {
+            /* Box-modell/beteende */
+            margin-bottom: $footer-logo-group__link-item--margin-bottom;
+
+            @include medium {
+                padding-left: $footer-logo-group__link-item--margin-bottom;
+            }
+        }
+
+        &-container {
+            /* Box-modell/beteende */
+            margin-top: $footer-logo-group__link-container--margin-top;
+
+            @include medium {
+                /* Typografi */
+                text-align: $footer-logo-group__link-container--text-align-medium;
+            }
+        }
+
+        &-list {
+            &>li {
+                @include medium {
+                    /* Typografi */
+                    display: inline;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+
+.rh-video {
+    position: relative;
+
+    video{
+        width: 100%;
+    }
+
+    .video-button {
+        position: absolute;
+        top: 35% !important;
+        left: 45% !important;
+        width: em(40);
+        height: em(40);
+        box-sizing: border-box;
+        cursor: pointer;
+        background: $grey-base;
+        border-radius: 50%;
+
+        @include medium {
+            width: em(90);
+            height: em(90);
+        }
+
+        .video-button-content {
+
+            .feather {
+                color: #fff;
+                float: left;
+                line-height: 1;
+                margin-top: -0.5em;
+                padding-top: 50%;
+                text-align: center;
+                width: 100%;
+                font-family:"feather" !important;
+                font-size: em(20); 
+                @include medium { font-size: em(50);}
+                font-style:normal;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+        }
+
+    }
+    .video-button.is-hidden {
+        display: none;
+    }
+    
+}        
+
+
+
+
+
+
+
+
+  

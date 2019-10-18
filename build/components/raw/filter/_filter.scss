@@ -1,0 +1,188 @@
+.rh-filter {
+    /* Positionering */
+    align-items: center;
+
+    /* Box-modell/beteende */
+    display: flex;
+    width: 90%;
+    outline: none;
+    padding-left: em(15);
+    padding-top: em(10);
+    padding-right: em(15);
+    padding-bottom: em(10);
+
+    /* Visuellt */
+    border: 1px solid $grey-light;
+    border-radius: 4px;
+    background-color: $white;
+
+    /* Typografi */
+    font-size: $p-small;
+    color: $grey-dark;
+
+    /* Blandat/övrigt */
+    cursor: pointer;
+
+    &-icon {
+        /* Box-modell/beteende */
+        margin-left: auto;
+
+        /* Typografi */
+        color: $black;
+
+        &:after {
+            /* Box-modell/beteende */
+            display: inline-block;
+            margin: 0;
+
+
+            /* Typografi */
+            font-size: $h4-small;
+            font-family: "feather";
+
+            /* Blandat/övrigt */
+            content: "\e842";
+        }
+
+        @include medium {
+            /* Typografi */
+            font-size: $h4-medium;
+        }
+
+        @include large {
+            /* Typografi */
+            font-size: $h4-large;
+        }
+    }
+
+    &:hover {
+        /* Visuellt */
+        border: 1px solid $grey-dark;
+    }
+
+    &:disabled {
+        /* Visuellt */
+        background-color: $grey-lightest;
+        border: 1px solid $grey-light;
+
+        /* Typografi */
+        color: $grey-base;
+
+        /* Blandat/övrigt */
+        cursor: unset;
+    }
+
+    @include medium {
+        /* Typografi */
+        font-size: $p-medium;
+    }
+
+    @include large {
+        /* Typografi */
+        font-size: $p-large;
+    }
+}
+
+.rh-filter-menu {
+    /* Positionering */
+    position: relative;
+    z-index: 1;
+
+    /* Box-modell/beteende */
+    display: none;
+    width: 100%;
+    margin-top: em(5);
+
+    /* Visuellt */
+    -webkit-border-radius: em(5);
+    -webkit-box-shadow: 1px 2px 6px $color-shadow;
+    border: 1px solid $complementary2;
+    background-color: $white;
+
+    &-triangle {
+        /* Positionering */
+        z-index: 3;
+        position: absolute;
+        top: em(-28);
+        left: em(15);
+
+        /* Visuellt */
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid $white;
+        border-right: 15px solid transparent;
+        border-left: 15px solid transparent;
+    }
+
+    &-border {
+        /* Positionering */
+        z-index: 2;
+        position: absolute;
+        top: em(-29);
+        left: em(15);
+
+        /* Box-modell/beteende */
+        margin-top: em(-1);
+
+        /* Visuellt */
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid $complementary2;
+        border-right: 15px solid transparent;
+        border-left: 15px solid transparent;
+    }
+
+    &-content {
+        /* Box-modell/beteende */
+        padding-top: em(4);
+        padding-bottom: em(4);
+    }
+
+    &-item {
+        /* Box-modell/beteende */
+        padding-left: em(16);
+        padding-top: em(9);
+        padding-right: em(16);
+        padding-bottom: em(9);
+
+        /* Typografi */
+        font-size: $p-small;
+
+        &:hover {
+            /* Typografi */
+            font-weight: bold;
+
+            /* Blandat/övrigt */
+            cursor: pointer;
+        }
+
+        @include medium {
+            /* Typografi */
+            font-size: $p-medium;
+        }
+
+        @include large {
+            /* Typografi */
+            font-size: $p-large;
+        }
+    }
+}
+
+.rh-filter-show {
+    /* Box-modell/beteende */
+    display: block !important;
+}
+
+.rh-filter-selected {
+    /* Typografi */
+    color: black !important;
+}
+
+.rh-filter-active {
+    /* Visuellt */
+    background-color: $yellow-background !important;
+    border: 1px solid $complementary2 !important;
+
+    .rh-filter-icon:after {
+        /* Blandat/övrigt */
+        content: "\e845";
+    }
+}

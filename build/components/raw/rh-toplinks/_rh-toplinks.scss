@@ -1,0 +1,28 @@
+.rh-toplinks{
+	display: flex;
+ 	align-items: center;
+ 	padding-top: em(10);
+ 	padding-bottom: em(10);
+ 	background-color: $white;
+}
+
+.rh-toplinks-nav {
+	margin-left:auto;
+}
+
+.rh-toplinks-nav-item{
+	display: inline-block;
+	padding-top: em(15);
+	padding-bottom: em(15);
+	margin-right: em(15);
+}
+
+.rh-toplinks-nav-link{
+	font-size: $p-large;
+	color: $black;
+	text-decoration: none;
+
+	&:hover{
+		text-decoration: underline;
+	}
+}

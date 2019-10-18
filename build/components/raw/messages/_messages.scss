@@ -1,0 +1,85 @@
+.rh-message {
+    /* Box-modell/beteende */
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+    padding: $message--padding; //em(30);
+    
+    /* Visuellt */
+    background-color: $message--background-color;
+    
+    /* Typografi */
+	text-align: $message--text-align;
+    line-height: $message--line-height;
+    
+	@include medium {
+        /* Box-modell/beteende */
+		flex-wrap: nowrap;
+		//padding-top: em(20);
+        //padding-bottom: em(20);
+        padding: $message--padding-medium;
+        
+        /* Typografi */
+		text-align: left;
+	}
+	
+	&-icon {
+        /* Box-modell/beteende */
+		margin-left: auto;
+        margin-right: auto;
+        
+      	@include medium {
+            /* Box-modell/beteende */
+      		//margin-top: em(40);
+      		//margin-bottom: em(40);
+      		//margin-right: em(40);
+            //margin-left: 0; //em(20);
+            margin: $message__icon--margin-medium;
+      	}
+		&:after {
+            /* Box-modell/beteende */
+            padding: $message__icon--padding; //em(8);
+            
+            /* Visuellt */
+            background: $message__icon--color; //$complementary3-dark;
+            border-radius: 50%;
+            
+            /* Typografi */
+			color: $message__icon--text-color; //$white;
+			font-weight: $message__icon--font-weight;
+	    	font-family: $message__icon--font-family; 
+            font-size: $message__icon--font-size;
+            
+            /* Blandat/övrigt */
+            content: $message__icon--content;
+            
+            /* Typografi */
+			@include medium { font-size: $message__icon--font-size-medium;}
+			@include large { font-size: $message__icon--font-size-large;}
+		}
+	}
+
+	&-text{
+		/* Box-modell/beteende */
+		//@include medium { max-width: 539px;}
+		//@include large { max-width: 865px;}
+
+		&-title	{
+            /* Typografi */
+			color: $message__text-title--color;
+		}
+
+		&-link {
+            /* Typografi */
+			text-decoration: $message__link--text-decoration;
+			color: $message__link--color;
+
+			&:hover{
+                /* Typografi */
+				text-decoration: $message__link--text-decoration-hover;
+				color: $message__link--color-hover;
+			}
+		}
+	}
+}  

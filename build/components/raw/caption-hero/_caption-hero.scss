@@ -1,0 +1,57 @@
+.rh-caption-hero{
+	/* Positionering */
+    position: relative;
+    
+	//bottom: 2.5em; //em(40);
+	//left: 1em; //em(16);
+
+	/* Box-modell/beteende */
+	//max-width: 21.5em; //344px
+	//margin-right: .9375em; // em(15);
+    padding: .9375em; //em(15);
+    
+
+	/* Visuellt */
+	background-color: $black;
+
+	/* Typografi */
+	color: $white;
+	font-size: $h2-medium;
+
+	&--secondary {
+		/* Visuellt */
+		background-color: $white;
+
+		/* Typografi */
+		color: $black;
+	}
+
+	&--rounded {
+        // border-radius: 0.4ex;
+        border-radius: 0;
+        
+        @include medium {
+            border-radius: 0.4ex;
+        }
+	}
+
+	@include medium {
+        /* Positionering */
+        position: absolute;
+
+		bottom: 1em; //em(16);
+		left: 2.5em; //em(40);
+
+		/* Box-modell/beteende */
+        max-width: 20.385em; //530px;
+	}
+	@include large {
+		/* Positionering */
+		bottom: 1.5625em; //em(25);
+		left: 3.75em; //em(60);
+
+		/* Typografi */
+		font-size: $h2-medium;
+	}
+}
+

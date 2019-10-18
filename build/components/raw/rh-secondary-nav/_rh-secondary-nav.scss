@@ -1,0 +1,85 @@
+
+@mixin rh-secondary-nav-item($background-color: $white, $linkcolor: $black, $link-font-size: 18, $border-color: $grey-light){
+	
+   	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: em(20);
+	background-color: $background-color;	
+	border-bottom: 1px solid $border-color;
+	border-left: 1px solid $border-color;
+	border-right: 1px solid $border-color;
+
+	&:first-child{
+		border-top: 1px solid $border-color;
+	}
+
+	.rh-secondary-nav-link{
+		font-size: em($link-font-size);
+ 		color: $linkcolor;
+		text-decoration: none;
+	}
+}
+
+
+.rh-secondary-nav {
+
+	.rh-secondary-nav-item-toplevel{
+	   	@include rh-secondary-nav-item();
+	   	&:active, &:hover{
+			background-color: $base3-light;
+		}
+	}
+
+	.rh-secondary-nav-item-parentlevel{
+	   	@include rh-secondary-nav-item($color-primary, $white, 20, $color-primary);
+	   	&:active, &:hover{
+		}
+	}
+
+	.rh-secondary-nav-item-toplevel-subsides{
+	   	@include rh-secondary-nav-item();
+		.rh-secondary-nav-item-icon {
+	        margin-left: auto;
+			&:after {
+				margin-left: em(10);
+				padding: em(8);
+				background: $grey-lightest;
+				border-radius: 50%;
+				font-weight: normal;
+		    	font-family: "feather"; 
+		    	content: "\e8b1";
+				font-size: $p-small;
+				@include medium { font-size: $p-medium;}
+				@include large { font-size: $p-large;}
+			}
+		}
+
+	   	&:active, &:hover{
+			background-color: $base3-light;
+			.rh-secondary-nav-item-icon {
+		        margin-left: auto;
+				&:after {
+					margin-left: em(10);
+					padding: em(8);
+					background: $white;
+					border-radius: 50%;
+					font-weight: normal;
+			    	font-family: "feather"; 
+			    	content: "\e897";
+					font-size: $p-small;
+					@include medium { font-size: $p-medium;}
+					@include large { font-size: $p-large;}
+				}
+			}
+		}
+	}
+
+	.rh-secondary-nav-item-sublevel{
+	   	@include rh-secondary-nav-item($grey-lightest);
+		border-left: 4px solid $color-primary;
+	   	&:active, &:hover{
+		}
+	}
+}
+

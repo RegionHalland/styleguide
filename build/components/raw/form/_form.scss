@@ -1,0 +1,253 @@
+.rh-icon {
+    /* Positionering */
+    position: relative;
+    top: 1px;
+
+    /* Box-modell/beteende */
+    display: inline-block;
+
+    /* Typografi */
+    font-family: "feather";
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.rh-success:before {
+    /* Typografi */
+    color: $base3;
+
+    /* Blandat/övrigt */
+    content: "\e83f";
+}
+
+.rh-error:before {
+    /* Typografi */
+    color: $warning;
+
+    /* Blandat/övrigt */
+    content: "\e81e";
+}
+
+.rh-form-group {
+    /* Box-modell/beteende */
+    margin-bottom: em(15);
+}
+
+.rh-has-feedback {
+    /* Positionering */
+    position: relative;
+}
+
+.rh-form {
+
+    &-input {
+        /* Box-modell/beteende */
+        display: block;
+        height: 34px;
+        width: 100%;
+        padding: 6px 12px;
+
+        /* Typografi */
+        font-size: 14px;
+        line-height: 1.42857143;
+
+        /* Visuellt */
+        background-color: $white;
+        border: 1px solid $grey-light;
+        border-radius: 4px;
+
+        /* Typografi */
+        color: $black;
+
+        &:focus {
+            /* Visuellt */
+            border: 1px solid $complementary2;
+
+            /* Typografi */
+            color: $grey-dark;
+        }
+
+        &:disabled {
+            /* Visuellt */
+            border: 1px solid $grey-light;
+            background: $grey-lightest;
+
+            /* Blandat/övrigt */
+            cursor: not-allowed;
+        }
+
+        &--success {
+            /* Visuellt */
+            border: 1px solid $base3;
+        }
+
+        &--error {
+            /* Visuellt */
+            border: 1px solid $warning;
+        }
+    }
+
+    &-label {
+        /* Box-modell/beteende */
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+
+        /* Typografi */
+        font-weight: bold;
+    }
+
+    &-feedback {
+        /* Positionering */
+        position: absolute;
+        top: 20px;
+        right: 0;
+        z-index: 2;
+
+        /* Box-modell/beteende */
+        display: block;
+        height: 34px;
+        width: 34px;
+
+        /* Typografi */
+        line-height: 34px;
+        text-align: center;
+    }
+}
+
+.control {
+    /* Positionering */
+    position: relative;
+
+    /* Box-modell/beteende */
+    display: block;
+    margin-bottom: 15px;
+    padding-left: 30px;
+
+    /* Blandat/övrigt */
+    cursor: pointer;
+}
+
+.control input {
+    /* Positionering */
+    position: absolute;
+    z-index: -1;
+
+    /* Blandat/övrigt */
+    opacity: 0;
+}
+
+.control__indicator {
+    /* Positionering */
+    position: absolute;
+    top: 2px;
+    left: 0;
+
+    /* Box-modell/beteende */
+    height: 20px;
+    width: 20px;
+
+    /* Visuellt */
+    background: $white;
+    border: 0.5px solid $grey-base;
+}
+
+.control--radio .control__indicator {
+    /* Visuellt */
+    border-radius: 50%;
+}
+
+/* Hover and focus states */
+.control:hover input~.control__indicator,
+.control input:focus~.control__indicator {
+    /* Visuellt */
+    background: $grey-light;
+}
+
+/* Checked state */
+.control input:checked~.control__indicator {
+    /* Visuellt */
+    background: $complementary2;
+    border: 0.5px solid $complementary2;
+}
+
+/* Hover state whilst checked */
+.control:hover input:not([disabled]):checked~.control__indicator,
+.control input:checked:focus~.control__indicator {
+    /* Visuellt */
+    background: $complementary2-dark;
+}
+
+/* Disabled state */
+.control input:disabled~.control__indicator {
+    /* Visuellt */
+    background: #e6e6e6;
+
+    /* Blandat/övrigt */
+    pointer-events: none;
+    opacity: .6;
+}
+
+/* Check mark */
+.control__indicator:after {
+    /* Positionering */
+    position: absolute;
+
+    /* Box-modell/beteende */
+    display: none;
+
+    /* Blandat/övrigt */
+    content: '';
+}
+
+/* Show check mark */
+.control input:checked~.control__indicator:after {
+    /* Box-modell/beteende */
+    display: block;
+}
+
+/* Checkbox tick */
+.control--checkbox .control__indicator:after {
+    /* Positionering */
+    top: 4px;
+    left: 8px;
+
+    /* Box-modell/beteende */
+    height: 8px;
+    width: 3px;
+
+    /* Visuellt */
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+
+    /* Blandat/övrigt */
+    transform: rotate(45deg);
+}
+
+/* Disabled tick colour */
+.control--checkbox input:disabled~.control__indicator:after {
+    /* Visuellt */
+    border-color: #7b7b7b;
+}
+
+/* Radio button inner circle */
+.control--radio .control__indicator:after {
+    /* Positionering */
+    top: 7px;
+    left: 7px;
+
+    /* Box-modell/beteende */
+    height: 6px;
+    width: 6px;
+
+    /* Visuellt */
+    border-radius: 50%;
+    background: #fff;
+}
+
+/* Disabled circle colour */
+.control--radio input:disabled~.control__indicator:after {
+    /* Visuellt */
+    background: #7b7b7b;
+}

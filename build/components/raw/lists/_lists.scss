@@ -1,0 +1,54 @@
+.rh-lists{
+    /* Box-modell/beteende */
+    padding: em(20);
+    
+    /* Visuellt */
+    background-color: $grey-lightest;
+    
+    /* Typografi */
+	text-align: center;
+
+	&-title{
+        /* Typografi */
+		font-weight: normal;
+	}
+
+	&-items{
+        /* Box-modell/beteende */
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: em(10);
+
+        /* Box-modell/beteende */
+		@include medium{max-width: 80%;}
+		@include large{max-width: 60%;}
+
+		&-left{
+            /* Box-modell/beteende */
+			margin-bottom: 0;
+            margin-right: auto;
+            
+            /* Typografi */
+			font-weight: bold;
+		}
+		&-right{
+            /* Box-modell/beteende */
+			margin-bottom: 0;
+			margin-left: auto;
+		}
+		
+		&-hr{
+            /* Box-modell/beteende */
+            flex-basis: 100%;
+			height: 1px;
+			margin-top: em(15);
+            
+            /* Typografi */
+			color: $grey-light;
+		}
+	}
+}
