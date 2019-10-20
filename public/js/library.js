@@ -24,3 +24,11 @@ function throttle(fn, threshhold, scope) {
         }
     };
 }
+
+function calculateScrollbarWidth() {
+    return (window.innerWidth - document.body.clientWidth);
+}
+
+function isMobileDevice() {
+    return !!navigator.platform && /iPad|iPhone|iPod/g.test(navigator.platform);
+}
