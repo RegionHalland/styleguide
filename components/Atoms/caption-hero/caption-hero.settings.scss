@@ -1,0 +1,22 @@
+$caption-hero--padding: .9375em;
+$caption-hero--background-color: $black;
+$caption-hero--color: $white;
+$caption-hero--font-size: $h2-medium;
+
+// Rounded
+$caption-hero--rounded--border-radius--default: 0;
+$caption-hero--rounded--border-radius--medium: 0.4ex;
+
+// Secondary
+$caption-hero--secondary-background-color: $white;
+$caption-hero--secondary-color: $black;
+
+// Medium
+$caption-hero--medium--bottom: 1em; //em(16);
+$caption-hero--medium--left: 2.5em; //em(40);
+$caption-hero--medium--max-width: 20.385em; //530px;
+
+// Large
+$caption-hero--large--bottom: 1.5625em; //em(25);
+$caption-hero--large--left: 3.75em; //em(60);
+$caption-hero--large--font-size: $h2-medium;
