@@ -1,7 +1,7 @@
 {
 	"title": "Textruta till Herobild",
     "status": "ready",
-    "version": "0.0.0",
+    "version": "1.0.0",
 	"context": {
         "text": "A Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
         "extendClass": ""

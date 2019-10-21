@@ -1,7 +1,7 @@
 {
 	"title": "Herobild",
-    "status": "review",
-    "version": "0.0.0",
+    "status": "ready",
+    "version": "1.0.0",
 	"context": {
         "imageUrl": "/images/components/Molecules/image-hero/hero-g-samtal.jpg",
 		"captionData": {

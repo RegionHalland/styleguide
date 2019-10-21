@@ -125,7 +125,7 @@
 
 <div class="Status Status--tag">
 
-<label class="Status-label" style="background-color: #4b7070; border-color: #4b7070;">Under granskning</label>
+<label class="Status-label" style="background-color: green; border-color: green;">Klar</label>
 
 </div>
 
@@ -215,7 +215,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-hero__image-container"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-hero__image"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/images/components/Molecules/image-hero/hero-g-samtal.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-caption-hero rh-caption-hero--rounded rh-hero__caption"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-caption-hero rh-caption-hero--rounded"</span>&gt;</span>
         Ta steget mot ett nytt yrke
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
@@ -243,8 +243,7 @@
             <pre>{
   <span class="hljs-attr">"imageUrl"</span>: <span class="hljs-string">"/images/components/Molecules/image-hero/hero-g-samtal.jpg"</span>,
   <span class="hljs-attr">"captionData"</span>: {
-    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Ta steget mot ett nytt yrke"</span>,
-    <span class="hljs-attr">"extendClass"</span>: <span class="hljs-string">"rh-hero__caption"</span>
+    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Ta steget mot ett nytt yrke"</span>
   }
 }</pre>
             
@@ -265,6 +264,8 @@
                 
                 <option value="file-13754745cdef07bc7abca471f5e201e4">_image-hero.scss</option>
                 
+                <option value="file-a785fd28545f3a2a8d04a7e78130e23e">image-hero.settings.scss</option>
+                
             </select>
         </div>
 
@@ -283,42 +284,31 @@
 
     <span class="hljs-comment">/* Box-modell/beteende */</span>
     <span class="hljs-attribute">display</span>: block;
-    <span class="hljs-comment">//height: 400px;</span>
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-    <span class="hljs-attribute">max-width</span>: <span class="hljs-number">90.0625em</span>; <span class="hljs-comment">//1441px;</span>
-    <span class="hljs-attribute">min-width</span>: <span class="hljs-number">18em</span>; <span class="hljs-comment">//288px - iPhone 5S (320px - 20em)</span>
+    <span class="hljs-attribute">width</span>: <span class="hljs-variable">$hero--width</span>;
+    <span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$hero--max-width</span>;
+    <span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$hero--min-width</span>;
     <span class="hljs-attribute">overflow</span>: hidden;
 
     @<span class="hljs-keyword">include</span> medium {
         <span class="hljs-comment">/* Box-modell/beteende */</span>
-        <span class="hljs-attribute">max-height</span>: <span class="hljs-number">18.75em</span>; <span class="hljs-comment">//300px;</span>
+        <span class="hljs-attribute">max-height</span>: <span class="hljs-variable">$hero--medium--max-height</span>;
     }
 
     @<span class="hljs-keyword">include</span> large {
         <span class="hljs-comment">/* Box-modell/beteende */</span>
-        <span class="hljs-attribute">max-height</span>: <span class="hljs-number">26.25em</span>; <span class="hljs-comment">//420px;</span>
+        <span class="hljs-attribute">max-height</span>: <span class="hljs-variable">$hero--large--max-height</span>;
     }
 
     &amp;__image-container {
-        <span class="hljs-attribute">max-height</span>: <span class="hljs-number">25em</span>; <span class="hljs-comment">//400px</span>
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+        <span class="hljs-attribute">max-height</span>: <span class="hljs-variable">$hero__image-container--max-height</span>;
+        <span class="hljs-attribute">width</span>: <span class="hljs-variable">$hero__image-container--width</span>;
     }
 
     &amp;__image {
         <span class="hljs-comment">/* Box-modell/beteende */</span>
         <span class="hljs-comment">//height: 100%;</span>
         <span class="hljs-attribute">display</span>: block;
-
-        @<span class="hljs-keyword">include</span> medium {
-            <span class="hljs-comment">/* Box-modell/beteende */</span>
-            <span class="hljs-comment">//height: auto;</span>
-            <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-        }
-    }
-
-    &amp;__caption {
-        <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f0f0f0</span>;
-        <span class="hljs-attribute">color</span>: <span class="hljs-number">#000000</span>;
+        <span class="hljs-attribute">width</span>: <span class="hljs-variable">$hero__image--width</span>;
     }
 }
 </pre>
@@ -337,7 +327,52 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">867 Bytes</span>
+                    <span class="Meta-value">717 Bytes</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-a785fd28545f3a2a8d04a7e78130e23e" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-SCSS FileBrowser-code">
+                                <pre><span class="hljs-comment">/* Box-modell/beteende */</span>
+<span class="hljs-variable">$hero--width</span>: <span class="hljs-number">100%</span>;
+<span class="hljs-variable">$hero--max-width</span>: <span class="hljs-number">90.0625em</span>; <span class="hljs-comment">//1441px;</span>
+<span class="hljs-variable">$hero--min-width</span>: <span class="hljs-number">18em</span>; <span class="hljs-comment">//288px - iPhone 5S (320px - 20em)</span>
+
+<span class="hljs-comment">// Medium</span>
+<span class="hljs-variable">$hero--medium--max-height</span>: <span class="hljs-number">18.75em</span>; <span class="hljs-comment">//300px;</span>
+
+<span class="hljs-comment">// Large</span>
+<span class="hljs-variable">$hero--large--max-height</span>: <span class="hljs-number">26.25em</span>; <span class="hljs-comment">//420px;</span>
+
+<span class="hljs-comment">// hero__image-container</span>
+<span class="hljs-variable">$hero__image-container--max-height</span>: <span class="hljs-number">25em</span>; <span class="hljs-comment">//400px</span>
+<span class="hljs-variable">$hero__image-container--width</span>: <span class="hljs-number">100%</span>;
+
+<span class="hljs-comment">// hero__image</span>
+<span class="hljs-variable">$hero__image--width</span>: <span class="hljs-number">100%</span>;</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/image-hero/image-hero.settings.scss"><span>/components/raw/image-hero/image-hero.settings.scss</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">components/Molecules/image-hero/image-hero.settings.scss</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">409 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -1496,7 +1531,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
