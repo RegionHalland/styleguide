@@ -4,7 +4,6 @@
 
     /* Box-modell/beteende */
     display: block;
-    //height: 400px;
     width: 100%;
     max-width: 90.0625em; //1441px;
     min-width: 18em; //288px - iPhone 5S (320px - 20em)
@@ -29,16 +28,6 @@
         /* Box-modell/beteende */
         //height: 100%;
         display: block;
-
-        @include medium {
-            /* Box-modell/beteende */
-            //height: auto;
-            width: 100%;
-        }
-    }
-
-    &__caption {
-        background-color: #f0f0f0;
-        color: #000000;
+        width: 100%;
     }
 }
