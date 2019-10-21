@@ -7,4 +7,18 @@ $article-block__publish-date-icon--font-size: 0.8125em; //13px;
 $article-block__publish-date-icon--margin: .118em .3em 0 0;
 $article-block__publish-date-icon--margin-large: .195em .3em 0 0;
 
-$article-block__title-link--text-color: $base3;
+$article-block__title-link--text-color: $color-primary;
+
+// Focus state settings
+$article-block__title-link--focus--text-decoration: none;
+$article-block__title-link--focus--color: $color-primary;
+$article-block__title-link--focus--outline: none;
+$article-block__title-link--focus--background-color: $grey-lightest;
+$article-block__title-link--focus--padding-top: .3ex;
+$article-block__title-link--focus--padding-bottom: .4ex;
+$article-block__title-link--focus--padding-left: .2ex;
+$article-block__title-link--focus--padding-right: .4ex;
+$article-block__title-link--focus--border-radius: 3px;
+$article-block__title-link--focus--border-top: 1px solid $grey-light;
+$article-block__title-link--focus--border-bottom: 2px solid $color-primary;
+
