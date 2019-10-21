@@ -1,7 +1,7 @@
 {
     "title": "Article block",
-    "status": "review",
-    "version": "1.0.0-201910082300",
+    "status": "ready",
+    "version": "1.0.0",
     "context": {
         "title": "Den ursprungliga Lorem Ipsum-texten från 1500-talet",
         "datetime": "2019-10-07",
