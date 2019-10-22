@@ -1,30 +1,21 @@
 .rh-footer-group {
 
     // Reset global settings for HTML tag
-    p {
-        margin: 0;
+    p { margin: 0; }
+
+    /* Visuellt */
+    @if $footer-group__container--background-color {
+        background-color: $footer-group__container--background-color;
     }
 
     &__item {
-        padding-top: $footer-group__item-container--padding-top;
-        padding-right: $footer-group__item-container--padding-right;
-        padding-bottom: $footer-group__item-container--padding-bottom;
-        padding-left: $footer-group__item-container--padding-left;
-
-        height: $footer-group__item--height;
-
+        /* Typografi */
         @if $footer-group__text--color {
             color: $footer-group__text--color;
         }
 
-        @include medium {
-            padding-top: $footer-group__item-container--padding-medium-top;
-            padding-right: $footer-group__item-container--padding-medium-right;
-            padding-bottom: $footer-group__item-container--padding-medium-bottom;
-            padding-left: $footer-group__item-container--padding-medium-left;
-        }
-
         &-header {
+            /* Box-modell/beteende */
             margin-bottom: $footer-group__header--margin-bottom;
 
             border-bottom-width: $footer-group__header--border-bottom-width;
@@ -35,6 +26,7 @@
             }
 
             &-title {
+                /* Typografi */
                 font-size: $footer-group__header-title--font-size;
                 font-weight: $footer-group__header-title--font-weight;
                 line-height: $footer-group__header-title--line-height;
@@ -47,6 +39,7 @@
 
         &-body {
             p {
+                /* Typografi */
                 font-size: $footer-group__body--font-size;
                 word-break: $footer-group__body--word-break;
 
@@ -64,6 +57,7 @@
             }
 
             &-address {
+                /* Box-modell/beteende */
                 margin: $footer-group__body-address--margin;
 
                 p,
@@ -73,37 +67,12 @@
             }
 
             &-link {
+                /* Typografi */
                 @if $footer-group__link--color {
                     color: $footer-group__link--color;
                 }
             }
         }
     }
-
-    &__container {
-        // Definition
-        $prefix: "rh-footer-group__container";
-        $container-py: $prefix + "-py";
-        $container-px: $prefix + "-px";
-        $container-p: $prefix + "-p";
-
-        // Offset calculation for grid system
-        $container-py-offset-top: $footer-group__container--padding-y - $footer-group__item-container--padding-medium-top;
-        $container-py-offset-bottom: $footer-group__container--padding-y - $footer-group__item-container--padding-medium-bottom;
-
-        $container-px-offset-left: $footer-group__item-container--padding-medium-left;
-        $container-px-offset-right: $footer-group__item-container--padding-medium-right;
-
-        // CSS Generation
-        @include create-container-py($container-py, $footer-group__container--padding-y, $container-py-offset-top, $container-py-offset-bottom){
-            padding-bottom: $footer-group__container--padding-y - $footer-group__item-container--padding-bottom;
-        };
-        @include create-container-px($container-px, $container-px-offset-left, $container-px-offset-right);
-
-        @include create-container-p($container-p, $container-py, $container-px) {
-            @if $footer-group__container--background-color {
-                background-color: $footer-group__container--background-color;
-            }
-        }
-    }
+   
 }

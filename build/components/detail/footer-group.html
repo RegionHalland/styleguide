@@ -211,8 +211,8 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-1c03611785adbbab8954c67fe7625fa4-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-footer-group"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row row-eq-height"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-overflow--hidden"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row row-eq-height row-section-gutters"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col col-12 md-col-4 rh-footer-group__item"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-footer-group__item-header"</span>&gt;</span>
@@ -278,8 +278,8 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-1c03611785adbbab8954c67fe7625fa4-panel-view">
     <code class="Code Code--lang-handlebars">
         <pre><span class="xml"></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">unless</span></span> withContainer}}</span><span class="xml">
-    <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-footer-group"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row row-eq-height"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-overflow--hidden"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row row-eq-height row-section-gutters"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col col-12 md-col-4 rh-footer-group__item"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-footer-group__item-header"</span>&gt;</span>
@@ -345,8 +345,8 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
 </span><span class="hljs-template-variable">{{<span class="hljs-builtin-name">else</span>}}</span><span class="xml">
-    <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-footer-group rh-container--auto rh-footer-group__container-p"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row row-eq-height"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-overflow--hidden rh-container--auto rh-container-p rh-footer-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row row-eq-height row-section-gutters"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col col-12 md-col-6 xl-col-3 rh-footer-group__item"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-footer-group__item-header"</span>&gt;</span>
@@ -442,7 +442,11 @@
     <code class="Code Code--lang-json">
         
             
-            <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
+            <pre>{
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"default"</span>,
+  <span class="hljs-attr">"status"</span>: <span class="hljs-string">"review"</span>,
+  <span class="hljs-attr">"withContainer"</span>: <span class="hljs-literal">null</span>
+}</pre>
             
         
     </code>
@@ -478,30 +482,21 @@
                                 <pre><span class="hljs-selector-class">.rh-footer-group</span> {
 
     <span class="hljs-comment">// Reset global settings for HTML tag</span>
-    <span class="hljs-selector-tag">p</span> {
-        <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-selector-tag">p</span> { <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>; }
+
+    <span class="hljs-comment">/* Visuellt */</span>
+    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$footer-group__container--background-color</span> {
+        <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$footer-group__container--background-color</span>;
     }
 
     &amp;__item {
-        <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$footer-group__item-container--padding-top</span>;
-        <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$footer-group__item-container--padding-right</span>;
-        <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$footer-group__item-container--padding-bottom</span>;
-        <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$footer-group__item-container--padding-left</span>;
-
-        <span class="hljs-attribute">height</span>: <span class="hljs-variable">$footer-group__item--height</span>;
-
+        <span class="hljs-comment">/* Typografi */</span>
         @<span class="hljs-keyword">if</span> <span class="hljs-variable">$footer-group__text--color</span> {
             <span class="hljs-attribute">color</span>: <span class="hljs-variable">$footer-group__text--color</span>;
         }
 
-        @<span class="hljs-keyword">include</span> medium {
-            <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$footer-group__item-container--padding-medium-top</span>;
-            <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$footer-group__item-container--padding-medium-right</span>;
-            <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$footer-group__item-container--padding-medium-bottom</span>;
-            <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$footer-group__item-container--padding-medium-left</span>;
-        }
-
         &amp;-<span class="hljs-selector-tag">header</span> {
+            <span class="hljs-comment">/* Box-modell/beteende */</span>
             <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$footer-group__header--margin-bottom</span>;
 
             <span class="hljs-attribute">border-bottom-width</span>: <span class="hljs-variable">$footer-group__header--border-bottom-width</span>;
@@ -512,6 +507,7 @@
             }
 
             &amp;-<span class="hljs-selector-tag">title</span> {
+                <span class="hljs-comment">/* Typografi */</span>
                 <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$footer-group__header-title--font-size</span>;
                 <span class="hljs-attribute">font-weight</span>: <span class="hljs-variable">$footer-group__header-title--font-weight</span>;
                 <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$footer-group__header-title--line-height</span>;
@@ -524,6 +520,7 @@
 
         &amp;-<span class="hljs-selector-tag">body</span> {
             <span class="hljs-selector-tag">p</span> {
+                <span class="hljs-comment">/* Typografi */</span>
                 <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$footer-group__body--font-size</span>;
                 <span class="hljs-attribute">word-break</span>: <span class="hljs-variable">$footer-group__body--word-break</span>;
 
@@ -541,6 +538,7 @@
             }
 
             &amp;-<span class="hljs-selector-tag">address</span> {
+                <span class="hljs-comment">/* Box-modell/beteende */</span>
                 <span class="hljs-attribute">margin</span>: <span class="hljs-variable">$footer-group__body-address--margin</span>;
 
                 <span class="hljs-selector-tag">p</span>,
@@ -550,39 +548,14 @@
             }
 
             &amp;-<span class="hljs-selector-tag">link</span> {
+                <span class="hljs-comment">/* Typografi */</span>
                 @<span class="hljs-keyword">if</span> <span class="hljs-variable">$footer-group__link--color</span> {
                     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$footer-group__link--color</span>;
                 }
             }
         }
     }
-
-    &amp;__container {
-        <span class="hljs-comment">// Definition</span>
-        <span class="hljs-variable">$prefix</span>: <span class="hljs-string">"rh-footer-group__container"</span>;
-        <span class="hljs-variable">$container-py</span>: <span class="hljs-variable">$prefix</span> + <span class="hljs-string">"-py"</span>;
-        <span class="hljs-variable">$container-px</span>: <span class="hljs-variable">$prefix</span> + <span class="hljs-string">"-px"</span>;
-        <span class="hljs-variable">$container-p</span>: <span class="hljs-variable">$prefix</span> + <span class="hljs-string">"-p"</span>;
-
-        <span class="hljs-comment">// Offset calculation for grid system</span>
-        <span class="hljs-variable">$container-py-offset-top</span>: <span class="hljs-variable">$footer-group__container--padding-y</span> - <span class="hljs-variable">$footer-group__item-container--padding-medium-top</span>;
-        <span class="hljs-variable">$container-py-offset-bottom</span>: <span class="hljs-variable">$footer-group__container--padding-y</span> - <span class="hljs-variable">$footer-group__item-container--padding-medium-bottom</span>;
-
-        <span class="hljs-variable">$container-px-offset-left</span>: <span class="hljs-variable">$footer-group__item-container--padding-medium-left</span>;
-        <span class="hljs-variable">$container-px-offset-right</span>: <span class="hljs-variable">$footer-group__item-container--padding-medium-right</span>;
-
-        <span class="hljs-comment">// CSS Generation</span>
-        @<span class="hljs-keyword">include</span> create-container-py(<span class="hljs-variable">$container-py</span>, <span class="hljs-variable">$footer-group__container--padding-y</span>, <span class="hljs-variable">$container-py-offset-top</span>, <span class="hljs-variable">$container-py-offset-bottom</span>){
-            <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$footer-group__container--padding-y</span> - <span class="hljs-variable">$footer-group__item-container--padding-bottom</span>;
-        };
-        @<span class="hljs-keyword">include</span> create-container-px(<span class="hljs-variable">$container-px</span>, <span class="hljs-variable">$container-px-offset-left</span>, <span class="hljs-variable">$container-px-offset-right</span>);
-
-        @<span class="hljs-keyword">include</span> create-container-p(<span class="hljs-variable">$container-p</span>, <span class="hljs-variable">$container-py</span>, <span class="hljs-variable">$container-px</span>) {
-            @<span class="hljs-keyword">if</span> <span class="hljs-variable">$footer-group__container--background-color</span> {
-                <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$footer-group__container--background-color</span>;
-            }
-        }
-    }
+   
 }</pre>
                             </code>
                             
@@ -599,7 +572,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">3.9 KB</span>
+                    <span class="Meta-value">2.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -613,9 +586,11 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
                                 <pre><span class="hljs-comment">/* Organism - Footer group */</span>
+<span class="hljs-comment">// Base settings</span>
 <span class="hljs-variable">$footer-group__container--background-color</span>: <span class="hljs-variable">$base3-light</span>; <span class="hljs-comment">//Can use "false"</span>
 <span class="hljs-variable">$footer-group-main-color</span>: false; <span class="hljs-comment">//Can use "false"</span>
 
+<span class="hljs-comment">// Other settings</span>
 <span class="hljs-variable">$footer-group__text--color</span>: <span class="hljs-variable">$footer-group-main-color</span>;<span class="hljs-comment">//Can use "false"</span>
 <span class="hljs-variable">$footer-group__text--line-height</span>: <span class="hljs-number">1.6</span>;
 
@@ -636,20 +611,7 @@
 <span class="hljs-variable">$footer-group__body--font-size-large</span>: <span class="hljs-number">1em</span>; <span class="hljs-comment">//16px</span>
 <span class="hljs-variable">$footer-group__body--word-break</span>: break-word;
 <span class="hljs-variable">$footer-group__body-address--margin</span>: .<span class="hljs-number">8em</span> <span class="hljs-number">0</span>;
-
-<span class="hljs-variable">$footer-group__container--padding-y</span>: <span class="hljs-number">2.5em</span>; <span class="hljs-comment">//40px</span>
-
-<span class="hljs-variable">$footer-group__item-container--padding-top</span>: <span class="hljs-number">0</span>;
-<span class="hljs-variable">$footer-group__item-container--padding-right</span>: <span class="hljs-number">0</span>;
-<span class="hljs-variable">$footer-group__item-container--padding-bottom</span>: <span class="hljs-number">2.5em</span>; <span class="hljs-comment">//40px</span>
-<span class="hljs-variable">$footer-group__item-container--padding-left</span>: <span class="hljs-number">0</span>;
-
-<span class="hljs-variable">$footer-group__item-container--padding-medium-top</span>: <span class="hljs-number">1.5em</span>;
-<span class="hljs-variable">$footer-group__item-container--padding-medium-right</span>: <span class="hljs-number">1.5em</span>;
-<span class="hljs-variable">$footer-group__item-container--padding-medium-bottom</span>: <span class="hljs-number">1.5em</span>;
-<span class="hljs-variable">$footer-group__item-container--padding-medium-left</span>: <span class="hljs-number">1.5em</span>;
-
-<span class="hljs-variable">$footer-group__item--height</span>: <span class="hljs-number">100%</span>;</pre>
+</pre>
                             </code>
                             
                         </div>
@@ -665,7 +627,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.5 KB</span>
+                    <span class="Meta-value">1 KB</span>
                 </li>
             </ul>
         </div>
@@ -695,8 +657,8 @@
                     <span>Default</span>
                 </a>, 
             
-                <a href="footer-group--built-in-container.html">
-                    <span>Built In Container</span>
+                <a href="footer-group--with-container.html">
+                    <span>With Container</span>
                 </a>
             
             </span>
@@ -732,7 +694,24 @@
     <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-1c03611785adbbab8954c67fe7625fa4-panel-notes">
     <div class="Prose Prose--condensed">
         
-        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        <h1 id="footer-group">Footer group</h1>
+<ul>
+<li>Komponents prefix: <code>rh-footer-group*</code></li>
+<li>Filplats: <code>/components/Organism/footer-group</code></li>
+</ul>
+<h2 id="-ndringslogg">Ändringslogg</h2>
+<h3 id="1-0-0-201910221700-2019-10-22-">1.0.0-201910221700 (2019-10-22)</h3>
+<ul>
+<li>Förbättringen är baserad på Stilguides version 7.2.0 och kommer finnas i nästa version &gt; 7.2.0</li>
+<li>Användning av generella klasser i global:<ul>
+<li>row-eq-height</li>
+<li>row-section-gutters</li>
+<li>rh-container-p</li>
+<li>rh-container–auto</li>
+</ul>
+</li>
+</ul>
+
         
     </div>
 </div>
@@ -1953,6 +1932,70 @@
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-menu">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Menu</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="menu--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="menu--6-levels.html" data-pjax>
+                <span>6 Levels</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="menu-mobile.html" data-pjax>
@@ -2012,7 +2055,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2438,8 +2481,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="block-group--built-in-container.html" data-pjax>
-                <span>Built In Container</span>
+            <a class="Tree-entityLink" href="block-group--with-container.html" data-pjax>
+                <span>With Container</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2502,8 +2545,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="footer-group--built-in-container.html" data-pjax>
-                <span>Built In Container</span>
+            <a class="Tree-entityLink" href="footer-group--with-container.html" data-pjax>
+                <span>With Container</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2630,8 +2673,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="navigation-block-group--built-in-container.html" data-pjax>
-                <span>Built In Container</span>
+            <a class="Tree-entityLink" href="navigation-block-group--with-container.html" data-pjax>
+                <span>With Container</span>
                 
 
 <div class="Status Status--unlabelled">

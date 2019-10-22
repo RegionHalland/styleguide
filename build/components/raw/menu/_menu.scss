@@ -1,0 +1,284 @@
+/* Menu */
+/* It's needed for the menu
+body { overflow-x: hidden; } */
+
+.rh-menu {
+
+    &__button {
+        &-close {
+            /* Box-modell/beteende */
+            margin-left: auto;
+
+            /* Visuellt */
+            @if $menu-button-close--border {
+                border: $menu-button-close--border;
+            }
+
+            @if $menu-button-close--background-color {
+                background-color: $menu-button-close--background-color;
+            }
+
+            /* Typografi */
+            @if $menu-button-close--color {
+                color: $menu-button-close--color;
+            }
+
+            /* Blandat/övrigt */
+            cursor: pointer;
+
+            @if $menu-button-close--hover-active {
+
+                &:hover,
+                &:active {
+
+                    /* Visuellt */
+                    @if $menu-button-close--border-hover-active {
+                        border: $menu-button-close--border-hover-active;
+                    }
+
+                    @if $menu-button-close--background-color-hover-active {
+                        background-color: $menu-button-close--background-color-hover-active;
+                    }
+
+                    /* Typografi */
+                    @if $menu-button-close--color-hover-active {
+                        color: $menu-button-close--color-hover-active;
+                    }
+                }
+            }
+        }
+    }
+
+    &__top-bar {
+        /* Positionering */
+        top: 0;
+
+        /* Box-modell/beteende */
+        display: flex;
+        align-items: center;
+        height: $menu-top-bar__height;
+        padding-right: 0.71875em; //11.5px
+        background-color: $menu-top-bar--background-color;
+
+        /* Visuellt */
+        box-shadow: $menu-top-bar--box-shadow;
+    }
+
+    &__body {
+        /* Positionering */
+        z-index: $menu-body--z-index;
+        top: 0;
+        right: $menu-body--max-width * -1;
+
+        /* Box-modell/beteende */
+        height: 100vh;
+        width: 100%;
+        min-width: $menu-body--min-width;
+        max-width: $menu-body--max-width;
+
+        background-color: #ffffff;
+
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+
+        scroll-behavior: smooth; // Useful on mobile
+
+        // iOS
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+
+        &--show {
+            right: 0;
+        }
+    }
+
+    &__overlay {
+        /* Positionering */
+        z-index: $menu-overlay--z-index;
+        position: fixed;
+
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        /* Box-modell/beteende */
+        height: 100%;
+        width: 100%;
+
+        background-color: $menu-overlay--background-color;
+    }
+
+    &__link {
+        /* Typografi */
+        color: $menu-item-link--color;
+        line-height: $menu-item-link--line-height;
+
+        &-level-1 {
+            font-size: $menu-item-link__level-1--font-size;
+            font-weight: $menu-item-link__level-1--font-weight;
+            color: $menu-item-link__level-1--color;
+        }
+
+        &--active {
+            font-weight: $menu-item-link--font-weight-active;
+        }
+    }
+
+    &__item {
+        /* Box-modell/beteende */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-top: .9em;
+        padding-right: 1em;
+        padding-bottom: .9em;
+
+        min-height: $menu-item--min-height;
+
+        border-bottom: $menu-item--border-bottom; //#9CB8C8;
+
+        &-button {
+            /* Box-modell/beteende */
+            border-color: $menu-color-main;
+
+            /* Blandat/övrigt */
+            cursor: pointer;
+
+            &-parent {
+                /* Visuellt */
+                background-color: $menu-item-button-parent--background-color;
+
+                /* Typografi */
+                color: $menu-item-button-parent--color;
+
+                @if $menu-item-button-parent-hover-active {
+
+                    &:active,
+                    &:hover {
+                        @if $menu-item-button-parent--background-color-hover-active {
+                            background-color: $menu-item-button-parent--background-color-hover-active;
+                        }
+
+                        @if $menu-item-button-parent--color-hover-active {
+                            color: $menu-item-button-parent--color-hover-active;
+                        }
+                    }
+                }
+            }
+
+            &-sub-item {
+                /* Visuellt */
+                background-color: $menu-sub-item-button--background-color;
+                border: $menu-sub-item-button--border;
+
+                /* Typografi */
+                color: $menu-sub-item-button--color;
+
+                @if $menu-sub-item-button-hover-active {
+
+                    &:active,
+                    &:hover {
+
+                        /* Visuellt */
+                        @if $menu-sub-item-button--border-hover-active {
+                            border: $menu-sub-item-button--border-hover-active;
+                        }
+
+                        @if $menu-sub-item-button--background-color-hover-active {
+                            background-color: $menu-sub-item-button--background-color-hover-active;
+                        }
+
+                        /* Typografi */
+                        @if $menu-sub-item-button--color-hover-active {
+                            color: $menu-sub-item-button--color-hover-active;
+                        }
+                    }
+                }
+
+                &--active {
+                    /* Visuellt */
+                    border: $menu-sub-item-button-active--border;
+                    background-color: $menu-sub-item-button-active--background-color;
+
+                    /* Typografi */
+                    color: $menu-sub-item-button-active--color;
+
+                    @if $menu-sub-item-button-active-hover-active {
+
+                        &:active,
+                        &:hover {
+                            /* Visuellt */
+                            @if $menu-sub-item-button-active--border-hover-active {
+                                border: $menu-sub-item-button-active--border-hover-active;
+                            }
+
+                            @if $menu-sub-item-button-active--background-color-hover-active {
+                                background-color: $menu-sub-item-button-active--background-color-hover-active;
+                            }
+
+                            /* Typografi */
+                            @if $menu-sub-item-button-active--color-hover-active {
+                                color: $menu-sub-item-button-active--color-hover-active;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &-level-1 {
+            /* Box-modell/beteende */
+            padding-left: 1em;
+
+            /* Visuellt */
+            background-color: $menu-item__level-1--background-color;
+
+            /* Typografi */
+            color: $menu-item__level-1--color;
+        }
+
+        &-sub-container {
+            /* Box-modell/beteende */
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.25s ease-out;
+            -webkit-transition: max-height 0.25s ease-out;
+
+            /* Visuellt */
+            &-style-1 {
+                background-color: $menu-color__sub-style-1--background-color;
+            }
+
+            &-style-2 {
+                background-color: $menu-color__sub-style-2--background-color;
+            }
+
+            &-style-3 {
+                background-color: $menu-color__sub-style-3--background-color;
+            }
+
+            &--open {
+                max-height: 800vh; //It's only a trick for sub container's expansion
+            }
+        }
+    }
+
+    &__offset {
+        &-top {
+            background-color: $menu-color-main;
+        }
+
+        &-bottom {
+            /* Box-modell/beteende */
+            height: $menu-body__offset-bottom;
+
+            /* Visuellt */
+            background-color: $menu-color-main;
+        }
+    }
+}

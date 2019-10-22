@@ -1,7 +1,9 @@
 /* Organism - Footer group */
+// Base settings
 $footer-group__container--background-color: $base3-light; //Can use "false"
 $footer-group-main-color: false; //Can use "false"
 
+// Other settings
 $footer-group__text--color: $footer-group-main-color;//Can use "false"
 $footer-group__text--line-height: 1.6;
 
@@ -22,17 +24,3 @@ $footer-group__body--font-size: 0.875em; //14px
 $footer-group__body--font-size-large: 1em; //16px
 $footer-group__body--word-break: break-word;
 $footer-group__body-address--margin: .8em 0;
-
-$footer-group__container--padding-y: 2.5em; //40px
-
-$footer-group__item-container--padding-top: 0;
-$footer-group__item-container--padding-right: 0;
-$footer-group__item-container--padding-bottom: 2.5em; //40px
-$footer-group__item-container--padding-left: 0;
-
-$footer-group__item-container--padding-medium-top: 1.5em;
-$footer-group__item-container--padding-medium-right: 1.5em;
-$footer-group__item-container--padding-medium-bottom: 1.5em;
-$footer-group__item-container--padding-medium-left: 1.5em;
-
-$footer-group__item--height: 100%;
