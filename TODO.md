@@ -31,10 +31,10 @@ _OBS! Det kommer __inte__ bli någon brytning._
 * col-item-eq-height
 
 |Grupp|Namn|Användning av|Status|
-|---|---|---|---|
-|__Organism__|block-group|`row-gutters`|-|
-||footer-group|`row-section-gutters`|-|
-||navigation-block-group|`row-gutters`|-|
+|---|---|---|:---:|
+|__Organism__|block-group|`row-gutters`|✓|
+||footer-group|`row-section-gutters`|✓|
+||navigation-block-group|`row-gutters`|✓|
 
 ## Liknande komponenter
 Komponenterna har liknande beteende och behövs ordning.
