@@ -41,6 +41,13 @@
 
         &-link {
             color: $navigation-left__item-link--color;
+
+            &:focus {
+                color: $color-primary;
+                text-decoration: $navigation-left__item-link--focus--text-decoration;
+                font-weight: $navigation-left__item-link--focus--font-weight;
+                outline: $navigation-left__item-link--focus--outline;
+            }
         }
     }
 }
