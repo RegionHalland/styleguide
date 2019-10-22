@@ -41,7 +41,7 @@
     },
     "variants": [
         {
-            "name": "Built-in container",
+            "name": "With container",
             "status": "review",
             "context": {
                 "withContainer": true,

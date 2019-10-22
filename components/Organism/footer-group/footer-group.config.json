@@ -1,18 +1,15 @@
 {
     "title": "Footer group",
     "status": "review",
-    "version": "1.0.0",
-    "context": {},
+    "version": "1.0.0-201910221700",
+    "context": {
+        "name": "default",
+        "status": "review",
+        "withContainer": false
+    },
     "variants": [
         {
-            "name": "default",
-            "status": "review",
-            "context": {
-                "withContainer": false
-            }
-        },
-        {
-            "name": "Built-in container",
+            "name": "With container",
             "status": "review",
             "context": {
                 "withContainer": true
