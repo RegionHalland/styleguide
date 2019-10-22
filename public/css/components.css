@@ -4375,23 +4375,16 @@ body { overflow-x: hidden; } */
     /* Box-modell/beteende */
     display: flex;
     align-items: flex-start; }
-    .rh-navigation-block__header-round-button {
-      /* Box-modell/beteende */
-      height: 1.875em;
-      min-height: 1.875em;
-      width: 1.875em;
-      min-width: 1.875em;
-      padding: 0.4em;
-      /* Typografi */
-      font-size: 1em; }
-      .rh-navigation-block__header-round-button:hover, .rh-navigation-block__header-round-button:active {
-        /* Visuellt */
-        /* Typografi */ }
-      .rh-navigation-block__header-round-button-icon:after {
-        content: ""; }
+    .rh-navigation-block__header-icon-button {
+      background-color: #378A30;
+      color: #ffffff;
+      /* Blandat/övrigt */ }
+      .rh-navigation-block__header-icon-button:hover, .rh-navigation-block__header-icon-button:active {
+        background-color: #378A30;
+        color: #ffffff; }
     .rh-navigation-block__header-title {
       /* Box-modell/beteende */
-      margin: 0.15em 0 0 0.8em; }
+      margin: 0.18em 0 0 0.8em; }
       @media (min-width: 62em) {
         .rh-navigation-block__header-title {
           margin: 0.05em 0 0 0.7778em; } }
