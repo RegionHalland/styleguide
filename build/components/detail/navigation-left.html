@@ -125,7 +125,7 @@
 
 <div class="Status Status--tag">
 
-<label class="Status-label" style="background-color: #4b7070; border-color: #4b7070;">Under granskning</label>
+<label class="Status-label" style="background-color: green; border-color: green;">Klar</label>
 
 </div>
 
@@ -352,6 +352,13 @@
 
         &amp;-<span class="hljs-selector-tag">link</span> {
             <span class="hljs-attribute">color</span>: <span class="hljs-variable">$navigation-left__item-link--color</span>;
+
+            &amp;:focus {
+                <span class="hljs-attribute">color</span>: <span class="hljs-variable">$color-primary</span>;
+                <span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$navigation-left__item-link--focus--text-decoration</span>;
+                <span class="hljs-attribute">font-weight</span>: <span class="hljs-variable">$navigation-left__item-link--focus--font-weight</span>;
+                <span class="hljs-attribute">outline</span>: <span class="hljs-variable">$navigation-left__item-link--focus--outline</span>;
+            }
         }
     }
 }</pre>
@@ -370,7 +377,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.4 KB</span>
+                    <span class="Meta-value">1.7 KB</span>
                 </li>
             </ul>
         </div>
@@ -403,7 +410,12 @@
 <span class="hljs-variable">$navigation-left__item-box--display</span>: flex;
 <span class="hljs-variable">$navigation-left__item-box--padding</span>: <span class="hljs-number">1.157em</span> <span class="hljs-number">0.8125em</span>;
 <span class="hljs-variable">$navigation-left__item-text--line-height</span>: <span class="hljs-number">1.4375em</span>;
-<span class="hljs-variable">$navigation-left__item-link--color</span>: <span class="hljs-number">#000000</span>;</pre>
+<span class="hljs-variable">$navigation-left__item-link--color</span>: <span class="hljs-number">#000000</span>;
+
+<span class="hljs-comment">// Focus state</span>
+<span class="hljs-variable">$navigation-left__item-link--focus--text-decoration</span>: underline;
+<span class="hljs-variable">$navigation-left__item-link--focus--font-weight</span>: bold;
+<span class="hljs-variable">$navigation-left__item-link--focus--outline</span>: none;</pre>
                             </code>
                             
                         </div>
@@ -419,7 +431,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">944 Bytes</span>
+                    <span class="Meta-value">1.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -471,7 +483,14 @@
     <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-0a1b77c2f0163d9e97011435719199c3-panel-notes">
     <div class="Prose Prose--condensed">
         
-        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        <h1 id="navigation-left">Navigation left</h1>
+<p>Tänkt att fungera som en vanlig vänstermeny. Placera i en container för att begränsa bredden.</p>
+<h2 id="versionshistorik">Versionshistorik</h2>
+<ul>
+<li>1.1.0 - Focus state introducerad</li>
+<li>1.0.0 - Första versionen</li>
+</ul>
+
         
     </div>
 </div>
@@ -1231,7 +1250,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -1799,7 +1818,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>

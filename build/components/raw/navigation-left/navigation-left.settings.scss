@@ -19,3 +19,8 @@ $navigation-left__item-box--display: flex;
 $navigation-left__item-box--padding: 1.157em 0.8125em;
 $navigation-left__item-text--line-height: 1.4375em;
 $navigation-left__item-link--color: #000000;
+
+// Focus state
+$navigation-left__item-link--focus--text-decoration: underline;
+$navigation-left__item-link--focus--font-weight: bold;
+$navigation-left__item-link--focus--outline: none;
