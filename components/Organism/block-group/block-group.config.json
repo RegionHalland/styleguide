@@ -1,43 +1,45 @@
 {
     "title": "Block group",
     "status": "review",
-    "version": "1.0.0",
-    "context": {},
-    "variants": [
-        {
-            "name": "default",
-            "status": "review",
-            "context": {
-                "withContainer": false,
-                "blocks": [
-                    {
-                        "itemData": {
-                            "title": "Utveckling och tillväxt"
-                        }
-                    },
-                    {
-                        "itemData": {
-                            "title": "Utveckling och tillväxt"
-                        }
-                    },
-                    {
-                        "itemData": {
-                            "title": "Utveckling och tillväxt"
-                        }
-                    },
-                    {
-                        "itemData": {
-                            "title": "Utveckling och tillväxt"
-                        }
-                    },
-                    {
-                        "itemData": {
-                            "title": "Utveckling och tillväxt"
-                        }
-                    }
-                ]
+    "version": "1.0.0-201910221700",
+    "context": {
+        "name": "default",
+        "status": "review",
+        "withContainer": false,
+        "blocks": [
+            {
+                "itemData": {
+                    "title": "Kulturområden",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id diam in erat egestas vehicula eu accumsan ligula."
+                }
+            },
+            {
+                "itemData": {
+                    "title": "Regionalt kulturstöd",
+                    "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae."
+                }
+            },
+            {
+                "itemData": {
+                    "title": "Kulturutveckling och samverkan",
+                    "description": "Aldu integer id metus pellentesque, suscipit mauris vel, placerat purus. Vestibulum diam elit."
+                }
+            },
+            {
+                "itemData": {
+                    "title": "Kultur för barn och unga",
+                    "description": "Mauris id consectetur lorem. Cras volutpat massa leo. Sed a enim ultricies, dapibus ex nec."
+                }
+            },
+            {
+                "itemData": {
+                    "title": "Kulturarrangemang",
+                    "description": "Mauris id consectetur lorem. Cras volutpat massa leo. Sed a enim ultricies."
+                }
             }
-        },
+        ]
+    },
+    "variants": [
         {
             "name": "Built-in container",
             "status": "review",

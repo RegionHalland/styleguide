@@ -279,9 +279,13 @@
 .rh {
     &-container {
         $prefix: "rh-container";
-        $container-px: $prefix + "-px";
+        $container-name-px: $prefix + "-px";
+        $container-name-py: $prefix + "-py";
+        $container-name-p: $prefix + "-p";
 
-        @include create-container-px($container-px);
+        @include create-container-px($container-name-px);
+        @include create-container-py($container-name-py);
+        @include create-container-p($container-name-p, $container-name-px, $container-name-py);
 
         &--auto {
             width: 100%;
