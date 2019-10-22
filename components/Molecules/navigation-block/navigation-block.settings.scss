@@ -9,15 +9,18 @@ $navigation-block--border-radius: 0.375em; //6px
 $navigation-block--padding: 0.875em; //14px
 $navigation-block--background-color: false; //#417795
 
-$navigation-block__header-round-button--height: 1.875em; //30px
-$navigation-block__header-round-button--width: 1.875em; //30px
-$navigation-block__header-round-button--padding: .4em;
-$navigation-block__header-round-button-icon: "\e829";
-$navigation-block__header-round-button--font-size: 1em;
-$navigation-block__header-round-button--background-color-hover-active: false;
-$navigation-block__header-round-button--color-hover-active: false;
+$navigation-block__header-round-button--border: false;//false
+$navigation-block__header-round-button--background-color: $base3;//false
+$navigation-block__header-round-button--icon-color: #ffffff;//false
 
-$navigation-block__header-title--margin: 0.15em 0 0 0.8em; //15px
+$navigation-block__header-round-button--hover-active: true; //false
+$navigation-block__header-round-button--border-hover-active: false;//false
+$navigation-block__header-round-button--background-color-hover-active: $base3;//false
+$navigation-block__header-round-button--icon-color-hover-active: #ffffff;//false
+
+$navigation-block__header-round-button--cursor: false; //false
+
+$navigation-block__header-title--margin: 0.18em 0 0 0.8em;
 $navigation-block__header-title--margin-large: 0.05em 0 0 0.7778em;
 
 $navigation-block__header-title-link--color: false;

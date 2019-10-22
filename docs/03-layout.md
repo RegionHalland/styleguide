@@ -2,8 +2,10 @@ __INNEHÅLL__
 1. [Breakpoints](#1-breakpoints)
 2. [Containers](#2-containers)
    * [2.1. rh-container-px](#21-rh-container-px)
-   * [2.2. rh-container--auto](#22-rh-container--auto)
-   * [2.3. Annan containers](#23-annan-containers)
+   * [2.2. rh-container-py](#22-rh-container-py)
+   * [2.3. rh-container-p](#23-rh-container-p)
+   * [2.4. rh-container--auto](#24-rh-container--auto)
+   * [2.5. Annan containers](#25-annan-containers)
 3. [Grid](#3-grid)
    * [3.1. Elementer i en rad har lika höjd](#31-elementer-i-en-rad-har-lika-h%c3%b6jd)
    * [3.2. Rännor (gutters)](#32-rännor-gutters)
@@ -25,9 +27,10 @@ __Användning__
 Exempel: `@include medium {...}`
 
 ## 2. Containers
+Filplats: `/components/scss/_utilities.scss`
+
 ### 2.1. `rh-container-px`
-- Filplats: `/components/scss/_utilities.scss`
-- Beskrivning: container har både `padding-left` och `padding-right` för respektive breakpoint.
+Container har både `padding-left` och `padding-right` för respektive breakpoint.
 
 | Breakpoint | padding-x| Pixel |
 |:---:|---:|---:|
@@ -44,13 +47,38 @@ __Användning__
 </div>
 ```
 
-### 2.2. `rh-container--auto`
+### 2.2. `rh-container-py`
+Container har både `padding-top` och `padding-bottom` för __alla__ breakpoints.
+
+| padding-top | padding-bottom| Mått i pixel |
+|---:|---:|---:|
+|1.875em|1.875em|30px|
+
+__Användning__
+```
+<div class="rh-container-py">
+    <!-- Content här -->
+</div>
+```
+
+### 2.3. `rh-container-p`
+Container kombinerar både `rh-container-px` och `rh-container-py` som är ovan.
+
+__Användning__
+```
+<div class="rh-container-p">
+    <!-- Content här -->
+</div>
+```
+
+### 2.4. `rh-container--auto`
 - Filplats: `/components/scss/_utilities.scss`
-- Beskrivning: justera en container i mitten med detaljen är nedan.
+- Det justerar en container i mitten med detaljen är nedan.
 ```
     width: 100%;
     min-width: 20em; //320px
     max-width: 90em; //1440px
+    
     margin-left: auto;
     margin-right: auto;
 ```
@@ -62,12 +90,12 @@ __Användning__
 </div>
 ```
 
-### 2.3. Annan containers
+### 2.5. Annan containers
 |Klassnamn|Beskrivning|
 |---|---|
 |rh-container--center|Justera en container i mitten|
-|rh-container--min-width|Applicera __bara__ `min-width: 20em` _(definieras i global)_|
-|rh-container--max-width|Applicera bara `max-width: 90em` _(definieras i global)_|
+|rh-container--min-width|Applicera __endast__ `min-width: 20em` _(definieras i global)_|
+|rh-container--max-width|Applicera __endast__ `max-width: 90em` _(definieras i global)_|
 
 __Användning__
 ```

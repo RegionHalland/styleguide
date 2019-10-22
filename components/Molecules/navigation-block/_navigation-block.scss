@@ -4,8 +4,11 @@
 */
 
 .rh-navigation-block {
+
     // Reset p tag's settings on global
-    p { margin-bottom: 0; }
+    p {
+        margin-bottom: 0;
+    }
 
     /* Box-modell/beteende */
     min-height: $navigation-block--min-height;
@@ -37,34 +40,39 @@
         display: flex;
         align-items: flex-start;
 
-        &-round-button {
-            /* Box-modell/beteende */
-            height: $navigation-block__header-round-button--height;
-            min-height: $navigation-block__header-round-button--height; // Fix for IE11
-            width: $navigation-block__header-round-button--width;
-            min-width: $navigation-block__header-round-button--width; // Fix for IE11
-            padding: $navigation-block__header-round-button--padding;
-
-            /* Typografi */
-            font-size: $navigation-block__header-round-button--font-size;
-
-            &:hover,
-            &:active {
-
-                /* Visuellt */
-                @if $navigation-block__header-round-button--background-color-hover-active {
-                    background-color: $navigation-block__header-round-button--background-color-hover-active;
-                }
-
-                /* Typografi */
-                @if $navigation-block__header-round-button--color-hover-active {
-                    color: $navigation-block__header-round-button--color-hover-active;
-                }
+        &-icon-button {
+            @if $navigation-block__header-round-button--border {
+                border: $navigation-block__header-round-button--border;
             }
 
-            &-icon {
-                &:after {
-                    content: $navigation-block__header-round-button-icon;
+            @if $navigation-block__header-round-button--background-color {
+                background-color: $navigation-block__header-round-button--background-color;
+            }
+
+            @if $navigation-block__header-round-button--icon-color {
+                color: $navigation-block__header-round-button--icon-color;
+            }
+
+            /* Blandat/övrigt */
+            @if $navigation-block__header-round-button--cursor {
+                cursor: $navigation-block__header-round-button--cursor;
+            }
+
+            @if $navigation-block__header-round-button--hover-active {
+
+                &:hover,
+                &:active {
+                    @if $navigation-block__header-round-button--border-hover-active {
+                        border: $navigation-block__header-round-button--border-hover-active;
+                    }
+        
+                    @if $navigation-block__header-round-button--background-color-hover-active {
+                        background-color: $navigation-block__header-round-button--background-color-hover-active;
+                    }
+        
+                    @if $navigation-block__header-round-button--icon-color-hover-active {
+                        color: $navigation-block__header-round-button--icon-color-hover-active;
+                    }
                 }
             }
         }
@@ -97,6 +105,7 @@
     }
 
     &__description {
+
         /* Box-modell/beteende */
         @if $navigation-block__description--margin {
             margin: $navigation-block__description--margin;

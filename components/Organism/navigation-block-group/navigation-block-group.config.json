@@ -1,83 +1,80 @@
 {
     "title": "Navigation block group",
     "status": "review",
-    "version": "1.0.0",
-    "context": {},
+    "version": "1.0.0-201910221700",
+    "context": {
+        "name": "default",
+        "status": "review",
+        "withContainer": false,
+        "blocks": [
+            {
+                "itemData": {
+                    "title": "Utveckling och tillväxt",
+                    "description": {
+                        "text": "Halland ska hålla i längden. Det betyder att det vi gör i dag ska fungera även för framtida generationer.",
+                        "extendClass": ""
+                    }
+                }
+            },
+            {
+                "itemData": {
+                    "title": "Hälsa och vård",
+                    "description": {
+                        "text": "Vi mår bra, tack! Vården i Halland håller mycket hög kvalitet. Så ska det vara även i fortsättningen, därför forskar vi i Halland.",
+                        "extendClass": ""
+                    }
+                }
+            },
+            {
+                "itemData": {
+                    "title": "Kultur",
+                    "description": {
+                        "text": "Kulturen lockar. Kulturupplevelser, kreativitet och konstnärlig utveckling gör Halland attraktivt.",
+                        "extendClass": ""
+                    }
+                }
+            },
+            {
+                "itemData": {
+                    "title": "Jobb och karriär",
+                    "description": {
+                        "text": "Jobba med oss i regionen. Tillsammans gör vi skillnad för hallänningarna varje dag – året runt.",
+                        "extendClass": ""
+                    }
+                }
+            },
+            {
+                "itemData": {
+                    "title": "Våra skolor",
+                    "description": {
+                        "text": "Utbilda dig! Ett naturbruksgymnasium och två folkhögskolor finns i Region Hallands utbud.",
+                        "extendClass": ""
+                    }
+                }
+            },
+            {
+                "itemData": {
+                    "title": "Demokrati och politik",
+                    "description": {
+                        "text": "Var med och påverka! Du har möjlighet att ta del av och påverka det som händer – även mellan valen.",
+                        "extendClass": ""
+                    }
+                }
+            },
+            {
+                "itemData": {
+                    "title": "Om Region Halland",
+                    "description": {
+                        "text": "Vi är på väg. ”Halland – bästa livsplatsen” är vår vision. Välkommen att följa oss på vägen dit!",
+                        "extendClass": ""
+                    }
+                }
+            }
+        ]
+    },
     "variants": [
         {
-            "name": "default",
-            "status": "review",
-            "context": {
-                "withContainer": false,
-                "blocks": [
-                    {
-                        "itemData": {
-                            "title": "Utveckling och tillväxt",
-                            "description": {
-                                "text": "Halland ska hålla i längden. Det betyder att det vi gör i dag ska fungera även för framtida generationer.",
-                                "extendClass": ""
-                            }
-                        }
-                    },
-                    {
-                        "itemData": {
-                            "title": "Hälsa och vård",
-                            "description": {
-                                "text": "Vi mår bra, tack! Vården i Halland håller mycket hög kvalitet. Så ska det vara även i fortsättningen, därför forskar vi i Halland.",
-                                "extendClass": ""
-                            }
-                        }
-                    },
-                    {
-                        "itemData": {
-                            "title": "Kultur",
-                            "description": {
-                                "text": "Kulturen lockar. Kulturupplevelser, kreativitet och konstnärlig utveckling gör Halland attraktivt.",
-                                "extendClass": ""
-                            }
-                        }
-                    },
-                    {
-                        "itemData": {
-                            "title": "Jobb och karriär",
-                            "description": {
-                                "text": "Jobba med oss i regionen. Tillsammans gör vi skillnad för hallänningarna varje dag – året runt.",
-                                "extendClass": ""
-                            }
-                        }
-                    },
-                    {
-                        "itemData": {
-                            "title": "Våra skolor",
-                            "description": {
-                                "text": "Utbilda dig! Ett naturbruksgymnasium och två folkhögskolor finns i Region Hallands utbud.",
-                                "extendClass": ""
-                            }
-                        }
-                    },
-                    {
-                        "itemData": {
-                            "title": "Demokrati och politik",
-                            "description": {
-                                "text": "Var med och påverka! Du har möjlighet att ta del av och påverka det som händer – även mellan valen.",
-                                "extendClass": ""
-                            }
-                        }
-                    },
-                    {
-                        "itemData": {
-                            "title": "Om Region Halland",
-                            "description": {
-                                "text": "Vi är på väg. ”Halland – bästa livsplatsen” är vår vision. Välkommen att följa oss på vägen dit!",
-                                "extendClass": ""
-                            }
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "name": "Built-in container",
+            "name": "With container",
             "status": "review",
             "context": {
                 "withContainer": true,
