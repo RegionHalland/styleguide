@@ -35,4 +35,19 @@
     &__description {
         @include create-article-item-description;
     }
+
+    &__title-link:focus {
+        text-decoration: $article-block__title-link--focus--text-decoration;
+        color: $article-block__title-link--focus--color;
+        outline: $article-block__title-link--focus--outline;
+        background-color: $article-block__title-link--focus--background-color;
+        padding-top: $article-block__title-link--focus--padding-top;
+        padding-bottom: $article-block__title-link--focus--padding-bottom;
+        padding-left: $article-block__title-link--focus--padding-left;
+        padding-right: $article-block__title-link--focus--padding-right;
+        border-radius: $article-block__title-link--focus--border-radius;
+        border-top: $article-block__title-link--focus--border-top;
+        border-bottom: $article-block__title-link--focus--border-bottom;
+    }
 }
+
