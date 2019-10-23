@@ -44,7 +44,7 @@
     "composer/installers": "^1.4",
     "regionhalland/region-halland-composer-custom-installer": "1.0.0",
     "regionhalland/block": "1.0.0",
-    "regionhalland/circle-button": "1.1.0",
+    "regionhalland/circle-button": "1.1.1",
     "regionhalland/back-to-top": "1.1.0"
   },
   "extra": {
