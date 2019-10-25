@@ -14,13 +14,14 @@ __INNEHÅLL__
    * [3.3. Lösning för IE11s rendering ](#32-lösning-för-ie11s-rendering)
 
 ## 1. Breakpoints
-| Klassnamn | min-width | Pixel | Beskrivning |
+
+| Breakpoint | min-width | Mått i pixel | Beskrivning |
 |:---:|---:|---:|---|
-||0|<576px|xs - Phones - Standardläge|
-|`small`|36em|≥576px|Landscape phones|
-|`medium`|48em|≥768px|Tablets|
-|`large`|62em|≥992px|Desktops|
-|`xlarge`|75em|≥1200px|Large desktops|
+|xs|<36em|<576px|Phones - Standardläge|
+|`small`|≥36em|≥576px|Landscape phones|
+|`medium`|≥48em|≥768px|Tablets|
+|`large`|≥62em|≥992px|Desktops|
+|`xlarge`|≥75em|≥1200px|Large desktops|
 
 __Användning__
 
@@ -32,13 +33,13 @@ Filplats: `/components/scss/_utilities.scss`
 ### 2.1. `rh-container-px`
 Container har både `padding-left` och `padding-right` för respektive breakpoint.
 
-| Breakpoint | padding-x| Pixel |
+| Breakpoint | padding-x| Mått i pixel |
 |:---:|---:|---:|
 |xs|0.7em|11.2px|
-|`small`|1em|16px|
-|`medium`|1.875em|30px|
-|`large`|3.75em|60px|
-|`xlarge`|5em|80px|
+|small|1em|16px|
+|medium|1.875em|30px|
+|large|3.75em|60px|
+|xlarge|5em|80px|
 
 __Användning__
 ```
@@ -50,9 +51,9 @@ __Användning__
 ### 2.2. `rh-container-py`
 Container har både `padding-top` och `padding-bottom` för __alla__ breakpoints.
 
-| padding-top | padding-bottom| Mått i pixel |
+| Breakpoint | padding-y| Mått i pixel |
 |---:|---:|---:|
-|1.875em|1.875em|30px|
+|Allt|1.875em|30px|
 
 __Användning__
 ```
@@ -72,8 +73,8 @@ __Användning__
 ```
 
 ### 2.4. `rh-container--auto`
-- Filplats: `/components/scss/_utilities.scss`
-- Det justerar en container i mitten med detaljen är nedan.
+Det justerar en container i mitten och applicerar begränsningar för bredden. Se detaljen är nedan.
+
 ```
     width: 100%;
     min-width: 20em; //320px
@@ -94,8 +95,8 @@ __Användning__
 |Klassnamn|Beskrivning|
 |---|---|
 |rh-container--center|Justera en container i mitten|
-|rh-container--min-width|Applicera __endast__ `min-width: 20em` _(definieras i global)_|
-|rh-container--max-width|Applicera __endast__ `max-width: 90em` _(definieras i global)_|
+|rh-container--min-width|Applicera __bara__ `min-width: 20em` _(definieras i global)_|
+|rh-container--max-width|Applicera __bara__ `max-width: 90em` _(definieras i global)_|
 
 __Användning__
 ```
@@ -117,7 +118,7 @@ Standard är utan rännor mellan elementer.
 
 ![Grid standard](/images/docs/grid-standard.jpg)
 
-Hudvud struktur:
+Hudvudstruktur:
 ```
 <div class="container">
     <div class="row">
@@ -135,7 +136,7 @@ Hudvud struktur:
     </div>
 </div>
 ```
-__OBS!__ Klassen `container` är bara en förklaring för en grid systems struktur.
+__OBS!__ Klassnamnen används för förklaring om grid systems struktur.
 
 ### 3.1. Elementer i en rad har lika höjd
 - Klassnamn används: 
@@ -148,6 +149,26 @@ __OBS!__ Klassen `container` är bara en förklaring för en grid systems strukt
 |---|---|
 |`row-eq-height`|Det gör alla kolumner i en rad har samma höjden.|
 |`col-item-eq-height`|Det adderar `height: 100%` på `<div>` element som är direkt barn.|
+
+__OBS!__ Var försiktig när man använder `row-eq-height` för en rad som har `flex-direction: column-reverse`. Det kommer blir en konflikt på IE11 men modern webbläsare kommer fungerar bra.
+
+```
+// SCSS kod för .row-eq-height
+.row.row-eq-height {
+    display: flex;
+    flex-wrap: wrap;
+
+    &>[class*='col-'] {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &:before,
+    &:after {
+        display: flex;
+    }
+}
+```
 
 __Användning__
 ```
@@ -240,9 +261,9 @@ __Användning__
 
 | Läge |Rännors bredd i em|Rännors bredd i pixel|
 |:---:|---:|---:|
-|≤ `medium`|0.7em x 2|11.2px x 2 = 22.4px|
-|`large`|0.9375em x 2|15px x 2 = 30px|
-|`xlarge`|1.875em x 2|30px x 2 = 60px|
+|≤ `medium`|0.7em x 2 = 1.4em|11.2px x 2 = 22.4px|
+|`large`|0.9375em x 2 = 1.875em|15px x 2 = 30px|
+|`xlarge`|1.875em x 2 = 3.75em|30px x 2 = 60px|
 
 __Användning__
 ```

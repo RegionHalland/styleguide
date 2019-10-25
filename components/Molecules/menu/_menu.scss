@@ -68,7 +68,7 @@ body { overflow-x: hidden; } */
         /* Positionering */
         z-index: $menu-body--z-index;
         top: 0;
-        right: $menu-body--max-width * -1;
+        right: -$menu-body--max-width;
 
         /* Box-modell/beteende */
         height: 100vh;
@@ -78,8 +78,10 @@ body { overflow-x: hidden; } */
 
         background-color: #ffffff;
 
-        -webkit-transition: all .5s ease-in-out;
         transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
 
         scroll-behavior: smooth; // Useful on mobile
 

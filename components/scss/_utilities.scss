@@ -1,308 +1,316 @@
-// Utilities
+// UTILITIES
+// Position
+.rh-pos {
+	&--static {
+		position: static; // Default value
+	}
+
+	&--relative {
+		position: relative;
+	}
+
+	&--absolute {
+		position: absolute;
+	}
+
+	&--fixed {
+		position: fixed;
+	}
+}
+
+// Display
+.rh-dp {
+	// FROM a specific mode and down
+	&-sm {
+		display: block;
+
+		@include medium {
+			display: none;
+		}
+	}
+
+	&-md {
+		display: block;
+
+		@include large {
+			display: none;
+		}
+	}
+
+	&-lg {
+		display: block;
+
+		@include xlarge {
+			display: none;
+		}
+	}
+
+	// FROM a specific mode and up
+	&-from {
+		// Displays from sm (small) mode and up
+		&-sm {
+			display: none;
+
+			@include small {
+				display: block;
+			}
+		}
+
+		&-md {
+			display: none;
+
+			@include medium {
+				display: block;
+			}
+		}
+
+		&-lg {
+			display: none;
+
+			@include large {
+				display: block;
+			}
+		}
+
+		&-xl {
+			display: none;
+
+			@include xlarge {
+				display: block;
+			}
+		}
+	}
+
+	// Displays ONLY in a specific mode
+	&-only {
+		&-sm {
+			display: none;
+
+			@include small {
+				display: block;
+			}
+			@include medium {
+				display: none;
+			}
+		}
+
+		&-md {
+			display: none;
+
+			@include medium {
+				display: block;
+			}
+			@include large {
+				display: none;
+			}
+		}
+
+		&-lg {
+			display: none;
+
+			@include large {
+				display: block;
+			}
+			@include xlarge {
+				display: none;
+			}
+		}
+	}
+
+	&--show {
+		display: block;
+	}
+
+	&--inline-block {
+		display: inline-block;
+	}
+
+	&--none {
+		display: none;
+	}
+}
+
+// Padding
 .rh {
-    // Position
-    &-pos {
-        &--static {
-            position: static; // Default value
-        }
+	// padding-left - Useful for menu
+	&-pl {
+		&-05 {
+			padding-left: 0.3125em; //5px
+		}
 
-        &--relative {
-            position: relative;
-        }
+		&-1 {
+			padding-left: 0.625em; //10px
+		}
 
-        &--absolute {
-            position: absolute;
-        }
+		&-15 {
+			padding-left: 0.9375em; //15px
+		}
 
-        &--fixed {
-            position: fixed;
-        }
-    }
+		&-2 {
+			padding-left: 1.25em; //20px
+		}
 
-    // Display
-    &-dp {
-        // FROM a specific mode and down
-        &-sm {
-            display: block;
+		&-25 {
+			padding-left: 1.5625em; //25px
+		}
 
-            @include medium {
-                display: none;
-            }
-        }
+		&-3 {
+			padding-left: 1.875em; //30px
+		}
 
-        &-md {
-            display: block;
+		&-35 {
+			padding-left: 2.1875em; //35px
+		}
 
-            @include large {
-                display: none;
-            }
-        }
+		&-4 {
+			padding-left: 2.5em; //40px
+		}
 
-        &-lg {
-            display: block;
+		&-45 {
+			padding-left: 2.8125em; //45px
+		}
 
-            @include xlarge {
-                display: none;
-            }
-        }
+		&-5 {
+			padding-left: 3.125em; //50px
+		}
 
-        // FROM a specific mode and up
-        &-from {
-            // Displays from sm (small) mode and up
-            &-sm {
-                display: none;
+		&-55 {
+			padding-left: 3.4375em; //55px
+		}
 
-                @include small {
-                    display: block;
-                }
-            }
+		&-6 {
+			padding-left: 3.75em; //60px
+		}
 
-            &-md {
-                display: none;
+		&-65 {
+			padding-left: 4.0625em; //65px
+		}
 
-                @include medium {
-                    display: block;
-                }
-            }
+		&-7 {
+			padding-left: 4.375em; //70px
+		}
 
-            &-lg {
-                display: none;
+		&-75 {
+			padding-left: 4.6875em; //75px
+		}
 
-                @include large {
-                    display: block;
-                }
-            }
+		&-8 {
+			padding-left: 5em; //80px
+		}
 
-            &-xl {
-                display: none;
+		&-85 {
+			padding-left: 5.3125em; //85px
+		}
 
-                @include xlarge {
-                    display: block;
-                }
-            }
-        }
+		&-9 {
+			padding-left: 5.625em; //90px
+		}
 
-        // Displays ONLY in a specific mode
-        &-only {
-            &-sm {
-                display: none;
+		&-95 {
+			padding-left: 5.9375em; //95px
+		}
 
-                @include small {
-                    display: block;
-                }
-                @include medium {
-                    display: none;
-                }
-            }
-
-            &-md {
-                display: none;
-
-                @include medium {
-                    display: block;
-                }
-                @include large {
-                    display: none;
-                }
-            }
-
-            &-lg {
-                display: none;
-
-                @include large {
-                    display: block;
-                }
-                @include xlarge {
-                    display: none;
-                }
-            }
-        }
-
-        &--show {
-            display: block;
-        }
-
-        &--inline-block {
-            display: inline-block;
-        }
-
-        &--none {
-            display: none;
-        }
-    }
-
-    // padding-left - Useful for menu
-    &-pl {
-        &-05 {
-            padding-left: 0.3125em; //5px
-        }
-
-        &-1 {
-            padding-left: 0.625em; //10px
-        }
-
-        &-15 {
-            padding-left: 0.9375em; //15px
-        }
-
-        &-2 {
-            padding-left: 1.25em; //20px
-        }
-
-        &-25 {
-            padding-left: 1.5625em; //25px
-        }
-
-        &-3 {
-            padding-left: 1.875em; //30px
-        }
-
-        &-35 {
-            padding-left: 2.1875em; //35px
-        }
-
-        &-4 {
-            padding-left: 2.5em; //40px
-        }
-
-        &-45 {
-            padding-left: 2.8125em; //45px
-        }
-
-        &-5 {
-            padding-left: 3.125em; //50px
-        }
-
-        &-55 {
-            padding-left: 3.4375em; //55px
-        }
-
-        &-6 {
-            padding-left: 3.75em; //60px
-        }
-
-        &-65 {
-            padding-left: 4.0625em; //65px
-        }
-
-        &-7 {
-            padding-left: 4.375em; //70px
-        }
-
-        &-75 {
-            padding-left: 4.6875em; //75px
-        }
-
-        &-8 {
-            padding-left: 5em; //80px
-        }
-
-        &-85 {
-            padding-left: 5.3125em; //85px
-        }
-
-        &-9 {
-            padding-left: 5.625em; //90px
-        }
-
-        &-95 {
-            padding-left: 5.9375em; //95px
-        }
-
-        &-10 {
-            padding-left: 6.25em; //100px
-        }
-    }
-
-    &-noscroll {
-        overflow: hidden;
-        -webkit-overflow-scrolling: auto; // Stops body scrolling for iOS
-        height: 100%;
-    }
-
-    &-overflow {
-        // Default property
-        &--visible {
-            overflow: visible;
-        }
-        
-        &--auto {
-            overflow: auto;
-        }
-
-        &--scroll {
-            overflow: scroll;
-        }
-
-        &--hidden {
-            overflow: hidden;
-        }
-    }
-
-    // Only using for large and xlarge
-    &-section-gutter-lx {
-        &__left-side {
-            @include large {
-                padding-right: 0.9375em; //15px
-            }
-
-            @include xlarge {
-                padding-right: 1.875em; //30px
-            }
-        }
-
-        &__between-side {
-            @include large {
-                padding-left: 0.9375em; //15px
-                padding-right: 0.9375em;
-            }
-
-            @include xlarge {
-                padding-left: 1.875em; //30px
-                padding-right: 1.875em;
-            }
-        }
-
-        &__right-side {
-            @include large {
-                padding-left: 0.9375em; //15px
-            }
-
-            @include xlarge {
-                padding-left: 1.875em; //30px
-            }
-        }
-    }
+		&-10 {
+			padding-left: 6.25em; //100px
+		}
+	}
 }
 
 // Containers
+.rh-container {
+	$prefix: "rh-container";
+	$container-name-px: $prefix + "-px";
+	$container-name-py: $prefix + "-py";
+	$container-name-p: $prefix + "-p";
+
+	@include create-container-px($container-name-px);
+	@include create-container-py($container-name-py);
+	@include create-container-p(
+		$container-name-p,
+		$container-name-px,
+		$container-name-py
+	);
+
+	&--auto {
+		width: 100%;
+
+		@if $page__container--min-width {
+			min-width: $page__container--min-width;
+		}
+
+		@if $page__container--max-width {
+			max-width: $page__container--max-width;
+		}
+
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&--center {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+// Other
 .rh {
-    &-container {
-        $prefix: "rh-container";
-        $container-name-px: $prefix + "-px";
-        $container-name-py: $prefix + "-py";
-        $container-name-p: $prefix + "-p";
+	&-noscroll {
+		overflow: hidden;
+		-webkit-overflow-scrolling: auto; // Stops body scrolling for iOS
+		height: 100%;
+	}
 
-        @include create-container-px($container-name-px);
-        @include create-container-py($container-name-py);
-        @include create-container-p($container-name-p, $container-name-px, $container-name-py);
+	&-overflow {
+		// Default property
+		&--visible {
+			overflow: visible;
+		}
 
-        &--auto {
-            width: 100%;
-            @if $page__container--min-width {
-                min-width: $page__container--min-width;
-            }
-            @if $page__container--max-width {
-                max-width: $page__container--max-width;
-            }
-            
-            margin-left: auto;
-            margin-right: auto;
-        }
+		&--auto {
+			overflow: auto;
+		}
 
-        &--center {
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
+		&--scroll {
+			overflow: scroll;
+		}
+
+		&--hidden {
+			overflow: hidden;
+		}
+	}
+
+	// Only using for large and xlarge mode
+	&-section-gutter-lx {
+		&__left-side {
+			@include large {
+				padding-right: 0.9375em; //15px
+			}
+
+			@include xlarge {
+				padding-right: 1.875em; //30px
+			}
+		}
+
+		&__between-side {
+			@include large {
+				padding-left: 0.9375em; //15px
+				padding-right: 0.9375em;
+			}
+
+			@include xlarge {
+				padding-left: 1.875em; //30px
+				padding-right: 1.875em;
+			}
+		}
+
+		&__right-side {
+			@include large {
+				padding-left: 0.9375em; //15px
+			}
+
+			@include xlarge {
+				padding-left: 1.875em; //30px
+			}
+		}
+	}
 }

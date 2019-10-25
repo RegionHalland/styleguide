@@ -30,7 +30,7 @@ Filplats: `/components/scss/_utilities.scss`
 
 ## 2. Padding left
 * Prefix: `rh-pl*`
-* Tips! Det är användbart för att skapa en meny komponent som har många nivåer.
+* __Tips!__ Det är användbart för att skapa en meny komponent som har många nivåer.
 
 |Fullständigt klassnamn|Mått i em|mått i pixel|
 |---|---:|---:|
