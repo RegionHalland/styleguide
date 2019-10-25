@@ -23,5 +23,14 @@ $contact-info__body-link--font-size: 0.9375em; //15px
 $contact-info__body-link--font-size-large: 1em; //16px
 $contact-info__body-link--color: #004890;
 $contact-info__body-link--line-height: 1.5em;
+$contact-info__body-link--text-decoration: underline;
 
 $contact-info__space-top: 1.6em;
+
+//Focus state
+$contact-info__body-link--focus--background-color: $contact-info__body-link--color;
+$contact-info__body-link--focus--text-decoration: none;
+$contact-info__body-link--focus--border-radius: 5px;
+$contact-info__body-link--focus--padding: .3ex;
+$contact-info__body-link--focus--outline: none;
+$contact-info__body-link--focus--color: $white;
