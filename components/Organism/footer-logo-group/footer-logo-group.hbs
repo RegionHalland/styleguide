@@ -39,23 +39,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="row footer-logo-group__link-container">
-            <ul class="footer-logo-group__link-list">
-                <li class="footer-logo-group__link-item">
-                    <span class="icon-arrow-right footer-logo-group__link-icon"></span>
-                    <a href="#" class="rh-link--navigation footer-logo-group__link">Information om cookies</a>
-                </li>
-                <li class="footer-logo-group__link-item">
-                    <span class="icon-arrow-right footer-logo-group__link-icon"></span>
-                    <a href="#" class="rh-link--navigation footer-logo-group__link">Behandling av personuppgifter</a>
-                </li>
-                <li class="footer-logo-group__link-item">
-                    <span class="icon-arrow-right footer-logo-group__link-icon"></span>
-                    <a href="#" class="rh-link--navigation footer-logo-group__link">Redogörelse för tillgänglighet</a>
-                </li>
-            </ul>
-        </div>
     </div>
 {{else}}
     <script>
@@ -104,6 +87,7 @@
             </div>
         </div>
 
+        {{#if hasLinks}}
         <div class="row footer-logo-group__link-container">
             <ul class="footer-logo-group__link-list">
                 <li class="footer-logo-group__link-item">
@@ -120,5 +104,6 @@
                 </li>
             </ul>
         </div>
+        {{/if}}
     </div>
 {{/unless}}
