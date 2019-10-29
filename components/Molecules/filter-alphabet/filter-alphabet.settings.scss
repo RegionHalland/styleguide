@@ -8,7 +8,7 @@ $filter-alphabet--background-color-active-hover: $base3;
 $filter-alphabet--text-color-active-hover: #ffffff;
 
 $filter-alphabet-link--focus--background-color: $base3-light;
-$filter-alphabet-link--focus--outline: black;
+$filter-alphabet-link--focus--color: black;
 $filter-alphabet-link--focus--outline: none;
 
 //Medium
@@ -22,4 +22,7 @@ $filter-alphabet-link--padding-bottom: em(15);
 $filter-alphabet-link--padding-left: em(10);
 $filter-alphabet-link--padding-right: em(10);
 $filter-alphabet-link--text-decoration: none;
+
+$filter-alphabet-link--inactive--background-color: $white;
+$filter-alphabet-link--inactive--color: $grey-base;
 

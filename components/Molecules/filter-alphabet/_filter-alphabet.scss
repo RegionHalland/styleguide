@@ -49,6 +49,22 @@
             color: $filter-alphabet--text-color-active-hover;
         }
 
+        &--inactive {
+            /* Visuellt */
+            background-color: $filter-alphabet-link--inactive--background-color;
+
+            /* Typografi */
+            color: $filter-alphabet-link--inactive--color;
+
+            &:hover {
+                /* Visuellt */
+                background-color: $filter-alphabet-link--inactive--background-color;
+
+                /* Typografi */
+                color: $filter-alphabet-link--inactive--color;
+            }
+        }
+
         &:focus {
             /* Visuellt */
             background-color: $filter-alphabet-link--focus--background-color;
