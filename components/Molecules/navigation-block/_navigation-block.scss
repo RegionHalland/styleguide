@@ -1,122 +1,144 @@
 /* Needed components
 @import '../../Atoms/link/_link.scss';
-@import '../../Atoms/round-button/_round-button.scss';
+@import '../../Atoms/circle-button/_circle-button.scss';
 */
 
 .rh-navigation-block {
+	// Reset p tag's settings on global
+	p {
+		margin-bottom: 0;
+	}
 
-    // Reset p tag's settings on global
-    p {
-        margin-bottom: 0;
-    }
+	/* Box-modell/beteende */
+	min-height: $navigation-block--min-height;
 
-    /* Box-modell/beteende */
-    min-height: $navigation-block--min-height;
+	@if $navigation-block--width {
+		width: $navigation-block--width;
+	}
 
-    @if $navigation-block--width {
-        width: $navigation-block--width;
-    }
+	@if $navigation-block--min-width {
+		min-width: $navigation-block--min-width;
+	}
 
-    @if $navigation-block--min-width {
-        min-width: $navigation-block--min-width;
-    }
+	@if $navigation-block--max-width {
+		max-width: $navigation-block--max-width;
+	}
 
-    @if $navigation-block--max-width {
-        max-width: $navigation-block--max-width;
-    }
+	@if $navigation-block--background-color {
+		background-color: $navigation-block--background-color;
+	}
 
-    @if $navigation-block--background-color {
-        background-color: $navigation-block--background-color;
-    }
+	padding: $navigation-block--padding;
 
-    padding: $navigation-block--padding;
+	/* Visuellt */
+	border: $navigation-block--border;
+	border-radius: $navigation-block--border-radius;
 
-    /* Visuellt */
-    border: $navigation-block--border;
-    border-radius: $navigation-block--border-radius;
+	&__header {
+		/* Box-modell/beteende */
+		display: flex;
+		align-items: flex-start;
 
-    &__header {
-        /* Box-modell/beteende */
-        display: flex;
-        align-items: flex-start;
+		&-icon-button {
+			@if $navigation-block__header-round-button--border {
+				border: $navigation-block__header-round-button--border;
+			}
 
-        &-icon-button {
-            @if $navigation-block__header-round-button--border {
-                border: $navigation-block__header-round-button--border;
-            }
+			@if $navigation-block__header-round-button--background-color {
+				background-color: $navigation-block__header-round-button--background-color;
+			}
 
-            @if $navigation-block__header-round-button--background-color {
-                background-color: $navigation-block__header-round-button--background-color;
-            }
+			@if $navigation-block__header-round-button--icon-color {
+				color: $navigation-block__header-round-button--icon-color;
+			}
 
-            @if $navigation-block__header-round-button--icon-color {
-                color: $navigation-block__header-round-button--icon-color;
-            }
+			/* Blandat/övrigt */
+			@if $navigation-block__header-round-button--cursor {
+				cursor: $navigation-block__header-round-button--cursor;
+			}
 
-            /* Blandat/övrigt */
-            @if $navigation-block__header-round-button--cursor {
-                cursor: $navigation-block__header-round-button--cursor;
-            }
+			@if $navigation-block__header-round-button--hover-active {
+				&:hover,
+				&:active {
+					@if $navigation-block__header-round-button--border-hover-active {
+						border: $navigation-block__header-round-button--border-hover-active;
+					}
 
-            @if $navigation-block__header-round-button--hover-active {
+					@if $navigation-block__header-round-button--background-color-hover-active
+					{
+						background-color: $navigation-block__header-round-button--background-color-hover-active;
+					}
 
-                &:hover,
-                &:active {
-                    @if $navigation-block__header-round-button--border-hover-active {
-                        border: $navigation-block__header-round-button--border-hover-active;
-                    }
-        
-                    @if $navigation-block__header-round-button--background-color-hover-active {
-                        background-color: $navigation-block__header-round-button--background-color-hover-active;
-                    }
-        
-                    @if $navigation-block__header-round-button--icon-color-hover-active {
-                        color: $navigation-block__header-round-button--icon-color-hover-active;
-                    }
-                }
-            }
-        }
+					@if $navigation-block__header-round-button--icon-color-hover-active {
+						color: $navigation-block__header-round-button--icon-color-hover-active;
+					}
+				}
+			}
+		}
 
-        &-title {
-            /* Box-modell/beteende */
-            margin: $navigation-block__header-title--margin;
+		&-title {
+			/* Box-modell/beteende */
+			margin: $navigation-block__header-title--margin;
 
-            @include large {
-                margin: $navigation-block__header-title--margin-large;
-            }
+			@include large {
+				margin: $navigation-block__header-title--margin-large;
+			}
 
-            &-link {
+			&-link {
+				/* Typografi */
+				@if $navigation-block__header-title-link--color {
+					color: $navigation-block__header-title-link--color;
+				}
 
-                /* Typografi */
-                @if $navigation-block__header-title-link--color {
-                    color: $navigation-block__header-title-link--color;
-                }
+				font-size: $navigation-block__header-title-link--font-size;
+				font-weight: $navigation-block__header-title-link--font-weight;
+				line-height: $navigation-block__header-title-link--line-height;
+				word-break: $navigation-block__header-title-link--word-break;
 
-                font-size: $navigation-block__header-title-link--font-size;
-                font-weight: $navigation-block__header-title-link--font-weight;
-                line-height: $navigation-block__header-title-link--line-height;
-                word-break: $navigation-block__header-title-link--word-break;
+				@include large {
+					font-size: $navigation-block__header-title-link--font-size-large;
+				}
+			}
+		}
+	}
 
-                @include large {
-                    font-size: $navigation-block__header-title-link--font-size-large;
-                }
-            }
-        }
-    }
+	&__description {
+		/* Box-modell/beteende */
+		@if $navigation-block__description--margin {
+			margin: $navigation-block__description--margin;
+		}
 
-    &__description {
+		&-text {
+			/* Typografi */
+			@if $navigation-block__description-text--color {
+				color: $navigation-block__description-text--color;
+			}
+		}
+	}
 
-        /* Box-modell/beteende */
-        @if $navigation-block__description--margin {
-            margin: $navigation-block__description--margin;
-        }
+	// Create the effects :active, :hover, :focus-within by using @mixin
+	&--clickable {
+		@include create-clickable-element-effect(
+            "rh-navigation-block--clickable", //Box classname
+            "rh-navigation-block__header-title-link", //Title link classname
+            "rh-navigation-block__description-text", //Description classname
+            $navigation-block-effect--border, // Box border-top styling
+            $navigation-block-effect--border, // Box border-right styling
+            $navigation-block-effect--border, // Box border-bottom styling
+            $navigation-block-effect--border, // Box border-left styling
+			$navigation-block-effect--box-shadow, // Box shadow styling
+			$navigation-block-effect-focus--box-shadow, // Shadow when focus
+            $navigation-block-effect--title-text-color, // Title text color
+            $navigation-block-effect--title-text-decoration, //Title text decoration
+            $navigation-block-effect--description-text-color, // Description text color
+            $navigation-block-effect--description-text-decoration // Description text decoration
+        );
+	}
 
-        &-text {
-
-            /* Typografi */
-            @if $navigation-block__description-text--color {
-                color: $navigation-block__description-text--color;
-            }
-        }
+	// This code fixs :focus-within behavior on IE11 and older browsers
+	&--focus {
+		/* Box-modell/beteende */
+		border: $navigation-block-effect--border;
+		box-shadow: $navigation-block-effect-focus--box-shadow;
     }
 }
