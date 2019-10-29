@@ -1,4 +1,8 @@
 # Ändringslogg
+* 8.1.5 (2019-10-29)
+    * Förbättring av Organism/footer-logo-group _(logotypernas positioner)_.
+* 8.1.4 (2019-10-28)
+    * Adderat en variant för länkar.
 * 8.1.3 (2019-10-25)
     * Förbättring av dokumentation.
     * Förbättring av bas-kods struktur _(mixin och utilities)_.
