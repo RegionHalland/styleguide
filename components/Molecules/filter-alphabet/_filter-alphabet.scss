@@ -48,5 +48,14 @@
             /* Typografi */
             color: $filter-alphabet--text-color-active-hover;
         }
+
+        &:focus {
+            /* Visuellt */
+            background-color: $filter-alphabet--background-color-focus;
+            outline: none;
+
+            /* Typografi */
+            color: $filter-alphabet--text-color-active-focus;
+        }
     }
 }
