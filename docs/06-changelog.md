@@ -1,9 +1,15 @@
 # Versioner av stilguiden och deras ändringar
 
 ## 8.4.0 
-Molekyl: Article block 1.0.0
-* Flyttat till vMolecules i stilguide - peka om sökvägen vid användning. 
-* Introducerat versionshistorik för komponeten under "Notes"
+
+### Komponenter flyttade till gitrepos och fått nya sökvägar:
+* Article block 1.0.0 - molekyl
+* Caption hero 1.0.0 - atom
+* Image hero 1.0.0 - molekyl 
+
+### Andra ändringar
+* Article block 1.0.0 - Introducerat versionshistorik för komponeten under "Notes"
+
 
 ## 8.3.0
 Molekyl: Navigation left 1.1.0
