@@ -149,40 +149,40 @@
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Klassnamn</th>
+<th style="text-align:center">Breakpoint</th>
 <th style="text-align:right">min-width</th>
-<th style="text-align:right">Pixel</th>
+<th style="text-align:right">Mått i pixel</th>
 <th>Beskrivning</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"></td>
-<td style="text-align:right">0</td>
+<td style="text-align:center">xs</td>
+<td style="text-align:right">&lt;36em</td>
 <td style="text-align:right">&lt;576px</td>
-<td>xs - Phones - Standardläge</td>
+<td>Phones - Standardläge</td>
 </tr>
 <tr>
 <td style="text-align:center"><code>small</code></td>
-<td style="text-align:right">36em</td>
+<td style="text-align:right">≥36em</td>
 <td style="text-align:right">≥576px</td>
 <td>Landscape phones</td>
 </tr>
 <tr>
 <td style="text-align:center"><code>medium</code></td>
-<td style="text-align:right">48em</td>
+<td style="text-align:right">≥48em</td>
 <td style="text-align:right">≥768px</td>
 <td>Tablets</td>
 </tr>
 <tr>
 <td style="text-align:center"><code>large</code></td>
-<td style="text-align:right">62em</td>
+<td style="text-align:right">≥62em</td>
 <td style="text-align:right">≥992px</td>
 <td>Desktops</td>
 </tr>
 <tr>
 <td style="text-align:center"><code>xlarge</code></td>
-<td style="text-align:right">75em</td>
+<td style="text-align:right">≥75em</td>
 <td style="text-align:right">≥1200px</td>
 <td>Large desktops</td>
 </tr>
@@ -199,7 +199,7 @@
 <tr>
 <th style="text-align:center">Breakpoint</th>
 <th style="text-align:right">padding-x</th>
-<th style="text-align:right">Pixel</th>
+<th style="text-align:right">Mått i pixel</th>
 </tr>
 </thead>
 <tbody>
@@ -209,22 +209,22 @@
 <td style="text-align:right">11.2px</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>small</code></td>
+<td style="text-align:center">small</td>
 <td style="text-align:right">1em</td>
 <td style="text-align:right">16px</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>medium</code></td>
+<td style="text-align:center">medium</td>
 <td style="text-align:right">1.875em</td>
 <td style="text-align:right">30px</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>large</code></td>
+<td style="text-align:center">large</td>
 <td style="text-align:right">3.75em</td>
 <td style="text-align:right">60px</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>xlarge</code></td>
+<td style="text-align:center">xlarge</td>
 <td style="text-align:right">5em</td>
 <td style="text-align:right">80px</td>
 </tr>
@@ -238,14 +238,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align:right">padding-top</th>
-<th style="text-align:right">padding-bottom</th>
+<th style="text-align:right">Breakpoint</th>
+<th style="text-align:right">padding-y</th>
 <th style="text-align:right">Mått i pixel</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:right">1.875em</td>
+<td style="text-align:right">Allt</td>
 <td style="text-align:right">1.875em</td>
 <td style="text-align:right">30px</td>
 </tr>
@@ -260,17 +260,13 @@
 <code><pre>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-container-p"</span>&gt;
     <span class="xml"><span class="hljs-comment">&lt;!-- Content här --&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre></code><h3 id="2-4-rh-container-auto">2.4. <code>rh-container--auto</code></h3>
-<ul>
-<li>Filplats: <code>/components/scss/_utilities.scss</code></li>
-<li><p>Det justerar en container i mitten med detaljen är nedan.</p>
-<code><pre>  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-  <span class="hljs-attribute">min-width</span>: <span class="hljs-number">20em</span>; <span class="hljs-comment">//320px</span>
-  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">90em</span>; <span class="hljs-comment">//1440px</span>
+<p>Det justerar en container i mitten och applicerar begränsningar för bredden. Se detaljen är nedan.</p>
+<code><pre>    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">min-width</span>: <span class="hljs-number">20em</span>; <span class="hljs-comment">//320px</span>
+    <span class="hljs-attribute">max-width</span>: <span class="hljs-number">90em</span>; <span class="hljs-comment">//1440px</span>
 
-  <span class="hljs-attribute">margin-left</span>: auto;
-  <span class="hljs-attribute">margin-right</span>: auto;</pre></code></li>
-</ul>
-<p><strong>Användning</strong></p>
+    <span class="hljs-attribute">margin-left</span>: auto;
+    <span class="hljs-attribute">margin-right</span>: auto;</pre></code><p><strong>Användning</strong></p>
 <code><pre>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-container--auto"</span>&gt;
     <span class="xml"><span class="hljs-comment">&lt;!-- Content --&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre></code><h3 id="2-5-annan-containers">2.5. Annan containers</h3>
@@ -288,11 +284,11 @@
 </tr>
 <tr>
 <td>rh-container–min-width</td>
-<td>Applicera <strong>endast</strong> <code>min-width: 20em</code> <em>(definieras i global)</em></td>
+<td>Applicera <strong>bara</strong> <code>min-width: 20em</code> <em>(definieras i global)</em></td>
 </tr>
 <tr>
 <td>rh-container–max-width</td>
-<td>Applicera <strong>endast</strong> <code>max-width: 90em</code> <em>(definieras i global)</em></td>
+<td>Applicera <strong>bara</strong> <code>max-width: 90em</code> <em>(definieras i global)</em></td>
 </tr>
 </tbody>
 </table>
@@ -310,7 +306,7 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre></code><h2 id="3-grid">3. Grid</h2>
 <p>Standard är utan rännor mellan elementer.</p>
 <p><img src="/images/docs/grid-standard.jpg" alt="Grid standard"></p>
-<p>Hudvud struktur:</p>
+<p>Hudvudstruktur:</p>
 <code><pre>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"container"</span>&gt;
     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col"</span>&gt;</span>
@@ -325,7 +321,7 @@
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
-<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre></code><p><strong>OBS!</strong> Klassen <code>container</code> är bara en förklaring för en grid systems struktur.</p>
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre></code><p><strong>OBS!</strong> Klassnamnen används för förklaring om grid systems struktur.</p>
 <h3 id="3-1-elementer-i-en-rad-har-lika-h-jd">3.1. Elementer i en rad har lika höjd</h3>
 <ul>
 <li>Klassnamn används: <ul>
@@ -354,7 +350,22 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Användning</strong></p>
+<p><strong>OBS!</strong> Var försiktig när man använder <code>row-eq-height</code> för en rad som har <code>flex-direction: column-reverse</code>. Det kommer blir en konflikt på IE11 men modern webbläsare kommer fungerar bra.</p>
+<code><pre><span class="hljs-comment">// SCSS kod för .row-eq-height</span>
+<span class="hljs-selector-class">.row</span><span class="hljs-selector-class">.row-eq-height</span> {
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">flex-wrap</span>: wrap;
+
+    &amp;&gt;<span class="hljs-selector-attr">[class*='col-']</span> {
+        <span class="hljs-attribute">display</span>: flex;
+        <span class="hljs-attribute">flex-direction</span>: column;
+    }
+
+    &amp;:before,
+    &amp;:after {
+        <span class="hljs-attribute">display</span>: flex;
+    }
+}</pre></code><p><strong>Användning</strong></p>
 <code><pre>// CSS
 .item {
     background-color: #f4f4f4;
@@ -468,17 +479,17 @@
 <tbody>
 <tr>
 <td style="text-align:center">≤ <code>medium</code></td>
-<td style="text-align:right">0.7em x 2</td>
+<td style="text-align:right">0.7em x 2 = 1.4em</td>
 <td style="text-align:right">11.2px x 2 = 22.4px</td>
 </tr>
 <tr>
 <td style="text-align:center"><code>large</code></td>
-<td style="text-align:right">0.9375em x 2</td>
+<td style="text-align:right">0.9375em x 2 = 1.875em</td>
 <td style="text-align:right">15px x 2 = 30px</td>
 </tr>
 <tr>
 <td style="text-align:center"><code>xlarge</code></td>
-<td style="text-align:right">1.875em x 2</td>
+<td style="text-align:right">1.875em x 2 = 3.75em</td>
 <td style="text-align:right">30px x 2 = 60px</td>
 </tr>
 </tbody>
@@ -1534,7 +1545,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -2413,6 +2424,30 @@
         </li>
         
     
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/footer-logo-group--has-links.html" data-pjax>
+                <span>Has Links</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
 
             </ul>
         </li>
@@ -3132,6 +3167,16 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="mixin.html" data-pjax>
                 <span>Mixin</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="changelog.html" data-pjax>
+                <span>Changelog</span>
                 
             </a>
         </li>

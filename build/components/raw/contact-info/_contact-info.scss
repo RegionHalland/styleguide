@@ -69,11 +69,11 @@
 
             &:focus {
                 background-color: $contact-info__body-link--focus--background-color;
-                text-decoration: $contact-info__body-link--focus--text-decoration; none;
-                border-radius: $contact-info__body-link--focus--border-radius; 5px;
-                padding: $contact-info__body-link--focus--padding; .3ex;
-                outline: $contact-info__body-link--focus--outline; none;
-                color: $contact-info__body-link--focus--color; white;
+                text-decoration: $contact-info__body-link--focus--text-decoration; //none;
+                border-radius: $contact-info__body-link--focus--border-radius; //5px;
+                padding: $contact-info__body-link--focus--padding; //.3ex;
+                outline: $contact-info__body-link--focus--outline; //none;
+                color: $contact-info__body-link--focus--color; //white;
             }
 
             @include large {
