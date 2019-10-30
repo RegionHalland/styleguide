@@ -155,6 +155,46 @@ function setShadow() {
 }
 "use strict";
 
+// Needed function:
+// throttle() - /public/library.js
+$(document).ready(function () {
+  var $btnBackToTop = $("#back-to-top"),
+      btnBackToTopLimitOnHead = 500,
+      btnBackToTopCurrentPos = $(window).scrollTop(); // Initial state
+
+  btnBackToTopCurrentPos < btnBackToTopLimitOnHead ? $btnBackToTop.hide() : $btnBackToTop.show();
+  $(window).scroll(throttle(function () {
+    btnBackToTopCurrentPos = $(this).scrollTop(); // Update current position
+
+    if (btnBackToTopCurrentPos > btnBackToTopLimitOnHead) {
+      !$btnBackToTop.is(':visible') && $btnBackToTop.fadeIn("slow");
+    } else {
+      $btnBackToTop.is(':visible') && $btnBackToTop.fadeOut("slow");
+    }
+  }, 200));
+  $btnBackToTop.click(function (e) {
+    e.stopPropagation();
+    $('body,html').animate({
+      scrollTop: 0
+    }, 800);
+  });
+});
+"use strict";
+
+$(document).ready(function () {
+  // This code fixs :focus-within behavior on IE11 and older browsers
+  var $blockBoxItems = $(".rh-block-box");
+  $blockBoxItems.focusin(function (e) {
+    e.stopPropagation();
+    $(this).addClass("rh-block--focus");
+  });
+  $blockBoxItems.focusout(function (e) {
+    e.stopPropagation();
+    $(this).removeClass("rh-block--focus");
+  });
+});
+"use strict";
+
 var acc = document.getElementsByClassName("rh-accordion");
 var i;
 
@@ -554,43 +594,3 @@ var videoPlayButton,
   }
 };
 videoMethods.renderVideoPlayButton();
-"use strict";
-
-// Needed function:
-// throttle() - /public/library.js
-$(document).ready(function () {
-  var $btnBackToTop = $("#back-to-top"),
-      btnBackToTopLimitOnHead = 500,
-      btnBackToTopCurrentPos = $(window).scrollTop(); // Initial state
-
-  btnBackToTopCurrentPos < btnBackToTopLimitOnHead ? $btnBackToTop.hide() : $btnBackToTop.show();
-  $(window).scroll(throttle(function () {
-    btnBackToTopCurrentPos = $(this).scrollTop(); // Update current position
-
-    if (btnBackToTopCurrentPos > btnBackToTopLimitOnHead) {
-      !$btnBackToTop.is(':visible') && $btnBackToTop.fadeIn("slow");
-    } else {
-      $btnBackToTop.is(':visible') && $btnBackToTop.fadeOut("slow");
-    }
-  }, 200));
-  $btnBackToTop.click(function (e) {
-    e.stopPropagation();
-    $('body,html').animate({
-      scrollTop: 0
-    }, 800);
-  });
-});
-"use strict";
-
-$(document).ready(function () {
-  // This code fixs :focus-within behavior on IE11 and older browsers
-  var $blockBoxItems = $(".rh-block-box");
-  $blockBoxItems.focusin(function (e) {
-    e.stopPropagation();
-    $(this).addClass("rh-block--focus");
-  });
-  $blockBoxItems.focusout(function (e) {
-    e.stopPropagation();
-    $(this).removeClass("rh-block--focus");
-  });
-});

@@ -10,7 +10,7 @@
 @import '../Atoms/search-field/search-field.settings.scss';
 @import '../Atoms/pagination-elements/pagination-elements.settings.scss';
 
-@import '../Molecules/article-block/article-block.settings.scss';
+@import '../vMolecules/article-block/article-block.settings.scss';
 @import '../vMolecules/back-to-top/back-to-top.settings.scss'; //-> vMolecules
 @import '../vMolecules/block/block.settings.scss'; //-> vMolecules
 @import '../Molecules/contact-info/contact-info.settings.scss';
@@ -22,7 +22,7 @@
 @import '../Molecules/menu-mobile/menu-mobile.settings.scss';
 @import '../Molecules/messages/message.settings.scss';
 @import '../Molecules/navigation-block/navigation-block.settings.scss';
-@import '../Molecules/navigation-left/navigation-left.settings.scss';
+@import '../vMolecules/navigation-left/navigation-left.settings.scss';
 
 @import '../Organism/article-group/article-group.settings.scss';
 @import '../Organism/block-group/block-group.settings.scss';
