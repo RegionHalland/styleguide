@@ -29,7 +29,7 @@
         },
         {
             "name": "vardgivare",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "resources": {
                 "jsComponents": [],
                 "scssComponents": [ "../RH-sites/RhSettingsVardgivare/vardgivare.scss" ]
@@ -93,7 +93,7 @@
         },
         {
             "name": "stilguide",
-            "version": "8.2.0",
+            "version": "8.3.0",
             "resources": {
                 "jsComponents": [
                     "components/Molecules/rh-video/rh-video.js", 
