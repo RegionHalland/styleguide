@@ -36,6 +36,10 @@
     },
     {
       "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeNavigationLeft"
+    },
+    {
+      "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWpPlugIns/_git/RhComposerCustomInstaller"
     }
   ],
@@ -45,7 +49,8 @@
     "regionhalland/region-halland-composer-custom-installer": "1.0.0",
     "regionhalland/block": "1.0.0",
     "regionhalland/circle-button": "1.1.1",
-    "regionhalland/back-to-top": "1.1.0"
+    "regionhalland/back-to-top": "1.1.0",
+    "regionhalland/navigation-left": "1.1.0"
   },
   "extra": {
     "custom-installer": {
