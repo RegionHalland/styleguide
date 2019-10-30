@@ -6,6 +6,7 @@
 * Article block 1.0.0 - molekyl
 * Caption hero 1.0.0 - atom
 * Image hero 1.0.0 - molekyl 
+* Image caption 1.0.0 - molekyl
 
 ### Andra ändringar
 * Article block 1.0.0 - Introducerat versionshistorik för komponeten under "Notes"
