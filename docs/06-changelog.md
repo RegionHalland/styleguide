@@ -4,6 +4,7 @@
 
 ### Komponenter flyttade till gitrepos och fått nya sökvägar:
 * Contact info 1.0.0 - molekyl
+* Filter alphabet 1.0.0 - molekyl
 
 ## 8.4.0 
 
