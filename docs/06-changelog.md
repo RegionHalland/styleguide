@@ -1,5 +1,10 @@
 # Versioner av stilguiden och deras ändringar
 
+## 8.5.0
+
+### Komponenter flyttade till gitrepos och fått nya sökvägar:
+* Contact info 1.0.0 - molekyl
+
 ## 8.4.0 
 
 ### Komponenter flyttade till gitrepos och fått nya sökvägar:

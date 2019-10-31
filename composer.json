@@ -44,6 +44,10 @@
     },
     {
       "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeContactInfo"
+    },
+    {
+      "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeImageCaption"
     },
     {
@@ -67,6 +71,7 @@
     "regionhalland/block": "1.0.0",
     "regionhalland/caption-hero": "1.0.0",
     "regionhalland/circle-button": "1.1.1",
+    "regionhalland/contact-info": "1.0.0",
     "regionhalland/back-to-top": "1.1.0",
     "regionhalland/image-caption": "1.0.0",
     "regionhalland/image-hero": "1.0.0",
