@@ -1,64 +1,202 @@
 @mixin create-article-header($borderBottom: false) {
-    @if $borderBottom {
-        border-bottom: $borderBottom; //2px
-    }
+	@if $borderBottom {
+		border-bottom: $borderBottom; //2px
+	}
 
-    @content;
+	@content;
 }
 
 @mixin create-article-header-title($textColor: false) {
-    line-height: 1.375em; //25px
-    margin-bottom: .1em;
+	line-height: 1.375em; //25px
+	margin-bottom: 0.1em;
 
-    font-size: 1.125em; //18px
-    font-weight: bold;
+	font-size: 1.125em; //18px
+	font-weight: bold;
 
-    @if ($textColor) {
-        color: $textColor
-    }
+	@if ($textColor) {
+		color: $textColor;
+	}
 
-    @include large {
-        font-size: 1.5em; //24px
-    }
+	@include large {
+		font-size: 1.5em; //24px
+	}
 
-    @content;
+	@content;
 }
 
 @mixin create-article-item-title($textColor: false) {
-    line-height: 1.3125em;
-    margin-bottom: .1em;
+	line-height: 1.3125em;
+	margin-bottom: 0.1em;
 
-    font-size: 1em;
-    font-weight: bold;
+	font-size: 1em;
+	font-weight: bold;
 
-    @if ($textColor) {
-        color: $textColor
-    }
+	@if ($textColor) {
+		color: $textColor;
+	}
 
-    @include medium {
-        line-height: 1.375em;
-    }
+	@include medium {
+		line-height: 1.375em;
+	}
 
-    @include large {
-        font-size: 1.25em; //20px
-    }
+	@include large {
+		font-size: 1.25em; //20px
+	}
 
-    @content;
+	@content;
 }
 
 @mixin create-article-item-description($textColor: false) {
-    margin-top: .5em;
-    margin-bottom: .5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 
-    font-size: 0.9375em; //15px
+	font-size: 0.9375em; //15px
 
-    @if ($textColor) {
-        color: $textColor
-    }
+	@if ($textColor) {
+		color: $textColor;
+	}
 
-    @include large {
-        font-size: 1em; //16px
-    }
+	@include large {
+		font-size: 1em; //16px
+	}
 
-    @content;
+	@content;
+}
+
+// Using for creating an clickable element's effects (:hover - :active - :focus-within)
+// Creating border and shadow effects
+@mixin create-clickable-element-outside-effect(
+	$box-border-top-styling: false,
+	$box-border-right-styling: false,
+	$box-border-bottom-styling: false,
+	$box-border-left-styling: false,
+	$box-shadow-styling: false
+) {
+	// Box - Border is outside
+	@if $box-border-top-styling {
+		border-top: $box-border-top-styling;
+	}
+	@if $box-border-right-styling {
+		border-right: $box-border-right-styling;
+	}
+	@if $box-border-bottom-styling {
+		border-bottom: $box-border-bottom-styling;
+	}
+	@if $box-border-left-styling {
+		border-left: $box-border-left-styling;
+	}
+
+	// Box - shadow is outside
+	@if $box-shadow-styling {
+		box-shadow: $box-shadow-styling;
+	}
+}
+
+// Creating text effects
+@mixin create-clickable-element-inside-effect(
+	$element-title-classname: false,
+	$element-description-classname: false,
+	$title-text-color: false,
+	$title-text-decoration: none,
+	$description-text-color: false,
+	$description-text-decoration: none
+) {
+	// Title
+	@if $element-title-classname {
+		.#{$element-title-classname} {
+			@if $title-text-color {
+				color: $title-text-color;
+			}
+
+			// The way for checking "false" is special for text-decoration property
+			@if $title-text-decoration != false {
+				text-decoration: $title-text-decoration;
+			}
+		}
+	}
+
+	// Description
+	@if $element-description-classname {
+		.#{$element-description-classname} {
+			@if $description-text-color {
+				color: $description-text-color;
+			}
+
+			// The way for checking "false" is special for text-decoration property
+			@if $description-text-decoration != false {
+				text-decoration: $description-text-decoration;
+			}
+		}
+	}
+}
+
+// The main function
+@mixin create-clickable-element-effect(
+	$element-box-classname: false,
+	$element-title-classname: false,
+	$element-description-classname: false,
+	$box-border-top-styling: false,
+	$box-border-right-styling: false,
+	$box-border-bottom-styling: false,
+	$box-border-left-styling: false,
+	$box-shadow-styling: false,
+	$box-shadow-focus-styling: false,
+	$title-text-color: false,
+	$title-text-decoration: none,
+	$description-text-color: false,
+	$description-text-decoration: none
+) {
+	// Common effects for the box
+	@if $element-box-classname {
+		@at-root .#{$element-box-classname}:hover,
+			.#{$element-box-classname}:active {
+			@include create-clickable-element-outside-effect(
+				$box-border-top-styling,
+				$box-border-right-styling,
+				$box-border-bottom-styling,
+				$box-border-left-styling,
+				$box-shadow-styling
+			);
+		}
+
+		// Using the separate generation for a better CSS result on IE11 and Edge - Tabbing
+		@at-root .#{$element-box-classname}:focus-within {
+			@include create-clickable-element-outside-effect(
+				$box-border-top-styling,
+				$box-border-right-styling,
+				$box-border-bottom-styling,
+				$box-border-left-styling,
+				$box-shadow-focus-styling // Using for tabbing
+			);
+		}
+	}
+
+	// The specific effects for content (title and description)
+	@if $element-title-classname and $element-description-classname {
+		@at-root .#{$element-box-classname}:hover,
+			.#{$element-box-classname}:active {
+			@include create-clickable-element-inside-effect(
+				$element-title-classname,
+				$element-description-classname,
+				$title-text-color,
+				$title-text-decoration,
+				$description-text-color,
+				$description-text-decoration
+			);
+		}
+
+		// Using the separate generation for a better CSS result on IE11 and Edge
+		@at-root .#{$element-box-classname}:focus-within {
+			@include create-clickable-element-inside-effect(
+				$element-title-classname,
+				$element-description-classname,
+				$title-text-color,
+				$title-text-decoration,
+				$description-text-color,
+				$description-text-decoration
+			);
+		}
+	}
+
+	@content;
 }

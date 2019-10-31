@@ -3,10 +3,26 @@
     "status": "review",
     "version": "1.0.0-201910221700",
 	"context": {
+        "name": "default",
+        "isClickable": false,
         "title": "Om Region Halland",
         "description": {
             "text": "Vi är på väg. ”Halland – bästa livsplatsen” är vår vision. Välkommen att följa oss på vägen dit!",
             "extendClass": ""
         }
-    }		
+    },
+    "variants": [
+        {
+            "name": "clickable",
+            "status": "review",
+            "context": {
+                "isClickable": true,
+                "title": "Om Region Halland",
+                "description": {
+                    "text": "Vi är på väg. ”Halland – bästa livsplatsen” är vår vision. Välkommen att följa oss på vägen dit!",
+                    "extendClass": ""
+                }
+            }
+        }
+    ]
 }

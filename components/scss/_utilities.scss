@@ -314,3 +314,26 @@
 		}
 	}
 }
+
+// Clickable element
+.rh-element {
+	// Using for container is <div> tag
+	&--clickable {
+		/* Positionering */
+		position: relative;
+		
+		// Using for direct child is <a> tag
+		&-link {
+			/* Positionering */
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+	
+			/* Box-modell/beteende */
+			height: 100%;
+			width: 100%;
+			outline: none;
+		}
+	}
+}
