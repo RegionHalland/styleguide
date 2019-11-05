@@ -139,6 +139,29 @@
 <li>Den blå varianten raderades</li>
 </ul>
 <h2 id="8-6-0">8.6.0</h2>
+<h3 id="nya-funktioner">Nya funktioner</h3>
+<ul>
+<li>Klickbar element - Det gör hela en element blir klickbar. Man kan skapa elementens beteende <ul>
+<li><code>rh-element--clickable</code></li>
+<li><code>rh-element--clickable-link</code></li>
+</ul>
+</li>
+<li>Molecules/<strong>navigation-block</strong> - Det finns en ny variant <code>Clickable</code> som kan vara klickbar. Varianterna är nu:<ul>
+<li>Default</li>
+<li>Clickable</li>
+</ul>
+</li>
+<li>Organism/<strong>navigation-block-group</strong> - Det finns en ny variant <code>Clickable</code> som varje element kan vara klickbar. Varianterna är nu:<ul>
+<li>Default</li>
+<li>With container</li>
+<li>Clickable <em>(Det har med sig också container för snabb användning)</em></li>
+</ul>
+</li>
+</ul>
+<h3 id="f-rb-ttring">Förbättring</h3>
+<ul>
+<li>Molecules/<strong>block</strong> - Det använder @mixin för att ha konsekvent beteende från Stilguides grunden.</li>
+</ul>
 <h2 id="8-5-0">8.5.0</h2>
 <h3 id="komponenter-flyttade-till-gitrepos-och-f-tt-nya-s-kv-gar-">Komponenter flyttade till gitrepos och fått nya sökvägar:</h3>
 <ul>
@@ -172,6 +195,176 @@
 <li>Exempelkoden uppdaterad.</li>
 <li>Stöd för <code>--inactive</code> som visuellt indikerar inaktiverade val.</li>
 </ul>
+<h2 id="8-1-5">8.1.5</h2>
+<h3 id="-ndringar">Ändringar</h3>
+<ul>
+<li>“Footer logo group”-organismen justerades för att förbättra logotypernas positionering.</li>
+</ul>
+<h2 id="8-1-4">8.1.4</h2>
+<h3 id="-ndringar">Ändringar</h3>
+<ul>
+<li>“Footer logo group”-organismen fick den extra varianten “has links”.</li>
+</ul>
+<h2 id="8-1-3">8.1.3</h2>
+<p>Merge-konflikt ordnad</p>
+<h2 id="8-1-2">8.1.2</h2>
+<h3 id="-ndringar">Ändringar</h3>
+<ul>
+<li>“Contact info”-molekylen fått ändringar för tillgänglighetens skull</li>
+</ul>
+<h2 id="8-1-1">8.1.1</h2>
+<h3 id="-ndringar">Ändringar</h3>
+<ul>
+<li>“Article block”-molekylen fick bättre utseende på fokus-state vid radbrytning</li>
+</ul>
+<h2 id="8-1-0">8.1.0</h2>
+<h3 id="-ndringar">Ändringar</h3>
+<ul>
+<li>“Back to top”-molekylen flyttad till vMolecules och fått en ny sökväg.</li>
+</ul>
+<h2 id="version-8-0-0">Version 8.0.0</h2>
+<h3 id="beteendebrytande-ndringar">Beteendebrytande ändringar</h3>
+<ul>
+<li>Den extra captionklass som fanns i molekylen “image hero” är borttagen. Används den nya settings-filen för “caption hero” istället. </li>
+</ul>
+<h3 id="-vriga-ndringar">Övriga ändringar</h3>
+<h4 id="atomer">Atomer</h4>
+<ul>
+<li>Avatar visas med korrekt muspekare och två bokstäver istället för ikon.</li>
+<li>Caption hero har fått settingsfil och är markerad som färdig.</li>
+</ul>
+<h4 id="molekyler">Molekyler</h4>
+<ul>
+<li>Image hero har fått en settingsfil</li>
+<li>Article block 1.0.0: focusstate skapat</li>
+<li>Navigation left 1.1.0: focusstate och readme skapat.</li>
+</ul>
+<h2 id="version-7-3-0-finns-ej-som-tag-i-repot-">Version 7.3.0 (finns ej som tag i repot)</h2>
+<p>Period: 2019-10-18 - 2019-10-22</p>
+<h3 id="nya-komponenter">Nya komponenter</h3>
+<ul>
+<li>Molecules/menu</li>
+</ul>
+<h3 id="f-rb-ttring">Förbättring</h3>
+<ul>
+<li>@mixin<ul>
+<li>Det finns nu nya containers:<ul>
+<li>rh-container-py</li>
+<li>rh-container-p</li>
+</ul>
+</li>
+<li>Befintliga containers:<ul>
+<li>rh-container-px</li>
+<li>rh-container–auto</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Använda många verktyg i Stilguides grunden istället för specifika containers i varje komponent:<ul>
+<li>Organism/block-group</li>
+<li>Organism/navigation-block-group</li>
+<li>Organism/footer-group</li>
+</ul>
+</li>
+</ul>
+<p>Det blir bättre prestanda, snabbare för implementation, enklare för underhållning och utveckling samt bättre konsekvent mellan komponenter i Stilguiden.</p>
+<h2 id="7-2-0">7.2.0</h2>
+<h3 id="ut-kningar">Utökningar</h3>
+<ul>
+<li>Circle button-atomen fått stöd för modifiern –secondary </li>
+</ul>
+<h2 id="7-1-0">7.1.0</h2>
+<h3 id="-ndringar">Ändringar</h3>
+<ul>
+<li>Molekylen “back to top” angiven som klar.</li>
+</ul>
+<h2 id="7-0-0">7.0.0</h2>
+<h3 id="brytande-ndringar">Brytande ändringar</h3>
+<ul>
+<li>“Iconlink”-molekylen raderad.</li>
+</ul>
+<h2 id="version-6-1-1-2019-10-17-">Version 6.1.1 (2019-10-17)</h2>
+<p>Period: 2019-10-16 - 2019-10-17</p>
+<h3 id="nya-komponenter">Nya komponenter</h3>
+<ul>
+<li>Molecules/contact-info - Det kommer bli en ersättning för komponenten Molecules/rh-unit-info</li>
+</ul>
+<h3 id="f-rb-ttring">Förbättring</h3>
+<ul>
+<li>Molecules/article-block - Fixat <code>&lt;time&gt;</code> tags beteende på Safari <em>(både iOS och MacOS)</em></li>
+</ul>
+<h3 id="byggmilj-">Byggmiljö</h3>
+<ul>
+<li>Ny funktion med kommandon <code>$ gulp dev -r</code>:<ul>
+<li>Man kan omkompilera filer i <code>/public</code> mappen. Exempel:<ul>
+<li><code>/public/css/components.css</code></li>
+<li><code>/public/css/components.css.map</code></li>
+<li><code>/public/js/components.js</code></li>
+</ul>
+</li>
+<li>Det är använbart när man behöver fixa merge konflikt för parallell brancher eller bara vill omkompilera Stilguiden för senast uppgradering efter man har pullat ner en branch.</li>
+</ul>
+</li>
+<li>Förbättring för Gulp avvaktning <em>(*.json adderats)</em>.</li>
+</ul>
+<h2 id="6-1-0">6.1.0</h2>
+<h2 id="6-0-1">6.0.1</h2>
+<p>Versionsnummer i sites building justerat. </p>
+<h2 id="6-0-0">6.0.0</h2>
+<p>Samlingsrelease av en längre periods ändringar - släpptes innan 5.2.0, men ligger i otakt pga att branchen 5.2.0 mergats in.</p>
+<h2 id="5-2-0-2019-10-15-">5.2.0 (2019-10-15)</h2>
+<p>Period: 2019-10-01 - 2019-10-15</p>
+<h2 id="nya-komponenter">Nya komponenter</h2>
+<p>Vi börjar använda versions formatet <code>[versionnumber]-[timestamp]</code> för alpha, beta o.s.v. (<a href="https://design.regionhalland.se/verktyg/versionshantering/">Se mer på design.regionhalland.se</a>)</p>
+<ul>
+<li>Molecules/article-block</li>
+<li>Organism/article-group</li>
+<li>Organism/footer-logo-group</li>
+</ul>
+<h3 id="f-rb-ttring">Förbättring</h3>
+<ul>
+<li>Atoms/pagination-elements - en ny klass <code>--current</code> skapas för återanvändning.</li>
+<li>Molecules/message - Använda inställningar</li>
+<li>Grid system<ul>
+<li><a href="/docs/03-layout.md#321-standard-gutters">row-gutters</a></li>
+<li><a href="/docs/03-layout.md#321-standard-gutters">col-item-eq-height</a></li>
+<li><a href="/docs/03-layout.md#322-section-gutters">row-section-gutters</a></li>
+</ul>
+</li>
+<li>Verktyg<ul>
+<li><a href="/docs/04-utilities.md#3-overflow">rh-overflow*</a></li>
+<li><a href="/docs/04-utilities.md#41-section-gutter-lx">rh-section-gutter-lx*</a></li>
+</ul>
+</li>
+<li>Dokumentation för grid system och verktyg.</li>
+</ul>
+<h3 id="byggmilj-">Byggmiljö</h3>
+<ul>
+<li><a href="https://www.browsersync.io/">BrowserSync</a> installeras därför man behöver köra <code>$ npm install</code> för att uppdatera alla npm paket i lokalt efter man har pullat ner master branchen.</li>
+<li><code>/gulpfile.js</code> har en ny prov funktion som är <strong>DevServe</strong>. Det gäller för <strong>endast utveckling</strong> och fungerar liknande som man kör <code>gulp</code> som vanligt. Det kommer bli smidigare för:<ul>
+<li>BrowserSync server fungerar tillsamans med Fractal server:<ul>
+<li>Fractal sköter back-end.</li>
+<li>BrowserSync sköter front-end <em>(<a href="https://www.browsersync.io/docs/gulp#gulp-sass-css">CSS injektion</a> och omladdning)</em>.</li>
+</ul>
+</li>
+<li>Stilguiden ombygger bara delen som finns ändringar utan bygger allt hela tiden som det har gjort innan. Det är nu separata komplikationer och gäller för respektive filformat <em>(<em>.css, </em>.hbs, <em>.js, </em>.md, *.{svg,png,gif,jpg})</em>.</li>
+</ul>
+</li>
+<li><strong>Målet</strong> är att Stilguiden fungerar smidigare, snabbare och har en bättre prestanda under utveckling.</li>
+<li><strong>Användning:</strong><ul>
+<li>Kör <code>$ gulp dev</code> för att starta utveckling server.</li>
+<li>Lokalt server är på <code>http://localhost:3000/</code> som vanligt.</li>
+</ul>
+</li>
+</ul>
+<h2 id="5-0-0">5.0.0</h2>
+<h2 id="4-2-0">4.2.0</h2>
+<h2 id="4-1-0">4.1.0</h2>
+<h2 id="4-0-0">4.0.0</h2>
+<h2 id="3-0-0">3.0.0</h2>
+<h2 id="2-0-0">2.0.0</h2>
+<h2 id="0-2-0">0.2.0</h2>
+<h2 id="0-1-0">0.1.0</h2>
 
     
 
