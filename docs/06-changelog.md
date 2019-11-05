@@ -16,7 +16,7 @@
 * Sass-filen genomgången och strukturerad
 * Den blå varianten raderades
 
-## 8.6.0
+## 8.6.0 ([f0dd4a4b](https://dev.azure.com/regionhalland/public.RhWebStyleguide/_git/RhWebStyleguide/commit/f0dd4a4b7a728600871b85608f162d901cac1781?refName=refs%2Fheads%2Fmaster))
 
 ### Nya funktioner
 * Klickbar element - Det gör hela en element blir klickbar. Man kan skapa elementens beteende 
@@ -65,22 +65,22 @@ Molekyl: Filter alphabet 1.0.0
 * Exempelkoden uppdaterad.
 * Stöd för `--inactive` som visuellt indikerar inaktiverade val.
 
-## 8.1.5
+## 8.1.5 ([b419de66](https://dev.azure.com/regionhalland/public.RhWebStyleguide/_git/RhWebStyleguide/commit/b419de668e2a5251da4a842c881719faecdf57b1?refName=refs%2Fheads%2Fmaster))
 ### Ändringar
 * "Footer logo group"-organismen justerades för att förbättra logotypernas positionering.
 
-## 8.1.4
+## 8.1.4 ([7560eac5](https://dev.azure.com/regionhalland/public.RhWebStyleguide/_git/RhWebStyleguide/commit/7560eac5455f7c1b78d587a0799559307d213204?refName=refs%2Fheads%2Fmaster))
 ### Ändringar 
 * "Footer logo group"-organismen fick den extra varianten "has links".
 
-## 8.1.3
+## 8.1.3 ([d0a3cf9c](https://dev.azure.com/regionhalland/public.RhWebStyleguide/_git/RhWebStyleguide/commit/d0a3cf9c35283d53c925d59ec7b6bf7aedba02e7?refName=refs%2Fheads%2Fmaster))
 Merge-konflikt ordnad
 
 ## 8.1.2
 ### Ändringar
 * "Contact info"-molekylen fått ändringar för tillgänglighetens skull
 
-## 8.1.1
+## 8.1.1 ([3b2eb1d3](https://dev.azure.com/regionhalland/public.RhWebStyleguide/_git/RhWebStyleguide/commit/3b2eb1d367458051438cba1360c25856b42aa4d3?refName=refs%2Fheads%2Fmaster))
 ### Ändringar
 * "Article block"-molekylen fick bättre utseende på fokus-state vid radbrytning
 
@@ -103,7 +103,7 @@ Merge-konflikt ordnad
 * Article block 1.0.0: focusstate skapat
 * Navigation left 1.1.0: focusstate och readme skapat.
 
-## Version 7.3.0 (finns ej som tag i repot)
+## Version 7.3.0 ([4d6e1dae](https://dev.azure.com/regionhalland/public.RhWebStyleguide/_git/RhWebStyleguide/commit/4d6e1daeef8ca5273908a421923ac4d26752c908?refName=refs%2Fheads%2Fmaster))
 Period: 2019-10-18 - 2019-10-22
 
 ### Nya komponenter
