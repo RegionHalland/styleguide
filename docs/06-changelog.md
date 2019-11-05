@@ -18,6 +18,21 @@
 
 ## 8.6.0
 
+### Nya funktioner
+* Klickbar element - Det gör hela en element blir klickbar. Man kan skapa elementens beteende 
+    * `rh-element--clickable`
+    * `rh-element--clickable-link`
+* Molecules/__navigation-block__ - Det finns en ny variant `Clickable` som kan vara klickbar. Varianterna är nu:
+    * Default
+    * Clickable
+* Organism/__navigation-block-group__ - Det finns en ny variant `Clickable` som varje element kan vara klickbar. Varianterna är nu:
+    * Default
+    * With container
+    * Clickable _(Det har med sig också container för snabb användning)_
+
+### Förbättring
+* Molecules/__block__ - Det använder @mixin för att ha konsekvent beteende från Stilguides grunden.
+
 ## 8.5.0
 
 ### Komponenter flyttade till gitrepos och fått nya sökvägar:
@@ -49,4 +64,152 @@ Molekyl: Filter alphabet 1.0.0
 * Versionshistorik för komponenten skapad under "Notes". 
 * Exempelkoden uppdaterad.
 * Stöd för `--inactive` som visuellt indikerar inaktiverade val.
+
+## 8.1.5
+### Ändringar
+* "Footer logo group"-organismen justerades för att förbättra logotypernas positionering.
+
+## 8.1.4
+### Ändringar 
+* "Footer logo group"-organismen fick den extra varianten "has links".
+
+## 8.1.3
+Merge-konflikt ordnad
+
+## 8.1.2
+### Ändringar
+* "Contact info"-molekylen fått ändringar för tillgänglighetens skull
+
+## 8.1.1
+### Ändringar
+* "Article block"-molekylen fick bättre utseende på fokus-state vid radbrytning
+
+## 8.1.0
+### Ändringar
+* "Back to top"-molekylen flyttad till vMolecules och fått en ny sökväg.
+
+## Version 8.0.0
+
+### Beteendebrytande ändringar
+* Den extra captionklass som fanns i molekylen "image hero" är borttagen. Används den nya settings-filen för "caption hero" istället. 
+
+### Övriga ändringar
+#### Atomer
+* Avatar visas med korrekt muspekare och två bokstäver istället för ikon.
+* Caption hero har fått settingsfil och är markerad som färdig.
+
+#### Molekyler
+* Image hero har fått en settingsfil
+* Article block 1.0.0: focusstate skapat
+* Navigation left 1.1.0: focusstate och readme skapat.
+
+## Version 7.3.0 (finns ej som tag i repot)
+Period: 2019-10-18 - 2019-10-22
+
+### Nya komponenter
+* Molecules/menu
+
+### Förbättring
+* @mixin
+    * Det finns nu nya containers:
+        * rh-container-py
+        * rh-container-p
+    * Befintliga containers:
+        * rh-container-px
+        * rh-container--auto
+* Använda många verktyg i Stilguides grunden istället för specifika containers i varje komponent:
+    * Organism/block-group
+    * Organism/navigation-block-group
+    * Organism/footer-group
+
+Det blir bättre prestanda, snabbare för implementation, enklare för underhållning och utveckling samt bättre konsekvent mellan komponenter i Stilguiden.
+
+## 7.2.0
+### Utökningar
+* Circle button-atomen fått stöd för modifiern --secondary 
+
+## 7.1.0
+### Ändringar
+* Molekylen "back to top" angiven som klar.
+
+## 7.0.0
+### Brytande ändringar
+* "Iconlink"-molekylen raderad.
+
+## Version 6.1.1 (2019-10-17)
+Period: 2019-10-16 - 2019-10-17
+
+### Nya komponenter
+* Molecules/contact-info - Det kommer bli en ersättning för komponenten Molecules/rh-unit-info
+
+### Förbättring
+* Molecules/article-block - Fixat `<time>` tags beteende på Safari _(både iOS och MacOS)_
+
+### Byggmiljö
+* Ny funktion med kommandon `$ gulp dev -r`:
+    * Man kan omkompilera filer i `/public` mappen. Exempel:
+        * `/public/css/components.css`
+        * `/public/css/components.css.map`
+        * `/public/js/components.js`
+    * Det är använbart när man behöver fixa merge konflikt för parallell brancher eller bara vill omkompilera Stilguiden för senast uppgradering efter man har pullat ner en branch.
+* Förbättring för Gulp avvaktning _(*.json adderats)_.
+
+## 6.1.0 
+
+## 6.0.1
+Versionsnummer i sites building justerat. 
+
+## 6.0.0
+Samlingsrelease av en längre periods ändringar - släpptes innan 5.2.0, men ligger i otakt pga att branchen 5.2.0 mergats in.
+
+## 5.2.0 (2019-10-15)
+Period: 2019-10-01 - 2019-10-15
+
+## Nya komponenter
+Vi börjar använda versions formatet `[versionnumber]-[timestamp]` för alpha, beta o.s.v. ([Se mer på design.regionhalland.se](https://design.regionhalland.se/verktyg/versionshantering/))
+
+* Molecules/article-block
+* Organism/article-group
+* Organism/footer-logo-group
+
+### Förbättring
+* Atoms/pagination-elements - en ny klass `--current` skapas för återanvändning.
+* Molecules/message - Använda inställningar
+* Grid system
+    * [row-gutters](/docs/03-layout.md#321-standard-gutters)
+    * [col-item-eq-height](/docs/03-layout.md#321-standard-gutters)
+    * [row-section-gutters](/docs/03-layout.md#322-section-gutters)
+* Verktyg
+    * [rh-overflow*](/docs/04-utilities.md#3-overflow)
+    * [rh-section-gutter-lx*](/docs/04-utilities.md#41-section-gutter-lx)
+* Dokumentation för grid system och verktyg.
+
+### Byggmiljö
+* [BrowserSync](https://www.browsersync.io/) installeras därför man behöver köra `$ npm install` för att uppdatera alla npm paket i lokalt efter man har pullat ner master branchen.
+* `/gulpfile.js` har en ny prov funktion som är __DevServe__. Det gäller för __endast utveckling__ och fungerar liknande som man kör `gulp` som vanligt. Det kommer bli smidigare för:
+    * BrowserSync server fungerar tillsamans med Fractal server:
+        * Fractal sköter back-end.
+        * BrowserSync sköter front-end _([CSS injektion](https://www.browsersync.io/docs/gulp#gulp-sass-css) och omladdning)_.
+    * Stilguiden ombygger bara delen som finns ändringar utan bygger allt hela tiden som det har gjort innan. Det är nu separata komplikationer och gäller för respektive filformat _(*.css, *.hbs, *.js, *.md, *.{svg,png,gif,jpg})_.
+* __Målet__ är att Stilguiden fungerar smidigare, snabbare och har en bättre prestanda under utveckling.
+* __Användning:__
+    * Kör `$ gulp dev` för att starta utveckling server.
+    * Lokalt server är på `http://localhost:3000/` som vanligt.
+    
+## 5.0.0
+
+## 4.2.0
+
+## 4.1.0
+
+## 4.0.0
+
+## 3.0.0
+
+## 2.0.0
+
+## 0.2.0
+
+## 0.1.0
+
 
