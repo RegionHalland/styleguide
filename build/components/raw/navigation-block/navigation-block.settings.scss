@@ -32,3 +32,12 @@ $navigation-block__header-title-link--word-break: break-word;
 
 $navigation-block__description--margin: .5em 0 0 0; //Can using "false"
 $navigation-block__description-text--color: false;
+
+// Effects :hover - :active - :focus-within
+$navigation-block-effect--border: 0.0625em solid $base3; // top-right-bottom-left
+$navigation-block-effect--box-shadow: 0 0.125em 0.5em rgba(0, 0, 0, 0.3);
+$navigation-block-effect-focus--box-shadow: 0 0.125em 0.5em rgba(0, 0, 0, 0.3);
+$navigation-block-effect--title-text-color: false;
+$navigation-block-effect--title-text-decoration: underline;
+$navigation-block-effect--description-text-color: false;
+$navigation-block-effect--description-text-decoration: none;
