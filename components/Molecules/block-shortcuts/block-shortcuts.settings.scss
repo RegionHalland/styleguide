@@ -21,11 +21,13 @@ $rh-shortcuts__listgroup--border-radius: 4px;
 // Shortcuts item
 $rh-shortcuts__item--margin-bottom: em(35);
 $rh-shortcuts__item--color: $black;
-$rh-shortcuts__item--font-size: $p-small;
-$rh-shortcuts__item--medium--font-size: $p-medium;
+$rh-shortcuts__item--font-size: $p-medium;
 $rh-shortcuts__item--last-child--margin-bottom: em(0);
 
-// Shortucts item - large
+// Shortcuts item - medium
+$rh-shortcuts__item--medium--font-size: $p-medium;
+
+// Shortcuts item - large
 $rh-shortcuts__item--large--font-size: $p-large;
 
 // Shortcuts item link
@@ -37,3 +39,10 @@ $rh-shortcuts__item-link--color: $black;
 $rh-shortcuts__item-link--hover-active--color: $color-primary;
 $rh-shortcuts__item-link--hover-active--text-decoration: none;
 $rh-shortcuts__item-link--visited: $link-visited;
+
+// Shortcuts item link - foucs
+$rh-shortcuts__item-link--focus--background-color: $complementary2;
+$rh-shortcuts__item-link--focus--color: $black;
+$rh-shortcuts__item-link--focus--outline: none;
+$rh-shortcuts__item-link--focus--padding: .3ex;
+$rh-shortcuts__item-link--focus--border-radius: 5px;

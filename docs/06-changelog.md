@@ -4,9 +4,11 @@
 
 ### Brytande ändringar
 
-#### Molekylen shortcuts
+#### Molekylen "rh shortcuts"
 
 * Ny markup
+* Bytt namn till "block shortcuts"
+* Fokusbeteende definierat
 * Tillgänglighet förbättrad - listan namnges av rubriken
 * Readme-fil med versionshistorik och implementeringsråd
 * Settings-fil introducerad

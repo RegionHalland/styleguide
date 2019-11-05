@@ -35,6 +35,8 @@
 
 	/* Visuellt */
 	color: $rh-shortcuts__item--color;
+
+	/* Typografi */
 	font-size: $rh-shortcuts__item--font-size;
 
 	@include medium {
@@ -68,5 +70,13 @@
 
 	&:visited {
 		color: $rh-shortcuts__item-link--visited;
+	}
+
+	&:focus {
+		background-color: $rh-shortcuts__item-link--focus--background-color;
+		color: $rh-shortcuts__item-link--focus--color;
+		outline: $rh-shortcuts__item-link--focus--outline;
+		padding: $rh-shortcuts__item-link--focus--padding;
+		border-radius: $rh-shortcuts__item-link--focus--border-radius;
 	}
 }
