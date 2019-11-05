@@ -211,8 +211,8 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-a0805ed3512d2daba0f36f40db53d905-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-comment">&lt;!-- Default template - View Notes to know how to use the component--&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-box"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-box"</span>&gt;</span>
+
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/images/pressbild.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Text som beskriver bilden"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-content"</span>&gt;</span>
@@ -232,42 +232,25 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-a0805ed3512d2daba0f36f40db53d905-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">unless</span></span> isClickable}}</span><span class="xml">
-    <span class="hljs-comment">&lt;!-- Default template - View Notes to know how to use the component--&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-box"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block"</span>&gt;</span>
-            </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> imageUrl}}</span><span class="xml">
-                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{imageUrl}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Text som beskriver bilden"</span>&gt;</span>
-            </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-content"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-content__title rh-link--navigation"</span>&gt;</span></span><span class="hljs-template-variable">{{title}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-box</span></span></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> isClickable}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> rh-element--clickable rh-block--clickable</span></span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+    </span><span class="hljs-comment">{{!-- The &lt;a&gt; tag is using for clickable feature --}}</span><span class="xml">
+    </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> isClickable}}</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-link--navigation rh-element--clickable-link"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{title}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
 
-                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-content__description"</span>&gt;</span></span><span class="hljs-template-variable">{{description}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block"</span>&gt;</span>
+        </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> imageUrl}}</span><span class="xml">
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{imageUrl}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Text som beskriver bilden"</span>&gt;</span>
+        </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-content"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-content__title rh-link--navigation"</span></span></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> isClickable}}</span><span class="xml"><span class="hljs-tag"> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"-1"</span></span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"><span class="hljs-tag">&gt;</span></span><span class="hljs-template-variable">{{title}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-content__description"</span>&gt;</span></span><span class="hljs-template-variable">{{description}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</span><span class="hljs-template-variable">{{<span class="hljs-builtin-name">else</span>}}</span><span class="xml">
-    <span class="hljs-comment">&lt;!-- Clickable template - View Notes to know how to use the component--&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-box rh-block--clickable"</span>&gt;</span>
-        </span><span class="hljs-comment">{{!-- The &lt;a&gt; tag is using for clickable feature --}}</span><span class="xml">
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-link--navigation rh-block--clickable-link"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{title}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block"</span>&gt;</span>
-            </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> imageUrl}}</span><span class="xml">
-                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{imageUrl}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Text som beskriver bilden"</span>&gt;</span>
-            </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-content"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h3"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-content__title rh-link--navigation"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"-1"</span>&gt;</span></span><span class="hljs-template-variable">{{title}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-
-                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block-content__description"</span>&gt;</span></span><span class="hljs-template-variable">{{description}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">unless</span></span>}}</span><span class="xml"></span></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
 
@@ -278,7 +261,6 @@
             
             <pre>{
   <span class="hljs-attr">"name"</span>: <span class="hljs-string">"default"</span>,
-  <span class="hljs-attr">"status"</span>: <span class="hljs-string">"review"</span>,
   <span class="hljs-attr">"isClickable"</span>: <span class="hljs-literal">null</span>,
   <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Det finns många olika varianter"</span>,
   <span class="hljs-attr">"description"</span>: <span class="hljs-string">"Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim venia, quis nostrud exercitation ullmaco laboris nisi ut aliquap ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolor eu fugiat nulla pariatur."</span>,
@@ -320,34 +302,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre><span class="hljs-comment">// Common styling generation</span>
-@<span class="hljs-keyword">mixin</span> rh-block-effect-creator(<span class="hljs-variable">$text-color</span>, <span class="hljs-variable">$text-decoration</span>) {
-    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$text-color</span> {
-        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$text-color</span>;
-    }
-
-    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$text-decoration</span> {
-        <span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$text-decoration</span>;
-    }
-}
-
-@<span class="hljs-keyword">mixin</span> rh-block-effect-hover-active {
-    <span class="hljs-attribute">border-top</span>: <span class="hljs-variable">$block__box--hover-border-top</span>;
-    <span class="hljs-attribute">border-right</span>: <span class="hljs-variable">$block__box--hover-border-right</span>;
-    <span class="hljs-attribute">border-left</span>: <span class="hljs-variable">$block__box--hover-border-left</span>;
-    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-variable">$block__box--hover-box-shadow</span>;
-}
-
-@<span class="hljs-keyword">mixin</span> rh-block-effect-tabbing-focus {
-    @<span class="hljs-keyword">include</span> rh-block-effect-hover-active;
-    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-variable">$block__box-tabbing--focus-box-shadow</span>;
-}
-
-<span class="hljs-comment">// Component styling</span>
-<span class="hljs-selector-class">.rh-block</span> {
-    <span class="hljs-comment">/* Positionering */</span>
-    <span class="hljs-comment">//position: relative;</span>
-
+                                <pre><span class="hljs-selector-class">.rh-block</span> {
     <span class="hljs-comment">/* Box-modell/beteende */</span>
     @<span class="hljs-keyword">if</span> <span class="hljs-variable">$block--width</span> {
         <span class="hljs-attribute">width</span>: <span class="hljs-variable">$block--width</span>;
@@ -372,8 +327,8 @@
             <span class="hljs-attribute">font-weight</span>: <span class="hljs-variable">$block__text-title--font-weight</span>;
         }
 
-        <span class="hljs-comment">// The empty class is using for clickable effect</span>
-        &amp;__description {}
+        
+        &amp;__description {} <span class="hljs-comment">// The empty class is using for clickable effect</span>
     }
 
     <span class="hljs-selector-tag">img</span> {
@@ -395,72 +350,34 @@
         <span class="hljs-attribute">border-bottom</span>: <span class="hljs-variable">$block__box--border-bottom</span>;
         <span class="hljs-attribute">border-left</span>: <span class="hljs-variable">$block__box--border-left</span>;
         <span class="hljs-attribute">border-radius</span>: <span class="hljs-variable">$block__box--border-radius</span>;
-
-        <span class="hljs-comment">// The component's hove-active-focus behavior can placing here (within this class - box)</span>
     }
 
     &amp;--clickable {
         <span class="hljs-comment">/* Positionering */</span>
         <span class="hljs-attribute">position</span>: relative;
 
-        <span class="hljs-comment">// Common effects for the box</span>
-        &amp;:hover,
-        &amp;:active {
-            @<span class="hljs-keyword">include</span> rh-block-effect-hover-active;
-        }
-
-        <span class="hljs-comment">// Using separate for SASS generating</span>
-        &amp;:focus-within {
-            @<span class="hljs-keyword">include</span> rh-block-effect-tabbing-focus;
-        }
-
-        <span class="hljs-comment">// The specific effects for content</span>
-        &amp;:hover {
-            <span class="hljs-selector-class">.rh-block-content__title</span> {
-                @<span class="hljs-keyword">include</span> rh-block-effect-creator(<span class="hljs-variable">$block__box-clickable__title--text-color-hover</span>, <span class="hljs-variable">$block__box-clickable__title--text-decoration-hover</span>)
-            }
-
-            .rh-block-content__description {
-                @<span class="hljs-keyword">include</span> rh-block-effect-creator(<span class="hljs-variable">$block__box-clickable__description--text-color-hover</span>, <span class="hljs-variable">$block__box-clickable__description--text-decoration-hover</span>);
-            }
-        }
-
-        &amp;:active {
-            <span class="hljs-selector-class">.rh-block-content__title</span> {
-                @<span class="hljs-keyword">include</span> rh-block-effect-creator(<span class="hljs-variable">$block__box-clickable__title--text-color-active</span>, <span class="hljs-variable">$block__box-clickable__title--text-decoration-active</span>);
-            }
-
-            <span class="hljs-selector-class">.rh-block-content__description</span> {
-                @<span class="hljs-keyword">include</span> rh-block-effect-creator(<span class="hljs-variable">$block__box-clickable__description--text-color-active</span>, <span class="hljs-variable">$block__box-clickable__description--text-decoration-active</span>);
-            }
-        }
-
-        &amp;:focus-within {
-            <span class="hljs-selector-class">.rh-block-content__title</span> {
-                @<span class="hljs-keyword">include</span> rh-block-effect-creator(<span class="hljs-variable">$block__box-clickable__title--text-color-focus</span>, <span class="hljs-variable">$block__box-clickable__title--text-decoration-focus</span>);
-            }
-
-            <span class="hljs-selector-class">.rh-block-content__description</span> {
-                @<span class="hljs-keyword">include</span> rh-block-effect-creator(<span class="hljs-variable">$block__box-clickable__description--text-color-focus</span>, <span class="hljs-variable">$block__box-clickable__description--text-decoration-focus</span>);
-            }
-        }
-
-        &amp;-<span class="hljs-selector-tag">link</span> {
-            <span class="hljs-comment">/* Positionering */</span>
-            <span class="hljs-attribute">position</span>: absolute;
-            <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
-            <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
-            <span class="hljs-attribute">z-index</span>: <span class="hljs-number">1</span>;
-
-            <span class="hljs-comment">/* Box-modell/beteende */</span>
-            <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
-            <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-            <span class="hljs-attribute">outline</span>: none;
-        }
+        @<span class="hljs-keyword">include</span> create-clickable-element-effect(
+            <span class="hljs-string">"rh-block--clickable"</span>, //Box classname
+            <span class="hljs-string">"rh-block-content__title"</span>, //Title link classname
+            <span class="hljs-string">"rh-block-content__description"</span>, //Description classname
+            <span class="hljs-variable">$block__box--hover-border-top</span>, //Box - border-top styling
+            <span class="hljs-variable">$block__box--hover-border-right</span>, //Box - border-right styling
+            false, //Box - border-bottom styling
+            <span class="hljs-variable">$block__box--hover-border-left</span>, //Box - border-left styling
+            <span class="hljs-variable">$block__box--hover-box-shadow</span>, //Box - shadow styling
+            <span class="hljs-variable">$block__box-tabbing--focus-box-shadow</span>, //Box - shadow when focus
+            <span class="hljs-variable">$block__box-clickable__title--text-color-hover</span>, //Title text color
+            <span class="hljs-variable">$block__box-clickable__title--text-decoration-hover</span>, //Title text decoration
+            <span class="hljs-variable">$block__box-clickable__description--text-color-hover</span>, //Description text color
+            <span class="hljs-variable">$block__box-clickable__description--text-decoration-hover</span> //Description text decoration
+        );
     }
 
     &amp;--focus {
-        @<span class="hljs-keyword">include</span> rh-block-effect-tabbing-focus;
+        <span class="hljs-attribute">border-top</span>: <span class="hljs-variable">$block__box--hover-border-top</span>;
+        <span class="hljs-attribute">border-right</span>: <span class="hljs-variable">$block__box--hover-border-right</span>;
+        <span class="hljs-attribute">border-left</span>: <span class="hljs-variable">$block__box--hover-border-left</span>;
+        <span class="hljs-attribute">box-shadow</span>: <span class="hljs-variable">$block__box-tabbing--focus-box-shadow</span>;
     }
 }</pre>
                             </code>
@@ -478,7 +395,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">4.1 KB</span>
+                    <span class="Meta-value">2.5 KB</span>
                 </li>
             </ul>
         </div>
@@ -559,31 +476,21 @@
 <span class="hljs-variable">$block__box-clickable__description--text-color</span>: false;
 <span class="hljs-variable">$block__box-clickable__description--text-decoration</span>: false;
 
-<span class="hljs-comment">// Hover</span>
+<span class="hljs-comment">// Content - :hover and :active</span>
 <span class="hljs-variable">$block__box-clickable__title--text-color-hover</span>: <span class="hljs-variable">$block__box-clickable__title--text-color</span>; <span class="hljs-comment">//false</span>
 <span class="hljs-variable">$block__box-clickable__title--text-decoration-hover</span>: <span class="hljs-variable">$block__box-clickable__title--text-decoration</span>; <span class="hljs-comment">//false</span>
 <span class="hljs-variable">$block__box-clickable__description--text-color-hover</span>: <span class="hljs-variable">$block__box-clickable__description--text-color</span>; <span class="hljs-comment">//false</span>
 <span class="hljs-variable">$block__box-clickable__description--text-decoration-hover</span>: <span class="hljs-variable">$block__box-clickable__description--text-decoration</span>; <span class="hljs-comment">//false</span>
 
-<span class="hljs-comment">// Active</span>
-<span class="hljs-variable">$block__box-clickable__title--text-color-active</span>: <span class="hljs-variable">$block__box-clickable__title--text-color</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$block__box-clickable__title--text-decoration-active</span>: <span class="hljs-variable">$block__box-clickable__title--text-decoration</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$block__box-clickable__description--text-color-active</span>: <span class="hljs-variable">$block__box-clickable__description--text-color</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$block__box-clickable__description--text-decoration-active</span>: <span class="hljs-variable">$block__box-clickable__description--text-decoration</span>; <span class="hljs-comment">//false</span>
-
-<span class="hljs-comment">// Focus-within</span>
-<span class="hljs-variable">$block__box-clickable__title--text-color-focus</span>: <span class="hljs-variable">$block__box-clickable__title--text-color</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$block__box-clickable__title--text-decoration-focus</span>: <span class="hljs-variable">$block__box-clickable__title--text-decoration</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$block__box-clickable__description--text-color-focus</span>: <span class="hljs-variable">$block__box-clickable__description--text-color</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$block__box-clickable__description--text-decoration-focus</span>: <span class="hljs-variable">$block__box-clickable__description--text-decoration</span>; <span class="hljs-comment">//false</span>
-
-<span class="hljs-comment">// Mixin</span>
+<span class="hljs-comment">// Box - :hover and :active</span>
 <span class="hljs-variable">$block__box--hover-border-top</span>: <span class="hljs-number">0.0625em</span> solid <span class="hljs-variable">$base3</span>;
 <span class="hljs-variable">$block__box--hover-border-right</span>: <span class="hljs-number">0.0625em</span> solid <span class="hljs-variable">$base3</span>;
 <span class="hljs-variable">$block__box--hover-border-left</span>: <span class="hljs-number">0.0625em</span> solid <span class="hljs-variable">$base3</span>;
 <span class="hljs-variable">$block__box--hover-box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0.125em</span> <span class="hljs-number">0.5em</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.3</span>);
 
-<span class="hljs-variable">$block__box-tabbing--focus-box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0.125em</span> <span class="hljs-number">0.5em</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.3</span>);</pre>
+<span class="hljs-comment">// Box - :focus-within</span>
+<span class="hljs-variable">$block__box-tabbing--focus-box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0.125em</span> <span class="hljs-number">0.5em</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.3</span>);
+</pre>
                             </code>
                             
                         </div>
@@ -599,7 +506,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.6 KB</span>
+                    <span class="Meta-value">1.8 KB</span>
                 </li>
             </ul>
         </div>
@@ -718,7 +625,7 @@
     <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-a0805ed3512d2daba0f36f40db53d905-panel-notes">
     <div class="Prose Prose--condensed">
         
-        <h1 id="block">Block</h1>
+        <h1 id="block-puff-">Block (Puff)</h1>
 <ul>
 <li>Komponents prefix: <code>rh-block*</code></li>
 <li>Filplats: <code>/components/Molecules/block</code></li>
@@ -743,42 +650,44 @@
 </tbody>
 </table>
 <h2 id="2-anv-ndning">2. Användning</h2>
-<p>Man kan återanvända <code>Clickable</code> funktion i andra komponenter för att de blir klickbar med att använda klasserna <code>rh-block--clickable</code> och <code>rh-block--clickable-link</code>.</p>
 <h3 id="2-1-default-standard-">2.1. Default (Standard)</h3>
 <ul>
-<li>Använd <code>Default</code> template.</li>
+<li>Använd <code>Default</code> variant.</li>
 </ul>
 <h3 id="2-2-clickable-hela-puffen-r-klickbar-">2.2. Clickable (Hela puffen är klickbar)</h3>
 <ul>
-<li>Använd <code>Clickable</code> template.</li>
-<li>Standard beteende aktiveras automatiska av klassen <code>rh-block--clickable</code> och man kan också justera i komponentens inställningar.<ul>
+<li>Använd <code>Clickable</code> variant.</li>
+<li>Standard beteende genereras automatisk av @mixin och aktiveras i klassen <code>rh-block--clickable</code>. Man kan också justera komponenten i komponentens inställningar.<ul>
 <li>:hover</li>
 <li>:active</li>
 <li>:focus-within</li>
 </ul>
 </li>
 </ul>
-<p><strong>Huvud principen:</strong></p>
+<p><strong>Huvud principer:</strong></p>
 <ul>
 <li>En <code>&lt;div&gt;</code> är container och det är runt om komponenten med <code>position: relative;</code>.</li>
 <li>En länk <code>&lt;a&gt;</code> tag ska ligga ovan på hela div:n med <code>position: absolute; z-index: 1;</code>.</li>
 </ul>
 <p><strong>Implementation:</strong></p>
-<p>Användning av standard beteende:</p>
-<code><pre>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-block--clickable"</span>&gt;
-    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block--clickable-link"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span>
-
-    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-comment">&lt;!-- Komponents innehåll --&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
-<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre></code><p>Återanvändning i andra komponenter <em>(Man får bygga själv beteenden :hover, :active, :focus-within när man inte använder klassen <code>rh-block--clickable</code>)</em>:</p>
-<code><pre>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-pos--relative"</span>&gt;
+<p>Användning:</p>
+<code><pre>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-element--clickable rh-block-box rh-block--clickable"</span>&gt;
     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-block--clickable-link"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span>
 
     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-comment">&lt;!-- Komponents innehåll --&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
 <span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre></code><h2 id="3-versionhistorik">3. Versionhistorik</h2>
+<h3 id="1-1-0-2019-10-31-">1.1.0 (2019-10-31)</h3>
+<ul>
+<li>Komponenten använder globala klasserna:<ul>
+<li><code>rh-element--clickable</code></li>
+<li><code>rh-element--clickable-link</code></li>
+</ul>
+</li>
+<li>Komponents beteenden <code>:hover</code>, <code>:active</code> och <code>:focus-within</code> genereras från @mixin för att behålla gemensamm logiken i klickbara komponenter i Stilguiden. De kontrolleras av klassen <code>rh-block--clickable</code>.</li>
+<li>Lanseras i Stilguide version &gt; 8.5.0</li>
+</ul>
 <h3 id="1-0-0">1.0.0</h3>
 <ul>
 <li>Första version</li>
@@ -1496,30 +1405,6 @@
 
 
 <span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="block-shortcuts.html" data-pjax>
-                <span>Block Shortcuts</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -3256,6 +3141,30 @@
     
 
             </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="block-shortcuts.html" data-pjax>
+                <span>Block Shortcuts</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
         </li>
         
     
