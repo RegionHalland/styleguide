@@ -6,6 +6,7 @@
 
 #### Molekylen "rh shortcuts"
 
+* Molekylen flyttat till ett vMolecules och fått ny sökväg
 * Ny markup
 * Bytt namn till "block shortcuts"
 * Fokusbeteende definierat
