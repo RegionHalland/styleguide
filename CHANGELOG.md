@@ -1,4 +1,5 @@
 # Ändringslogg
+* [8.6.0](/changelog/changelog.2019.10f.md) (2019-10-31)
 * 8.1.5 (2019-10-29)
     * Förbättring av Organism/footer-logo-group _(logotypernas positioner)_.
 * 8.1.4 (2019-10-28)

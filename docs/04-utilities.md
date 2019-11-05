@@ -5,7 +5,8 @@ __INNEHÅLL__
 4. [Section gutters](#4-section-gutters)
     * [4.1. section-gutter-lx](#41-section-gutter-lx)
 5. [Position](#5-position)
-6. [Övriga](#6-övriga)
+6. [Klickbar element](#6-klickbar-element)
+7. [Övriga](#7-övriga)
 
 Filplats: `/components/scss/_utilities.scss`
 
@@ -87,7 +88,19 @@ Filplats: `/components/scss/_utilities.scss`
 |--absolute|rh-pos--absolute|`position: absolute`|
 |--fixed|rh-pos--fixed|`position: fixed`|
 
-## 6. Övriga
+## 6. Klickbar element
+Hela en element är klickbar. Se standard struktur är nedan:
+
+```
+// En elements struktur
+<div class="rh-element--clickable">
+    <a href="#" class="rh-element--clickable-link" title=""></a>
+
+    <!-- Elements innehåll -->
+</div>
+```
+
+## 7. Övriga
 |Klassnamn|Fullständigt namn|Beskrivning|
 |---|---|---|
 |-no-scroll|rh-noscroll|Det låser scrollbar|

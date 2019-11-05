@@ -1,5 +1,20 @@
 # Versioner av stilguiden och deras ändringar
 
+## 9.0.0
+
+### Brytande ändringar
+
+#### Molekylen shortcuts
+
+* Ny markup
+* Tillgänglighet förbättrad - listan namnges av rubriken
+* Readme-fil med versionshistorik och implementeringsråd
+* Settings-fil introducerad
+* Sass-filen genomgången och strukturerad
+* Den blå varianten raderades
+
+## 8.6.0
+
 ## 8.5.0
 
 ### Komponenter flyttade till gitrepos och fått nya sökvägar:
