@@ -57,6 +57,42 @@ function isFileExists(fileLocation) {
     return fs.existsSync(fileLocation);
 }
 
+function indentifySASSCompilingError(objResult = []) {
+    return new Promise((resolve, reject) => {
+        if (Array.isArray(objResult)) {
+            const objResultLength = objResult.length;
+            let hasError = false,
+                errorObject;
+
+            for (let i = 0; i < objResultLength; i++) {
+                if (objResult[i].name && objResult[i].name === "Error") {
+                    hasError = true;
+                    errorObject = (objResult[i] instanceof Error) ?
+                        objResult[i] :
+                        new Error("An error occurred while compiling SASS");
+                    break;
+                }
+            }
+
+            if (!hasError) {
+                return resolve();
+            }
+
+            return reject(errorObject);
+
+        } else {
+            reject(new Error("Input data must be an array"));
+        }
+    });
+}
+
+function showResult(resultPath, result){
+    if (isFileExists(resultPath)){
+        console.log(`\n\x1b[32m✓ Build\x1b[0m -> \x1b[90m/${resultPath}/\x1b[0m -> ${result}`)
+    } else {
+        console.log(`\n\x1b[33m? Skipped\x1b[0m -> \x1b[90m/${resultPath}/\x1b[0m -> ${result}`)
+    }
+}
 
 /* --------------------------------------- LOGIC ----------------------------- */
 /**
@@ -104,7 +140,7 @@ function build_scss(cb, cssFilename, scssResource, destPath, options = {}) {
             .pipe(sourcemaps.init())
             .pipe(
                 sass.sync({ outputStyle: 'compressed' })
-                    .on('error', sass.logError)
+                    .on('error', (err) => reject(err))
             )
             .pipe(concat(cssFullFilename))
             .pipe(sourcemaps.write('.'))
@@ -135,10 +171,11 @@ function build_process(cb, name, resources = {}, destPath, options = {}) {
                 .catch((error) => error);
 
             Promise.all([buildjs, buildscss])
-                .then((buildFiles) => resolve({
-                    filename: filename,
-                    result: buildFiles
-                }))
+                .then((buildFiles) => {
+                    indentifySASSCompilingError(buildFiles)
+                        .then(() => resolve(buildFiles))
+                        .catch((error) => reject(error));
+                })
                 .catch((error) => reject(error));
 
         } else if (jsSrcList && jsSrcList.length === 0 && scssSrcList && scssSrcList.length > 0) {
@@ -190,7 +227,11 @@ function release_process(cb, siteInfo = {}, destPath, options = {}) {
                 .catch((error) => error);
 
             Promise.all([releaseTask, releaseLatestTask])
-                .then((results) => resolve(results))
+                .then((results) => {
+                    indentifySASSCompilingError(results)
+                        .then(() => resolve(results))
+                        .catch((error) => reject(error));
+                })
                 .catch((error) => reject(error));
 
         } else {
@@ -212,8 +253,8 @@ function build_styling_for_one_site(cb, sitename) {
                 const sitePublicPath = `${publicPath}/${name}`;
 
                 build_process(cb, name, resources, sitePublicPath)
-                    .then(({ result }) => console.log(`\n\x1b[32m✓ Build\x1b[0m -> \x1b[90m/${sitePublicPath}/\x1b[0m -> ${result}`))
-                    .catch((error) => console.error(error));
+                    .then(({ result }) => showResult(sitePublicPath, result))
+                    .catch((error) => console.error(`\n\x1b[31m✗ Error\x1b[0m An error occurred while building CSS for the site \x1b[33m${name}\x1b[0m\n\n${error.message ? error.message : error}`));
             }
         } else {
             console.error(`\n\x1b[31m✗ Error\x1b[0m The site ${sitename} is not found for building\n`);
@@ -234,8 +275,8 @@ function build_styling_for_all_sites(cb) {
                 const sitePublicPath = `${publicPath}/${name}`;
 
                 build_process(cb, name, resources, sitePublicPath)
-                    .then(({ result }) => console.log(`\n\x1b[32m✓ Build\x1b[0m -> \x1b[90m/${sitePublicPath}/\x1b[0m -> ${result}`))
-                    .catch((error) => console.error(error));
+                    .then(({ result }) => showResult(sitePublicPath, result))
+                    .catch((error) => console.error(`\n\x1b[31m✗ Error\x1b[0m An error occurred while building CSS for the site \x1b[33m${name}\x1b[0m\n\n${error.message ? error.message : error}`));
             } else {
                 console.error(`\n\x1b[31m✗\x1b[0m Can not build the site ${name}`);
             }
@@ -256,8 +297,8 @@ function release_styling_for_one_site(cb, sitename, options = {}) {
                 const siteReleasePath = `${releasePath}/${name}`;
 
                 release_process(cb, siteInfo, siteReleasePath, options)
-                    .then((results) => console.log(`\n\x1b[32m✓ Release\x1b[0m -> \x1b[90m/${siteReleasePath}/\x1b[0m -> ${results}`))
-                    .catch((error) => console.error(`\n\x1b[31m✗\x1b[0m ${error}`));
+                    .then((results) => showResult(siteReleasePath, results))
+                    .catch((error) => console.error(`\n\x1b[31m✗ Error\x1b[0m An error occurred while compiling CSS for the site \x1b[33m${name}\x1b[0m\n\n${error.message ? error.message : error}`));
             } else {
                 console.error(`\n\x1b[31m✗\x1b[0m Can not release the site ${name}`);
             }
@@ -281,8 +322,8 @@ function release_styling_for_all_sites(cb) {
                 const siteReleasePath = `${releasePath}/${name}`;
 
                 release_process(cb, siteInfo, siteReleasePath)
-                    .then((results) => console.log(`\n\x1b[32m✓ Release\x1b[0m -> \x1b[90m/${siteReleasePath}/\x1b[0m -> ${results}`))
-                    .catch((error) => console.error(`\n\x1b[31m✗\x1b[0m ${error}`));
+                    .then((results) => showResult(siteReleasePath, results))
+                    .catch((error) => console.error(`\n\x1b[31m✗ Error\x1b[0m An error occurred while compiling CSS for the site \x1b[33m${name}\x1b[0m\n\n${error.message ? error.message : error}`));
             } else {
                 console.error(`\n\x1b[31m✗\x1b[0m Can not release the site ${name}`);
             }
