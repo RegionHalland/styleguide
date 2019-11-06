@@ -96,21 +96,21 @@
 @mixin create-clickable-element-inside-effect(
 	$element-title-classname: false,
 	$element-description-classname: false,
-	$title-text-color: false,
-	$title-text-decoration: none,
-	$description-text-color: false,
-	$description-text-decoration: none
+	$content-title-text-color: false,
+	$content-title-text-decoration: none,
+	$content-description-text-color: false,
+	$content-description-text-decoration: none
 ) {
 	// Title
 	@if $element-title-classname {
 		.#{$element-title-classname} {
-			@if $title-text-color {
-				color: $title-text-color;
+			@if $content-title-text-color {
+				color: $content-title-text-color;
 			}
 
 			// The way for checking "false" is special for text-decoration property
-			@if $title-text-decoration != false {
-				text-decoration: $title-text-decoration;
+			@if $content-title-text-decoration != false {
+				text-decoration: $content-title-text-decoration;
 			}
 		}
 	}
@@ -118,13 +118,13 @@
 	// Description
 	@if $element-description-classname {
 		.#{$element-description-classname} {
-			@if $description-text-color {
-				color: $description-text-color;
+			@if $content-description-text-color {
+				color: $content-description-text-color;
 			}
 
 			// The way for checking "false" is special for text-decoration property
-			@if $description-text-decoration != false {
-				text-decoration: $description-text-decoration;
+			@if $content-description-text-decoration != false {
+				text-decoration: $content-description-text-decoration;
 			}
 		}
 	}
@@ -135,66 +135,73 @@
 	$element-box-classname: false,
 	$element-title-classname: false,
 	$element-description-classname: false,
+	$box-effect-outside: false,
+	$content-effect-inside: false,
 	$box-border-top-styling: false,
 	$box-border-right-styling: false,
 	$box-border-bottom-styling: false,
 	$box-border-left-styling: false,
 	$box-shadow-styling: false,
 	$box-shadow-focus-styling: false,
-	$title-text-color: false,
-	$title-text-decoration: none,
-	$description-text-color: false,
-	$description-text-decoration: none
+	$content-title-text-color: false,
+	$content-title-text-decoration: none,
+	$content-description-text-color: false,
+	$content-description-text-decoration: none
 ) {
-	// Common effects for the box
 	@if $element-box-classname {
-		@at-root .#{$element-box-classname}:hover,
-			.#{$element-box-classname}:active {
-			@include create-clickable-element-outside-effect(
-				$box-border-top-styling,
-				$box-border-right-styling,
-				$box-border-bottom-styling,
-				$box-border-left-styling,
-				$box-shadow-styling
-			);
+		
+		// Outside effects for the box
+		@if $box-effect-outside {
+			@at-root .#{$element-box-classname}:hover,
+				.#{$element-box-classname}:active {
+				@include create-clickable-element-outside-effect(
+					$box-border-top-styling,
+					$box-border-right-styling,
+					$box-border-bottom-styling,
+					$box-border-left-styling,
+					$box-shadow-styling
+				);
+			}
+	
+			// Using the separate generation for a better CSS result on IE11 and Edge - Tabbing
+			@at-root .#{$element-box-classname}:focus-within {
+				@include create-clickable-element-outside-effect(
+					$box-border-top-styling,
+					$box-border-right-styling,
+					$box-border-bottom-styling,
+					$box-border-left-styling,
+					$box-shadow-focus-styling // Using for tabbing
+				);
+			}
 		}
 
-		// Using the separate generation for a better CSS result on IE11 and Edge - Tabbing
-		@at-root .#{$element-box-classname}:focus-within {
-			@include create-clickable-element-outside-effect(
-				$box-border-top-styling,
-				$box-border-right-styling,
-				$box-border-bottom-styling,
-				$box-border-left-styling,
-				$box-shadow-focus-styling // Using for tabbing
-			);
-		}
-	}
-
-	// The specific effects for content (title and description)
-	@if $element-title-classname and $element-description-classname {
-		@at-root .#{$element-box-classname}:hover,
-			.#{$element-box-classname}:active {
-			@include create-clickable-element-inside-effect(
-				$element-title-classname,
-				$element-description-classname,
-				$title-text-color,
-				$title-text-decoration,
-				$description-text-color,
-				$description-text-decoration
-			);
-		}
-
-		// Using the separate generation for a better CSS result on IE11 and Edge
-		@at-root .#{$element-box-classname}:focus-within {
-			@include create-clickable-element-inside-effect(
-				$element-title-classname,
-				$element-description-classname,
-				$title-text-color,
-				$title-text-decoration,
-				$description-text-color,
-				$description-text-decoration
-			);
+		// The specific effects for inside content (title and description)
+		@if $content-effect-inside {
+			@if $element-title-classname and $element-description-classname {
+				@at-root .#{$element-box-classname}:hover,
+					.#{$element-box-classname}:active {
+					@include create-clickable-element-inside-effect(
+						$element-title-classname,
+						$element-description-classname,
+						$content-title-text-color,
+						$content-title-text-decoration,
+						$content-description-text-color,
+						$content-description-text-decoration
+					);
+				}
+	
+				// Using the separate generation for a better CSS result on IE11 and Edge
+				@at-root .#{$element-box-classname}:focus-within {
+					@include create-clickable-element-inside-effect(
+						$element-title-classname,
+						$element-description-classname,
+						$content-title-text-color,
+						$content-title-text-decoration,
+						$content-description-text-color,
+						$content-description-text-decoration
+					);
+				}
+			}
 		}
 	}
 

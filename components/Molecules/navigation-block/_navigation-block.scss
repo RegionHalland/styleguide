@@ -31,8 +31,12 @@
 	padding: $navigation-block--padding;
 
 	/* Visuellt */
-	border: $navigation-block--border;
-	border-radius: $navigation-block--border-radius;
+	@if $navigation-block--border {
+		border: $navigation-block--border;
+	}
+	@if $navigation-block--border-radius {
+		border-radius: $navigation-block--border-radius;
+	}
 
 	&__header {
 		/* Box-modell/beteende */
@@ -121,7 +125,9 @@
 		@include create-clickable-element-effect(
             "rh-navigation-block--clickable", //Box classname
             "rh-navigation-block__header-title-link", //Title link classname
-            "rh-navigation-block__description-text", //Description classname
+			"rh-navigation-block__description-text", //Description classname
+			$navigation-block-effect__box-outside,
+			$navigation-block-effect__content-inside,
             $navigation-block-effect--border, // Box border-top styling
             $navigation-block-effect--border, // Box border-right styling
             $navigation-block-effect--border, // Box border-bottom styling

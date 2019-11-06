@@ -108,6 +108,8 @@ Standard struktur för en klickbar element:
 |$element-box-classname|string|obligatorisk|Klassnamn använts till `<div>` tag som är runt om elementen _(container)_|
 |$element-title-classname|string|obligatorisk|Klassnamn använts till elements titel|
 |$element-description-classname|string|obligatorisk|Klassnamn använts till elements beskrivning|
+|$box-effect-outside|boolean|frivillig|Aktivera effekt som är runt om komponenten|
+|$content-effect-inside|boolean|frivillig|Aktivera effekt som är för innehåll i komponenten|
 |$box-border-top-styling|string|frivillig||
 |$box-border-right-styling|string|frivillig||
 |$box-border-bottom-styling|string|frivillig||

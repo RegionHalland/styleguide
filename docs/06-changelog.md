@@ -1,6 +1,14 @@
 # Versioner av stilguiden och deras ändringar
 
-
+## 9.0.1
+### Förbättring
+* @mixin `create-clickable-element-effect` - Man har nu två alternativ för att välja. Det blir mer flexibel:
+    * `effect-outside`
+    * `effect-inside`
+* Komponenten `navigation-block` - Använda ny @mixin för effekter _(`:active`, `:hover`, `:focus-within`)_.
+* Byggmyljö:
+    * Bättre felhantering.
+    * Tydligare meddelande.
 
 ## 9.0.0
 
