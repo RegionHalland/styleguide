@@ -1,5 +1,7 @@
 # Versioner av stilguiden och deras ändringar
 
+
+
 ## 9.0.0
 
 ### Brytande ändringar
@@ -15,6 +17,11 @@
 * Settings-fil introducerad
 * Sass-filen genomgången och strukturerad
 * Den blå varianten raderades
+
+### Ej brytande ändringar
+
+* vMolekylen "article block" uppdaterades till 1.0.1 som återställde labels från skiss och tidigare implementation
+* Denna dokumentation kompletterades med information om tidigare releaser
 
 ## 8.6.0 ([f0dd4a4b](https://dev.azure.com/regionhalland/public.RhWebStyleguide/_git/RhWebStyleguide/commit/f0dd4a4b7a728600871b85608f162d901cac1781?refName=refs%2Fheads%2Fmaster))
 
