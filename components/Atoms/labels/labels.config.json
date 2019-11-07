@@ -3,6 +3,7 @@
     "status": "wip",
 	"context": {
 		"caption": "Labels Default",
-		"name": "rh-labels"
+		"name": "rh-labels",
+		"labelcontent": "Exempel 1"
 	}		
 }
