@@ -1,13 +1,22 @@
 # Versioner av stilguiden och deras ändringar
 
-## 9.0.2
+## 9.0.3
+### Brytande ändring
+* Organism - Komponenten __rh-toplinks__ har bytts namn till __toplinks__
+
+### Förbättring
+* Molecules - __navigation-block__ har fått förbättringar.
+    * Man kan nu justera beteenden `:hover`, `:active`, `:focus-within` för icon.
+    * Det stödjer bättre IE11.
+
+## 9.0.2 ([b99e9716](https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhWebStyleguide/commit/b99e97169a99569cbbcd16033191c2523749f9f2/))
 ### Förbättring
 * Molecules/__block__ - Updaterats till version 1.1.1 -> Komponenten använder ny version av @mixin `create-clickable-element-effect` som finns i Stilguiden från version 9.0.1
 * Byggmiljö:
     * Updaterat dependencies till senast versioner.
     * Använda ny paketen: ESLint, jQuery, EditorConfig
 
-## 9.0.1
+## 9.0.1 ([917193ec](https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhWebStyleguide/commit/917193ecf738bd8688bf51f0ec0b340b48a44dc9/))
 ### Förbättring
 * @mixin `create-clickable-element-effect` - Man har nu två alternativ för att välja. Det blir mer flexibel:
     * `effect-outside`

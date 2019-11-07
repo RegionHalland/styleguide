@@ -1,4 +1,5 @@
 "use strict";
+"use strict";
 
 function toggleMenu() {
   document.getElementById("myDropdown").classList.toggle("rh-filter-show");
@@ -417,7 +418,7 @@ $(document).ready(function () {
 "use strict";
 
 $(document).ready(function () {
-  // This code fixs :focus-within behavior on IE11 and older browsers
+  // The code fixs :focus-within behavior on IE11 and older browsers
   var $navigationBlockItems = $(".rh-navigation-block");
   $navigationBlockItems.focusin(function (e) {
     e.stopPropagation();
@@ -607,4 +608,3 @@ $(document).ready(function () {
     $(this).removeClass("rh-block--focus");
   });
 });
-"use strict";
