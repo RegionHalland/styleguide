@@ -1,5 +1,4 @@
 "use strict";
-"use strict";
 
 function toggleMenu() {
   document.getElementById("myDropdown").classList.toggle("rh-filter-show");
@@ -608,3 +607,4 @@ $(document).ready(function () {
     $(this).removeClass("rh-block--focus");
   });
 });
+"use strict";
