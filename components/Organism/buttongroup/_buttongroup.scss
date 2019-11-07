@@ -1,0 +1,28 @@
+.rh-buttongroup {
+    /* Box-modell/beteende */
+    display: flex;
+    justify-content: center;
+
+    /* Typografi */
+    text-align: center;
+
+    @include medium {
+        justify-content: left;
+    }
+}
+
+.rh-buttongroup__button .rh-labels {
+    /* Box-modell/beteende */
+    display: none;
+
+    @include medium {
+        /* Box-modell/beteende */
+        display: inline;
+    }
+}
+
+.rh-buttongroup__button-text {
+    /* Typografi */
+    color: black;
+    text-decoration: none;
+}

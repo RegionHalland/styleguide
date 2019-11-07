@@ -1,0 +1,28 @@
+{
+  "title": "Buttongroup elements",
+  "status": "review",
+  "context": {
+    "text": "Default",
+    "name": "buttongroup button",
+    "extendClass": "",
+    "labelcontent": "12"
+  },
+  "variants": [
+    {
+      "name": "Left",
+      "status": "review",
+      "context": {
+        "modifier": "left",
+        "text": "Left"
+      }
+    },
+    {
+      "name": "Right",
+      "status": "review",
+      "context": {
+        "modifier": "right",
+        "text": "Right"
+      }
+    }
+  ]
+}

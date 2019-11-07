@@ -44,7 +44,7 @@
 @import 'components/vMolecules/back-to-top/_back-to-top.scss';
 @import 'components/vMolecules/block/_block.scss';
 @import 'components/Molecules/blurbs/_blurbs.scss';
-@import 'components/Molecules/buttongroup/_buttongroup.scss';
+@import 'components/Molecules/buttongroup-elements/_buttongroup-elements.scss';
 //@import 'components/Molecules/rh-block/_rh-block.scss';
 //@import 'components/Molecules/rh-blurbs/_rh-blurbs.scss';
 @import 'components/vMolecules/contact-info/_contact-info.scss';
@@ -98,6 +98,7 @@
 
 // Organism
 @import 'components/Organism/article-group/_article-group.scss';
+@import 'components/Organism/buttongroup/_buttongroup.scss';
 @import 'components/Organism/rh-breadcrums/_rh-breadcrums.scss';
 @import 'components/Organism/rh-footer/_rh-footer.scss';
 @import 'components/Organism/footer-group/_footer-group.scss';

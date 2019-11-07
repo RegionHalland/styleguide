@@ -1,16 +1,3 @@
-.rh-buttongroup {
-    /* Box-modell/beteende */
-    display: flex;
-    justify-content: center;
-
-    /* Typografi */
-    text-align: center;
-
-    @include medium {
-        justify-content: left;
-    }
-}
-
 .rh-buttongroup__button {
     /* Box-modell/beteende */
     min-width: 6em;
@@ -39,20 +26,4 @@
         background-color: #F4F4F4;
         border-bottom: 4px solid $complementary2;
     }
-}
-
-.rh-buttongroup__button .rh-labels {
-    /* Box-modell/beteende */
-    display: none;
-
-    @include medium {
-        /* Box-modell/beteende */
-        display: inline;
-    }
-}
-
-.rh-buttongroup__button-text {
-    /* Typografi */
-    color: black;
-    text-decoration: none;
 }
