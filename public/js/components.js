@@ -1,4 +1,47 @@
 "use strict";
+"use strict";
+
+function toggleMenu() {
+  document.getElementById("myDropdown").classList.toggle("rh-filter-show");
+  document.getElementById("dropdownBtn").classList.toggle("rh-filter-active");
+}
+
+function selectItem(sel) {
+  document.getElementById("dropdownBtn").classList.toggle("rh-filter-active");
+  document.getElementById("dropdownBtn").style.color = "black";
+  document.getElementById("myDropdown").classList.toggle("rh-filter-show");
+  var text = document.getElementById("dropdownBtn").firstChild;
+  text.data = sel.innerText;
+} // Close the dropdown menu if the user clicks outside of it
+
+
+window.onclick = function (event) {
+  if (!event.target.matches('.rh-filter')) {
+    var dropdowns = document.getElementsByClassName("rh-filter-menu");
+    var i;
+
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+
+      if (openDropdown.classList.contains('rh-filter-show')) {
+        openDropdown.classList.remove('rh-filter-show');
+      }
+    }
+
+    var btn = document.getElementsByClassName("rh-filter");
+    var i;
+
+    for (i = 0; i < btn.length; i++) {
+      var activeBtn = btn[i];
+
+      if (activeBtn.classList.contains('rh-filter-active')) {
+        activeBtn.classList.remove('rh-filter-active');
+      }
+    }
+  }
+};
+"use strict";
+"use strict";
 
 var acc = document.getElementsByClassName("rh-accordion");
 var i;
@@ -375,7 +418,7 @@ $(document).ready(function () {
 "use strict";
 
 $(document).ready(function () {
-  // This code fixs :focus-within behavior on IE11 and older browsers
+  // The code fixs :focus-within behavior on IE11 and older browsers
   var $navigationBlockItems = $(".rh-navigation-block");
   $navigationBlockItems.focusin(function (e) {
     e.stopPropagation();
@@ -526,48 +569,19 @@ function setShadow() {
   }
 }
 "use strict";
-"use strict";
 
-function toggleMenu() {
-  document.getElementById("myDropdown").classList.toggle("rh-filter-show");
-  document.getElementById("dropdownBtn").classList.toggle("rh-filter-active");
-}
-
-function selectItem(sel) {
-  document.getElementById("dropdownBtn").classList.toggle("rh-filter-active");
-  document.getElementById("dropdownBtn").style.color = "black";
-  document.getElementById("myDropdown").classList.toggle("rh-filter-show");
-  var text = document.getElementById("dropdownBtn").firstChild;
-  text.data = sel.innerText;
-} // Close the dropdown menu if the user clicks outside of it
-
-
-window.onclick = function (event) {
-  if (!event.target.matches('.rh-filter')) {
-    var dropdowns = document.getElementsByClassName("rh-filter-menu");
-    var i;
-
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-
-      if (openDropdown.classList.contains('rh-filter-show')) {
-        openDropdown.classList.remove('rh-filter-show');
-      }
-    }
-
-    var btn = document.getElementsByClassName("rh-filter");
-    var i;
-
-    for (i = 0; i < btn.length; i++) {
-      var activeBtn = btn[i];
-
-      if (activeBtn.classList.contains('rh-filter-active')) {
-        activeBtn.classList.remove('rh-filter-active');
-      }
-    }
-  }
-};
-"use strict";
+$(document).ready(function () {
+  // This code fixs :focus-within behavior on IE11 and older browsers
+  var $blockBoxItems = $(".rh-block-box");
+  $blockBoxItems.focusin(function (e) {
+    e.stopPropagation();
+    $(this).addClass("rh-block--focus");
+  });
+  $blockBoxItems.focusout(function (e) {
+    e.stopPropagation();
+    $(this).removeClass("rh-block--focus");
+  });
+});
 "use strict";
 
 // Needed function:
@@ -592,19 +606,5 @@ $(document).ready(function () {
     $('body,html').animate({
       scrollTop: 0
     }, 800);
-  });
-});
-"use strict";
-
-$(document).ready(function () {
-  // This code fixs :focus-within behavior on IE11 and older browsers
-  var $blockBoxItems = $(".rh-block-box");
-  $blockBoxItems.focusin(function (e) {
-    e.stopPropagation();
-    $(this).addClass("rh-block--focus");
-  });
-  $blockBoxItems.focusout(function (e) {
-    e.stopPropagation();
-    $(this).removeClass("rh-block--focus");
   });
 });
