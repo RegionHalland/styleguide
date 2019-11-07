@@ -1,5 +1,14 @@
 # Versioner av stilguiden och deras ändringar
 
+## 9.1.0
+### Utökningar
+* Ny molekyl "Buttongroup elements"
+
+### Ändringar
+* Atomen "Labels" fått texten flyttad till configfilen för att kunna skrivas över när man inkluderar atomen i en annan komponent
+* Atomen "Button" har fått större text och padding på mindre viewports
+* Molekylen "Buttongroup" har nu flyttat till organismer och inkluderar buttongroup elements. 
+
 ## 9.0.3
 ### Brytande ändring
 * Organism - Komponenten __rh-toplinks__ har bytts namn till __toplinks__
