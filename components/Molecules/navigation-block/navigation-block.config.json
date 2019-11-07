@@ -1,7 +1,7 @@
 {
 	"title": "Navigation block",
     "status": "review",
-    "version": "1.0.0-201910221700",
+    "version": "1.0.0-201911071500",
 	"context": {
         "name": "default",
         "isClickable": false,

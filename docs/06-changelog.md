@@ -1,6 +1,22 @@
 # Versioner av stilguiden och deras ändringar
 
-## 9.0.1
+## 9.0.3
+### Brytande ändring
+* Organism - Komponenten __rh-toplinks__ har bytts namn till __toplinks__
+
+### Förbättring
+* Molecules - __navigation-block__ har fått förbättringar.
+    * Man kan nu justera beteenden `:hover`, `:active`, `:focus-within` för icon.
+    * Det stödjer bättre IE11.
+
+## 9.0.2 ([b99e9716](https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhWebStyleguide/commit/b99e97169a99569cbbcd16033191c2523749f9f2/))
+### Förbättring
+* Molecules/__block__ - Updaterats till version 1.1.1 -> Komponenten använder ny version av @mixin `create-clickable-element-effect` som finns i Stilguiden från version 9.0.1
+* Byggmiljö:
+    * Updaterat dependencies till senast versioner.
+    * Använda ny paketen: ESLint, jQuery, EditorConfig
+
+## 9.0.1 ([917193ec](https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhWebStyleguide/commit/917193ecf738bd8688bf51f0ec0b340b48a44dc9/))
 ### Förbättring
 * @mixin `create-clickable-element-effect` - Man har nu två alternativ för att välja. Det blir mer flexibel:
     * `effect-outside`
@@ -34,7 +50,7 @@
 ## 8.6.0 ([f0dd4a4b](https://dev.azure.com/regionhalland/public.RhWebStyleguide/_git/RhWebStyleguide/commit/f0dd4a4b7a728600871b85608f162d901cac1781?refName=refs%2Fheads%2Fmaster))
 
 ### Nya funktioner
-* Klickbar element - Det gör hela en element blir klickbar. Man kan skapa elementens beteende 
+* Klickbar element - Det gör hela en element blir klickbar. Man kan skapa elementens beteende
     * `rh-element--clickable`
     * `rh-element--clickable-link`
 * Molecules/__navigation-block__ - Det finns en ny variant `Clickable` som kan vara klickbar. Varianterna är nu:
@@ -54,12 +70,12 @@
 * Contact info 1.0.0 - molekyl
 * Filter alphabet 1.0.0 - molekyl
 
-## 8.4.0 
+## 8.4.0
 
 ### Komponenter flyttade till gitrepos och fått nya sökvägar:
 * Article block 1.0.0 - molekyl
 * Caption hero 1.0.0 - atom
-* Image hero 1.0.0 - molekyl 
+* Image hero 1.0.0 - molekyl
 * Image caption 1.0.0 - molekyl
 
 ### Andra ändringar
@@ -70,13 +86,13 @@
 Molekyl: Navigation left 1.1.0
 * Flyttat till vMolecules i stilguiden - peka om sökvägen till vMolecules vid användning.
 
-## 8.2.0 
+## 8.2.0
 
 ### Utökningar
 Molekyl: Filter alphabet 1.0.0
 * Fullt stöd för settingsfil.
 * Fokus-beteende introducerat.
-* Versionshistorik för komponenten skapad under "Notes". 
+* Versionshistorik för komponenten skapad under "Notes".
 * Exempelkoden uppdaterad.
 * Stöd för `--inactive` som visuellt indikerar inaktiverade val.
 
@@ -85,7 +101,7 @@ Molekyl: Filter alphabet 1.0.0
 * "Footer logo group"-organismen justerades för att förbättra logotypernas positionering.
 
 ## 8.1.4 ([7560eac5](https://dev.azure.com/regionhalland/public.RhWebStyleguide/_git/RhWebStyleguide/commit/7560eac5455f7c1b78d587a0799559307d213204?refName=refs%2Fheads%2Fmaster))
-### Ändringar 
+### Ändringar
 * "Footer logo group"-organismen fick den extra varianten "has links".
 
 ## 8.1.3 ([d0a3cf9c](https://dev.azure.com/regionhalland/public.RhWebStyleguide/_git/RhWebStyleguide/commit/d0a3cf9c35283d53c925d59ec7b6bf7aedba02e7?refName=refs%2Fheads%2Fmaster))
@@ -106,7 +122,7 @@ Merge-konflikt ordnad
 ## Version 8.0.0
 
 ### Beteendebrytande ändringar
-* Den extra captionklass som fanns i molekylen "image hero" är borttagen. Används den nya settings-filen för "caption hero" istället. 
+* Den extra captionklass som fanns i molekylen "image hero" är borttagen. Används den nya settings-filen för "caption hero" istället.
 
 ### Övriga ändringar
 #### Atomer
@@ -141,7 +157,7 @@ Det blir bättre prestanda, snabbare för implementation, enklare för underhål
 
 ## 7.2.0
 ### Utökningar
-* Circle button-atomen fått stöd för modifiern --secondary 
+* Circle button-atomen fått stöd för modifiern --secondary
 
 ## 7.1.0
 ### Ändringar
@@ -169,10 +185,10 @@ Period: 2019-10-16 - 2019-10-17
     * Det är använbart när man behöver fixa merge konflikt för parallell brancher eller bara vill omkompilera Stilguiden för senast uppgradering efter man har pullat ner en branch.
 * Förbättring för Gulp avvaktning _(*.json adderats)_.
 
-## 6.1.0 
+## 6.1.0
 
 ## 6.0.1
-Versionsnummer i sites building justerat. 
+Versionsnummer i sites building justerat.
 
 ## 6.0.0
 Samlingsrelease av en längre periods ändringar - släpptes innan 5.2.0, men ligger i otakt pga att branchen 5.2.0 mergats in.
@@ -210,7 +226,7 @@ Vi börjar använda versions formatet `[versionnumber]-[timestamp]` för alpha, 
 * __Användning:__
     * Kör `$ gulp dev` för att starta utveckling server.
     * Lokalt server är på `http://localhost:3000/` som vanligt.
-    
+
 ## 5.0.0
 
 ## 4.2.0

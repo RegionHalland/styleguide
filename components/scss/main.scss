@@ -1,3 +1,7 @@
+/* *************** */
+/* General settins */
+/* *************** */
+
 // Functions
 @import '_functions';
 @import '_settings-main';
@@ -15,99 +19,105 @@
 @import '_mixin-components.scss';
 @import '_utilities.scss';
 
-// Components settings
+/* ******************* */
+/* Components settings */
+/* ******************* */
+
 @import '_settings-components.scss';
 
-// Atoms
+/* ****** */
+/* vAtoms */
+/* ****** */
+
+@import 'components/vAtoms/caption-hero/_caption-hero.scss';
+@import 'components/vAtoms/circle-button/_circle-button.scss';
+
+/* ***** */
+/* Atoms */
+/* ***** */
+
 @import 'components/Atoms/avatar/_avatar.scss';
 @import 'components/Atoms/badge/_badge.scss';
 @import 'components/Atoms/button/_button.scss';
-@import 'components/vAtoms/caption-hero/_caption-hero.scss';
 @import 'components/Atoms/card/_card.scss';
-@import 'components/vAtoms/circle-button/_circle-button.scss';
 @import 'components/Atoms/filter/_filter.scss';
-//@import 'components/Atoms/form/_form.scss';
+@import 'components/Atoms/form-control-text/_form-control-text.scss';
+@import 'components/Atoms/form-control-textarea/_form-control-textarea.scss';
 @import 'components/Atoms/labels/_labels.scss';
 @import 'components/Atoms/link/_link.scss';
 @import 'components/Atoms/pagination-elements/_pagination-elements.scss';
 @import 'components/Atoms/round-button/_round-button.scss';
 @import 'components/Atoms/search-field/_search-field.scss';
 @import 'components/Atoms/visual-element/_visual-element.scss';
-@import 'components/Atoms/form-control-text/_form-control-text.scss';
-@import 'components/Atoms/form-control-textarea/_form-control-textarea.scss';
-@import 'components/vMolecules/image-caption/_image-caption.scss';
-@import 'components/Molecules/rh-video/_rh-video.scss';
 
-// Molecules
-@import 'components/Molecules/article/_article.scss';
+/* ********** */
+/* vMolecules */
+/* ********** */
+
 @import 'components/vMolecules/article-block/_article-block.scss';
+@import 'components/vMolecules/image-caption/_image-caption.scss';
+@import 'components/vMolecules/image-hero/_image-hero.scss';
 @import 'components/vMolecules/back-to-top/_back-to-top.scss';
 @import 'components/vMolecules/block/_block.scss';
+@import 'components/vMolecules/block-shortcuts/_block-shortcuts.scss';
+@import 'components/vMolecules/contact-info/_contact-info.scss';
+@import 'components/vMolecules/filter-alphabet/_filter-alphabet.scss';
+@import 'components/vMolecules/navigation-left/_navigation-left.scss';
+
+/* ********* */
+/* Molecules */
+/* ********* */
+
+@import 'components/Molecules/article/_article.scss';
 @import 'components/Molecules/blurbs/_blurbs.scss';
 @import 'components/Molecules/buttongroup-elements/_buttongroup-elements.scss';
-//@import 'components/Molecules/rh-block/_rh-block.scss';
-//@import 'components/Molecules/rh-blurbs/_rh-blurbs.scss';
-@import 'components/vMolecules/contact-info/_contact-info.scss';
+@import 'components/Molecules/cookie-notice/_cookie-notice.scss';
 @import 'components/Molecules/feedback/_feedback.scss';
-//@import 'components/Molecules/calendar-element/_calendar-element.scss';
-//@import 'components/Molecules/rh-event-card-calendar/_rh-event-card-calendar.scss';
-@import 'components/Molecules/rh-personal-info/_rh-personal-info.scss';
-@import 'components/Molecules/navigation-card/_navigation-card.scss';
-@import 'components/vMolecules/navigation-left/_navigation-left.scss';
-@import 'components/Molecules/linkgroup/_linkgroup.scss';
-//@import 'components/Molecules/rh-filter-alphabet/_rh-filter-alphabet.scss';
-//@import 'components/Molecules/rh-image-caption/_rh-image-caption.scss';
-//@import 'components/Molecules/rh-image-hero/_rh-image-hero.scss';
-//@import 'components/Molecules/rh-label-previous/_rh-label-previous.scss';
-@import 'components/Molecules/rh-secondary-nav/_rh-secondary-nav.scss';
-@import 'components/vMolecules/block-shortcuts/_block-shortcuts.scss';
-@import 'components/Molecules/menu/_menu.scss';
-@import 'components/Molecules/news-info/_news-info.scss';
-@import 'components/Molecules/logo-sitename/_logo-sitename.scss';
-//@import 'components/Molecules/rh-lists/_rh-lists.scss';
+@import 'components/Molecules/feedback-form/_feedback-form.scss';
 @import 'components/Molecules/label-previous/_label-previous.scss';
-//@import 'components/Molecules/rh-article/_rh-article.scss';
-@import 'components/vMolecules/image-hero/_image-hero.scss';
-@import 'components/Molecules/messages/_messages.scss';
-@import 'components/Molecules/page-nav/_page-nav.scss';
-//@import 'components/Molecules/rh-navigation-card/_rh-navigation-card.scss';
-//@import 'components/Molecules/rh-news-info/_rh-news-info.scss';
-@import 'components/Molecules/rh-unit-info/_rh-unit-info.scss';
+@import 'components/Molecules/linkgroup/_linkgroup.scss';
 @import 'components/Molecules/lists/_lists.scss';
-//@import 'components/Molecules/event-card-calendar/_event-card-calendar.scss';
-@import 'components/Molecules/rh-search-elements/_rh-search-elements.scss';
+@import 'components/Molecules/logo-sitename/_logo-sitename.scss';
+@import 'components/Molecules/menu/_menu.scss';
+@import 'components/Molecules/menu-mobile/_menu-mobile.scss';
+@import 'components/Molecules/messages/_messages.scss';
+@import 'components/Molecules/navigation-block/_navigation-block.scss';
+@import 'components/Molecules/navigation-card/_navigation-card.scss';
+@import 'components/Molecules/news-info/_news-info.scss';
+@import 'components/Molecules/page-nav/_page-nav.scss';
+@import 'components/Molecules/rh-video/_rh-video.scss';
 @import 'components/Molecules/rh-pagination/_rh-pagination.scss';
 @import 'components/Molecules/rh-personal-info/_rh-personal-info.scss';
 @import 'components/Molecules/rh-search-elements/_rh-search-elements.scss';
 @import 'components/Molecules/rh-search-external-link/_rh-search-external-link.scss';
 @import 'components/Molecules/rh-search-external-link-1177/_rh-search-external-link-1177.scss';
 @import 'components/Molecules/rh-secondary-nav/_rh-secondary-nav.scss';
-
 @import 'components/Molecules/rh-tabs/_rh-tabs.scss';
-//@import 'components/Molecules/rh-cookie-notice/_rh-cookie-notice.scss';
-@import 'components/vMolecules/filter-alphabet/_filter-alphabet.scss';
-//@import 'components/Molecules/rh-calendar-element/_rh-calendar-element.scss';
 @import 'components/Molecules/rh-unit-info/_rh-unit-info.scss';
-@import 'components/Molecules/rh-video/_rh-video.scss';
-@import 'components/Molecules/feedback-form/_feedback-form.scss';
-@import 'components/Molecules/cookie-notice/_cookie-notice.scss';
-//@import 'components/Molecules/rh-filter-alphabet/_rh-filter-alphabet.scss';
-//@import 'components/Molecules/rh-calendar-element/_rh-calendar-element.scss';
-@import 'components/Molecules/menu-mobile/_menu-mobile.scss';
-@import 'components/Molecules/navigation-block/_navigation-block.scss';
 
-// Organism
+/* ********* */
+/* vOrganism */
+/* ********* */
+
+// Finns inga ännu..
+
+/* ******** */
+/* Organism */
+/* ******** */
+
 @import 'components/Organism/article-group/_article-group.scss';
 @import 'components/Organism/buttongroup/_buttongroup.scss';
-@import 'components/Organism/rh-breadcrums/_rh-breadcrums.scss';
-@import 'components/Organism/rh-footer/_rh-footer.scss';
+@import 'components/Organism/block-group/_block-group.scss';
 @import 'components/Organism/footer-group/_footer-group.scss';
 @import 'components/Organism/footer-logo-group/_footer-logo-group.scss';
+@import 'components/Organism/navigation-block-group/_navigation-block-group.scss';
+@import 'components/Organism/rh-breadcrums/_rh-breadcrums.scss';
+@import 'components/Organism/rh-footer/_rh-footer.scss';
 @import 'components/Organism/rh-footer-logo/_rh-footer-logo.scss';
 @import 'components/Organism/rh-header/_rh-header.scss';
 @import 'components/Organism/rh-main-nav/_rh-main-nav.scss';
 @import 'components/Organism/rh-search/_rh-search.scss';
 @import 'components/Organism/rh-table/_rh-table.scss';
-@import 'components/Organism/rh-toplinks/_rh-toplinks.scss';
+@import 'components/Organism/toplinks/_toplinks.scss';
 @import 'components/Organism/block-group/_block-group.scss';
 @import 'components/Organism/navigation-block-group/_navigation-block-group.scss';
