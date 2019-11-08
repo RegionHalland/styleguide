@@ -1,5 +1,11 @@
 # Versioner av stilguiden och deras ändringar
 
+## 9.2.0
+### Komponenter som flyttat till gitrepon och fått nya sökvägar
+* Atomen labels
+* Molekylen "buttongroup elements"
+* Organismen "buttongroup"
+
 ## 9.1.0
 ### Utökningar
 * Ny molekyl "Buttongroup elements"
