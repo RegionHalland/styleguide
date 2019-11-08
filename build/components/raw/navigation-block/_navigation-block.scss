@@ -3,6 +3,23 @@
 @import '../../Atoms/circle-button/_circle-button.scss';
 */
 
+@mixin create-navigation-block-icon-effect (){
+    .rh-navigation-block__header-icon-button {
+        @if $navigation-block__header-round-button--border-hover-active {
+            border: $navigation-block__header-round-button--border-hover-active;
+        }
+
+        @if $navigation-block__header-round-button--background-color-hover-active
+        {
+            background-color: $navigation-block__header-round-button--background-color-hover-active;
+        }
+
+        @if $navigation-block__header-round-button--icon-color-hover-active {
+            color: $navigation-block__header-round-button--icon-color-hover-active;
+        }
+    }
+}
+
 .rh-navigation-block {
 	// Reset p tag's settings on global
 	p {
@@ -31,8 +48,12 @@
 	padding: $navigation-block--padding;
 
 	/* Visuellt */
-	border: $navigation-block--border;
-	border-radius: $navigation-block--border-radius;
+	@if $navigation-block--border {
+		border: $navigation-block--border;
+	}
+	@if $navigation-block--border-radius {
+		border-radius: $navigation-block--border-radius;
+	}
 
 	&__header {
 		/* Box-modell/beteende */
@@ -118,10 +139,14 @@
 
 	// Create the effects :active, :hover, :focus-within by using @mixin
 	&--clickable {
+        $navigationBlockClickableClassname: "rh-navigation-block--clickable";
+
 		@include create-clickable-element-effect(
-            "rh-navigation-block--clickable", //Box classname
+            $navigationBlockClickableClassname, //Box classname
             "rh-navigation-block__header-title-link", //Title link classname
-            "rh-navigation-block__description-text", //Description classname
+			"rh-navigation-block__description-text", //Description classname
+			$navigation-block-effect__box-outside,
+			$navigation-block-effect__content-inside,
             $navigation-block-effect--border, // Box border-top styling
             $navigation-block-effect--border, // Box border-right styling
             $navigation-block-effect--border, // Box border-bottom styling
@@ -132,13 +157,29 @@
             $navigation-block-effect--title-text-decoration, //Title text decoration
             $navigation-block-effect--description-text-color, // Description text color
             $navigation-block-effect--description-text-decoration // Description text decoration
-        );
+        ){
+            // Create extend effect for icon
+            @at-root .#{$navigationBlockClickableClassname}:hover,
+                .#{$navigationBlockClickableClassname}:active {
+                @include create-navigation-block-icon-effect;
+            }
+
+            @at-root .#{$navigationBlockClickableClassname}:focus-within {
+                @include create-navigation-block-icon-effect;
+            }
+        };
 	}
 
 	// This code fixs :focus-within behavior on IE11 and older browsers
 	&--focus {
-		/* Box-modell/beteende */
-		border: $navigation-block-effect--border;
-		box-shadow: $navigation-block-effect-focus--box-shadow;
+        /* Box-modell/beteende */
+        @if $navigation-block-effect__box-outside {
+            border: $navigation-block-effect--border;
+            box-shadow: $navigation-block-effect-focus--box-shadow;
+        }
+
+        @if $navigation-block-effect__content-inside {
+            @include create-navigation-block-icon-effect;
+        }
     }
 }

@@ -1,0 +1,13 @@
+/* ------------------------ */
+/* Organismen "Buttongroup" */
+/* ------------------------ */
+
+// Buttongroup
+$BUTTONGROUP--DISPLAY: flex;
+$BUTTONGROUP--JUSTIFY-CONTENT: center;
+$BUTTONGROUP--TEXT-ALIGN: center;
+$BUTTONGROUP--MEDIUM--JUSTIFY-CONTENT: left;
+
+// Labels inkluderade i "buttongroup button"
+$BUTTONGROUP__BUTTON--LABELS--DISPLAY: none;
+$BUTTONGROUP__BUTTON--LABELS--MEDIUM--DISPLAY: inline; // Visa from medium eller inte

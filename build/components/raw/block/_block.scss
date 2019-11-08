@@ -56,6 +56,8 @@
             "rh-block--clickable", //Box classname
             "rh-block-content__title", //Title link classname
             "rh-block-content__description", //Description classname
+            $block-effect__box-outside,
+            $block-effect__content-inside,
             $block__box--hover-border-top, //Box - border-top styling
             $block__box--hover-border-right, //Box - border-right styling
             false, //Box - border-bottom styling

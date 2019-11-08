@@ -1,0 +1,35 @@
+.rh-buttongroup__button {
+    /* Box-modell/beteende */
+    min-width: $BUTTONGROUP__BUTTON--MIN-WIDTH;
+
+    /* Visuellt */
+    background-color: $BUTTONGROUP__BUTTON--BACKGROUND-COLOR;
+    border-bottom: $BUTTONGROUP__BUTTON--BORDER-BOTTOM;
+    padding:$BUTTONGROUP__BUTTON--PADDING;
+
+    &--left {
+        /* Visuellt */
+        border-bottom-left-radius: $BUTTONGROUP__BUTTON--LEFT--BORDER-BOTTOM-LEFT-RADIUS;
+        border-top-left-radius: $BUTTONGROUP__BUTTON--LEFT--BORDER-TOP-LEFT-RADIUS;
+        border-right: $BUTTONGROUP__BUTTON--LEFT--BORDER-RIGHT;
+    }
+
+    &--right {
+        /* Visuellt */
+        border-bottom-right-radius: $BUTTONGROUP__BUTTON--RIGHT--BORDER-BOTTOM-RIGHT-RADIUS;
+        border-top-right-radius: $BUTTONGROUP__BUTTON--RIGHT--BORDER-TOP-RIGHT-RADIUS;
+        border-left: $BUTTONGROUP__BUTTON--RIGHT--BORDER-LEFT;
+    }
+
+    &--active,&:focus,&:active,&:hover {
+        /* Visuellt */
+        background-color: $BUTTONGROUP__BUTTON--ACTIVE--BACKGROUND-COLOR;
+        border-bottom: $BUTTONGROUP__BUTTON--ACTIVE--BORDER-BOTTOM;
+    }
+}
+
+.rh-buttongroup__button-text {
+    /* Typografi */
+    color: $BUTTONGROUP__BUTTON-TEXT--COLOR;
+    text-decoration: $BUTTONGROUP__BUTTON-TEXT--TEXT-DECORATION;
+}
