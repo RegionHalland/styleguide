@@ -1,27 +1,27 @@
 .rh-labels {
 	/* Box-modell/beteende */
-	display: inline-block;
-	vertical-align: baseline;
-	min-width: em(11);
-	padding-top: em(5);
-	padding-bottom: em(5);
-	padding-right: em(9);
-	padding-left: em(9);
-	border-radius: em(12);
-	margin-right: em(10);
+	border-radius: $LABELS--BORDER-RADIUS;
+	display: $LABELS--DISPLAY;
+	margin-right: $LABELS--MARGIN-RIGHT;
+	min-width: $LABELS--MIN-WIDTH;
+	padding-top: $LABELS--PADDING-TOP;
+	padding-bottom: $LABELS--PADDING-BOTTOM;
+	padding-right: $LABELS--PADDING-RIGHT;
+	padding-left: $LABELS--PADDING-LEFT;
+	vertical-align: $LABELS--VERTICAL-ALIGN;
 
 	/* Visuellt */
-	background-color: $labels--background-color;
+	background-color: $LABELS--BACKGROUND-COLOR;
 
 	/* Typografi */
-	font-size: em(14);
-	color: $labels--text-color;
-	text-align: center;
-	line-height: 1;
-	white-space: nowrap;
+	color: $LABELS--TEXT-COLOR;
+	font-size: $LABELS--FONT-SIZE;
+	line-height: $LABELS--LINE-HEIGHT;
+	text-align: $LABELS--TEXT-ALIGN;
+	white-space: $LABELS--WHITE-SPACE;
     
 	@include large {
 		/* Box-modell/beteende */
-		min-width: em(12);
+		min-width: $LABELS--LARGE--MIN-WIDTH;
 	}
 }
