@@ -1,35 +1,46 @@
 /* DEFAULT COMPONENTS SETTINGS */
+
+/* vAtomer - från gitrepon */
+@import '../vAtoms/caption-hero/caption-hero.settings.scss';
+@import '../vAtoms/circle-button/circle-button.settings.scss';
+
+/* vMolekyler - från gitrepon */
+@import '../vMolecules/article-block/article-block.settings.scss';
+@import '../vMolecules/back-to-top/back-to-top.settings.scss';
+@import '../vMolecules/block/block.settings.scss';
+@import '../vMolecules/block-shortcuts/block-shortcuts.settings.scss';
+@import '../vMolecules/contact-info/contact-info.settings.scss';
+@import '../vMolecules/filter-alphabet/filter-alphabet.settings.scss';
+@import '../vMolecules/image-hero/image-hero.settings.scss';
+@import '../vMolecules/navigation-left/navigation-left.settings.scss';
+
+/* vOrganismer - från gitrepon  */
+// Finns inga ännu
+
+/* Atomer - fortfarande kvar i stilguiden */
 @import '../Atoms/button/button.settings.scss';
-@import '../vAtoms/circle-button/circle-button.settings.scss'; //-> vAtoms
-@import '../vAtoms/caption-hero/caption-hero.settings.scss'; //-> vAtoms
-@import '../Atoms/round-button/round-button.settings.scss';
-@import '../Atoms/labels/labels.settings.scss';
-@import '../Atoms/link/link.settings.scss';
 @import '../Atoms/form-control-text/form-control-text.settings.scss';
 @import '../Atoms/form-control-textarea/form-control-textarea.settings.scss';
-@import '../Atoms/search-field/search-field.settings.scss';
+@import '../Atoms/labels/labels.settings.scss';
+@import '../Atoms/link/link.settings.scss';
 @import '../Atoms/pagination-elements/pagination-elements.settings.scss';
+@import '../Atoms/round-button/round-button.settings.scss';
+@import '../Atoms/search-field/search-field.settings.scss';
 
-@import '../vMolecules/article-block/article-block.settings.scss';
-@import '../vMolecules/back-to-top/back-to-top.settings.scss'; //-> vMolecules
+/* Molekyler - fortfarande kvar i stilguiden */
 @import '../Molecules/buttongroup-elements/buttongroup-elements.settings.scss';
-@import '../vMolecules/block/block.settings.scss'; //-> vMolecules
-@import '../vMolecules/contact-info/contact-info.settings.scss'; //-> vMolecules
 @import '../Molecules/cookie-notice/cookie-notice.settings.scss';
 @import '../Molecules/feedback-form/feedback-form.settings.scss';
-@import '../vMolecules/filter-alphabet/filter-alphabet.settings.scss'; //-> vMolecules
-@import '../vMolecules/image-hero/image-hero.settings.scss'; //-> vMolecules
 @import '../Molecules/menu/menu.settings.scss';
 @import '../Molecules/menu-mobile/menu-mobile.settings.scss';
 @import '../Molecules/messages/message.settings.scss';
 @import '../Molecules/navigation-block/navigation-block.settings.scss';
-@import '../vMolecules/navigation-left/navigation-left.settings.scss'; //-> vMolecules
-@import '../vMolecules/block-shortcuts/block-shortcuts.settings.scss';
 
+/* Organismer - fortfarande kvar i stilguiden */
 @import '../Organism/article-group/article-group.settings.scss';
 @import '../Organism/block-group/block-group.settings.scss';
-@import '../Organism/navigation-block-group/navigation-block-group.settings.scss';
-@import '../Organism/rh-breadcrums/breadcrums.settings.scss';
 @import '../Organism/footer-group/footer-group.settings.scss';
 @import '../Organism/footer-logo-group/footer-logo-group.settings.scss';
+@import '../Organism/navigation-block-group/navigation-block-group.settings.scss';
+@import '../Organism/rh-breadcrums/breadcrums.settings.scss';
 @import '../Organism/toplinks/toplinks.settings.scss';
