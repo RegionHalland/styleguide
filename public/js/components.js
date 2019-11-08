@@ -1,4 +1,5 @@
 "use strict";
+"use strict";
 
 function toggleMenu() {
   document.getElementById("myDropdown").classList.toggle("rh-filter-show");
@@ -39,7 +40,6 @@ window.onclick = function (event) {
     }
   }
 };
-"use strict";
 "use strict";
 "use strict";
 
@@ -431,6 +431,33 @@ $(document).ready(function () {
 });
 "use strict";
 
+var videoPlayButton,
+    videoWrapper = document.getElementsByClassName('rh-video')[0],
+    video = document.getElementsByTagName('video')[0],
+    videoMethods = {
+  renderVideoPlayButton: function renderVideoPlayButton() {
+    if (videoWrapper !== undefined && videoWrapper.contains(video)) {
+      this.formatVideoPlayButton();
+      video.classList.add('has-media-controls-hidden');
+      videoPlayButton = document.getElementsByClassName('video-button')[0];
+      videoPlayButton.addEventListener('click', this.hideVideoPlayButton);
+    }
+  },
+  formatVideoPlayButton: function formatVideoPlayButton() {
+    videoWrapper.insertAdjacentHTML('beforeend', '\
+            <div class="video-button"><div class="video-button-content"> <i class="feather icon-play"></i> </div></div>\
+            ');
+  },
+  hideVideoPlayButton: function hideVideoPlayButton() {
+    video.play();
+    videoPlayButton.classList.add('is-hidden');
+    video.classList.remove('has-media-controls-hidden');
+    video.setAttribute('controls', 'controls');
+  }
+};
+videoMethods.renderVideoPlayButton();
+"use strict";
+
 var acc = document.getElementsByClassName("rh-search-accordion");
 var i;
 
@@ -541,33 +568,6 @@ function setShadow() {
     }
   }
 }
-"use strict";
-
-var videoPlayButton,
-    videoWrapper = document.getElementsByClassName('rh-video')[0],
-    video = document.getElementsByTagName('video')[0],
-    videoMethods = {
-  renderVideoPlayButton: function renderVideoPlayButton() {
-    if (videoWrapper !== undefined && videoWrapper.contains(video)) {
-      this.formatVideoPlayButton();
-      video.classList.add('has-media-controls-hidden');
-      videoPlayButton = document.getElementsByClassName('video-button')[0];
-      videoPlayButton.addEventListener('click', this.hideVideoPlayButton);
-    }
-  },
-  formatVideoPlayButton: function formatVideoPlayButton() {
-    videoWrapper.insertAdjacentHTML('beforeend', '\
-            <div class="video-button"><div class="video-button-content"> <i class="feather icon-play"></i> </div></div>\
-            ');
-  },
-  hideVideoPlayButton: function hideVideoPlayButton() {
-    video.play();
-    videoPlayButton.classList.add('is-hidden');
-    video.classList.remove('has-media-controls-hidden');
-    video.setAttribute('controls', 'controls');
-  }
-};
-videoMethods.renderVideoPlayButton();
 "use strict";
 
 // Needed function:

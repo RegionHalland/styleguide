@@ -1,28 +1,22 @@
 .rh-buttongroup {
     /* Box-modell/beteende */
-    display: flex;
-    justify-content: center;
+    display: $BUTTONGROUP--DISPLAY;
+    justify-content: $BUTTONGROUP--JUSTIFY-CONTENT;
 
     /* Typografi */
-    text-align: center;
+    text-align: $BUTTONGROUP--TEXT-ALIGN;
 
     @include medium {
-        justify-content: left;
+        justify-content: $BUTTONGROUP--MEDIUM--JUSTIFY-CONTENT;
     }
 }
 
 .rh-buttongroup__button .rh-labels {
     /* Box-modell/beteende */
-    display: none;
+    display: $BUTTONGROUP__BUTTON--LABELS--DISPLAY;
 
     @include medium {
         /* Box-modell/beteende */
-        display: inline;
+        display: $BUTTONGROUP__BUTTON--LABELS--MEDIUM--DISPLAY;
     }
-}
-
-.rh-buttongroup__button-text {
-    /* Typografi */
-    color: black;
-    text-decoration: none;
 }

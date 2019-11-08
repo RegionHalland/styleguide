@@ -27,3 +27,9 @@
         border-bottom: $BUTTONGROUP__BUTTON--ACTIVE--BORDER-BOTTOM;
     }
 }
+
+.rh-buttongroup__button-text {
+    /* Typografi */
+    color: $BUTTONGROUP__BUTTON-TEXT--COLOR;
+    text-decoration: $BUTTONGROUP__BUTTON-TEXT--TEXT-DECORATION;
+}
