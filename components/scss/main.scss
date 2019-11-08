@@ -25,12 +25,13 @@
 
 @import '_settings-components.scss';
 
-/* ****** */
-/* vAtoms */
-/* ****** */
+/* ******************* */
+/* vAtoms - i gitrepon */
+/* ******************* */
 
 @import 'components/vAtoms/caption-hero/_caption-hero.scss';
 @import 'components/vAtoms/circle-button/_circle-button.scss';
+@import 'components/vAtoms/label/_labels.scss';
 
 /* ***** */
 /* Atoms */
@@ -43,18 +44,18 @@
 @import 'components/Atoms/filter/_filter.scss';
 @import 'components/Atoms/form-control-text/_form-control-text.scss';
 @import 'components/Atoms/form-control-textarea/_form-control-textarea.scss';
-@import 'components/Atoms/labels/_labels.scss';
 @import 'components/Atoms/link/_link.scss';
 @import 'components/Atoms/pagination-elements/_pagination-elements.scss';
 @import 'components/Atoms/round-button/_round-button.scss';
 @import 'components/Atoms/search-field/_search-field.scss';
 @import 'components/Atoms/visual-element/_visual-element.scss';
 
-/* ********** */
-/* vMolecules */
-/* ********** */
+/* *********************** */
+/* vMolecules - i gitrepon */
+/* *********************** */
 
 @import 'components/vMolecules/article-block/_article-block.scss';
+@import 'components/vMolecules/buttongroup-elements/_buttongroup-elements.scss';
 @import 'components/vMolecules/image-caption/_image-caption.scss';
 @import 'components/vMolecules/image-hero/_image-hero.scss';
 @import 'components/vMolecules/back-to-top/_back-to-top.scss';
@@ -70,7 +71,6 @@
 
 @import 'components/Molecules/article/_article.scss';
 @import 'components/Molecules/blurbs/_blurbs.scss';
-@import 'components/Molecules/buttongroup-elements/_buttongroup-elements.scss';
 @import 'components/Molecules/cookie-notice/_cookie-notice.scss';
 @import 'components/Molecules/feedback/_feedback.scss';
 @import 'components/Molecules/feedback-form/_feedback-form.scss';
@@ -95,18 +95,17 @@
 @import 'components/Molecules/rh-tabs/_rh-tabs.scss';
 @import 'components/Molecules/rh-unit-info/_rh-unit-info.scss';
 
-/* ********* */
-/* vOrganism */
-/* ********* */
+/* ********************** */
+/* vOrganism - i gitrepon */
+/* ********************** */
 
-// Finns inga ännu..
+@import 'components/vOrganism/buttongroup/_buttongroup.scss';
 
 /* ******** */
 /* Organism */
 /* ******** */
 
 @import 'components/Organism/article-group/_article-group.scss';
-@import 'components/Organism/buttongroup/_buttongroup.scss';
 @import 'components/Organism/block-group/_block-group.scss';
 @import 'components/Organism/footer-group/_footer-group.scss';
 @import 'components/Organism/footer-logo-group/_footer-logo-group.scss';
@@ -121,3 +120,4 @@
 @import 'components/Organism/toplinks/_toplinks.scss';
 @import 'components/Organism/block-group/_block-group.scss';
 @import 'components/Organism/navigation-block-group/_navigation-block-group.scss';
+

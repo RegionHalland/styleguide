@@ -36,6 +36,10 @@
     },
     {
       "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomLabel"
+    },
+    {
+      "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeArticleBlock"
     },
     {
@@ -45,6 +49,10 @@
     {
       "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeBlockShortcuts"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeButtongroupElements"
     },
     {
       "type": "git",
@@ -68,6 +76,10 @@
     },
     {
       "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismButtongroup"
+    },
+    {
+      "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWpPlugIns/_git/RhComposerCustomInstaller"
     }
   ],
@@ -79,12 +91,15 @@
     "regionhalland/back-to-top": "1.1.0",
     "regionhalland/block": "1.1.1",
     "regionhalland/block-shortcuts": "1.0.0",
+    "regionhalland/buttongroup": "1.0.0.201911081257",
+    "regionhalland/buttongroup-elements": "1.0.0.20191108",
     "regionhalland/caption-hero": "1.0.0",
     "regionhalland/circle-button": "1.1.1",
     "regionhalland/contact-info": "1.0.0",
     "regionhalland/filter-alphabet": "1.0.0",
     "regionhalland/image-caption": "1.0.0",
     "regionhalland/image-hero": "1.0.0",
+    "regionhalland/label": "1.0.0.20191108",
     "regionhalland/navigation-left": "1.1.0"
   },
   "extra": {
