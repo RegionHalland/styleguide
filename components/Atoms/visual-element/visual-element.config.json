@@ -1,4 +1,21 @@
 {
   "title": "Round button",
-  "status": "prototype"
+  "status": "prototype",
+  "variants": [
+  {
+    "name": "default",
+    "label": "Triangle",
+    "status": "wip",
+    "context": {
+      "modifier": "triangle"
+    }
+  },
+  {
+    "name": "Vuxhalland-logo-stripe",
+    "status": "wip",
+    "context": {
+      "modifier": "vuxhalland-logo-stripe"
+    }
+  }
+]
 }
