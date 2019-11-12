@@ -1,6 +1,6 @@
 {
 	"title": "Filter",
-    "status": "wip",
+    "status": "prototype",
 	"context": {
 		"text": "Filter",
 		"name": "rh-filter"
