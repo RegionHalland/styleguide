@@ -9,7 +9,7 @@
     "variants": [
         {
             "name": "default",
-            "status": "prototype",
+            "status": "rework",
             "context": {
                 "modifier": "",
                 "labelData": {
@@ -30,7 +30,7 @@
         },
         {
             "name": "disabled",
-            "status": "prototype",
+            "status": "rework",
             "context": {
                 "modifier": "",
                 "isDisabled": true,
@@ -52,7 +52,7 @@
         },
         {
             "name": "success",
-            "status": "prototype",
+            "status": "rework",
             "context": {
                 "modifier": "success",
                 "icon": true,
@@ -74,7 +74,7 @@
         },
         {
             "name": "error",
-            "status": "prototype",
+            "status": "rework",
             "context": {
                 "modifier": "error",
                 "icon": true,

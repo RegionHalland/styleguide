@@ -49,3 +49,7 @@ Man kan också använda extra CSS klasser som ska vara i "extendClass" för att 
 ## 3. Version
 ### 1.0.0 (2019-08-20)
 * Första version.
+
+
+## Planerad utveckling
+* Bryta isär label och input till separata atomer. Det som syns idag bör vara en molekyl.
