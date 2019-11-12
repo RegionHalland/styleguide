@@ -1,5 +1,14 @@
 # Versioner av stilguiden och deras ändringar
 
+## 9.4.1
+### Ny funktion
+* Utilities/__`rh-dp--inline-flex`__
+
+### Förbättring
+* `@mixin-components.scss` - Kondition för att generera inne effekter har ändrats från "and" till "or".
+* Använda `block` version 1.2.0
+* Använda `image-hero` version 1.0.1
+
 ## 9.4.0
 
 * Atomen "Pagination elements" flyttat till gitrepo och fått ny sökväg
@@ -22,7 +31,7 @@
 ### Ändringar
 * Atomen "Labels" fått texten flyttad till configfilen för att kunna skrivas över när man inkluderar atomen i en annan komponent
 * Atomen "Button" har fått större text och padding på mindre viewports
-* Molekylen "Buttongroup" har nu flyttat till organismer och inkluderar buttongroup elements. 
+* Molekylen "Buttongroup" har nu flyttat till organismer och inkluderar buttongroup elements.
 
 ## 9.0.3
 ### Brytande ändring

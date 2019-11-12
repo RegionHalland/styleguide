@@ -149,7 +149,7 @@
 	$content-description-text-decoration: none
 ) {
 	@if $element-box-classname {
-		
+
 		// Outside effects for the box
 		@if $box-effect-outside {
 			@at-root .#{$element-box-classname}:hover,
@@ -162,7 +162,7 @@
 					$box-shadow-styling
 				);
 			}
-	
+
 			// Using the separate generation for a better CSS result on IE11 and Edge - Tabbing
 			@at-root .#{$element-box-classname}:focus-within {
 				@include create-clickable-element-outside-effect(
@@ -177,7 +177,7 @@
 
 		// The specific effects for inside content (title and description)
 		@if $content-effect-inside {
-			@if $element-title-classname and $element-description-classname {
+			@if $element-title-classname or $element-description-classname {
 				@at-root .#{$element-box-classname}:hover,
 					.#{$element-box-classname}:active {
 					@include create-clickable-element-inside-effect(
@@ -189,7 +189,7 @@
 						$content-description-text-decoration
 					);
 				}
-	
+
 				// Using the separate generation for a better CSS result on IE11 and Edge
 				@at-root .#{$element-box-classname}:focus-within {
 					@include create-clickable-element-inside-effect(
