@@ -2,8 +2,23 @@
 
 ## 9.4.0
 
+### Nya sökvägar
 * Atomen "Pagination elements" flyttat till gitrepo och fått ny sökväg
 * Atomen "Button" flyttat till gitrepo och fått ny sökväg
+
+### Markerade som "End of life"
+* Atomen "Form"
+* Atomen "Avatar"
+* Atomen "Badge"
+* Atomen "Round button"
+* Molekylen "Article"
+* Molekylen "Blurbs"
+* Molekylen "Rh personal info"
+* Molekylen "Rh unit info"
+* Molekylen "Calendar element"
+* Organismen "Rh footer"
+* Organismen "Rh footer logo"
+* Organismen "Rh calendar"
 
 ## 9.3.0
 
