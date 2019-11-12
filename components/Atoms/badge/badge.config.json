@@ -1,6 +1,6 @@
 {
 	"title": "Badge",
-    "status": "prototype",
+    "status": "eol",
 	"context": {
 		"text": "Badge Default",
 		"name": "rh-badge"
