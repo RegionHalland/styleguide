@@ -1,5 +1,10 @@
 # Versioner av stilguiden och deras ändringar
 
+## 9.4.0
+
+* Atomen "Pagination elements" flyttat till gitrepo och fått ny sökväg
+* Atomen "Button" flyttat till gitrepo och fått ny sökväg
+
 ## 9.3.0
 
 * Ny atom introducerad "Heading underlined" - ligger i vAtoms
