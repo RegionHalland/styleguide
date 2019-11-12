@@ -1,6 +1,6 @@
 {
 	"title": "Avatar",
-    "status": "prototype",
+    "status": "eol",
 	"context": {
 		"text": "Avatar Default",
 		"name": "rh-avatar"
