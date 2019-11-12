@@ -93,14 +93,16 @@
         },
         {
             "name": "stilguide",
-            "version": "9.4.0",
+            "version": "9.4.1",
             "resources": {
                 "jsComponents": [
                     "components/Molecules/rh-video/rh-video.js",
                     "components/Molecules/rh-linkgroup/rh-linkgroup.js",
                     "components/Organism/rh-search/rh-search.js",
                     "components/Organism/rh-table/rh-table.js",
-                    "components/Molecules/menu-mobile/menu-mobile.js"
+                    "components/Molecules/menu-mobile/menu-mobile.js",
+                    "components/Molecules/menu/menu.js",
+                    "components/Molecules/navigation-block/navigation-block.js"
                 ],
                 "scssComponents": [ "components/scss/main.scss" ]
             }
