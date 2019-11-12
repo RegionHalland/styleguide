@@ -211,7 +211,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-1d4f85b50c243a0f6f27d8d8fdc06fcd-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-visual-element--triangle"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -219,7 +219,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-1d4f85b50c243a0f6f27d8d8fdc06fcd-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"></span></pre>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-visual-element--</span></span></span><span class="hljs-template-variable">{{ modifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
 
@@ -247,6 +247,8 @@
                 
                 <option value="file-18ce018a8d266bfe133eefc4a36554dd">_visual-element.scss</option>
                 
+                <option value="file-c28eec678b8673825f5a4e64a829809d">visual-element.settings.scss</option>
+                
             </select>
         </div>
 
@@ -264,43 +266,41 @@
     &amp;--triangle {
 
         <span class="hljs-comment">/* Box modell/beteende */</span>
-        <span class="hljs-attribute">width</span>:<span class="hljs-number">0</span>;
-        <span class="hljs-attribute">height</span>:<span class="hljs-number">0</span>;
+        <span class="hljs-attribute">width</span>: <span class="hljs-variable">$VISUAL-ELEMENT--TRIANGLE--WIDTH</span>;
+        <span class="hljs-attribute">height</span>: <span class="hljs-variable">$VISUAL-ELEMENT--TRIANGLE--HEIGHT</span>;
 
         <span class="hljs-comment">/* Visuellt */</span>
-        <span class="hljs-attribute">border-bottom</span>:<span class="hljs-number">50px</span> solid <span class="hljs-variable">$vuxhalland2</span>;
-        <span class="hljs-attribute">border-left</span>:<span class="hljs-number">50px</span> solid <span class="hljs-variable">$vuxhalland2</span>;
-        <span class="hljs-attribute">border-right</span>:<span class="hljs-number">50px</span> solid transparent;
-        <span class="hljs-attribute">border-top</span>:<span class="hljs-number">50px</span> solid transparent;
+        <span class="hljs-attribute">border-bottom</span>: <span class="hljs-variable">$VISUAL-ELEMENT--TRIANGLE--BORDER-BOTTOM</span>;
+        <span class="hljs-attribute">border-left</span>: <span class="hljs-variable">$VISUAL-ELEMENT--TRIANGLE--BORDER-LEFT</span>;
+        <span class="hljs-attribute">border-right</span>: <span class="hljs-variable">$VISUAL-ELEMENT--TRIANGLE--BORDER-RIGHT</span>;
+        <span class="hljs-attribute">border-top</span>: <span class="hljs-variable">$VISUAL-ELEMENT--TRIANGLE--BORDER-TOP</span>;
     }
 
     &amp;--vuxhalland-logo-stripe {
 
         <span class="hljs-comment">/* Box modell/beteende */</span>
-        <span class="hljs-attribute">height</span>: auto;
-        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-
+        <span class="hljs-attribute">height</span>: <span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--HEIGHT</span>;
+        <span class="hljs-attribute">width</span>: <span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--WIDTH</span>;
         <span class="hljs-comment">/* Visuellt */</span>
-        <span class="hljs-attribute">background</span>: <span class="hljs-variable">$vuxhalland2</span>;
-        <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">1em</span>;
-        <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">1em</span>;
+        <span class="hljs-attribute">background</span>: <span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--BACKGROUND</span>;
+        <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--PADDING-TOP</span>;
+        <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--PADDING-BOTTOM</span>;
 
         <span class="hljs-comment">/* Typografi */</span>
-        <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.4</span>;
+        <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--LINE-HEIGHT</span>;
 
         @<span class="hljs-keyword">include</span> medium {
 
             <span class="hljs-comment">/* Box modell/beteende */</span>
-            <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
-            <span class="hljs-attribute">width</span>: <span class="hljs-number">15em</span>;
+            <span class="hljs-attribute">height</span>: <span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--MEDIUM--HEIGHT</span>;
+            <span class="hljs-attribute">width</span>: <span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--MEDIUM--WIDTH</span>;
 
             <span class="hljs-comment">/* Typografi */</span>
-            <span class="hljs-attribute">line-height</span>: <span class="hljs-number">100px</span>;
+            <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--MEDIUM--LINE-HEIGHT</span>;
 
             <span class="hljs-comment">/* Visuellt */</span>
-            <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">0</span>;
-            <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">0</span>;
-
+            <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--MEDIUM--PADDING-TOP</span>;
+            <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--MEDIUM--PADDING-BOTTOM</span>;
         }
     }
 }</pre>
@@ -319,7 +319,57 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">879 Bytes</span>
+                    <span class="Meta-value">1.6 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-c28eec678b8673825f5a4e64a829809d" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-SCSS FileBrowser-code">
+                                <pre><span class="hljs-comment">// "Visual element - triangle"</span>
+<span class="hljs-variable">$VISUAL-ELEMENT--TRIANGLE--HEIGHT</span>: <span class="hljs-number">0</span>;
+<span class="hljs-variable">$VISUAL-ELEMENT--TRIANGLE--WIDTH</span>: <span class="hljs-number">0</span>;
+<span class="hljs-variable">$VISUAL-ELEMENT--TRIANGLE--BORDER-BOTTOM</span>: <span class="hljs-number">50px</span> solid <span class="hljs-variable">$vuxhalland2</span>;
+<span class="hljs-variable">$VISUAL-ELEMENT--TRIANGLE--BORDER-LEFT</span>: <span class="hljs-number">50px</span> solid <span class="hljs-variable">$vuxhalland2</span>;
+<span class="hljs-variable">$VISUAL-ELEMENT--TRIANGLE--BORDER-RIGHT</span>: <span class="hljs-number">50px</span> solid transparent;
+<span class="hljs-variable">$VISUAL-ELEMENT--TRIANGLE--BORDER-TOP</span>: <span class="hljs-number">50px</span> solid transparent;
+
+<span class="hljs-comment">// "Visual element - vuxhalland logo stripe" default</span>
+<span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--BACKGROUND</span>: <span class="hljs-variable">$vuxhalland2</span>;
+<span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--HEIGHT</span>: auto;
+<span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--LINE-HEIGHT</span>: <span class="hljs-number">1.4</span>;
+<span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--PADDING-TOP</span>: <span class="hljs-number">1em</span>;
+<span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--PADDING-BOTTOM</span>: <span class="hljs-number">1em</span>;
+<span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--WIDTH</span>: <span class="hljs-number">100%</span>;
+
+<span class="hljs-comment">// "Visual element - vuxhalland logo stripe" from medium viewport</span>
+<span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--MEDIUM--HEIGHT</span>: <span class="hljs-number">100px</span>;
+<span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--MEDIUM--LINE-HEIGHT</span>: <span class="hljs-number">100px</span>;
+<span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--MEDIUM--PADDING-TOP</span>: <span class="hljs-number">0</span>;
+<span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--MEDIUM--PADDING-BOTTOM</span>: <span class="hljs-number">0</span>;
+<span class="hljs-variable">$VISUAL-ELEMENT--VUXHALLAND-LOGO-STRIPE--MEDIUM--WIDTH</span>: <span class="hljs-number">15em</span>;</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/visual-element/visual-element.settings.scss"><span>/components/raw/visual-element/visual-element.settings.scss</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">components/Atoms/visual-element/visual-element.settings.scss</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">1.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -340,6 +390,21 @@
         
         
         
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Variants <em class="Meta-count">(2)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="visual-element--default.html">
+                    <span>Triangle</span>
+                </a>, 
+            
+                <a href="visual-element--vuxhalland-logo-stripe.html">
+                    <span>Vuxhalland Logo Stripe</span>
+                </a>
+            
+            </span>
+        </li>
         
         <li class="Meta-item">
             <strong class="Meta-key">Preview:</strong>
@@ -371,7 +436,11 @@
     <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-1d4f85b50c243a0f6f27d8d8fdc06fcd-panel-notes">
     <div class="Prose Prose--condensed">
         
-        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        <h1 id="atomen-visual-element-">Atomen “Visual element”</h1>
+<p>Innehåller element i DOM:en som används för dekor istället för bilder. T.ex. den stripe och triangel som används i huvudet på vuxhalland.se.</p>
+<h2 id="versioner">Versioner</h2>
+<p>1.0.0.20191108 - Kompletterad med settingsfil och denna readme.</p>
+
         
     </div>
 </div>
@@ -1008,10 +1077,21 @@
         
     
         
-        
-        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a class="Tree-entityLink" href="" data-pjax>
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-visual-element">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
                 <span>Visual Element</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="visual-element--default.html" data-pjax>
+                <span>Triangle</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1019,7 +1099,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #F00;" title="Skiss"></span>
+<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
 
 
 </div>
@@ -1028,6 +1108,35 @@
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="visual-element--vuxhalland-logo-stripe.html" data-pjax>
+                <span>Vuxhalland Logo Stripe</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
@@ -2604,6 +2713,30 @@
     
 
             </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heading-underlined.html" data-pjax>
+                <span>Heading Underlined</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
         </li>
         
     
