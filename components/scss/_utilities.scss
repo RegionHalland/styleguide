@@ -123,7 +123,11 @@
 
 	&--inline-block {
 		display: inline-block;
-	}
+    }
+
+    &--inline-flex {
+        display: inline-flex;
+    }
 
 	&--none {
 		display: none;
@@ -321,7 +325,7 @@
 	&--clickable {
 		/* Positionering */
 		position: relative;
-		
+
 		// Using for direct child is <a> tag
 		&-link {
 			/* Positionering */
@@ -329,7 +333,7 @@
 			top: 0;
 			left: 0;
 			z-index: 1;
-	
+
 			/* Box-modell/beteende */
 			height: 100%;
 			width: 100%;

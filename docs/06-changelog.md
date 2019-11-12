@@ -1,6 +1,15 @@
 # Versioner av stilguiden och deras ändringar
 
-## 9.0.3
+## 9.4.1
+### Ny funktion
+* Utilities/__`rh-dp--inline-flex`__
+
+### Förbättring
+* `@mixin-components.scss` - Kondition för att generera inne effekter har ändrats från "and" till "or".
+* Använda `block` version 1.2.0
+* Använda `image-hero` version 1.0.1
+
+## 9.3.0 ([e987e5c4](https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhWebStyleguide/commit/e987e5c4c338520a95bfc81b56e39a7481dd5fa9/))
 ### Brytande ändring
 * Organism - Komponenten __rh-toplinks__ har bytts namn till __toplinks__
 
