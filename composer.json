@@ -101,7 +101,7 @@
     "regionhalland/region-halland-composer-custom-installer": "1.0.0",
     "regionhalland/article-block": "1.0.1",
     "regionhalland/back-to-top": "1.1.0",
-    "regionhalland/block": "1.1.1",
+    "regionhalland/block": "1.2.0",
     "regionhalland/block-shortcuts": "1.0.0",
     "regionhalland/button": "1.0.0.20191112",
     "regionhalland/buttongroup": "1.0.0.201911081257",
@@ -112,7 +112,7 @@
     "regionhalland/filter-alphabet": "1.0.0",
     "regionhalland/heading-underlined": "1.0.0.201911120940",
     "regionhalland/image-caption": "1.0.0",
-    "regionhalland/image-hero": "1.0.0",
+    "regionhalland/image-hero": "1.0.1",
     "regionhalland/label": "1.0.0.20191108",
     "regionhalland/navigation-left": "1.1.0",
     "regionhalland/pagination-elements": "1.0.0.20191112"
