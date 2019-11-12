@@ -75,7 +75,7 @@ fractal.components.set('statuses', {
     rework: {
         label: "Inväntar ombyggnad",
         description: "Kommer att göras om",
-        color: 'orange'
+        color: '#ff47d3'
     }
 });
 
