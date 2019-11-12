@@ -1,6 +1,6 @@
 {
 	"title": "Search",
-    "status": "wip",
+    "status": "rework",
 	"context": {
 		"caption": "Search field",
 		"name": "rh-search-field"
