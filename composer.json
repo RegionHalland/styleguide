@@ -32,6 +32,10 @@
     },
     {
       "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomButton"
+    },
+    {
+      "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomCaptionHero"
     },
     {
@@ -95,6 +99,7 @@
     "regionhalland/back-to-top": "1.1.0",
     "regionhalland/block": "1.1.1",
     "regionhalland/block-shortcuts": "1.0.0",
+    "regionhalland/button": "1.0.0.20191112",
     "regionhalland/buttongroup": "1.0.0.201911081257",
     "regionhalland/buttongroup-elements": "1.0.0.20191108",
     "regionhalland/caption-hero": "1.0.0",
