@@ -36,6 +36,10 @@
     },
     {
       "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomHeadingUnderlined"
+    },
+    {
+      "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomLabel"
     },
     {
@@ -97,6 +101,7 @@
     "regionhalland/circle-button": "1.1.1",
     "regionhalland/contact-info": "1.0.0",
     "regionhalland/filter-alphabet": "1.0.0",
+    "regionhalland/heading-underlined": "1.0.0.20191112",
     "regionhalland/image-caption": "1.0.0",
     "regionhalland/image-hero": "1.0.0",
     "regionhalland/label": "1.0.0.20191108",

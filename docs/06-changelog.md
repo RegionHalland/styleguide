@@ -1,5 +1,9 @@
 # Versioner av stilguiden och deras ändringar
 
+## 9.3.0
+
+* Ny atom introducerad "Heading underlined" - ligger i vAtoms
+
 ## 9.2.0
 ### Komponenter som flyttat till gitrepon och fått nya sökvägar
 * Atomen labels
