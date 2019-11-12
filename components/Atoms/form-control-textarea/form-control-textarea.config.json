@@ -9,7 +9,7 @@
     "variants": [
         {
             "name": "default",
-            "status": "prototype",
+            "status": "rework",
             "context": {
                 "modifier": "",
                 "labelData": {
@@ -29,7 +29,7 @@
         },
         {
             "name": "with label",
-            "status": "prototype",
+            "status": "rework",
             "context": {
                 "modifier": "",
                 "labelData": {
