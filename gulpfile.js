@@ -67,6 +67,16 @@ fractal.components.set('statuses', {
         description: "Redo att implementeras",
         color: "green"
     },
+    eol: {
+        label: "Fasas ut - end of life",
+        description: "Denna komponent kommer raderas i framtiden",
+        color: 'black'
+    },
+    rework: {
+        label: "Inväntar ombyggnad",
+        description: "Kommer att göras om",
+        color: 'orange'
+    }
 });
 
 function start(cb) {
