@@ -1,27 +1,35 @@
 {
 	"title": "Links",
-    "status": "wip",
+    "status": "rework",
 	"context": {
-		"text": "Link Alternative",
+		"text": "var tydlig med vart länken leder",
 		"name": "rh-link"
 
 	},
 	"variants": [
 		{
 			"name": "New window",
-			"status": "wip",
+			"status": "rework",
             "context": {
         	    "modifier": "external",
-				"text": "An external link (new window)"
+				"text": "En extern länk (nytt fönster)"
         	}
 		},		
 		{
 			"name": "Containing document",
-            "status": "wip",
+            "status": "rework",
             "context": {
         	    "modifier": "container",
-				"text": "A link containing pdf (PDF, 380 KB)"
+				"text": "En länk till pdf-dokument (PDF, 380 KB)"
         	}
-		}	
+		},
+		{
+			"name": "Navigation",
+			"status": "rework",
+			"context": {
+				"modifier": "navigation",
+				"text": "Länkar i navigationskomponenter kan se annorlunda ut"
+			}
+		}
 	]
 }
