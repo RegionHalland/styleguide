@@ -5,6 +5,15 @@
 ### Ändringar
 * Molekylen "label previous" har fått statusen "Inväntar ombyggnad" och README-fil som inkluderar planerad utveckling
 
+## 9.5.1
+### Byggmiljö
+* Ny alternativ när man kör `gulp builds` och `gulp releases`
+    * `-o` - Overwrite - Det kommer skriva över befintliga filer.
+    * `-m` - Minify - Det minifierar både CSS och JS filer.
+* Exempel:
+    * `$ gulp builds -s -m -o vuxhalland`
+    * `$ gulp releases -s -m vardgivare`
+
 ## 9.5.0
 ### Nya sökvägar
 * Atomen "Visual element" har markerats som klar och flyttat till vAtom och ligger i gitrepo
@@ -14,12 +23,18 @@
 * Ny status "Fasas ut - end of life" med koden "eol" är nu tillgänglig.
 * Ny status "Inväntar ombyggnad" med koden "rework" är nu tillgänglig.
 * Statusindikatorerna i vänstermenym är nu solida för bättre synlighet.
-* Atomen "Form control text" har fått uppdaterad status och readme. 
+* Atomen "Form control text" har fått uppdaterad status och readme.
 * Atomen "Form control textarea" fått uppdaterad status och readme.
 * Atomen "Link" visar navigationslänkar, status uppdaterad och fått README
+<<<<<<< HEAD
 * Atomen "Search field" har fått uppdaterad status och en README. 
 * Atomen "Text" genomgången med config-fil, hbs-fil och skapat README. 
 * Molekylen "Feedback form" är något justerad och har nu statusen "Inväntar ombyggnad" eftersom den skall flyttas till organismer. 
+=======
+* Atomen "Search field" har fått uppdaterad status och en README.
+* Atomen "Text" genomgången med config-fil, hbs-fil och skapat README.
+* Molekylen "Feedback form" har nu statusen "Inväntar ombyggnad" eftersom den skall flyttas till organismer.
+>>>>>>> cfa55ab4f7b0cfcff9909ab0ab0ca97991f8a4a3
 * Dokumentationen nu fått en synligare plats ovanför komponenterna i navigationen.
 
 

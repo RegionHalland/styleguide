@@ -4,18 +4,19 @@ The sites building add-on is using __ONLY__ for the Styleguide application at Re
 ## Features
 * Build a site or all sites.
 * Release a site or all sites.
+* Minify both CSS and JS.
 
 ## System requirements
-* The minimum supported [Node.js](https://nodejs.org/) version is 8.3.0 (Node.js LTS version is a good choice for the stability).
+* The minimum supported [Node.js](https://nodejs.org/) version is 8.9.0 _(Node.js LTS version is a good choice for the stability)_.
 * [Gulp](https://gulpjs.com/) is installled on global.
 * Administrator permission is required by your operating system for the building process.
 
 ## Usage
 ### Command
-|Command|Default destination|
+|Command|Description|
 |---|---|
-|`$ gulp builds <[-option][--alias]> <sitename>`|`/cdn/build`|
-|`$ gulp releases <[-option][--alias]> <sitename>`|`/cdn/releases`|
+|`$ gulp builds <[-option][--alias]> <sitename>`|Building|
+|`$ gulp releases <[-option][--alias]> <sitename>`|Release|
 
 ### Options and alias
 |Option|Alias|Argument (*)|Description|
@@ -24,18 +25,20 @@ The sites building add-on is using __ONLY__ for the Styleguide application at Re
 |`-s`|`--site`|`<sitename>`|A specific site|
 |`-u`|`--usage`||View the help information|
 
-(*) Must have
+_(*) Must have_
 
-### The special option
-The option is only used when you release a specific website. Be careful what you do!
+### The special sub options
+Beware using with the options are below for a specific site or all sites:
 
 |Option|Alias|Description|
 |---|---|---|
-|`-o`|`--overwrite`|Overwrite a release of a specific site|
+|`-o`|_Not yet supported_|Overwrite a release|
+|`-m`|_Not yet supported_|Minify both CSS and JS|
 
 Example:
-* `$ gulp releases -s asitename -o`
-* `$ gulp releases --site onlyonesite --overwrite`
+* `$ gulp builds -s -m projectX`
+* `$ gulp releases -s -m -o otherProject`
+* `$ gulp releases --site -o -m lastProject` _(Using alias)_
 
 ### Examples
 ```
@@ -61,6 +64,12 @@ $ gulp releases -u
 * View more in `/gulpfile.js` to know how the add-on works.
 
 ## Release notes:
+### 1.1.0 (2019-11-13)
+* [__New__] Minifies CSS and JS when:
+    * Building - `$ gulp builds ...`.
+    * Release - `$ gulp releases ...`.
+* Updated README.md
+
 ### 1.0.1 (2019-08-07)
 * [__Improvement__]
     * Changed the release file's name to the below structure:
@@ -75,7 +84,7 @@ $ gulp releases -u
 * [__New__] Added the new features:
     * Options and alias system.
     * Using only for the release tasks:
-        * File checking when a file exists. 
+        * File checking when a file exists.
         * A new option `-o` to overwrite a file when it exists.
     * Help information.
 * [__Improvement__]

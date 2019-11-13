@@ -248,8 +248,11 @@ body { overflow-x: hidden; } */
             /* Box-modell/beteende */
             max-height: 0;
             overflow: hidden;
+
             transition: max-height 0.25s ease-out;
             -webkit-transition: max-height 0.25s ease-out;
+            -moz-transition: max-height 0.25s ease-out;
+            -o-transition: max-height 0.25s ease-out;
 
             /* Visuellt */
             &-style-1 {
