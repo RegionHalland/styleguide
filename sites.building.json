@@ -1,7 +1,11 @@
 {
     "name": "sites-building",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "Using for the automatic build and release the web styling",
+    "commonResources": {
+        "jsComponents": [],
+        "scssComponents": []
+    },
     "sites": [
         {
             "name": "driftinfo",
@@ -47,7 +51,9 @@
             "name": "vuxhalland",
             "version": "1.1.0",
             "resources": {
-                "jsComponents": [],
+                "jsComponents": [
+                    "components/Molecules/menu/menu.js"
+                ],
                 "scssComponents": [ "../RH-sites/RhSettingsVuxHalland/vuxhalland.scss" ]
             }
         },
@@ -109,7 +115,7 @@
         }
     ],
     "building": {
-        "publicPath": "cdn/build",
-        "releasePath": "../RH-cdn/RhWebStyleguideReleases"
+        "publicPath": "cdn/buildX",
+        "releasePath": "../RH-cdn/RhWebStyleguideReleasesX"
     }
 }

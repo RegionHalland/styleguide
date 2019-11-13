@@ -1,7 +1,7 @@
 'use strict';
 
 const gulp = require('gulp');
-const { series, parallel, watch, src, dest, task } = require('gulp');
+const { series, parallel, watch, src, dest } = require('gulp');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const concat = require('gulp-concat');
@@ -243,7 +243,7 @@ function devServer(cb) {
         "localServer": {
             "port": 3000
         }
-    }
+    };
 
     // Fractal server
     const server = fractal.web.server({

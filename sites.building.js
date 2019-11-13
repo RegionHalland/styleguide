@@ -5,6 +5,16 @@ const concat = require('gulp-concat');
 const babel = require('gulp-babel');
 const fs = require("fs");
 
+const browserify = require('browserify');
+const babelify = require('babelify');
+const minify = require('gulp-minify');
+const source = require('vinyl-source-stream');
+const buffer = require('vinyl-buffer');
+const globby = require('globby');
+
+// gulp-sass - Using for forwards-compatibility and explicitly
+sass.compiler = require('node-sass');
+
 const settings = require('./sites.building.json');
 const styleguideConfig = require('./package.json');
 
@@ -36,6 +46,45 @@ function getOptionsHelper(option, alias) {
         const nextArg = argList[argIndex + 1];
         return (!nextArg || nextArg[0] === "-") ? true : nextArg;
     }
+}
+
+function identifyFlag(inputArg) {
+    if (inputArg.charAt(0) === "-" && inputArg.charAt(1) !== "-"
+        || inputArg.charAt(0) === "-" && inputArg.charAt(1) === "-"
+    ) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function getCommandParams() {
+    const argList = process.argv.slice(3),
+        argListLength = argList.length;
+
+    let mainFlag,
+        subFlags = [],
+        argument = [];
+
+    for (let i = 0; i < argListLength; i++) {
+        if (identifyFlag(argList[i])) {
+            if (i === 0) {
+                mainFlag = argList[i];
+            } else {
+                subFlags = subFlags.concat([argList[i]]);
+            }
+
+        } else {
+            argument = argument.concat([argList[i]]);
+        }
+    }
+
+
+    return {
+        mainFlag: mainFlag,
+        subFlags: subFlags,
+        argument: argument
+    };
 }
 
 function findFirstByProperty(objectArray, sPropertyName, sSeekingValue) {
@@ -86,25 +135,34 @@ function indentifySASSCompilingError(objResult = []) {
     });
 }
 
-function showResult(resultPath, result){
-    if (isFileExists(resultPath)){
-        console.log(`\n\x1b[32m✓ Build\x1b[0m -> \x1b[90m/${resultPath}/\x1b[0m -> ${result}`)
+function showResult(resultPath, result, resultType, options = {}) {
+    let message = "";
+
+    if (isFileExists(resultPath)) {
+        message = `\nChosen options -> overwrite: ${options.overWrite ? "\x1b[32m✓ yes\x1b[0m" : "\x1b[31m✗ no\x1b[0m"}` +
+            ` - minify: ${options.minify ? "\x1b[32m✓ yes\x1b[0m" : "\x1b[31m✗ no\x1b[0m"}` +
+            `\n\n\x1b[32m✓ ${resultType}\x1b[0m -> \x1b[90m/${resultPath}/\x1b[0m -> ${result}`;
+
     } else {
-        console.log(`\n\x1b[33m? Skipped\x1b[0m -> \x1b[90m/${resultPath}/\x1b[0m -> ${result}`)
+        message = `\n\x1b[33m? Skipped\x1b[0m -> \x1b[90m/${resultPath}/\x1b[0m -> ${result}`;
     }
+
+    console.log(message);
 }
 
 /* --------------------------------------- LOGIC ----------------------------- */
 /**
+ * JS building
  * @param {callback} cb
  * @param {string} jsFilename
  * @param {array} resource
  * @param {string} destPath is the destination path (public path)
+ * @param {object} options {overWrite: boolean, minify: boolean}
  */
-function build_js(cb, jsFilename, jsResources, destPath, options = {}) {
+function jsBuild(cb, jsFilename, jsResources, destPath, options = {}) {
     return new Promise((resolve, reject) => {
         const gulpOptions = {
-            allowEmpty: true,
+            allowEmpty: true,//TODO
             overwrite: options.overWrite || false // False is default
         };
 
@@ -118,7 +176,7 @@ function build_js(cb, jsFilename, jsResources, destPath, options = {}) {
             }))
             .pipe(concat(jsFullFilename))
             .pipe(sourcemaps.write('.'))
-            .pipe(dest(jsDestPath))
+            .pipe(dest(jsDestPath, gulpOptions))
             .on('end', () => resolve(jsFullFilename))
             .on('error', (error) => reject(error));
 
@@ -126,7 +184,94 @@ function build_js(cb, jsFilename, jsResources, destPath, options = {}) {
     });
 }
 
-function build_scss(cb, cssFilename, scssResource, destPath, options = {}) {
+/**
+ * JS minifying
+ * @param {callback} cb
+ * @param {string} jsFilename
+ * @param {array} resource
+ * @param {string} destPath is the destination path (public path)
+ * @param {object} options {overWrite: boolean, minify: boolean}
+ */
+function jsMinify(cb, jsFilename, jsResources, destPath, options = {}) {
+    return new Promise((resolve, reject) => {
+        const gulpOptions = {
+            allowEmpty: true,//TODO
+            overwrite: options.overWrite || false // False is default
+        };
+
+        const jsFullFilename = `${jsFilename}.js`;
+        const jsDestPath = destPath;
+
+        globby(jsResources)
+            .then((jsEntries) => {
+                browserify({
+                    entries: jsEntries,
+                    extensions: ['.js'],
+                    debug: true
+                })
+                    .transform(babelify, {
+                        presets: ["@babel/preset-env"],
+                        plugins: ['@babel/plugin-syntax-dynamic-import', '@babel/plugin-proposal-class-properties']
+                    })
+                    .bundle()
+                    .pipe(source(jsFullFilename))
+                    .pipe(buffer())
+                    .pipe(sourcemaps.init({ loadMaps: true }))
+                    .pipe(minify({
+                        noSource: true,
+                        ext: { min: '.js' }
+                    }))
+                    .pipe(sourcemaps.write("."))
+                    .pipe(dest(jsDestPath, gulpOptions))
+                    .on('end', () => resolve(jsFullFilename))
+                    .on('error', (error) => reject(error));
+            })
+            .catch((error) => reject(error));
+
+        cb();
+    });
+}
+
+/**
+ * SCSS building
+ * @param {callback} cb
+ * @param {string} cssFilename
+ * @param {array} scssResource
+ * @param {string} destPath
+ * @param {object} options {overWrite: boolean, minify: boolean}
+ */
+function scssBuild(cb, cssFilename, scssResource, destPath, options = {}) {
+    return new Promise((resolve, reject) => {
+        const gulpOptions = {
+            allowEmpty: true,
+            overwrite: options.overWrite || false // False is default
+        };
+
+        const cssFullFilename = `${cssFilename}.css`;
+        const cssDestPath = destPath;
+
+        src(scssResource, gulpOptions)
+            .pipe(sourcemaps.init())
+            .pipe(sass.sync().on('error', (err) => reject(err)))
+            .pipe(concat(cssFullFilename))
+            .pipe(sourcemaps.write('.'))
+            .pipe(dest(cssDestPath))
+            .on('error', (error) => reject(error))
+            .on('end', () => resolve(cssFullFilename));
+
+        cb();
+    });
+}
+
+/**
+ * SCSS minifying
+ * @param {callback} cb
+ * @param {string} cssFilename
+ * @param {array} scssResource
+ * @param {string} destPath
+ * @param {object} options {overWrite: boolean, minify: boolean}
+ */
+function scssMinify(cb, cssFilename, scssResource, destPath, options = {}) {
     return new Promise((resolve, reject) => {
         const gulpOptions = {
             allowEmpty: true,
@@ -145,8 +290,8 @@ function build_scss(cb, cssFilename, scssResource, destPath, options = {}) {
             .pipe(concat(cssFullFilename))
             .pipe(sourcemaps.write('.'))
             .pipe(dest(cssDestPath))
-            .on('end', () => resolve(cssFullFilename))
-            .on('error', (error) => reject(error));
+            .on('error', (error) => reject(error))
+            .on('end', () => resolve(cssFullFilename));
 
         cb();
     });
@@ -157,35 +302,62 @@ function build_process(cb, name, resources = {}, destPath, options = {}) {
         const filename = name, // Only name and without the extension .css
             { jsComponents, scssComponents } = resources, // Resources definition
             jsSrcList = jsComponents || [],
-            scssSrcList = scssComponents || []
+            scssSrcList = scssComponents || [],
+            { minify } = options;
 
         /* Build process */
         if (jsSrcList && jsSrcList.length > 0 && scssSrcList && scssSrcList.length > 0) {
             // Both JS and SCSS files are used in the component(s)
-            const buildjs = build_js(cb, filename, jsSrcList, destPath, options)
-                .then((result) => result)
-                .catch((error) => error);
+            let buildJs, buildScss;
 
-            const buildscss = build_scss(cb, filename, scssSrcList, destPath, options)
-                .then((result) => result)
-                .catch((error) => error);
+            if (minify) {
+                // With minifying
+                buildJs = jsMinify(cb, filename, jsSrcList, destPath, options)
+                    .then((result) => result)
+                    .catch((error) => error);
 
-            Promise.all([buildjs, buildscss])
+                buildScss = scssMinify(cb, filename, scssSrcList, destPath, options)
+                    .then((result) => result)
+                    .catch((error) => error);
+            } else {
+                // NO minifying
+                buildJs = jsBuild(cb, filename, jsSrcList, destPath, options)
+                    .then((result) => result)
+                    .catch((error) => error);
+
+                buildScss = scssBuild(cb, filename, scssSrcList, destPath, options)
+                    .then((result) => result)
+                    .catch((error) => error);
+            }
+
+            Promise.all([buildJs, buildScss])
                 .then((buildFiles) => {
                     indentifySASSCompilingError(buildFiles)
-                        .then(() => resolve(buildFiles))
+                        .then(() => resolve({
+                            filename: filename,
+                            result: buildFiles
+                        }))
                         .catch((error) => reject(error));
                 })
                 .catch((error) => reject(error));
 
         } else if (jsSrcList && jsSrcList.length === 0 && scssSrcList && scssSrcList.length > 0) {
             // Only SCSS file is used for the component(s)
-            build_scss(cb, filename, scssSrcList, destPath, options)
-                .then((cssFilename) => resolve({
-                    filename: filename,
-                    result: cssFilename
-                }))
-                .catch((error) => reject(error));
+            if (minify) {
+                scssMinify(cb, filename, scssSrcList, destPath, options)
+                    .then((cssFilename) => resolve({
+                        filename: filename,
+                        result: cssFilename
+                    }))
+                    .catch((error) => reject(error));
+            } else {
+                scssBuild(cb, filename, scssSrcList, destPath, options)
+                    .then((cssFilename) => resolve({
+                        filename: filename,
+                        result: cssFilename
+                    }))
+                    .catch((error) => reject(error));
+            }
 
         } else {
             return reject(`\n\x1b[31m✗\x1b[0m The process is interrupted because the needed files for \x1b[33m${name}\x1b[0m is not found!`);
@@ -215,7 +387,7 @@ function release_process(cb, siteInfo = {}, destPath, options = {}) {
             }
 
             /* Create the files:
-                <filename>.<version>-<styleguideversion>.css 
+                <filename>.<version>-<styleguideversion>.css
                 <filename>.<version>-<styleguideversion>.js */
             const releaseTask = build_process(cb, releaseName, resources, destPath, options)
                 .then(({ result }) => result)
@@ -242,7 +414,7 @@ function release_process(cb, siteInfo = {}, destPath, options = {}) {
 
 
 /* ----------------------------------- FEATURES ------------------------------ */
-function build_styling_for_one_site(cb, sitename) {
+function build_styling_for_one_site(cb, sitename, options = {}) {
     if (sitename) {
         const siteInfo = findFirstByProperty(sites, 'name', sitename);
 
@@ -252,19 +424,19 @@ function build_styling_for_one_site(cb, sitename) {
             if (name && resources) {
                 const sitePublicPath = `${publicPath}/${name}`;
 
-                build_process(cb, name, resources, sitePublicPath)
-                    .then(({ result }) => showResult(sitePublicPath, result))
+                build_process(cb, name, resources, sitePublicPath, options)
+                    .then(({ result }) => showResult(sitePublicPath, result, "Build", options))
                     .catch((error) => console.error(`\n\x1b[31m✗ Error\x1b[0m An error occurred while building CSS for the site \x1b[33m${name}\x1b[0m\n\n${error.message ? error.message : error}`));
             }
         } else {
-            console.error(`\n\x1b[31m✗ Error\x1b[0m The site ${sitename} is not found for building\n`);
+            console.error(`\n\x1b[31m✗ Error\x1b[0m The site \x1b[33m${sitename}\x1b[0m is not found for building\n`);
         }
     } else {
         throw new Error("The input variable 'sitename' is missing");
     }
 }
 
-function build_styling_for_all_sites(cb) {
+function build_styling_for_all_sites(cb, options = {}) {
     const sitesLength = sites.length;
 
     if (sitesLength) {
@@ -274,8 +446,8 @@ function build_styling_for_all_sites(cb) {
             if (name && resources) {
                 const sitePublicPath = `${publicPath}/${name}`;
 
-                build_process(cb, name, resources, sitePublicPath)
-                    .then(({ result }) => showResult(sitePublicPath, result))
+                build_process(cb, name, resources, sitePublicPath, options)
+                    .then(({ result }) => showResult(sitePublicPath, result, "Build", options))
                     .catch((error) => console.error(`\n\x1b[31m✗ Error\x1b[0m An error occurred while building CSS for the site \x1b[33m${name}\x1b[0m\n\n${error.message ? error.message : error}`));
             } else {
                 console.error(`\n\x1b[31m✗\x1b[0m Can not build the site ${name}`);
@@ -297,7 +469,7 @@ function release_styling_for_one_site(cb, sitename, options = {}) {
                 const siteReleasePath = `${releasePath}/${name}`;
 
                 release_process(cb, siteInfo, siteReleasePath, options)
-                    .then((results) => showResult(siteReleasePath, results))
+                    .then((results) => showResult(siteReleasePath, results, "Release", options))
                     .catch((error) => console.error(`\n\x1b[31m✗ Error\x1b[0m An error occurred while compiling CSS for the site \x1b[33m${name}\x1b[0m\n\n${error.message ? error.message : error}`));
             } else {
                 console.error(`\n\x1b[31m✗\x1b[0m Can not release the site ${name}`);
@@ -310,7 +482,7 @@ function release_styling_for_one_site(cb, sitename, options = {}) {
     }
 }
 
-function release_styling_for_all_sites(cb) {
+function release_styling_for_all_sites(cb, options = {}) {
     const sitesLength = sites.length;
 
     if (sitesLength) {
@@ -321,8 +493,8 @@ function release_styling_for_all_sites(cb) {
             if (name && resources) {
                 const siteReleasePath = `${releasePath}/${name}`;
 
-                release_process(cb, siteInfo, siteReleasePath)
-                    .then((results) => showResult(siteReleasePath, results))
+                release_process(cb, siteInfo, siteReleasePath, options)
+                    .then((results) => showResult(siteReleasePath, results, "Release", options))
                     .catch((error) => console.error(`\n\x1b[31m✗ Error\x1b[0m An error occurred while compiling CSS for the site \x1b[33m${name}\x1b[0m\n\n${error.message ? error.message : error}`));
             } else {
                 console.error(`\n\x1b[31m✗\x1b[0m Can not release the site ${name}`);
@@ -357,24 +529,42 @@ function showHelpInformation(taskType) {
 /* ---------------------------------- MAIN ------------------------------- */
 function buildSites(cb) {
     const { helpCommand, helpInformation } = showHelpInformation('build');
+    const { mainFlag, subFlags, argument } = getCommandParams();
+    const options = {
+        overWrite: subFlags.indexOf("-o") > -1 ? true : false, //overwrite - Default is false
+        minify: subFlags.indexOf("-m") > -1 ? true : false //minify - Default is false
+    };
 
-    if (getOptionsHelper("-a", "--all")) {
-        build_styling_for_all_sites(cb);
+    switch (mainFlag) {
+        case "-s":
+        case "--site":
+            const sitename = argument[0];
 
-    } else if (getOptionsHelper("-s", "--site")) {
-        const sitename = getOptionsHelper("-s", "--site");
+            if (typeof sitename === "string") {
+                build_styling_for_one_site(cb, sitename, options);
+            } else {
+                console.error(`\n\x1b[31m✗ Error\x1b[0m The website's name is missing`);
+                console.error(helpCommand);
+            }
 
-        if (typeof sitename === "string") {
-            build_styling_for_one_site(cb, sitename);
-        } else {
-            console.error(`\n\x1b[31m✗ Error\x1b[0m The website\'s name is missing`);
-            console.error(helpCommand);
-        }
-    } else if (getOptionsHelper("-u", "--usage")) {
-        console.log(helpInformation);
-    } else {
-        console.log('\n\x1b[31m✗ Error\x1b[0m Unknown command');
-        console.log(helpCommand);
+            break;
+
+        case "-a":
+        case "--all":
+            build_styling_for_all_sites(cb, options);
+            break;
+
+        case "-u":
+        case "--usage":
+            console.log(helpInformation);
+            break;
+
+
+        default:
+            console.log('\n\x1b[31m✗ Error\x1b[0m Unknown command');
+            console.log(helpCommand);
+
+            break;
     }
 
     cb();
@@ -382,29 +572,42 @@ function buildSites(cb) {
 
 function releaseSites(cb) {
     const { helpCommand, helpInformation } = showHelpInformation('release');
+    const { mainFlag, subFlags, argument } = getCommandParams();
+    const options = {
+        overWrite: subFlags.indexOf("-o") > -1 ? true : false, //overwrite - Default is false
+        minify: subFlags.indexOf("-m") > -1 ? true : false //minify - Default is false
+    };
 
-    if (getOptionsHelper("-a", "--all")) {
-        release_styling_for_all_sites(cb);
+    switch (mainFlag) {
+        case "-s":
+        case "--site":
+            const sitename = argument[0];
 
-    } else if (getOptionsHelper("-s", "--site")) {
-        const sitename = getOptionsHelper("-s", "--site");
+            if (typeof sitename === "string") {
+                release_styling_for_one_site(cb, sitename, options);
+            } else {
+                console.error(`\n\x1b[31m✗ Error\x1b[0m The website's name is missing`);
+                console.error(helpCommand);
+            }
 
-        // Special parameter
-        const options = {
-            overWrite: getOptionsHelper("-o", "--overwrite") || false // Default
-        }
+            break;
 
-        if (typeof sitename === "string") {
-            release_styling_for_one_site(cb, sitename, options);
-        } else {
-            console.error(`\n\x1b[31m✗ Error\x1b[0m The website\'s name is missing`);
+        case "-a":
+        case "--all":
+            release_styling_for_all_sites(cb, options);
+            break;
+
+        case "-u":
+        case "--usage":
+            console.log(helpInformation);
+            break;
+
+
+        default:
+            console.log('\n\x1b[31m✗ Error\x1b[0m Unknown command');
             console.log(helpCommand);
-        }
-    } else if (getOptionsHelper("-u", "--usage")) {
-        console.log(helpInformation);
-    } else {
-        console.log('\n\x1b[31m✗ Error\x1b[0m Unknown command');
-        console.log(helpCommand);
+
+            break;
     }
 
     cb();
