@@ -52,6 +52,10 @@
     },
     {
       "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomVisualElement"
+    },
+    {
+      "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeArticleBlock"
     },
     {
@@ -115,7 +119,8 @@
     "regionhalland/image-hero": "1.0.1",
     "regionhalland/label": "1.0.0.20191108",
     "regionhalland/navigation-left": "1.1.0",
-    "regionhalland/pagination-elements": "1.0.0.20191112"
+    "regionhalland/pagination-elements": "1.0.0.20191112",
+    "regionhalland/visual-element": "1.0.0.20191113"
   },
   "extra": {
     "custom-installer": {
