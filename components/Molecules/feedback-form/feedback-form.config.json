@@ -1,6 +1,6 @@
 {
-    "title": "Feedback from",
-    "status": "review",
+    "title": "Feedback form",
+    "status": "rework",
     "version": "1.0.0",
     "context": {
         "title": "Ge feedback",
@@ -29,10 +29,7 @@
             "labelData": {
                 "text": "Din e-postadress",
                 "forControlId": "feedback-form__email",
-                "extendClass": "rh-feedback-form__body__label rh-feedback-form__body__label-email",
-                "requirement": {
-                    "text": "**"
-                }
+                "extendClass": "rh-feedback-form__body__label rh-feedback-form__body__label-email"
             },
             "controlData": {
                 "controlId": "feedback-form__email",

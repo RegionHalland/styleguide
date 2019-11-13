@@ -1,6 +1,6 @@
 {
     "title": "Träfflistekort Kalender",
-    "status": "wip",
+    "status": "rework",
     "context": {
         "events": [
             {
