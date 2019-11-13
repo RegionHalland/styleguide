@@ -14,6 +14,7 @@
 * Atomen "Link" visar navigationslänkar, status uppdaterad och fått README
 * Atomen "Search field" har fått uppdaterad status och en README. 
 * Atomen "Text" genomgången med config-fil, hbs-fil och skapat README. 
+* Dokumentationen nu fått en synligare plats ovanför komponenterna i navigationen.
 
 ## 9.4.1
 ### Ny funktion
