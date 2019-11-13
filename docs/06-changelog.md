@@ -3,6 +3,7 @@
 ## 9.5.0
 ### Nya sökvägar
 * Atomen "Visual element" har markerats som klar och flyttat till vAtom och ligger i gitrepo
+* Molekylen "Cookie notice" omdöpt till "Message cookies", flyttad till gitrepo, tweakad config och fått README
 
 ### Ändringar
 * Ny status "Fasas ut - end of life" med koden "eol" är nu tillgänglig.
