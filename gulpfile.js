@@ -27,7 +27,8 @@ const rh_theme = mandelbrot({
         'default',
         'https://unpkg.com/feather-icons',
         '/theme/js/theme.js'
-    ]
+    ],
+    nav: ["docs", "components"] // show docs above components in the sidebar
     // any other theme configuration values here
 });
 
