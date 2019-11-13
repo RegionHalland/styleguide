@@ -5,9 +5,9 @@
 ## 1. Krav
 `<body>` tag
 * `overflow-x: hidden`
-* `height: 101vh` för att webb sidan har alltid scrollbar.
+* `height: 101vh` för att webbsidan har alltid scrollbar.
 
-Exempel: 
+Exempel:
 ```
 // CSS
 body {
@@ -21,7 +21,7 @@ Det är två separata sektioner som man behöver göra för menyn:
 * Huvudknapp
 * Menyns innehåll
 
-Många elementer måste ha sitt eget `id`:
+Elementerna måste ha sitt eget `id`:
 * `rh-menu-main-button`
 * `rh-menu-close-button`
 * `rh-menu-body`

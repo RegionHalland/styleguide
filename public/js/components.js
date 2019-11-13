@@ -1,47 +1,5 @@
 "use strict";
 
-function toggleMenu() {
-  document.getElementById("myDropdown").classList.toggle("rh-filter-show");
-  document.getElementById("dropdownBtn").classList.toggle("rh-filter-active");
-}
-
-function selectItem(sel) {
-  document.getElementById("dropdownBtn").classList.toggle("rh-filter-active");
-  document.getElementById("dropdownBtn").style.color = "black";
-  document.getElementById("myDropdown").classList.toggle("rh-filter-show");
-  var text = document.getElementById("dropdownBtn").firstChild;
-  text.data = sel.innerText;
-} // Close the dropdown menu if the user clicks outside of it
-
-
-window.onclick = function (event) {
-  if (!event.target.matches('.rh-filter')) {
-    var dropdowns = document.getElementsByClassName("rh-filter-menu");
-    var i;
-
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-
-      if (openDropdown.classList.contains('rh-filter-show')) {
-        openDropdown.classList.remove('rh-filter-show');
-      }
-    }
-
-    var btn = document.getElementsByClassName("rh-filter");
-    var i;
-
-    for (i = 0; i < btn.length; i++) {
-      var activeBtn = btn[i];
-
-      if (activeBtn.classList.contains('rh-filter-active')) {
-        activeBtn.classList.remove('rh-filter-active');
-      }
-    }
-  }
-};
-"use strict";
-"use strict";
-
 var acc = document.getElementsByClassName("rh-accordion");
 var i;
 
@@ -100,7 +58,7 @@ $(document).ready(function () {
   }, 200));
   $menuMainButton.click(function (e) {
     e.stopPropagation();
-    lockBodyScrolling(true);
+    menuLockBodyScrolling(true);
     $menuOverlay.toggleClass('rh-dp--none rh-dp--show');
     $menuTopBar.addClass('rh-pos--fixed').css({
       "width": "100%",
@@ -172,7 +130,7 @@ $(document).ready(function () {
   function hideMenuBody() {
     menuScrollbarShowingTimer && clearTimeout(menuScrollbarShowingTimer);
     menuScrollbarShowingTimer = setTimeout(function () {
-      lockBodyScrolling(false);
+      menuLockBodyScrolling(false);
     }, 160);
     menuBodyHiddenTimer && clearTimeout(menuBodyHiddenTimer);
     menuBodyHiddenTimer = setTimeout(function () {
@@ -180,7 +138,7 @@ $(document).ready(function () {
     }, 600);
   }
 
-  function lockBodyScrolling(status, fnCallback) {
+  function menuLockBodyScrolling(status, fnCallback) {
     //github.com/willmcpo/body-scroll-lock
     var disableBodyScroll = bodyScrollLock.disableBodyScroll,
         enableBodyScroll = bodyScrollLock.enableBodyScroll;
@@ -203,8 +161,11 @@ $(document).ready(function () {
 });
 "use strict";
 
-// Needed function:
-// throttle() - /public/library.js
+/* Needed helpers in /public/library.js
+    throttle()
+    calculateScrollbarWidth()
+    isMobileDevice()
+*/
 $(document).ready(function () {
   // Global variables
   var scrollbarWidth = calculateScrollbarWidth(),
@@ -405,14 +366,13 @@ $(document).ready(function () {
       isOverViewport: isOverViewportTop
     };
   }
-
-  function calculateScrollbarWidth() {
-    return window.innerWidth - $(document).width();
+  /* function calculateScrollbarWidth() {
+      return (window.innerWidth - $(document).width());
   }
+    function isMobileDevice(){
+      return !!navigator.platform && /iPad|iPhone|iPod/g.test(navigator.platform);
+  } */
 
-  function isMobileDevice() {
-    return !!navigator.platform && /iPad|iPhone|iPod/g.test(navigator.platform);
-  }
 });
 "use strict";
 
@@ -455,6 +415,89 @@ var videoPlayButton,
   }
 };
 videoMethods.renderVideoPlayButton();
+"use strict";
+
+function toggleMenu() {
+  document.getElementById("myDropdown").classList.toggle("rh-filter-show");
+  document.getElementById("dropdownBtn").classList.toggle("rh-filter-active");
+}
+
+function selectItem(sel) {
+  document.getElementById("dropdownBtn").classList.toggle("rh-filter-active");
+  document.getElementById("dropdownBtn").style.color = "black";
+  document.getElementById("myDropdown").classList.toggle("rh-filter-show");
+  var text = document.getElementById("dropdownBtn").firstChild;
+  text.data = sel.innerText;
+} // Close the dropdown menu if the user clicks outside of it
+
+
+window.onclick = function (event) {
+  if (!event.target.matches('.rh-filter')) {
+    var dropdowns = document.getElementsByClassName("rh-filter-menu");
+    var i;
+
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+
+      if (openDropdown.classList.contains('rh-filter-show')) {
+        openDropdown.classList.remove('rh-filter-show');
+      }
+    }
+
+    var btn = document.getElementsByClassName("rh-filter");
+    var i;
+
+    for (i = 0; i < btn.length; i++) {
+      var activeBtn = btn[i];
+
+      if (activeBtn.classList.contains('rh-filter-active')) {
+        activeBtn.classList.remove('rh-filter-active');
+      }
+    }
+  }
+};
+"use strict";
+"use strict";
+"use strict";
+
+// Needed function:
+// throttle() - /public/library.js
+$(document).ready(function () {
+  var $btnBackToTop = $("#back-to-top"),
+      btnBackToTopLimitOnHead = 500,
+      btnBackToTopCurrentPos = $(window).scrollTop(); // Initial state
+
+  btnBackToTopCurrentPos < btnBackToTopLimitOnHead ? $btnBackToTop.hide() : $btnBackToTop.show();
+  $(window).scroll(throttle(function () {
+    btnBackToTopCurrentPos = $(this).scrollTop(); // Update current position
+
+    if (btnBackToTopCurrentPos > btnBackToTopLimitOnHead) {
+      !$btnBackToTop.is(':visible') && $btnBackToTop.fadeIn("slow");
+    } else {
+      $btnBackToTop.is(':visible') && $btnBackToTop.fadeOut("slow");
+    }
+  }, 200));
+  $btnBackToTop.click(function (e) {
+    e.stopPropagation();
+    $('body,html').animate({
+      scrollTop: 0
+    }, 800);
+  });
+});
+"use strict";
+
+$(document).ready(function () {
+  // This code fixs :focus-within behavior on IE11 and older browsers
+  var $blockBoxItems = $(".rh-block-box");
+  $blockBoxItems.focusin(function (e) {
+    e.stopPropagation();
+    $(this).addClass("rh-block--focus");
+  });
+  $blockBoxItems.focusout(function (e) {
+    e.stopPropagation();
+    $(this).removeClass("rh-block--focus");
+  });
+});
 "use strict";
 
 var acc = document.getElementsByClassName("rh-search-accordion");
@@ -567,44 +610,3 @@ function setShadow() {
     }
   }
 }
-"use strict";
-"use strict";
-
-// Needed function:
-// throttle() - /public/library.js
-$(document).ready(function () {
-  var $btnBackToTop = $("#back-to-top"),
-      btnBackToTopLimitOnHead = 500,
-      btnBackToTopCurrentPos = $(window).scrollTop(); // Initial state
-
-  btnBackToTopCurrentPos < btnBackToTopLimitOnHead ? $btnBackToTop.hide() : $btnBackToTop.show();
-  $(window).scroll(throttle(function () {
-    btnBackToTopCurrentPos = $(this).scrollTop(); // Update current position
-
-    if (btnBackToTopCurrentPos > btnBackToTopLimitOnHead) {
-      !$btnBackToTop.is(':visible') && $btnBackToTop.fadeIn("slow");
-    } else {
-      $btnBackToTop.is(':visible') && $btnBackToTop.fadeOut("slow");
-    }
-  }, 200));
-  $btnBackToTop.click(function (e) {
-    e.stopPropagation();
-    $('body,html').animate({
-      scrollTop: 0
-    }, 800);
-  });
-});
-"use strict";
-
-$(document).ready(function () {
-  // This code fixs :focus-within behavior on IE11 and older browsers
-  var $blockBoxItems = $(".rh-block-box");
-  $blockBoxItems.focusin(function (e) {
-    e.stopPropagation();
-    $(this).addClass("rh-block--focus");
-  });
-  $blockBoxItems.focusout(function (e) {
-    e.stopPropagation();
-    $(this).removeClass("rh-block--focus");
-  });
-});
