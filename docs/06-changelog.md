@@ -1,5 +1,10 @@
 # Versioner av stilguiden och deras ändringar
 
+## 9.6.0
+
+### Ändringar
+* Molekylen "label previous" har fått statusen "Inväntar ombyggnad" och README-fil som inkluderar planerad utveckling
+
 ## 9.5.0
 ### Nya sökvägar
 * Atomen "Visual element" har markerats som klar och flyttat till vAtom och ligger i gitrepo
@@ -14,7 +19,7 @@
 * Atomen "Link" visar navigationslänkar, status uppdaterad och fått README
 * Atomen "Search field" har fått uppdaterad status och en README. 
 * Atomen "Text" genomgången med config-fil, hbs-fil och skapat README. 
-* Molekylen "Feedback form" har nu statusen "Inväntar ombyggnad" eftersom den skall flyttas till organismer. 
+* Molekylen "Feedback form" är något justerad och har nu statusen "Inväntar ombyggnad" eftersom den skall flyttas till organismer. 
 * Dokumentationen nu fått en synligare plats ovanför komponenterna i navigationen.
 
 
