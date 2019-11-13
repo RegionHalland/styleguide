@@ -1,10 +1,13 @@
 {
     "name": "sites-building",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "Using for the automatic build and release the web styling",
     "commonResources": {
-        "jsComponents": [],
-        "scssComponents": []
+        "commonJsComponents": [
+            "public/js/library.js",
+            "public/js/common.js"
+        ],
+        "commonScssComponents": []
     },
     "sites": [
         {
@@ -52,7 +55,10 @@
             "version": "1.1.0",
             "resources": {
                 "jsComponents": [
-                    "components/Molecules/menu/menu.js"
+                    "components/Molecules/menu/menu.js",
+                    "components/Molecules/navigation-block/navigation-block.js",
+                    "components/vMolecules/back-to-top/back-to-top.js",
+                    "components/vMolecules/block/block.js"
                 ],
                 "scssComponents": [ "../RH-sites/RhSettingsVuxHalland/vuxhalland.scss" ]
             }
@@ -115,7 +121,7 @@
         }
     ],
     "building": {
-        "publicPath": "cdn/buildX",
-        "releasePath": "../RH-cdn/RhWebStyleguideReleasesX"
+        "publicPath": "cdn/build",
+        "releasePath": "../RH-cdn/RhWebStyleguideReleases"
     }
 }

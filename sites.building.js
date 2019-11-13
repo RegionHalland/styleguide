@@ -18,7 +18,7 @@ sass.compiler = require('node-sass');
 const settings = require('./sites.building.json');
 const styleguideConfig = require('./package.json');
 
-const { sites, building } = settings;
+const { sites, building, commonResources } = settings;
 const { publicPath, releasePath } = building; // Public path and release path
 const styleguideVersion = styleguideConfig.version || '';
 
@@ -185,7 +185,7 @@ function jsBuild(cb, jsFilename, jsResources, destPath, options = {}) {
 }
 
 /**
- * JS minifying
+ * JS minification
  * @param {callback} cb
  * @param {string} jsFilename
  * @param {array} resource
@@ -255,7 +255,7 @@ function scssBuild(cb, cssFilename, scssResource, destPath, options = {}) {
             .pipe(sass.sync().on('error', (err) => reject(err)))
             .pipe(concat(cssFullFilename))
             .pipe(sourcemaps.write('.'))
-            .pipe(dest(cssDestPath))
+            .pipe(dest(cssDestPath, gulpOptions))
             .on('error', (error) => reject(error))
             .on('end', () => resolve(cssFullFilename));
 
@@ -264,7 +264,7 @@ function scssBuild(cb, cssFilename, scssResource, destPath, options = {}) {
 }
 
 /**
- * SCSS minifying
+ * SCSS minification
  * @param {callback} cb
  * @param {string} cssFilename
  * @param {array} scssResource
@@ -289,7 +289,7 @@ function scssMinify(cb, cssFilename, scssResource, destPath, options = {}) {
             )
             .pipe(concat(cssFullFilename))
             .pipe(sourcemaps.write('.'))
-            .pipe(dest(cssDestPath))
+            .pipe(dest(cssDestPath, gulpOptions))
             .on('error', (error) => reject(error))
             .on('end', () => resolve(cssFullFilename));
 
@@ -299,11 +299,23 @@ function scssMinify(cb, cssFilename, scssResource, destPath, options = {}) {
 
 function build_process(cb, name, resources = {}, destPath, options = {}) {
     return new Promise((resolve, reject) => {
-        const filename = name, // Only name and without the extension .css
+        const filename = name, // Only name and without the file extension
             { jsComponents, scssComponents } = resources, // Resources definition
-            jsSrcList = jsComponents || [],
-            scssSrcList = scssComponents || [],
-            { minify } = options;
+            { commonJsComponents, commonScssComponents } = commonResources;
+
+        let jsSrcList = jsComponents || [],
+            scssSrcList = scssComponents || [];
+
+        const { minify } = options;
+
+        /* Prepare data */
+        if (commonJsComponents && commonJsComponents.length) {
+            jsSrcList = [...commonJsComponents, ...jsSrcList];
+        }
+
+        if (commonScssComponents && commonScssComponents.length) {
+            scssSrcList = [...commonScssComponents, ...scssSrcList];
+        }
 
         /* Build process */
         if (jsSrcList && jsSrcList.length > 0 && scssSrcList && scssSrcList.length > 0) {
@@ -311,7 +323,7 @@ function build_process(cb, name, resources = {}, destPath, options = {}) {
             let buildJs, buildScss;
 
             if (minify) {
-                // With minifying
+                // With minification
                 buildJs = jsMinify(cb, filename, jsSrcList, destPath, options)
                     .then((result) => result)
                     .catch((error) => error);
@@ -320,7 +332,7 @@ function build_process(cb, name, resources = {}, destPath, options = {}) {
                     .then((result) => result)
                     .catch((error) => error);
             } else {
-                // NO minifying
+                // No minification
                 buildJs = jsBuild(cb, filename, jsSrcList, destPath, options)
                     .then((result) => result)
                     .catch((error) => error);

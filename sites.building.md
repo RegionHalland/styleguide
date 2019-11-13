@@ -2,9 +2,12 @@
 The sites building add-on is using __ONLY__ for the Styleguide application at Region Halland organization.
 
 ## Features
-* Build a site or all sites.
-* Release a site or all sites.
-* Minify both CSS and JS.
+* Building (*)
+* Release (*)
+* Minification for both CSS and JS during compiling.
+* Automatic including common resources _(SCSS and JS)_.
+
+_(*) Using for both a specific site or all sites_.
 
 ## System requirements
 * The minimum supported [Node.js](https://nodejs.org/) version is 8.9.0 _(Node.js LTS version is a good choice for the stability)_.
@@ -28,14 +31,14 @@ The sites building add-on is using __ONLY__ for the Styleguide application at Re
 _(*) Must have_
 
 ### The special sub options
-Beware using with the options are below for a specific site or all sites:
+Beware using with the options are below:
 
 |Option|Alias|Description|
 |---|---|---|
-|`-o`|_Not yet supported_|Overwrite a release|
+|`-o`|_Not yet supported_|Overwrite existing files |
 |`-m`|_Not yet supported_|Minify both CSS and JS|
 
-Example:
+Example for using sub options:
 * `$ gulp builds -s -m projectX`
 * `$ gulp releases -s -m -o otherProject`
 * `$ gulp releases --site -o -m lastProject` _(Using alias)_
@@ -64,6 +67,9 @@ $ gulp releases -u
 * View more in `/gulpfile.js` to know how the add-on works.
 
 ## Release notes:
+### 1.2.0 (2019-11-13)
+* [__New__] Automatic including common resources _(SCSS and JS)_.
+
 ### 1.1.0 (2019-11-13)
 * [__New__] Minifies CSS and JS when:
     * Building - `$ gulp builds ...`.
