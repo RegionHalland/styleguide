@@ -1,5 +1,19 @@
 # Versioner av stilguiden och deras ändringar
 
+## 9.5.0
+### Nya sökvägar
+* Atomen "Visual element" har markerats som klar och flyttat till vAtom och ligger i gitrepo
+
+### Ändringar
+* Ny status "Fasas ut - end of life" med koden "eol" är nu tillgänglig.
+* Ny status "Inväntar ombyggnad" med koden "rework" är nu tillgänglig.
+* Statusindikatorerna i vänstermenym är nu solida för bättre synlighet.
+* Atomen "Form control text" har fått uppdaterad status och readme. 
+* Atomen "Form control textarea" fått uppdaterad status och readme.
+* Atomen "Link" visar navigationslänkar, status uppdaterad och fått README
+* Atomen "Search field" har fått uppdaterad status och en README. 
+* Atomen "Text" genomgången med config-fil, hbs-fil och skapat README. 
+
 ## 9.4.1
 ### Ny funktion
 * Utilities/__`rh-dp--inline-flex`__
