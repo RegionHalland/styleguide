@@ -26,15 +26,9 @@
 * Atomen "Form control text" har fått uppdaterad status och readme.
 * Atomen "Form control textarea" fått uppdaterad status och readme.
 * Atomen "Link" visar navigationslänkar, status uppdaterad och fått README
-<<<<<<< HEAD
 * Atomen "Search field" har fått uppdaterad status och en README. 
 * Atomen "Text" genomgången med config-fil, hbs-fil och skapat README. 
 * Molekylen "Feedback form" är något justerad och har nu statusen "Inväntar ombyggnad" eftersom den skall flyttas till organismer. 
-=======
-* Atomen "Search field" har fått uppdaterad status och en README.
-* Atomen "Text" genomgången med config-fil, hbs-fil och skapat README.
-* Molekylen "Feedback form" har nu statusen "Inväntar ombyggnad" eftersom den skall flyttas till organismer.
->>>>>>> cfa55ab4f7b0cfcff9909ab0ab0ca97991f8a4a3
 * Dokumentationen nu fått en synligare plats ovanför komponenterna i navigationen.
 
 
