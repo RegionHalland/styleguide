@@ -5,8 +5,12 @@
     /* Box-modell/beteende */
     display: block;
     width: $hero--width;
-    max-width: $hero--max-width;
-    min-width: $hero--min-width;
+    @if $hero--max-width {
+        max-width: $hero--max-width;
+    }
+    @if $hero--min-width {
+        min-width: $hero--min-width;
+    }
     overflow: hidden;
 
     @include medium {

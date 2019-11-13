@@ -17,6 +17,12 @@ $block__img--width: 100%;
 $block__img--margin-bottom: -0.625em; //-10px
 $block__img--border-radius: $block__box--border-radius $block__box--border-radius 0 0;
 
+// Image container
+$block__img-container--small: 12.5em; //200px
+$block__img-container--medium: 15.625em; //250px
+$block__img-container--large: 18.75em; //300px
+$block__img-container--xlarge: 21.875em; //350px
+
 // ---clickable
 $block-effect__box-outside: true;
 $block-effect__content-inside: true;

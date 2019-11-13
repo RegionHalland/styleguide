@@ -7,6 +7,27 @@
     /* Typografi */
     text-align: $block--text-align;
 
+
+    &-image {
+        overflow: hidden;
+
+        &--small {
+            max-height: $block__img-container--small;
+        }
+
+        &--medium {
+            max-height: $block__img-container--medium;
+        }
+
+        &--large {
+            max-height: $block__img-container--large;
+        }
+
+        &--xlarge {
+            max-height: $block__img-container--xlarge;
+        }
+    }
+
     &-content {
         /* Box-modell/beteende */
         margin-top: 0;
@@ -23,7 +44,7 @@
             font-weight: $block__text-title--font-weight;
         }
 
-        
+
         &__description {} // The empty class is using for clickable effect
     }
 
@@ -50,7 +71,7 @@
 
     &--clickable {
         /* Positionering */
-        position: relative;
+        //position: relative; // Replaced by using a global class .rh-element--clickable
 
         @include create-clickable-element-effect(
             "rh-block--clickable", //Box classname
