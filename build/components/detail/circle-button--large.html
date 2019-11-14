@@ -236,7 +236,7 @@
   <span class="hljs-attr">"name"</span>: <span class="hljs-string">"default"</span>,
   <span class="hljs-attr">"modifier"</span>: <span class="hljs-string">"large"</span>,
   <span class="hljs-attr">"icon"</span>: <span class="hljs-string">"icon-corner-left-up"</span>,
-  <span class="hljs-attr">"extendClass"</span>: <span class="hljs-literal">null</span>
+  <span class="hljs-attr">"extendClass"</span>: <span class="hljs-string">""</span>
 }</pre>
             
         
@@ -616,37 +616,35 @@
 <tr>
 <th>Klassnamn</th>
 <th>Fullständigt namn</th>
-<th style="text-align:right">Mått i em</th>
-<th style="text-align:right">Mått i pixel</th>
+<th align="right">Mått i em</th>
+<th align="right">Mått i pixel</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td><code>--small</code></td>
 <td><code>rh-circle-button--small</code></td>
-<td style="text-align:right">1.875em</td>
-<td style="text-align:right">30px</td>
+<td align="right">1.875em</td>
+<td align="right">30px</td>
 </tr>
 <tr>
 <td><code>--medium</code></td>
 <td><code>rh-circle-button--medium</code></td>
-<td style="text-align:right">2.1875em</td>
-<td style="text-align:right">35px</td>
+<td align="right">2.1875em</td>
+<td align="right">35px</td>
 </tr>
 <tr>
 <td><code>--large</code></td>
 <td><code>rh-circle-button--large</code></td>
-<td style="text-align:right">2.5em</td>
-<td style="text-align:right">40px</td>
+<td align="right">2.5em</td>
+<td align="right">40px</td>
 </tr>
 <tr>
 <td><code>--xlarge</code></td>
 <td><code>rh-circle-button--xlarge</code></td>
-<td style="text-align:right">3.125em</td>
-<td style="text-align:right">50px</td>
+<td align="right">3.125em</td>
+<td align="right">50px</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h2 id="2-effekt">2. Effekt</h2>
 <table>
 <thead>
@@ -656,8 +654,7 @@
 <th>Beskrivning</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td><code>--border</code></td>
 <td><code>rh-circle-button--border</code></td>
 <td>“Border” är runt om komponenten. Standard är utan “border”</td>
@@ -672,48 +669,47 @@
 <td></td>
 <td>Det kan kontrolleras via inställningar</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h2 id="3-ikon">3. Ikon</h2>
 <p>Klassen <code>rh-circle-button__icon</code> används för att man kan kontrollera ikons stil <em>(storlek, färg o.s.v.)</em>. Klassen behövs också när man använder storlekarna <code>large</code> och <code>xlarge</code>.</p>
 <p>Exempel:</p>
-<code><pre>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-circle-button rh-circle-button--large"</span>&gt;
+<pre><code>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-circle-button rh-circle-button--large"</span>&gt;
     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-arrow-right rh-circle-button__icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>
-<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre></code><p>Man kan också justera ikons position genom att skapa en ny CSS klass och påverka <code>padding*</code> property.</p>
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre><p>Man kan också justera ikons position genom att skapa en ny CSS klass och påverka <code>padding*</code> property.</p>
 <p>Exempel:</p>
-<code><pre><span class="hljs-selector-class">.align-icon</span> {
-    <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">0.1em</span>;
+<pre><code>.align-icon {
+    padding-top: <span class="hljs-number">0.1</span>em;
 }
 
-&lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"rh-circle-button rh-circle-button--medium align-icon"</span>&gt;
-    &lt;<span class="hljs-selector-tag">span</span> class=<span class="hljs-string">"icon-arrow-right"</span>&gt;&lt;/span&gt;
-&lt;/div&gt;</pre></code><h2 id="4-anv-ndning">4. Användning</h2>
+&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-circle-button rh-circle-button--medium align-icon"</span>&gt;
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre><h2 id="4-användning">4. Användning</h2>
 <p><code>rh-circle-button &lt;variantnamn&gt; [effect]</code></p>
-<h3 id="4-1-standard">4.1. Standard</h3>
-<code><pre>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-circle-button rh-circle-button--small"</span>&gt;
+<h3 id="41-standard">4.1. Standard</h3>
+<pre><code>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-circle-button rh-circle-button--small"</span>&gt;
     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-plus"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>
-<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre></code><h3 id="4-2-border">4.2. Border</h3>
-<code><pre>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-circle-button rh-circle-button--large rh-circle-button--border"</span>&gt;
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre><h3 id="42-border">4.2. Border</h3>
+<pre><code>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-circle-button rh-circle-button--large rh-circle-button--border"</span>&gt;
     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-arrow-right rh-circle-button__icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>
-<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre></code><h3 id="4-3-l-nkbar">4.3. Länkbar</h3>
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre><h3 id="43-länkbar">4.3. Länkbar</h3>
 <p>Man kan också använda <code>&lt;a&gt;</code> tag runt om komponenten för att det blir länkbar.</p>
-<code><pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-circle-button rh-circle-button--small"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-plus"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></pre></code><h2 id="5-versionhistorik">5. Versionhistorik</h2>
-<h3 id="1-1-1-2019-10-23-">1.1.1 (2019-10-23)</h3>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></code></pre><h2 id="5-versionhistorik">5. Versionhistorik</h2>
+<h3 id="111-2019-10-23">1.1.1 (2019-10-23)</h3>
 <ul>
 <li>Redigera ikonstorlek <code>1.4em</code> -&gt; <code>1.2em</code> för en bättre passande<ul>
 <li><code>$circle-button--large-icon-font-size: 1.2em</code></li>
 </ul>
 </li>
 </ul>
-<h3 id="1-1-0">1.1.0</h3>
+<h3 id="110">1.1.0</h3>
 <ul>
 <li>Modifier <code>--secondary</code> introducerades.</li>
 </ul>
-<h3 id="1-0-0">1.0.0</h3>
+<h3 id="100">1.0.0</h3>
 <ul>
 <li>Första version</li>
 </ul>
@@ -1489,7 +1485,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

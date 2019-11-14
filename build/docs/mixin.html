@@ -142,32 +142,30 @@
 <thead>
 <tr>
 <th>Variabel</th>
-<th style="text-align:center">Datatyp</th>
-<th style="text-align:center">Krav</th>
+<th align="center">Datatyp</th>
+<th align="center">Krav</th>
 <th>Beskrivning</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>$name</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">obligatorisk</td>
+<td align="center">string</td>
+<td align="center">obligatorisk</td>
 <td>Containers namn</td>
 </tr>
 <tr>
 <td>$offset-left</td>
-<td style="text-align:center">number</td>
-<td style="text-align:center">frivillig</td>
+<td align="center">number</td>
+<td align="center">frivillig</td>
 <td>Används f.o.m. <code>medium</code> läge</td>
 </tr>
 <tr>
 <td>$offset-right</td>
-<td style="text-align:center">number</td>
-<td style="text-align:center">frivillig</td>
+<td align="center">number</td>
+<td align="center">frivillig</td>
 <td>Används f.o.m. <code>medium</code> läge</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p><strong>Användning</strong></p>
 <p><code>@include create-container-px(...) { //Extra styling }</code></p>
 <h2 id="2-create-container-py">2. create-container-py</h2>
@@ -176,42 +174,40 @@
 <thead>
 <tr>
 <th>Variabel</th>
-<th style="text-align:center">Datatyp</th>
-<th style="text-align:center">Krav</th>
+<th align="center">Datatyp</th>
+<th align="center">Krav</th>
 <th>Beskrivning</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>$name</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">obligatorisk</td>
+<td align="center">string</td>
+<td align="center">obligatorisk</td>
 <td>Containers namn</td>
 </tr>
 <tr>
 <td>$padding-py</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">frivillig</td>
+<td align="center">string</td>
+<td align="center">frivillig</td>
 <td>Används för både <code>padding-top</code> och <code>padding-bottom</code>. <code>1.875em</code> <em>(30px)</em> är förval</td>
 </tr>
 <tr>
 <td>$offset-top</td>
-<td style="text-align:center">number</td>
-<td style="text-align:center">frivillig</td>
+<td align="center">number</td>
+<td align="center">frivillig</td>
 <td>Används f.o.m. <code>medium</code> läge</td>
 </tr>
 <tr>
 <td>$offset-bottom</td>
-<td style="text-align:center">number</td>
-<td style="text-align:center">frivillig</td>
+<td align="center">number</td>
+<td align="center">frivillig</td>
 <td>Används f.o.m. <code>medium</code> läge</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p><strong>Användning</strong></p>
 <p><code>@include create-container-py(...) { //Extra styling }</code></p>
 <p><strong>Exempel</strong></p>
-<code><pre><span class="hljs-comment">//Standard användning</span>
+<pre><code><span class="hljs-comment">//Standard användning</span>
 <span class="hljs-variable">@include</span> create-container-py(<span class="hljs-string">'rh-container__feedback'</span>, <span class="hljs-number">1em</span>)
 
 <span class="hljs-comment">//Extra beteende</span>
@@ -221,38 +217,36 @@
         <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">3.75em</span>; <span class="hljs-comment">//60px</span>
         <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">3.75em</span>;
     }
-}</pre></code><h2 id="3-create-container-p">3. create-container-p</h2>
+}</code></pre><h2 id="3-create-container-p">3. create-container-p</h2>
 <p><code>create-container-p($name, $container-py, $container-px)</code></p>
 <table>
 <thead>
 <tr>
 <th>Variabel</th>
-<th style="text-align:center">Datatyp</th>
-<th style="text-align:center">Krav</th>
+<th align="center">Datatyp</th>
+<th align="center">Krav</th>
 <th>Beskrivning</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>$name</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">obligatorisk</td>
+<td align="center">string</td>
+<td align="center">obligatorisk</td>
 <td>Containers namn</td>
 </tr>
 <tr>
 <td>$container-py</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">obligatorisk</td>
+<td align="center">string</td>
+<td align="center">obligatorisk</td>
 <td>Containers namn</td>
 </tr>
 <tr>
 <td>$container-px</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">obligatorisk</td>
+<td align="center">string</td>
+<td align="center">obligatorisk</td>
 <td>Containers namn</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p><strong>Användning</strong></p>
 <p><code>@include create-container-p(...) { //Extra styling }</code></p>
 <h2 id="4-iosnoincreasefontsize">4. iOSNoIncreaseFontSize</h2>
@@ -260,14 +254,14 @@
 <p><strong>Användning</strong></p>
 <p><code>@include iOSNoIncreaseFontSize</code></p>
 <p><strong>Exempel</strong></p>
-<code><pre><span class="hljs-comment">//SCSS kod</span>
+<pre><code><span class="hljs-comment">//SCSS kod</span>
 <span class="hljs-selector-class">.footer</span> {
     @<span class="hljs-keyword">include</span> iOSNoIncreaseFontSize;
 
     <span class="hljs-attribute">padding</span>: <span class="hljs-number">1em</span>;
     <span class="hljs-attribute">color</span>: blue;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.2em</span>;
-}</pre></code><h2 id="5-create-clickable-element-effect">5. create-clickable-element-effect</h2>
+}</code></pre><h2 id="5-create-clickable-element-effect">5. create-clickable-element-effect</h2>
 <p>Funktionen genererar beteendena för en klickbar komponent <em>(block element)</em>:</p>
 <ul>
 <li><code>:hover</code></li>
@@ -275,7 +269,7 @@
 <li><code>:focus-within</code> <em>(En klickbar komponent använder <code>&lt;div&gt;</code> tag därför <code>:focus-within</code> används istället för <code>:focus</code>)</em></li>
 </ul>
 <p>Standard struktur för en klickbar element:</p>
-<code><pre>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-element--clickable"</span>&gt;
+<pre><code>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-element--clickable"</span>&gt;
     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-element--clickable-link"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span>
 
     <span class="xml"><span class="hljs-comment">&lt;!-- Elements innehåll --&gt;</span>
@@ -283,107 +277,106 @@
         <span class="hljs-comment">&lt;!-- Titel --&gt;</span>
         <span class="hljs-comment">&lt;!-- Beskrivning --&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre></code><table>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre><table>
 <thead>
 <tr>
 <th>Variabel</th>
-<th style="text-align:center">Datatyp</th>
-<th style="text-align:center">Krav</th>
+<th align="center">Datatyp</th>
+<th align="center">Krav</th>
 <th>Beskrivning</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>$element-box-classname</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">obligatorisk</td>
+<td align="center">string</td>
+<td align="center">obligatorisk</td>
 <td>Klassnamn använts till <code>&lt;div&gt;</code> tag som är runt om elementen <em>(container)</em></td>
 </tr>
 <tr>
 <td>$element-title-classname</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">obligatorisk</td>
+<td align="center">string</td>
+<td align="center">obligatorisk</td>
 <td>Klassnamn använts till elements titel</td>
 </tr>
 <tr>
 <td>$element-description-classname</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">obligatorisk</td>
+<td align="center">string</td>
+<td align="center">obligatorisk</td>
 <td>Klassnamn använts till elements beskrivning</td>
 </tr>
 <tr>
 <td>$box-effect-outside</td>
-<td style="text-align:center">boolean</td>
-<td style="text-align:center">frivillig</td>
+<td align="center">boolean</td>
+<td align="center">frivillig</td>
 <td>Aktivera effekt som är runt om komponenten</td>
 </tr>
 <tr>
 <td>$content-effect-inside</td>
-<td style="text-align:center">boolean</td>
-<td style="text-align:center">frivillig</td>
+<td align="center">boolean</td>
+<td align="center">frivillig</td>
 <td>Aktivera effekt som är för innehåll i komponenten</td>
 </tr>
 <tr>
 <td>$box-border-top-styling</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">frivillig</td>
+<td align="center">string</td>
+<td align="center">frivillig</td>
 <td></td>
 </tr>
 <tr>
 <td>$box-border-right-styling</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">frivillig</td>
+<td align="center">string</td>
+<td align="center">frivillig</td>
 <td></td>
 </tr>
 <tr>
 <td>$box-border-bottom-styling</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">frivillig</td>
+<td align="center">string</td>
+<td align="center">frivillig</td>
 <td></td>
 </tr>
 <tr>
 <td>$box-border-left-styling</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">frivillig</td>
+<td align="center">string</td>
+<td align="center">frivillig</td>
 <td></td>
 </tr>
 <tr>
 <td>$box-shadow-styling</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">frivillig</td>
+<td align="center">string</td>
+<td align="center">frivillig</td>
 <td></td>
 </tr>
 <tr>
 <td>$box-shadow-focus-styling</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">frivillig</td>
+<td align="center">string</td>
+<td align="center">frivillig</td>
 <td></td>
 </tr>
 <tr>
 <td>$title-text-color</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">frivillig</td>
+<td align="center">string</td>
+<td align="center">frivillig</td>
 <td></td>
 </tr>
 <tr>
 <td>$title-text-decoration</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">frivillig</td>
+<td align="center">string</td>
+<td align="center">frivillig</td>
 <td></td>
 </tr>
 <tr>
 <td>$description-text-color</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">frivillig</td>
+<td align="center">string</td>
+<td align="center">frivillig</td>
 <td></td>
 </tr>
 <tr>
 <td>$description-text-decoration</td>
-<td style="text-align:center">string</td>
-<td style="text-align:center">frivillig</td>
+<td align="center">string</td>
+<td align="center">frivillig</td>
+<td></td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p><strong>Användning</strong></p>
 <p><code>@include create-clickable-element-effect(...) { //Extra styling }</code></p>
 <p><strong>TIPS!</strong> Se <code>block</code> och <code>navigation-block</code> för att veta mer om hur man använder funktionen.</p>
@@ -1155,7 +1148,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

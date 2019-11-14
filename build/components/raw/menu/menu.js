@@ -38,7 +38,7 @@ $(document).ready(function () {
     $menuMainButton.click(function (e) {
         e.stopPropagation();
 
-        lockBodyScrolling(true);
+        menuLockBodyScrolling(true);
 
         $menuOverlay.toggleClass('rh-dp--none rh-dp--show');
 
@@ -122,7 +122,7 @@ $(document).ready(function () {
     function hideMenuBody() {
         menuScrollbarShowingTimer && clearTimeout(menuScrollbarShowingTimer);
         menuScrollbarShowingTimer = setTimeout(function () {
-            lockBodyScrolling(false);
+            menuLockBodyScrolling(false);
         }, 160);
 
         menuBodyHiddenTimer && clearTimeout(menuBodyHiddenTimer);
@@ -133,7 +133,7 @@ $(document).ready(function () {
         }, 600);
     }
 
-    function lockBodyScrolling(status, fnCallback) {
+    function menuLockBodyScrolling(status, fnCallback) {
         //github.com/willmcpo/body-scroll-lock
         var disableBodyScroll = bodyScrollLock.disableBodyScroll,
             enableBodyScroll = bodyScrollLock.enableBodyScroll;

@@ -397,7 +397,7 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-menu-dropdown__body"</span>&gt;</span>
-        </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> body.items}}</span><span class="xml"></span><span class="hljs-comment">{{!-- Level 1 - Root --}}</span><span class="xml">
+        </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> body.items}}</span><span class="hljs-comment">{{!-- Level 1 - Root --}}</span><span class="xml">
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-menu-dropdown__item"</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{link}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-link--navigation rh-menu-dropdown__text"</span>&gt;</span></span><span class="hljs-template-variable">{{text}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -420,7 +420,7 @@
                         </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-                    </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> subItems}}</span><span class="xml"></span><span class="hljs-comment">{{!-- Level 3 --}}</span><span class="xml">
+                    </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> subItems}}</span><span class="hljs-comment">{{!-- Level 3 --}}</span><span class="xml">
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sub</span></span></span><span class="hljs-template-variable">{{id}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-menu-dropdown__item__sub-container"</span>&gt;</span>
                         </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> subItems}}</span><span class="xml">
                         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-menu-dropdown__item rh-menu-dropdown__item__sub-item rh-pl-5"</span>&gt;</span>
@@ -933,8 +933,12 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-JavaScript FileBrowser-code">
-                                <pre><span class="hljs-comment">// Needed function:</span>
-<span class="hljs-comment">// throttle() - /public/library.js</span>
+                                <pre><span class="hljs-comment">/* Needed helpers in /public/library.js
+    throttle()
+    calculateScrollbarWidth()
+    isMobileDevice()
+*/</span>
+
 $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
     <span class="hljs-comment">// Global variables</span>
     <span class="hljs-keyword">var</span> scrollbarWidth = calculateScrollbarWidth(),
@@ -1151,13 +1155,13 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
         };
     }
 
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculateScrollbarWidth</span>(<span class="hljs-params"></span>) </span>{
-        <span class="hljs-keyword">return</span> (<span class="hljs-built_in">window</span>.innerWidth - $(<span class="hljs-built_in">document</span>).width());
+    <span class="hljs-comment">/* function calculateScrollbarWidth() {
+        return (window.innerWidth - $(document).width());
     }
 
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isMobileDevice</span>(<span class="hljs-params"></span>)</span>{
-        <span class="hljs-keyword">return</span> !!navigator.platform &amp;&amp; <span class="hljs-regexp">/iPad|iPhone|iPod/g</span>.test(navigator.platform);
-    }
+    function isMobileDevice(){
+        return !!navigator.platform &amp;&amp; /iPad|iPhone|iPod/g.test(navigator.platform);
+    } */</span>
 });
 </pre>
                             </code>
@@ -1175,7 +1179,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">8.6 KB</span>
+                    <span class="Meta-value">8.7 KB</span>
                 </li>
             </ul>
         </div>
@@ -2104,7 +2108,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

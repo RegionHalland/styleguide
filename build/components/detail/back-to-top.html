@@ -274,7 +274,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-943f0093673145f4d147a0b9b11bf28a-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"></span><span class="hljs-comment">{{!-- Using for scrolling testing --}}</span><span class="xml">
+        <pre><span class="hljs-comment">{{!-- Using for scrolling testing --}}</span><span class="xml">
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
         Scrolla ner åt för att se hur knappen fungerar. Texten används för bara att testa komponenten.
@@ -401,7 +401,7 @@
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-</span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"></span></pre>
+</span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span></pre>
     </code>
 </div>
 
@@ -752,26 +752,26 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <li>Inbyggd klassen <code>rh-back-to-top__container</code> skapas för snabb användning när man vill justera komponentens position.</li>
 <li><code>&lt;a&gt;</code> tag används när man vill att komponenten länkar till en osynlig element som är på högst upp av sidan för användare som inte har JavaScript aktiveras i deras webbläsare. Komponenten fungerar ändå.</li>
 </ul>
-<h2 id="2-anv-ndning">2. Användning</h2>
-<h3 id="2-1-exempel-1-standard-">2.1. Exempel 1 (standard):</h3>
-<code><pre>&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">id</span>=<span class="hljs-string">"back-to-top"</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"rh-circle-button rh-circle-button--large rh-back-to-top"</span>&gt;
+<h2 id="2-användning">2. Användning</h2>
+<h3 id="21-exempel-1-standard">2.1. Exempel 1 (standard):</h3>
+<pre><code>&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">id</span>=<span class="hljs-string">"back-to-top"</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"rh-circle-button rh-circle-button--large rh-back-to-top"</span>&gt;
     &lt;span <span class="hljs-built_in">class</span>=<span class="hljs-string">"icon-chevron-up rh-circle-button__icon"</span>&gt;&lt;/span&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;</pre></code><h3 id="2-2-exempel-2-a-tag-r-en-alternativ-">2.2. Exempel 2 (<code>&lt;a&gt;</code> tag är en alternativ):</h3>
-<code><pre>&lt;a href=<span class="hljs-string">"#"</span> title=<span class="hljs-string">"Scrolla till toppen"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-link--navigation"</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre><h3 id="22-exempel-2-a-tag-är-en-alternativ">2.2. Exempel 2 (<code>&lt;a&gt;</code> tag är en alternativ):</h3>
+<pre><code>&lt;a href=<span class="hljs-string">"#"</span> title=<span class="hljs-string">"Scrolla till toppen"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-link--navigation"</span>&gt;
     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"back-to-top"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-circle-button rh-circle-button--large rh-back-to-top"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-chevron-up rh-circle-button__icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
-<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span></pre></code><h3 id="2-3-exempel-3-b-de-container-och-a-tag-r-alternativ-">2.3. Exempel 3 (både container och <code>&lt;a&gt;</code> tag är alternativ):</h3>
-<code><pre>&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"rh-back-to-top__container"</span>&gt;
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span></code></pre><h3 id="23-exempel-3-både-container-och-a-tag-är-alternativ">2.3. Exempel 3 (både container och <code>&lt;a&gt;</code> tag är alternativ):</h3>
+<pre><code>&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"rh-back-to-top__container"</span>&gt;
     &lt;a href=<span class="hljs-string">"#"</span> title=<span class="hljs-string">"Scrolla till toppen"</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"rh-link--navigation"</span>&gt;
         &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">id</span>=<span class="hljs-string">"back-to-top"</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"rh-circle-button rh-circle-button--large rh-back-to-top"</span>&gt;
             &lt;span <span class="hljs-built_in">class</span>=<span class="hljs-string">"icon-chevron-up rh-circle-button__icon"</span>&gt;&lt;/span&gt;
         &lt;/<span class="hljs-keyword">div</span>&gt;
     &lt;/a&gt;
-&lt;/<span class="hljs-keyword">div</span>&gt;</pre></code><h2 id="3-version">3. Version</h2>
-<h3 id="1-1-0-2019-10-22-">1.1.0 (2019-10-22)</h3>
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre><h2 id="3-version">3. Version</h2>
+<h3 id="110-2019-10-22">1.1.0 (2019-10-22)</h3>
 <p>Exempelkod i readme uppdaterad</p>
-<h3 id="1-0-0-2019-09-26-">1.0.0 (2019-09-26)</h3>
+<h3 id="100-2019-09-26">1.0.0 (2019-09-26)</h3>
 <ul>
 <li>Första version.</li>
 </ul>
@@ -1547,7 +1547,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

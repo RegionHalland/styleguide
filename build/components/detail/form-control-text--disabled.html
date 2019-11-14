@@ -255,22 +255,22 @@
             
             <pre>{
   <span class="hljs-attr">"name"</span>: <span class="hljs-string">"form-control__text"</span>,
-  <span class="hljs-attr">"extendClass"</span>: <span class="hljs-literal">null</span>,
-  <span class="hljs-attr">"modifier"</span>: <span class="hljs-literal">null</span>,
+  <span class="hljs-attr">"extendClass"</span>: <span class="hljs-string">""</span>,
+  <span class="hljs-attr">"modifier"</span>: <span class="hljs-string">""</span>,
   <span class="hljs-attr">"isDisabled"</span>: <span class="hljs-literal">true</span>,
   <span class="hljs-attr">"labelData"</span>: {
-    <span class="hljs-attr">"text"</span>: <span class="hljs-literal">null</span>,
+    <span class="hljs-attr">"text"</span>: <span class="hljs-string">""</span>,
     <span class="hljs-attr">"forControlId"</span>: <span class="hljs-string">"disabledId"</span>,
-    <span class="hljs-attr">"extendClass"</span>: <span class="hljs-literal">null</span>,
+    <span class="hljs-attr">"extendClass"</span>: <span class="hljs-string">""</span>,
     <span class="hljs-attr">"requirement"</span>: {
-      <span class="hljs-attr">"text"</span>: <span class="hljs-literal">null</span>
+      <span class="hljs-attr">"text"</span>: <span class="hljs-string">""</span>
     }
   },
   <span class="hljs-attr">"controlData"</span>: {
     <span class="hljs-attr">"controlId"</span>: <span class="hljs-string">"disabledId"</span>,
     <span class="hljs-attr">"placeholder"</span>: <span class="hljs-string">"Disabled"</span>,
-    <span class="hljs-attr">"autocompleteType"</span>: <span class="hljs-literal">null</span>,
-    <span class="hljs-attr">"extendClass"</span>: <span class="hljs-literal">null</span>
+    <span class="hljs-attr">"autocompleteType"</span>: <span class="hljs-string">""</span>,
+    <span class="hljs-attr">"extendClass"</span>: <span class="hljs-string">""</span>
   }
 }</pre>
             
@@ -555,22 +555,22 @@
     <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-82db6fdf7a0cdc088ac89bf3b7c98cb4-panel-notes">
     <div class="Prose Prose--condensed">
         
-        <h1 id="form-control-text">Form control - Text</h1>
+        <h1 id="form-control---text">Form control - Text</h1>
 <p>Komponenten är en HTML form input text element.</p>
 <h2 id="1-struktur">1. Struktur</h2>
-<h3 id="1-1-html">1.1. HTML</h3>
+<h3 id="11-html">1.1. HTML</h3>
 <p>Huvudstrukturen är:</p>
-<code><pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"elemId"</span>&gt;</span>Text<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"elemId"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre></code><p>TIP!</p>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><p>TIP!</p>
 <ul>
 <li>Man kan också använda komponenten utan <code>&lt;label&gt;</code> tag. Det beror på JSON filen.</li>
 <li>Glöm inte checka inkommande data när man jobbar med back-end system (Exempel: required, minlength, maxlength, pattern, …)</li>
 </ul>
-<h3 id="1-2-json-data-f-r-en-variant">1.2. JSON data för en variant</h3>
+<h3 id="12-json-data-för-en-variant">1.2. JSON data för en variant</h3>
 <p>Man använder strukturen när man vill rendera komponenten i en annan komponent (Exempel: en atom i en molecules).</p>
-<code><pre>{
+<pre><code>{
     <span class="hljs-attr">"name"</span>: <span class="hljs-string">""</span>,
     <span class="hljs-attr">"status"</span>: <span class="hljs-string">""</span>,
     <span class="hljs-attr">"context"</span>: {
@@ -591,13 +591,13 @@
             <span class="hljs-attr">"extendClass"</span>: <span class="hljs-string">""</span>
         }
     }
-}</pre></code><p>Man kan också använda extra CSS klasser som ska vara i “extendClass” för att skriva över befintliga CSS klasser i komponenten.</p>
+}</code></pre><p>Man kan också använda extra CSS klasser som ska vara i “extendClass” för att skriva över befintliga CSS klasser i komponenten.</p>
 <h2 id="2-referens">2. Referens</h2>
 <ul>
 <li><a href="https://fractal.build/guide/components/including-sub-components.html">Including Sub-components</a></li>
 </ul>
 <h2 id="3-version">3. Version</h2>
-<h3 id="1-0-0-2019-08-20-">1.0.0 (2019-08-20)</h3>
+<h3 id="100-2019-08-20">1.0.0 (2019-08-20)</h3>
 <ul>
 <li>Första version.</li>
 </ul>
@@ -1377,7 +1377,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

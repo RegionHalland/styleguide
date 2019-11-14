@@ -1,5 +1,9 @@
-// Needed function:
-// throttle() - /public/library.js
+/* Needed helpers in /public/library.js
+    throttle()
+    calculateScrollbarWidth()
+    isMobileDevice()
+*/
+
 $(document).ready(function () {
     // Global variables
     var scrollbarWidth = calculateScrollbarWidth(),
@@ -216,11 +220,11 @@ $(document).ready(function () {
         };
     }
 
-    function calculateScrollbarWidth() {
+    /* function calculateScrollbarWidth() {
         return (window.innerWidth - $(document).width());
     }
 
     function isMobileDevice(){
         return !!navigator.platform && /iPad|iPhone|iPod/g.test(navigator.platform);
-    }
+    } */
 });

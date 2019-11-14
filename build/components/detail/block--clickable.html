@@ -659,7 +659,7 @@
     <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-3b5689822c648af8180f5b355178d4f3-panel-notes">
     <div class="Prose Prose--condensed">
         
-        <h1 id="block-puff-">Block (Puff)</h1>
+        <h1 id="block-puff">Block (Puff)</h1>
 <ul>
 <li>Komponents prefix: <code>rh-block*</code></li>
 <li>Filplats: <code>/components/Molecules/block</code></li>
@@ -672,8 +672,7 @@
 <th>Beskrivning</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>Default</td>
 <td>Endast rubrik är klickbar</td>
 </tr>
@@ -685,14 +684,13 @@
 <td>Image container</td>
 <td>Det skapar en begränsning för bildens höjd</td>
 </tr>
-</tbody>
-</table>
-<h2 id="2-anv-ndning">2. Användning</h2>
-<h3 id="2-1-default-standard-">2.1. Default (Standard)</h3>
+</tbody></table>
+<h2 id="2-användning">2. Användning</h2>
+<h3 id="21-default-standard">2.1. Default (Standard)</h3>
 <ul>
 <li>Använd <code>Default</code> variant.</li>
 </ul>
-<h3 id="2-2-clickable-hela-puffen-r-klickbar-">2.2. Clickable (Hela puffen är klickbar)</h3>
+<h3 id="22-clickable-hela-puffen-är-klickbar">2.2. Clickable (Hela puffen är klickbar)</h3>
 <ul>
 <li>Använd <code>Clickable</code> variant.</li>
 <li>Standard beteende genereras automatisk av @mixin och aktiveras i klassen <code>rh-block--clickable</code>. Man kan också justera komponenten i komponentens inställningar.<ul>
@@ -708,13 +706,13 @@
 <li>En länk <code>&lt;a&gt;</code> tag ska ligga ovan på hela div:n med <code>position: absolute; z-index: 1;</code>.</li>
 </ul>
 <p><strong>Användning</strong>:</p>
-<code><pre>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-block-box rh-block--clickable rh-element--clickable"</span>&gt;
+<pre><code>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-block-box rh-block--clickable rh-element--clickable"</span>&gt;
     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-element--clickable-link"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span>
 
     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-comment">&lt;!-- Komponents innehåll --&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
-<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre></code><h3 id="2-3-image-container">2.3 Image container</h3>
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre><h3 id="23-image-container">2.3 Image container</h3>
 <p>En container wrappar runt om bilden för att bilden inte blir så höjd.</p>
 <ul>
 <li><code>max-height</code></li>
@@ -724,42 +722,40 @@
 <tr>
 <th>Klassnamn</th>
 <th>Fullständig namn</th>
-<th style="text-align:right">Mått i em</th>
-<th style="text-align:right">Mått i pixel</th>
+<th align="right">Mått i em</th>
+<th align="right">Mått i pixel</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td><code>--small</code></td>
 <td>rh-block-image–small</td>
-<td style="text-align:right">12.5em</td>
-<td style="text-align:right">200px</td>
+<td align="right">12.5em</td>
+<td align="right">200px</td>
 </tr>
 <tr>
 <td><code>--medium</code></td>
 <td>rh-block-image–medium</td>
-<td style="text-align:right">15.625em</td>
-<td style="text-align:right">250px</td>
+<td align="right">15.625em</td>
+<td align="right">250px</td>
 </tr>
 <tr>
 <td><code>--large</code></td>
 <td>rh-block-image–large</td>
-<td style="text-align:right">18.75em</td>
-<td style="text-align:right">300px</td>
+<td align="right">18.75em</td>
+<td align="right">300px</td>
 </tr>
 <tr>
 <td><code>--xlarge</code></td>
 <td>rh-block-image–xlarge</td>
-<td style="text-align:right">21.875em</td>
-<td style="text-align:right">350px</td>
+<td align="right">21.875em</td>
+<td align="right">350px</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p><strong>Användning</strong>:</p>
-<code><pre>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-block-image rh-block-image--small"</span>&gt;
+<pre><code>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-block-image rh-block-image--small"</span>&gt;
     <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">""</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre></code><h2 id="3-versionhistorik">3. Versionhistorik</h2>
-<h3 id="1-2-0-2019-11-12-">1.2.0 (2019-11-12)</h3>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre><h2 id="3-versionhistorik">3. Versionhistorik</h2>
+<h3 id="120-2019-11-12">1.2.0 (2019-11-12)</h3>
 <ul>
 <li>Ny variant - “With image container”:<ul>
 <li>En container wrappar runt om bilden för att bilden inte blir så höjd.</li>
@@ -774,7 +770,7 @@
 </li>
 <li>Lanseras i Stilguide version &gt; 9.3.0</li>
 </ul>
-<h3 id="1-1-1-2019-11-07-">1.1.1 (2019-11-07)</h3>
+<h3 id="111-2019-11-07">1.1.1 (2019-11-07)</h3>
 <ul>
 <li>Använda en förbättring version av <code>@mixin create-clickable-element-effect</code> som finns i Stilguide version ≥ 9.0.1 med två nya alternativ:<ul>
 <li><code>$box-effect-outside</code></li>
@@ -782,7 +778,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="1-1-0-2019-10-31-">1.1.0 (2019-10-31)</h3>
+<h3 id="110-2019-10-31">1.1.0 (2019-10-31)</h3>
 <ul>
 <li>Komponenten använder globala klasserna:<ul>
 <li><code>rh-element--clickable</code></li>
@@ -792,7 +788,7 @@
 <li>Komponents beteenden <code>:hover</code>, <code>:active</code> och <code>:focus-within</code> genereras från @mixin för att behålla gemensamm logiken i klickbara komponenter i Stilguiden. De kontrolleras av klassen <code>rh-block--clickable</code>.</li>
 <li>Lanseras i Stilguide version &gt; 8.5.0</li>
 </ul>
-<h3 id="1-0-0">1.0.0</h3>
+<h3 id="100">1.0.0</h3>
 <ul>
 <li>Första version</li>
 </ul>
@@ -1568,7 +1564,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

@@ -42,6 +42,119 @@ window.onclick = function (event) {
 "use strict";
 "use strict";
 
+var acc = document.getElementsByClassName("rh-search-accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("rh-search-active");
+    var panel = this.nextElementSibling;
+
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 100 + "px";
+    }
+  });
+}
+"use strict";
+
+window.onload = function () {
+  var table, rows, i, x, y;
+  table = document.getElementById("rh-table");
+
+  if (table) {
+    rows = table.rows;
+
+    for (var i = 1, row; row = rows[i]; i++) {
+      for (var j = 0, col; col = row.cells[j]; j++) {
+        x = rows[i].getElementsByTagName("TD")[j];
+
+        if (x.innerText.length > 20) {
+          x.classList.add('show-icon');
+        }
+      }
+    }
+  }
+};
+
+function sortByName() {
+  var table,
+      rows,
+      switching,
+      i,
+      x,
+      y,
+      shouldSwitch,
+      dir,
+      switchcount = 0;
+  table = document.getElementById("rh-table");
+  switching = true;
+  dir = "asc";
+
+  while (switching) {
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+
+    for (i = 1; i < rows.length - 1; i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[1];
+      y = rows[i + 1].getElementsByTagName("TD")[1];
+      var xContent = isNaN(x.innerHTML) ? x.innerHTML.toLowerCase() === '-' ? 0 : x.innerHTML.toLowerCase() : parseFloat(x.innerHTML);
+      var yContent = isNaN(y.innerHTML) ? y.innerHTML.toLowerCase() === '-' ? 0 : y.innerHTML.toLowerCase() : parseFloat(y.innerHTML);
+
+      if (dir == "asc") {
+        if (xContent > yContent) {
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (xContent < yContent) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount++;
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+function expand() {
+  var rows = document.getElementById('rh-table').rows;
+
+  for (var row = 0; row < rows.length; row++) {
+    var cols = rows[row].cells;
+
+    if (2 >= 0 && 2 < cols.length) {
+      cols[2].classList.toggle("selected");
+    }
+  }
+}
+
+function setShadow() {
+  var rows = document.getElementById('rh-table').rows;
+
+  for (var row = 0; row < rows.length; row++) {
+    var cols = rows[row].cells;
+
+    if (0 >= 0 && 0 < cols.length) {
+      cols[0].classList.add("rh-table-cell--shadow");
+    }
+  }
+}
+"use strict";
+"use strict";
+
 var acc = document.getElementsByClassName("rh-accordion");
 var i;
 
@@ -100,7 +213,7 @@ $(document).ready(function () {
   }, 200));
   $menuMainButton.click(function (e) {
     e.stopPropagation();
-    lockBodyScrolling(true);
+    menuLockBodyScrolling(true);
     $menuOverlay.toggleClass('rh-dp--none rh-dp--show');
     $menuTopBar.addClass('rh-pos--fixed').css({
       "width": "100%",
@@ -172,7 +285,7 @@ $(document).ready(function () {
   function hideMenuBody() {
     menuScrollbarShowingTimer && clearTimeout(menuScrollbarShowingTimer);
     menuScrollbarShowingTimer = setTimeout(function () {
-      lockBodyScrolling(false);
+      menuLockBodyScrolling(false);
     }, 160);
     menuBodyHiddenTimer && clearTimeout(menuBodyHiddenTimer);
     menuBodyHiddenTimer = setTimeout(function () {
@@ -180,7 +293,7 @@ $(document).ready(function () {
     }, 600);
   }
 
-  function lockBodyScrolling(status, fnCallback) {
+  function menuLockBodyScrolling(status, fnCallback) {
     //github.com/willmcpo/body-scroll-lock
     var disableBodyScroll = bodyScrollLock.disableBodyScroll,
         enableBodyScroll = bodyScrollLock.enableBodyScroll;
@@ -203,8 +316,11 @@ $(document).ready(function () {
 });
 "use strict";
 
-// Needed function:
-// throttle() - /public/library.js
+/* Needed helpers in /public/library.js
+    throttle()
+    calculateScrollbarWidth()
+    isMobileDevice()
+*/
 $(document).ready(function () {
   // Global variables
   var scrollbarWidth = calculateScrollbarWidth(),
@@ -405,14 +521,13 @@ $(document).ready(function () {
       isOverViewport: isOverViewportTop
     };
   }
-
-  function calculateScrollbarWidth() {
-    return window.innerWidth - $(document).width();
+  /* function calculateScrollbarWidth() {
+      return (window.innerWidth - $(document).width());
   }
+   function isMobileDevice(){
+      return !!navigator.platform && /iPad|iPhone|iPod/g.test(navigator.platform);
+  } */
 
-  function isMobileDevice() {
-    return !!navigator.platform && /iPad|iPhone|iPod/g.test(navigator.platform);
-  }
 });
 "use strict";
 
@@ -455,119 +570,6 @@ var videoPlayButton,
   }
 };
 videoMethods.renderVideoPlayButton();
-"use strict";
-
-var acc = document.getElementsByClassName("rh-search-accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("rh-search-active");
-    var panel = this.nextElementSibling;
-
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + 100 + "px";
-    }
-  });
-}
-"use strict";
-
-window.onload = function () {
-  var table, rows, i, x, y;
-  table = document.getElementById("rh-table");
-
-  if (table) {
-    rows = table.rows;
-
-    for (var i = 1, row; row = rows[i]; i++) {
-      for (var j = 0, col; col = row.cells[j]; j++) {
-        x = rows[i].getElementsByTagName("TD")[j];
-
-        if (x.innerText.length > 20) {
-          x.classList.add('show-icon');
-        }
-      }
-    }
-  }
-};
-
-function sortByName() {
-  var table,
-      rows,
-      switching,
-      i,
-      x,
-      y,
-      shouldSwitch,
-      dir,
-      switchcount = 0;
-  table = document.getElementById("rh-table");
-  switching = true;
-  dir = "asc";
-
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("TR");
-
-    for (i = 1; i < rows.length - 1; i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("TD")[1];
-      y = rows[i + 1].getElementsByTagName("TD")[1];
-      var xContent = isNaN(x.innerHTML) ? x.innerHTML.toLowerCase() === '-' ? 0 : x.innerHTML.toLowerCase() : parseFloat(x.innerHTML);
-      var yContent = isNaN(y.innerHTML) ? y.innerHTML.toLowerCase() === '-' ? 0 : y.innerHTML.toLowerCase() : parseFloat(y.innerHTML);
-
-      if (dir == "asc") {
-        if (xContent > yContent) {
-          shouldSwitch = true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (xContent < yContent) {
-          shouldSwitch = true;
-          break;
-        }
-      }
-    }
-
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount++;
-    } else {
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
-
-function expand() {
-  var rows = document.getElementById('rh-table').rows;
-
-  for (var row = 0; row < rows.length; row++) {
-    var cols = rows[row].cells;
-
-    if (2 >= 0 && 2 < cols.length) {
-      cols[2].classList.toggle("selected");
-    }
-  }
-}
-
-function setShadow() {
-  var rows = document.getElementById('rh-table').rows;
-
-  for (var row = 0; row < rows.length; row++) {
-    var cols = rows[row].cells;
-
-    if (0 >= 0 && 0 < cols.length) {
-      cols[0].classList.add("rh-table-cell--shadow");
-    }
-  }
-}
-"use strict";
 "use strict";
 
 // Needed function:

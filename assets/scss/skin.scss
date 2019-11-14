@@ -60,3 +60,11 @@ body {
 .Header {
     background: #004890;
 }
+
+.Status-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: white;
+    border: 4px solid transparent;
+    border-radius: 100%;
+}
