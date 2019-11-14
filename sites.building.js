@@ -4,13 +4,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const concat = require('gulp-concat');
 const babel = require('gulp-babel');
 const fs = require("fs");
-
-const browserify = require('browserify');
-const babelify = require('babelify');
-const minify = require('gulp-minify');
-const source = require('vinyl-source-stream');
-const buffer = require('vinyl-buffer');
-const globby = require('globby');
+const uglify = require('gulp-uglify');
 
 // gulp-sass - Using for forwards-compatibility and explicitly
 sass.compiler = require('node-sass');
@@ -164,7 +158,7 @@ function showResult(resultPath, result, resultType, options = {}) {
 function jsBuild(cb, jsFilename, jsResources, destPath, options = {}) {
     return new Promise((resolve, reject) => {
         const gulpOptions = {
-            allowEmpty: true,//TODO
+            allowEmpty: true,
             overwrite: options.overWrite || false // False is default
         };
 
@@ -174,7 +168,8 @@ function jsBuild(cb, jsFilename, jsResources, destPath, options = {}) {
         src(jsResources, gulpOptions)
             .pipe(sourcemaps.init())
             .pipe(babel({
-                presets: ['@babel/env']
+                presets: ['@babel/preset-env'],
+                plugins: ['@babel/plugin-syntax-dynamic-import', '@babel/plugin-proposal-class-properties']
             }))
             .pipe(concat(jsFullFilename))
             .pipe(sourcemaps.write('.'))
@@ -197,38 +192,25 @@ function jsBuild(cb, jsFilename, jsResources, destPath, options = {}) {
 function jsMinify(cb, jsFilename, jsResources, destPath, options = {}) {
     return new Promise((resolve, reject) => {
         const gulpOptions = {
-            allowEmpty: true,//TODO
+            allowEmpty: true,
             overwrite: options.overWrite || false // False is default
         };
 
         const jsFullFilename = `${jsFilename}.js`;
         const jsDestPath = destPath;
 
-        globby(jsResources)
-            .then((jsEntries) => {
-                browserify({
-                    entries: jsEntries,
-                    extensions: ['.js'],
-                    debug: true
-                })
-                    .transform(babelify, {
-                        presets: ["@babel/preset-env"],
-                        plugins: ['@babel/plugin-syntax-dynamic-import', '@babel/plugin-proposal-class-properties']
-                    })
-                    .bundle()
-                    .pipe(source(jsFullFilename))
-                    .pipe(buffer())
-                    .pipe(sourcemaps.init({ loadMaps: true }))
-                    .pipe(minify({
-                        noSource: true,
-                        ext: { min: '.js' }
-                    }))
-                    .pipe(sourcemaps.write("."))
-                    .pipe(dest(jsDestPath, gulpOptions))
-                    .on('end', () => resolve(jsFullFilename))
-                    .on('error', (error) => reject(error));
-            })
-            .catch((error) => reject(error));
+        src(jsResources, gulpOptions)
+            .pipe(sourcemaps.init())
+            .pipe(babel({
+                presets: ['@babel/preset-env'],
+                plugins: ['@babel/plugin-syntax-dynamic-import', '@babel/plugin-proposal-class-properties']
+            }))
+            .pipe(concat(jsFullFilename))
+            .pipe(uglify())
+            .pipe(sourcemaps.write('.'))
+            .pipe(dest(jsDestPath, gulpOptions))
+            .on('end', () => resolve(jsFullFilename))
+            .on('error', (error) => reject(error));
 
         cb();
     });
