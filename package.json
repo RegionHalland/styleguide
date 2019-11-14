@@ -16,26 +16,21 @@
     "@babel/plugin-proposal-class-properties": "^7.7.0",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.7.1",
-    "babelify": "^10.0.0",
     "browser-sync": "^2.26.7",
-    "browserify": "^16.5.0",
     "eslint": "^6.6.0",
-    "globby": "^10.0.1",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-copy": "^4.0.1",
     "gulp-image": "^5.1.0",
     "gulp-js-import": "^1.0.6",
-    "gulp-minify": "^3.1.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
     "jquery": "^3.4.1",
     "node-sass": "^4.13.0",
     "normalize": "^0.3.1",
     "normalize.css": "^8.0.1",
-    "sass-mq": "^5.0.1",
-    "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0"
+    "sass-mq": "^5.0.1"
   }
 }

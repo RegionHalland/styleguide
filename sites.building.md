@@ -68,6 +68,9 @@ $ gulp help
 * View more in `/gulpfile.js` to know how the add-on works.
 
 ## Release notes:
+### 1.3.1 (2019-11-14)
+* [__Hotfix__] Fixed bugs when minification mixing JS code _(Pure JavaScript and jQuery)_.
+
 ### 1.3.0 (2019-11-14)
 * [__New__] New command `$ gulp help`
     * Removed `$ gulp builds -u`
