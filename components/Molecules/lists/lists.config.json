@@ -1,24 +1,24 @@
 {
 	"title": "Listningar",
-    "status": "wip",
+    "status": "rework",
 	"context": {
         "listTitle": "Title lorem ipsum",
 		"listItems": [
             {
-                "textLeft": "Lorem ipsum",
-                "textRight": "Lorem ipsum"
+                "textLeft": "Egestas",
+                "textRight": "Sem eu, elementum a justo."
             },
             {
-                "textLeft": "Lorem ipsum",
-                "textRight": "Lorem ipsum"
+                "textLeft": "Ac purus.",
+                "textRight": "Diam hac, lorem accumsan."
             },
             {
-                "textLeft": "Lorem ipsum",
-                "textRight": "Lorem ipsum"
+                "textLeft": "Commodo suspendisse.",
+                "textRight": "Elit ut."
             },
             {
-                "textLeft": "Lorem ipsum",
-                "textRight": "Lorem ipsum"
+                "textLeft": "Sit feugiat porta.",
+                "textRight": "Vitae eu, ac in, aenean enim"
             }
         ]
 	}		
