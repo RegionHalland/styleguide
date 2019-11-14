@@ -4,6 +4,8 @@
 
 ### Ändringar
 * Molekylen "label previous" har fått statusen "Inväntar ombyggnad" och README-fil som inkluderar planerad utveckling
+* Molekylen "linkgroup" har fått statusen "Inväntar ombyggnad" och README-fil.
+
 
 ## 9.5.1
 ### Byggmiljö
