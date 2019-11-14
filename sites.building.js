@@ -18,9 +18,11 @@ sass.compiler = require('node-sass');
 const settings = require('./sites.building.json');
 const styleguideConfig = require('./package.json');
 
-const { sites, building } = settings;
+const { sites, building, commonResources } = settings;
 const { publicPath, releasePath } = building; // Public path and release path
 const styleguideVersion = styleguideConfig.version || '';
+
+const helpMessage = `\n\x1b[33m💡\x1b[0m Run \x1b[33m$ gulp help\x1b[0m to view the help information\n`;
 
 /* ----------------------------------- HELPERS ------------------------------- */
 /**
@@ -185,7 +187,7 @@ function jsBuild(cb, jsFilename, jsResources, destPath, options = {}) {
 }
 
 /**
- * JS minifying
+ * JS minification
  * @param {callback} cb
  * @param {string} jsFilename
  * @param {array} resource
@@ -255,7 +257,7 @@ function scssBuild(cb, cssFilename, scssResource, destPath, options = {}) {
             .pipe(sass.sync().on('error', (err) => reject(err)))
             .pipe(concat(cssFullFilename))
             .pipe(sourcemaps.write('.'))
-            .pipe(dest(cssDestPath))
+            .pipe(dest(cssDestPath, gulpOptions))
             .on('error', (error) => reject(error))
             .on('end', () => resolve(cssFullFilename));
 
@@ -264,7 +266,7 @@ function scssBuild(cb, cssFilename, scssResource, destPath, options = {}) {
 }
 
 /**
- * SCSS minifying
+ * SCSS minification
  * @param {callback} cb
  * @param {string} cssFilename
  * @param {array} scssResource
@@ -289,7 +291,7 @@ function scssMinify(cb, cssFilename, scssResource, destPath, options = {}) {
             )
             .pipe(concat(cssFullFilename))
             .pipe(sourcemaps.write('.'))
-            .pipe(dest(cssDestPath))
+            .pipe(dest(cssDestPath, gulpOptions))
             .on('error', (error) => reject(error))
             .on('end', () => resolve(cssFullFilename));
 
@@ -299,11 +301,23 @@ function scssMinify(cb, cssFilename, scssResource, destPath, options = {}) {
 
 function build_process(cb, name, resources = {}, destPath, options = {}) {
     return new Promise((resolve, reject) => {
-        const filename = name, // Only name and without the extension .css
+        const filename = name, // Only name and without the file extension
             { jsComponents, scssComponents } = resources, // Resources definition
-            jsSrcList = jsComponents || [],
-            scssSrcList = scssComponents || [],
-            { minify } = options;
+            { commonJsComponents, commonScssComponents } = commonResources;
+
+        let jsSrcList = jsComponents || [],
+            scssSrcList = scssComponents || [];
+
+        const { minify } = options;
+
+        /* Prepare data */
+        if (commonJsComponents && commonJsComponents.length) {
+            jsSrcList = [...commonJsComponents, ...jsSrcList];
+        }
+
+        if (commonScssComponents && commonScssComponents.length) {
+            scssSrcList = [...commonScssComponents, ...scssSrcList];
+        }
 
         /* Build process */
         if (jsSrcList && jsSrcList.length > 0 && scssSrcList && scssSrcList.length > 0) {
@@ -311,7 +325,7 @@ function build_process(cb, name, resources = {}, destPath, options = {}) {
             let buildJs, buildScss;
 
             if (minify) {
-                // With minifying
+                // With minification
                 buildJs = jsMinify(cb, filename, jsSrcList, destPath, options)
                     .then((result) => result)
                     .catch((error) => error);
@@ -320,7 +334,7 @@ function build_process(cb, name, resources = {}, destPath, options = {}) {
                     .then((result) => result)
                     .catch((error) => error);
             } else {
-                // NO minifying
+                // No minification
                 buildJs = jsBuild(cb, filename, jsSrcList, destPath, options)
                     .then((result) => result)
                     .catch((error) => error);
@@ -505,30 +519,8 @@ function release_styling_for_all_sites(cb, options = {}) {
     }
 }
 
-function showHelpInformation(taskType) {
-    const mainCommand = `gulp ${taskType}s`;
-    const helpCommand = `\x1b[33m💡\x1b[0m Run \x1b[33m$ ${mainCommand} -u\x1b[0m to view the help information\n`;
-    const helpInformation = `\nUSAGE: \n\t$ ${mainCommand} \x1b[90m<-option>\x1b[0m \x1b[33m<sitename>\x1b[0m\n` +
-        `\nALIAS:\n` +
-        `\t\x1b[90m-a\x1b[0m\t--all\t${taskType} all sites\n` +
-        `\t\x1b[90m-s\x1b[0m\t--site\t${taskType} a specific site by its name\n` +
-        `\nEXAMPLES:\n` +
-        `\t$ ${mainCommand} \x1b[90m-a\x1b[0m\n` +
-        `\t$ ${mainCommand} \x1b[90m-s\x1b[0m \x1b[33msamplesitename\x1b[0m\n` +
-        `\t$ ${mainCommand} \x1b[90m--all\x1b[0m\n` +
-        `\t$ ${mainCommand} \x1b[90m--site\x1b[0m \x1b[33mothersitename\x1b[0m\n`;
-
-    return {
-        helpCommand,
-        helpInformation
-    };
-
-}
-
-
 /* ---------------------------------- MAIN ------------------------------- */
 function buildSites(cb) {
-    const { helpCommand, helpInformation } = showHelpInformation('build');
     const { mainFlag, subFlags, argument } = getCommandParams();
     const options = {
         overWrite: subFlags.indexOf("-o") > -1 ? true : false, //overwrite - Default is false
@@ -544,7 +536,7 @@ function buildSites(cb) {
                 build_styling_for_one_site(cb, sitename, options);
             } else {
                 console.error(`\n\x1b[31m✗ Error\x1b[0m The website's name is missing`);
-                console.error(helpCommand);
+                console.error(helpMessage);
             }
 
             break;
@@ -554,15 +546,9 @@ function buildSites(cb) {
             build_styling_for_all_sites(cb, options);
             break;
 
-        case "-u":
-        case "--usage":
-            console.log(helpInformation);
-            break;
-
-
         default:
             console.log('\n\x1b[31m✗ Error\x1b[0m Unknown command');
-            console.log(helpCommand);
+            console.log(helpMessage);
 
             break;
     }
@@ -571,7 +557,6 @@ function buildSites(cb) {
 }
 
 function releaseSites(cb) {
-    const { helpCommand, helpInformation } = showHelpInformation('release');
     const { mainFlag, subFlags, argument } = getCommandParams();
     const options = {
         overWrite: subFlags.indexOf("-o") > -1 ? true : false, //overwrite - Default is false
@@ -587,7 +572,7 @@ function releaseSites(cb) {
                 release_styling_for_one_site(cb, sitename, options);
             } else {
                 console.error(`\n\x1b[31m✗ Error\x1b[0m The website's name is missing`);
-                console.error(helpCommand);
+                console.error(helpMessage);
             }
 
             break;
@@ -597,15 +582,9 @@ function releaseSites(cb) {
             release_styling_for_all_sites(cb, options);
             break;
 
-        case "-u":
-        case "--usage":
-            console.log(helpInformation);
-            break;
-
-
         default:
             console.log('\n\x1b[31m✗ Error\x1b[0m Unknown command');
-            console.log(helpCommand);
+            console.log(helpMessage);
 
             break;
     }
@@ -613,8 +592,32 @@ function releaseSites(cb) {
     cb();
 }
 
+function helpInformation(cb) {
+    const helpInformation = `\nUSAGE:` +
+        `\n\t$ gulp <task> <-option> \x1b[90m[<-suboption>]\x1b[0m \x1b[33m[<sitename>]\x1b[0m` +
+        `\n\nTASKS:` +
+        `\n\t\x1b[36mbuilds\x1b[0m\t\tBuilds CSS and JS` +
+        `\n\t\x1b[36mreleases\x1b[0m\tReleases CSS and JS with version number` +
+        `\n\nOPTIONS:` +
+        `\n\t-s\t\x1b[90m--site\x1b[0m\tUsing for a specific site by its name` +
+        `\n\t-a\t\x1b[90m--all\x1b[0m\tUsing for all sites` +
+        `\n\nSUB OPTIONS:` +
+        `\n\t-o\tOverwriting existing files` +
+        `\n\t-m\tMinification CSS and JS` +
+        `\n\nEXAMPLES:` +
+        `\n\t$ gulp builds \x1b[90m-s -o -m\x1b[0m \x1b[33mprojectOne\x1b[0m` +
+        `\n\t$ gulp builds \x1b[90m-a -m\x1b[0m` +
+        `\n\t$ gulp releases \x1b[90m--site -m\x1b[0m \x1b[33mnewSite\x1b[0m` +
+        `\n\t$ gulp releases \x1b[90m--all\x1b[0m\n`;
+
+    console.log(helpInformation);
+
+    cb();
+}
+
 module.exports = {
     buildSites,
     releaseSites,
-    getOptionsHelper
+    getOptionsHelper,
+    helpInformation
 };

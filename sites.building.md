@@ -2,43 +2,48 @@
 The sites building add-on is using __ONLY__ for the Styleguide application at Region Halland organization.
 
 ## Features
-* Build a site or all sites.
-* Release a site or all sites.
-* Minify both CSS and JS.
+* Building (*)
+* Release (*)
+* Minification for both CSS and JS during compiling.
+* Automatic including common resources _(SCSS and JS)_.
+
+_(*) Using for a specific site or all sites_.
 
 ## System requirements
-* The minimum supported [Node.js](https://nodejs.org/) version is 8.9.0 _(Node.js LTS version is a good choice for the stability)_.
+* The minimum supported [Node.js](https://nodejs.org/) version is __8.9.0__ _(Node.js LTS version is a good choice for the stability)_.
 * [Gulp](https://gulpjs.com/) is installled on global.
 * Administrator permission is required by your operating system for the building process.
 
 ## Usage
-### Command
-|Command|Description|
-|---|---|
-|`$ gulp builds <[-option][--alias]> <sitename>`|Building|
-|`$ gulp releases <[-option][--alias]> <sitename>`|Release|
+`$ gulp <task> <-option> [<-suboption>] [<sitename>]`
 
-### Options and alias
-|Option|Alias|Argument (*)|Description|
+### Tasks
+|Task|Description|
+|---|---|
+|`builds`|Building|
+|`releases`|Release|
+|`help`|View the help information|
+
+### Options
+|Option|Alias|Using with (*)|Description|
 |---|---|---|---|
-|`-a`|`--all`||All sites|
 |`-s`|`--site`|`<sitename>`|A specific site|
-|`-u`|`--usage`||View the help information|
+|`-a`|`--all`||All sites|
 
 _(*) Must have_
 
-### The special sub options
-Beware using with the options are below for a specific site or all sites:
+### Sub options
+Beware using with the options are below:
 
-|Option|Alias|Description|
-|---|---|---|
-|`-o`|_Not yet supported_|Overwrite a release|
-|`-m`|_Not yet supported_|Minify both CSS and JS|
+|Sub option|Description|
+|---|---|
+|`-o`|Overwrite existing files |
+|`-m`|Minify both CSS and JS|
 
-Example:
-* `$ gulp builds -s -m projectX`
-* `$ gulp releases -s -m -o otherProject`
-* `$ gulp releases --site -o -m lastProject` _(Using alias)_
+Example for using sub options:
+* `$ gulp builds -s -m -o projectX`
+* `$ gulp releases -s -m nextProject`
+* `$ gulp releases --site -m lastProject` _(Using alias)_
 
 ### Examples
 ```
@@ -54,8 +59,7 @@ $ gulp releases --all
 $ gulp releases --site othersitename
 
 // Show the help information
-$ gulp builds -u
-$ gulp releases -u
+$ gulp help
 ```
 
 ### Configuration
@@ -64,6 +68,15 @@ $ gulp releases -u
 * View more in `/gulpfile.js` to know how the add-on works.
 
 ## Release notes:
+### 1.3.0 (2019-11-14)
+* [__New__] New command `$ gulp help`
+    * Removed `$ gulp builds -u`
+    * Removed `$ gulp releases -u`
+* [__Improvement__] Improved the help information.
+
+### 1.2.0 (2019-11-13)
+* [__New__] Automatic including common resources _(SCSS and JS)_.
+
 ### 1.1.0 (2019-11-13)
 * [__New__] Minifies CSS and JS when:
     * Building - `$ gulp builds ...`.

@@ -12,7 +12,7 @@ cdn/build/*
 !cdn/build/.gitkeep
 
 # Vendor
-vendor/*
+vendor
 
 # Composer
 composer.lock
