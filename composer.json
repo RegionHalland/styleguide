@@ -108,7 +108,7 @@
     "composer/installers": "^1.4",
     "regionhalland/region-halland-composer-custom-installer": "1.0.0",
     "regionhalland/article-block": "1.0.1",
-    "regionhalland/back-to-top": "1.1.0",
+    "regionhalland/back-to-top": "1.1.1",
     "regionhalland/block": "1.2.0",
     "regionhalland/block-shortcuts": "1.0.0",
     "regionhalland/button": "1.0.0.20191112",
