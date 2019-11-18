@@ -37,6 +37,7 @@ $(document).ready(function () {
 
     $menuMainButton.click(function (e) {
         e.stopPropagation();
+        e.preventDefault();
 
         menuLockBodyScrolling(true);
 
@@ -63,7 +64,21 @@ $(document).ready(function () {
 
     $menuCloseButton.click(function (e) {
         e.stopPropagation();
+        e.preventDefault();
         closeMenu();
+    });
+
+    // Press Escape key to close menu
+    $(document).keyup(function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+        var isMenuOpen = $menuBody.hasClass("rh-menu__body--show");
+
+        if (e.key && e.key === "Escape" && isMenuOpen) { //Escape key maps to keycode `27`
+            closeMenu();
+        } else if (e.keyCode && e.keyCode === 27 && isMenuOpen) { //Support IE11
+            closeMenu();
+        }
     });
 
     $menuBody.on("click", ".rh-menu__item-button", function (e) {

@@ -73,3 +73,8 @@ Många inställningar kan justeras i filen `*.settings.scss`
 
 ```
 __OBS!__ Klasserna som har använts är bara huvudklasser och menyn behöver också många andra klasser för att fungera som det ska.
+
+## 3. Versionhistorik
+### 1.0.0-201911181340 (2019-11-18)
+* [__Ny__] - Man kan använda "ESC" knappen på tangenbordet för att stänga menyn.
+* [__Förbättring__] Använda `e.preventDefault()` för huvudknappen för prestandar och enkelhet för implementation till `<a>` tag.
