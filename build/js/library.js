@@ -1,3 +1,14 @@
+function debounce(fn, delay) {
+    var timer = null;
+    return function () {
+        var context = this, args = arguments;
+        clearTimeout(timer);
+        timer = setTimeout(function () {
+        fn.apply(context, args);
+        }, delay);
+    };
+}
+
 // https://remysharp.com/2010/07/21/throttling-function-calls
 function throttle(fn, threshhold, scope) {
     threshhold || (threshhold = 250);
@@ -28,4 +39,14 @@ function calculateScrollbarWidth() {
 
 function isMobileDevice() {
     return !!navigator.platform && /iPad|iPhone|iPod/g.test(navigator.platform);
+}
+
+function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
 }

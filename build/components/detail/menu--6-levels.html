@@ -1126,6 +1126,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 
     $menuMainButton.click(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
         e.stopPropagation();
+        e.preventDefault();
 
         menuLockBodyScrolling(<span class="hljs-literal">true</span>);
 
@@ -1152,7 +1153,21 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 
     $menuCloseButton.click(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
         e.stopPropagation();
+        e.preventDefault();
         closeMenu();
+    });
+
+    <span class="hljs-comment">// Press Escape key to close menu</span>
+    $(<span class="hljs-built_in">document</span>).keyup(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+        e.stopPropagation();
+        e.preventDefault();
+        <span class="hljs-keyword">var</span> isMenuOpen = $menuBody.hasClass(<span class="hljs-string">"rh-menu__body--show"</span>);
+
+        <span class="hljs-keyword">if</span> (e.key &amp;&amp; e.key === <span class="hljs-string">"Escape"</span> &amp;&amp; isMenuOpen) { <span class="hljs-comment">//Escape key maps to keycode `27`</span>
+            closeMenu();
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (e.keyCode &amp;&amp; e.keyCode === <span class="hljs-number">27</span> &amp;&amp; isMenuOpen) { <span class="hljs-comment">//Support IE11</span>
+            closeMenu();
+        }
     });
 
     $menuBody.on(<span class="hljs-string">"click"</span>, <span class="hljs-string">".rh-menu__item-button"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
@@ -1256,7 +1271,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">5.2 KB</span>
+                    <span class="Meta-value">5.7 KB</span>
                 </li>
             </ul>
         </div>
@@ -1490,6 +1505,12 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"offset-bottom"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
 </code></pre><p><strong>OBS!</strong> Klasserna som har använts är bara huvudklasser och menyn behöver också många andra klasser för att fungera som det ska.</p>
+<h2 id="3-versionhistorik">3. Versionhistorik</h2>
+<h3 id="100-201911181340-2019-11-18">1.0.0-201911181340 (2019-11-18)</h3>
+<ul>
+<li>[<strong>Ny</strong>] - Man kan använda “ESC” knappen på tangenbordet för att stänga menyn.</li>
+<li>[<strong>Förbättring</strong>] Använda <code>e.preventDefault()</code> för huvudknappen för prestandar och enkelhet för implementation till <code>&lt;a&gt;</code> tag.</li>
+</ul>
 
         
     </div>
@@ -2310,7 +2331,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>
@@ -2334,7 +2355,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>
@@ -4407,6 +4428,86 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 
 
             </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-vtemplates">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Vtemplates</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-general">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>General</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="content-page.html" data-pjax>
+                <span>Content Page</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="start-page.html" data-pjax>
+                <span>Start Page</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
