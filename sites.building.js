@@ -175,7 +175,7 @@ function jsBuild(cb, jsFilename, jsResources, destPath, options = {}) {
             .pipe(sourcemaps.write('.'))
             .pipe(dest(jsDestPath, gulpOptions))
             .on('end', () => resolve(jsFullFilename))
-            .on('error', (error) => reject(error));
+            .on('error', (err) => reject(err));
 
         cb();
     });
@@ -210,7 +210,7 @@ function jsMinify(cb, jsFilename, jsResources, destPath, options = {}) {
             .pipe(sourcemaps.write('.'))
             .pipe(dest(jsDestPath, gulpOptions))
             .on('end', () => resolve(jsFullFilename))
-            .on('error', (error) => reject(error));
+            .on('error', (err) => reject(err));
 
         cb();
     });
@@ -240,7 +240,7 @@ function scssBuild(cb, cssFilename, scssResource, destPath, options = {}) {
             .pipe(concat(cssFullFilename))
             .pipe(sourcemaps.write('.'))
             .pipe(dest(cssDestPath, gulpOptions))
-            .on('error', (error) => reject(error))
+            .on('error', (err) => reject(err))
             .on('end', () => resolve(cssFullFilename));
 
         cb();
@@ -274,7 +274,7 @@ function scssMinify(cb, cssFilename, scssResource, destPath, options = {}) {
             .pipe(concat(cssFullFilename))
             .pipe(sourcemaps.write('.'))
             .pipe(dest(cssDestPath, gulpOptions))
-            .on('error', (error) => reject(error))
+            .on('error', (err) => reject(err))
             .on('end', () => resolve(cssFullFilename));
 
         cb();

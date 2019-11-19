@@ -23,6 +23,26 @@ $(document).ready(function () {
         }
     });
 
+    // *****************************
+    // ***   Content navigation  ***
+    // *****************************
+    if ($("body.page-template-default")[0]) {
+        var $contentNavPlaceHolder = $('#content-nav-placeholder'),
+            $contentNavContainer = $("#content-nav-container");
+
+        $(window).scroll(debounce(function () {
+            if ($contentNavPlaceHolder.length) {
+                var myPosition = Math.round($contentNavPlaceHolder.offset().top - $(window).scrollTop());
+
+                if (myPosition < 30) {
+                    $contentNavContainer.addClass("rh-get-fixed-sticky");
+                } else {
+                    $contentNavContainer.removeClass("rh-get-fixed-sticky");
+                }
+            }
+        }, 10));
+    }
+
     // ****************************
     // *** Cookie notice accept ***
     // ****************************
@@ -32,23 +52,4 @@ $(document).ready(function () {
         // Hide div with cookie notice text + button
         $("#cookie-notice").hide();
     });
-
-    // *****************************
-    // *** Fix fixed css for IE  ***
-    // *****************************
-    if ($("body.page-template-default")[0]) {
-        $(window).scroll(debounce(function () {
-            var $contentNavPlaceholder = $('#content-nav-placeholder');
-
-            if ($contentNavPlaceholder.length) {
-                var myPosition = Math.round($contentNavPlaceholder.offset().top - $(window).scrollTop());
-
-                if (myPosition < 30) {
-                    $contentNavPlaceholder.addClass("rh-get-fixed-sticky");
-                } else {
-                    $contentNavPlaceholder.removeClass("rh-get-fixed-sticky");
-                }
-            }
-        }, 10));
-    }
 });

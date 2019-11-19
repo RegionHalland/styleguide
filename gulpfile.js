@@ -292,14 +292,15 @@ function scssCompilation(cb) {
 
     src('components/scss/main.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass()
-            //.sync({ outputStyle: 'compressed' })
-            //.on('error', sass.logError)
+        .pipe(
+            sass.sync()
+                .on('error', (err) => console.error(`\n\x1b[31m✗ Error!\x1b[0m\n${err.message}`))
         )
         .pipe(concat('components.css'))
         .pipe(sourcemaps.write('.'))
         .pipe(dest(cssDesPath))
-        .pipe(browserSync.stream({ match: "**/*.css" }));
+        .pipe(browserSync.stream({ match: "**/*.css" }))
+        .on('error', (err) => console.error(`\n\x1b[31m✗ Error!\x1b[0m\n${err.message}`));
 
     cb();
 }
