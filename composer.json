@@ -101,6 +101,10 @@
     {
       "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWpPlugIns/_git/RhComposerCustomInstaller"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhTemplatesGeneral"
     }
   ],
   "require": {
@@ -125,13 +129,15 @@
     "regionhalland/message-cookies": "1.0.0",
     "regionhalland/navigation-left": "1.1.0",
     "regionhalland/pagination-elements": "1.0.0.20191112",
-    "regionhalland/visual-element": "1.0.0.20191113"
+    "regionhalland/visual-element": "1.0.0.20191113",
+    "regionhalland/general": "1.0.0.201911191415"
   },
   "extra": {
     "custom-installer": {
       "components/vAtoms/{$name}/": ["type:styleguide-atom"],
       "components/vMolecules/{$name}/": ["type:styleguide-molecule"],
-      "components/vOrganism/{$name}/": ["type:styleguide-organism"]
+      "components/vOrganism/{$name}/": ["type:styleguide-organism"],
+      "components/vTemplates/{$name}/": ["type:styleguide-template"]
     }
   }
 }
