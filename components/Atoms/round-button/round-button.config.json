@@ -1,8 +1,0 @@
-{
-    "title": "Round button",
-    "status": "eol",
-    "version": "1.0.0",
-    "context": {
-        "icon": "icon-log-in"
-    }
-}
