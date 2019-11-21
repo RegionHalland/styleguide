@@ -1,5 +1,20 @@
 # Versioner av stilguiden och deras ändringar
 
+## 9.7.0 
+
+### Molekyler som flyttat till gitrepon och fått nya sökvägar:
+* Article
+* Blurbs
+* Calendar Element
+* Event card calendar
+* Feedback
+* Feedback form
+* Label Previous
+* Last updated
+* Linkgroup
+* Lists
+* Logo sitename
+
 ## 9.6.0
 
 ### Ändringar
