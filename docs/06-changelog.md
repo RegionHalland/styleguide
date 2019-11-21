@@ -3,9 +3,29 @@
 ## 9.6.0
 
 ### Ändringar
+* Menu fått bättre prestanda och stöd för att stänga med esc. 
+* Cookie notice fått tweakad javascript för bättre prestanda.
+* Templates är nu tillgängliga för att visa hur komponenterna fungerar tillsammans på en sida.
+* Nytt kommando gulp help. 
+
+### Ändrade statusar
 * Molekylen "label previous" har fått statusen "Inväntar ombyggnad" och README-fil som inkluderar planerad utveckling
 * Molekylen "linkgroup" har fått statusen "Inväntar ombyggnad" och README-fil.
+* Molekylen "lists" har fått statusen "Inväntar ombyggnad" och README-fil.
+* Molekylen "Logo sitename" fått statusen "Inväntar ombyggnad" och README-fil med planerad utveckling.
+* Molekylen "Menu" fått statusen "Inväntar ombyggnad" och README-fil med planerad utveckling.
 
+### Ändrade sökvägar pga flytt till gitrepon - atomerna: 
+* Badge
+* Card
+* Filter
+* Form
+* Form control text
+* Form control textare
+* Link
+* Round button
+* Search field
+* Text
 
 ## 9.5.1
 ### Byggmiljö
