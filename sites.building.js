@@ -62,7 +62,7 @@ function getCommandParams() {
         subFlags = [],
         argument = [];
 
-    for (let i = 0; i < argListLength; i++) {
+    for (let i = 0; i < argListLength; ++i) {
         if (identifyFlag(argList[i])) {
             if (i === 0) {
                 mainFlag = argList[i];
@@ -109,7 +109,7 @@ function indentifySASSCompilingError(objResult = []) {
             let hasError = false,
                 errorObject;
 
-            for (let i = 0; i < objResultLength; i++) {
+            for (let i = 0; i < objResultLength; ++i) {
                 if (objResult[i].name && objResult[i].name === "Error") {
                     hasError = true;
                     errorObject = (objResult[i] instanceof Error) ?
@@ -436,7 +436,7 @@ function build_styling_for_all_sites(cb, options = {}) {
     const sitesLength = sites.length;
 
     if (sitesLength) {
-        for (let i = 0; i < sitesLength; i++) {
+        for (let i = 0; i < sitesLength; ++i) {
             const { name, resources } = sites[i];
 
             if (name && resources) {
@@ -482,7 +482,7 @@ function release_styling_for_all_sites(cb, options = {}) {
     const sitesLength = sites.length;
 
     if (sitesLength) {
-        for (let i = 0; i < sitesLength; i++) {
+        for (let i = 0; i < sitesLength; ++i) {
             const siteInfo = sites[i],
                 { name, resources } = siteInfo || {};
 

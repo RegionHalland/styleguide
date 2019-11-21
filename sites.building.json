@@ -46,7 +46,11 @@
             "name": "terapirekommendationer",
             "version": "1.0.0",
             "resources": {
-                "jsComponents": [],
+                "jsComponents": [
+                    "components/vMolecules/back-to-top/back-to-top.js",
+                    "components/Molecules/menu/menu.js",
+                    "components/Molecules/navigation-block/navigation-block.js"
+                ],
                 "scssComponents": [ "../RH-sites/RhSettingsTerapirekommendationer/terapirekommendationer.scss" ]
             }
         },
