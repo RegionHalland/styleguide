@@ -9,8 +9,10 @@
 	background-color: $caption-hero--background-color;
 
 	/* Typografi */
-	color: $caption-hero--color;
-	font-size: $caption-hero--font-size;
+    color: $caption-hero--color;
+    @if $caption-hero--font-size {
+        font-size: $caption-hero--font-size;
+    }
 
 	&--secondary {
 		/* Visuellt */
@@ -23,7 +25,7 @@
 	&--rounded {
         // border-radius: 0.4ex;
         border-radius: $caption-hero--rounded--border-radius--default;
-        
+
         @include medium {
             border-radius: $caption-hero--rounded--border-radius--medium;
         }
@@ -44,8 +46,10 @@
 		bottom: $caption-hero--large--bottom;
 		left: $caption-hero--large--left;
 
-		/* Typografi */
-		font-size: $caption-hero--large--font-size;
+        /* Typografi */
+        @if $caption-hero--large--font-size {
+            font-size: $caption-hero--large--font-size;
+        }
 	}
 }
 

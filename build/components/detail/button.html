@@ -278,12 +278,15 @@
     <span class="hljs-attribute">display</span>: inline-block;
 
     <span class="hljs-comment">/* Visuellt */</span>
-    <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$button--padding-top</span>;<span class="hljs-comment">//em(10)</span>
-    <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$button--padding-right</span>;<span class="hljs-comment">//em(6)</span>
-    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$button--padding-bottom</span>;<span class="hljs-comment">//em(10)</span>
-    <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$button--padding-left</span>;<span class="hljs-comment">//em(6)</span>
+    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$button--padding</span> {
+        <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$button--padding-top</span>;<span class="hljs-comment">//em(10)</span>
+        <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$button--padding-right</span>;<span class="hljs-comment">//em(6)</span>
+        <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$button--padding-bottom</span>;<span class="hljs-comment">//em(10)</span>
+        <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$button--padding-left</span>;<span class="hljs-comment">//em(6)</span>
+    }
+
     @<span class="hljs-keyword">if</span> <span class="hljs-variable">$button--background-color</span> {
-        <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$button--background-color</span>;   
+        <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$button--background-color</span>;
     }
     <span class="hljs-attribute">border</span>: <span class="hljs-variable">$button--border</span>;
     <span class="hljs-attribute">border-radius</span>: <span class="hljs-variable">$button--border-radius</span>;
@@ -295,7 +298,11 @@
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$button-text--color</span>; <span class="hljs-comment">//$black</span>
     <span class="hljs-attribute">text-align</span>: <span class="hljs-variable">$button-text--text-align</span>; <span class="hljs-comment">//center</span>
     <span class="hljs-attribute">font-family</span>: inherit;
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$button-text--font-size</span>; <span class="hljs-comment">//$font-size-small</span>
+
+    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$button-text--font-size</span> {
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$button-text--font-size</span>; <span class="hljs-comment">//$font-size-small</span>
+    }
+
     <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$button-text--line-height</span>; <span class="hljs-comment">//em(16)</span>
     @<span class="hljs-keyword">if</span> <span class="hljs-variable">$button--text-decoration</span> {
         <span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$button--text-decoration</span>;
@@ -303,7 +310,7 @@
 
     <span class="hljs-comment">/* Blandat/övrigt */</span>
     <span class="hljs-attribute">outline</span>: none;
-        
+
     &amp;:hover{
         <span class="hljs-comment">/* Typografi */</span>
         @<span class="hljs-keyword">if</span> <span class="hljs-variable">$button--hover-text-decoration</span> {
@@ -338,7 +345,9 @@
         <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$button--primary-background-color</span>;
 
         <span class="hljs-comment">/* Typografi */</span>
-        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$button--primary-color</span>;
+        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$button--primary-color</span> {
+            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$button--primary-color</span>;
+        }
         &amp;:hover{
             <span class="hljs-comment">/* Typografi */</span>
             @<span class="hljs-keyword">if</span> <span class="hljs-variable">$button--primary-hover-text-decoration</span> {
@@ -351,7 +360,9 @@
             <span class="hljs-attribute">border</span>: <span class="hljs-variable">$button--primary-active-border</span>; <span class="hljs-comment">//1px solid $color-primary</span>
 
             <span class="hljs-comment">/* Typografi */</span>
-            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$button--primary-active-color</span>; <span class="hljs-comment">//$color-primary</span>
+            @<span class="hljs-keyword">if</span> <span class="hljs-variable">$button--primary-active-color</span> {
+                <span class="hljs-attribute">color</span>: <span class="hljs-variable">$button--primary-active-color</span>; <span class="hljs-comment">//$color-primary</span>
+            }
             @<span class="hljs-keyword">if</span> <span class="hljs-variable">$button--primary-active-text-decoration</span> {
                 <span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$button--primary-active-text-decoration</span>; <span class="hljs-comment">//none</span>
             }
@@ -363,7 +374,9 @@
         <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$button--secondary-background-color</span>;
 
         <span class="hljs-comment">/* Typografi */</span>
-        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$button--secondary-color</span>;
+        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$button--secondary-color</span> {
+            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$button--secondary-color</span>;
+        }
         &amp;:hover{
             <span class="hljs-comment">/* Typografi */</span>
             @<span class="hljs-keyword">if</span> <span class="hljs-variable">$button--secondary-hover-text-decoration</span> {
@@ -376,11 +389,13 @@
             <span class="hljs-attribute">border</span>: <span class="hljs-variable">$button--secondary-active-border</span>;
 
             <span class="hljs-comment">/* Typografi */</span>
-            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$button--secondary-active-color</span>;
+            @<span class="hljs-keyword">if</span> <span class="hljs-variable">$button--secondary-active-color</span> {
+                <span class="hljs-attribute">color</span>: <span class="hljs-variable">$button--secondary-active-color</span>;
+            }
             @<span class="hljs-keyword">if</span> <span class="hljs-variable">$button--secondary-active-text-decoration</span> {
                 <span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$button--secondary-active-text-decoration</span>;
             }
-        }      
+        }
     }
 
     &amp;--<span class="hljs-attribute">icon</span> {
@@ -395,7 +410,7 @@
             <span class="hljs-comment">/* Box-modell/beteende */</span>
             <span class="hljs-attribute">display</span>: inline-block;
             <span class="hljs-attribute">margin-left</span>: <span class="hljs-variable">$button--icon-margin-left</span>; <span class="hljs-comment">//em(16)</span>
-            
+
             <span class="hljs-comment">/* Typografi */</span>
             <span class="hljs-attribute">font-family</span>: <span class="hljs-string">"feather"</span>;
             <span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$button--icon-text-decoration</span>;
@@ -407,24 +422,32 @@
 
     @<span class="hljs-keyword">include</span> medium {
         <span class="hljs-comment">/* Visuellt */</span>
-        <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$button--padding-top-medium</span>; <span class="hljs-comment">//em(8);</span>
-        <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$button--padding-right-medium</span>; <span class="hljs-comment">//em(8);</span>
-        <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$button--padding-bottom-medium</span>; <span class="hljs-comment">//em(8);</span>
-        <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$button--padding-left-medium</span>; <span class="hljs-comment">//em(8);</span>
+        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$button--padding-medium</span> {
+            <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$button--padding-top-medium</span>; <span class="hljs-comment">//em(8);</span>
+            <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$button--padding-right-medium</span>; <span class="hljs-comment">//em(8);</span>
+            <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$button--padding-bottom-medium</span>; <span class="hljs-comment">//em(8);</span>
+            <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$button--padding-left-medium</span>; <span class="hljs-comment">//em(8);</span>
+        }
 
         <span class="hljs-comment">/* Typografi */</span>
-        <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$button-text--font-size-medium</span>;
+        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$button-text--font-size-medium</span> {
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$button-text--font-size-medium</span>;
+        }
         <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$button-text--line-height-medium</span>; <span class="hljs-comment">//em(21);</span>
     }
     @<span class="hljs-keyword">include</span> large {
         <span class="hljs-comment">/* Visuellt */</span>
-        <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$button--padding-top-large</span>; <span class="hljs-comment">//em(10);</span>
-        <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$button--padding-right-large</span>; <span class="hljs-comment">//em(10);</span>
-        <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$button--padding-bottom-large</span>; <span class="hljs-comment">//em(10);</span>
-        <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$button--padding-left-large</span>; <span class="hljs-comment">//em(10);</span>
+        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$button--padding-large</span> {
+            <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$button--padding-top-large</span>; <span class="hljs-comment">//em(10);</span>
+            <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$button--padding-right-large</span>; <span class="hljs-comment">//em(10);</span>
+            <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$button--padding-bottom-large</span>; <span class="hljs-comment">//em(10);</span>
+            <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$button--padding-left-large</span>; <span class="hljs-comment">//em(10);</span>
+        }
 
         <span class="hljs-comment">/* Typografi */</span>
-        <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$button-text--font-size-large</span>;
+        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$button-text--font-size-large</span> {
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$button-text--font-size-large</span>;
+        }
         <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$button-text--line-height-large</span>; <span class="hljs-comment">//em(24);</span>
     }
 }
@@ -446,7 +469,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">5 KB</span>
+                    <span class="Meta-value">5.5 KB</span>
                 </li>
             </ul>
         </div>
@@ -498,62 +521,66 @@
 <span class="hljs-variable">$button--box-shadow</span>: <span class="hljs-number">0.0625em</span> <span class="hljs-number">0.125em</span> <span class="hljs-number">0.375em</span> <span class="hljs-variable">$color-shadow</span>;
 <span class="hljs-variable">$button-text--color</span>: <span class="hljs-variable">$black</span>;
 <span class="hljs-variable">$button-text--text-align</span>: center;
-<span class="hljs-variable">$button-text--font-size</span>: <span class="hljs-variable">$font-size-small</span>;
+<span class="hljs-variable">$button-text--font-size</span>: <span class="hljs-variable">$font-size-small</span>; <span class="hljs-comment">//false</span>
 <span class="hljs-variable">$button-text--line-height</span>: <span class="hljs-number">1em</span>;
 <span class="hljs-variable">$button--text-decoration</span>: none;
-<span class="hljs-variable">$button--padding-top</span>: <span class="hljs-number">0.625em</span>;
-<span class="hljs-variable">$button--padding-right</span>: <span class="hljs-number">0.625em</span>;
-<span class="hljs-variable">$button--padding-bottom</span>: <span class="hljs-number">0.625em</span>;
-<span class="hljs-variable">$button--padding-left</span>: <span class="hljs-number">0.625em</span>;
+
+<span class="hljs-variable">$button--padding</span>: <span class="hljs-number">0.625em</span>; <span class="hljs-comment">//true or false or em/px</span>
+<span class="hljs-variable">$button--padding-top</span>: <span class="hljs-variable">$button--padding</span>;
+<span class="hljs-variable">$button--padding-right</span>: <span class="hljs-variable">$button--padding</span>;
+<span class="hljs-variable">$button--padding-bottom</span>: <span class="hljs-variable">$button--padding</span>;
+<span class="hljs-variable">$button--padding-left</span>: <span class="hljs-variable">$button--padding</span>;
 
 <span class="hljs-comment">// Medium breakpoint</span>
-<span class="hljs-variable">$button--padding-top-medium</span>: <span class="hljs-number">0.625em</span>;
-<span class="hljs-variable">$button--padding-right-medium</span>: <span class="hljs-number">0.625em</span>;
-<span class="hljs-variable">$button--padding-bottom-medium</span>: <span class="hljs-number">0.625em</span>;
-<span class="hljs-variable">$button--padding-left-medium</span>: <span class="hljs-number">0.625em</span>;
-<span class="hljs-variable">$button-text--font-size-medium</span>: <span class="hljs-variable">$font-size-medium</span>;
+<span class="hljs-variable">$button--padding-medium</span>: <span class="hljs-number">0.625em</span>; <span class="hljs-comment">//true or false or em/px</span>
+<span class="hljs-variable">$button--padding-top-medium</span>: <span class="hljs-variable">$button--padding-medium</span>;
+<span class="hljs-variable">$button--padding-right-medium</span>: <span class="hljs-variable">$button--padding-medium</span>;
+<span class="hljs-variable">$button--padding-bottom-medium</span>: <span class="hljs-variable">$button--padding-medium</span>;
+<span class="hljs-variable">$button--padding-left-medium</span>: <span class="hljs-variable">$button--padding-medium</span>;
+<span class="hljs-variable">$button-text--font-size-medium</span>: <span class="hljs-variable">$font-size-medium</span>; <span class="hljs-comment">//false</span>
 <span class="hljs-variable">$button-text--line-height-medium</span>: <span class="hljs-number">1.3125em</span>;
 
 <span class="hljs-comment">// Large breakpoint</span>
-<span class="hljs-variable">$button--padding-top-large</span>: <span class="hljs-number">0.625em</span>;
-<span class="hljs-variable">$button--padding-right-large</span>: <span class="hljs-number">0.625em</span>;
-<span class="hljs-variable">$button--padding-bottom-large</span>: <span class="hljs-number">0.625em</span>;
-<span class="hljs-variable">$button--padding-left-large</span>: <span class="hljs-number">0.625em</span>;
-<span class="hljs-variable">$button-text--font-size-large</span>: <span class="hljs-variable">$font-size-large</span>;
+<span class="hljs-variable">$button--padding-large</span>: <span class="hljs-number">0.625em</span>; <span class="hljs-comment">//true or false or em/px</span>
+<span class="hljs-variable">$button--padding-top-large</span>: <span class="hljs-variable">$button--padding-large</span>;
+<span class="hljs-variable">$button--padding-right-large</span>: <span class="hljs-variable">$button--padding-large</span>;
+<span class="hljs-variable">$button--padding-bottom-large</span>: <span class="hljs-variable">$button--padding-large</span>;
+<span class="hljs-variable">$button--padding-left-large</span>: <span class="hljs-variable">$button--padding-large</span>;
+<span class="hljs-variable">$button-text--font-size-large</span>: <span class="hljs-variable">$font-size-large</span>; <span class="hljs-comment">//false</span>
 <span class="hljs-variable">$button-text--line-height-large</span>: <span class="hljs-number">1.5em</span>;
 
 <span class="hljs-comment">// Hover</span>
-<span class="hljs-variable">$button--hover-text-decoration</span>: underline; <span class="hljs-comment">// Can be false</span>
+<span class="hljs-variable">$button--hover-text-decoration</span>: underline; <span class="hljs-comment">//false</span>
 
 <span class="hljs-comment">// Active</span>
 <span class="hljs-variable">$button--active-background-color</span>: <span class="hljs-variable">$grey-lightest</span>;
 <span class="hljs-variable">$button--active-border</span>: <span class="hljs-number">0.0625em</span> solid <span class="hljs-variable">$grey-base</span>;
 <span class="hljs-variable">$button--active-color</span>: <span class="hljs-variable">$black</span>;
-<span class="hljs-variable">$button--active-text-decoration</span>: none; <span class="hljs-comment">// Can be false</span>
+<span class="hljs-variable">$button--active-text-decoration</span>: none; <span class="hljs-comment">//false</span>
 
 <span class="hljs-comment">// Disabled</span>
 <span class="hljs-variable">$button--disabled-background-color</span>: <span class="hljs-variable">$grey-lighter</span>;
 <span class="hljs-variable">$button--disabled-border</span>: <span class="hljs-number">0em</span>;
 <span class="hljs-variable">$button--disabled-color</span>: <span class="hljs-variable">$grey-base</span>;
-<span class="hljs-variable">$button--disabled-text-decoration</span>: none; <span class="hljs-comment">// Can be false</span>
+<span class="hljs-variable">$button--disabled-text-decoration</span>: none; <span class="hljs-comment">//false</span>
 
 <span class="hljs-comment">// "primary"-modifier</span>
 <span class="hljs-variable">$button--primary-background-color</span>: <span class="hljs-variable">$color-primary</span>;
-<span class="hljs-variable">$button--primary-color</span>: <span class="hljs-variable">$white</span>;
-<span class="hljs-variable">$button--primary-hover-text-decoration</span>: underline; <span class="hljs-comment">// Can be false</span>
+<span class="hljs-variable">$button--primary-color</span>: <span class="hljs-variable">$white</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$button--primary-hover-text-decoration</span>: underline; <span class="hljs-comment">//false</span>
 <span class="hljs-variable">$button--primary-active-background-color</span>: <span class="hljs-variable">$white</span>;
 <span class="hljs-variable">$button--primary-active-border</span>: <span class="hljs-number">0.0625em</span> solid <span class="hljs-variable">$color-primary</span>;
-<span class="hljs-variable">$button--primary-active-color</span>: <span class="hljs-variable">$color-primary</span>;
-<span class="hljs-variable">$button--primary-active-text-decoration</span>: none; <span class="hljs-comment">// Can be false</span>
+<span class="hljs-variable">$button--primary-active-color</span>: <span class="hljs-variable">$color-primary</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$button--primary-active-text-decoration</span>: none; <span class="hljs-comment">//false</span>
 
 <span class="hljs-comment">// "secondary"-modifier</span>
 <span class="hljs-variable">$button--secondary-background-color</span>: <span class="hljs-variable">$color-secondary</span>;
-<span class="hljs-variable">$button--secondary-color</span>: <span class="hljs-variable">$white</span>;
-<span class="hljs-variable">$button--secondary-hover-text-decoration</span>: underline; <span class="hljs-comment">// Can be false</span>
+<span class="hljs-variable">$button--secondary-color</span>: <span class="hljs-variable">$white</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$button--secondary-hover-text-decoration</span>: underline; <span class="hljs-comment">//false</span>
 <span class="hljs-variable">$button--secondary-active-background-color</span>: <span class="hljs-variable">$white</span>;
 <span class="hljs-variable">$button--secondary-active-border</span>: <span class="hljs-number">0.0625em</span> solid <span class="hljs-variable">$color-secondary</span>;
-<span class="hljs-variable">$button--secondary-active-color</span>: <span class="hljs-variable">$color-secondary</span>;
-<span class="hljs-variable">$button--secondary-active-text-decoration</span>: none; <span class="hljs-comment">// Can be false</span>
+<span class="hljs-variable">$button--secondary-active-color</span>: <span class="hljs-variable">$color-secondary</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$button--secondary-active-text-decoration</span>: none; <span class="hljs-comment">//false</span>
 
 <span class="hljs-comment">// "icon"-modifier</span>
 <span class="hljs-variable">$button--icon</span>: <span class="hljs-string">"\e844"</span>;
@@ -576,7 +603,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.5 KB</span>
+                    <span class="Meta-value">2.9 KB</span>
                 </li>
             </ul>
         </div>
@@ -1573,7 +1600,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>
@@ -1608,7 +1635,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>
@@ -1632,7 +1659,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

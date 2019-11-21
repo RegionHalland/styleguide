@@ -7,12 +7,15 @@
     display: inline-block;
 
     /* Visuellt */
-    padding-top: $button--padding-top;//em(10)
-    padding-right: $button--padding-right;//em(6)
-    padding-bottom: $button--padding-bottom;//em(10)
-    padding-left: $button--padding-left;//em(6)
+    @if $button--padding {
+        padding-top: $button--padding-top;//em(10)
+        padding-right: $button--padding-right;//em(6)
+        padding-bottom: $button--padding-bottom;//em(10)
+        padding-left: $button--padding-left;//em(6)
+    }
+
     @if $button--background-color {
-        background-color: $button--background-color;   
+        background-color: $button--background-color;
     }
     border: $button--border;
     border-radius: $button--border-radius;
@@ -24,7 +27,11 @@
     color: $button-text--color; //$black
     text-align: $button-text--text-align; //center
     font-family: inherit;
-    font-size: $button-text--font-size; //$font-size-small
+
+    @if $button-text--font-size {
+        font-size: $button-text--font-size; //$font-size-small
+    }
+
     line-height: $button-text--line-height; //em(16)
     @if $button--text-decoration {
         text-decoration: $button--text-decoration;
@@ -32,7 +39,7 @@
 
     /* Blandat/övrigt */
     outline: none;
-        
+
     &:hover{
         /* Typografi */
         @if $button--hover-text-decoration {
@@ -67,7 +74,9 @@
         background-color: $button--primary-background-color;
 
         /* Typografi */
-        color: $button--primary-color;
+        @if $button--primary-color {
+            color: $button--primary-color;
+        }
         &:hover{
             /* Typografi */
             @if $button--primary-hover-text-decoration {
@@ -80,7 +89,9 @@
             border: $button--primary-active-border; //1px solid $color-primary
 
             /* Typografi */
-            color: $button--primary-active-color; //$color-primary
+            @if $button--primary-active-color {
+                color: $button--primary-active-color; //$color-primary
+            }
             @if $button--primary-active-text-decoration {
                 text-decoration: $button--primary-active-text-decoration; //none
             }
@@ -92,7 +103,9 @@
         background-color: $button--secondary-background-color;
 
         /* Typografi */
-        color: $button--secondary-color;
+        @if $button--secondary-color {
+            color: $button--secondary-color;
+        }
         &:hover{
             /* Typografi */
             @if $button--secondary-hover-text-decoration {
@@ -105,11 +118,13 @@
             border: $button--secondary-active-border;
 
             /* Typografi */
-            color: $button--secondary-active-color;
+            @if $button--secondary-active-color {
+                color: $button--secondary-active-color;
+            }
             @if $button--secondary-active-text-decoration {
                 text-decoration: $button--secondary-active-text-decoration;
             }
-        }      
+        }
     }
 
     &--icon {
@@ -124,7 +139,7 @@
             /* Box-modell/beteende */
             display: inline-block;
             margin-left: $button--icon-margin-left; //em(16)
-            
+
             /* Typografi */
             font-family: "feather";
             text-decoration: $button--icon-text-decoration;
@@ -136,24 +151,32 @@
 
     @include medium {
         /* Visuellt */
-        padding-top: $button--padding-top-medium; //em(8);
-        padding-right: $button--padding-right-medium; //em(8);
-        padding-bottom: $button--padding-bottom-medium; //em(8);
-        padding-left: $button--padding-left-medium; //em(8);
+        @if $button--padding-medium {
+            padding-top: $button--padding-top-medium; //em(8);
+            padding-right: $button--padding-right-medium; //em(8);
+            padding-bottom: $button--padding-bottom-medium; //em(8);
+            padding-left: $button--padding-left-medium; //em(8);
+        }
 
         /* Typografi */
-        font-size: $button-text--font-size-medium;
+        @if $button-text--font-size-medium {
+            font-size: $button-text--font-size-medium;
+        }
         line-height: $button-text--line-height-medium; //em(21);
     }
     @include large {
         /* Visuellt */
-        padding-top: $button--padding-top-large; //em(10);
-        padding-right: $button--padding-right-large; //em(10);
-        padding-bottom: $button--padding-bottom-large; //em(10);
-        padding-left: $button--padding-left-large; //em(10);
+        @if $button--padding-large {
+            padding-top: $button--padding-top-large; //em(10);
+            padding-right: $button--padding-right-large; //em(10);
+            padding-bottom: $button--padding-bottom-large; //em(10);
+            padding-left: $button--padding-left-large; //em(10);
+        }
 
         /* Typografi */
-        font-size: $button-text--font-size-large;
+        @if $button-text--font-size-large {
+            font-size: $button-text--font-size-large;
+        }
         line-height: $button-text--line-height-large; //em(24);
     }
 }

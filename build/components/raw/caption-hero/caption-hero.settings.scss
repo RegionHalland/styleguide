@@ -1,7 +1,7 @@
 $caption-hero--padding: .9375em;
 $caption-hero--background-color: $black;
 $caption-hero--color: $white;
-$caption-hero--font-size: $h2-medium;
+$caption-hero--font-size: $h2-medium; //false
 
 // Rounded
 $caption-hero--rounded--border-radius--default: 0;
@@ -19,4 +19,4 @@ $caption-hero--medium--max-width: 20.385em; //530px;
 // Large
 $caption-hero--large--bottom: 1.5625em; //em(25);
 $caption-hero--large--left: 3.75em; //em(60);
-$caption-hero--large--font-size: $h2-medium;
+$caption-hero--large--font-size: $h2-medium; //false

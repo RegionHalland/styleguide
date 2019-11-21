@@ -281,8 +281,10 @@
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$caption-hero--background-color</span>;
 
 	<span class="hljs-comment">/* Typografi */</span>
-	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$caption-hero--color</span>;
-	<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$caption-hero--font-size</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$caption-hero--color</span>;
+    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$caption-hero--font-size</span> {
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$caption-hero--font-size</span>;
+    }
 
 	&amp;--secondary {
 		<span class="hljs-comment">/* Visuellt */</span>
@@ -295,7 +297,7 @@
 	&amp;--rounded {
         <span class="hljs-comment">// border-radius: 0.4ex;</span>
         <span class="hljs-attribute">border-radius</span>: <span class="hljs-variable">$caption-hero--rounded--border-radius--default</span>;
-        
+
         @<span class="hljs-keyword">include</span> medium {
             <span class="hljs-attribute">border-radius</span>: <span class="hljs-variable">$caption-hero--rounded--border-radius--medium</span>;
         }
@@ -316,8 +318,10 @@
 		<span class="hljs-attribute">bottom</span>: <span class="hljs-variable">$caption-hero--large--bottom</span>;
 		<span class="hljs-attribute">left</span>: <span class="hljs-variable">$caption-hero--large--left</span>;
 
-		<span class="hljs-comment">/* Typografi */</span>
-		<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$caption-hero--large--font-size</span>;
+        <span class="hljs-comment">/* Typografi */</span>
+        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$caption-hero--large--font-size</span> {
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$caption-hero--large--font-size</span>;
+        }
 	}
 }
 
@@ -337,7 +341,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.1 KB</span>
+                    <span class="Meta-value">1.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -353,7 +357,7 @@
                                 <pre><span class="hljs-variable">$caption-hero--padding</span>: .<span class="hljs-number">9375em</span>;
 <span class="hljs-variable">$caption-hero--background-color</span>: <span class="hljs-variable">$black</span>;
 <span class="hljs-variable">$caption-hero--color</span>: <span class="hljs-variable">$white</span>;
-<span class="hljs-variable">$caption-hero--font-size</span>: <span class="hljs-variable">$h2-medium</span>;
+<span class="hljs-variable">$caption-hero--font-size</span>: <span class="hljs-variable">$h2-medium</span>; <span class="hljs-comment">//false</span>
 
 <span class="hljs-comment">// Rounded</span>
 <span class="hljs-variable">$caption-hero--rounded--border-radius--default</span>: <span class="hljs-number">0</span>;
@@ -371,7 +375,7 @@
 <span class="hljs-comment">// Large</span>
 <span class="hljs-variable">$caption-hero--large--bottom</span>: <span class="hljs-number">1.5625em</span>; <span class="hljs-comment">//em(25);</span>
 <span class="hljs-variable">$caption-hero--large--left</span>: <span class="hljs-number">3.75em</span>; <span class="hljs-comment">//em(60);</span>
-<span class="hljs-variable">$caption-hero--large--font-size</span>: <span class="hljs-variable">$h2-medium</span>;
+<span class="hljs-variable">$caption-hero--large--font-size</span>: <span class="hljs-variable">$h2-medium</span>; <span class="hljs-comment">//false</span>
 </pre>
                             </code>
                             
@@ -388,7 +392,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">671 Bytes</span>
+                    <span class="Meta-value">687 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -1370,7 +1374,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>
@@ -1405,7 +1409,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>
@@ -1429,7 +1433,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

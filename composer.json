@@ -130,7 +130,7 @@
     "regionhalland/navigation-left": "1.1.0",
     "regionhalland/pagination-elements": "1.0.0.20191112",
     "regionhalland/visual-element": "1.0.0.20191113",
-    "regionhalland/general": "1.0.0.201911191415"
+    "regionhalland/general": "1.0.0.201911191750"
   },
   "extra": {
     "custom-installer": {
