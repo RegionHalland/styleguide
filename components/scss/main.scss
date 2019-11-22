@@ -69,34 +69,28 @@
 @import 'components/vMolecules/image-caption/_image-caption.scss';
 @import 'components/vMolecules/image-hero/_image-hero.scss';
 @import 'components/vMolecules/label-previous/_label-previous.scss';
-// @import 'components/vMolecules/last-update/_last-updated.scss'; (Saknar egen scss just nu)
-
+// @import 'components/vMolecules/last-update/_last-updated.scss'; (Saknar egen scss just nu, men finns här som påminnelse)
 @import 'components/vMolecules/lists/_lists.scss';
 @import 'components/vMolecules/linkgroup/_linkgroup.scss';
 @import 'components/vMolecules/logo-sitename/_logo-sitename.scss';
+@import 'components/vMolecules/menu/_menu.scss';
+@import 'components/vMolecules/menu-mobile/_menu-mobile.scss';
 @import 'components/vMolecules/message-cookies/_cookie-notice.scss';
+@import 'components/vMolecules/messages/_messages.scss';
+@import 'components/vMolecules/navigation-block/_navigation-block.scss';
+@import 'components/vMolecules/navigation-card/_navigation-card.scss';
 @import 'components/vMolecules/navigation-left/_navigation-left.scss';
-
-/* ********* */
-/* Molecules */
-/* ********* */
-
-@import 'components/Molecules/menu/_menu.scss';
-@import 'components/Molecules/menu-mobile/_menu-mobile.scss';
-@import 'components/Molecules/messages/_messages.scss';
-@import 'components/Molecules/navigation-block/_navigation-block.scss';
-@import 'components/Molecules/navigation-card/_navigation-card.scss';
-@import 'components/Molecules/news-info/_news-info.scss';
-@import 'components/Molecules/page-nav/_page-nav.scss';
-@import 'components/Molecules/pagination/_pagination.scss';
-@import 'components/Molecules/personal-info/_personal-info.scss';
-@import 'components/Molecules/search-elements/_search-elements.scss';
-@import 'components/Molecules/search-external-link/_search-external-link.scss';
-@import 'components/Molecules/search-external-link-1177/_search-external-link-1177.scss';
-@import 'components/Molecules/secondary-nav/_secondary-nav.scss';
-@import 'components/Molecules/tabs/_tabs.scss';
-@import 'components/Molecules/unit-info/_unit-info.scss';
-@import 'components/Molecules/video/_video.scss';
+@import 'components/vMolecules/news-info/_news-info.scss';
+@import 'components/vMolecules/page-nav/_page-nav.scss';
+@import 'components/vMolecules/pagination/_pagination.scss';
+@import 'components/vMolecules/personal-info/_personal-info.scss';
+@import 'components/vMolecules/search-elements/_search-elements.scss';
+@import 'components/vMolecules/search-external-link/_search-external-link.scss';
+@import 'components/vMolecules/search-external-link-1177/_search-external-link-1177.scss';
+@import 'components/vMolecules/secondary-nav/_secondary-nav.scss';
+@import 'components/vMolecules/tabs/_tabs.scss';
+@import 'components/vMolecules/unit-info/_unit-info.scss';
+@import 'components/vMolecules/video/_video.scss';
 
 /* ********************** */
 /* vOrganism - i gitrepon */

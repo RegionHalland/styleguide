@@ -2,10 +2,25 @@
 
 ## 9.8.0
 
-### Molekyler som flyttat till gitrepon och fått nya sökvar: 
+### Molekyler som flyttat till gitrepon och fått nya sökvar:
+* Menu
+* Menu Mobile
+* Messages
+* Navigation block
+* Navigation card
+* News info
+* Page nav
+* Pagination
+* Personal info
+* Search elements
+* Search external link
+* Search external link 1177
+* Secondary nav
+* Tabs
+* Unit info
+* Video 
 
-(Ett antal av dessa har också rensats på prefixet "Rh" i navigationen och på hänvisningar till gamla github-stories.
-Sökvägar har också justerats för att ge rätt utseende)
+(Ett antal av dessa har också rensats på prefixet "Rh" i navigationen och på hänvisningar till gamla github-stories.)
 
 ## 9.7.0 
 
