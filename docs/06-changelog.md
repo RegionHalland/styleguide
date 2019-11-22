@@ -1,5 +1,12 @@
 # Versioner av stilguiden och deras ändringar
 
+## 9.8.0
+
+### Molekyler som flyttat till gitrepon och fått nya sökvar: 
+
+(Ett antal av dessa har också rensats på prefixet "Rh" i navigationen och på hänvisningar till gamla github-stories.
+Sökvägar har också justerats för att ge rätt utseende)
+
 ## 9.7.0 
 
 ### Molekyler som flyttat till gitrepon och fått nya sökvägar:
