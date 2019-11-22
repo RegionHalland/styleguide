@@ -1,0 +1,13 @@
+{
+    "name": "regionhalland/feedback-form",
+    "description": "Feedback form",
+    "type": "styleguide-molecule",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Roland Hydén",
+            "email": "Roland.Hyden@Regionhalland.se"
+        }
+    ],
+    "require": {}
+}

@@ -100,6 +100,10 @@
     },
     {
       "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeArticle"
+    },
+    {
+      "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeArticleBlock"
     },
     {
@@ -112,11 +116,31 @@
     },
     {
       "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeBlurbs"
+    },
+    {
+      "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeButtongroupElements"
     },
     {
       "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeCalendarElement"
+    },
+    {
+      "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeContactInfo"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeEventCardCalendar"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeFeedback"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeFeedbackForm"
     },
     {
       "type": "git",
@@ -132,11 +156,95 @@
     },
     {
       "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeLabelPrevious"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeLastUpdated"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeLinkgroup"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeLists"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeLogoSitename"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeMenu"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeMenuMobile"
+    },
+    {
+      "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeMessageCookies"
     },
     {
       "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeMessages"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeNavigationBlock"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeNavigationCard"
+    },
+    {
+      "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeNavigationLeft"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeNewsInfo"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculePageNav"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculePagination"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculePersonalInfo"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeSearchElements"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeSearchExternalLink"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeSearchExternalLink1177"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeSecondaryNav"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeTabs"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeUnitInfo"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeVideo"
     },
     {
       "type": "git",
@@ -155,19 +263,25 @@
     "php": ">=5.6",
     "composer/installers": "^1.4",
     "regionhalland/region-halland-composer-custom-installer": "1.0.0",
+    "regionhalland/article": "1.0.0.20191121",
     "regionhalland/article-block": "1.0.1",
     "regionhalland/avatar": "1.0.0.20191121",
     "regionhalland/back-to-top": "1.1.1",
     "regionhalland/badge": "1.0.0.20191121",
     "regionhalland/block": "1.2.0",
     "regionhalland/block-shortcuts": "1.0.0",
+    "regionhalland/blurbs": "1.0.0.20191121",
     "regionhalland/button": "1.0.0.201911151540",
     "regionhalland/buttongroup": "1.0.0.201911081257",
     "regionhalland/buttongroup-elements": "1.0.0.20191108",
+    "regionhalland/calendar-element": "1.0.0.20191121",
     "regionhalland/caption-hero": "1.0.1",
     "regionhalland/card": "1.0.0.20191121",
     "regionhalland/circle-button": "1.1.1",
     "regionhalland/contact-info": "1.0.0",
+    "regionhalland/event-card-calendar": "1.0.0.20191121",
+    "regionhalland/feedback": "1.0.0.20191121",
+    "regionhalland/feedback-form": "1.0.0.20191121",
     "regionhalland/filter": "1.0.0.20191121",
     "regionhalland/filter-alphabet": "1.0.0",
     "regionhalland/form": "1.0.0.20191121",
@@ -177,13 +291,34 @@
     "regionhalland/image-caption": "1.0.0",
     "regionhalland/image-hero": "1.0.1",
     "regionhalland/label": "1.0.0.20191108",
+    "regionhalland/label-previous": "1.0.0.20191121",
+    "regionhalland/last-updated": "1.0.0.20191121",
     "regionhalland/link": "1.0.0.20191121",
+    "regionhalland/linkgroup": "1.0.0.20191121",
+    "regionhalland/lists": "1.0.0.20191121",
+    "regionhalland/logo-sitename": "1.0.0.20191121",
+    "regionhalland/menu": "1.0.0.20191122",
+    "regionhalland/menu-mobile": "1.0.0.20191122",
     "regionhalland/message-cookies": "1.0.0",
+    "regionhalland/messages": "1.0.0.20191122",
+    "regionhalland/navigation-block": "1.0.0.20191122",
+    "regionhalland/navigation-card": "1.0.0.20191122",
     "regionhalland/navigation-left": "1.1.0",
+    "regionhalland/news-info": "1.0.0.20191122",
+    "regionhalland/page-nav": "1.0.0.20191122",
+    "regionhalland/pagination": "1.0.0.20191122",
     "regionhalland/pagination-elements": "1.0.0.20191112",
+    "regionhalland/personal-info": "1.0.0.20191122",
     "regionhalland/round-button": "1.0.0.20191121",
+    "regionhalland/search-elements": "1.0.0.20191122",
+    "regionhalland/search-external-link": "1.0.0.20191122",
+    "regionhalland/search-external-link-1177": "1.0.0.20191122",
     "regionhalland/search-field": "1.0.0.20191121",
+    "regionhalland/secondary-nav": "1.0.0.20191122",
+    "regionhalland/tabs": "1.0.0.20191122",
     "regionhalland/text": "1.0.0.20191121",
+    "regionhalland/unit-info": "1.0.0.20191122",
+    "regionhalland/video": "1.0.0.20191122",
     "regionhalland/visual-element": "1.0.0.20191113",
     "regionhalland/general": "1.0.0.201911191750"
   },

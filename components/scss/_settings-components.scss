@@ -21,20 +21,18 @@
 @import '../vMolecules/block-shortcuts/block-shortcuts.settings.scss';
 @import '../vMolecules/buttongroup-elements/buttongroup-elements.settings';
 @import '../vMolecules/contact-info/contact-info.settings.scss';
+@import '../vMolecules/feedback-form/feedback-form.settings.scss';
 @import '../vMolecules/filter-alphabet/filter-alphabet.settings.scss';
 @import '../vMolecules/image-hero/image-hero.settings.scss';
+@import '../vMolecules/menu/menu.settings.scss';
+@import '../vMolecules/menu-mobile/menu-mobile.settings.scss';
 @import '../vMolecules/message-cookies/cookie-notice.settings.scss';
+@import '../vMolecules/messages/message.settings.scss';
+@import '../vMolecules/navigation-block/navigation-block.settings.scss';
 @import '../vMolecules/navigation-left/navigation-left.settings.scss';
 
 /* vOrganismer - från gitrepon  */
 @import '../vOrganism/buttongroup/buttongroup.settings.scss';
-
-/* Molekyler - fortfarande kvar i stilguiden */
-@import '../Molecules/feedback-form/feedback-form.settings.scss';
-@import '../Molecules/menu/menu.settings.scss';
-@import '../Molecules/menu-mobile/menu-mobile.settings.scss';
-@import '../Molecules/messages/message.settings.scss';
-@import '../Molecules/navigation-block/navigation-block.settings.scss';
 
 /* Organismer - fortfarande kvar i stilguiden */
 @import '../Organism/article-group/article-group.settings.scss';

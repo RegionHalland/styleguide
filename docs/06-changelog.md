@@ -1,9 +1,47 @@
 # Versioner av stilguiden och deras ändringar
 
-## 9.6.1 (2019-11-21)
+## 9.8.1 (2019-11-22)
 * Förbättring av:
+    * Grid system.
     * Organism/__rh-breadcrums__ komponent _(settings)_.
     * Byggmiljö får bättre prestanda.
+
+## 9.8.0
+
+### Molekyler som flyttat till gitrepon och fått nya sökvar:
+* Menu
+* Menu Mobile
+* Messages
+* Navigation block
+* Navigation card
+* News info
+* Page nav
+* Pagination
+* Personal info
+* Search elements
+* Search external link
+* Search external link 1177
+* Secondary nav
+* Tabs
+* Unit info
+* Video
+
+(Ett antal av dessa har också rensats på prefixet "Rh" i navigationen och på hänvisningar till gamla github-stories.)
+
+## 9.7.0
+
+### Molekyler som flyttat till gitrepon och fått nya sökvägar:
+* Article
+* Blurbs
+* Calendar Element
+* Event card calendar
+* Feedback
+* Feedback form
+* Label Previous
+* Last updated
+* Linkgroup
+* Lists
+* Logo sitename
 
 ## 9.6.0
 
