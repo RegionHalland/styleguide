@@ -364,16 +364,16 @@
 }
 
 // The same with .clearfix
-/* .row {
-    &:before, &:after {
-        display: table;
-        content: " ";
-    }
+// .row {
+//     &:before, &:after {
+//         display: table;
+//         content: " ";
+//     }
 
-    &:after {
-        clear: both;
-    }
-} */
+//     &:after {
+//         clear: both;
+//     }
+// }
 .row {
     &:before, &:after {
         display: table;
