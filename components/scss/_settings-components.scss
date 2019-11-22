@@ -4,9 +4,14 @@
 @import '../vAtoms/button/button.settings.scss';
 @import '../vAtoms/caption-hero/caption-hero.settings.scss';
 @import '../vAtoms/circle-button/circle-button.settings.scss';
+@import '../vAtoms/form-control-text/form-control-text.settings.scss';
+@import '../vAtoms/form-control-textarea/form-control-textarea.settings.scss';
 @import '../vAtoms/heading-underlined/heading-underlined.settings.scss';
 @import '../vAtoms/label/labels.settings.scss';
+@import '../vAtoms/link/link.settings.scss';
 @import '../vAtoms/pagination-elements/pagination-elements.settings.scss';
+@import '../vAtoms/round-button/round-button.settings.scss';
+@import '../vAtoms/search-field/search-field.settings.scss';
 @import '../vAtoms/visual-element/visual-element.settings.scss';
 
 /* vMolekyler - från gitrepon */
@@ -23,14 +28,6 @@
 
 /* vOrganismer - från gitrepon  */
 @import '../vOrganism/buttongroup/buttongroup.settings.scss';
-
-/* Atomer - fortfarande kvar i stilguiden */
-
-@import '../Atoms/form-control-text/form-control-text.settings.scss';
-@import '../Atoms/form-control-textarea/form-control-textarea.settings.scss';
-@import '../Atoms/link/link.settings.scss';
-@import '../Atoms/round-button/round-button.settings.scss';
-@import '../Atoms/search-field/search-field.settings.scss';
 
 /* Molekyler - fortfarande kvar i stilguiden */
 @import '../Molecules/feedback-form/feedback-form.settings.scss';

@@ -1,6 +1,13 @@
-# Menu
+# Molekylen "Menu"
 * Komponents prefix: `rh-menu`
 * Filplats: `/components/Molecules/menu`
+
+## Planerad utveckling
+* Menyn måste kunna hanteras med tangentbord
+* Gå igenom fokus-states och säkerställ att de är synliga
+
+## Versionshistorik
+* 1.0.0.20191119 Satt statusen "rework" och uppdaterat READMEn med planerad utveckling
 
 ## 1. Krav
 `<body>` tag

@@ -364,13 +364,20 @@
 }
 
 // The same with .clearfix
-.row {
+/* .row {
     &:before, &:after {
         display: table;
         content: " ";
     }
 
     &:after {
+        clear: both;
+    }
+} */
+.row {
+    &:before, &:after {
+        display: table;
+        content: " ";
         clear: both;
     }
 }

@@ -1,6 +1,6 @@
 {
 	"title": "Logga + sajtnamn",
-    "status": "wip",
+    "status": "rework",
 	"context": {
 		"siteLogo": {
             "imageUrl": "/images/components/rh-logo-sitename/navigation_logo.svg",

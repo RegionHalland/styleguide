@@ -28,3 +28,7 @@ components/vMolecules/*
 # Organism
 components/vOrganism/*
 !components/vOrganism/.gitkeep
+
+# Organism
+components/vTemplates/*
+!components/vTemplates/.gitkeep

@@ -8,62 +8,66 @@ $button--border-radius: 0.25em;
 $button--box-shadow: 0.0625em 0.125em 0.375em $color-shadow;
 $button-text--color: $black;
 $button-text--text-align: center;
-$button-text--font-size: $font-size-small;
+$button-text--font-size: $font-size-small; //false
 $button-text--line-height: 1em;
 $button--text-decoration: none;
-$button--padding-top: 0.625em;
-$button--padding-right: 0.625em;
-$button--padding-bottom: 0.625em;
-$button--padding-left: 0.625em;
+
+$button--padding: 0.625em; //true or false or em/px
+$button--padding-top: $button--padding;
+$button--padding-right: $button--padding;
+$button--padding-bottom: $button--padding;
+$button--padding-left: $button--padding;
 
 // Medium breakpoint
-$button--padding-top-medium: 0.625em;
-$button--padding-right-medium: 0.625em;
-$button--padding-bottom-medium: 0.625em;
-$button--padding-left-medium: 0.625em;
-$button-text--font-size-medium: $font-size-medium;
+$button--padding-medium: 0.625em; //true or false or em/px
+$button--padding-top-medium: $button--padding-medium;
+$button--padding-right-medium: $button--padding-medium;
+$button--padding-bottom-medium: $button--padding-medium;
+$button--padding-left-medium: $button--padding-medium;
+$button-text--font-size-medium: $font-size-medium; //false
 $button-text--line-height-medium: 1.3125em;
 
 // Large breakpoint
-$button--padding-top-large: 0.625em;
-$button--padding-right-large: 0.625em;
-$button--padding-bottom-large: 0.625em;
-$button--padding-left-large: 0.625em;
-$button-text--font-size-large: $font-size-large;
+$button--padding-large: 0.625em; //true or false or em/px
+$button--padding-top-large: $button--padding-large;
+$button--padding-right-large: $button--padding-large;
+$button--padding-bottom-large: $button--padding-large;
+$button--padding-left-large: $button--padding-large;
+$button-text--font-size-large: $font-size-large; //false
 $button-text--line-height-large: 1.5em;
 
 // Hover
-$button--hover-text-decoration: underline; // Can be false
+$button--hover-text-decoration: underline; //false
 
 // Active
 $button--active-background-color: $grey-lightest;
 $button--active-border: 0.0625em solid $grey-base;
 $button--active-color: $black;
-$button--active-text-decoration: none; // Can be false
+$button--active-text-decoration: none; //false
 
 // Disabled
 $button--disabled-background-color: $grey-lighter;
 $button--disabled-border: 0em;
 $button--disabled-color: $grey-base;
-$button--disabled-text-decoration: none; // Can be false
+$button--disabled-text-decoration: none; //false
 
 // "primary"-modifier
 $button--primary-background-color: $color-primary;
-$button--primary-color: $white;
-$button--primary-hover-text-decoration: underline; // Can be false
+$button--primary-color: $white; //false
+$button--primary-hover-text-decoration: underline; //false
 $button--primary-active-background-color: $white;
 $button--primary-active-border: 0.0625em solid $color-primary;
-$button--primary-active-color: $color-primary;
-$button--primary-active-text-decoration: none; // Can be false
+$button--primary-active-color: $color-primary; //false
+$button--primary-active-text-decoration: none; //false
 
 // "secondary"-modifier
 $button--secondary-background-color: $color-secondary;
-$button--secondary-color: $white;
-$button--secondary-hover-text-decoration: underline; // Can be false
+$button--secondary-color: $white; //false
+$button--secondary-hover-text-decoration: underline; //false
 $button--secondary-active-background-color: $white;
 $button--secondary-active-border: 0.0625em solid $color-secondary;
-$button--secondary-active-color: $color-secondary;
-$button--secondary-active-text-decoration: none; // Can be false
+$button--secondary-active-color: $color-secondary; //false
+$button--secondary-active-text-decoration: none; //false
 
 // "icon"-modifier
 $button--icon: "\e844";

@@ -32,27 +32,22 @@
 /* vAtoms - i gitrepon */
 /* ******************* */
 
+@import 'components/vAtoms/avatar/_avatar.scss';
+@import 'components/vAtoms/badge/_badge.scss';
 @import 'components/vAtoms/button/_button.scss';
+@import 'components/vAtoms/card/_card.scss';
 @import 'components/vAtoms/caption-hero/_caption-hero.scss';
 @import 'components/vAtoms/circle-button/_circle-button.scss';
+@import 'components/vAtoms/filter/_filter.scss';
+@import 'components/vAtoms/form-control-text/_form-control-text.scss';
+@import 'components/vAtoms/form-control-textarea/_form-control-textarea.scss';
 @import 'components/vAtoms/heading-underlined/_heading-underlined.scss';
 @import 'components/vAtoms/label/_labels.scss';
+@import 'components/vAtoms/link/_link.scss';
 @import 'components/vAtoms/pagination-elements/_pagination-elements.scss';
+@import 'components/vAtoms/round-button/_round-button.scss';
+@import 'components/vAtoms/search-field/_search-field.scss';
 @import 'components/vAtoms/visual-element/_visual-element.scss';
-
-/* ***** */
-/* Atoms */
-/* ***** */
-
-@import 'components/Atoms/avatar/_avatar.scss';
-@import 'components/Atoms/badge/_badge.scss';
-@import 'components/Atoms/card/_card.scss';
-@import 'components/Atoms/filter/_filter.scss';
-@import 'components/Atoms/form-control-text/_form-control-text.scss';
-@import 'components/Atoms/form-control-textarea/_form-control-textarea.scss';
-@import 'components/Atoms/link/_link.scss';
-@import 'components/Atoms/round-button/_round-button.scss';
-@import 'components/Atoms/search-field/_search-field.scss';
 
 /* *********************** */
 /* vMolecules - i gitrepon */

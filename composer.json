@@ -28,7 +28,11 @@
     },
     {
       "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomCircleButton"
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomAvatar"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomBadge"
     },
     {
       "type": "git",
@@ -36,7 +40,31 @@
     },
     {
       "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomCard"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomCircleButton"
+    },
+    {
+      "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomCaptionHero"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomFilter"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomForm"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomFormControlText"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomFormControlTextarea"
     },
     {
       "type": "git",
@@ -48,7 +76,23 @@
     },
     {
       "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomLink"
+    },
+    {
+      "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomPaginationElements"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomRoundButton"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomSearchField"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomText"
     },
     {
       "type": "git",
@@ -101,6 +145,10 @@
     {
       "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWpPlugIns/_git/RhComposerCustomInstaller"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhTemplatesGeneral"
     }
   ],
   "require": {
@@ -108,30 +156,43 @@
     "composer/installers": "^1.4",
     "regionhalland/region-halland-composer-custom-installer": "1.0.0",
     "regionhalland/article-block": "1.0.1",
+    "regionhalland/avatar": "1.0.0.20191121",
     "regionhalland/back-to-top": "1.1.1",
+    "regionhalland/badge": "1.0.0.20191121",
     "regionhalland/block": "1.2.0",
     "regionhalland/block-shortcuts": "1.0.0",
     "regionhalland/button": "1.0.0.201911151540",
     "regionhalland/buttongroup": "1.0.0.201911081257",
     "regionhalland/buttongroup-elements": "1.0.0.20191108",
     "regionhalland/caption-hero": "1.0.1",
+    "regionhalland/card": "1.0.0.20191121",
     "regionhalland/circle-button": "1.1.1",
     "regionhalland/contact-info": "1.0.0",
+    "regionhalland/filter": "1.0.0.20191121",
     "regionhalland/filter-alphabet": "1.0.0",
+    "regionhalland/form": "1.0.0.20191121",
+    "regionhalland/form-control-text": "1.0.0.20191121",
+    "regionhalland/form-control-textarea": "1.0.0.20191121",
     "regionhalland/heading-underlined": "1.0.0.201911120940",
     "regionhalland/image-caption": "1.0.0",
     "regionhalland/image-hero": "1.0.1",
     "regionhalland/label": "1.0.0.20191108",
+    "regionhalland/link": "1.0.0.20191121",
     "regionhalland/message-cookies": "1.0.0",
     "regionhalland/navigation-left": "1.1.0",
     "regionhalland/pagination-elements": "1.0.0.20191112",
-    "regionhalland/visual-element": "1.0.0.20191113"
+    "regionhalland/round-button": "1.0.0.20191121",
+    "regionhalland/search-field": "1.0.0.20191121",
+    "regionhalland/text": "1.0.0.20191121",
+    "regionhalland/visual-element": "1.0.0.20191113",
+    "regionhalland/general": "1.0.0.201911191750"
   },
   "extra": {
     "custom-installer": {
       "components/vAtoms/{$name}/": ["type:styleguide-atom"],
       "components/vMolecules/{$name}/": ["type:styleguide-molecule"],
-      "components/vOrganism/{$name}/": ["type:styleguide-organism"]
+      "components/vOrganism/{$name}/": ["type:styleguide-organism"],
+      "components/vTemplates/{$name}/": ["type:styleguide-template"]
     }
   }
 }

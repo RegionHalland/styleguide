@@ -1,47 +1,5 @@
 "use strict";
 
-function toggleMenu() {
-  document.getElementById("myDropdown").classList.toggle("rh-filter-show");
-  document.getElementById("dropdownBtn").classList.toggle("rh-filter-active");
-}
-
-function selectItem(sel) {
-  document.getElementById("dropdownBtn").classList.toggle("rh-filter-active");
-  document.getElementById("dropdownBtn").style.color = "black";
-  document.getElementById("myDropdown").classList.toggle("rh-filter-show");
-  var text = document.getElementById("dropdownBtn").firstChild;
-  text.data = sel.innerText;
-} // Close the dropdown menu if the user clicks outside of it
-
-
-window.onclick = function (event) {
-  if (!event.target.matches('.rh-filter')) {
-    var dropdowns = document.getElementsByClassName("rh-filter-menu");
-    var i;
-
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-
-      if (openDropdown.classList.contains('rh-filter-show')) {
-        openDropdown.classList.remove('rh-filter-show');
-      }
-    }
-
-    var btn = document.getElementsByClassName("rh-filter");
-    var i;
-
-    for (i = 0; i < btn.length; i++) {
-      var activeBtn = btn[i];
-
-      if (activeBtn.classList.contains('rh-filter-active')) {
-        activeBtn.classList.remove('rh-filter-active');
-      }
-    }
-  }
-};
-"use strict";
-"use strict";
-
 var acc = document.getElementsByClassName("rh-search-accordion");
 var i;
 
@@ -153,7 +111,6 @@ function setShadow() {
   }
 }
 "use strict";
-"use strict";
 
 var acc = document.getElementsByClassName("rh-accordion");
 var i;
@@ -213,6 +170,7 @@ $(document).ready(function () {
   }, 200));
   $menuMainButton.click(function (e) {
     e.stopPropagation();
+    e.preventDefault();
     menuLockBodyScrolling(true);
     $menuOverlay.toggleClass('rh-dp--none rh-dp--show');
     $menuTopBar.addClass('rh-pos--fixed').css({
@@ -230,7 +188,22 @@ $(document).ready(function () {
   });
   $menuCloseButton.click(function (e) {
     e.stopPropagation();
+    e.preventDefault();
     closeMenu();
+  }); // Press Escape key to close menu
+
+  $(document).keyup(function (e) {
+    e.stopPropagation();
+    e.preventDefault();
+    var isMenuOpen = $menuBody.hasClass("rh-menu__body--show");
+
+    if (e.key && e.key === "Escape" && isMenuOpen) {
+      //Escape key maps to keycode `27`
+      closeMenu();
+    } else if (e.keyCode && e.keyCode === 27 && isMenuOpen) {
+      //Support IE11
+      closeMenu();
+    }
   });
   $menuBody.on("click", ".rh-menu__item-button", function (e) {
     e.stopPropagation();
@@ -570,6 +543,49 @@ var videoPlayButton,
   }
 };
 videoMethods.renderVideoPlayButton();
+"use strict";
+"use strict";
+
+function toggleMenu() {
+  document.getElementById("myDropdown").classList.toggle("rh-filter-show");
+  document.getElementById("dropdownBtn").classList.toggle("rh-filter-active");
+}
+
+function selectItem(sel) {
+  document.getElementById("dropdownBtn").classList.toggle("rh-filter-active");
+  document.getElementById("dropdownBtn").style.color = "black";
+  document.getElementById("myDropdown").classList.toggle("rh-filter-show");
+  var text = document.getElementById("dropdownBtn").firstChild;
+  text.data = sel.innerText;
+} // Close the dropdown menu if the user clicks outside of it
+
+
+window.onclick = function (event) {
+  if (!event.target.matches('.rh-filter')) {
+    var dropdowns = document.getElementsByClassName("rh-filter-menu");
+    var i;
+
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+
+      if (openDropdown.classList.contains('rh-filter-show')) {
+        openDropdown.classList.remove('rh-filter-show');
+      }
+    }
+
+    var btn = document.getElementsByClassName("rh-filter");
+    var i;
+
+    for (i = 0; i < btn.length; i++) {
+      var activeBtn = btn[i];
+
+      if (activeBtn.classList.contains('rh-filter-active')) {
+        activeBtn.classList.remove('rh-filter-active');
+      }
+    }
+  }
+};
+"use strict";
 "use strict";
 
 // Needed function:

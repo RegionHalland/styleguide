@@ -1,8 +1,0 @@
-{
-	"title": "Search",
-    "status": "rework",
-	"context": {
-		"caption": "Search field",
-		"name": "rh-search-field"
-	}		
-}

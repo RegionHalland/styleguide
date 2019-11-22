@@ -1,11 +1,36 @@
 # Versioner av stilguiden och deras ändringar
 
+## 9.6.1 (2019-11-21)
+* Förbättring av:
+    * Organism/__rh-breadcrums__ komponent _(settings)_.
+    * Byggmiljö får bättre prestanda.
+
 ## 9.6.0
 
 ### Ändringar
+* Menu fått bättre prestanda och stöd för att stänga med esc.
+* Cookie notice fått tweakad javascript för bättre prestanda.
+* Templates är nu tillgängliga för att visa hur komponenterna fungerar tillsammans på en sida.
+* Nytt kommando gulp help.
+
+### Ändrade statusar
 * Molekylen "label previous" har fått statusen "Inväntar ombyggnad" och README-fil som inkluderar planerad utveckling
 * Molekylen "linkgroup" har fått statusen "Inväntar ombyggnad" och README-fil.
+* Molekylen "lists" har fått statusen "Inväntar ombyggnad" och README-fil.
+* Molekylen "Logo sitename" fått statusen "Inväntar ombyggnad" och README-fil med planerad utveckling.
+* Molekylen "Menu" fått statusen "Inväntar ombyggnad" och README-fil med planerad utveckling.
 
+### Ändrade sökvägar pga flytt till gitrepon - atomerna:
+* Badge
+* Card
+* Filter
+* Form
+* Form control text
+* Form control textare
+* Link
+* Round button
+* Search field
+* Text
 
 ## 9.5.1
 ### Byggmiljö
@@ -28,9 +53,9 @@
 * Atomen "Form control text" har fått uppdaterad status och readme.
 * Atomen "Form control textarea" fått uppdaterad status och readme.
 * Atomen "Link" visar navigationslänkar, status uppdaterad och fått README
-* Atomen "Search field" har fått uppdaterad status och en README. 
-* Atomen "Text" genomgången med config-fil, hbs-fil och skapat README. 
-* Molekylen "Feedback form" är något justerad och har nu statusen "Inväntar ombyggnad" eftersom den skall flyttas till organismer. 
+* Atomen "Search field" har fått uppdaterad status och en README.
+* Atomen "Text" genomgången med config-fil, hbs-fil och skapat README.
+* Molekylen "Feedback form" är något justerad och har nu statusen "Inväntar ombyggnad" eftersom den skall flyttas till organismer.
 * Dokumentationen nu fått en synligare plats ovanför komponenterna i navigationen.
 
 

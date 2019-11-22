@@ -1,6 +1,6 @@
 {
     "title": "Menu",
-    "status": "review",
+    "status": "rework",
     "version": "1.0.0-201911181340",
     "context": {
         "name": "default",
@@ -59,7 +59,7 @@
     "variants": [
         {
             "name": "6 levels",
-            "status": "review",
+            "status": "rework",
             "context": {
                 "isDefault": false,
                 "items": [
