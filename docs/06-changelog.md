@@ -1,5 +1,9 @@
 # Versioner av stilguiden och deras ändringar
 
+## 9.9.1
+Namngivning av mappar återgått till atoms, molecules, organisms, templates utan "v" efter att alla komponenter flyttat till gitrepon.
+OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.
+
 ## 9.9.0
 ### Organismer som flyttat till gitrepon och fått nya sökvägar:
 * Article group

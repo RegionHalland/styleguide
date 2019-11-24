@@ -399,10 +399,10 @@
   },
   "extra": {
     "custom-installer": {
-      "components/vAtoms/{$name}/": ["type:styleguide-atom"],
-      "components/vMolecules/{$name}/": ["type:styleguide-molecule"],
-      "components/vOrganism/{$name}/": ["type:styleguide-organism"],
-      "components/vTemplates/{$name}/": ["type:styleguide-template"]
+      "components/Atoms/{$name}/": ["type:styleguide-atom"],
+      "components/Molecules/{$name}/": ["type:styleguide-molecule"],
+      "components/Organisms/{$name}/": ["type:styleguide-organism"],
+      "components/Templates/{$name}/": ["type:styleguide-template"]
     }
   }
 }
