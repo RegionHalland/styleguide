@@ -32,13 +32,11 @@
 @import '../vMolecules/navigation-left/navigation-left.settings.scss';
 
 /* vOrganismer - från gitrepon  */
+@import '../vOrganism/article-group/article-group.settings.scss';
+@import '../vOrganism/block-group/block-group.settings.scss';
 @import '../vOrganism/buttongroup/buttongroup.settings.scss';
-
-/* Organismer - fortfarande kvar i stilguiden */
-@import '../Organism/article-group/article-group.settings.scss';
-@import '../Organism/block-group/block-group.settings.scss';
-@import '../Organism/footer-group/footer-group.settings.scss';
-@import '../Organism/footer-logo-group/footer-logo-group.settings.scss';
-@import '../Organism/navigation-block-group/navigation-block-group.settings.scss';
-@import '../Organism/rh-breadcrums/breadcrums.settings.scss';
-@import '../Organism/toplinks/toplinks.settings.scss';
+@import '../vOrganism/footer-group/footer-group.settings.scss';
+@import '../vOrganism/footer-logo-group/footer-logo-group.settings.scss';
+@import '../vOrganism/navigation-block-group/navigation-block-group.settings.scss';
+@import '../vOrganism/breadcrums/breadcrums.settings.scss';
+@import '../vOrganism/toplinks/toplinks.settings.scss';

@@ -248,7 +248,67 @@
     },
     {
       "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismArticleGroup"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismBlockGroup"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismBreadcrumbs"
+    },
+    {
+      "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismButtongroup"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismCalendar"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismFeedbackLastUpdated"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismFooter"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismFooterGroup"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismFooterLogo"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismFooterLogoGroup"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismHeader"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismMainNav"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismNavigationBlockGroup"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismSearch"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismTable"
+    },
+    {
+      "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismToplinks"
     },
     {
       "type": "git",
@@ -265,15 +325,19 @@
     "regionhalland/region-halland-composer-custom-installer": "1.0.0",
     "regionhalland/article": "1.0.0.20191121",
     "regionhalland/article-block": "1.0.1",
+    "regionhalland/article-group": "1.0.0.20191123",
     "regionhalland/avatar": "1.0.0.20191121",
     "regionhalland/back-to-top": "1.1.1",
     "regionhalland/badge": "1.0.0.20191121",
     "regionhalland/block": "1.2.0",
+    "regionhalland/block-group": "1.0.0.20191123",
     "regionhalland/block-shortcuts": "1.0.0",
     "regionhalland/blurbs": "1.0.0.20191121",
+    "regionhalland/breadcrumbs": "1.0.0.20191123",
     "regionhalland/button": "1.0.0.201911151540",
     "regionhalland/buttongroup": "1.0.0.201911081257",
     "regionhalland/buttongroup-elements": "1.0.0.20191108",
+    "regionhalland/calendar": "1.0.0.20191123",
     "regionhalland/calendar-element": "1.0.0.20191121",
     "regionhalland/caption-hero": "1.0.1",
     "regionhalland/card": "1.0.0.20191121",
@@ -282,11 +346,17 @@
     "regionhalland/event-card-calendar": "1.0.0.20191121",
     "regionhalland/feedback": "1.0.0.20191121",
     "regionhalland/feedback-form": "1.0.0.20191121",
+    "regionhalland/feedback-last-updated": "1.0.0.20191123",
     "regionhalland/filter": "1.0.0.20191121",
     "regionhalland/filter-alphabet": "1.0.0",
+    "regionhalland/footer": "1.0.0.20191123",
+    "regionhalland/footer-group": "1.0.0.20191123",
+    "regionhalland/footer-logo": "1.0.0.20191123",
+    "regionhalland/footer-logo-group": "1.0.0.20191123",
     "regionhalland/form": "1.0.0.20191121",
     "regionhalland/form-control-text": "1.0.0.20191121",
     "regionhalland/form-control-textarea": "1.0.0.20191121",
+    "regionhalland/header": "1.0.0.20191123",
     "regionhalland/heading-underlined": "1.0.0.201911120940",
     "regionhalland/image-caption": "1.0.0",
     "regionhalland/image-hero": "1.0.1",
@@ -297,11 +367,13 @@
     "regionhalland/linkgroup": "1.0.0.20191121",
     "regionhalland/lists": "1.0.0.20191121",
     "regionhalland/logo-sitename": "1.0.0.20191121",
+    "regionhalland/main-nav": "1.0.0.20191123",
     "regionhalland/menu": "1.0.0.20191122",
     "regionhalland/menu-mobile": "1.0.0.20191122",
     "regionhalland/message-cookies": "1.0.0",
     "regionhalland/messages": "1.0.0.20191122",
     "regionhalland/navigation-block": "1.0.0.20191122",
+    "regionhalland/navigation-block-group": "1.0.0.20191123",
     "regionhalland/navigation-card": "1.0.0.20191122",
     "regionhalland/navigation-left": "1.1.0",
     "regionhalland/news-info": "1.0.0.20191122",
@@ -310,13 +382,16 @@
     "regionhalland/pagination-elements": "1.0.0.20191112",
     "regionhalland/personal-info": "1.0.0.20191122",
     "regionhalland/round-button": "1.0.0.20191121",
+    "regionhalland/search": "1.0.0.20191123",
     "regionhalland/search-elements": "1.0.0.20191122",
     "regionhalland/search-external-link": "1.0.0.20191122",
     "regionhalland/search-external-link-1177": "1.0.0.20191122",
     "regionhalland/search-field": "1.0.0.20191121",
     "regionhalland/secondary-nav": "1.0.0.20191122",
+    "regionhalland/table": "1.0.0.20191123",
     "regionhalland/tabs": "1.0.0.20191122",
     "regionhalland/text": "1.0.0.20191121",
+    "regionhalland/toplinks": "1.0.0.20191123",
     "regionhalland/unit-info": "1.0.0.20191122",
     "regionhalland/video": "1.0.0.20191122",
     "regionhalland/visual-element": "1.0.0.20191113",

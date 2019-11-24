@@ -1,9 +1,0 @@
-/* Needed components
--> /components/Molecules/block/_block.scss
-*/
-
-.rh-block-group {
-    @if $block-group__container--background-color {
-        background-color: $block-group__container--background-color;
-    }
-}
