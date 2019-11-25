@@ -1,0 +1,149 @@
+// BEWARE! These common classes are included in a website's settings. Here is only a template
+
+// "Talande webb"
+#__ba_panel {
+    display: none;
+}
+
+// Specific rh-article
+.rh-article {
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	figure {
+		max-width: 100%;
+		height: auto;
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 2ex;
+        line-height: 1.37em;
+    }
+
+    ol {
+        list-style-type: decimal;
+        padding-left: 2ex;
+        line-height: 1.37em;
+    }
+}
+
+// Content navigation
+.content-nav {
+    &__item {
+        border-left: 4px solid #E4E4E4;
+        line-height: 1.4;
+        padding-left: 1ex;
+        padding-top: 0.8ex;
+        padding-bottom: 0.8ex;
+
+        &:hover {
+            border-left: 4px solid #005069;
+        }
+
+        &-level {
+            &--3 {
+                padding-left: 2ex;
+            }
+
+            &--4 {
+                padding-left: 4ex;
+            }
+        }
+
+        &-link {
+            text-decoration: none;
+            color: black;
+        }
+
+        &-container {
+            background-color: white;
+        }
+
+        &--tight {
+            line-height: 1.1;
+            padding-top: 0.2ex;
+            padding-bottom: 0.2ex;
+        }
+    }
+}
+
+// Jump to content
+.jump-to-content {
+    display: block;
+    background: #fff;
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    height: 0;
+
+    &:focus {
+        position: initial;
+        background: #fcaf15;
+        padding: 0.5rem;
+        height: auto;
+        color: black;
+    }
+}
+
+// Get sticky
+.rh-get-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0.9375em; //15px;
+}
+
+.rh-get-fixed-sticky {
+    position: fixed;
+    top: 0.9375em; //15px;
+}
+
+// Content highlight
+$contentHighLight--background-color: #417795;
+$contentHighLight--animation-duration: 1.5s;
+$contentHighLight--animation-iteration-count: 1;
+$contentHighLight--cubic-bezier: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+.content-highlight {
+    animation-name: content-hightlight-animation;
+    -webkit-animation-name: content-hightlight-animation;
+    -moz-animation-name: content-hightlight-animation;
+    -o-animation-name: content-hightlight-animation;
+
+    animation-duration: $contentHighLight--animation-duration;
+    -webkit-animation-duration: $contentHighLight--animation-duration;
+    -moz-animation-duration: $contentHighLight--animation-duration;
+    -o-animation-duration: $contentHighLight--animation-duration;
+
+    animation-timing-function: $contentHighLight--cubic-bezier;
+    -webkit-animation-timing-function: $contentHighLight--cubic-bezier;
+    -moz-animation-timing-function: $contentHighLight--cubic-bezier;
+    -o-animation-timing-function: $contentHighLight--cubic-bezier;
+
+    animation-iteration-count: $contentHighLight--animation-iteration-count;
+    -webkit-animation-iteration-count: $contentHighLight--animation-iteration-count;
+    -moz-animation-iteration-count: $contentHighLight--animation-iteration-count;
+    -o-animation-iteration-count: $contentHighLight--animation-iteration-count;
+}
+
+@keyframes content-hightlight-animation {
+    0% { background: $contentHighLight--background-color; }
+    100% { background: none; }
+}
+
+@-webkit-keyframes content-hightlight-animation {
+    0% { background: $contentHighLight--background-color; }
+    100% { background: none; }
+}
+
+@-moz-keyframes content-hightlight-animation {
+    0% { background: $contentHighLight--background-color; }
+    100% { background: none; }
+}
+
+@-o-keyframes content-hightlight-animation {
+    0% { background: $contentHighLight--background-color; }
+    100% { background: none; }
+}
