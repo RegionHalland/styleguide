@@ -24,63 +24,68 @@ const helpMessage = `\n\x1b[33m💡\x1b[0m Run \x1b[33m$ gulp help\x1b[0m to vie
  * @param {string} alias is like as --alias
  */
 function getOptionsHelper(option, alias) {
-    const argList = process.argv.slice(3);
-    let argIndex = -1; // Not found anything is default
+    try {
+        const argList = process.argv.slice(3);
+        let argIndex = -1; // Not found anything is default
 
-    const optionIndex = argList.indexOf(option),
-        aliasIndex = argList.indexOf(alias);
+        const optionIndex = argList.indexOf(option),
+            aliasIndex = argList.indexOf(alias);
 
-    if (optionIndex > -1) {
-        argIndex = optionIndex; // Option is found
-    } else if (optionIndex < 0 && aliasIndex > -1) {
-        argIndex = aliasIndex; // Alias is found
-    }
+        if (optionIndex > -1) {
+            argIndex = optionIndex; // Option is found
+        } else if (optionIndex < 0 && aliasIndex > -1) {
+            argIndex = aliasIndex; // Alias is found
+        }
 
-    if (argIndex < 0) {
-        return null;
-    } else {
-        const nextArg = argList[argIndex + 1];
-        return (!nextArg || nextArg[0] === "-") ? true : nextArg;
-    }
+        if (argIndex < 0) {
+            return null;
+        } else {
+            const nextArg = argList[argIndex + 1];
+            return (!nextArg || nextArg[0] === "-") ? true : nextArg;
+        }
+    } catch (error) { return error; }
 }
 
 function identifyFlag(inputArg) {
-    if (inputArg.charAt(0) === "-" && inputArg.charAt(1) !== "-"
-        || inputArg.charAt(0) === "-" && inputArg.charAt(1) === "-"
-    ) {
-        return true;
-    } else {
-        return false;
-    }
+    try {
+        if (inputArg.charAt(0) === "-" && inputArg.charAt(1) !== "-"
+            || inputArg.charAt(0) === "-" && inputArg.charAt(1) === "-"
+        ) {
+            return true;
+        } else {
+            return false;
+        }
+    } catch (error) { return error; }
 }
 
 function getCommandParams() {
-    const argList = process.argv.slice(3),
-        argListLength = argList.length;
+    try {
+        const argList = process.argv.slice(3),
+            argListLength = argList.length;
 
-    let mainFlag,
-        subFlags = [],
-        argument = [];
+        let mainFlag,
+            subFlags = [],
+            argument = [];
 
-    for (let i = 0; i < argListLength; ++i) {
-        if (identifyFlag(argList[i])) {
-            if (i === 0) {
-                mainFlag = argList[i];
+        for (let i = 0; i < argListLength; ++i) {
+            if (identifyFlag(argList[i])) {
+                if (i === 0) {
+                    mainFlag = argList[i];
+                } else {
+                    subFlags = subFlags.concat([argList[i]]);
+                }
+
             } else {
-                subFlags = subFlags.concat([argList[i]]);
+                argument = argument.concat([argList[i]]);
             }
-
-        } else {
-            argument = argument.concat([argList[i]]);
         }
-    }
 
-
-    return {
-        mainFlag: mainFlag,
-        subFlags: subFlags,
-        argument: argument
-    };
+        return {
+            mainFlag: mainFlag,
+            subFlags: subFlags,
+            argument: argument
+        };
+    } catch (error) { return error; }
 }
 
 function findFirstByProperty(objectArray, sPropertyName, sSeekingValue) {
@@ -115,6 +120,7 @@ function indentifySASSCompilingError(objResult = []) {
                     errorObject = (objResult[i] instanceof Error) ?
                         objResult[i] :
                         new Error("An error occurred while compiling SASS");
+
                     break;
                 }
             }
@@ -126,24 +132,26 @@ function indentifySASSCompilingError(objResult = []) {
             return reject(errorObject);
 
         } else {
-            reject(new Error("Input data must be an array"));
+            return reject(new Error("Input data must be an array"));
         }
     });
 }
 
 function showResult(resultPath, result, resultType, options = {}) {
-    let message = "";
+    try {
+        let message = "";
 
-    if (isFileExists(resultPath)) {
-        message = `\nChosen options -> overwrite: ${options.overWrite ? "\x1b[32m✓ yes\x1b[0m" : "\x1b[31m✗ no\x1b[0m"}` +
-            ` - minify: ${options.minify ? "\x1b[32m✓ yes\x1b[0m" : "\x1b[31m✗ no\x1b[0m"}` +
-            `\n\n\x1b[32m✓ ${resultType}\x1b[0m -> \x1b[90m/${resultPath}/\x1b[0m -> ${result}`;
+        if (isFileExists(resultPath)) {
+            message = `\nChosen options -> overwrite: ${options.overWrite ? "\x1b[32m✓ yes\x1b[0m" : "\x1b[31m✗ no\x1b[0m"}` +
+                ` - minify: ${options.minify ? "\x1b[32m✓ yes\x1b[0m" : "\x1b[31m✗ no\x1b[0m"}` +
+                `\n\n\x1b[32m✓ ${resultType}\x1b[0m -> \x1b[90m/${resultPath}/\x1b[0m -> ${result}`;
 
-    } else {
-        message = `\n\x1b[33m? Skipped\x1b[0m -> \x1b[90m/${resultPath}/\x1b[0m -> ${result}`;
-    }
+        } else {
+            message = `\n\x1b[33m? Skipped\x1b[0m -> \x1b[90m/${resultPath}/\x1b[0m -> ${result}`;
+        }
 
-    console.log(message);
+        return console.log(message);
+    } catch (error) { return error; }
 }
 
 /* --------------------------------------- LOGIC ----------------------------- */
@@ -157,15 +165,13 @@ function showResult(resultPath, result, resultType, options = {}) {
  */
 function jsBuild(cb, jsFilename, jsResources, destPath, options = {}) {
     return new Promise((resolve, reject) => {
-        const gulpOptions = {
-            allowEmpty: true,
-            overwrite: options.overWrite || false // False is default
-        };
+        const srcOptions = { allowEmpty: true },
+            destOptions = { overwrite: options.overWrite || false }; // False is default
 
         const jsFullFilename = `${jsFilename}.js`;
         const jsDestPath = destPath;
 
-        src(jsResources, gulpOptions)
+        src(jsResources, srcOptions)
             .pipe(sourcemaps.init())
             .pipe(babel({
                 presets: ['@babel/preset-env'],
@@ -173,7 +179,7 @@ function jsBuild(cb, jsFilename, jsResources, destPath, options = {}) {
             }))
             .pipe(concat(jsFullFilename))
             .pipe(sourcemaps.write('.'))
-            .pipe(dest(jsDestPath, gulpOptions))
+            .pipe(dest(jsDestPath, destOptions))
             .on('end', () => resolve(jsFullFilename))
             .on('error', (err) => reject(err));
 
@@ -191,15 +197,13 @@ function jsBuild(cb, jsFilename, jsResources, destPath, options = {}) {
  */
 function jsMinify(cb, jsFilename, jsResources, destPath, options = {}) {
     return new Promise((resolve, reject) => {
-        const gulpOptions = {
-            allowEmpty: true,
-            overwrite: options.overWrite || false // False is default
-        };
+        const srcOptions = { allowEmpty: true },
+            destOptions = { overwrite: options.overWrite || false }; // False is default
 
         const jsFullFilename = `${jsFilename}.js`;
         const jsDestPath = destPath;
 
-        src(jsResources, gulpOptions)
+        src(jsResources, srcOptions)
             .pipe(sourcemaps.init())
             .pipe(babel({
                 presets: ['@babel/preset-env'],
@@ -208,7 +212,7 @@ function jsMinify(cb, jsFilename, jsResources, destPath, options = {}) {
             .pipe(concat(jsFullFilename))
             .pipe(uglify())
             .pipe(sourcemaps.write('.'))
-            .pipe(dest(jsDestPath, gulpOptions))
+            .pipe(dest(jsDestPath, destOptions))
             .on('end', () => resolve(jsFullFilename))
             .on('error', (err) => reject(err));
 
@@ -226,20 +230,18 @@ function jsMinify(cb, jsFilename, jsResources, destPath, options = {}) {
  */
 function scssBuild(cb, cssFilename, scssResource, destPath, options = {}) {
     return new Promise((resolve, reject) => {
-        const gulpOptions = {
-            allowEmpty: true,
-            overwrite: options.overWrite || false // False is default
-        };
+        const srcOptions = { allowEmpty: true },
+            destOptions = { overwrite: options.overWrite || false }; // False is default
 
         const cssFullFilename = `${cssFilename}.css`;
         const cssDestPath = destPath;
 
-        src(scssResource, gulpOptions)
+        src(scssResource, srcOptions)
             .pipe(sourcemaps.init())
             .pipe(sass.sync().on('error', (err) => reject(err)))
             .pipe(concat(cssFullFilename))
             .pipe(sourcemaps.write('.'))
-            .pipe(dest(cssDestPath, gulpOptions))
+            .pipe(dest(cssDestPath, destOptions))
             .on('error', (err) => reject(err))
             .on('end', () => resolve(cssFullFilename));
 
@@ -257,15 +259,13 @@ function scssBuild(cb, cssFilename, scssResource, destPath, options = {}) {
  */
 function scssMinify(cb, cssFilename, scssResource, destPath, options = {}) {
     return new Promise((resolve, reject) => {
-        const gulpOptions = {
-            allowEmpty: true,
-            overwrite: options.overWrite || false // False is default
-        };
+        const srcOptions = { allowEmpty: true },
+            destOptions = { overwrite: options.overWrite || false }; // False is default
 
         const cssFullFilename = `${cssFilename}.css`;
         const cssDestPath = destPath;
 
-        src(scssResource, gulpOptions)
+        src(scssResource, srcOptions)
             .pipe(sourcemaps.init())
             .pipe(
                 sass.sync({ outputStyle: 'compressed' })
@@ -273,7 +273,7 @@ function scssMinify(cb, cssFilename, scssResource, destPath, options = {}) {
             )
             .pipe(concat(cssFullFilename))
             .pipe(sourcemaps.write('.'))
-            .pipe(dest(cssDestPath, gulpOptions))
+            .pipe(dest(cssDestPath, destOptions))
             .on('error', (err) => reject(err))
             .on('end', () => resolve(cssFullFilename));
 
@@ -505,8 +505,8 @@ function release_styling_for_all_sites(cb, options = {}) {
 function buildSites(cb) {
     const { mainFlag, subFlags, argument } = getCommandParams();
     const options = {
-        overWrite: subFlags.indexOf("-o") > -1 ? true : false, //overwrite - Default is false
-        minify: subFlags.indexOf("-m") > -1 ? true : false //minify - Default is false
+        overWrite: subFlags.includes("-o") || subFlags.includes("--overwrite"), //overwrite - Default is false
+        minify: subFlags.includes("-m") || subFlags.includes("--minify") //minify - Default is false
     };
 
     switch (mainFlag) {
@@ -541,8 +541,8 @@ function buildSites(cb) {
 function releaseSites(cb) {
     const { mainFlag, subFlags, argument } = getCommandParams();
     const options = {
-        overWrite: subFlags.indexOf("-o") > -1 ? true : false, //overwrite - Default is false
-        minify: subFlags.indexOf("-m") > -1 ? true : false //minify - Default is false
+        overWrite: subFlags.includes("-o") || subFlags.includes("--overwrite"), //overwrite - Default is false
+        minify: subFlags.includes("-m") || subFlags.includes("--minify") //minify - Default is false
     };
 
     switch (mainFlag) {

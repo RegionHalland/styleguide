@@ -35,15 +35,15 @@ _(*) Must have_
 ### Sub options
 Beware using with the options are below:
 
-|Sub option|Description|
-|---|---|
-|`-o`|Overwrite existing files |
-|`-m`|Minify both CSS and JS|
+|Sub option|Alias|Description|
+|---|---|---|
+|`-o`|`--overwrite`|Overwrite existing files |
+|`-m`|`--minify`|Minify both CSS and JS|
 
 Example for using sub options:
 * `$ gulp builds -s -m -o projectX`
 * `$ gulp releases -s -m nextProject`
-* `$ gulp releases --site -m lastProject` _(Using alias)_
+* `$ gulp releases --site --overwrite --minify lastProject` _(Using alias)_
 
 ### Examples
 ```
@@ -68,6 +68,12 @@ $ gulp help
 * View more in `/gulpfile.js` to know how the add-on works.
 
 ## Release notes:
+### 1.3.3 (2019-11-25)
+* Improved performance.
+* Added alias for using overwriting and minification:
+    * `--overwrite`
+    * `--minify`
+
 ### 1.3.2 (2019-11-21)
 * Improved performance.
 
