@@ -4,6 +4,12 @@
 * Fitxat prefix för filnamn i Organisms/__breadcrumbs__ komponent. Det börjar med `breadcrumbs*`.
 * Uppdaterat dependencies för byggmiljö _(Babel, ESLint)_.
 
+## 9.9.3
+Template "general/content page" korrigerad då en ingående komponent inte längre har prefix.
+
+## 9.9.2
+Korrigerad namngivning där "breadcrumbs" saknade en bokstav
+
 ## 9.9.1
 Namngivning av mappar återgått till atoms, molecules, organisms, templates utan "v" efter att alla komponenter flyttat till gitrepon.
 OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.

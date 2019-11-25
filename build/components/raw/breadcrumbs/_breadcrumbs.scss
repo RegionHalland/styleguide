@@ -1,0 +1,104 @@
+.rh-breadcrumbs {
+
+    /* Visuellt */
+    background-color: $white;
+    @if $breadcrums--border-bottom {
+        border-bottom: $breadcrums--border-bottom;
+    }
+
+    @if $breadcrums--border-top {
+        border-top: 1px solid $breadcrums--border-top;
+    }
+    list-style: none;
+    padding-bottom: em(15);
+    padding-top: em(15);
+}
+
+.rh-breadcrumbs__item {
+
+    /* Box-modell/beteende */
+    display: inline;
+
+    &:after {
+
+        /* Visuellt */
+        @if $breadcrumbs__icon--margin-left {
+            margin-left: $breadcrumbs__icon--margin-left;
+        }
+
+        @if $breadcrumbs__icon--margin-right {
+            margin-right: $breadcrumbs__icon--margin-right;
+        }
+
+        /* Typografi */
+        color: $grey-base;
+        font-weight: normal;
+        font-family: "feather";
+
+        /* Visuellt */
+        content: "\e844";
+    }
+
+    &:last-child {
+        &:after {
+
+            /* Visuellt */
+            margin-left: 0;
+            content: "";
+        }
+    }
+}
+
+.rh-breadcrumbs__link {
+
+    /* Visuellt */
+    @if $breadcrumbs__item-link--margin-left {
+        margin-left: $breadcrumbs__item-link--margin-left; //em(12);
+    }
+
+    @if $breadcrumbs__item-link--margin-right {
+        margin-right: $breadcrumbs__item-link--margin-right;
+    }
+
+    padding-top: em(15);
+    padding-bottom: em(16);
+
+    @include medium {
+        padding-bottom: em(14);
+    }
+
+    @include large {
+        padding-bottom: em(14);
+    }
+
+    /* Typografi */
+    color: $black;
+    font-size: $p-small;
+
+    @include medium {
+        font-size: $p-medium;
+    }
+
+    @include large {
+        font-size: $p-large;
+    }
+
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+        /* Visuellt */
+        border-bottom: $breadcrumbs__item--border-bottom;
+    }
+
+    // &--vuxhalland {
+
+    //     &:hover,
+    //     &:active,
+    //     &:focus {
+    //         /* Visuellt */
+    //         border-bottom: 3px solid $vuxhalland2;
+    //     }
+    // }
+}
