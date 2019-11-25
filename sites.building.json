@@ -44,7 +44,7 @@
         },
         {
             "name": "terapirekommendationer",
-            "version": "1.0.0",
+            "version": "1.2.0",
             "resources": {
                 "jsComponents": [
                     "components/Molecules/back-to-top/back-to-top.js",
@@ -109,7 +109,7 @@
         },
         {
             "name": "stilguide",
-            "version": "9.9.3",
+            "version": "9.9.4",
             "resources": {
                 "jsComponents": [
                     "components/Molecules/rh-video/rh-video.js",

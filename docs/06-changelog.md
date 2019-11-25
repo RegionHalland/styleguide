@@ -1,5 +1,9 @@
 # Versioner av stilguiden och deras ändringar
 
+## 9.9.4 (2019-11-25)
+* Byggmiljö får bättre prestanda och felhantering.
+* Uppdaterat filen `site.building.json`.
+
 ## 9.9.3
 Template "general/content page" korrigerad då en ingående komponent inte längre har prefix.
 
