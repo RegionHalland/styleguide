@@ -1,5 +1,33 @@
 # Versioner av stilguiden och deras ändringar
 
+## 9.9.2 (2019-11-25)
+* Fitxat prefix för filnamn i Organisms/__breadcrumbs__ komponent. Det börjar med `breadcrumbs*`.
+* Uppdaterat dependencies för byggmiljö _(Babel, ESLint)_.
+
+## 9.9.1
+Namngivning av mappar återgått till atoms, molecules, organisms, templates utan "v" efter att alla komponenter flyttat till gitrepon.
+OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.
+
+## 9.9.0
+### Organismer som flyttat till gitrepon och fått nya sökvägar:
+* Article group
+* Block group
+* Breadcrumbs
+* Calendar
+* Feedback last updated
+* Footer
+* Footer group
+* Footer logo
+* Footer logo group
+* Header
+* Main nav
+* Navigation block group
+* Search
+* Table
+* Toplinks
+
+(Ett antal av dessa har också rensats på prefixet "Rh" i navigationen och sökvägar)
+
 ## 9.8.1 (2019-11-22)
 * Förbättring av:
     * Grid system.
@@ -8,7 +36,7 @@
 
 ## 9.8.0
 
-### Molekyler som flyttat till gitrepon och fått nya sökvar:
+### Molekyler som flyttat till gitrepon och fått nya sökvägar:
 * Menu
 * Menu Mobile
 * Messages

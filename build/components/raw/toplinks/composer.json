@@ -1,0 +1,13 @@
+{
+    "name": "regionhalland/toplinks",
+    "description": "Toplinks",
+    "type": "styleguide-organism",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Roland Hydén",
+            "email": "Roland.Hyden@Regionhalland.se"
+        }
+    ],
+    "require": {}
+}

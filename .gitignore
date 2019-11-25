@@ -18,17 +18,17 @@ vendor
 composer.lock
 
 # Atoms
-components/vAtoms/*
-!components/vAtoms/.gitkeep
+components/Atoms/*
+!components/Atoms/.gitkeep
 
 # Molecules
-components/vMolecules/*
-!components/vMolecules/.gitkeep
+components/Molecules/*
+!components/Molecules/.gitkeep
 
 # Organism
-components/vOrganism/*
-!components/vOrganism/.gitkeep
+components/Organisms/*
+!components/Organisms/.gitkeep
 
 # Organism
-components/vTemplates/*
-!components/vTemplates/.gitkeep
+components/Templates/*
+!components/Templates/.gitkeep
