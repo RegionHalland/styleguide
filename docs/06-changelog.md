@@ -1,5 +1,9 @@
 # Versioner av stilguiden och deras ändringar
 
+## 9.9.5 
+* Breadcrumbs fått status "rework" och planerad utveckling i readme-filen.
+* De nu oanvända mapparna "releases" och "sites" har raderats.
+
 ## 9.9.4 (2019-11-25)
 * Byggmiljö får bättre prestanda och felhantering.
 * Uppdaterat filen `site.building.json`.
