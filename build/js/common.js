@@ -1,13 +1,21 @@
 /**
- * Needed functions in library.js
+ * Needed functions in /public/js/library.js
  * - setCookie()
  * - debounce()
+ *
+ * Needed CSS-classes in /components/scss/_common.scss
  */
 
+/**
+ * FUNCTIONS:
+ * - Content highlight
+ * - Content navigation (Using for "Hitta pa sidan")
+ * - Cookie accept (Using for cookie-notice component)
+ */
 $(document).ready(function () {
-    // ************************************
-    // *** Find on page scroll function ***
-    // ************************************
+    // *************************
+    // *** Content highlight ***
+    // *************************
     $('a[href^="#"]').on("click", function () {
         var target = $(this.hash);
         if (target.length) {
@@ -23,9 +31,9 @@ $(document).ready(function () {
         }
     });
 
-    // *****************************
-    // ***   Content navigation  ***
-    // *****************************
+    // **************************
+    // *** Content navigation ***
+    // **************************
     if ($("body.page-template-default")[0]) {
         var $contentNavPlaceHolder = $('#content-nav-placeholder'),
             $contentNavContainer = $("#content-nav-container");
