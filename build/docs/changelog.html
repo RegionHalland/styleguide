@@ -124,6 +124,27 @@
     
     
     <h1 id="versioner-av-stilguiden-och-deras-ändringar">Versioner av stilguiden och deras ändringar</h1>
+<h2 id="1000">10.0.0</h2>
+<h3 id="brytande-ändringar">Brytande ändringar</h3>
+<h4 id="atomen-pagination-elements">Atomen “pagination elements”</h4>
+<ul>
+<li><code>--left</code> ersätter <code>-previous</code></li>
+<li><code>--right</code> ersätter <code>next</code></li>
+</ul>
+<h4 id="molekylen-pagination">Molekylen “pagination”</h4>
+<ul>
+<li>Klassen <code>rh-pagination-group</code> är raderad. Funktionen har tagits över av existerande <code>rh-pagination-link</code>.</li>
+</ul>
+<h4 id="andra-ändringar">Andra ändringar</h4>
+<ul>
+<li>Config och .hbs genomgången på “pagination elements” och “pagination”</li>
+<li>Mindre ändring i labels och dess sökväg.</li>
+</ul>
+<h2 id="995">9.9.5</h2>
+<ul>
+<li>Breadcrumbs fått status “rework” och planerad utveckling i readme-filen.</li>
+<li>De nu oanvända mapparna “releases” och “sites” har raderats.</li>
+</ul>
 <h2 id="994-2019-11-25">9.9.4 (2019-11-25)</h2>
 <ul>
 <li>Byggmiljö får bättre prestanda och felhantering.</li>
@@ -359,7 +380,7 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 </li>
 </ul>
 <h2 id="900">9.0.0</h2>
-<h3 id="brytande-ändringar">Brytande ändringar</h3>
+<h3 id="brytande-ändringar-1">Brytande ändringar</h3>
 <h4 id="molekylen-rh-shortcuts">Molekylen “rh shortcuts”</h4>
 <ul>
 <li>Molekylen flyttat till ett vMolecules och fått ny sökväg</li>
@@ -415,7 +436,7 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 <li>Image hero 1.0.0 - molekyl</li>
 <li>Image caption 1.0.0 - molekyl</li>
 </ul>
-<h3 id="andra-ändringar">Andra ändringar</h3>
+<h3 id="andra-ändringar-1">Andra ändringar</h3>
 <ul>
 <li>Article block 1.0.0 - Introducerat versionshistorik för komponeten under “Notes”</li>
 </ul>
@@ -518,7 +539,7 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 <li>Molekylen “back to top” angiven som klar.</li>
 </ul>
 <h2 id="700">7.0.0</h2>
-<h3 id="brytande-ändringar-1">Brytande ändringar</h3>
+<h3 id="brytande-ändringar-2">Brytande ändringar</h3>
 <ul>
 <li>“Iconlink”-molekylen raderad.</li>
 </ul>
@@ -1361,17 +1382,6 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
         
     
         
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-label">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Label</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
-            
-            
-            
-            
-    
-        
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../components/detail/labels.html" data-pjax>
@@ -1392,11 +1402,6 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 
 
             </a>
-        </li>
-        
-    
-
-            </ul>
         </li>
         
     
@@ -1513,10 +1518,21 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-pagination-elements">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Pagination Elements</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/pagination-elements.html" data-pjax>
-                <span>Pagination Elements</span>
+            <a class="Tree-entityLink" href="../components/detail/pagination-elements--default.html" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1533,6 +1549,83 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/pagination-elements--current.html" data-pjax>
+                <span>Current</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/pagination-elements--left.html" data-pjax>
+                <span>Left</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/pagination-elements--right.html" data-pjax>
+                <span>Right</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
