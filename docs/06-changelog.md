@@ -1,5 +1,9 @@
 # Versioner av stilguiden och deras ändringar
 
+## 10.0.1
+Ändringar: 
+* Molekylen "Feedback" renderar button istället för att hårdkoda
+
 ## 10.0.0
 ### Brytande ändringar 
 #### Atomen "pagination elements" 
