@@ -1,5 +1,18 @@
 # Versioner av stilguiden och deras ändringar
 
+## 10.0.0
+### Brytande ändringar 
+#### Atomen "pagination elements" 
+* `--left` ersätter `-previous`
+* `--right` ersätter `next`
+
+#### Molekylen "pagination"
+* Klassen `rh-pagination-group` är raderad. Funktionen har tagits över av existerande `rh-pagination-link`.
+
+#### Andra ändringar
+* Config och .hbs genomgången på "pagination elements" och "pagination"
+* Mindre ändring i labels och dess sökväg.
+
 ## 9.9.5 
 * Breadcrumbs fått status "rework" och planerad utveckling i readme-filen.
 * De nu oanvända mapparna "releases" och "sites" har raderats.

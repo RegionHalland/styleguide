@@ -109,7 +109,7 @@
         },
         {
             "name": "stilguide",
-            "version": "9.9.5",
+            "version": "10.0.0",
             "resources": {
                 "jsComponents": [
                     "components/Molecules/rh-video/rh-video.js",
