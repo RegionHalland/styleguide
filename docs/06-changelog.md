@@ -1,8 +1,13 @@
 # Versioner av stilguiden och deras ändringar
 
-## 10.0.1
+
+
+## 10.1.0
 Ändringar: 
 * Molekylen "Feedback" renderar button istället för att hårdkoda
+* Organismen "Feedback last updated" har fått en ny .hbs-fil utan hårdkodade komponenter. 
+* Atomen "Heading underlined" har fått större omarbetning
+* Organismen "Article group" använder nu atomen "Heading underlined" och har färre egna regler.
 
 ## 10.0.0
 ### Brytande ändringar 
