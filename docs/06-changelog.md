@@ -1,17 +1,19 @@
 # Versioner av stilguiden och deras ändringar
 
-
+## 10.1.1 (2019-12-09)
+* Atomen "button" har fått separata effekter _(:hover, :active, :focus)_ och det blir enklare och mer flexibel för att justera inställningar.
+* Dependencies har uppdaterats _(Fractal, Babel, ESLint o.s.v.)_
 
 ## 10.1.0
-Ändringar: 
+Ändringar:
 * Molekylen "Feedback" renderar button istället för att hårdkoda
-* Organismen "Feedback last updated" har fått en ny .hbs-fil utan hårdkodade komponenter. 
+* Organismen "Feedback last updated" har fått en ny .hbs-fil utan hårdkodade komponenter.
 * Atomen "Heading underlined" har fått större omarbetning
 * Organismen "Article group" använder nu atomen "Heading underlined" och har färre egna regler.
 
 ## 10.0.0
-### Brytande ändringar 
-#### Atomen "pagination elements" 
+### Brytande ändringar
+#### Atomen "pagination elements"
 * `--left` ersätter `-previous`
 * `--right` ersätter `next`
 
@@ -22,7 +24,7 @@
 * Config och .hbs genomgången på "pagination elements" och "pagination"
 * Mindre ändring i labels och dess sökväg.
 
-## 9.9.5 
+## 9.9.5
 * Breadcrumbs fått status "rework" och planerad utveckling i readme-filen.
 * De nu oanvända mapparna "releases" och "sites" har raderats.
 
