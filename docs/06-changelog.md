@@ -1,5 +1,8 @@
 # Versioner av stilguiden och deras ändringar
 
+## 11.0.0 (2019-12-10)
+* Brytande ändringar: Molekylen "Event card calendar" omimplementerad.
+
 ## 10.1.1 (2019-12-09)
 * Atomen "button" har fått separata effekter _(:hover, :active, :focus)_ och det blir enklare och mer flexibel för att justera inställningar.
 * Dependencies har uppdaterats _(Fractal, Babel, ESLint o.s.v.)_
