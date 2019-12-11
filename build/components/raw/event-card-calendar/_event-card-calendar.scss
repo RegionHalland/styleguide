@@ -1,154 +1,152 @@
 .rh-event-card-calendar {
     /* Positionering */
-    align-items: flex-start;
+    align-items: $EVENT-CARD-CALENDAR--ALIGN-ITEMS;
 
     /* Box-modell/beteende */
-    display: flex;
+    display: $EVENT-CARD-CALENDAR--DISPLAY;
 
-    &-small {
+    &--small {
         /* Positionering */
-        align-items: center;
+        align-items: $EVENT-CARD-CALENDAR--SMALL--ALIGN-ITEMS;
 
         /* Box-modell/beteende */
-        margin-top: em(2);
+        margin-top: $EVENT-CARD-CALENDAR--SMALL--MARGIN-TOP;
     }
 
-    &-date {
+    &__date {
         /* Positionering */
-        align-content: center;
+        align-content: $EVENT-CARD-CALENDAR__DATE--ALIGN-CONTENT;
 
         /* Box-modell/beteende */
-        flex: 0 0 60px;
-        height: 60px;
-        width: 60px;
+        flex: $EVENT-CARD-CALENDAR__DATE--FLEX;
+        height: $EVENT-CARD-CALENDAR__DATE--HEIGHT;
+        width: $EVENT-CARD-CALENDAR__DATE--WIDTH;
 
         /* Visuellt */
-        background-color: $base2;
+        background-color: $EVENT-CARD-CALENDAR__DATE--BACKGROUND-COLOR;
 
         /* Typografi */
-        text-align: center;
+        text-align: $EVENT-CARD-CALENDAR__DATE--TEXT-ALIGN;
 
         @include medium {
             /* Box-modell/beteende */
-            flex: 0 0 80px;
-            height: 80px;
-            width: 80px;
+            flex: $EVENT-CARD-CALENDAR__DATE--MEDIUM--FLEX;
+            height: $EVENT-CARD-CALENDAR__DATE--MEDIUM--HEIGHT;
+            width: $EVENT-CARD-CALENDAR__DATE--MEDIUM--WIDTH;
         }
+    }
 
-        &-day {
+    &__day {
+        /* Box-modell/beteende */
+        margin-top: $EVENT-CARD-CALENDAR__DAY--MARGIN-TOP;
+
+        /* Typografi */
+        color: $EVENT-CARD-CALENDAR__DAY--COLOR;
+        line-height: $EVENT-CARD-CALENDAR__DAY--LINE-HEIGHT;
+
+        @include medium {
             /* Box-modell/beteende */
-            margin-top: em(8);
-
-            /* Typografi */
-            color: $white;
-            line-height: 1.25em;
-
-            @include medium {
-                /* Box-modell/beteende */
-                margin-top: em(12);
-            }
-
-            @include large {
-                /* Box-modell/beteende */
-                margin-top: em(10);
-            }
+            margin-top: $EVENT-CARD-CALENDAR__DAY--MEDIUM--MARGIN-TOP;
         }
 
-        &-month {
-            /* Typografi */
-            color: $white;
-            line-height: 1em;
-            font-weight: normal;
+        @include large {
+            /* Box-modell/beteende */
+            margin-top: $EVENT-CARD-CALENDAR__DAY--LARGE--MARGIN-TOP;
         }
     }
 
-    &-description {
-        /* Box-modell/beteende */
-        margin-left: em(20);
-    }
-
-    &-title {
+    &__month {
         /* Typografi */
-        line-height: 1.25em;
+        color: $EVENT-CARD-CALENDAR__MONTH--COLOR;
+        line-height: $EVENT-CARD-CALENDAR__MONTH--LINE-HEIGTH;
+        font-weight: $EVENT-CARD-CALENDAR__MONTH--FONT-WEIGHT;
+    }
 
-        &-link {
+    &__description {
+        /* Box-modell/beteende */
+        margin-left: $EVENT-CARD-CALENDAR__DESCRIPTION--MARGIN-LEFT;
+    }
+
+    &__title {
+        /* Typografi */
+        line-height: $EVENT-CARD-CALENDAR__TITLE--LINE-HEIGHT; 
+    }
+
+    &__text {
+        padding-top: $EVENT-CARD-CALENDAR--TEXT--PADDING-TOP;
+    }
+
+    &__link {
+        /* Typografi */
+        font-size: $EVENT-CARD-CALENDAR__LINK--FONT-SIZE;
+        text-decoration: $EVENT-CARD-CALENDAR__LINK--TEXT-DECORATION;
+        color: $EVENT-CARD-CALENDAR__LINK--COLOR;
+
+        /* Blandat/övrigt */
+        cursor: $EVENT-CARD-CALENDAR__LINK--CUROSR;
+
+        &:hover,
+        &:active {
             /* Typografi */
-            font-size: inherit;
-            text-decoration: none;
-            color: inherit;
+            text-decoration: $EVENT-CARD-CALENDAR__LINK--HOVER--TEXT-DECORATION;
+        }
 
-            /* Blandat/övrigt */
-            cursor: pointer;
-
-            &:hover,
-            &:active {
-                /* Typografi */
-                text-decoration: underline;
-            }
-
-            &:visited {
-                /* Typografi */
-                color: $link-visited;
-            }
+        &:visited {
+            /* Typografi */
+            color: $EVENT-CARD-CALENDAR__LINK--VISITED--COLOR;
         }
     }
 
-    &-inline {
-        /* Box-modell/beteende */
-        display: inline-block;
-    }
-
-
-    &-time {
+    &__time {
         /* Typografi */
-        color: $grey-darkest;
+        color: $EVENT-CARD-CALENDAR__TIME--COLOR;
 
         &:before {
             /* Typografi */
-            font-family: "feather";
+            font-family: $EVENT-CARD-CALENDAR__TIME--BEFORE--FONT-FAMILY;
 
             /* Blandat/övrigt */
-            content: "\e84d";
+            content: $EVENT-CARD-CALENDAR__TIME--BEFORE--CONTENT;
         }
 
         &-small {
             /* Box-modell/beteende */
-            margin-bottom: 0;
+            margin-bottom: $EVENT-CARD-CALENDAR__TIME--SMALL--MARGIN-BOTTOM;
 
             /* Typografi */
-            line-height: em(10);
+            line-height: $EVENT-CARD-CALENDAR__TIME--SMALL--LINE-HEIGHT;
         }
     }
 
-    &-place {
+    &__venue {
         /* Typografi */
-        color: $grey-darkest;
+        color: $EVENT-CARD-CALENDAR__VENUE--COLOR;
 
         &:before {
             /* Typografi */
-            font-family: "feather";
-            color: $color-secondary;
+            font-family: $EVENT-CARD-CALENDAR__VENUE--BEFORE--FONT-FAMILY; 
+            color: $EVENT-CARD-CALENDAR__VENUE--BEFORE--COLOR;
 
             /* Blandat/övrigt */
-            content: "\e83f";
+            content: $EVENT-CARD-CALENDAR__VENUE--BEFORE--CONTENT;
         }
 
-        &-small {
+        &--small {
             /* Box-modell/beteende */
-            margin-bottom: 0;
+            margin-bottom: $EVENT-CARD-CALENDAR__VENUE--SMALL--MARGIN-BOTTOM;
 
             /* Typografi */
-            line-height: em(10);
+            line-height: $EVENT-CARD-CALENDAR__VENUE--SMALL--LINE-HEIGHT;
         }
     }
 
-    &__place--busy {
+    &__venue--sold-out {
         &:before {
             /* Typografi */
-            color: $warning;
+            color: $EVENT-CARD-CALENDAR__VENUE--BEFORE--SOLD-OUT--COLOR;
 
             /* Blandat/övrigt */
-            content: "\e8f6";
+            content: $EVENT-CARD-CALENDAR__VENUE--BEFORE--SOLD-OUT--CONTENT;
         }
     }
 }
