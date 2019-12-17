@@ -1,5 +1,19 @@
 # Versioner av stilguiden och deras ändringar
 
+## 11.1.0 (2019-12-17)
+* Nya funktioner:
+    * Komponent - Molecules/__block-icon-link__ -> Hela gruppen (en icon och en länk som är bredvid) är klickbar.
+    * @mixin `create-icon-button-effect`
+    * Utilities:
+        * `rh-icon--font-family` _(font-family: 'feather')_
+        * `rh-w--fit-content` _(with: fit-content)_
+* Förbättringar:
+    * Atoms/__circle-button__ _(ny beteendet `--warning`)_
+    * Molecules/__article-block__ _(använda inte längre @mixin)_
+    * Molecules/__contact-info__ _(använda inte längre @mixin)_
+
+* Brytande - Molecules/__search-external-link__: komponenten får ny beteendet `--warning` och ny struktur för återanvändning av andra komponenter som är circle-button, block-icon-link o.s.v.
+
 ## 11.0.0 (2019-12-10)
 * Brytande ändringar: Molekylen "Event card calendar" omimplementerad.
 

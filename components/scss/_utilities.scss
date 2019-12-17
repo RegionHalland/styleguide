@@ -341,3 +341,16 @@
 		}
 	}
 }
+
+.rh-icon {
+    &--font-family {
+        font-family: "feather";
+    }
+}
+
+// Width
+.rh-w {
+    &--fit-content {
+        width: fit-content; // Not work on IE11 and old MS Edge
+    }
+}
