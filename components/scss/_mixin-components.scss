@@ -1,3 +1,4 @@
+/* Removed in the next major version (Written: 2019-12-16)*/
 @mixin create-article-header($borderBottom: false) {
 	@if $borderBottom {
 		border-bottom: $borderBottom; //2px
@@ -62,8 +63,10 @@
 
 	@content;
 }
+/* Removed in the next major version (Written: 2019-12-16)*/
 
-// Using for creating an clickable element's effects (:hover - :active - :focus-within)
+
+// Using for creating an clickable element's effects (:hover - :active - :focus - :focus-within)
 // Creating border and shadow effects
 @mixin create-clickable-element-outside-effect(
 	$box-border-top-styling: false,
@@ -130,7 +133,7 @@
 	}
 }
 
-// The main function
+// The main function - Supported :hover - :active - :focus - :focus-within
 @mixin create-clickable-element-effect(
 	$element-box-classname: false,
 	$element-title-classname: false,
@@ -153,7 +156,8 @@
 		// Outside effects for the box
 		@if $box-effect-outside {
 			@at-root .#{$element-box-classname}:hover,
-				.#{$element-box-classname}:active {
+                .#{$element-box-classname}:active,
+                .#{$element-box-classname}:focus {
 				@include create-clickable-element-outside-effect(
 					$box-border-top-styling,
 					$box-border-right-styling,
@@ -179,7 +183,8 @@
 		@if $content-effect-inside {
 			@if $element-title-classname or $element-description-classname {
 				@at-root .#{$element-box-classname}:hover,
-					.#{$element-box-classname}:active {
+                    .#{$element-box-classname}:active,
+                    .#{$element-box-classname}:focus {
 					@include create-clickable-element-inside-effect(
 						$element-title-classname,
 						$element-description-classname,
@@ -206,4 +211,40 @@
 	}
 
 	@content;
+}
+
+// Make effect for an icon button - Supported :hover - :active - :focus - :focus-within
+@mixin create-icon-button-effect(
+    $containerClassName: false,
+    $iconClassName: false,
+    $bgColor: false,
+    $iconColor: false
+) {
+    @if $containerClassName and $iconClassName {
+        @at-root .#{$containerClassName}:hover,
+            .#{$containerClassName}:active,
+            .#{$containerClassName}:focus {
+                .#{$iconClassName} {
+                    @if $bgColor {
+                        background-color: $bgColor;
+                    }
+                    @if $iconColor {
+                        color: $iconColor;
+                    }
+                }
+            }
+
+        @at-root .#{$containerClassName}:focus-within {
+            .#{$iconClassName} {
+                @if $bgColor {
+                    background-color: $bgColor;
+                }
+                @if $iconColor {
+                    color: $iconColor;
+                }
+            }
+        }
+    }
+
+    @content;
 }

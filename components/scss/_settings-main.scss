@@ -161,6 +161,18 @@ $font-size-small       : em(16);
 $font-size-medium      : em(16);
 $font-size-large       : em(16);
 
+// Experimental global constants - 2019-12-12
+$FONT-SIZE--SMALL: 0.875em; //14px
+$FONT-SIZE--MEDIUM: 0.9375em; //15px
+$FONT-SIZE--STANDARD: 1em; //16px
+$FONT-SIZE--LARGE: 1.125em; //18px
+$FONT-SIZE--XLARGE: 1.25em; //20px
+$FONT-SIZE--XXLARGE: 1.375em; //22px
+$FONT-SIZE--XXXLARGE: 1.5em; //24px
+$FONT-SIZE--XXXXLARGE: 1.625em; //26px
+$FONT-SIZE--XXXXXLARGE: 1.75em; //28px
+// End of experimental global constants
+
 // Line-height
 $line-height-small 	   : em(20);
 $line-height-medium    : em(21);

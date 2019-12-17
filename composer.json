@@ -112,6 +112,10 @@
     },
     {
       "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeBlockIconLink"
+    },
+    {
+      "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeBlockShortcuts"
     },
     {
@@ -331,6 +335,7 @@
     "regionhalland/badge": "1.0.0.20191121",
     "regionhalland/block": "1.2.0",
     "regionhalland/block-group": "1.0.0.20191123",
+    "regionhalland/block-icon-link": "1.0.0.201912160910",
     "regionhalland/block-shortcuts": "1.0.0",
     "regionhalland/blurbs": "1.0.0.20191121",
     "regionhalland/breadcrumbs": "1.0.0.20191127",
