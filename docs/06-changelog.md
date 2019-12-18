@@ -1,5 +1,13 @@
 # Versioner av stilguiden och deras ändringar
 
+## 11.1.1 (2019-12-18)
+Förbättringar:
+* @mixin `create-clickable-element-effect`
+* @mixin `create-icon-button-effect`
+* Komponenten Molecules/__navigation-block__
+    * Beteenden `:focus` och `:focus-within` blir bättre på IE11 och Safari.
+    * HTML struktur blir enklare för implementation.
+
 ## 11.1.0 (2019-12-17)
 * Nya funktioner:
     * Komponent - Molecules/__block-icon-link__ -> Hela gruppen (en icon och en länk som är bredvid) är klickbar.

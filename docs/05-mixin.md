@@ -4,6 +4,7 @@ __INNEHÅLL__
 3. [create-container-p](#3-create-container-p)
 4. [iOSNoIncreaseFontSize](#4-iOSNoIncreaseFontSize)
 5. [create-clickable-element-effect](#5-create-clickable-element-effect)
+6. [create-icon-button-effect](#6-create-icon-button-effect)
 
 Filplats:
 * `/components/scss/_mixin.scss`
@@ -88,11 +89,12 @@ __Exempel__
 Funktionen genererar beteendena för en klickbar komponent _(block element)_:
 * `:hover`
 * `:active`
-* `:focus-within` _(En klickbar komponent använder `<div>` tag därför `:focus-within` används istället för `:focus`)_
+* `:focus`
+* `:focus-within`
 
 Standard struktur för en klickbar element:
 ```
-<div class="rh-element--clickable">
+<div class="rh-element--clickable" tabindex="0">
     <a href="#" class="rh-element--clickable-link"></a>
 
     <!-- Elements innehåll -->
@@ -110,12 +112,12 @@ Standard struktur för en klickbar element:
 |$element-description-classname|string|obligatorisk|Klassnamn använts till elements beskrivning|
 |$box-effect-outside|boolean|frivillig|Aktivera effekt som är runt om komponenten|
 |$content-effect-inside|boolean|frivillig|Aktivera effekt som är för innehåll i komponenten|
-|$box-border-top-styling|string|frivillig||
-|$box-border-right-styling|string|frivillig||
-|$box-border-bottom-styling|string|frivillig||
-|$box-border-left-styling|string|frivillig||
-|$box-shadow-styling|string|frivillig||
-|$box-shadow-focus-styling|string|frivillig||
+|$box-border-top|string|frivillig||
+|$box-border-right|string|frivillig||
+|$box-border-bottom|string|frivillig||
+|$box-border-left|string|frivillig||
+|$box-shadow|string|frivillig||
+|$box-shadow-focus|string|frivillig||
 |$title-text-color|string|frivillig||
 |$title-text-decoration|string|frivillig||
 |$description-text-color|string|frivillig||
@@ -126,3 +128,13 @@ __Användning__
 `@include create-clickable-element-effect(...) { //Extra styling }`
 
 __TIPS!__ Se `block` och `navigation-block` för att veta mer om hur man använder funktionen.
+
+## 6. create-icon-button-effect
+Funktionen genererar stil för en ikon som är inuti en klickbar element.
+
+|Variabel|Datatyp|Krav|Beskrivning|
+|---|:---:|:---:|---|
+|$containerClassName|string|obligatorisk||
+|$iconClassName|string|obligatorisk||
+|$bgColor|string|frivillig||
+|$iconColor|string|frivillig||

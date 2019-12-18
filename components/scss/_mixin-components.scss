@@ -67,35 +67,43 @@
 
 
 // Using for creating an clickable element's effects (:hover - :active - :focus - :focus-within)
-// Creating border and shadow effects
+// Helper - Creating border and shadow effects
 @mixin create-clickable-element-outside-effect(
-	$box-border-top-styling: false,
-	$box-border-right-styling: false,
-	$box-border-bottom-styling: false,
-	$box-border-left-styling: false,
-	$box-shadow-styling: false
+	$box-border-top: false,
+	$box-border-right: false,
+	$box-border-bottom: false,
+	$box-border-left: false,
+    $box-shadow: false,
+    $outline: false
 ) {
 	// Box - Border is outside
-	@if $box-border-top-styling {
-		border-top: $box-border-top-styling;
+	@if $box-border-top {
+		border-top: $box-border-top;
 	}
-	@if $box-border-right-styling {
-		border-right: $box-border-right-styling;
+	@if $box-border-right {
+		border-right: $box-border-right;
 	}
-	@if $box-border-bottom-styling {
-		border-bottom: $box-border-bottom-styling;
+	@if $box-border-bottom {
+		border-bottom: $box-border-bottom;
 	}
-	@if $box-border-left-styling {
-		border-left: $box-border-left-styling;
+	@if $box-border-left {
+		border-left: $box-border-left;
 	}
 
 	// Box - shadow is outside
-	@if $box-shadow-styling {
-		box-shadow: $box-shadow-styling;
-	}
+	@if $box-shadow {
+		box-shadow: $box-shadow;
+    }
+
+    // Box - outline -> none is default
+    @if $outline {
+        outline: $outline;
+    } @else {
+        outline: none;
+    }
 }
 
-// Creating text effects
+// Helper - Creating text effects
 @mixin create-clickable-element-inside-effect(
 	$element-title-classname: false,
 	$element-description-classname: false,
@@ -140,12 +148,12 @@
 	$element-description-classname: false,
 	$box-effect-outside: false,
 	$content-effect-inside: false,
-	$box-border-top-styling: false,
-	$box-border-right-styling: false,
-	$box-border-bottom-styling: false,
-	$box-border-left-styling: false,
-	$box-shadow-styling: false,
-	$box-shadow-focus-styling: false,
+	$box-border-top: false,
+	$box-border-right: false,
+	$box-border-bottom: false,
+	$box-border-left: false,
+	$box-shadow: false,
+	$box-shadow-focus: false,
 	$content-title-text-color: false,
 	$content-title-text-decoration: none,
 	$content-description-text-color: false,
@@ -156,25 +164,27 @@
 		// Outside effects for the box
 		@if $box-effect-outside {
 			@at-root .#{$element-box-classname}:hover,
-                .#{$element-box-classname}:active,
-                .#{$element-box-classname}:focus {
-				@include create-clickable-element-outside-effect(
-					$box-border-top-styling,
-					$box-border-right-styling,
-					$box-border-bottom-styling,
-					$box-border-left-styling,
-					$box-shadow-styling
+                .#{$element-box-classname}:active {
+
+                    @include create-clickable-element-outside-effect(
+					$box-border-top,
+					$box-border-right,
+					$box-border-bottom,
+					$box-border-left,
+					$box-shadow
 				);
 			}
 
 			// Using the separate generation for a better CSS result on IE11 and Edge - Tabbing
-			@at-root .#{$element-box-classname}:focus-within {
-				@include create-clickable-element-outside-effect(
-					$box-border-top-styling,
-					$box-border-right-styling,
-					$box-border-bottom-styling,
-					$box-border-left-styling,
-					$box-shadow-focus-styling // Using for tabbing
+            @at-root .#{$element-box-classname}:focus,
+                .#{$element-box-classname}:focus-within {
+
+                    @include create-clickable-element-outside-effect(
+					$box-border-top,
+					$box-border-right,
+					$box-border-bottom,
+					$box-border-left,
+					$box-shadow-focus // Using for tabbing
 				);
 			}
 		}
@@ -183,8 +193,8 @@
 		@if $content-effect-inside {
 			@if $element-title-classname or $element-description-classname {
 				@at-root .#{$element-box-classname}:hover,
-                    .#{$element-box-classname}:active,
-                    .#{$element-box-classname}:focus {
+                    .#{$element-box-classname}:active {
+
 					@include create-clickable-element-inside-effect(
 						$element-title-classname,
 						$element-description-classname,
@@ -196,8 +206,10 @@
 				}
 
 				// Using the separate generation for a better CSS result on IE11 and Edge
-				@at-root .#{$element-box-classname}:focus-within {
-					@include create-clickable-element-inside-effect(
+                @at-root .#{$element-box-classname}:focus,
+                    .#{$element-box-classname}:focus-within {
+
+                        @include create-clickable-element-inside-effect(
 						$element-title-classname,
 						$element-description-classname,
 						$content-title-text-color,
@@ -222,8 +234,8 @@
 ) {
     @if $containerClassName and $iconClassName {
         @at-root .#{$containerClassName}:hover,
-            .#{$containerClassName}:active,
-            .#{$containerClassName}:focus {
+            .#{$containerClassName}:active {
+
                 .#{$iconClassName} {
                     @if $bgColor {
                         background-color: $bgColor;
@@ -234,15 +246,17 @@
                 }
             }
 
-        @at-root .#{$containerClassName}:focus-within {
-            .#{$iconClassName} {
-                @if $bgColor {
-                    background-color: $bgColor;
+        @at-root .#{$containerClassName}:focus,
+            .#{$containerClassName}:focus-within {
+
+                .#{$iconClassName} {
+                    @if $bgColor {
+                        background-color: $bgColor;
+                    }
+                    @if $iconColor {
+                        color: $iconColor;
+                    }
                 }
-                @if $iconColor {
-                    color: $iconColor;
-                }
-            }
         }
     }
 
