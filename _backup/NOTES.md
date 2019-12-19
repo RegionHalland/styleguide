@@ -1,0 +1,1 @@
+The directory will be deleted in the next major version

@@ -117,12 +117,12 @@
             "version": "11.1.1",
             "resources": {
                 "jsComponents": [
-                    "components/Molecules/rh-video/rh-video.js",
-                    "components/Molecules/rh-linkgroup/rh-linkgroup.js",
-                    "components/Organism/rh-search/rh-search.js",
-                    "components/Organism/rh-table/rh-table.js",
+                    "components/Molecules/video/video.js",
+                    "components/Molecules/linkgroup/linkgroup.js",
                     "components/Molecules/menu-mobile/menu-mobile.js",
-                    "components/Molecules/menu/menu.js"
+                    "components/Molecules/menu/menu.js",
+                    "components/Organism/search/search.js",
+                    "components/Organism/table/table.js"
                 ],
                 "scssComponents": [ "components/scss/main.scss" ]
             }

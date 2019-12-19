@@ -1,6 +1,8 @@
+_backup
+assets
+build
 cdn
 docs
 public
-releases
-temp
+node_modules
 vendor

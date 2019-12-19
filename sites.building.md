@@ -4,14 +4,15 @@ The sites building add-on is using __ONLY__ for the Styleguide application at Re
 ## Features
 * Building (*)
 * Release (*)
-* Minification for both CSS and JS during compiling.
-* Automatic including common resources _(SCSS and JS)_.
+* During compiling:
+    * Minification for both CSS and JS.
+    * Automatic including common resources _(SCSS and JS)_.
 
 _(*) Using for a specific site or all sites_.
 
 ## System requirements
 * The minimum supported [Node.js](https://nodejs.org/) version is __8.9.0__ _(Node.js LTS version is a good choice for the stability)_.
-* [Gulp](https://gulpjs.com/) is installled on global.
+* The minimum supported [Gulp](https://gulpjs.com/) version is __4.0.0__ and installled on global.
 * Administrator permission is required by your operating system for the building process.
 
 ## Usage
