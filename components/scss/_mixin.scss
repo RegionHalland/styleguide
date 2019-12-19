@@ -1,76 +1,71 @@
 @mixin create-container-px($name, $offset-left: 0, $offset-right: 0) {
-	@if $name {
-		@at-root .#{$name} {
-			padding-left: $page__container--padding-x;
-			padding-right: $page__container--padding-x;
+    @if $name {
+        @at-root .#{$name} {
+            padding-left: $page__container--padding-x;
+            padding-right: $page__container--padding-x;
 
-			@include small {
-				padding-left: $page__container-small--padding-x;
-				padding-right: $page__container-small--padding-x;
-			}
+            @include small {
+                padding-left: $page__container-small--padding-x;
+                padding-right: $page__container-small--padding-x;
+            }
 
-			@include medium {
-				padding-left: $page__container-medium--padding-x - $offset-left;
-				padding-right: $page__container-medium--padding-x - $offset-right;
-			}
+            @include medium {
+                padding-left: $page__container-medium--padding-x - $offset-left;
+                padding-right: $page__container-medium--padding-x - $offset-right;
+            }
 
-			@include large {
-				padding-left: $page__container-large--padding-x - $offset-left;
-				padding-right: $page__container-large--padding-x -$offset-right;
-			}
+            @include large {
+                padding-left: $page__container-large--padding-x - $offset-left;
+                padding-right: $page__container-large--padding-x -$offset-right;
+            }
 
-			@include xlarge {
-				padding-left: $page__container-xlarge--padding-x - $offset-left;
-				padding-right: $page__container-xlarge--padding-x -$offset-right;
-			}
+            @include xlarge {
+                padding-left: $page__container-xlarge--padding-x - $offset-left;
+                padding-right: $page__container-xlarge--padding-x -$offset-right;
+            }
 
-			@content;
-		}
-	}
+            @content;
+        }
+    }
 }
 
 // padding-y (top/bottom) = 1.875em (30px) is default
-@mixin create-container-py(
-	$name,
-	$padding-y: 1.875em,
-	$offset-top: 0,
-	$offset-bottom: 0
-) {
-	@if $name {
-		@at-root .#{$name} {
-			padding-top: $padding-y;
-			padding-bottom: $padding-y;
+@mixin create-container-py($name, $padding-y: 1.875em, $offset-top: 0, $offset-bottom: 0) {
+    @if $name {
+        @at-root .#{$name} {
+            padding-top: $padding-y;
+            padding-bottom: $padding-y;
 
-			@if $offset-top !=0 and $offset-bottom !=0 {
-				@include medium {
-					padding-top: $padding-y - $offset-top;
-					padding-bottom: $padding-y - $offset-bottom;
-				}
-			}
+            @if $offset-top !=0 and $offset-bottom !=0 {
+                @include medium {
+                    padding-top: $padding-y - $offset-top;
+                    padding-bottom: $padding-y - $offset-bottom;
+                }
+            }
 
-			@content;
-		}
-	}
+            @content;
+        }
+    }
 }
 
 @mixin create-container-p($name, $container-px, $container-py) {
-	@if $name and $container-px and $container-py {
-		@at-root .#{$name} {
-			@extend .#{$container-px};
-			@extend .#{$container-py};
+    @if $name and $container-px and $container-py {
+        @at-root .#{$name} {
+            @extend .#{$container-px};
+            @extend .#{$container-py};
 
-			@content;
-		}
-	}
+            @content;
+        }
+    }
 }
 
 //Prohibit iOS increase font-size automatic
 @mixin iOSNoIncreaseFontSize {
-	div,
-	p,
-	a,
-	li,
-	td {
-		-webkit-text-size-adjust: none;
-	}
+    div,
+    p,
+    a,
+    li,
+    td {
+        -webkit-text-size-adjust: none;
+    }
 }
