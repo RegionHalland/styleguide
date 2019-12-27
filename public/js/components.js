@@ -1,46 +1,115 @@
 "use strict";
+
+var acc = document.getElementsByClassName("rh-search-accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("rh-search-active");
+    var panel = this.nextElementSibling;
+
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 100 + "px";
+    }
+  });
+}
 "use strict";
 
-function toggleMenu() {
-  document.getElementById("myDropdown").classList.toggle("rh-filter-show");
-  document.getElementById("dropdownBtn").classList.toggle("rh-filter-active");
-}
+window.onload = function () {
+  var table, rows, i, x, y;
+  table = document.getElementById("rh-table");
 
-function selectItem(sel) {
-  document.getElementById("dropdownBtn").classList.toggle("rh-filter-active");
-  document.getElementById("dropdownBtn").style.color = "black";
-  document.getElementById("myDropdown").classList.toggle("rh-filter-show");
-  var text = document.getElementById("dropdownBtn").firstChild;
-  text.data = sel.innerText;
-} // Close the dropdown menu if the user clicks outside of it
+  if (table) {
+    rows = table.rows;
 
+    for (var i = 1, row; row = rows[i]; i++) {
+      for (var j = 0, col; col = row.cells[j]; j++) {
+        x = rows[i].getElementsByTagName("TD")[j];
 
-window.onclick = function (event) {
-  if (!event.target.matches('.rh-filter')) {
-    var dropdowns = document.getElementsByClassName("rh-filter-menu");
-    var i;
-
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-
-      if (openDropdown.classList.contains('rh-filter-show')) {
-        openDropdown.classList.remove('rh-filter-show');
-      }
-    }
-
-    var btn = document.getElementsByClassName("rh-filter");
-    var i;
-
-    for (i = 0; i < btn.length; i++) {
-      var activeBtn = btn[i];
-
-      if (activeBtn.classList.contains('rh-filter-active')) {
-        activeBtn.classList.remove('rh-filter-active');
+        if (x.innerText.length > 20) {
+          x.classList.add('show-icon');
+        }
       }
     }
   }
 };
-"use strict";
+
+function sortByName() {
+  var table,
+      rows,
+      switching,
+      i,
+      x,
+      y,
+      shouldSwitch,
+      dir,
+      switchcount = 0;
+  table = document.getElementById("rh-table");
+  switching = true;
+  dir = "asc";
+
+  while (switching) {
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+
+    for (i = 1; i < rows.length - 1; i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[1];
+      y = rows[i + 1].getElementsByTagName("TD")[1];
+      var xContent = isNaN(x.innerHTML) ? x.innerHTML.toLowerCase() === '-' ? 0 : x.innerHTML.toLowerCase() : parseFloat(x.innerHTML);
+      var yContent = isNaN(y.innerHTML) ? y.innerHTML.toLowerCase() === '-' ? 0 : y.innerHTML.toLowerCase() : parseFloat(y.innerHTML);
+
+      if (dir == "asc") {
+        if (xContent > yContent) {
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (xContent < yContent) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount++;
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+
+function expand() {
+  var rows = document.getElementById('rh-table').rows;
+
+  for (var row = 0; row < rows.length; row++) {
+    var cols = rows[row].cells;
+
+    if (2 >= 0 && 2 < cols.length) {
+      cols[2].classList.toggle("selected");
+    }
+  }
+}
+
+function setShadow() {
+  var rows = document.getElementById('rh-table').rows;
+
+  for (var row = 0; row < rows.length; row++) {
+    var cols = rows[row].cells;
+
+    if (0 >= 0 && 0 < cols.length) {
+      cols[0].classList.add("rh-table-cell--shadow");
+    }
+  }
+}
 "use strict";
 
 // Needed function:
@@ -468,10 +537,24 @@ $(document).ready(function () {
   /* function calculateScrollbarWidth() {
       return (window.innerWidth - $(document).width());
   }
-    function isMobileDevice(){
+   function isMobileDevice(){
       return !!navigator.platform && /iPad|iPhone|iPod/g.test(navigator.platform);
   } */
 
+});
+"use strict";
+
+$(document).ready(function () {
+  // The code fixs :focus-within behavior on IE11 and older browsers
+  var $navigationBlockItems = $(".rh-navigation-block");
+  $navigationBlockItems.focusin(function (e) {
+    e.stopPropagation();
+    $(this).addClass("rh-navigation-block--focus");
+  });
+  $navigationBlockItems.focusout(function (e) {
+    e.stopPropagation();
+    $(this).removeClass("rh-navigation-block--focus");
+  });
 });
 "use strict";
 
@@ -501,114 +584,45 @@ var videoPlayButton,
 };
 videoMethods.renderVideoPlayButton();
 "use strict";
-
-var acc = document.getElementsByClassName("rh-search-accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("rh-search-active");
-    var panel = this.nextElementSibling;
-
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + 100 + "px";
-    }
-  });
-}
 "use strict";
 
-window.onload = function () {
-  var table, rows, i, x, y;
-  table = document.getElementById("rh-table");
+function toggleMenu() {
+  document.getElementById("myDropdown").classList.toggle("rh-filter-show");
+  document.getElementById("dropdownBtn").classList.toggle("rh-filter-active");
+}
 
-  if (table) {
-    rows = table.rows;
+function selectItem(sel) {
+  document.getElementById("dropdownBtn").classList.toggle("rh-filter-active");
+  document.getElementById("dropdownBtn").style.color = "black";
+  document.getElementById("myDropdown").classList.toggle("rh-filter-show");
+  var text = document.getElementById("dropdownBtn").firstChild;
+  text.data = sel.innerText;
+} // Close the dropdown menu if the user clicks outside of it
 
-    for (var i = 1, row; row = rows[i]; i++) {
-      for (var j = 0, col; col = row.cells[j]; j++) {
-        x = rows[i].getElementsByTagName("TD")[j];
 
-        if (x.innerText.length > 20) {
-          x.classList.add('show-icon');
-        }
+window.onclick = function (event) {
+  if (!event.target.matches('.rh-filter')) {
+    var dropdowns = document.getElementsByClassName("rh-filter-menu");
+    var i;
+
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+
+      if (openDropdown.classList.contains('rh-filter-show')) {
+        openDropdown.classList.remove('rh-filter-show');
+      }
+    }
+
+    var btn = document.getElementsByClassName("rh-filter");
+    var i;
+
+    for (i = 0; i < btn.length; i++) {
+      var activeBtn = btn[i];
+
+      if (activeBtn.classList.contains('rh-filter-active')) {
+        activeBtn.classList.remove('rh-filter-active');
       }
     }
   }
 };
-
-function sortByName() {
-  var table,
-      rows,
-      switching,
-      i,
-      x,
-      y,
-      shouldSwitch,
-      dir,
-      switchcount = 0;
-  table = document.getElementById("rh-table");
-  switching = true;
-  dir = "asc";
-
-  while (switching) {
-    switching = false;
-    rows = table.getElementsByTagName("TR");
-
-    for (i = 1; i < rows.length - 1; i++) {
-      shouldSwitch = false;
-      x = rows[i].getElementsByTagName("TD")[1];
-      y = rows[i + 1].getElementsByTagName("TD")[1];
-      var xContent = isNaN(x.innerHTML) ? x.innerHTML.toLowerCase() === '-' ? 0 : x.innerHTML.toLowerCase() : parseFloat(x.innerHTML);
-      var yContent = isNaN(y.innerHTML) ? y.innerHTML.toLowerCase() === '-' ? 0 : y.innerHTML.toLowerCase() : parseFloat(y.innerHTML);
-
-      if (dir == "asc") {
-        if (xContent > yContent) {
-          shouldSwitch = true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (xContent < yContent) {
-          shouldSwitch = true;
-          break;
-        }
-      }
-    }
-
-    if (shouldSwitch) {
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      switchcount++;
-    } else {
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
-
-function expand() {
-  var rows = document.getElementById('rh-table').rows;
-
-  for (var row = 0; row < rows.length; row++) {
-    var cols = rows[row].cells;
-
-    if (2 >= 0 && 2 < cols.length) {
-      cols[2].classList.toggle("selected");
-    }
-  }
-}
-
-function setShadow() {
-  var rows = document.getElementById('rh-table').rows;
-
-  for (var row = 0; row < rows.length; row++) {
-    var cols = rows[row].cells;
-
-    if (0 >= 0 && 0 < cols.length) {
-      cols[0].classList.add("rh-table-cell--shadow");
-    }
-  }
-}
+"use strict";

@@ -1,5 +1,11 @@
 # Versioner av stilguiden och deras ändringar
 
+## 12.0.0 (2019-12-27)
+Brytande ändringar: 
+Nya klassnamn enligt BEM på
+* organism/header
+* atom/search field
+
 ## 11.1.1 (2019-12-18)
 Förbättringar:
 * @mixin `create-clickable-element-effect`
