@@ -2,10 +2,11 @@
 
 ## 12.0.0 (2019-12-27)
 Brytande ändringar: 
-Nya klassnamn enligt BEM på
-* organism/header
-* atom/search field
-* molecule/image-caption (samt settingsfil skapad)
+
+* organism/header - Nya klassnamn enligt BEM
+* atom/search field Nya klassnamn enligt BEM
+* molecule/image-caption - Nya klassnamn enligt BEM, skapat settingsfil
+* molecule/linkgroup - Nya klassnamn enligt BEM, ny markupstruktur, ny javascript
 
 Utökningar: 
 * molecules/block (stöd för attributet "background")
