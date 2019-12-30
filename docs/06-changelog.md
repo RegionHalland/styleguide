@@ -8,8 +8,9 @@ Nya klassnamn enligt BEM på
 * molecule/image-caption (samt settingsfil skapad)
 
 Utökningar: 
-* molecules/block fått stöd för attributet "background"
-* molecules/feedback har fått settingsfil och rensats på onödig kod. 
+* molecules/block (stöd för attributet "background")
+* molecules/feedback (fått settingsfil och rensats på onödig kod.)
+* molecules/last-updated (1.0.0 släppt. justerad hbs utan överflödig klass)
 
 Mindre ändringar: 
 * molecules/navigation-block 
