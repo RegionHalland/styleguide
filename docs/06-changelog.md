@@ -5,6 +5,15 @@ Brytande ändringar:
 Nya klassnamn enligt BEM på
 * organism/header
 * atom/search field
+* molecule/image-caption (samt settingsfil skapad)
+
+Utökningar: 
+* molecules/block fått stöd för attributet "background"
+* molecules/feedback har fått settingsfil och rensats på onödig kod. 
+
+Mindre ändringar: 
+* molecules/navigation-block 
+* organisms/navigation-block-group
 
 ## 11.1.1 (2019-12-18)
 Förbättringar:
