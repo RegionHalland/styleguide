@@ -80,6 +80,10 @@
     },
     {
       "type": "git",
+      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomLogo"
+    },
+    {
+      "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomPaginationElements"
     },
     {
@@ -371,6 +375,7 @@
     "regionhalland/link": "1.0.0.20191121",
     "regionhalland/linkgroup": "1.0.0",
     "regionhalland/lists": "1.0.0.20191121",
+    "regionhalland/logo": "v1.0.0",
     "regionhalland/logo-sitename": "1.0.0.20191121",
     "regionhalland/main-nav": "1.0.0.20191123",
     "regionhalland/menu": "1.0.0.20191122",

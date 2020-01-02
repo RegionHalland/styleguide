@@ -8,7 +8,8 @@ Brytande ändringar:
 * molecule/image-caption - Nya klassnamn enligt BEM, skapat settingsfil
 * molecule/linkgroup - Nya klassnamn enligt BEM, ny markupstruktur, ny javascript, settingsfil skapad
 
-Utökningar: 
+Utökningar:
+* Ny atom "Logo"
 * molecules/block (stöd för attributet "background")
 * molecules/feedback (fått settingsfil och rensats på onödig kod.)
 * molecules/last-updated (1.0.0 släppt. justerad hbs utan överflödig klass)
