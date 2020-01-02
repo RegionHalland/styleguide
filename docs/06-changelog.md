@@ -6,7 +6,7 @@ Brytande ändringar:
 * organism/header - Nya klassnamn enligt BEM
 * atom/search field Nya klassnamn enligt BEM
 * molecule/image-caption - Nya klassnamn enligt BEM, skapat settingsfil
-* molecule/linkgroup - Nya klassnamn enligt BEM, ny markupstruktur, ny javascript
+* molecule/linkgroup - Nya klassnamn enligt BEM, ny markupstruktur, ny javascript, settingsfil skapad
 
 Utökningar: 
 * molecules/block (stöd för attributet "background")
