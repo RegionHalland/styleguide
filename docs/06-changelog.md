@@ -3,13 +3,15 @@
 ## 12.0.0 (2019-12-27)
 Brytande ändringar: 
 
-* organism/header - Nya klassnamn enligt BEM
-* atom/search field Nya klassnamn enligt BEM
-* molecule/image-caption - Nya klassnamn enligt BEM, skapat settingsfil
-* molecule/linkgroup - Nya klassnamn enligt BEM, ny markupstruktur, ny javascript, settingsfil skapad
+* Atomen "Search field" - Nya klassnamn enligt BEM
+* Moleculeen "Image caption" - Nya klassnamn enligt BEM, skapat settingsfil
+* Molekylen "Linkgroup" - Nya klassnamn enligt BEM, ny markupstruktur, ny javascript, settingsfil skapad
+* Molekylen "Logo sitename" - nya klassnamn enligt BEM, ny hbs och settingsfil skapad. 
+* Organismen "Header" - Nya klassnamn enligt BEM
 
 Utökningar:
 * Ny atom "Logo"
+* Ny atom "Sitename"
 * molecules/block (stöd för attributet "background")
 * molecules/feedback (fått settingsfil och rensats på onödig kod.)
 * molecules/last-updated (1.0.0 släppt. justerad hbs utan överflödig klass)
