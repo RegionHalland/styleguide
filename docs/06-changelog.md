@@ -7,6 +7,7 @@ Brytande ändringar:
 * Moleculeen "Image caption" - Nya klassnamn enligt BEM, skapat settingsfil
 * Molekylen "Linkgroup" - Nya klassnamn enligt BEM, ny markupstruktur, ny javascript, settingsfil skapad
 * Molekylen "Logo sitename" - nya klassnamn enligt BEM, ny hbs och settingsfil skapad. 
+* Molekylen "News info" - 1.0.0 nya klassnamn enligt BEM, settingsfil, raderat överflödig kod. 
 * Organismen "Header" - Nya klassnamn enligt BEM
 
 Utökningar:
