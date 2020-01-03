@@ -19,6 +19,7 @@ Utökningar:
 
 Mindre ändringar:
 * Molekylen "Menu mobile" 1.0.0.20200103 - Status "rework" och uppdaterad readme.
+* Molekylen "Menu mobil" 1.0.0.20200103 - Status "rework" och uppdaterad readme.
 * molecules/navigation-block 
 * organisms/navigation-block-group
 
