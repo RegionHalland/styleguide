@@ -17,7 +17,8 @@ Utökningar:
 * molecules/feedback (fått settingsfil och rensats på onödig kod.)
 * molecules/last-updated (1.0.0 släppt. justerad hbs utan överflödig klass)
 
-Mindre ändringar: 
+Mindre ändringar:
+* Molekylen "Menu mobile" 1.0.0.20200103 - Status "rework" och uppdaterad readme.
 * molecules/navigation-block 
 * organisms/navigation-block-group
 
