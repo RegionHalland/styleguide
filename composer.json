@@ -410,7 +410,7 @@
     "regionhalland/unit-info": "1.0.0.20191122",
     "regionhalland/video": "1.0.0.20191122",
     "regionhalland/visual-element": "1.0.0.20191113",
-    "regionhalland/general": "1.0.0.20191125"
+    "regionhalland/general": "1.0.0.20200108"
   },
   "extra": {
     "custom-installer": {

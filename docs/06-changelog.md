@@ -1,5 +1,9 @@
 # Versioner av stilguiden och deras ändringar
 
+## 12.1.0 (2020-01-08)
+* **Template "General"** (v.1.0.0.20200108)
+    * Organismen "Header" ersätter lösa komponenter.
+
 ## 12.0.0 (2020-01-08)
 ### Brytande ändringar: 
 
