@@ -1,27 +1,92 @@
 # Versioner av stilguiden och deras ändringar
 
-## 12.0.0 (2019-12-27)
-Brytande ändringar: 
+## 12.0.0 (2020-01-08)
+### Brytande ändringar: 
 
-* Atomen "Search field" - Nya klassnamn enligt BEM
-* Moleculeen "Image caption" - Nya klassnamn enligt BEM, skapat settingsfil
-* Molekylen "Linkgroup" - Nya klassnamn enligt BEM, ny markupstruktur, ny javascript, settingsfil skapad
-* Molekylen "Logo sitename" - nya klassnamn enligt BEM, ny hbs och settingsfil skapad. 
-* Molekylen "News info" - 1.0.0 nya klassnamn enligt BEM, settingsfil, raderat överflödig kod. 
-* Organismen "Header" - Nya klassnamn enligt BEM
+* **Atomen "Search field"** (v1.0.0.20191227)
+    * nya klassnamn enligt BEM
+    * delat upp atomen i variants.
 
-Utökningar:
-* Ny atom "Logo"
-* Ny atom "Sitename"
-* molecules/block (stöd för attributet "background")
-* molecules/feedback (fått settingsfil och rensats på onödig kod.)
-* molecules/last-updated (1.0.0 släppt. justerad hbs utan överflödig klass)
 
-Mindre ändringar:
-* Molekylen "Menu mobile" 1.0.0.20200103 - Status "rework" och uppdaterad readme.
-* Molekylen "Menu mobil" 1.0.0.20200103 - Status "rework" och uppdaterad readme.
-* molecules/navigation-block 
-* organisms/navigation-block-group
+* **Moleculeen "Image caption"** (v2.0.0)
+    * nya klassnamn enligt BEM
+    * Settingsfil skapad
+
+
+* **Molekylen "Linkgroup"** (v1.0.0.20191230)
+    * nya klassnamn enligt BEM
+    * ny markupstruktur
+    * ny javascript
+    * settingsfil skapad
+    * CSS genomgången
+    * Beteende enligt wai-aria authoring practices
+
+
+* **Molekylen "Logo sitename"** (v.1.0.0.202001021815)
+    * nya klassnamn enligt BEM
+    * ny hbs-fil med utbrutna atomer som renderas
+    * settingsfil skapad
+
+
+* **Molekylen "News info"** (v1.0.0)
+    * nya klassnamn enligt BEM
+    * settingsfil skapad
+    * överflödig kod raderad
+
+
+* **Molekylen "Searh elements"** (v1.0.0.20200108)
+    * nya klassnamn enligt BEM
+    * ny markup
+    * omskriven css
+    * ny hbs
+    * ny config-fil med variants
+    * settingsfil skapad.
+
+
+* **Organismen "Header"** (v1.0.0.20191227)
+    * nya klassnamn enligt BEM
+    * hbs uppstädad för att kunna inkluderas i templates
+
+
+### Utökningar:
+* **(ny) atom "Logo"** (1.0.1)
+
+
+* **(ny) atom "Sitename"** (v1.0.0.202001021842)
+
+
+* **Atomen "link"** (v1.0.0.20200108)
+    * fokusstate definierat
+    * extendClass-funktionalitet introducerat.
+
+
+* **Molekylen "block"** (v1.3.0)
+    * stöd för attributet "background")
+
+
+* **Molekylen "feedback"** (v1.0.0.20191227)
+    * Settingsfil skapad
+    * Rensad på onödig kod.
+
+
+* **Molekylen "last-updated** (v1.0.0)
+    * justerad hbs utan överflödig klass
+
+
+### Mindre ändringar:
+* **Molekylen "Menu mobile"** (v1.0.0.20200103)
+    * Status "rework" och uppdaterad readme.
+
+
+* **Molekylen "Menu mobil"** (v1.0.0.20200103)
+    * status "rework" och uppdaterad readme.
+
+
+* **Molekylen "navigation block"** (v.1.0.0.20191227)
+    * default bakgrundsfärg ändrad för att fungera i templates
+
+* **Organismen "navigation block group"** (v.1.0.0.20191227)
+    * default bakgrundsfärg ändrad för att fungera i templates
 
 ## 11.1.1 (2019-12-18)
 Förbättringar:
