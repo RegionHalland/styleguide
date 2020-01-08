@@ -1,45 +1,43 @@
-.rh-image-caption {
+.rh-figure {
     /* Positionering */
-    position: absolute;
+    position: $figure--position;
 
     /* Box-modell/beteende */
-    width: 344px;
+    width: $figure--width;
 
     /* Typografi */
-    text-align: left;
-    font-size: em(12);
-    text-indent: 0;
-    color: $grey-darkest;
+    text-align: $figure--text-align;
+    font-size: $figure--font-size;
+    text-indent: $figure--text-indent;
+    color: $figure--color;
 
-    img {
+    .rh-figure__image {
         /* Box-modell/beteende */
-        width: 100%;
+        width: $figure__image--width;
     }
 
-    figcaption {
+    .rh-figure__caption {
         /* Box-modell/beteende */
-        margin-top: -2px;
-        padding: 10px;
+        margin-top: $figure__caption--margin-top;
+        padding: $figure__caption--padding;
 
         /* Visuellt */
-        background-color: $grey-lightest;
+        background-color: $figure__caption--background-color;
     }
 
     @include medium {
         /* Box-modell/beteende */
-        width: 509px;
+        width: $figure--medium--width;
 
         /* Typografi */
-        font-size: em(14);
+        font-size: $figure--medium--font-size;
     }
 
     @include large {
         /* Box-modell/beteende */
-        width: 640px;
+        width: $figure--medium--width;
 
         /* Typografi */
-        font-size: em(15);
+        font-size: $figure--medium--font-size;
     }
-
-
 }

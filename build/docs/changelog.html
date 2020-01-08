@@ -124,6 +124,159 @@
     
     
     <h1 id="versioner-av-stilguiden-och-deras-ändringar">Versioner av stilguiden och deras ändringar</h1>
+<h2 id="1200-2020-01-08">12.0.0 (2020-01-08)</h2>
+<h3 id="brytande-ändringar">Brytande ändringar:</h3>
+<ul>
+<li><strong>Atomen “Search field”</strong> (v1.0.0.20191227)<ul>
+<li>nya klassnamn enligt BEM</li>
+<li>delat upp atomen i variants.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Moleculeen “Image caption”</strong> (v2.0.0)<ul>
+<li>nya klassnamn enligt BEM</li>
+<li>Settingsfil skapad</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Molekylen “Linkgroup”</strong> (v1.0.0.20191230)<ul>
+<li>nya klassnamn enligt BEM</li>
+<li>ny markupstruktur</li>
+<li>ny javascript</li>
+<li>settingsfil skapad</li>
+<li>CSS genomgången</li>
+<li>Beteende enligt wai-aria authoring practices</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Molekylen “Logo sitename”</strong> (v.1.0.0.202001021815)<ul>
+<li>nya klassnamn enligt BEM</li>
+<li>ny hbs-fil med utbrutna atomer som renderas</li>
+<li>settingsfil skapad</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Molekylen “News info”</strong> (v1.0.0)<ul>
+<li>nya klassnamn enligt BEM</li>
+<li>settingsfil skapad</li>
+<li>överflödig kod raderad</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Molekylen “Searh elements”</strong> (v1.0.0.20200108)<ul>
+<li>nya klassnamn enligt BEM</li>
+<li>ny markup</li>
+<li>omskriven css</li>
+<li>ny hbs</li>
+<li>ny config-fil med variants</li>
+<li>settingsfil skapad.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Organismen “Header”</strong> (v1.0.0.20191227)<ul>
+<li>nya klassnamn enligt BEM</li>
+<li>hbs uppstädad för att kunna inkluderas i templates</li>
+</ul>
+</li>
+</ul>
+<h3 id="utökningar">Utökningar:</h3>
+<ul>
+<li><strong>(ny) atom “Logo”</strong> (1.0.1)</li>
+</ul>
+<ul>
+<li><strong>(ny) atom “Sitename”</strong> (v1.0.0.202001021842)</li>
+</ul>
+<ul>
+<li><strong>Atomen “link”</strong> (v1.0.0.20200108)<ul>
+<li>fokusstate definierat</li>
+<li>extendClass-funktionalitet introducerat.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Molekylen “block”</strong> (v1.3.0)<ul>
+<li>stöd för attributet “background”)</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Molekylen “feedback”</strong> (v1.0.0.20191227)<ul>
+<li>Settingsfil skapad</li>
+<li>Rensad på onödig kod.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Molekylen “last-updated</strong> (v1.0.0)<ul>
+<li>justerad hbs utan överflödig klass</li>
+</ul>
+</li>
+</ul>
+<h3 id="mindre-ändringar">Mindre ändringar:</h3>
+<ul>
+<li><strong>Molekylen “Menu mobile”</strong> (v1.0.0.20200103)<ul>
+<li>Status “rework” och uppdaterad readme.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Molekylen “Menu mobil”</strong> (v1.0.0.20200103)<ul>
+<li>status “rework” och uppdaterad readme.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>Molekylen “navigation block”</strong> (v.1.0.0.20191227)</p>
+<ul>
+<li>default bakgrundsfärg ändrad för att fungera i templates</li>
+</ul>
+</li>
+<li><p><strong>Organismen “navigation block group”</strong> (v.1.0.0.20191227)</p>
+<ul>
+<li>default bakgrundsfärg ändrad för att fungera i templates</li>
+</ul>
+</li>
+</ul>
+<h2 id="1111-2019-12-18">11.1.1 (2019-12-18)</h2>
+<p>Förbättringar:</p>
+<ul>
+<li>@mixin <code>create-clickable-element-effect</code></li>
+<li>@mixin <code>create-icon-button-effect</code></li>
+<li>Komponenten Molecules/<strong>navigation-block</strong><ul>
+<li>Beteenden <code>:focus</code> och <code>:focus-within</code> blir bättre på IE11 och Safari.</li>
+<li>HTML struktur blir enklare för implementation.</li>
+</ul>
+</li>
+</ul>
+<h2 id="1110-2019-12-17">11.1.0 (2019-12-17)</h2>
+<ul>
+<li><p>Nya funktioner:</p>
+<ul>
+<li>Komponent - Molecules/<strong>block-icon-link</strong> -&gt; Hela gruppen (en icon och en länk som är bredvid) är klickbar.</li>
+<li>@mixin <code>create-icon-button-effect</code></li>
+<li>Utilities:<ul>
+<li><code>rh-icon--font-family</code> <em>(font-family: ‘feather’)</em></li>
+<li><code>rh-w--fit-content</code> <em>(with: fit-content)</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Förbättringar:</p>
+<ul>
+<li>Atoms/<strong>circle-button</strong> <em>(ny beteendet <code>--warning</code>)</em></li>
+<li>Molecules/<strong>article-block</strong> <em>(använda inte längre @mixin)</em></li>
+<li>Molecules/<strong>contact-info</strong> <em>(använda inte längre @mixin)</em></li>
+</ul>
+</li>
+<li><p>Brytande - Molecules/<strong>search-external-link</strong>: komponenten får ny beteendet <code>--warning</code> och ny struktur för återanvändning av andra komponenter som är circle-button, block-icon-link o.s.v.</p>
+</li>
+</ul>
 <h2 id="1100-2019-12-10">11.0.0 (2019-12-10)</h2>
 <ul>
 <li>Brytande ändringar: Molekylen “Event card calendar” omimplementerad.</li>
@@ -142,7 +295,7 @@
 <li>Organismen “Article group” använder nu atomen “Heading underlined” och har färre egna regler.</li>
 </ul>
 <h2 id="1000">10.0.0</h2>
-<h3 id="brytande-ändringar">Brytande ändringar</h3>
+<h3 id="brytande-ändringar-1">Brytande ändringar</h3>
 <h4 id="atomen-pagination-elements">Atomen “pagination elements”</h4>
 <ul>
 <li><code>--left</code> ersätter <code>-previous</code></li>
@@ -348,7 +501,7 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 <li>Organismen “buttongroup”</li>
 </ul>
 <h2 id="910">9.1.0</h2>
-<h3 id="utökningar">Utökningar</h3>
+<h3 id="utökningar-1">Utökningar</h3>
 <ul>
 <li>Ny molekyl “Buttongroup elements”</li>
 </ul>
@@ -397,7 +550,7 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 </li>
 </ul>
 <h2 id="900">9.0.0</h2>
-<h3 id="brytande-ändringar-1">Brytande ändringar</h3>
+<h3 id="brytande-ändringar-2">Brytande ändringar</h3>
 <h4 id="molekylen-rh-shortcuts">Molekylen “rh shortcuts”</h4>
 <ul>
 <li>Molekylen flyttat till ett vMolecules och fått ny sökväg</li>
@@ -463,7 +616,7 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 <li>Flyttat till vMolecules i stilguiden - peka om sökvägen till vMolecules vid användning.</li>
 </ul>
 <h2 id="820">8.2.0</h2>
-<h3 id="utökningar-1">Utökningar</h3>
+<h3 id="utökningar-2">Utökningar</h3>
 <p>Molekyl: Filter alphabet 1.0.0</p>
 <ul>
 <li>Fullt stöd för settingsfil.</li>
@@ -546,7 +699,7 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 </ul>
 <p>Det blir bättre prestanda, snabbare för implementation, enklare för underhållning och utveckling samt bättre konsekvent mellan komponenter i Stilguiden.</p>
 <h2 id="720">7.2.0</h2>
-<h3 id="utökningar-2">Utökningar</h3>
+<h3 id="utökningar-3">Utökningar</h3>
 <ul>
 <li>Circle button-atomen fått stöd för modifiern –secondary</li>
 </ul>
@@ -556,7 +709,7 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 <li>Molekylen “back to top” angiven som klar.</li>
 </ul>
 <h2 id="700">7.0.0</h2>
-<h3 id="brytande-ändringar-2">Brytande ändringar</h3>
+<h3 id="brytande-ändringar-3">Brytande ändringar</h3>
 <ul>
 <li>“Iconlink”-molekylen raderad.</li>
 </ul>
@@ -1145,6 +1298,30 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
         </li>
         
     
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/circle-button--warning.html" data-pjax>
+                <span>Warning</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
 
             </ul>
         </li>
@@ -1671,6 +1848,30 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
         
     
         
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/logo.html" data-pjax>
+                <span>Logo</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
         <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-pagination-elements">
             <h4 class="Tree-collectionLabel" data-role="toggle">
                 <span>Pagination Elements</span>
@@ -1807,10 +2008,21 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-search-field">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Search Field</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/search-field.html" data-pjax>
-                <span>Search Field</span>
+            <a class="Tree-entityLink" href="../components/detail/search-field--default.html" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1819,6 +2031,83 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 
 
 <span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/search-field--large.html" data-pjax>
+                <span>Large</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/search-field--disabled.html" data-pjax>
+                <span>Disabled</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/sitename.html" data-pjax>
+                <span>Sitename</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2110,6 +2399,94 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../components/detail/block--image-container.html" data-pjax>
                 <span>Image Container</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-block-icon-link">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Block Icon Link</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/block-icon-link--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/block-icon-link--primary.html" data-pjax>
+                <span>Primary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/block-icon-link--warning.html" data-pjax>
+                <span>Warning</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2466,7 +2843,7 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -2538,7 +2915,7 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -2562,7 +2939,7 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -2610,7 +2987,7 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>
@@ -2698,7 +3075,7 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>
@@ -2898,7 +3275,7 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: green;" title="Klar"></span>
 
 
 </div>
@@ -2983,10 +3360,109 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-search-elements">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Search Elements</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/search-elements.html" data-pjax>
-                <span>Search Elements</span>
+            <a class="Tree-entityLink" href="../components/detail/search-elements--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/search-elements--pdf.html" data-pjax>
+                <span>Pdf</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/search-elements--nyhet.html" data-pjax>
+                <span>Nyhet</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-search-external-link">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Search External Link</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/search-external-link--default.html" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3009,8 +3485,8 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/search-external-link.html" data-pjax>
-                <span>Search External Link</span>
+            <a class="Tree-entityLink" href="../components/detail/search-external-link--warning.html" data-pjax>
+                <span>Warning</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3027,6 +3503,11 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 
 
             </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     

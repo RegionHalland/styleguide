@@ -25,15 +25,34 @@
     }
 
     &__title {
-        @include create-article-item-title {
-            &-link {
-                color: $article-block__title-link--text-color;
-            }
+        line-height: 1.3125em;
+        margin-bottom: 0.1em;
+
+        font-size: 1em;
+        font-weight: bold;
+
+        @include medium {
+            line-height: 1.375em;
+        }
+
+        @include large {
+            font-size: 1.25em; //20px
+        }
+
+        &-link {
+            color: $article-block__title-link--text-color;
         }
     }
 
     &__description {
-        @include create-article-item-description;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+
+        font-size: 0.9375em; //15px
+
+        @include large {
+            font-size: 1em; //16px
+        }
     }
 
     &__title-link:focus {

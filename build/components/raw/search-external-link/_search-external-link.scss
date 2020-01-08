@@ -1,58 +1,87 @@
-.rh-search-external{
-	padding-top: em(10); 	
-	padding-bottom: em(10); 	
-	padding-left: em(15); 	
-	padding-right: em(15); 	
-	background-color: $grey-lightest;
-	border: 1px solid $base2;
-	border-radius: 4px;
+.rh-search-external {
+    p {margin-bottom: 0;} // Reset
 
-	&-title{
-		display: inline-block;
-	}
+    padding: $search-external--padding;
+    border-radius: .25em;
 
-	&-text{
-		display: block;
-		margin-bottom: em(15);
-		font-size: em(10);
-		color: $grey-darkest;
-		@include medium{
-			display: inline-block;
-			margin-left: em(20);
-			font-size: em(13);
-		}
-		@include large{
-			font-size: em(14);
-		}
+    &__header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
 
-		&-link{
-		    cursor: pointer;
-		    text-decoration: none;
+        &-title {
+            margin-top: .5em;
+            font-size: $search-external__header-title--font-size;
+            font-weight: bold;
 
-		    &:hover, &:active {
-		      text-decoration: underline;  
-		    }
-		    &:visited {
-		      color: $link-visited;
-		    }
-	    }
-		
-		&:before {
-			margin-right: em(10);
-			padding: em(8);
-			background: $base2;
-			border-radius: 50%;
-			font-weight: normal;
-	    	font-family: "feather"; 
-	    	content: "\e869";
-	    	color: $white;
-		}
-	}
+            @include medium {font-size: $search-external__header-title-medium--font-size;}
+            @include large {font-size: $search-external__header-title-large--font-size;}
+        }
 
-	&-description{
-		color: $grey-darker;
-		font-size: em(11);
-		@include medium{font-size: em(15);}
-		@include large{font-size: em(16);}
-	}
+        &-icon-link {
+            margin-top: .5em;
+
+            >a {
+                font-size: $search-external__header-link--font-size;
+                @include medium {font-size: $search-external__header-link-medium--font-size;}//15px
+            }
+        }
+    }
+
+    &__description {
+        font-size: $search-external__description--font-size;
+        @include medium {font-size: $search-external__description-medium--font-size;}
+    }
+
+    &--default {
+	    border: $search-external-default--border;
+        background-color: $search-external-default--background-color;
+
+        @if $search-external-default__icon {
+            // Reuse the component Atoms/circle-button - Change styling for icon
+            .rh-circle-button {
+                @if $search-external-default__icon--color {
+                    color: $search-external-default__icon--color;
+                }
+                @if $search-external-default__icon--background-color {
+                    background-color: $search-external-default__icon--background-color;
+                }
+
+                &:hover, &:active, &:focus {
+                    @if $search-external-default-effect__icon--color {
+                        color: $search-external-default-effect__icon--color;
+                    }
+                    @if $search-external-default-effect__icon--background-color {
+                        background-color: $search-external-default-effect__icon--background-color;
+                    }
+                }
+            }
+        }
+    }
+
+    &--warning {
+        border: $search-external-warning--border;
+        background-color: $search-external-warning--background-color;
+
+        @if $search-external-warning__icon {
+            // Reuse the component Atoms/circle-button - Change styling for icon
+            .rh-circle-button {
+                @if $search-external-warning__icon--color {
+                    color: $search-external-warning__icon--color;
+                }
+                @if $search-external-warning__icon--background-color {
+                    background-color: $search-external-warning__icon--background-color;
+                }
+
+                &:hover, &:active, &:focus {
+                    @if $search-external-warning-effect__icon--color {
+                        color: $search-external-warning-effect__icon--color;
+                    }
+                    @if $search-external-warning-effect__icon--background-color {
+                        background-color: $search-external-warning-effect__icon--background-color;
+                    }
+                }
+            }
+        }
+    }
 }

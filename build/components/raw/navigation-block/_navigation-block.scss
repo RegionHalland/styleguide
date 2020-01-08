@@ -3,28 +3,9 @@
 @import '../../Atoms/circle-button/_circle-button.scss';
 */
 
-@mixin create-navigation-block-icon-effect (){
-    .rh-navigation-block__header-icon-button {
-        @if $navigation-block__header-round-button--border-hover-active {
-            border: $navigation-block__header-round-button--border-hover-active;
-        }
-
-        @if $navigation-block__header-round-button--background-color-hover-active
-        {
-            background-color: $navigation-block__header-round-button--background-color-hover-active;
-        }
-
-        @if $navigation-block__header-round-button--icon-color-hover-active {
-            color: $navigation-block__header-round-button--icon-color-hover-active;
-        }
-    }
-}
-
 .rh-navigation-block {
 	// Reset p tag's settings on global
-	p {
-		margin-bottom: 0;
-	}
+	p { margin-bottom: 0; }
 
 	/* Box-modell/beteende */
 	min-height: $navigation-block--min-height;
@@ -60,7 +41,7 @@
 		display: flex;
 		align-items: flex-start;
 
-		&-icon-button {
+		&-icon {
 			@if $navigation-block__header-round-button--border {
 				border: $navigation-block__header-round-button--border;
 			}
@@ -79,8 +60,7 @@
 			}
 
 			@if $navigation-block__header-round-button--hover-active {
-				&:hover,
-				&:active {
+				&:hover, &:active, &:focus {
 					@if $navigation-block__header-round-button--border-hover-active {
 						border: $navigation-block__header-round-button--border-hover-active;
 					}
@@ -101,25 +81,19 @@
 			/* Box-modell/beteende */
 			margin: $navigation-block__header-title--margin;
 
-			@include large {
-				margin: $navigation-block__header-title--margin-large;
-			}
+            @if $navigation-block__header-title-link--color {
+                color: $navigation-block__header-title-link--color;
+            }
 
-			&-link {
-				/* Typografi */
-				@if $navigation-block__header-title-link--color {
-					color: $navigation-block__header-title-link--color;
-				}
+            font-size: $navigation-block__header-title-link--font-size;
+            font-weight: $navigation-block__header-title-link--font-weight;
+            line-height: $navigation-block__header-title-link--line-height;
+            word-break: $navigation-block__header-title-link--word-break;
 
-				font-size: $navigation-block__header-title-link--font-size;
-				font-weight: $navigation-block__header-title-link--font-weight;
-				line-height: $navigation-block__header-title-link--line-height;
-				word-break: $navigation-block__header-title-link--word-break;
-
-				@include large {
-					font-size: $navigation-block__header-title-link--font-size-large;
-				}
-			}
+            @include large {
+                margin: $navigation-block__header-title--margin-large;
+                font-size: $navigation-block__header-title-link--font-size-large;
+            }
 		}
 	}
 
@@ -137,16 +111,19 @@
 		}
 	}
 
-	// Create the effects :active, :hover, :focus-within by using @mixin
+	// Create the effects :active, :hover, :focus - :focus-within by using @mixin
 	&--clickable {
-        $navigationBlockClickableClassname: "rh-navigation-block--clickable";
+        $navigationBlockClickableClassname: "rh-navigation-block--clickable"; //Main container's classname
+        $navigationBlockIconClassname: "rh-navigation-block__header-icon";
+        $navigationBlockTitleClassname: "rh-navigation-block__header-title";
+        $navigationBlockDescriptionClassname: "rh-navigation-block__description-text";
 
 		@include create-clickable-element-effect(
-            $navigationBlockClickableClassname, //Box classname
-            "rh-navigation-block__header-title-link", //Title link classname
-			"rh-navigation-block__description-text", //Description classname
-			$navigation-block-effect__box-outside,
-			$navigation-block-effect__content-inside,
+            $navigationBlockClickableClassname, //Container (box) classname
+            $navigationBlockTitleClassname, //Title (or link) classname
+			$navigationBlockDescriptionClassname, //Description classname
+			$navigation-block-effect__box-outside, //Activating outside effect
+			$navigation-block-effect__content-inside, //Activating inside effect
             $navigation-block-effect--border, // Box border-top styling
             $navigation-block-effect--border, // Box border-right styling
             $navigation-block-effect--border, // Box border-bottom styling
@@ -161,25 +138,26 @@
             // Create extend effect for icon
             @at-root .#{$navigationBlockClickableClassname}:hover,
                 .#{$navigationBlockClickableClassname}:active {
-                @include create-navigation-block-icon-effect;
+
+                    @include create-icon-button-effect(
+                        $navigationBlockClickableClassname,
+                        $navigationBlockIconClassname,
+                        $navigation-block__header-round-button--background-color-hover-active,
+                        $navigation-block__header-round-button--icon-color-hover-active
+                )
             }
 
-            @at-root .#{$navigationBlockClickableClassname}:focus-within {
-                @include create-navigation-block-icon-effect;
+            // Separate generation of :focus and focus-within for a better compatible with IE11 and Edge (old version)
+            @at-root .#{$navigationBlockClickableClassname}:focus,
+                .#{$navigationBlockClickableClassname}:focus-within {
+
+                @include create-icon-button-effect(
+                    $navigationBlockClickableClassname,
+                    $navigationBlockIconClassname,
+                    $navigation-block__header-round-button--background-color-hover-active,
+                    $navigation-block__header-round-button--icon-color-hover-active
+                )
             }
-        };
+        }
 	}
-
-	// This code fixs :focus-within behavior on IE11 and older browsers
-	&--focus {
-        /* Box-modell/beteende */
-        @if $navigation-block-effect__box-outside {
-            border: $navigation-block-effect--border;
-            box-shadow: $navigation-block-effect-focus--box-shadow;
-        }
-
-        @if $navigation-block-effect__content-inside {
-            @include create-navigation-block-icon-effect;
-        }
-    }
 }

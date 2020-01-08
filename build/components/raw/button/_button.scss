@@ -77,23 +77,64 @@
         @if $button--primary-color {
             color: $button--primary-color;
         }
-        &:hover{
-            /* Typografi */
-            @if $button--primary-hover-text-decoration {
-                text-decoration: $button--primary-hover-text-decoration;
+
+        @if $button--primary-hover {
+            &:hover{
+                /* Visuellt */
+                @if $button--primary-hover-background-color {
+                    background-color: $button--primary-hover-background-color;
+                }
+                @if $button--primary-hover-border {
+                    border: $button--primary-hover-border; //1px solid $color-primary
+                }
+
+                /* Typografi */
+                @if $button--primary-hover-color {
+                    color: $button--primary-hover-color; //$color-primary
+                }
+                @if $button--primary-hover-text-decoration {
+                    text-decoration: $button--primary-hover-text-decoration;
+                }
             }
         }
-        &:active{
-            /* Visuellt */
-            background-color: $button--primary-active-background-color;
-            border: $button--primary-active-border; //1px solid $color-primary
 
-            /* Typografi */
-            @if $button--primary-active-color {
-                color: $button--primary-active-color; //$color-primary
+        @if $button--primary-active {
+            &:active{
+                /* Visuellt */
+                @if $button--primary-active-background-color {
+                    background-color: $button--primary-active-background-color;
+                }
+                @if $button--primary-active-background-color {
+                    border: $button--primary-active-border; //1px solid $color-primary
+                }
+
+                /* Typografi */
+                @if $button--primary-active-color {
+                    color: $button--primary-active-color; //$color-primary
+                }
+                @if $button--primary-active-text-decoration {
+                    text-decoration: $button--primary-active-text-decoration; //none
+                }
             }
-            @if $button--primary-active-text-decoration {
-                text-decoration: $button--primary-active-text-decoration; //none
+        }
+
+        @if $button--primary-focus {
+            &:focus{
+                /* Visuellt */
+                @if $button--primary-focus-background-color {
+                    background-color: $button--primary-focus-background-color;
+                }
+                @if $button--primary-focus-border {
+                    border: $button--primary-focus-border; //1px solid $color-primary
+                }
+
+                /* Typografi */
+                @if $button--primary-focus-color {
+                    color: $button--primary-focus-color; //$color-primary
+                }
+                @if $button--primary-focus-text-decoration {
+                    text-decoration: $button--primary-focus-text-decoration; //none
+                }
             }
         }
     }

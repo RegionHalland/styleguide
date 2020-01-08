@@ -1,4 +1,4 @@
-.rh-search-field {
+.rh-search-bar {
     /* Positionering */
     align-items: center;
 
@@ -6,7 +6,7 @@
     display: flex;
     width: 100%;
 
-    .rh-search-term {
+    .rh-search-bar__input {
         /* Box-modell/beteende */
         width: 100%;
         padding: $search-field__term--padding; //em(10);
@@ -81,7 +81,7 @@
             border-right: 0;
         }
 
-        &-larger {
+        &--large {
             /* Box-modell/beteende */
             @if $search-field__box-height-larger {
                 height: $search-field__box-height-larger;
@@ -130,7 +130,7 @@
         }
     }
 
-    .rh-search-button {
+    .rh-search-bar__button {
         /* Box-modell/beteende */
         height: $search-field__box-height; //40px
         
@@ -181,7 +181,7 @@
             background: $complementary2;
         }
 
-        &-larger {
+        &--large {
             /* Box-modell/beteende */
             @if $search-field__box-height-larger {
                 height: $search-field__box-height-larger;

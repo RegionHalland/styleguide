@@ -1,0 +1,13 @@
+{
+    "name": "regionhalland/block-icon-link",
+    "description": "Icon link block component",
+    "type": "styleguide-molecule",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Region Halland",
+            "email": "regionen@regionhalland.se"
+        }
+    ],
+    "require": {}
+}

@@ -34,19 +34,19 @@
         }
     }
 
-    &--vuxhalland {
-        /* Visuellt */
-        background: $vuxhalland;
-        border: 1px solid $vuxhalland;
+    // &--vuxhalland {
+    //     /* Visuellt */
+    //     background: $vuxhalland;
+    //     border: 1px solid $vuxhalland;
 
-        /* Typografi */
-        color: black;
-    }
+    //     /* Typografi */
+    //     color: black;
+    // }
 
-    &--vuxhalland:hover,
-    &:active {
-        /* Typografi */
-        color: black;
-    }
+    //&--vuxhalland:hover,
+    // &:active {
+    //     /* Typografi */
+    //     color: black;
+    // }
 
 }

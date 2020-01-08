@@ -51,14 +51,34 @@ $button--disabled-border: 0em;
 $button--disabled-color: $grey-base;
 $button--disabled-text-decoration: none; //false
 
-// "primary"-modifier
+// "primary"-modifier - Base settings
 $button--primary-background-color: $color-primary;
 $button--primary-color: $white; //false
-$button--primary-hover-text-decoration: underline; //false
-$button--primary-active-background-color: $white;
-$button--primary-active-border: 0.0625em solid $color-primary;
-$button--primary-active-color: $color-primary; //false
-$button--primary-active-text-decoration: none; //false
+
+$button--primary-effect: true;
+$button--primary-effect-background-color: $white; //false
+$button--primary-effect-border: 0.0625em solid $color-primary; //false
+$button--primary-effect-color: $color-primary; //false
+$button--primary-effect-text-decoration: underline; //false
+
+// Specific settings
+$button--primary-hover: $button--primary-effect; //Only true - false
+$button--primary-hover-background-color: $button--primary-effect-background-color;
+$button--primary-hover-border: $button--primary-effect-border;
+$button--primary-hover-color: $button--primary-effect-color;
+$button--primary-hover-text-decoration: $button--primary-effect-text-decoration;
+
+$button--primary-active: $button--primary-effect; //Only true - false
+$button--primary-active-background-color: $button--primary-effect-background-color;
+$button--primary-active-border: $button--primary-effect-border;
+$button--primary-active-color: $button--primary-effect-color;
+$button--primary-active-text-decoration: $button--primary-effect-text-decoration;
+
+$button--primary-focus: $button--primary-effect; //Only true - false
+$button--primary-focus-background-color: $button--primary-effect-background-color;
+$button--primary-focus-border: $button--primary-effect-border;
+$button--primary-focus-color: $button--primary-effect-color;
+$button--primary-focus-text-decoration: $button--primary-effect-text-decoration;
 
 // "secondary"-modifier
 $button--secondary-background-color: $color-secondary;

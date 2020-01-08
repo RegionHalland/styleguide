@@ -44,7 +44,7 @@
         }
     }
 
-    &:active {
+    &:active, &:focus {
 
         /* Visuellt */
         @if $circle-button--background-color-active {
@@ -113,7 +113,7 @@
         background: $circle-button--background-secondary;
         color: $circle-button--text-color-secondary; //false
 
-        &:hover {
+        &:hover, &:active, &:focus {
 
             /* Visuellt */
             @if $circle-button--background-color-hover-secondary {
@@ -123,6 +123,24 @@
             /* Typografi */
             @if $circle-button--text-color-hover-secondary {
                 color: $circle-button--text-color-hover-secondary;
+            }
+        }
+    }
+
+    &--warning {
+        background: $circle-button-warning--background-color;
+        color: $circle-button-warning--icon-color; //false
+
+        &:hover, &:active, &:focus {
+
+            /* Visuellt */
+            @if $circle-button-warning-effect--background-color {
+                background-color: $circle-button-warning-effect--background-color;
+            }
+
+            /* Typografi */
+            @if $circle-button-warning-effect--icon-color {
+                color: $circle-button-warning-effect--icon-color;
             }
         }
     }

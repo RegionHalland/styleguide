@@ -1,0 +1,14 @@
+.rh-logo {
+	/* Box-modell/beteende */
+	width: $LOGO--WIDTH;
+
+	@include medium {
+		/* Box-modell/beteende */
+		width: $LOGO--MEDIUM--WIDTH;
+	}
+
+	@include large {
+		/* Box-modell/beteende */
+		width: $LOGO--LARGE--WIDTH;
+	}
+}

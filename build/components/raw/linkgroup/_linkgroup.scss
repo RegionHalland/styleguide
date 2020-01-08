@@ -1,112 +1,118 @@
-.rh-accordion {
-    /* Positionering */
-    align-items: center;
+.rh-linkgroup {
 
-    /* Box-modell/beteende */
-    display: flex;
-    width: 100%;
-    padding-top: em(11);
-    padding-bottom: em(11);
-    padding-left: em(11);
-    padding-right: em(5);
+    &__titlebar {
+        /* Positionering */
+        align-items: $LINKGROUP__TITLEBAR--ALIGN-ITEMS;
 
-    /* Visuellt */
-    border-left: 4px solid $color-primary;
-    border-top: 0;
-    border-right: 0;
-    border-bottom: 0;
-    background-color: $grey-lightest;
-
-    /* Blandat/övrigt */
-    cursor: pointer;
-
-    &-title {
         /* Box-modell/beteende */
-        margin: 0;
+        display: $LINKGROUP__TITLEBAR--DISPLAY;
+        width: $LINKGROUP__TITLEBAR--WIDTH;
+        padding-top: $LINKGROUP__TITLEBAR--PADDING-TOP;
+        padding-bottom: $LINKGROUP__TITLEBAR--PADDING-BOTTOM;
+        padding-left: $LINKGROUP__TITLEBAR--PADDING-LEFT;
+        padding-right: $LINKGROUP__TITLEBAR--PADDING-RIGHT;
+
+        /* Visuellt */
+        border-left: $LINKGROUP__TITLEBAR--BORDER-LEFT;
+        border-top: $LINKGROUP__TITLEBAR--BORDER-TOP;
+        border-right: $LINKGROUP__TITLEBAR--BORDER-RIGHT;
+        border-bottom: $LINKGROUP__TITLEBAR--BORDER-BOTTOM;
+        background-color: $LINKGROUP__TITLEBAR--BACKGROUND-COLOR;
 
         /* Typografi */
-        color: $black;
-        font-weight: bold;
+        font-size: $LINKGROUP__TITLEBAR--FONT-SIZE;
+        color: $LINKGROUP__TITLEBAR--COLOR;
+        font-weight: $LINKGROUP__TITLEBAR--FONT-WEIGHT;
+
+        /* Blandat/övrigt */
+        cursor: $LINKGROUP__TITLEBAR--CURSOR;
+
+        &:focus {
+            background: $LINKGROUP__TITLEBAR--FOCUS--BACKGROUND;
+            color: $LINKGROUP__TITLEBAR--FOCUS--COLOR;
+            outline: $LINKGROUP__TITLEBAR--FOCUS--OUTLINE;
+        }
+
+        &--active {
+            /* Visuellt */
+            background-color: $LINKGROUP__TITLEBAR--ACTIVE--BACKGROUND-COLOR;
+            color: $LINKGROUP__TITLEBAR--ACTIVE--COLOR;
+
+            .rh-linkgroup__icon:after {
+                /* Visuellt */
+                background-color: $LINKGROUP__TITLEBAR--ACTIVE--LINKGROUP__ICON--BACKGROUND-COLOR;
+
+                /* Typografi */
+                font-family: $LINKGROUP__TITLEBAR--ACTIVE--LINKGROUP__ICON--FONT-FAMILY;
+                color: $LINKGROUP__TITLEBAR--ACTIVE--LINKGROUP__ICON--COLOR;
+
+                /* Blandat/övrigt */
+                content: $LINKGROUP__TITLEBAR--ACTIVE--LINKGROUP__ICON--CONTENT;
+            }
+        }
     }
 
-    &-icon {
+    &__title {
         /* Box-modell/beteende */
-        margin-left: auto;
+        margin: $LINKGROUP__TITLE--MARGIN;
+    }
+
+    &__icon {
+        /* Box-modell/beteende */
+        margin-left: $LINKGROUP__ICON--MARGIN-LEFT;
 
         &:after {
             /* Box-modell/beteende */
-            padding: em(8);
-            margin-right: em(10);
+            padding: $LINKGROUP__ICON--AFTER--PADDING;
+            margin-right: $LINKGROUP__ICON--AFTER--MARGIN-RIGHT;
 
             /* Visuellt */
-            border-radius: 50%;
-            background-color: $color-primary;
+            border-radius: $LINKGROUP__ICON--AFTER--BORDER-RADIUS;
+            background-color: $LINKGROUP__ICON--AFTER--BACKGROUND-COLOR;
 
             /* Typografi */
-            font-family: "feather";
-            color: $white;
-            font-size: em(14);
+            font-family: $LINKGROUP__ICON--AFTER--FONT-FAMILY;
+            color: $LINKGROUP__ICON--AFTER--COLOR;
+            font-size: $LINKGROUP__ICON--AFTER--FONT-SIZE;
 
             /* Blandat/övrigt */
-            content: "\e8b1";
+            content: $LINKGROUP__ICON--AFTER--CONTENT;
         }
     }
 
-    &-active {
-        /* Visuellt */
-        background-color: $color-primary;
-
-        .rh-accordion-title {
-            /* Typografi */
-            color: $white;
-        }
-
-        .rh-accordion-icon:after {
-            /* Visuellt */
-            background-color: $white;
-
-            /* Typografi */
-            font-family: "feather";
-            color: $color-primary;
-
-            /* Blandat/övrigt */
-            content: "\e897";
-        }
-    }
-}
-
-.rh-linkgroup-card {
-    /* Box-modell/beteende */
-    overflow: hidden;
-    max-height: 0;
-
-    /* Visuellt */
-    background-color: $grey-lightest;
-    transition: max-height 0.2s ease-out;
-    -webkit-transition: max-height 0.2s;
-}
-
-.rh-listgroup {
-    /* Box-modell/beteende */
-    margin-left: em(10);
-    margin-right: em(10);
-    padding-top: em(30);
-
-    &-item {
+    &__card {
         /* Box-modell/beteende */
-        margin-bottom: em(35);
+        overflow: $LINKGROUP__CARD--OVERFLOW;
+
+        /* Visuellt */
+        background-color: $LINKGROUP__CARD--BACKGROUND-COLOR;
+        display: $LINKGROUP__CARD--DISPLAY;
+        transition: $LINKGROUP__CARD--MAX-HEIGHT;
+        -webkit-transition: $LINKGROUP__CARD--WEBKIT-TRANSITION;
+    }
+
+    &__list {
+        /* Box-modell/beteende */
+        margin-left: $LINKGROUP__LIST--MARGIN-LEFT;
+        margin-right: $LINKGROUP__LIST--MARGIN-RIGHT;
+        padding-top: $LINKGROUP__LIST--PADDING-TOP;
+    }
+
+    &__list-item {
+        /* Box-modell/beteende */
+        margin-bottom: $LINKGROUP__LIST-ITEM--MARGIN-BOTTOM;
 
         /* Typografi */
-        font-size: $p-small;
+        font-size: $LINKGROUP__LIST-ITEM--FONT-SIZE;
 
         @include medium {
             /* Typografi */
-            font-size: $p-medium;
+            font-size: $LINKGROUP__LIST-ITEM--MEDIUM--FONT-SIZE;
         }
 
         @include large {
             /* Typografi */
-            font-size: $p-large;
+            font-size: $LINKGROUP__LIST-ITEM--LARGE--FONT-SIZE;
         }
     }
 }

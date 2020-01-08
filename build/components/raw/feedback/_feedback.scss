@@ -2,21 +2,10 @@
 
     hr {
         /* Box-modell/beteende */
-        margin-top: em(22);
-        margin-bottom: em(22);
+        margin-top: $feedback-hr--margin-top;
+        margin-bottom: $feedback-hr--margin-bottom;
 
         /* Visuellt */
-        border: em(1) solid $grey-light;
+        border: $feedback-hr--border;
     }
-
-    .rh-button {
-        /* Box-modell/beteende */
-        width: em(80);
-
-        @include large {
-            /* Box-modell/beteende */
-            width: em(100);
-        }
-    }
-
 }

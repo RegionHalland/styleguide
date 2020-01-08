@@ -1,0 +1,106 @@
+.rh-block-icon-link {
+    display: flex;
+    align-items: center;
+
+    &--default {
+        // Base settings are using for making new classes during generation
+        $blockIconLinkClassname: "rh-block-icon-link--default";
+        $blockIconLinkIconClassname: "rh-block-icon-link__icon--default";
+        $blockIconLinkLinkClassname: "rh-block-icon-link__link--default";
+
+        // Generation
+        @include create-clickable-element-effect(
+            $blockIconLinkClassname, //Container's name for block-icon-link
+            $blockIconLinkLinkClassname, //Link's classname
+            false, //description classname
+            false, //outside - Only true or false
+            true, //inside - Only true or false
+            false, //border-top styling
+            false, //border-right styling
+            false, //border-bottom styling
+            false, //border-left styling
+            false, //box-shadow when :hover, :active
+            false, //box-shadow when :focus-within (Using for <div> tag)
+            false,//title color
+            underline, //title text-decoration
+            false, //description color
+            false //description text-decoration
+        ) {
+            // Extend effects for only icon
+            @include create-icon-button-effect(
+                $blockIconLinkClassname, //Container's name for block-icon-link
+                $blockIconLinkIconClassname, //icon's classname
+                $blockIconLink-default-effect--background-color, //icon's background
+                $blockIconLink-default-effect--icon-color //icon's color
+            )
+        }
+    }
+
+    &--primary {
+        // Base settings are using for making new classes during generation
+        $blockIconLinkClassname: "rh-block-icon-link--primary";
+        $blockIconLinkIconClassname: "rh-block-icon-link__icon--primary";
+        $blockIconLinkLinkClassname: "rh-block-icon-link__link--primary";
+
+        // Generation
+        @include create-clickable-element-effect(
+            $blockIconLinkClassname, //Container's name for block-icon-link
+            $blockIconLinkLinkClassname, //Link's classname
+            false, //description classname
+            false, //outside - Only true or false
+            true, //inside - Only true or false
+            false, //border-top styling
+            false, //border-right styling
+            false, //border-bottom styling
+            false, //border-left styling
+            false, //box-shadow when :hover, :active
+            false, //box-shadow when :focus-within (Using for <div> tag)
+            false,//title color
+            underline, //title text-decoration
+            false, //description color
+            false //description text-decoration
+        ) {
+            // Extend effects for only icon
+            @include create-icon-button-effect(
+                $blockIconLinkClassname, //Container's name for block-icon-link
+                $blockIconLinkIconClassname, //icon's classname
+                $blockIconLink-primary-effect--background-color, //icon's background
+                $blockIconLink-primary-effect--icon-color //icon's color
+            )
+        }
+    }
+
+    &--warning {
+        // Base settings are using for making new classes during generation
+        $blockIconLinkClassname: "rh-block-icon-link--warning";
+        $blockIconLinkIconClassname: "rh-block-icon-link__icon--warning";
+        $blockIconLinkLinkClassname: "rh-block-icon-link__link--warning";
+
+        // Generation
+        @include create-clickable-element-effect(
+            $blockIconLinkClassname, //Container's name for block-icon-link
+            $blockIconLinkLinkClassname, //Link's classname
+            false, //description classname
+            false, //outside - Only true or false
+            true, //inside - Only true or false
+            false, //border-top styling
+            false, //border-right styling
+            false, //border-bottom styling
+            false, //border-left styling
+            false, //box-shadow when :hover, :active
+            false, //box-shadow when :focus-within (Using for <div> tag)
+            false,//title color
+            underline, //title text-decoration
+            false, //description color
+            false //description text-decoration
+        ) {
+            // Extend effects for only icon
+            @include create-icon-button-effect(
+                $blockIconLinkClassname, //Container's name for block-icon-link
+                $blockIconLinkIconClassname, //icon's classname
+                $blockIconLink-warning-effect--background-color, //icon's background
+                $blockIconLink-warning-effect--icon-color //icon's color
+            )
+        }
+    }
+}

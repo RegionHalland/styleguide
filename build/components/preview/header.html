@@ -18,57 +18,180 @@
 
 <body style="padding: 1rem;">
 
-    <!-- OBS! Demodiv för att kunna se hela komponenten -->
-<div style="padding-top: 50px; padding-bottom:50px; background-color: #E4E4E4;">
+    <div class="rh-header">
+	<div class="rh-logo-sitename">
+	<img class="rh-logo" src="/images/components/logo/navigation_logo.svg" alt="Region Halland">
+	<span class="rh-sitename h3">Vårdgivare Halland</span>
+</div>
+	<div class="rh-toplinks">
+      <ul class="rh-toplinks-nav">
+        <li class="rh-toplinks-nav-item">
+            <a class="icon-link rh-round-button"></a>
+            <a class="rh-toplinks-nav-link" href="#">Lorem ipsum</a>
+        </li>
+        <li class="rh-toplinks-nav-item">
+            <a class="icon-layers rh-round-button"></a>
+            <a class="rh-toplinks-nav-link" href="#">Lorem ipsum</a>
+        </li>
+        <li class="rh-toplinks-nav-item">
+            <a class="icon-alert-triangle rh-round-button"></a>
+            <a class="rh-toplinks-nav-link" href="#">Driftinformation</a>
+        </li>
+        <li class="rh-toplinks-nav-item">
+            <a class="icon-headphones rh-round-button"></a>
+            <a class="rh-toplinks-nav-link" href="#">Talande webb</a>
+        </li>
+        <li class="rh-toplinks-nav-item">
+            <a class="icon-log-in rh-round-button"></a>
+            <a class="rh-toplinks-nav-link" href="#">E-tjänster</a>
+        </li>
+      </ul>
+</div>
 
-	<div class="rh-header">
-		<div class="rh-header-logo">
-			<div class="rh-logo-sitename">
-				<img class="rh-logo-sitename-logo" src="/images/components/rh-logo-sitename/navigation_logo.svg" alt="Type something">
-				<h3 class="rh-logo-sitename-title">Vårdgivare Halland</h3>
-			</div>
-		</div>
+	<div class="rh-header__search-desktop">
+		<div class="rh-search-bar">
+	<input type="text" class="rh-search-bar__input" placeholder="Placeholder">
+	<button type="submit" class="rh-search-bar__button">
+		Sök
+	</button>
+</div>
+	</div>
+	<div class="rh-header__menu">
+		<span style="float:left; padding-right:1ex;">
+			<div class="rh-circle-button rh-circle-button--large" tabindex="0">
+			    <span class="icon-search rh-circle-button__icon"></span>
+			</div>		</span>
+		<span style="float:right;">
+			<script>
+    /* The script is creating demo environment
+        overflow-x: hidden; //Must have
+        height: 101vh; //The webpage has always scrollbar
+    */
+    var bodyTag = document.getElementsByTagName("BODY")[0];
+    bodyTag.setAttribute("style", "padding: 0; overflow-x: hidden; height: 101vh;");
+</script>
 
-        <div class="rh-toplinks">
-              <ul class="rh-toplinks-nav">
-                <li class="rh-toplinks-nav-item">
-                    <a class="icon-link rh-round-button"></a>
-                    <a class="rh-toplinks-nav-link" href="#">Lorem ipsum</a>
-                </li>
-                <li class="rh-toplinks-nav-item">
-                    <a class="icon-layers rh-round-button"></a>
-                    <a class="rh-toplinks-nav-link" href="#">Lorem ipsum</a>
-                </li>
-                <li class="rh-toplinks-nav-item">
-                    <a class="icon-alert-triangle rh-round-button"></a>
-                    <a class="rh-toplinks-nav-link" href="#">Driftinformation</a>
-                </li>
-                <li class="rh-toplinks-nav-item">
-                    <a class="icon-headphones rh-round-button"></a>
-                    <a class="rh-toplinks-nav-link" href="#">Talande webb</a>
-                </li>
-                <li class="rh-toplinks-nav-item">
-                    <a class="icon-log-in rh-round-button"></a>
-                    <a class="rh-toplinks-nav-link" href="#">E-tjänster</a>
-                </li>
-              </ul>
+<div id="rh-menu-main-button" class="rh-circle-button rh-circle-button--large">
+    <span class="icon-menu rh-circle-button__icon"></span>
+</div>
+
+<!-- Standard version (3 levels) -->
+<div class="rh-menu__overlay rh-dp--none"></div>
+<div id="rh-menu-body" class="rh-menu__body rh-pos--fixed">
+    <div class="rh-menu__top-bar">
+        <div id="rh-menu-close-button" class="rh-circle-button rh-circle-button--large rh-menu__button-close">
+            <span class="icon-x rh-circle-button__icon"></span>
+        </div>
+    </div>
+
+    <div class="rh-menu__offset-top"></div>
+
+    <div>
+        
+        <div class="rh-menu__item rh-menu__item-level-1">
+            <a href="#" class="rh-link--navigation rh-menu__link-level-1">
+                Halland – bästa livsplatsen
+            </a>
+
         </div>
 
-		<div class="rh-header-search-desktop">
-			<div class="rh-search-field">
-				<input type="text" class="rh-search-term" placeholder="Placeholder">
-				<button type="submit" class="rh-search-button">
-					Sök
-				</button>
-			</div>
-		</div>
-		<div class="rh-header-menu">
-			<i class="icon-search rh-round-button"></i>
-			<i class="icon-menu rh-round-button"></i>
-		</div>
-	</div>
+        
+        
+        <div class="rh-menu__item rh-menu__item-level-1">
+            <a href="#" class="rh-link--navigation rh-menu__link-level-1">
+                Våra skolor
+            </a>
 
-</div>	<!-- OBS! Demodiv slut -->
+            <div id="7" class="rh-circle-button rh-circle-button--small rh-menu__item-button rh-menu__item-button-parent">
+                <span class="icon-plus"></span>
+            </div>
+        </div>
+
+        
+        <div id="sub7" class="rh-menu__item-sub-container">
+            <div class="rh-menu__item rh-menu__item-sub-item rh-pl-2">
+                <a href="#" class="rh-link--navigation rh-menu__link">
+                    Katrinebergs folkhögskola
+                </a>
+
+            </div>
+
+            
+            <div class="rh-menu__item rh-menu__item-sub-item rh-pl-2">
+                <a href="#" class="rh-link--navigation rh-menu__link">
+                    Löftadalens folkhögskola
+                </a>
+
+            </div>
+
+            
+            <div class="rh-menu__item rh-menu__item-sub-item rh-pl-2">
+                <a href="#" class="rh-link--navigation rh-menu__link">
+                    Munkagårdsgymnasiet
+                </a>
+
+            </div>
+
+            
+        </div>
+        
+        
+        <div class="rh-menu__item rh-menu__item-level-1">
+            <a href="#" class="rh-link--navigation rh-menu__link-level-1">
+                Om Region Halland
+            </a>
+
+            <div id="2" class="rh-circle-button rh-circle-button--small rh-menu__item-button rh-menu__item-button-parent">
+                <span class="icon-plus"></span>
+            </div>
+        </div>
+
+        
+        <div id="sub2" class="rh-menu__item-sub-container">
+            <div class="rh-menu__item rh-menu__item-sub-item rh-pl-2">
+                <a href="#" class="rh-link--navigation rh-menu__link">
+                    Region Hallands organisation
+                </a>
+
+            </div>
+
+            
+            <div class="rh-menu__item rh-menu__item-sub-item rh-pl-2">
+                <a href="#" class="rh-link--navigation rh-menu__link">
+                    Vision, mål och uppdrag
+                </a>
+
+                <div id="4" class="rh-circle-button rh-circle-button--small rh-menu__item-button rh-menu__item-button-sub-item">
+                    <span class="icon-plus"></span>
+                </div>
+            </div>
+
+            
+            <div id="sub4" class="rh-menu__item-sub-container rh-menu__item-sub-container-style-1">
+                <div class="rh-menu__item rh-menu__item-sub-item rh-pl-3">
+                    <a href="#" class="rh-link--navigation rh-menu__link">
+                        Regional utvecklingsstrategi 2035
+                    </a>
+                </div>
+                <div class="rh-menu__item rh-menu__item-sub-item rh-pl-3">
+                    <a href="#" class="rh-link--navigation rh-menu__link">
+                        Regional utvecklingsstrategi 2050
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+    </div>
+
+    <div class="rh-menu__offset-bottom"></div>
+</div>
+
+
+		</span>
+	</div>
+</div>
 
 <script src="../../js/components.js"></script>
 

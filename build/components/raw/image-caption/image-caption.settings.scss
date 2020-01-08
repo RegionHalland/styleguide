@@ -1,0 +1,27 @@
+/* ********************** */
+/*  Molekylen image caption  */
+/* ********************** */
+
+// Grundinställningar
+$figure--position: absolute;
+$figure--width: 344px;
+$figure--text-align: left;
+$figure--font-size: em(12);
+$figure--text-indent: 0;
+$figure--color: $grey-darkest;
+
+// Medium
+$figure--medium--width: 509px;
+$figure--medium--font-size: em(14);
+
+// Large
+$figure--medium--width: 640px;
+$figure--medium--font-size: em(15);
+
+// figure__image
+$figure__image--width: 100%;
+
+// figure__caption
+$figure__caption--margin-top: -2px;
+$figure__caption--padding: 10px;
+$figure__caption--background-color: $grey-lightest;

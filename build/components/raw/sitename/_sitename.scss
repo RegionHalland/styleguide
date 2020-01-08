@@ -1,0 +1,26 @@
+
+.rh-sitename{
+	/* Box-modell/beteende */
+	margin-left: em(21);
+
+	/* Typografi */
+	font-weight: normal;
+	color: $black;
+	font-size: em(14);
+
+	@include medium {
+		/* Box-modell/beteende */
+		margin-right: em(21);
+
+		/* Typografi */
+		font-size: em(14);
+	}
+
+	@include large {
+		/* Box-modell/beteende */
+		margin-left: em(29);
+
+		/* Typografi */
+		font-size: em(20);
+	}
+}

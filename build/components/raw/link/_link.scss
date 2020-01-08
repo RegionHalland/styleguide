@@ -11,7 +11,7 @@
     }
   }
 
-  &--navigation:active, &--navigation:hover {
+  &--navigation:active, &--navigation:hover, &--navigation:focus {
     /* Typografi */
     @if $link--active-hover-text-decoration {
         text-decoration: $link--active-hover-text-decoration;

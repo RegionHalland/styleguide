@@ -1,42 +1,21 @@
 .rh-news-info {
     /* Box-modell/beteende */
-    display: flex;
-    
-    /* Typografi */
-    font-size: em(11);
-    
-    /* Typografi */
-	@include medium { font-size: em(15); }
-	@include large { font-size: em(16); }
+    display: $NEWS-INFO--DISPLAY;
 
-	.rh-news-info-title {
+    /* Typografi */
+    font-size: $NEWS-INFO--FONT-SIZE;
+
+    /* Typografi */
+    @include medium { font-size: $NEWS-INFO--MEDIUM--FONT-SIZE; }
+    @include large { font-size: $NEWS-INFO--LARGE--FONT-SIZE; }
+
+    &__title {
         /* Box-modell/beteende */
-		margin-right: 30px;
-	}
+        margin-right: $NEWS-INFO__TITLE--MARGIN-RIGHT;
+    }
 
-	.rh-news-info-text {
+    &__text {
         /* Typografi */
-		color: $grey-darkest;
-	}
-
-	.rh-news-info-text-link {
-        /* Typografi */
-		color: $color-primary;
-	    font-size: inherit;
-		text-decoration: underline;
-        
-        /* Blandat/övrigt */
-        cursor: pointer;
-        
-	    &:hover,
-	    &:active {
-            /* Typografi */
-	        text-decoration: underline;  
-	    }
-
-	    &:visited {
-            /* Typografi */
-	        color: $link-visited;
-	    }
-	}
+        color: $NEWS-INFO__TEXT--COLOR;
+    }
 }

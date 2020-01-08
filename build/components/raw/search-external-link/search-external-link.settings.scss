@@ -1,0 +1,35 @@
+/// MOLECULE - Search external link
+// --------- Base settings ----------
+$search-external--padding: 1em 1em 1.5em 1em; //16px - 16px - 24px - 16px
+
+// Modifier --default
+$search-external-default--border: 0.0625em solid $base3; //1px
+$search-external-default--background-color: $grey-lightest;
+
+// Modifier --secondary
+$search-external-warning--border: 0.0625em solid $warning-dark; //1px
+$search-external-warning--background-color: $warning-light;
+// ------ End of base settings ------
+
+// Other settings
+$search-external-default__icon: true; // Activating styling for icon - Using only true or false
+$search-external-default__icon--color: false; //false
+$search-external-default__icon--background-color: false; //false
+$search-external-default-effect__icon--color: false; //false
+$search-external-default-effect__icon--background-color: false; //false
+
+$search-external-warning__icon: true; // Activating styling for icon - Using only true or false
+$search-external-warning__icon--color: #ffffff; //false
+$search-external-warning__icon--background-color: $warning-dark; //false
+$search-external-warning-effect__icon--color: #ffffff; //false
+$search-external-warning-effect__icon--background-color: $warning; //false
+
+$search-external__header-title--font-size: $FONT-SIZE--MEDIUM; //15px
+$search-external__header-title-medium--font-size: $FONT-SIZE--LARGE; //18px
+$search-external__header-title-large--font-size: $FONT-SIZE--XLARGE; //20px
+
+$search-external__header-link--font-size: $FONT-SIZE--SMALL; //14px
+$search-external__header-link-medium--font-size: $FONT-SIZE--MEDIUM; //15px
+
+$search-external__description--font-size: $FONT-SIZE--MEDIUM; //15px
+$search-external__description-medium--font-size: $FONT-SIZE--STANDARD; //16px
