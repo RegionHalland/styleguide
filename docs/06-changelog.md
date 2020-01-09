@@ -1,8 +1,17 @@
 # Versioner av stilguiden och deras ändringar
 
-## 12.1.0 (2020-01-08)
+## 12.1.0 (2020-01-09)
+* **Molekylen "Tabs"** (v1.0.0.20200109)
+    * ny markup
+    * klassnamn enligt BEM
+    * tweakad css
+    * kompatibilitet med WAI-aria authoring practices
+    * ny config
+    * skapat js-fil som hanterar keybindings för focusbeteende
+    * settingsfil skapad
+
 * **Template "General"** (v1.0.0.20200108)
-    * Organismen "Header" ersätter lösa komponenter.
+    * Organismen "Header" ersätter lösa komponenter i huvudet.
 
 * **Molekylen "Pagination"** (v1.0.0.20200108)
     * Settingsfil introducerad
