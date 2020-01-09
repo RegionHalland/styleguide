@@ -1,6 +1,6 @@
 # Versioner av stilguiden och deras ändringar
 
-## 12.1.0 (2020-01-09)
+## 13.0.0 (2020-01-09)
 * **Molekylen "Tabs"** (v1.0.0.20200109)
     * ny markup
     * klassnamn enligt BEM
