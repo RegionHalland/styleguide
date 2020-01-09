@@ -1,10 +1,10 @@
 .rh-pagination {
-  display: inline-block;
+  display: $PAGINATION--DISPLAY;
   &-link {
-    float:  left;
-    border-right: 0;
+    float: $PAGINATION-LINK--FLOAT;
+    border-right: $PAGINATION-LINK--BORDER-RIGHT;
     &:last-child{
-      border-right: 0.75px solid $grey-dark;
+      border-right: $PAGINATION-LINK--LAST-CHILD--BORDER-RIGHT;
     }
   }
 }

@@ -262,6 +262,8 @@
                 
                 <option value="file-13c46d978d2428791d2433f78d902748">composer.json</option>
                 
+                <option value="file-ec0672542b5c332655b3185d3712d4fc">pagination.settings.scss</option>
+                
             </select>
         </div>
 
@@ -275,12 +277,12 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
                                 <pre><span class="hljs-selector-class">.rh-pagination</span> {
-  <span class="hljs-attribute">display</span>: inline-block;
+  <span class="hljs-attribute">display</span>: <span class="hljs-variable">$PAGINATION--DISPLAY</span>;
   &amp;-<span class="hljs-selector-tag">link</span> {
-    <span class="hljs-attribute">float</span>:  left;
-    <span class="hljs-attribute">border-right</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">float</span>: <span class="hljs-variable">$PAGINATION-LINK--FLOAT</span>;
+    <span class="hljs-attribute">border-right</span>: <span class="hljs-variable">$PAGINATION-LINK--BORDER-RIGHT</span>;
     &amp;:last-child{
-      <span class="hljs-attribute">border-right</span>: <span class="hljs-number">0.75px</span> solid <span class="hljs-variable">$grey-dark</span>;
+      <span class="hljs-attribute">border-right</span>: <span class="hljs-variable">$PAGINATION-LINK--LAST-CHILD--BORDER-RIGHT</span>;
     }
   }
 }
@@ -301,7 +303,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">168 Bytes</span>
+                    <span class="Meta-value">242 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -343,6 +345,42 @@
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
                     <span class="Meta-value">289 Bytes</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-ec0672542b5c332655b3185d3712d4fc" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-SCSS FileBrowser-code">
+                                <pre><span class="hljs-comment">/* *************************  */</span>
+<span class="hljs-comment">/*   Molekylen "pagination"   */</span>
+<span class="hljs-comment">/* *************************  */</span>
+
+<span class="hljs-variable">$PAGINATION--DISPLAY</span>: inline-block;
+<span class="hljs-variable">$PAGINATION-LINK--FLOAT</span>: left;
+<span class="hljs-variable">$PAGINATION-LINK--BORDER-RIGHT</span>: <span class="hljs-number">0</span>;
+<span class="hljs-variable">$PAGINATION-LINK--LAST-CHILD--BORDER-RIGHT</span>: <span class="hljs-number">0.75px</span> solid <span class="hljs-variable">$grey-dark</span>;</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/pagination/pagination.settings.scss"><span>/components/raw/pagination/pagination.settings.scss</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">components/Molecules/pagination/pagination.settings.scss</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">270 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -411,6 +449,10 @@
         
         <h1 id="molekylen-pagination">Molekylen “Pagination”</h1>
 <h2 id="versionshistorik">Versionshistorik</h2>
+<h3 id="10020200108">1.0.0.20200108</h3>
+<ul>
+<li>Settingsfil skapad</li>
+</ul>
 <h3 id="10020191128">1.0.0.20191128</h3>
 <p>Brytande ändring: </p>
 <ul>
@@ -3201,7 +3243,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #4b7070;" title="Under granskning"></span>
 
 
 </div>

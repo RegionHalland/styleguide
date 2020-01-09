@@ -1,76 +1,78 @@
-.rh-tabs{	
-	&-list{
-		display: flex;			
+.rh-tabs {
+    display: $RH-TABS--DISPLAY;
 
-		&-item{
-			display: flex;
-			align-content: flex-start;
-			width: 100%;
-			padding: em(15);
-			background-color: $grey-lightest;
-			border-top: 4px solid $grey-light;
-			border-left: 1px solid $grey-lighter;
-			cursor: pointer;
+    &__item {
+        display: $TABS__ITEM--DISPLAY;
+        align-content: $TABS__ITEM--ALIGN-CONTENT;
+        width: $TABS__ITEM--WIDTH;
+        padding: $TABS__ITEM--PADDING;
+        background-color: $TABS__ITEM--BACKGROUND-COLOR;
+        border-top: $TABS__ITEM--BORDER-TOP;
+        border-left: $TABS__ITEM--BORDER-LEFT;
+        border-bottom: $TABS__ITEM--BORDER-BOTTOM;
+        border-right: $TABS__ITEM--BORDER-RIGHT;
+        cursor: $TABS__ITEM--CURSOR;
+        font-size: $TABS__ITEM--FONT-SIZE;
+        text-decoration: $TABS__ITEM--TEXT-DECORATION;
 
-			&:last-child{
-				border-right: 1px solid $grey-lighter;
-			}
-			&-text{
-				margin-bottom: 0;
-				color: $black;
-				font-size: $p-small;
-				@include medium {
-					font-size: $p-medium;
-					margin-right: em(20);
-				}
-				@include large {font-size: $p-large;}
-			}
+        &:last-child{
+            border-right: $TABS__ITEM--LAST-CHILD--BORDER-RIGHT;
+        }
+        &-text {
+            margin-bottom:$TABS__ITEM-TEXT--MARGIN-BOTTOM;
+            color: $TABS__ITEM-TEXT--COLOR;
+            font-size: $TABS__ITEM-TEXT--FONT-SIZE;
+            @include medium {
+                font-size: $TABS__ITEM-TEXT--MEDIUM--FONT-SIZE;
+                margin-right: $TABS__ITEM-TEXT--MEDIUM--MARGIN-RIGHT;
+            }
+            @include large {font-size: $TABS__ITEM-TEXT--LARGE--FONT-SIZE;}
+        }
 
-			&-text .rh-labels {
-				display: none;
-				@include medium {
-					display: inline;
-				}
-			}
+        &-text .rh-labels {
+            display: $TABS__ITEM-TEXT--RH-LABELS--DISPLAY;
+            @include medium {
+                display: $TABS__ITEM-TEXT--RH-LABELS--MEDIUM--DISPLAY;
+            }
+        }
 
-			&-icon{
-				margin-left: auto;
-				&:after {
-					padding: em(8);
-					background: $base2-light;
-					border-radius: 50%;
-			    	font-family: "feather"; 
-			    	content: "\e89b";
-					font-size: em(10);
-					@include medium { font-size: em(12);}
-					@include large { font-size: em(13);}
-				}
-			}
+        &-icon {
+            margin-left: $TABS__ITEM-ICON--MARGIN-LEFT;
+            &:after {
+                padding: $TABS__ITEM-ICON--AFTER--PADDING;
+                background: $TABS__ITEM-ICON--AFTER--BACKGROUND;
+                border-radius: $TABS__ITEM-ICON--AFTER--BORDER-RADIUS;
+                font-family: $TABS__ITEM-ICON--AFTER--FONT-FAMILY;
+                content: $TABS__ITEM-ICON--AFTER--CONTENT;
+                font-size: $TABS__ITEM-ICON--AFTER--FONT-SIZE;
+                @include medium { font-size: $TABS__ITEM-ICON--AFTER--MEDIUEM--FONT-SIZE;}
+                @include large { font-size: $TABS__ITEM-ICON--AFTER--LARGE--FONT-SIZE;}
+            }
+        }
 
-			&:hover, &:active{
-				background-color: $white;
-				border-top: 4px solid $complementary2;
-				.rh-tabs-list-item-icon{
-					&:after {
-						background: $complementary2-light;
-				    	font-family: "feather"; 
-				    	content: "\e8f6";
-					}
-				}	
-			}
+        &:hover, &:active, &:focus {
+            background-color: $TABS__ITEM--HOVER-ACTIVE-FOCUS--BACKGROUND-COLOR;
+            border-top: $TABS__ITEM--HOVER-ACTIVE-FOCUS--BORDER-TOP;
+            outline: $TABS__ITEM--HOVER-ACTIVE-FOCUS--OUTLINE;
+            .rh-tabs__item-icon{
+                &:after {
+                    background: $TABS__ITEM--HOVER-ACTIVE-FOCUS--AFTER--BACKGROUND;
+                    font-family: $TABS__ITEM--HOVER-ACTIVE-FOCUS--AFTER--FONT-FAMILY;
+                    content: $TABS__ITEM--HOVER-ACTIVE-FOCUS--AFTER--CONTENT;
+                }
+            }	
+        }
 
-			&--active{
-				background-color: $white;
-				border-top: 4px solid $complementary2;
-				.rh-tabs-list-item-icon{
-					&:after {
-						background: $complementary2-light;
-						font-family: "feather";
-						content: "\e8f6";
-					}
-				}
-			}
-		}
-	}
+        &--active {
+            background-color: $TABS__ITEM--ACTIVE--BACKGROUND-COLOR;
+            border-top:  $TABS__ITEM--ACTIVE--BORDER-TOP;
+            .rh-tabs__item-icon{
+                &:after {
+                    background:  $TABS__ITEM--ACTIVE--ITEM-ICON--AFTER--BACKGROUND;
+                    font-family:  $TABS__ITEM--ACTIVE--ITEM-ICON--AFTER--FONT-FAMILY;
+                    content: $TABS__ITEM--ACTIVE--ITEM-ICON--AFTER--CONTENT;
+                }
+            }
+        }
+    }
 }
-
