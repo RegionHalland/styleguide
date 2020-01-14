@@ -1,5 +1,5 @@
 # Versioner av stilguiden och deras ändringar
-## 13.1.0 ()
+## 13.1.0 (2020-01-14)
 * **Molekylen "Video"** (v1.0.0.20200110)
     * Ny status "rework" och planerad utveckling är listad. 
     * Linting
