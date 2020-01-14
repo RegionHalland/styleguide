@@ -1,4 +1,8 @@
 # Versioner av stilguiden och deras ändringar
+## 13.1.0 ()
+* **Molekylen "Video"** (v1.0.0.20200110)
+    * Ny status "rework" och planerad utveckling är listad. 
+    * Linting
 
 ## 13.0.0 (2020-01-09)
 * **Molekylen "Tabs"** (v1.0.0.20200109)
