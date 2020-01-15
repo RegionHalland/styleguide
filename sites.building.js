@@ -5,6 +5,7 @@ const concat = require('gulp-concat');
 const babel = require('gulp-babel');
 const fs = require("fs");
 const uglify = require('gulp-uglify');
+const { Command } = require('gulp-command-handling');
 
 // gulp-sass - Using for forwards-compatibility and explicitly
 sass.compiler = require('node-sass');
@@ -17,6 +18,22 @@ const { publicPath, releasePath } = building; // Public path and release path
 const styleguideVersion = styleguideConfig.version || '';
 
 const helpMessage = `\n\x1b[33m💡\x1b[0m Run \x1b[33m$ gulp help\x1b[0m to view the help information\n`;
+
+// Command definition
+const gulpCommand = new Command();
+gulpCommand
+    .option('builds', '-s', '--site', 'Build styling for a website by using its name')
+    .subOption('builds', '--site', '-m', '--minify', 'Minify files')
+    .subOption('builds', '--site', '-o', '--overwrite', 'Overwrite if file exists')
+    .option('builds', '-a', '--all', 'Build styling for all websites')
+    .subOption('builds', '--all', '-m', '--minify', 'Minify files')
+    .subOption('builds', '--all', '-o', '--overwrite', 'Overwrite if file exists')
+    .option('releases', '-s', '--site', 'Release styling for a website by using its name')
+    .subOption('releases', '--site', '-m', '--minify', 'Minify files')
+    .subOption('releases', '--site', '-o', '--overwrite', 'Overwrite if file exists')
+    .option('releases', '-a', '--all', 'Release styling for all websites')
+    .subOption('releases', '--all', '-m', '--minify', 'Minify files')
+    .subOption('releases', '--all', '-o', '--overwrite', 'Overwrite if file exists');
 
 /* ----------------------------------- HELPERS ------------------------------- */
 /**
@@ -43,48 +60,6 @@ function getOptionsHelper(option, alias) {
             const nextArg = argList[argIndex + 1];
             return (!nextArg || nextArg[0] === "-") ? true : nextArg;
         }
-    } catch (error) { return error; }
-}
-
-function identifyFlag(inputArg) {
-    try {
-        if (inputArg.charAt(0) === "-" && inputArg.charAt(1) !== "-"
-            || inputArg.charAt(0) === "-" && inputArg.charAt(1) === "-"
-        ) {
-            return true;
-        } else {
-            return false;
-        }
-    } catch (error) { return error; }
-}
-
-function getCommandParams() {
-    try {
-        const argList = process.argv.slice(3),
-            argListLength = argList.length;
-
-        let mainFlag,
-            subFlags = [],
-            argument = [];
-
-        for (let i = 0; i < argListLength; ++i) {
-            if (identifyFlag(argList[i])) {
-                if (i === 0) {
-                    mainFlag = argList[i];
-                } else {
-                    subFlags = subFlags.concat([argList[i]]);
-                }
-
-            } else {
-                argument = argument.concat([argList[i]]);
-            }
-        }
-
-        return {
-            mainFlag: mainFlag,
-            subFlags: subFlags,
-            argument: argument
-        };
     } catch (error) { return error; }
 }
 
@@ -503,72 +478,70 @@ function release_styling_for_all_sites(cb, options = {}) {
 
 /* ---------------------------------- MAIN ------------------------------- */
 function buildSites(cb) {
-    const { mainFlag, subFlags, argument } = getCommandParams();
-    const options = {
-        overWrite: subFlags.includes("-o") || subFlags.includes("--overwrite"), //overwrite - Default is false
-        minify: subFlags.includes("-m") || subFlags.includes("--minify") //minify - Default is false
-    };
+    const buildCommand = gulpCommand.parse(process.argv.slice(2));
 
-    switch (mainFlag) {
-        case "-s":
-        case "--site":
-            const sitename = argument[0];
+    // Build styling for a website by using its name
+    if (buildCommand.site) {
+        const sitename = buildCommand.site.argument;
+        const siteOptions = {
+            overWrite: buildCommand.site.overwrite ? buildCommand.site.overwrite : false,
+            minify: buildCommand.site.minify ? buildCommand.site.minify : false
+        };
 
-            if (typeof sitename === "string") {
-                build_styling_for_one_site(cb, sitename, options);
-            } else {
-                console.error(`\n\x1b[31m✗ Error\x1b[0m The website's name is missing`);
-                console.error(helpMessage);
-            }
+        if (sitename) {
+            build_styling_for_one_site(cb, sitename, siteOptions);
+        } else {
+            console.error(`\n\x1b[31m✗ Error\x1b[0m The website's name is missing\n`, helpMessage);
+        }
 
-            break;
+        return cb();
+    }
 
-        case "-a":
-        case "--all":
-            build_styling_for_all_sites(cb, options);
-            break;
+    // Build styling for all websites
+    if (buildCommand.all) {
+        const allSiteOptions = {
+            overWrite: buildCommand.all.overwrite ? buildCommand.all.overwrite : false,
+            minify: buildCommand.all.minify ? buildCommand.all.minify : false
+        };
 
-        default:
-            console.log('\n\x1b[31m✗ Error\x1b[0m Unknown command');
-            console.log(helpMessage);
+        build_styling_for_all_sites(cb, allSiteOptions);
 
-            break;
+        return cb();
     }
 
     cb();
 }
 
 function releaseSites(cb) {
-    const { mainFlag, subFlags, argument } = getCommandParams();
-    const options = {
-        overWrite: subFlags.includes("-o") || subFlags.includes("--overwrite"), //overwrite - Default is false
-        minify: subFlags.includes("-m") || subFlags.includes("--minify") //minify - Default is false
-    };
+    const releaseCommand = gulpCommand.parse(process.argv.slice(2));
 
-    switch (mainFlag) {
-        case "-s":
-        case "--site":
-            const sitename = argument[0];
+    //Release styling for a website by using its name
+    if (releaseCommand.site) {
+        const sitename = releaseCommand.site.argument;
+        const siteOptions = {
+            overWrite: releaseCommand.site.overwrite ? releaseCommand.site.overwrite : false,
+            minify: releaseCommand.site.minify ? releaseCommand.site.minify : false
+        };
 
-            if (typeof sitename === "string") {
-                release_styling_for_one_site(cb, sitename, options);
-            } else {
-                console.error(`\n\x1b[31m✗ Error\x1b[0m The website's name is missing`);
-                console.error(helpMessage);
-            }
+        if (sitename) {
+            release_styling_for_one_site(cb, sitename, siteOptions);
+        } else {
+            console.error(`\n\x1b[31m✗ Error\x1b[0m The website's name is missing\n`, helpMessage);
+        }
 
-            break;
+        return cb();
+    }
 
-        case "-a":
-        case "--all":
-            release_styling_for_all_sites(cb, options);
-            break;
+    // Release styling for all websites
+    if (releaseCommand.all) {
+        const allSiteOptions = {
+            overWrite: releaseCommand.site.overwrite ? releaseCommand.site.overwrite : false,
+            minify: releaseCommand.site.minify ? releaseCommand.site.minify : false
+        };
 
-        default:
-            console.log('\n\x1b[31m✗ Error\x1b[0m Unknown command');
-            console.log(helpMessage);
+        release_styling_for_all_sites(cb, allSiteOptions);
 
-            break;
+        return cb();
     }
 
     cb();
@@ -576,7 +549,7 @@ function releaseSites(cb) {
 
 function helpInformation(cb) {
     const helpInformation = `\nUSAGE:` +
-        `\n\t$ gulp <task> <-option> \x1b[90m[<-suboption>]\x1b[0m \x1b[33m[<sitename>]\x1b[0m` +
+        `\n\t$ gulp <task> <-option> \x1b[90m[-suboption]\x1b[0m \x1b[33m[sitename]\x1b[0m` +
         `\n\nTASKS:` +
         `\n\t\x1b[36mbuilds\x1b[0m\t\tBuilds CSS and JS` +
         `\n\t\x1b[36mreleases\x1b[0m\tReleases CSS and JS with version number` +
@@ -584,12 +557,12 @@ function helpInformation(cb) {
         `\n\t-s\t\x1b[90m--site\x1b[0m\tUsing for a specific site by its name` +
         `\n\t-a\t\x1b[90m--all\x1b[0m\tUsing for all sites` +
         `\n\nSUB OPTIONS:` +
-        `\n\t-o\tOverwriting existing files` +
-        `\n\t-m\tMinification CSS and JS` +
+        `\n\t-m\t\x1b[90m--minify\x1b[0m\tMinification CSS and JS` +
+        `\n\t-o\t\x1b[90m--overwrite\x1b[0m\tOverwriting existing files` +
         `\n\nEXAMPLES:` +
-        `\n\t$ gulp builds \x1b[90m-s -o -m\x1b[0m \x1b[33mprojectOne\x1b[0m` +
+        `\n\t$ gulp builds \x1b[90m-s -m -o\x1b[0m \x1b[33mprojectA\x1b[0m` +
         `\n\t$ gulp builds \x1b[90m-a -m\x1b[0m` +
-        `\n\t$ gulp releases \x1b[90m--site -m\x1b[0m \x1b[33mnewSite\x1b[0m` +
+        `\n\t$ gulp releases \x1b[90m--site --minify --overwrite\x1b[0m \x1b[33mprojectB\x1b[0m` +
         `\n\t$ gulp releases \x1b[90m--all\x1b[0m\n`;
 
     console.log(helpInformation);
