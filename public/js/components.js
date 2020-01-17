@@ -1,5 +1,6 @@
 "use strict";
 "use strict";
+"use strict";
 
 function toggleMenu() {
   document.getElementById("myDropdown").classList.toggle("rh-filter-show");
@@ -40,7 +41,6 @@ window.onclick = function (event) {
     }
   }
 };
-"use strict";
 "use strict";
 
 // Needed function:
@@ -458,7 +458,7 @@ $(document).ready(function () {
   /* function calculateScrollbarWidth() {
       return (window.innerWidth - $(document).width());
   }
-    function isMobileDevice(){
+   function isMobileDevice(){
       return !!navigator.platform && /iPad|iPhone|iPod/g.test(navigator.platform);
   } */
 

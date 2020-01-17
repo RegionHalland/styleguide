@@ -48,35 +48,25 @@ fractal.web.set('builder.dest', `${__dirname}/build`);
 fractal.web.theme(rh_theme);
 
 fractal.components.set('statuses', {
-    prototype: {
-        label: "Skiss",
-        description: "Tidig prototyp. Implementera inte.",
-        color: '#F00'
-    },
     wip: {
         label: "Under utveckling",
         description: "Under utveckling. Avvakta med att implementera.",
-        color: 'orange'
+        color: 'red'
     },
-    review: {
-        label: "Under granskning",
-        description: "Granskas för godkännande. Implementera med försiktighet.",
-        color: '#4b7070'
-    },
-    ready: {
-        label: "Klar",
+    stable: {
+        label: "Stabil",
         description: "Redo att implementeras",
         color: "green"
     },
+    rework: {
+        label: "Ändringar planerade",
+        description: "Kommer att göras om",
+        color: 'orange'
+    },
     eol: {
-        label: "Fasas ut - end of life",
+        label: "Använd ej - kommer raderas",
         description: "Denna komponent kommer raderas i framtiden",
         color: 'black'
-    },
-    rework: {
-        label: "Inväntar ombyggnad",
-        description: "Kommer att göras om",
-        color: '#ff47d3'
     }
 });
 
