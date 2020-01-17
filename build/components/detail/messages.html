@@ -305,7 +305,7 @@
 	<span class="hljs-attribute">text-align</span>: <span class="hljs-variable">$message--text-align</span>;
     <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$message--line-height</span>;
     
-	@<span class="hljs-keyword">include</span> medium {
+	<span class="hljs-keyword">@include</span> medium {
         <span class="hljs-comment">/* Box-modell/beteende */</span>
 		<span class="hljs-attribute">flex-wrap</span>: nowrap;
 		<span class="hljs-comment">//padding-top: em(20);</span>
@@ -321,7 +321,7 @@
 		<span class="hljs-attribute">margin-left</span>: auto;
         <span class="hljs-attribute">margin-right</span>: auto;
         
-      	@<span class="hljs-keyword">include</span> medium {
+      	<span class="hljs-keyword">@include</span> medium {
             <span class="hljs-comment">/* Box-modell/beteende */</span>
       		<span class="hljs-comment">//margin-top: em(40);</span>
       		<span class="hljs-comment">//margin-bottom: em(40);</span>
@@ -329,7 +329,7 @@
             <span class="hljs-comment">//margin-left: 0; //em(20);</span>
             <span class="hljs-attribute">margin</span>: <span class="hljs-variable">$message__icon--margin-medium</span>;
       	}
-		&amp;:after {
+		&amp;<span class="hljs-selector-pseudo">:after</span> {
             <span class="hljs-comment">/* Box-modell/beteende */</span>
             <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$message__icon--padding</span>; <span class="hljs-comment">//em(8);</span>
             
@@ -347,8 +347,8 @@
             <span class="hljs-attribute">content</span>: <span class="hljs-variable">$message__icon--content</span>;
             
             <span class="hljs-comment">/* Typografi */</span>
-			@<span class="hljs-keyword">include</span> medium { <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$message__icon--font-size-medium</span>;}
-			@<span class="hljs-keyword">include</span> large { <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$message__icon--font-size-large</span>;}
+			<span class="hljs-keyword">@include</span> medium { <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$message__icon--font-size-medium</span>;}
+			<span class="hljs-keyword">@include</span> large { <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$message__icon--font-size-large</span>;}
 		}
 	}
 
@@ -367,7 +367,7 @@
 			<span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$message__link--text-decoration</span>;
 			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$message__link--color</span>;
 
-			&amp;:hover{
+			&amp;<span class="hljs-selector-pseudo">:hover</span>{
                 <span class="hljs-comment">/* Typografi */</span>
 				<span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$message__link--text-decoration-hover</span>;
 				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$message__link--color-hover</span>;
@@ -3368,7 +3368,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

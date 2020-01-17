@@ -282,7 +282,7 @@
 
 	<span class="hljs-comment">/* Typografi */</span>
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$caption-hero--color</span>;
-    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$caption-hero--font-size</span> {
+    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$caption-hero--font-size</span> {
         <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$caption-hero--font-size</span>;
     }
 
@@ -298,12 +298,12 @@
         <span class="hljs-comment">// border-radius: 0.4ex;</span>
         <span class="hljs-attribute">border-radius</span>: <span class="hljs-variable">$caption-hero--rounded--border-radius--default</span>;
 
-        @<span class="hljs-keyword">include</span> medium {
+        <span class="hljs-keyword">@include</span> medium {
             <span class="hljs-attribute">border-radius</span>: <span class="hljs-variable">$caption-hero--rounded--border-radius--medium</span>;
         }
 	}
 
-	@<span class="hljs-keyword">include</span> medium {
+	<span class="hljs-keyword">@include</span> medium {
         <span class="hljs-comment">/* Positionering */</span>
         <span class="hljs-attribute">position</span>: absolute;
 
@@ -313,13 +313,13 @@
 		<span class="hljs-comment">/* Box-modell/beteende */</span>
         <span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$caption-hero--medium--max-width</span>;
 	}
-	@<span class="hljs-keyword">include</span> large {
+	<span class="hljs-keyword">@include</span> large {
 		<span class="hljs-comment">/* Positionering */</span>
 		<span class="hljs-attribute">bottom</span>: <span class="hljs-variable">$caption-hero--large--bottom</span>;
 		<span class="hljs-attribute">left</span>: <span class="hljs-variable">$caption-hero--large--left</span>;
 
         <span class="hljs-comment">/* Typografi */</span>
-        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$caption-hero--large--font-size</span> {
+        <span class="hljs-keyword">@if</span> <span class="hljs-variable">$caption-hero--large--font-size</span> {
             <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$caption-hero--large--font-size</span>;
         }
 	}
@@ -3334,7 +3334,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

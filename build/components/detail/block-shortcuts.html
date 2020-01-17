@@ -314,7 +314,7 @@
 	<span class="hljs-attribute">border-right</span>: <span class="hljs-variable">$rh-shortcuts-hr--border-right</span>;
 	<span class="hljs-attribute">border-top</span>: <span class="hljs-variable">$rh-shortcuts-hr--border-top</span>;
 
-	@<span class="hljs-keyword">include</span> medium {
+	<span class="hljs-keyword">@include</span> medium {
 		<span class="hljs-attribute">border</span>: <span class="hljs-variable">$rh-shortcuts-hr--medium--border</span>;
 	}
 }
@@ -339,15 +339,15 @@
 	<span class="hljs-comment">/* Typografi */</span>
 	<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$rh-shortcuts__item--font-size</span>;
 
-	@<span class="hljs-keyword">include</span> medium {
+	<span class="hljs-keyword">@include</span> medium {
 		<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$rh-shortcuts__item--medium--font-size</span>;
 	}
 
-	@<span class="hljs-keyword">include</span> large {
+	<span class="hljs-keyword">@include</span> large {
 		<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$rh-shortcuts__item--large--font-size</span>;
 	}
 
-	&amp;:last-child{
+	&amp;<span class="hljs-selector-pseudo">:last-child</span>{
 		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$rh-shortcuts__item--last-child--margin-bottom</span>;
 	}
 }
@@ -364,16 +364,16 @@
 	<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$rh-shortcuts__item-link--font-size</span>;
 	<span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$rh-shortcuts__item-link--text-decoration</span>;
 
-	&amp;:hover,
-	&amp;:active {
+	&amp;<span class="hljs-selector-pseudo">:hover</span>,
+	&amp;<span class="hljs-selector-pseudo">:active</span> {
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$rh-shortcuts__item-link--hover-active--color</span>;
 	}
 
-	&amp;:visited {
+	&amp;<span class="hljs-selector-pseudo">:visited</span> {
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$rh-shortcuts__item-link--visited</span>;
 	}
 
-	&amp;:focus {
+	&amp;<span class="hljs-selector-pseudo">:focus</span> {
 		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$rh-shortcuts__item-link--focus--background-color</span>;
 		<span class="hljs-attribute">color</span>: <span class="hljs-variable">$rh-shortcuts__item-link--focus--color</span>;
 		<span class="hljs-attribute">outline</span>: <span class="hljs-variable">$rh-shortcuts__item-link--focus--outline</span>;
@@ -3403,7 +3403,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

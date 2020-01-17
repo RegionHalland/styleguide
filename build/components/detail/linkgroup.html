@@ -361,7 +361,7 @@
         <span class="hljs-comment">/* Blandat/övrigt */</span>
         <span class="hljs-attribute">cursor</span>: <span class="hljs-variable">$LINKGROUP__TITLEBAR--CURSOR</span>;
 
-        &amp;:focus {
+        &amp;<span class="hljs-selector-pseudo">:focus</span> {
             <span class="hljs-attribute">background</span>: <span class="hljs-variable">$LINKGROUP__TITLEBAR--FOCUS--BACKGROUND</span>;
             <span class="hljs-attribute">color</span>: <span class="hljs-variable">$LINKGROUP__TITLEBAR--FOCUS--COLOR</span>;
             <span class="hljs-attribute">outline</span>: <span class="hljs-variable">$LINKGROUP__TITLEBAR--FOCUS--OUTLINE</span>;
@@ -372,7 +372,7 @@
             <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$LINKGROUP__TITLEBAR--ACTIVE--BACKGROUND-COLOR</span>;
             <span class="hljs-attribute">color</span>: <span class="hljs-variable">$LINKGROUP__TITLEBAR--ACTIVE--COLOR</span>;
 
-            <span class="hljs-selector-class">.rh-linkgroup__icon</span>:after {
+            <span class="hljs-selector-class">.rh-linkgroup__icon</span><span class="hljs-selector-pseudo">:after</span> {
                 <span class="hljs-comment">/* Visuellt */</span>
                 <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$LINKGROUP__TITLEBAR--ACTIVE--LINKGROUP__ICON--BACKGROUND-COLOR</span>;
 
@@ -395,7 +395,7 @@
         <span class="hljs-comment">/* Box-modell/beteende */</span>
         <span class="hljs-attribute">margin-left</span>: <span class="hljs-variable">$LINKGROUP__ICON--MARGIN-LEFT</span>;
 
-        &amp;:after {
+        &amp;<span class="hljs-selector-pseudo">:after</span> {
             <span class="hljs-comment">/* Box-modell/beteende */</span>
             <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$LINKGROUP__ICON--AFTER--PADDING</span>;
             <span class="hljs-attribute">margin-right</span>: <span class="hljs-variable">$LINKGROUP__ICON--AFTER--MARGIN-RIGHT</span>;
@@ -439,12 +439,12 @@
         <span class="hljs-comment">/* Typografi */</span>
         <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$LINKGROUP__LIST-ITEM--FONT-SIZE</span>;
 
-        @<span class="hljs-keyword">include</span> medium {
+        <span class="hljs-keyword">@include</span> medium {
             <span class="hljs-comment">/* Typografi */</span>
             <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$LINKGROUP__LIST-ITEM--MEDIUM--FONT-SIZE</span>;
         }
 
-        @<span class="hljs-keyword">include</span> large {
+        <span class="hljs-keyword">@include</span> large {
             <span class="hljs-comment">/* Typografi */</span>
             <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$LINKGROUP__LIST-ITEM--LARGE--FONT-SIZE</span>;
         }
@@ -3528,7 +3528,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

@@ -270,19 +270,19 @@
                                 <pre><span class="hljs-selector-class">.rh-link</span> {
   &amp;--navigation {
     <span class="hljs-comment">/* Visuellt */</span>
-    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$link--color</span> {
+    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$link--color</span> {
         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$link--color</span>;
     }
 
     <span class="hljs-comment">/* Typografi */</span>
-    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$link--text-decoration</span> {
+    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$link--text-decoration</span> {
         <span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$link--text-decoration</span>;
     }
   }
 
-  &amp;--navigation:active, &amp;--navigation:hover, &amp;--navigation:focus {
+  &amp;--navigation<span class="hljs-selector-pseudo">:active</span>, &amp;--navigation<span class="hljs-selector-pseudo">:hover</span>, &amp;--navigation<span class="hljs-selector-pseudo">:focus</span> {
     <span class="hljs-comment">/* Typografi */</span>
-    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$link--active-hover-text-decoration</span> {
+    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$link--active-hover-text-decoration</span> {
         <span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$link--active-hover-text-decoration</span>;
     }
   }
@@ -3303,7 +3303,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

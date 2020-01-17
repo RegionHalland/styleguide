@@ -332,12 +332,12 @@
     <span class="hljs-attribute">border</span>: <span class="hljs-variable">$filter-alphabet--border</span>;
     <span class="hljs-attribute">border-radius</span>: <span class="hljs-variable">$filter-alphabet--border-radius</span>;
 
-    @<span class="hljs-keyword">include</span> medium {
+    <span class="hljs-keyword">@include</span> medium {
         <span class="hljs-comment">/* Box-modell/beteende */</span>
         <span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$filter-alphabet--medium--max-width</span>;
     }
 
-    @<span class="hljs-keyword">include</span> large {
+    <span class="hljs-keyword">@include</span> large {
         <span class="hljs-comment">/* Box-modell/beteende */</span>
         <span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$filter-alphabet--large--max-width</span>;
     }
@@ -354,18 +354,18 @@
         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$black</span>;
         <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-small</span>;
 
-        @<span class="hljs-keyword">include</span> medium {
+        <span class="hljs-keyword">@include</span> medium {
             <span class="hljs-comment">/* Typografi */</span>
             <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-medium</span>;
         }
 
-        @<span class="hljs-keyword">include</span> large {
+        <span class="hljs-keyword">@include</span> large {
             <span class="hljs-comment">/* Typografi */</span>
             <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-large</span>;
         }
 
-        &amp;:active,
-        &amp;:hover,
+        &amp;<span class="hljs-selector-pseudo">:active</span>,
+        &amp;<span class="hljs-selector-pseudo">:hover</span>,
         &amp;--active {
             <span class="hljs-comment">/* Visuellt */</span>
             <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$filter-alphabet--background-color-active-hover</span>;
@@ -381,7 +381,7 @@
             <span class="hljs-comment">/* Typografi */</span>
             <span class="hljs-attribute">color</span>: <span class="hljs-variable">$filter-alphabet-link--inactive--color</span>;
 
-            &amp;:hover {
+            &amp;<span class="hljs-selector-pseudo">:hover</span> {
                 <span class="hljs-comment">/* Visuellt */</span>
                 <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$filter-alphabet-link--inactive--background-color</span>;
 
@@ -390,7 +390,7 @@
             }
         }
 
-        &amp;:focus {
+        &amp;<span class="hljs-selector-pseudo">:focus</span> {
             <span class="hljs-comment">/* Visuellt */</span>
             <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$filter-alphabet-link--focus--background-color</span>;
             <span class="hljs-attribute">outline</span>: <span class="hljs-variable">$filter-alphabet-link--focus--outline</span>;
@@ -3398,7 +3398,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

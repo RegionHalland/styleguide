@@ -386,10 +386,10 @@
 		<span class="hljs-attribute">padding-bottom</span>: em(<span class="hljs-number">20</span>);
 		<span class="hljs-comment">//padding-left: em(30);</span>
 		<span class="hljs-attribute">flex-basis</span>: <span class="hljs-number">100%</span>;
-		@<span class="hljs-keyword">include</span> medium { 
+		<span class="hljs-keyword">@include</span> medium { 
             <span class="hljs-attribute">flex-basis</span>: <span class="hljs-number">33.33%</span>;
         }
-		@<span class="hljs-keyword">include</span> large {
+		<span class="hljs-keyword">@include</span> large {
             <span class="hljs-attribute">padding-right</span>: em(<span class="hljs-number">60</span>);
             
             <span class="hljs-attribute">flex-basis</span>: <span class="hljs-number">33.33%</span>;
@@ -406,10 +406,10 @@
 	<span class="hljs-selector-class">.rh-footer-item</span>{
 		<span class="hljs-attribute">margin-bottom</span>: em(<span class="hljs-number">20</span>);
 		<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-small</span>;
-		@<span class="hljs-keyword">include</span> medium { <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-medium</span>;}
-		@<span class="hljs-keyword">include</span> large { <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-large</span>;}
+		<span class="hljs-keyword">@include</span> medium { <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-medium</span>;}
+		<span class="hljs-keyword">@include</span> large { <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-large</span>;}
 
-	    &amp;:last-child{
+	    &amp;<span class="hljs-selector-pseudo">:last-child</span>{
 	       <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
 	    }
 
@@ -3358,7 +3358,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

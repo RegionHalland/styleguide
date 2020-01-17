@@ -280,7 +280,7 @@
     <span class="hljs-attribute">align-items</span>: center;
 
     <span class="hljs-comment">/* Visuellt */</span>
-    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$circle-button--background</span> {
+    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$circle-button--background</span> {
         <span class="hljs-attribute">background</span>: <span class="hljs-variable">$circle-button--background</span>;
     }
 
@@ -289,45 +289,45 @@
     <span class="hljs-comment">/* Typografi */</span>
     <span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$circle-button--font-family</span>;
 
-    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$circle-button--text-color</span> {
+    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$circle-button--text-color</span> {
         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$circle-button--text-color</span>;
     }
 
     <span class="hljs-attribute">text-decoration</span>: none;
 
-    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$circle-button--cursor</span> {
+    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$circle-button--cursor</span> {
         <span class="hljs-attribute">cursor</span>: <span class="hljs-variable">$circle-button--cursor</span>;
     }
 
     <span class="hljs-comment">// Effects</span>
-    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$circle-button--border</span> {
+    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$circle-button--border</span> {
         &amp;--<span class="hljs-attribute">border</span> {
             <span class="hljs-attribute">border</span>: <span class="hljs-variable">$circle-button--border</span>;
         }
     }
 
-    &amp;:hover {
+    &amp;<span class="hljs-selector-pseudo">:hover</span> {
 
         <span class="hljs-comment">/* Visuellt */</span>
-        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$circle-button--background-color-hover</span> {
+        <span class="hljs-keyword">@if</span> <span class="hljs-variable">$circle-button--background-color-hover</span> {
             <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$circle-button--background-color-hover</span>;
         }
 
         <span class="hljs-comment">/* Typografi */</span>
-        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$circle-button--text-color-hover</span> {
+        <span class="hljs-keyword">@if</span> <span class="hljs-variable">$circle-button--text-color-hover</span> {
             <span class="hljs-attribute">color</span>: <span class="hljs-variable">$circle-button--text-color-hover</span>;
         }
     }
 
-    &amp;:active, &amp;:focus {
+    &amp;<span class="hljs-selector-pseudo">:active</span>, &amp;<span class="hljs-selector-pseudo">:focus</span> {
 
         <span class="hljs-comment">/* Visuellt */</span>
-        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$circle-button--background-color-active</span> {
+        <span class="hljs-keyword">@if</span> <span class="hljs-variable">$circle-button--background-color-active</span> {
             <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$circle-button--background-color-active</span>;
         }
 
         <span class="hljs-comment">/* Typografi */</span>
-        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$circle-button--text-color-active</span> {
+        <span class="hljs-keyword">@if</span> <span class="hljs-variable">$circle-button--text-color-active</span> {
             <span class="hljs-attribute">color</span>: <span class="hljs-variable">$circle-button--text-color-active</span>;
         }
     }
@@ -388,15 +388,15 @@
         <span class="hljs-attribute">background</span>: <span class="hljs-variable">$circle-button--background-secondary</span>;
         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$circle-button--text-color-secondary</span>; <span class="hljs-comment">//false</span>
 
-        &amp;:hover, &amp;:active, &amp;:focus {
+        &amp;<span class="hljs-selector-pseudo">:hover</span>, &amp;<span class="hljs-selector-pseudo">:active</span>, &amp;<span class="hljs-selector-pseudo">:focus</span> {
 
             <span class="hljs-comment">/* Visuellt */</span>
-            @<span class="hljs-keyword">if</span> <span class="hljs-variable">$circle-button--background-color-hover-secondary</span> {
+            <span class="hljs-keyword">@if</span> <span class="hljs-variable">$circle-button--background-color-hover-secondary</span> {
                 <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$circle-button--background-color-hover-secondary</span>;
             }
 
             <span class="hljs-comment">/* Typografi */</span>
-            @<span class="hljs-keyword">if</span> <span class="hljs-variable">$circle-button--text-color-hover-secondary</span> {
+            <span class="hljs-keyword">@if</span> <span class="hljs-variable">$circle-button--text-color-hover-secondary</span> {
                 <span class="hljs-attribute">color</span>: <span class="hljs-variable">$circle-button--text-color-hover-secondary</span>;
             }
         }
@@ -406,15 +406,15 @@
         <span class="hljs-attribute">background</span>: <span class="hljs-variable">$circle-button-warning--background-color</span>;
         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$circle-button-warning--icon-color</span>; <span class="hljs-comment">//false</span>
 
-        &amp;:hover, &amp;:active, &amp;:focus {
+        &amp;<span class="hljs-selector-pseudo">:hover</span>, &amp;<span class="hljs-selector-pseudo">:active</span>, &amp;<span class="hljs-selector-pseudo">:focus</span> {
 
             <span class="hljs-comment">/* Visuellt */</span>
-            @<span class="hljs-keyword">if</span> <span class="hljs-variable">$circle-button-warning-effect--background-color</span> {
+            <span class="hljs-keyword">@if</span> <span class="hljs-variable">$circle-button-warning-effect--background-color</span> {
                 <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$circle-button-warning-effect--background-color</span>;
             }
 
             <span class="hljs-comment">/* Typografi */</span>
-            @<span class="hljs-keyword">if</span> <span class="hljs-variable">$circle-button-warning-effect--icon-color</span> {
+            <span class="hljs-keyword">@if</span> <span class="hljs-variable">$circle-button-warning-effect--icon-color</span> {
                 <span class="hljs-attribute">color</span>: <span class="hljs-variable">$circle-button-warning-effect--icon-color</span>;
             }
         }
@@ -3578,7 +3578,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

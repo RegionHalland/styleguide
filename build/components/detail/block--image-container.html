@@ -315,7 +315,7 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code">
                                 <pre><span class="hljs-selector-class">.rh-block</span> {
     <span class="hljs-comment">/* Box-modell/beteende */</span>
-    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$block--width</span> {
+    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$block--width</span> {
         <span class="hljs-attribute">width</span>: <span class="hljs-variable">$block--width</span>;
     }
 
@@ -355,7 +355,7 @@
         &amp;__title {
 
             <span class="hljs-comment">/* Typografi */</span>
-            @<span class="hljs-keyword">if</span> <span class="hljs-variable">$block__text-title--color</span> {
+            <span class="hljs-keyword">@if</span> <span class="hljs-variable">$block__text-title--color</span> {
                 <span class="hljs-attribute">color</span>: <span class="hljs-variable">$block__text-title--color</span>;
             }
 
@@ -376,7 +376,7 @@
     &amp;-box {
 
         <span class="hljs-comment">/* Box-modell/beteende */</span>
-        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$block__box--max-width</span> {
+        <span class="hljs-keyword">@if</span> <span class="hljs-variable">$block__box--max-width</span> {
             <span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$block__box--max-width</span>;
         }
 
@@ -391,7 +391,7 @@
         <span class="hljs-comment">/* Positionering */</span>
         <span class="hljs-comment">//position: relative; // Replaced by using a global class .rh-element--clickable</span>
 
-        @<span class="hljs-keyword">include</span> create-clickable-element-effect(
+        <span class="hljs-keyword">@include</span> create-clickable-element-effect(
             <span class="hljs-string">"rh-block--clickable"</span>, //Box classname
             <span class="hljs-string">"rh-block-content__title"</span>, //Title link classname
             <span class="hljs-string">"rh-block-content__description"</span>, //Description classname
@@ -3628,7 +3628,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

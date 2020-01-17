@@ -324,47 +324,47 @@
         <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$TABS__ITEM--FONT-SIZE</span>;
         <span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$TABS__ITEM--TEXT-DECORATION</span>;
 
-        &amp;:last-child{
+        &amp;<span class="hljs-selector-pseudo">:last-child</span>{
             <span class="hljs-attribute">border-right</span>: <span class="hljs-variable">$TABS__ITEM--LAST-CHILD--BORDER-RIGHT</span>;
         }
         &amp;-text {
             <span class="hljs-attribute">margin-bottom</span>:<span class="hljs-variable">$TABS__ITEM-TEXT--MARGIN-BOTTOM</span>;
             <span class="hljs-attribute">color</span>: <span class="hljs-variable">$TABS__ITEM-TEXT--COLOR</span>;
             <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$TABS__ITEM-TEXT--FONT-SIZE</span>;
-            @<span class="hljs-keyword">include</span> medium {
+            <span class="hljs-keyword">@include</span> medium {
                 <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$TABS__ITEM-TEXT--MEDIUM--FONT-SIZE</span>;
                 <span class="hljs-attribute">margin-right</span>: <span class="hljs-variable">$TABS__ITEM-TEXT--MEDIUM--MARGIN-RIGHT</span>;
             }
-            @<span class="hljs-keyword">include</span> large {<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$TABS__ITEM-TEXT--LARGE--FONT-SIZE</span>;}
+            <span class="hljs-keyword">@include</span> large {<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$TABS__ITEM-TEXT--LARGE--FONT-SIZE</span>;}
         }
 
         &amp;-text <span class="hljs-selector-class">.rh-labels</span> {
             <span class="hljs-attribute">display</span>: <span class="hljs-variable">$TABS__ITEM-TEXT--RH-LABELS--DISPLAY</span>;
-            @<span class="hljs-keyword">include</span> medium {
+            <span class="hljs-keyword">@include</span> medium {
                 <span class="hljs-attribute">display</span>: <span class="hljs-variable">$TABS__ITEM-TEXT--RH-LABELS--MEDIUM--DISPLAY</span>;
             }
         }
 
         &amp;-<span class="hljs-attribute">icon</span> {
             <span class="hljs-attribute">margin-left</span>: <span class="hljs-variable">$TABS__ITEM-ICON--MARGIN-LEFT</span>;
-            &amp;:after {
+            &amp;<span class="hljs-selector-pseudo">:after</span> {
                 <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$TABS__ITEM-ICON--AFTER--PADDING</span>;
                 <span class="hljs-attribute">background</span>: <span class="hljs-variable">$TABS__ITEM-ICON--AFTER--BACKGROUND</span>;
                 <span class="hljs-attribute">border-radius</span>: <span class="hljs-variable">$TABS__ITEM-ICON--AFTER--BORDER-RADIUS</span>;
                 <span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$TABS__ITEM-ICON--AFTER--FONT-FAMILY</span>;
                 <span class="hljs-attribute">content</span>: <span class="hljs-variable">$TABS__ITEM-ICON--AFTER--CONTENT</span>;
                 <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$TABS__ITEM-ICON--AFTER--FONT-SIZE</span>;
-                @<span class="hljs-keyword">include</span> medium { <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$TABS__ITEM-ICON--AFTER--MEDIUEM--FONT-SIZE</span>;}
-                @<span class="hljs-keyword">include</span> large { <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$TABS__ITEM-ICON--AFTER--LARGE--FONT-SIZE</span>;}
+                <span class="hljs-keyword">@include</span> medium { <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$TABS__ITEM-ICON--AFTER--MEDIUEM--FONT-SIZE</span>;}
+                <span class="hljs-keyword">@include</span> large { <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$TABS__ITEM-ICON--AFTER--LARGE--FONT-SIZE</span>;}
             }
         }
 
-        &amp;:hover, &amp;:active, &amp;:focus {
+        &amp;<span class="hljs-selector-pseudo">:hover</span>, &amp;<span class="hljs-selector-pseudo">:active</span>, &amp;<span class="hljs-selector-pseudo">:focus</span> {
             <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$TABS__ITEM--HOVER-ACTIVE-FOCUS--BACKGROUND-COLOR</span>;
             <span class="hljs-attribute">border-top</span>: <span class="hljs-variable">$TABS__ITEM--HOVER-ACTIVE-FOCUS--BORDER-TOP</span>;
             <span class="hljs-attribute">outline</span>: <span class="hljs-variable">$TABS__ITEM--HOVER-ACTIVE-FOCUS--OUTLINE</span>;
             <span class="hljs-selector-class">.rh-tabs__item-icon</span>{
-                &amp;:after {
+                &amp;<span class="hljs-selector-pseudo">:after</span> {
                     <span class="hljs-attribute">background</span>: <span class="hljs-variable">$TABS__ITEM--HOVER-ACTIVE-FOCUS--AFTER--BACKGROUND</span>;
                     <span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$TABS__ITEM--HOVER-ACTIVE-FOCUS--AFTER--FONT-FAMILY</span>;
                     <span class="hljs-attribute">content</span>: <span class="hljs-variable">$TABS__ITEM--HOVER-ACTIVE-FOCUS--AFTER--CONTENT</span>;
@@ -376,7 +376,7 @@
             <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$TABS__ITEM--ACTIVE--BACKGROUND-COLOR</span>;
             <span class="hljs-attribute">border-top</span>:  <span class="hljs-variable">$TABS__ITEM--ACTIVE--BORDER-TOP</span>;
             <span class="hljs-selector-class">.rh-tabs__item-icon</span>{
-                &amp;:after {
+                &amp;<span class="hljs-selector-pseudo">:after</span> {
                     <span class="hljs-attribute">background</span>:  <span class="hljs-variable">$TABS__ITEM--ACTIVE--ITEM-ICON--AFTER--BACKGROUND</span>;
                     <span class="hljs-attribute">font-family</span>:  <span class="hljs-variable">$TABS__ITEM--ACTIVE--ITEM-ICON--AFTER--FONT-FAMILY</span>;
                     <span class="hljs-attribute">content</span>: <span class="hljs-variable">$TABS__ITEM--ACTIVE--ITEM-ICON--AFTER--CONTENT</span>;
@@ -3468,7 +3468,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

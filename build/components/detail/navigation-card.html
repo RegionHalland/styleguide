@@ -325,13 +325,13 @@
                                 <pre><span class="hljs-selector-class">.rh-navigation-card</span>{
     <span class="hljs-comment">/* Box-modell/beteende */</span>
 	<span class="hljs-attribute">margin-bottom</span>: em(<span class="hljs-number">45</span>);
-	@<span class="hljs-keyword">include</span> medium { <span class="hljs-attribute">height</span>: <span class="hljs-number">6em</span>; }
-	@<span class="hljs-keyword">include</span> large { <span class="hljs-attribute">height</span>: <span class="hljs-number">5em</span>; }
+	<span class="hljs-keyword">@include</span> medium { <span class="hljs-attribute">height</span>: <span class="hljs-number">6em</span>; }
+	<span class="hljs-keyword">@include</span> large { <span class="hljs-attribute">height</span>: <span class="hljs-number">5em</span>; }
 
 	<span class="hljs-selector-class">.rh-navigation-card-title</span>{
 
 		&amp;-<span class="hljs-attribute">icon</span> {
-			&amp;:after {
+			&amp;<span class="hljs-selector-pseudo">:after</span> {
                 <span class="hljs-comment">/* Box-modell/beteende */</span>
 				<span class="hljs-attribute">margin-right</span>: <span class="hljs-number">1ex</span>;
                 <span class="hljs-attribute">padding</span>: em(<span class="hljs-number">6</span>);
@@ -350,8 +350,8 @@
                 <span class="hljs-attribute">content</span>: <span class="hljs-string">"\e829"</span>;
                 
                 <span class="hljs-comment">/* Typografi */</span>
-				@<span class="hljs-keyword">include</span> medium { <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-medium</span>;}
-				@<span class="hljs-keyword">include</span> large { <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-large</span>;}
+				<span class="hljs-keyword">@include</span> medium { <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-medium</span>;}
+				<span class="hljs-keyword">@include</span> large { <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-large</span>;}
 			}
 		}
 
@@ -368,13 +368,13 @@
             <span class="hljs-comment">/* Blandat/övrigt */</span>
 		    <span class="hljs-attribute">cursor</span>: pointer;
 
-		    &amp;:hover,
-		    &amp;:active {
+		    &amp;<span class="hljs-selector-pseudo">:hover</span>,
+		    &amp;<span class="hljs-selector-pseudo">:active</span> {
                 <span class="hljs-comment">/* Typografi */</span>
 		        <span class="hljs-attribute">text-decoration</span>: underline;  
 		    }
 
-		    &amp;:visited {
+		    &amp;<span class="hljs-selector-pseudo">:visited</span> {
                 <span class="hljs-comment">/* Typografi */</span>
 		        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$link-visited</span>;
 		    }
@@ -3338,7 +3338,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

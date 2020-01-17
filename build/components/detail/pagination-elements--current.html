@@ -283,18 +283,18 @@
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$black</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-small</span>;
 
-    @<span class="hljs-keyword">include</span> medium {
+    <span class="hljs-keyword">@include</span> medium {
         <span class="hljs-comment">/* Typografi */</span>
         <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-medium</span>;
     }
 
-    @<span class="hljs-keyword">include</span> large {
+    <span class="hljs-keyword">@include</span> large {
         <span class="hljs-comment">/* Typografi */</span>
         <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-large</span>;
     }
 
-    &amp;:active,
-    &amp;:hover {
+    &amp;<span class="hljs-selector-pseudo">:active</span>,
+    &amp;<span class="hljs-selector-pseudo">:hover</span> {
         <span class="hljs-comment">/* Visuellt */</span>
         <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$pagination-link--hover-background-color</span>;
 
@@ -310,8 +310,8 @@
         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$pagination-link-current--text-color</span>;
         <span class="hljs-attribute">font-weight</span>: <span class="hljs-variable">$pagination-link-current--font-weight</span>;
 
-        &amp;:hover,
-        &amp;:active {
+        &amp;<span class="hljs-selector-pseudo">:hover</span>,
+        &amp;<span class="hljs-selector-pseudo">:active</span> {
             <span class="hljs-comment">/* Visuellt */</span>
             <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$pagination-link-current--background-color-hover-active</span>;
 
@@ -3360,7 +3360,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

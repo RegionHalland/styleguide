@@ -322,7 +322,7 @@
         <span class="hljs-comment">/* Typografi */</span>
         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$black</span>;
 
-        &amp;:after {
+        &amp;<span class="hljs-selector-pseudo">:after</span> {
             <span class="hljs-comment">/* Box-modell/beteende */</span>
             <span class="hljs-attribute">display</span>: inline-block;
             <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
@@ -336,23 +336,23 @@
             <span class="hljs-attribute">content</span>: <span class="hljs-string">"\e842"</span>;
         }
 
-        @<span class="hljs-keyword">include</span> medium {
+        <span class="hljs-keyword">@include</span> medium {
             <span class="hljs-comment">/* Typografi */</span>
             <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$h4-medium</span>;
         }
 
-        @<span class="hljs-keyword">include</span> large {
+        <span class="hljs-keyword">@include</span> large {
             <span class="hljs-comment">/* Typografi */</span>
             <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$h4-large</span>;
         }
     }
 
-    &amp;:hover {
+    &amp;<span class="hljs-selector-pseudo">:hover</span> {
         <span class="hljs-comment">/* Visuellt */</span>
         <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey-dark</span>;
     }
 
-    &amp;:disabled {
+    &amp;<span class="hljs-selector-pseudo">:disabled</span> {
         <span class="hljs-comment">/* Visuellt */</span>
         <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey-lightest</span>;
         <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$grey-light</span>;
@@ -364,12 +364,12 @@
         <span class="hljs-attribute">cursor</span>: unset;
     }
 
-    @<span class="hljs-keyword">include</span> medium {
+    <span class="hljs-keyword">@include</span> medium {
         <span class="hljs-comment">/* Typografi */</span>
         <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-medium</span>;
     }
 
-    @<span class="hljs-keyword">include</span> large {
+    <span class="hljs-keyword">@include</span> large {
         <span class="hljs-comment">/* Typografi */</span>
         <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-large</span>;
     }
@@ -438,7 +438,7 @@
         <span class="hljs-comment">/* Typografi */</span>
         <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-small</span>;
 
-        &amp;:hover {
+        &amp;<span class="hljs-selector-pseudo">:hover</span> {
             <span class="hljs-comment">/* Typografi */</span>
             <span class="hljs-attribute">font-weight</span>: bold;
 
@@ -446,12 +446,12 @@
             <span class="hljs-attribute">cursor</span>: pointer;
         }
 
-        @<span class="hljs-keyword">include</span> medium {
+        <span class="hljs-keyword">@include</span> medium {
             <span class="hljs-comment">/* Typografi */</span>
             <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-medium</span>;
         }
 
-        @<span class="hljs-keyword">include</span> large {
+        <span class="hljs-keyword">@include</span> large {
             <span class="hljs-comment">/* Typografi */</span>
             <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-large</span>;
         }
@@ -473,7 +473,7 @@
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$yellow-background</span> <span class="hljs-meta">!important</span>;
     <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$complementary2</span> <span class="hljs-meta">!important</span>;
 
-    <span class="hljs-selector-class">.rh-filter-icon</span>:after {
+    <span class="hljs-selector-class">.rh-filter-icon</span><span class="hljs-selector-pseudo">:after</span> {
         <span class="hljs-comment">/* Blandat/övrigt */</span>
         <span class="hljs-attribute">content</span>: <span class="hljs-string">"\e845"</span>;
     }
@@ -3485,7 +3485,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

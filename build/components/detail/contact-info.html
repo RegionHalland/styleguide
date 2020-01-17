@@ -412,7 +412,7 @@
                                 <pre><span class="hljs-selector-class">.rh-contact-info</span> {
 
     <span class="hljs-comment">//Prohibit iOS increase font-size automatic</span>
-    @<span class="hljs-keyword">include</span> iOSNoIncreaseFontSize;
+    <span class="hljs-keyword">@include</span> iOSNoIncreaseFontSize;
 
     &amp;__header {
         &amp;-<span class="hljs-selector-tag">title</span> {
@@ -422,7 +422,7 @@
             <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.125em</span>; <span class="hljs-comment">//18px</span>
             <span class="hljs-attribute">font-weight</span>: bold;
 
-            @<span class="hljs-keyword">include</span> large {
+            <span class="hljs-keyword">@include</span> large {
                 <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.5em</span>; <span class="hljs-comment">//24px</span>
             }
         }
@@ -446,7 +446,7 @@
             <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$contact-info__body-title--font-size</span>;
             <span class="hljs-attribute">font-weight</span>: <span class="hljs-variable">$contact-info__body-title--font-weight</span>;
 
-            @<span class="hljs-keyword">include</span> large {
+            <span class="hljs-keyword">@include</span> large {
                 <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$contact-info__body-title--font-size-large</span>; <span class="hljs-comment">//18px</span>
             }
         }
@@ -455,7 +455,7 @@
             <span class="hljs-attribute">font-weight</span>: <span class="hljs-variable">$contact-info__body-subject--font-weight</span>;
         }
 
-        <span class="hljs-selector-tag">tr</span>&gt;<span class="hljs-selector-tag">td</span>:first-child {
+        <span class="hljs-selector-tag">tr</span>&gt;<span class="hljs-selector-tag">td</span><span class="hljs-selector-pseudo">:first-child</span> {
             <span class="hljs-comment">/* Box-modell/beteende */</span>
             <span class="hljs-attribute">height</span>: <span class="hljs-variable">$contact-info__body-table-first-cell--height</span>;
             <span class="hljs-attribute">width</span>: <span class="hljs-variable">$contact-info__body-table-first-cell--width</span>;
@@ -468,7 +468,7 @@
             <span class="hljs-comment">/* Typografi */</span>
             <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$contact-info__body-content--font-size</span>;
 
-            @<span class="hljs-keyword">include</span> large {
+            <span class="hljs-keyword">@include</span> large {
                 <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$contact-info__body-content--font-size-large</span>;
             }
         }
@@ -480,11 +480,11 @@
             <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$contact-info__body-link--line-height</span>;
             <span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$contact-info__body-link--text-decoration</span>;
 
-            &amp;:hover {
+            &amp;<span class="hljs-selector-pseudo">:hover</span> {
                 <span class="hljs-attribute">text-decoration</span>: none;
             }
 
-            &amp;:focus {
+            &amp;<span class="hljs-selector-pseudo">:focus</span> {
                 <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$contact-info__body-link--focus--background-color</span>;
                 <span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$contact-info__body-link--focus--text-decoration</span>; <span class="hljs-comment">//none;</span>
                 <span class="hljs-attribute">border-radius</span>: <span class="hljs-variable">$contact-info__body-link--focus--border-radius</span>; <span class="hljs-comment">//5px;</span>
@@ -493,7 +493,7 @@
                 <span class="hljs-attribute">color</span>: <span class="hljs-variable">$contact-info__body-link--focus--color</span>; <span class="hljs-comment">//white;</span>
             }
 
-            @<span class="hljs-keyword">include</span> large {
+            <span class="hljs-keyword">@include</span> large {
                 <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$contact-info__body-link--font-size-large</span>;
             }
         }
@@ -3510,7 +3510,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

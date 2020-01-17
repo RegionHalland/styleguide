@@ -1,5 +1,5 @@
 /* Organism - Breadcrums */
-$breadcrums--border-top: 0.0625em solid $grey-lighter;//false
+$breadcrums--border-top: $border-top;//false
 $breadcrums--border-bottom: 0.0625em solid $grey-lighter;//false
 
 $breadcrumbs__item-link--margin-left: false; //0.75em is default - false

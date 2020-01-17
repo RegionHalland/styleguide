@@ -400,14 +400,14 @@
         <span class="hljs-comment">/* Visuellt */</span>
         <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#ffffff</span>;
 
-        @<span class="hljs-keyword">include</span> medium {
+        <span class="hljs-keyword">@include</span> medium {
             <span class="hljs-attribute">margin</span>:  -<span class="hljs-variable">$footer-logo-group-gutters-medium</span>;
         }
 
         &gt;<span class="hljs-selector-attr">[class*="col-"]</span> {
             <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$footer-logo-group-gutters</span>;
 
-            @<span class="hljs-keyword">include</span> medium {
+            <span class="hljs-keyword">@include</span> medium {
                 <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$footer-logo-group-gutters-medium</span>;
             }
         }
@@ -423,11 +423,11 @@
         <span class="hljs-comment">/* Blandat/övrigt */</span>
         <span class="hljs-attribute">opacity</span>: <span class="hljs-variable">$footer-logo-group__item--opacity</span>;
         
-        @<span class="hljs-keyword">include</span> small {
+        <span class="hljs-keyword">@include</span> small {
             <span class="hljs-attribute">max-height</span>: <span class="hljs-variable">$footer-logo-group__item--max-height-small</span>;
         }
 
-        &amp;:hover {
+        &amp;<span class="hljs-selector-pseudo">:hover</span> {
             <span class="hljs-attribute">opacity</span>: <span class="hljs-variable">$footer-logo-group__item--opacity-hover</span>;
         }
 
@@ -441,7 +441,7 @@
             <span class="hljs-comment">/* Box-modell/beteende */</span>
             <span class="hljs-attribute">margin-left</span>: auto;
 
-            @<span class="hljs-keyword">include</span> medium {
+            <span class="hljs-keyword">@include</span> medium {
                 <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">0</span>;
             }
         }
@@ -459,7 +459,7 @@
         }
 
         &amp;--center-from-md {
-            @<span class="hljs-keyword">include</span> medium {
+            <span class="hljs-keyword">@include</span> medium {
                 <span class="hljs-comment">/* Box-modell/beteende */</span>
                 <span class="hljs-attribute">margin-left</span>: auto;
                 <span class="hljs-attribute">margin-right</span>: auto;
@@ -479,7 +479,7 @@
             <span class="hljs-comment">/* Box-modell/beteende */</span>
             <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$footer-logo-group__link-item--margin-bottom</span>;
 
-            @<span class="hljs-keyword">include</span> medium {
+            <span class="hljs-keyword">@include</span> medium {
                 <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$footer-logo-group__link-item--margin-bottom</span>;
             }
         }
@@ -488,7 +488,7 @@
             <span class="hljs-comment">/* Box-modell/beteende */</span>
             <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$footer-logo-group__link-container--margin-top</span>;
 
-            @<span class="hljs-keyword">include</span> medium {
+            <span class="hljs-keyword">@include</span> medium {
                 <span class="hljs-comment">/* Typografi */</span>
                 <span class="hljs-attribute">text-align</span>: <span class="hljs-variable">$footer-logo-group__link-container--text-align-medium</span>;
             }
@@ -496,7 +496,7 @@
 
         &amp;-list {
             &amp;&gt;<span class="hljs-selector-tag">li</span> {
-                @<span class="hljs-keyword">include</span> medium {
+                <span class="hljs-keyword">@include</span> medium {
                     <span class="hljs-comment">/* Typografi */</span>
                     <span class="hljs-attribute">display</span>: inline;
                 }
@@ -3515,7 +3515,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

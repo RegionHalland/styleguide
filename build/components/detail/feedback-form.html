@@ -426,11 +426,11 @@
         &amp;__link-privacy {
 
             <span class="hljs-comment">/* Typografi */</span>
-            @<span class="hljs-keyword">if</span> <span class="hljs-variable">$feedback-form__color-link--normal</span> {
+            <span class="hljs-keyword">@if</span> <span class="hljs-variable">$feedback-form__color-link--normal</span> {
                 <span class="hljs-attribute">color</span>: <span class="hljs-variable">$feedback-form__color-link--normal</span>;
             }
 
-            &amp;:hover {
+            &amp;<span class="hljs-selector-pseudo">:hover</span> {
                 <span class="hljs-attribute">text-decoration</span>: none;
             }
         }
@@ -445,25 +445,25 @@
 <span class="hljs-selector-class">.rh-feedback-form__body__button-send</span> {
 
     <span class="hljs-comment">/* Box-modell/beteende */</span>
-    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$feedback-form__body__button-send--margin</span> {
+    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$feedback-form__body__button-send--margin</span> {
         <span class="hljs-attribute">margin</span>: <span class="hljs-variable">$feedback-form__body__button-send--margin</span>;
     }
 
-    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$feedback-form__body__button-send--padding</span> {
+    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$feedback-form__body__button-send--padding</span> {
         <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$feedback-form__body__button-send--padding</span>;
     }
 
-    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$feedback-form__body__button-send--height</span> {
+    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$feedback-form__body__button-send--height</span> {
         <span class="hljs-attribute">height</span>: <span class="hljs-variable">$feedback-form__body__button-send--height</span>;
     }
 
     <span class="hljs-comment">/* Visuellt */</span>
-    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$feedback-form__body__button-send--background-color</span> {
+    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$feedback-form__body__button-send--background-color</span> {
         <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$feedback-form__body__button-send--background-color</span>;
     }
 
     <span class="hljs-comment">/* Blandat/övrigt */</span>
-    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$feedback-form__body__button-send--cursor</span> {
+    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$feedback-form__body__button-send--cursor</span> {
         <span class="hljs-attribute">cursor</span>: <span class="hljs-variable">$feedback-form__body__button-send--cursor</span>;
     }
 }
@@ -3484,7 +3484,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

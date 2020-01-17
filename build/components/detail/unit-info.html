@@ -321,11 +321,11 @@
 	    <span class="hljs-attribute">display</span>: block;
 	    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.5em</span>;
 	    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-small</span>;
-	    @<span class="hljs-keyword">include</span> medium {<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-medium</span>;}
-		@<span class="hljs-keyword">include</span> large {<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-large</span>;}
+	    <span class="hljs-keyword">@include</span> medium {<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-medium</span>;}
+		<span class="hljs-keyword">@include</span> large {<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$p-large</span>;}
 
 		    &amp;-inline{
-		      @<span class="hljs-keyword">include</span> medium {
+		      <span class="hljs-keyword">@include</span> medium {
 		        <span class="hljs-attribute">display</span>: inline;
 		        <span class="hljs-attribute">margin-right</span>: em(<span class="hljs-number">20</span>);
 		      }
@@ -333,8 +333,8 @@
 		    &amp;-<span class="hljs-selector-tag">title</span>{
 		    	<span class="hljs-attribute">margin-top</span>: em(<span class="hljs-number">25</span>);
 		    	<span class="hljs-attribute">font-size</span>: em(<span class="hljs-number">15</span>);
-		    	@<span class="hljs-keyword">include</span> medium {<span class="hljs-attribute">font-size</span>: em(<span class="hljs-number">16</span>);}
-				@<span class="hljs-keyword">include</span> large {<span class="hljs-attribute">font-size</span>: em(<span class="hljs-number">18</span>);}
+		    	<span class="hljs-keyword">@include</span> medium {<span class="hljs-attribute">font-size</span>: em(<span class="hljs-number">16</span>);}
+				<span class="hljs-keyword">@include</span> large {<span class="hljs-attribute">font-size</span>: em(<span class="hljs-number">18</span>);}
 		    }
 	}
 
@@ -343,13 +343,13 @@
 	    <span class="hljs-attribute">text-decoration</span>: underline;
 	  	<span class="hljs-attribute">color</span>: <span class="hljs-variable">$black</span>;
 
-	    &amp;:hover,
-	    &amp;:active {
+	    &amp;<span class="hljs-selector-pseudo">:hover</span>,
+	    &amp;<span class="hljs-selector-pseudo">:active</span> {
 	      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$color-primary</span>; 
 	      <span class="hljs-attribute">text-decoration</span>: none;  
 	    }
 
-	    &amp;:visited {
+	    &amp;<span class="hljs-selector-pseudo">:visited</span> {
 	      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$link-visited</span>;
 	    }
 	}
@@ -3303,7 +3303,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

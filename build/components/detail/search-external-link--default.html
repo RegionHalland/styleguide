@@ -332,8 +332,8 @@
             <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$search-external__header-title--font-size</span>;
             <span class="hljs-attribute">font-weight</span>: bold;
 
-            @<span class="hljs-keyword">include</span> medium {<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$search-external__header-title-medium--font-size</span>;}
-            @<span class="hljs-keyword">include</span> large {<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$search-external__header-title-large--font-size</span>;}
+            <span class="hljs-keyword">@include</span> medium {<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$search-external__header-title-medium--font-size</span>;}
+            <span class="hljs-keyword">@include</span> large {<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$search-external__header-title-large--font-size</span>;}
         }
 
         &amp;-<span class="hljs-attribute">icon</span>-<span class="hljs-selector-tag">link</span> {
@@ -341,35 +341,35 @@
 
             &gt;<span class="hljs-selector-tag">a</span> {
                 <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$search-external__header-link--font-size</span>;
-                @<span class="hljs-keyword">include</span> medium {<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$search-external__header-link-medium--font-size</span>;}<span class="hljs-comment">//15px</span>
+                <span class="hljs-keyword">@include</span> medium {<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$search-external__header-link-medium--font-size</span>;}<span class="hljs-comment">//15px</span>
             }
         }
     }
 
     &amp;__description {
         <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$search-external__description--font-size</span>;
-        @<span class="hljs-keyword">include</span> medium {<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$search-external__description-medium--font-size</span>;}
+        <span class="hljs-keyword">@include</span> medium {<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$search-external__description-medium--font-size</span>;}
     }
 
     &amp;--default {
 	    <span class="hljs-attribute">border</span>: <span class="hljs-variable">$search-external-default--border</span>;
         <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$search-external-default--background-color</span>;
 
-        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$search-external-default__icon</span> {
+        <span class="hljs-keyword">@if</span> <span class="hljs-variable">$search-external-default__icon</span> {
             <span class="hljs-comment">// Reuse the component Atoms/circle-button - Change styling for icon</span>
             <span class="hljs-selector-class">.rh-circle-button</span> {
-                @<span class="hljs-keyword">if</span> <span class="hljs-variable">$search-external-default__icon--color</span> {
+                <span class="hljs-keyword">@if</span> <span class="hljs-variable">$search-external-default__icon--color</span> {
                     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$search-external-default__icon--color</span>;
                 }
-                @<span class="hljs-keyword">if</span> <span class="hljs-variable">$search-external-default__icon--background-color</span> {
+                <span class="hljs-keyword">@if</span> <span class="hljs-variable">$search-external-default__icon--background-color</span> {
                     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$search-external-default__icon--background-color</span>;
                 }
 
-                &amp;:hover, &amp;:active, &amp;:focus {
-                    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$search-external-default-effect__icon--color</span> {
+                &amp;<span class="hljs-selector-pseudo">:hover</span>, &amp;<span class="hljs-selector-pseudo">:active</span>, &amp;<span class="hljs-selector-pseudo">:focus</span> {
+                    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$search-external-default-effect__icon--color</span> {
                         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$search-external-default-effect__icon--color</span>;
                     }
-                    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$search-external-default-effect__icon--background-color</span> {
+                    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$search-external-default-effect__icon--background-color</span> {
                         <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$search-external-default-effect__icon--background-color</span>;
                     }
                 }
@@ -381,21 +381,21 @@
         <span class="hljs-attribute">border</span>: <span class="hljs-variable">$search-external-warning--border</span>;
         <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$search-external-warning--background-color</span>;
 
-        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$search-external-warning__icon</span> {
+        <span class="hljs-keyword">@if</span> <span class="hljs-variable">$search-external-warning__icon</span> {
             <span class="hljs-comment">// Reuse the component Atoms/circle-button - Change styling for icon</span>
             <span class="hljs-selector-class">.rh-circle-button</span> {
-                @<span class="hljs-keyword">if</span> <span class="hljs-variable">$search-external-warning__icon--color</span> {
+                <span class="hljs-keyword">@if</span> <span class="hljs-variable">$search-external-warning__icon--color</span> {
                     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$search-external-warning__icon--color</span>;
                 }
-                @<span class="hljs-keyword">if</span> <span class="hljs-variable">$search-external-warning__icon--background-color</span> {
+                <span class="hljs-keyword">@if</span> <span class="hljs-variable">$search-external-warning__icon--background-color</span> {
                     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$search-external-warning__icon--background-color</span>;
                 }
 
-                &amp;:hover, &amp;:active, &amp;:focus {
-                    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$search-external-warning-effect__icon--color</span> {
+                &amp;<span class="hljs-selector-pseudo">:hover</span>, &amp;<span class="hljs-selector-pseudo">:active</span>, &amp;<span class="hljs-selector-pseudo">:focus</span> {
+                    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$search-external-warning-effect__icon--color</span> {
                         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$search-external-warning-effect__icon--color</span>;
                     }
-                    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$search-external-warning-effect__icon--background-color</span> {
+                    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$search-external-warning-effect__icon--background-color</span> {
                         <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$search-external-warning-effect__icon--background-color</span>;
                     }
                 }
@@ -3433,7 +3433,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

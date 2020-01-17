@@ -458,38 +458,38 @@
                                 <pre><span class="hljs-selector-class">.rh-back-to-top</span> {
 
     <span class="hljs-comment">/* Visuellt */</span>
-    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$back-to-top--background-color</span> {
+    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$back-to-top--background-color</span> {
         <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$back-to-top--background-color</span>;
     }
 
     <span class="hljs-comment">/* Blandat/övrigt */</span>
-    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$back-to-top--cursor</span> {
+    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$back-to-top--cursor</span> {
         <span class="hljs-attribute">cursor</span>: <span class="hljs-variable">$back-to-top--cursor</span>;
     }
 
     <span class="hljs-comment">// Effect</span>
-    &amp;:hover {
-        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$back-to-top--background-color-hover</span> {
+    &amp;<span class="hljs-selector-pseudo">:hover</span> {
+        <span class="hljs-keyword">@if</span> <span class="hljs-variable">$back-to-top--background-color-hover</span> {
             <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$back-to-top--background-color-hover</span>;
         }
 
-        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$back-to-top--text-color-hover</span> {
+        <span class="hljs-keyword">@if</span> <span class="hljs-variable">$back-to-top--text-color-hover</span> {
             <span class="hljs-attribute">color</span>: <span class="hljs-variable">$back-to-top--text-color-hover</span>;
         }
     }
 
-    &amp;:active {
-        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$back-to-top--background-color-active</span> {
+    &amp;<span class="hljs-selector-pseudo">:active</span> {
+        <span class="hljs-keyword">@if</span> <span class="hljs-variable">$back-to-top--background-color-active</span> {
             <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$back-to-top--background-color-active</span>;
         }
 
-        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$back-to-top--text-color-active</span> {
+        <span class="hljs-keyword">@if</span> <span class="hljs-variable">$back-to-top--text-color-active</span> {
             <span class="hljs-attribute">color</span>: <span class="hljs-variable">$back-to-top--text-color-active</span>;
         }
     }
 
-    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$back-to-top--isResponsive</span> {
-        @<span class="hljs-keyword">include</span> medium {
+    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$back-to-top--isResponsive</span> {
+        <span class="hljs-keyword">@include</span> medium {
             <span class="hljs-comment">/* Box-modell/beteende */</span>
             <span class="hljs-attribute">width</span>: <span class="hljs-variable">$back-to-top--button-size-medium</span>;
             <span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$back-to-top--button-size-medium</span>; <span class="hljs-comment">//IE11</span>
@@ -522,8 +522,8 @@
         -o-<span class="hljs-attribute">transform</span>: translate3d(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>);
         -ms-<span class="hljs-attribute">transform</span>: translate3d(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>);
 
-        &amp; <span class="hljs-selector-tag">a</span>:hover,
-        &amp; <span class="hljs-selector-tag">a</span>:active {
+        &amp; <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span>,
+        &amp; <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:active</span> {
             <span class="hljs-attribute">text-decoration</span>: none;
         }
     }
@@ -3615,7 +3615,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

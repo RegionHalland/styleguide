@@ -324,7 +324,7 @@
                                 <pre><span class="hljs-selector-class">.rh-footer-logo</span>{
 	<span class="hljs-attribute">display</span>: flex;
 	<span class="hljs-attribute">justify-content</span>: center;
-	@<span class="hljs-keyword">include</span> medium{ <span class="hljs-attribute">justify-content</span>: space-around;}
+	<span class="hljs-keyword">@include</span> medium{ <span class="hljs-attribute">justify-content</span>: space-around;}
 	<span class="hljs-attribute">flex-wrap</span>: wrap;
 	<span class="hljs-attribute">padding</span>: em(<span class="hljs-number">10</span>);
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$white</span>;
@@ -332,18 +332,18 @@
 	
 	&amp;-<span class="hljs-selector-tag">div</span>{
 		<span class="hljs-attribute">flex-basis</span>: <span class="hljs-number">30%</span>;
-		@<span class="hljs-keyword">include</span> medium{ <span class="hljs-attribute">flex-basis</span>: auto;}
-		@<span class="hljs-keyword">include</span> large{ <span class="hljs-attribute">flex-basis</span>: auto;}
+		<span class="hljs-keyword">@include</span> medium{ <span class="hljs-attribute">flex-basis</span>: auto;}
+		<span class="hljs-keyword">@include</span> large{ <span class="hljs-attribute">flex-basis</span>: auto;}
 	}
 
 	&amp;-item{
 		<span class="hljs-attribute">margin-top</span>: em(<span class="hljs-number">8</span>);
 		<span class="hljs-attribute">margin-bottom</span>: em(<span class="hljs-number">8</span>);
 		<span class="hljs-attribute">height</span>: <span class="hljs-number">30px</span>;
-		@<span class="hljs-keyword">include</span> large{ <span class="hljs-attribute">height</span>: <span class="hljs-number">45px</span>;}
+		<span class="hljs-keyword">@include</span> large{ <span class="hljs-attribute">height</span>: <span class="hljs-number">45px</span>;}
 		<span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.5</span>;
 
-		&amp;:hover{
+		&amp;<span class="hljs-selector-pseudo">:hover</span>{
 			<span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
 		}
 	}
@@ -3292,7 +3292,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

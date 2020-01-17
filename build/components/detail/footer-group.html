@@ -487,13 +487,13 @@
     <span class="hljs-selector-tag">p</span> { <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>; }
 
     <span class="hljs-comment">/* Visuellt */</span>
-    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$footer-group__container--background-color</span> {
+    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$footer-group__container--background-color</span> {
         <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$footer-group__container--background-color</span>;
     }
 
     &amp;__item {
         <span class="hljs-comment">/* Typografi */</span>
-        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$footer-group__text--color</span> {
+        <span class="hljs-keyword">@if</span> <span class="hljs-variable">$footer-group__text--color</span> {
             <span class="hljs-attribute">color</span>: <span class="hljs-variable">$footer-group__text--color</span>;
         }
 
@@ -504,7 +504,7 @@
             <span class="hljs-attribute">border-bottom-width</span>: <span class="hljs-variable">$footer-group__header--border-bottom-width</span>;
             <span class="hljs-attribute">border-bottom-style</span>: <span class="hljs-variable">$footer-group__header--border-bottom-style</span>;
 
-            @<span class="hljs-keyword">if</span> <span class="hljs-variable">$footer-group__header--border-bottom-color</span> {
+            <span class="hljs-keyword">@if</span> <span class="hljs-variable">$footer-group__header--border-bottom-color</span> {
                 <span class="hljs-attribute">border-bottom-color</span>: <span class="hljs-variable">$footer-group__header--border-bottom-color</span>;
             }
 
@@ -514,7 +514,7 @@
                 <span class="hljs-attribute">font-weight</span>: <span class="hljs-variable">$footer-group__header-title--font-weight</span>;
                 <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$footer-group__header-title--line-height</span>;
 
-                @<span class="hljs-keyword">include</span> large {
+                <span class="hljs-keyword">@include</span> large {
                     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$footer-group__header-title--font-size-large</span>;
                 }
             }
@@ -526,7 +526,7 @@
                 <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$footer-group__body--font-size</span>;
                 <span class="hljs-attribute">word-break</span>: <span class="hljs-variable">$footer-group__body--word-break</span>;
 
-                @<span class="hljs-keyword">include</span> large {
+                <span class="hljs-keyword">@include</span> large {
                     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$footer-group__body--font-size-large</span>;
                 }
             }
@@ -551,7 +551,7 @@
 
             &amp;-<span class="hljs-selector-tag">link</span> {
                 <span class="hljs-comment">/* Typografi */</span>
-                @<span class="hljs-keyword">if</span> <span class="hljs-variable">$footer-group__link--color</span> {
+                <span class="hljs-keyword">@if</span> <span class="hljs-variable">$footer-group__link--color</span> {
                     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$footer-group__link--color</span>;
                 }
             }
@@ -3595,7 +3595,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>

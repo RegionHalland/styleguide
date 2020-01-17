@@ -641,38 +641,38 @@ body { overflow-x: hidden; } */</span>
             <span class="hljs-attribute">margin-left</span>: auto;
 
             <span class="hljs-comment">/* Visuellt */</span>
-            @<span class="hljs-keyword">if</span> <span class="hljs-variable">$menu-button-close--border</span> {
+            <span class="hljs-keyword">@if</span> <span class="hljs-variable">$menu-button-close--border</span> {
                 <span class="hljs-attribute">border</span>: <span class="hljs-variable">$menu-button-close--border</span>;
             }
 
-            @<span class="hljs-keyword">if</span> <span class="hljs-variable">$menu-button-close--background-color</span> {
+            <span class="hljs-keyword">@if</span> <span class="hljs-variable">$menu-button-close--background-color</span> {
                 <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$menu-button-close--background-color</span>;
             }
 
             <span class="hljs-comment">/* Typografi */</span>
-            @<span class="hljs-keyword">if</span> <span class="hljs-variable">$menu-button-close--color</span> {
+            <span class="hljs-keyword">@if</span> <span class="hljs-variable">$menu-button-close--color</span> {
                 <span class="hljs-attribute">color</span>: <span class="hljs-variable">$menu-button-close--color</span>;
             }
 
             <span class="hljs-comment">/* Blandat/övrigt */</span>
             <span class="hljs-attribute">cursor</span>: pointer;
 
-            @<span class="hljs-keyword">if</span> <span class="hljs-variable">$menu-button-close--hover-active</span> {
+            <span class="hljs-keyword">@if</span> <span class="hljs-variable">$menu-button-close--hover-active</span> {
 
-                &amp;:hover,
-                &amp;:active {
+                &amp;<span class="hljs-selector-pseudo">:hover</span>,
+                &amp;<span class="hljs-selector-pseudo">:active</span> {
 
                     <span class="hljs-comment">/* Visuellt */</span>
-                    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$menu-button-close--border-hover-active</span> {
+                    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$menu-button-close--border-hover-active</span> {
                         <span class="hljs-attribute">border</span>: <span class="hljs-variable">$menu-button-close--border-hover-active</span>;
                     }
 
-                    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$menu-button-close--background-color-hover-active</span> {
+                    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$menu-button-close--background-color-hover-active</span> {
                         <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$menu-button-close--background-color-hover-active</span>;
                     }
 
                     <span class="hljs-comment">/* Typografi */</span>
-                    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$menu-button-close--color-hover-active</span> {
+                    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$menu-button-close--color-hover-active</span> {
                         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$menu-button-close--color-hover-active</span>;
                     }
                 }
@@ -789,15 +789,15 @@ body { overflow-x: hidden; } */</span>
                 <span class="hljs-comment">/* Typografi */</span>
                 <span class="hljs-attribute">color</span>: <span class="hljs-variable">$menu-item-button-parent--color</span>;
 
-                @<span class="hljs-keyword">if</span> <span class="hljs-variable">$menu-item-button-parent-hover-active</span> {
+                <span class="hljs-keyword">@if</span> <span class="hljs-variable">$menu-item-button-parent-hover-active</span> {
 
-                    &amp;:active,
-                    &amp;:hover {
-                        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$menu-item-button-parent--background-color-hover-active</span> {
+                    &amp;<span class="hljs-selector-pseudo">:active</span>,
+                    &amp;<span class="hljs-selector-pseudo">:hover</span> {
+                        <span class="hljs-keyword">@if</span> <span class="hljs-variable">$menu-item-button-parent--background-color-hover-active</span> {
                             <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$menu-item-button-parent--background-color-hover-active</span>;
                         }
 
-                        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$menu-item-button-parent--color-hover-active</span> {
+                        <span class="hljs-keyword">@if</span> <span class="hljs-variable">$menu-item-button-parent--color-hover-active</span> {
                             <span class="hljs-attribute">color</span>: <span class="hljs-variable">$menu-item-button-parent--color-hover-active</span>;
                         }
                     }
@@ -812,22 +812,22 @@ body { overflow-x: hidden; } */</span>
                 <span class="hljs-comment">/* Typografi */</span>
                 <span class="hljs-attribute">color</span>: <span class="hljs-variable">$menu-sub-item-button--color</span>;
 
-                @<span class="hljs-keyword">if</span> <span class="hljs-variable">$menu-sub-item-button-hover-active</span> {
+                <span class="hljs-keyword">@if</span> <span class="hljs-variable">$menu-sub-item-button-hover-active</span> {
 
-                    &amp;:active,
-                    &amp;:hover {
+                    &amp;<span class="hljs-selector-pseudo">:active</span>,
+                    &amp;<span class="hljs-selector-pseudo">:hover</span> {
 
                         <span class="hljs-comment">/* Visuellt */</span>
-                        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$menu-sub-item-button--border-hover-active</span> {
+                        <span class="hljs-keyword">@if</span> <span class="hljs-variable">$menu-sub-item-button--border-hover-active</span> {
                             <span class="hljs-attribute">border</span>: <span class="hljs-variable">$menu-sub-item-button--border-hover-active</span>;
                         }
 
-                        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$menu-sub-item-button--background-color-hover-active</span> {
+                        <span class="hljs-keyword">@if</span> <span class="hljs-variable">$menu-sub-item-button--background-color-hover-active</span> {
                             <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$menu-sub-item-button--background-color-hover-active</span>;
                         }
 
                         <span class="hljs-comment">/* Typografi */</span>
-                        @<span class="hljs-keyword">if</span> <span class="hljs-variable">$menu-sub-item-button--color-hover-active</span> {
+                        <span class="hljs-keyword">@if</span> <span class="hljs-variable">$menu-sub-item-button--color-hover-active</span> {
                             <span class="hljs-attribute">color</span>: <span class="hljs-variable">$menu-sub-item-button--color-hover-active</span>;
                         }
                     }
@@ -841,21 +841,21 @@ body { overflow-x: hidden; } */</span>
                     <span class="hljs-comment">/* Typografi */</span>
                     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$menu-sub-item-button-active--color</span>;
 
-                    @<span class="hljs-keyword">if</span> <span class="hljs-variable">$menu-sub-item-button-active-hover-active</span> {
+                    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$menu-sub-item-button-active-hover-active</span> {
 
-                        &amp;:active,
-                        &amp;:hover {
+                        &amp;<span class="hljs-selector-pseudo">:active</span>,
+                        &amp;<span class="hljs-selector-pseudo">:hover</span> {
                             <span class="hljs-comment">/* Visuellt */</span>
-                            @<span class="hljs-keyword">if</span> <span class="hljs-variable">$menu-sub-item-button-active--border-hover-active</span> {
+                            <span class="hljs-keyword">@if</span> <span class="hljs-variable">$menu-sub-item-button-active--border-hover-active</span> {
                                 <span class="hljs-attribute">border</span>: <span class="hljs-variable">$menu-sub-item-button-active--border-hover-active</span>;
                             }
 
-                            @<span class="hljs-keyword">if</span> <span class="hljs-variable">$menu-sub-item-button-active--background-color-hover-active</span> {
+                            <span class="hljs-keyword">@if</span> <span class="hljs-variable">$menu-sub-item-button-active--background-color-hover-active</span> {
                                 <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$menu-sub-item-button-active--background-color-hover-active</span>;
                             }
 
                             <span class="hljs-comment">/* Typografi */</span>
-                            @<span class="hljs-keyword">if</span> <span class="hljs-variable">$menu-sub-item-button-active--color-hover-active</span> {
+                            <span class="hljs-keyword">@if</span> <span class="hljs-variable">$menu-sub-item-button-active--color-hover-active</span> {
                                 <span class="hljs-attribute">color</span>: <span class="hljs-variable">$menu-sub-item-button-active--color-hover-active</span>;
                             }
                         }
@@ -4259,7 +4259,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Under utveckling"></span>
+<span class="Status-dot" style="border-color: #ff47d3;" title="Inväntar ombyggnad"></span>
 
 
 </div>
