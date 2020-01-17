@@ -11,12 +11,12 @@ The sites building add-on is using __ONLY__ for the Styleguide application at Re
 _(*) Using for a specific site or all sites_.
 
 ## System requirements
-* The minimum supported [Node.js](https://nodejs.org/) version is __8.9.0__ _(Node.js LTS version is a good choice for the stability)_.
-* The minimum supported [Gulp](https://gulpjs.com/) version is __4.0.0__ and installled on global.
+* The minimum supported [Node.js](https://nodejs.org/) version is __8.17.0__ _(Node.js LTS version is a good choice for the stability)_.
+* The minimum supported [Gulp](https://gulpjs.com/) version is __4.0.0__ and Gulp CLI is installled on global.
 * Administrator permission is required by your operating system for the building process.
 
 ## Usage
-`$ gulp <task> <-option> [<-suboption>] [<sitename>]`
+`$ gulp <task> [-option] [-subOption] [websiteName]`
 
 ### Tasks
 |Task|Description|
@@ -34,30 +34,29 @@ _(*) Using for a specific site or all sites_.
 _(*) Must have_
 
 ### Sub options
-Beware using with the options are below:
 
 |Sub option|Alias|Description|
 |---|---|---|
-|`-o`|`--overwrite`|Overwrite existing files |
 |`-m`|`--minify`|Minify both CSS and JS|
+|`-o`|`--overwrite`|Overwrite existing files |
 
 Example for using sub options:
 * `$ gulp builds -s -m -o projectX`
 * `$ gulp releases -s -m nextProject`
-* `$ gulp releases --site --overwrite --minify lastProject` _(Using alias)_
+* `$ gulp releases --site --minify --overwrite lastProject` _(Using alias)_
 
 ### Examples
 ```
-$ gulp builds -a                   // Builds all sites
-$ gulp builds -s samplesitename    // Builds a specific site
-$ gulp releases -a                 // Releases all sites
-$ gulp releases -s othersitename   // Releases a specific site
+$ gulp builds -s -m -o samplesitename  // Builds a specific site
+$ gulp builds -a                       // Builds all sites
+$ gulp releases -s -m othersitename    // Releases a specific site
+$ gulp releases -a                     // Releases all sites
 
 // Using alias
+$ gulp builds --site --minify --overwrite samplesitename
 $ gulp builds --all
-$ gulp builds --site samplesitename
+$ gulp releases --site --minify othersitename
 $ gulp releases --all
-$ gulp releases --site othersitename
 
 // Show the help information
 $ gulp help
@@ -69,11 +68,14 @@ $ gulp help
 * View more in `/gulpfile.js` to know how the add-on works.
 
 ## Release notes:
+### 1.3.4 (2020-01-08)
+* [__New__] Using `gulp-command-handling` package for a better development.
+
 ### 1.3.3 (2019-11-25)
-* Improved performance.
-* Added alias for using overwriting and minification:
+* [__New__] Added alias for using overwriting and minification:
     * `--overwrite`
     * `--minify`
+* [__Improvement__] Improved performance.
 
 ### 1.3.2 (2019-11-21)
 * Improved performance.

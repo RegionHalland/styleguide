@@ -458,7 +458,7 @@ $(document).ready(function () {
   /* function calculateScrollbarWidth() {
       return (window.innerWidth - $(document).width());
   }
-   function isMobileDevice(){
+    function isMobileDevice(){
       return !!navigator.platform && /iPad|iPhone|iPod/g.test(navigator.platform);
   } */
 
