@@ -143,7 +143,7 @@ function release(cb) {
 }
 
 function scss(cb) {
- 	gulp.src('components/scss/main.scss')
+ 	gulp.src('components/Settings/main.scss')
 		.pipe(sourcemaps.init())
   		.pipe(
 			sass.sync({
@@ -280,7 +280,7 @@ function reloadPage(cb){
 function scssCompilation(cb) {
     const cssDesPath = fractal.web.get('static.path') + '/css/';
 
-    src('components/scss/main.scss')
+    src('components/Settings/main.scss')
         .pipe(sourcemaps.init())
         .pipe(
             sass.sync()

@@ -125,7 +125,7 @@
                     "components/Organism/search/search.js",
                     "components/Organism/table/table.js"
                 ],
-                "scssComponents": [ "components/scss/main.scss" ]
+                "scssComponents": [ "components/Settings/main.scss" ]
             }
         }
     ],

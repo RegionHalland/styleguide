@@ -329,6 +329,14 @@
     {
       "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhTemplatesGeneral"
+    },
+    {
+        "type": "git",
+        "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhStyleguideCore"
+    },
+    {
+        "type": "git",
+        "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhStyleguideCoreSettings"
     }
   ],
   "require": {
@@ -410,14 +418,18 @@
     "regionhalland/unit-info": "1.0.0.20191122",
     "regionhalland/video": "1.0.0.20200110",
     "regionhalland/visual-element": "1.0.0.20191113",
-    "regionhalland/general": "1.0.0.20200108"
+    "regionhalland/general": "1.0.0.20200108",
+    "regionhalland/styleguide-core": "1.1.0",
+    "regionhalland/styleguide-core-settings": "1.1.1"
   },
   "extra": {
     "custom-installer": {
       "components/Atoms/{$name}/": ["type:styleguide-atom"],
       "components/Molecules/{$name}/": ["type:styleguide-molecule"],
       "components/Organisms/{$name}/": ["type:styleguide-organism"],
-      "components/Templates/{$name}/": ["type:styleguide-template"]
+      "components/Templates/{$name}/": ["type:styleguide-template"],
+      "components/Core/": ["type:styleguide-core"],
+      "components/Settings/": ["type:styleguide-core-settings"]
     }
   }
 }

@@ -17,6 +17,14 @@ vendor
 # Composer
 composer.lock
 
+# Core
+components/Core/*
+!components/Core/.gitkeep
+
+# Settings
+components/Settings/*
+!components/Settings/.gitkeep
+
 # Atoms
 components/Atoms/*
 !components/Atoms/.gitkeep
@@ -29,6 +37,6 @@ components/Molecules/*
 components/Organisms/*
 !components/Organisms/.gitkeep
 
-# Organism
+# Templates
 components/Templates/*
 !components/Templates/.gitkeep
