@@ -381,7 +381,7 @@
     "regionhalland/heading-underlined": "1.0.1",
     "regionhalland/image-caption": "2.0.1",
     "regionhalland/image-hero": "1.0.2",
-    "regionhalland/labels": "1.0.0.201911271825",
+    "regionhalland/label": "1.0.0.20200121",
     "regionhalland/label-previous": "1.0.0.20191121",
     "regionhalland/last-updated": "1.0.1",
     "regionhalland/link": "1.0.0.20200120",
@@ -420,7 +420,7 @@
     "regionhalland/visual-element": "1.0.0.20200117",
     "regionhalland/general": "1.0.0.20200108",
     "regionhalland/styleguide-core": "1.2.0",
-    "regionhalland/styleguide-core-settings": "2.0.0"
+    "regionhalland/styleguide-core-settings": "2.0.1"
   },
   "extra": {
     "custom-installer": {
