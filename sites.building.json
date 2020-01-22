@@ -121,6 +121,7 @@
                     "components/Molecules/linkgroup/linkgroup.js",
                     "components/Molecules/menu-mobile/menu-mobile.js",
                     "components/Molecules/menu/menu.js",
+                    "components/Molecules/navigation-bar/navigation-bar.js",
                     "components/Molecules/tabs/tabs.js",
                     "components/Organism/search/search.js",
                     "components/Organism/table/table.js"
