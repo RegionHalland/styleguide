@@ -13,5 +13,5 @@ pool:
 
 steps:
 - script: |
-    curl -XPOST -H'content-type:application/json' 'https://packagist.org/api/update-package?username=regionhalland&apiToken=$PACKAGIST_APIKEY' -d'{"repository":{"url":"https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhWebStyleguide"}}'
+    curl -XPOST -H'content-type:application/json' 'https://packagist.org/api/update-package?username=regionhalland&apiToken=$(PACKAGIST_APIKEY)' -d'{"repository":{"url":"https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhWebStyleguide"}}'
   displayName: 'Skickar nytt paket till till Packagist.org'
