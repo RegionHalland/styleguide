@@ -203,6 +203,10 @@
       "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeMessages"
     },
     {
+        "type": "git",
+        "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeNavigationBar"
+    },
+    {
       "type": "git",
       "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeNavigationBlock"
     },
@@ -394,6 +398,7 @@
     "regionhalland/menu-mobile": "1.0.0.20200103",
     "regionhalland/message-cookies": "1.0.1",
     "regionhalland/messages": "1.0.0.20191122",
+    "regionhalland/navigation-bar": "1.0.0.202001221441",
     "regionhalland/navigation-block": "1.0.0.20200117",
     "regionhalland/navigation-block-group": "1.0.0.20200117",
     "regionhalland/navigation-card": "1.0.0.20191122",
@@ -420,7 +425,7 @@
     "regionhalland/visual-element": "1.0.0.20200117",
     "regionhalland/general": "1.0.0.20200108",
     "regionhalland/styleguide-core": "1.2.0",
-    "regionhalland/styleguide-core-settings": "2.0.1"
+    "regionhalland/styleguide-core-settings": "2.1.0"
   },
   "extra": {
     "custom-installer": {
