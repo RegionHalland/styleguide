@@ -1,440 +1,452 @@
 {
-  "name": "regionhalland/styleguide",
-  "type": "project",
-  "license": "GPL-3.0",
-  "description": "Styleguide",
-  "homepage": "http://stilguide.regionhalland.se",
-  "authors": [
-    {
-      "name": "Roland Hyden",
-      "email": "Roland.Hyden@RegionHalland.se",
-      "homepage": "https://regionhalland.se"
+    "name": "regionhalland/styleguide",
+    "type": "project",
+    "license": "GPL-3.0",
+    "description": "Region Hallands stilguide innehåller alla de komponenter som används för att bygga våra digitala kundmöten. För mer information besök stilguide.regionhalland.se",
+    "homepage": "http://stilguide.regionhalland.se",
+    "authors": [
+        {
+            "name": "Region Halland",
+            "email": "webbplatser@regionhalland.se",
+            "homepage": "https://design.regionhalland.se"
+        }
+    ],
+    "keywords": [
+        "styleguide"
+    ],
+    "config": {
+        "preferred-install": "components"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeBlock"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomAvatar"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomBadge"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomButton"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomCard"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomCircleButton"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomCaptionHero"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomFilter"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomForm"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomFormControlText"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomFormControlTextarea"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomHeadingUnderlined"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomLabel"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomLink"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomLogo"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomPaginationElements"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomRoundButton"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomSearchField"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomSitename"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomText"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomVisualElement"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeArticle"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeArticleBlock"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeBackToTop"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeBlockIconLink"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeBlockShortcuts"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeBlurbs"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeButtongroupElements"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeCalendarElement"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeContactInfo"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeEventCardCalendar"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeFeedback"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeFeedbackForm"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeFilterAlphabet"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeImageCaption"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeImageHero"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeLabelPrevious"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeLastUpdated"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeLinkgroup"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeLists"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeLogoSitename"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeMenu"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeMenuMobile"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeMessageCookies"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeMessages"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeNavigationBar"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeNavigationBlock"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeNavigationCard"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeNavigationLeft"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeNewsInfo"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculePageNav"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculePagination"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculePersonalInfo"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeSearchElements"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeSearchExternalLink"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeSearchExternalLink1177"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeSecondaryNav"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeTabs"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeUnitInfo"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeVideo"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismArticleGroup"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismBlockGroup"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismBreadcrumbs"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismButtongroup"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismCalendar"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismFeedbackLastUpdated"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismFooter"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismFooterGroup"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismFooterLogo"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismFooterLogoGroup"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismHeader"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismMainNav"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismNavigationBlockGroup"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismSearch"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismTable"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismToplinks"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWpPlugIns/_git/RhComposerCustomInstaller"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhTemplatesGeneral"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhStyleguideCore"
+        },
+        {
+            "type": "git",
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhStyleguideCoreSettings"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "composer/installers": "^1.4",
+        "regionhalland/region-halland-composer-custom-installer": "1.0.0",
+        "regionhalland/article": "1.0.0.20191121",
+        "regionhalland/article-block": "1.0.4",
+        "regionhalland/article-group": "1.0.1",
+        "regionhalland/avatar": "1.0.0.20191121",
+        "regionhalland/back-to-top": "1.1.2",
+        "regionhalland/badge": "1.0.0.20191121",
+        "regionhalland/block": "1.3.1",
+        "regionhalland/block-group": "1.0.0.202001171642",
+        "regionhalland/block-icon-link": "1.0.0.20200117",
+        "regionhalland/block-shortcuts": "1.0.1",
+        "regionhalland/blurbs": "1.0.0.20191121",
+        "regionhalland/breadcrumbs": "1.0.0.20191127",
+        "regionhalland/button": "1.0.0.202001171625",
+        "regionhalland/buttongroup": "1.0.0.201911081257",
+        "regionhalland/buttongroup-elements": "1.0.0.20200117",
+        "regionhalland/calendar": "1.0.0.20191123",
+        "regionhalland/calendar-element": "1.0.0.20191121",
+        "regionhalland/caption-hero": "1.0.2",
+        "regionhalland/card": "1.0.0.20200117",
+        "regionhalland/circle-button": "1.2.2",
+        "regionhalland/contact-info": "1.0.2",
+        "regionhalland/event-card-calendar": "1.0.0.20200117",
+        "regionhalland/feedback": "1.0.0.20191227",
+        "regionhalland/feedback-form": "1.0.0.20191121",
+        "regionhalland/feedback-last-updated": "1.0.0.20191129",
+        "regionhalland/filter": "1.0.0.20200117",
+        "regionhalland/filter-alphabet": "1.0.1",
+        "regionhalland/footer": "1.0.0.20191123",
+        "regionhalland/footer-group": "1.0.0.202001171645",
+        "regionhalland/footer-logo": "1.0.0.20191123",
+        "regionhalland/footer-logo-group": "1.0.0.202001171645",
+        "regionhalland/form": "1.0.0.20191121",
+        "regionhalland/form-control-text": "1.0.0.20200117",
+        "regionhalland/form-control-textarea": "1.0.0.20200117",
+        "regionhalland/header": "1.0.0.20191227",
+        "regionhalland/heading-underlined": "1.0.1",
+        "regionhalland/image-caption": "2.0.1",
+        "regionhalland/image-hero": "1.0.2",
+        "regionhalland/label": "1.0.0.20200121",
+        "regionhalland/label-previous": "1.0.0.20191121",
+        "regionhalland/last-updated": "1.0.1",
+        "regionhalland/link": "1.0.0.20200120",
+        "regionhalland/linkgroup": "1.0.1",
+        "regionhalland/lists": "1.0.0.20191121",
+        "regionhalland/logo": "v1.0.2",
+        "regionhalland/logo-sitename": "1.0.0.20200120",
+        "regionhalland/main-nav": "1.0.0.20191123",
+        "regionhalland/menu": "1.0.0.20200103",
+        "regionhalland/menu-mobile": "1.0.0.20200103",
+        "regionhalland/message-cookies": "1.0.1",
+        "regionhalland/messages": "1.0.0.20191122",
+        "regionhalland/navigation-bar": "1.0.0.202001221633",
+        "regionhalland/navigation-block": "1.0.0.20200117",
+        "regionhalland/navigation-block-group": "1.0.0.20200117",
+        "regionhalland/navigation-card": "1.0.0.20191122",
+        "regionhalland/navigation-left": "1.1.1",
+        "regionhalland/news-info": "1.0.1",
+        "regionhalland/page-nav": "1.0.0.20191122",
+        "regionhalland/pagination": "1.0.0.20200108",
+        "regionhalland/pagination-elements": "1.0.0.20191127",
+        "regionhalland/personal-info": "1.0.0.20191122",
+        "regionhalland/round-button": "1.0.0.20191217",
+        "regionhalland/search": "1.0.0.20191123",
+        "regionhalland/search-elements": "1.0.0.20200117",
+        "regionhalland/search-external-link": "1.0.0.20191217",
+        "regionhalland/search-external-link-1177": "1.0.0.20191122",
+        "regionhalland/search-field": "1.0.0.20200117",
+        "regionhalland/secondary-nav": "1.0.0.20191122",
+        "regionhalland/sitename": "1.0.0.20200117",
+        "regionhalland/table": "1.0.0.20191123",
+        "regionhalland/tabs": "1.0.0.20200117",
+        "regionhalland/text": "1.0.0.20200117",
+        "regionhalland/toplinks": "1.0.0.20191123",
+        "regionhalland/unit-info": "1.0.0.20191122",
+        "regionhalland/video": "1.0.0.20200110",
+        "regionhalland/visual-element": "1.0.0.20200117",
+        "regionhalland/general": "1.0.0.20200108",
+        "regionhalland/styleguide-core": "1.2.0",
+        "regionhalland/styleguide-core-settings": "2.1.1"
+    },
+    "extra": {
+        "custom-installer": {
+            "components/Atoms/{$name}/": [
+                "type:styleguide-atom"
+            ],
+            "components/Molecules/{$name}/": [
+                "type:styleguide-molecule"
+            ],
+            "components/Organisms/{$name}/": [
+                "type:styleguide-organism"
+            ],
+            "components/Templates/{$name}/": [
+                "type:styleguide-template"
+            ],
+            "components/Core/": [
+                "type:styleguide-core"
+            ],
+            "components/Settings/": [
+                "type:styleguide-core-settings"
+            ]
+        }
     }
-  ],
-  "keywords": [
-    "styleguide"
-  ],
-  "config": {
-    "preferred-install": "components"
-  },
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://wpackagist.org"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeBlock"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomAvatar"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomBadge"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomButton"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomCard"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomCircleButton"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomCaptionHero"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomFilter"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomForm"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomFormControlText"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomFormControlTextarea"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomHeadingUnderlined"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomLabel"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomLink"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomLogo"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomPaginationElements"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomRoundButton"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomSearchField"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomSitename"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomText"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomVisualElement"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeArticle"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeArticleBlock"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeBackToTop"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeBlockIconLink"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeBlockShortcuts"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeBlurbs"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeButtongroupElements"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeCalendarElement"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeContactInfo"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeEventCardCalendar"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeFeedback"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeFeedbackForm"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeFilterAlphabet"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeImageCaption"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeImageHero"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeLabelPrevious"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeLastUpdated"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeLinkgroup"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeLists"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeLogoSitename"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeMenu"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeMenuMobile"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeMessageCookies"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeMessages"
-    },
-    {
-        "type": "git",
-        "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeNavigationBar"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeNavigationBlock"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeNavigationCard"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeNavigationLeft"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeNewsInfo"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculePageNav"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculePagination"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculePersonalInfo"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeSearchElements"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeSearchExternalLink"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeSearchExternalLink1177"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeSecondaryNav"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeTabs"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeUnitInfo"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeVideo"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismArticleGroup"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismBlockGroup"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismBreadcrumbs"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismButtongroup"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismCalendar"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismFeedbackLastUpdated"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismFooter"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismFooterGroup"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismFooterLogo"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismFooterLogoGroup"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismHeader"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismMainNav"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismNavigationBlockGroup"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismSearch"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismTable"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhOrganismToplinks"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWpPlugIns/_git/RhComposerCustomInstaller"
-    },
-    {
-      "type": "git",
-      "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhTemplatesGeneral"
-    },
-    {
-        "type": "git",
-        "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhStyleguideCore"
-    },
-    {
-        "type": "git",
-        "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhStyleguideCoreSettings"
-    }
-  ],
-  "require": {
-    "php": ">=5.6",
-    "composer/installers": "^1.4",
-    "regionhalland/region-halland-composer-custom-installer": "1.0.0",
-    "regionhalland/article": "1.0.0.20191121",
-    "regionhalland/article-block": "1.0.4",
-    "regionhalland/article-group": "1.0.1",
-    "regionhalland/avatar": "1.0.0.20191121",
-    "regionhalland/back-to-top": "1.1.2",
-    "regionhalland/badge": "1.0.0.20191121",
-    "regionhalland/block": "1.3.1",
-    "regionhalland/block-group": "1.0.0.202001171642",
-    "regionhalland/block-icon-link": "1.0.0.20200117",
-    "regionhalland/block-shortcuts": "1.0.1",
-    "regionhalland/blurbs": "1.0.0.20191121",
-    "regionhalland/breadcrumbs": "1.0.0.20191127",
-    "regionhalland/button": "1.0.0.202001171625",
-    "regionhalland/buttongroup": "1.0.0.201911081257",
-    "regionhalland/buttongroup-elements": "1.0.0.20200117",
-    "regionhalland/calendar": "1.0.0.20191123",
-    "regionhalland/calendar-element": "1.0.0.20191121",
-    "regionhalland/caption-hero": "1.0.2",
-    "regionhalland/card": "1.0.0.20200117",
-    "regionhalland/circle-button": "1.2.2",
-    "regionhalland/contact-info": "1.0.2",
-    "regionhalland/event-card-calendar": "1.0.0.20200117",
-    "regionhalland/feedback": "1.0.0.20191227",
-    "regionhalland/feedback-form": "1.0.0.20191121",
-    "regionhalland/feedback-last-updated": "1.0.0.20191129",
-    "regionhalland/filter": "1.0.0.20200117",
-    "regionhalland/filter-alphabet": "1.0.1",
-    "regionhalland/footer": "1.0.0.20191123",
-    "regionhalland/footer-group": "1.0.0.202001171645",
-    "regionhalland/footer-logo": "1.0.0.20191123",
-    "regionhalland/footer-logo-group": "1.0.0.202001171645",
-    "regionhalland/form": "1.0.0.20191121",
-    "regionhalland/form-control-text": "1.0.0.20200117",
-    "regionhalland/form-control-textarea": "1.0.0.20200117",
-    "regionhalland/header": "1.0.0.20191227",
-    "regionhalland/heading-underlined": "1.0.1",
-    "regionhalland/image-caption": "2.0.1",
-    "regionhalland/image-hero": "1.0.2",
-    "regionhalland/label": "1.0.0.20200121",
-    "regionhalland/label-previous": "1.0.0.20191121",
-    "regionhalland/last-updated": "1.0.1",
-    "regionhalland/link": "1.0.0.20200120",
-    "regionhalland/linkgroup": "1.0.1",
-    "regionhalland/lists": "1.0.0.20191121",
-    "regionhalland/logo": "v1.0.2",
-    "regionhalland/logo-sitename": "1.0.0.20200120",
-    "regionhalland/main-nav": "1.0.0.20191123",
-    "regionhalland/menu": "1.0.0.20200103",
-    "regionhalland/menu-mobile": "1.0.0.20200103",
-    "regionhalland/message-cookies": "1.0.1",
-    "regionhalland/messages": "1.0.0.20191122",
-    "regionhalland/navigation-bar": "1.0.0.202001221633",
-    "regionhalland/navigation-block": "1.0.0.20200117",
-    "regionhalland/navigation-block-group": "1.0.0.20200117",
-    "regionhalland/navigation-card": "1.0.0.20191122",
-    "regionhalland/navigation-left": "1.1.1",
-    "regionhalland/news-info": "1.0.1",
-    "regionhalland/page-nav": "1.0.0.20191122",
-    "regionhalland/pagination": "1.0.0.20200108",
-    "regionhalland/pagination-elements": "1.0.0.20191127",
-    "regionhalland/personal-info": "1.0.0.20191122",
-    "regionhalland/round-button": "1.0.0.20191217",
-    "regionhalland/search": "1.0.0.20191123",
-    "regionhalland/search-elements": "1.0.0.20200117",
-    "regionhalland/search-external-link": "1.0.0.20191217",
-    "regionhalland/search-external-link-1177": "1.0.0.20191122",
-    "regionhalland/search-field": "1.0.0.20200117",
-    "regionhalland/secondary-nav": "1.0.0.20191122",
-    "regionhalland/sitename": "1.0.0.20200117",
-    "regionhalland/table": "1.0.0.20191123",
-    "regionhalland/tabs": "1.0.0.20200117",
-    "regionhalland/text": "1.0.0.20200117",
-    "regionhalland/toplinks": "1.0.0.20191123",
-    "regionhalland/unit-info": "1.0.0.20191122",
-    "regionhalland/video": "1.0.0.20200110",
-    "regionhalland/visual-element": "1.0.0.20200117",
-    "regionhalland/general": "1.0.0.20200108",
-    "regionhalland/styleguide-core": "1.2.0",
-    "regionhalland/styleguide-core-settings": "2.1.1"
-  },
-  "extra": {
-    "custom-installer": {
-      "components/Atoms/{$name}/": ["type:styleguide-atom"],
-      "components/Molecules/{$name}/": ["type:styleguide-molecule"],
-      "components/Organisms/{$name}/": ["type:styleguide-organism"],
-      "components/Templates/{$name}/": ["type:styleguide-template"],
-      "components/Core/": ["type:styleguide-core"],
-      "components/Settings/": ["type:styleguide-core-settings"]
-    }
-  }
 }
