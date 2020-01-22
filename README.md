@@ -4,6 +4,7 @@ Få igång en lokal server genom att...
 
 1. Ta hem detta repos.
 1. Kör `npm install`
+2. Kör `npm composer install`
 2. Kör `gulp`
 3. Terminalen borde nu berätta för dig vilken lokal URL som servern kör på.
 
