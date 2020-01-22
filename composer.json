@@ -1,9 +1,9 @@
 {
-  "name": "Styleguide",
+  "name": "regionhalland/styleguide",
   "type": "project",
   "license": "GPL-3.0",
   "description": "Styleguide",
-  "homepage": "https://regionhalland.se",
+  "homepage": "http://stilguide.regionhalland.se",
   "authors": [
     {
       "name": "Roland Hyden",
