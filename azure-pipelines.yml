@@ -4,19 +4,14 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- master
+  tags:
+    include:
+    - v*
 
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
-
 - script: |
-    npm install
-    composer install
-    gulp
-  displayName: 'npm install, composer install and run gulp'
+    curl -XPOST -H'content-type:application/json' 'https://packagist.org/api/update-package?username=regionhalland&apiToken=q3X-Z4Q81L4avYbomC_h' -d'{"repository":{"url":"https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhWebStyleguide"}}'
+  displayName: 'Skickar nytt paket till till Packagist.org'
