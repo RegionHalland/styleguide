@@ -40,11 +40,11 @@
         },
         {
             "type": "git",
-            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomCard"
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomButtonCircle"
         },
         {
             "type": "git",
-            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomCircleButton"
+            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhAtomCard"
         },
         {
             "type": "git",
@@ -360,13 +360,13 @@
         "regionhalland/blurbs": "1.0.0.20191121",
         "regionhalland/breadcrumbs": "1.0.0.20191127",
         "regionhalland/button": "1.0.0.202001171625",
+        "regionhalland/button-circle": "2.0.0",
         "regionhalland/buttongroup": "1.0.0.201911081257",
         "regionhalland/buttongroup-elements": "1.0.0.20200117",
         "regionhalland/calendar": "1.0.0.20191123",
         "regionhalland/calendar-element": "1.0.0.20191121",
         "regionhalland/caption-hero": "1.0.2",
         "regionhalland/card": "1.0.0.20200117",
-        "regionhalland/circle-button": "1.2.2",
         "regionhalland/contact-info": "1.0.2",
         "regionhalland/event-card-calendar": "1.0.0.20200117",
         "regionhalland/feedback": "1.0.0.20191227",
@@ -424,8 +424,8 @@
         "regionhalland/video": "1.0.0.20200110",
         "regionhalland/visual-element": "1.0.0.20200117",
         "regionhalland/general": "1.0.0.20200108",
-        "regionhalland/styleguide-core": "1.2.0",
-        "regionhalland/styleguide-core-settings": "2.1.1"
+        "regionhalland/styleguide-core": "1.2.1",
+        "regionhalland/styleguide-core-settings": "2.1.2"
     },
     "extra": {
         "custom-installer": {
