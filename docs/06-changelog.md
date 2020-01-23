@@ -27,7 +27,7 @@
     * Ny status "rework" och planerad utveckling är listad.
     * Linting
 
-* **Molekylen "Block Icon Link"** ([v1.0.0.20200123](https://dev.azure.com/regionhalland/public.RhWebStyleguide/_git/RhMoleculeBlockIconLink?version=GT1.0.0.20200123))
+* **Molekylen "Block Icon Link"**
     * CSS-klassen --primary har bytts namn till `--secondary` för att det får konsekvensen via återanvändning av komponenten Atoms/**button-circle**.
     * Variablers namn i filen `.settings.scss` har bytts för användning av globala variabler.
 
