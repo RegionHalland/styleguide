@@ -4,8 +4,13 @@
     * Brytande ändringar i settings - kopiera över nya i ditt lokala projekt.
 
 
-* **Atomen "Circle button" har nytt namn "Button circle"**
+* **Atomen "Circle button" **
     * Brytande ändringar i settings - kopiera över nya i ditt lokala projekt.
+    * Nytt namn "Button circle" - uppdatera dina sökvägar.
+
+
+* **Atomen "Labels"**
+    * Bytt namn till "Label" - uppdatera dina sökvägar. 
 
 
 * **Mappen 'scss' flyttad till repona RhStyleguideCore och RhStyleguideCoreSettings**
