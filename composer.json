@@ -366,7 +366,7 @@
         "regionhalland/calendar": "1.0.0.20191123",
         "regionhalland/calendar-element": "1.0.0.20191121",
         "regionhalland/caption-hero": "1.0.2",
-        "regionhalland/card": "1.0.0.20200117",
+        "regionhalland/card": "1.0.0.20200123",
         "regionhalland/contact-info": "1.0.2",
         "regionhalland/event-card-calendar": "1.0.0.20200123",
         "regionhalland/feedback": "1.0.0.20191227",
@@ -391,7 +391,7 @@
         "regionhalland/link": "1.0.0.20200120",
         "regionhalland/linkgroup": "1.0.1",
         "regionhalland/lists": "1.0.0.20191121",
-        "regionhalland/logo": "v1.0.2",
+        "regionhalland/logo": "1.0.3",
         "regionhalland/logo-sitename": "1.0.0.20200120",
         "regionhalland/main-nav": "1.0.0.20191123",
         "regionhalland/menu": "1.0.0.20200123",
@@ -406,7 +406,7 @@
         "regionhalland/news-info": "1.0.1",
         "regionhalland/page-nav": "1.0.0.20191122",
         "regionhalland/pagination": "1.0.0.20200108",
-        "regionhalland/pagination-elements": "1.0.0.20191127",
+        "regionhalland/pagination-elements": "1.0.0.20200123",
         "regionhalland/personal-info": "1.0.0.20191122",
         "regionhalland/round-button": "1.0.0.20191217",
         "regionhalland/search": "1.0.0.20191123",
@@ -425,7 +425,7 @@
         "regionhalland/visual-element": "1.0.0.20200117",
         "regionhalland/general": "1.0.0.20200108",
         "regionhalland/styleguide-core": "1.2.1",
-        "regionhalland/styleguide-core-settings": "2.1.4"
+        "regionhalland/styleguide-core-settings": "2.1.5"
     },
     "extra": {
         "custom-installer": {
