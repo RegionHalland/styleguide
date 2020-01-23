@@ -11,6 +11,8 @@
 * **Atomen "Labels"**
     * Bytt namn till "Label" - uppdatera dina sökvägar.
 
+* **Atomen "Button"**
+    * Användning av globala variabler.
 
 * **Mappen 'scss' flyttad till repona RhStyleguideCore och RhStyleguideCoreSettings**
     * Ny fil "marked for deletion" i RhStyleguideCore förtecknar kod på väg ut.
