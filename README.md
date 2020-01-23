@@ -13,7 +13,7 @@ Få igång en lokal server genom att...
 |Kommando|Beskriving|
 |--------|----------|
 |`gulp`| Startar en lokal utvecklingsmiljö, inkl. browsersync.|
-|`gulp version`| Genererar en ny version av komponent-CSS:en (inkl. assets) som läggs i ´/releases/[versionsnummer]/´. Dessa filer bör sedan bli ett NPM paket.|
+|`gulp version`| Genererar en ny version av komponent-CSS:en (inkl. assets) som läggs i ´/releases/[versionsnummer]/´.
 |`gulp build`| Bygger nya statiska fractal filer. Bygger ***inte*** releasepaketen. |
 
 ## Skapande av komponenter
@@ -22,7 +22,8 @@ Följ Fractals egna dokumentation för att skapa komponenter.
 
 
 ### Hantering av Javascript och bilder i komponenter
-Om det finns bilder eller JS i en komponents mapp så kommer de att kompileras via gulp när du sparar.
+Om det finns bilder i en komponents mapp så kommer de att kompileras via gulp när du sparar.
+Komponenter som innehåller javascript behöver läggas till i filen sites-building.json.
 
 #### Bilder
 Alla bilder hamnar i ´public/images/components/[komponentensnamn]/fil.jpg´ efter att gulp har kört och kan sedan nyttjas i komponentens .hbs fil t.ex. så här:
@@ -32,9 +33,10 @@ Alla bilder hamnar i ´public/images/components/[komponentensnamn]/fil.jpg´ eft
 
 #### Javascript
 
-**Bygg med ES6, gulpscriptet ser till att all JS körs genom Babel.**
-
-Finns det `.js` filer i komponentmappen så konkateneras de ihop och sparas i `/public/js/components.js`. Utöver det så bör de fungera out of the box.
+Vi använder för närvarande jQuery för att bygga js för våra komponenter. 
 
 ## Publicera
-Genom att commita i branchen `production` så byggs en ny version av sajten på https://stilguide.regionhalland.se
+Genom att commita i branchen `production` på github (obs! inte på azure) så byggs en ny version av sajten på https://stilguide.regionhalland.se
+
+## Att bygga stilguiden för enskilda webbplatser
+Se instruktionerna i sites.building.md.
