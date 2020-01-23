@@ -488,6 +488,31 @@ $(".rh-navigation-bar__link").keydown(function () {
 });
 "use strict";
 
+$(".rh-tabs__item").keydown(function () {
+  console.log(event.which);
+
+  switch (event.which) {
+    case 39:
+      if ($(this).next().length == 0) {
+        $(this).siblings().first().focus();
+      } else {
+        $(this).next().focus();
+      }
+
+      break;
+
+    case 37:
+      if ($(this).prev().length == 0) {
+        $(this).siblings().last().focus();
+      } else {
+        $(this).prev().focus();
+      }
+
+      break;
+  }
+});
+"use strict";
+
 var videoPlayButton,
     videoWrapper = document.getElementsByClassName('rh-video')[0],
     video = document.getElementsByTagName('video')[0],
@@ -513,31 +538,6 @@ var videoPlayButton,
   }
 };
 videoMethods.renderVideoPlayButton();
-"use strict";
-
-$(".rh-tabs__item").keydown(function () {
-  console.log(event.which);
-
-  switch (event.which) {
-    case 39:
-      if ($(this).next().length == 0) {
-        $(this).siblings().first().focus();
-      } else {
-        $(this).next().focus();
-      }
-
-      break;
-
-    case 37:
-      if ($(this).prev().length == 0) {
-        $(this).siblings().last().focus();
-      } else {
-        $(this).prev().focus();
-      }
-
-      break;
-  }
-});
 "use strict";
 
 var acc = document.getElementsByClassName("rh-search-accordion");
