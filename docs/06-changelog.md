@@ -3,19 +3,18 @@
 * **Atomen "Link"**
     * Brytande ändringar i settings - kopiera över nya i ditt lokala projekt.
 
-
-* **Atomen "Circle button" **
+* **Atomen "Circle button"**
     * Brytande ändringar i settings - kopiera över nya i ditt lokala projekt.
     * Nytt namn "Button circle" - uppdatera dina sökvägar.
 
 
 * **Atomen "Labels"**
-    * Bytt namn till "Label" - uppdatera dina sökvägar. 
+    * Bytt namn till "Label" - uppdatera dina sökvägar.
 
 
 * **Mappen 'scss' flyttad till repona RhStyleguideCore och RhStyleguideCoreSettings**
     * Ny fil "marked for deletion" i RhStyleguideCore förtecknar kod på väg ut.
-    * Koden genomgången 
+    * Koden genomgången
 
 
 * **Pipeline för tillagd packagist**
@@ -25,8 +24,12 @@
 
 
 * **Molekylen "Video"** (v1.0.0.20200110)
-    * Ny status "rework" och planerad utveckling är listad. 
+    * Ny status "rework" och planerad utveckling är listad.
     * Linting
+
+* **Molekylen "Block Icon Link"** ([v1.0.0.20200123](https://dev.azure.com/regionhalland/public.RhWebStyleguide/_git/RhMoleculeBlockIconLink?version=GT1.0.0.20200123))
+    * CSS-klassen --primary har bytts namn till `--secondary` för att det får konsekvensen via återanvändning av komponenten Atoms/**button-circle**.
+    * Variablers namn i filen `.settings.scss` har bytts för användning av globala variabler.
 
 ## 13.0.0 (2020-01-09)
 * **Molekylen "Tabs"** (v1.0.0.20200109)
@@ -47,7 +50,7 @@
     * Settingsfil introducerad
 
 ## 12.0.0 (2020-01-08)
-### Brytande ändringar: 
+### Brytande ändringar:
 
 * **Atomen "Search field"** (v1.0.0.20191227)
     * nya klassnamn enligt BEM
