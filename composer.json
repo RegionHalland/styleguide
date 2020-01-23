@@ -348,7 +348,7 @@
         "composer/installers": "^1.4",
         "regionhalland/region-halland-composer-custom-installer": "1.0.0",
         "regionhalland/article": "1.0.0.20191121",
-        "regionhalland/article-block": "1.0.4",
+        "regionhalland/article-block": "1.0.5",
         "regionhalland/article-group": "1.0.1",
         "regionhalland/avatar": "1.0.0.20191121",
         "regionhalland/back-to-top": "1.1.2",
