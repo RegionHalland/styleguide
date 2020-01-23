@@ -1,5 +1,24 @@
 # Versioner av stilguiden och deras ändringar
-## 13.1.0 (2020-01-14)
+## Nästa version
+* **Atomen "Link"**
+    * Brytande ändringar i settings - kopiera över nya i ditt lokala projekt.
+
+
+* **Atomen "Circle button" har nytt namn "Button circle"**
+    * Brytande ändringar i settings - kopiera över nya i ditt lokala projekt.
+
+
+* **Mappen 'scss' flyttad till repona RhStyleguideCore och RhStyleguideCoreSettings**
+    * Ny fil "marked for deletion" i RhStyleguideCore förtecknar kod på väg ut.
+    * Koden genomgången 
+
+
+* **Pipeline för tillagd packagist**
+
+
+* **(Ny) Molekyl "Navigation bar"** (v1.0.0.XXXXXXXXX)
+
+
 * **Molekylen "Video"** (v1.0.0.20200110)
     * Ny status "rework" och planerad utveckling är listad. 
     * Linting
@@ -14,8 +33,10 @@
     * skapat js-fil som hanterar keybindings för focusbeteende
     * settingsfil skapad
 
+
 * **Template "General"** (v1.0.0.20200108)
     * Organismen "Header" ersätter lösa komponenter i huvudet.
+
 
 * **Molekylen "Pagination"** (v1.0.0.20200108)
     * Settingsfil introducerad
