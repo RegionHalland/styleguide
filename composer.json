@@ -379,8 +379,8 @@
         "regionhalland/footer-logo": "1.0.0.20191123",
         "regionhalland/footer-logo-group": "1.0.0.202001171645",
         "regionhalland/form": "1.0.0.20191121",
-        "regionhalland/form-control-text": "1.0.0.20200117",
-        "regionhalland/form-control-textarea": "1.0.0.20200117",
+        "regionhalland/form-control-text": "1.0.0.20200124",
+        "regionhalland/form-control-textarea": "1.0.0.20200124",
         "regionhalland/header": "1.0.0.20200123",
         "regionhalland/heading-underlined": "1.0.1",
         "regionhalland/image-caption": "2.0.1",
@@ -425,7 +425,7 @@
         "regionhalland/visual-element": "1.0.0.20200117",
         "regionhalland/general": "1.0.0.20200108",
         "regionhalland/styleguide-core": "1.2.1",
-        "regionhalland/styleguide-core-settings": "2.1.6"
+        "regionhalland/styleguide-core-settings": "2.1.7"
     },
     "extra": {
         "custom-installer": {
