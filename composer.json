@@ -413,9 +413,9 @@
         "regionhalland/search-elements": "1.0.0.20200123",
         "regionhalland/search-external-link": "1.0.0.20200123",
         "regionhalland/search-external-link-1177": "1.0.0.20191122",
-        "regionhalland/search-field": "1.0.0.20200117",
+        "regionhalland/search-field": "1.0.0.20200124",
         "regionhalland/secondary-nav": "1.0.0.20191122",
-        "regionhalland/sitename": "1.0.0.20200117",
+        "regionhalland/sitename": "1.0.0.20200124",
         "regionhalland/table": "1.0.0.20191123",
         "regionhalland/tabs": "1.0.0.20200117",
         "regionhalland/text": "1.0.0.20200117",
@@ -425,7 +425,7 @@
         "regionhalland/visual-element": "1.0.0.20200117",
         "regionhalland/general": "1.0.0.20200108",
         "regionhalland/styleguide-core": "1.2.1",
-        "regionhalland/styleguide-core-settings": "2.1.5"
+        "regionhalland/styleguide-core-settings": "2.1.6"
     },
     "extra": {
         "custom-installer": {
