@@ -19,7 +19,9 @@
     * Koden genomgången
 
 
-* **Pipeline för tillagd packagist**
+* **Pipelines tillagda för packagist**
+    * Stilguiden publiceras på packagist via en pipeline i Azure
+    * "Core" och "Settings" publiceras på packagist via en pipline i Azure och läses sedan in från Packagist.
 
 
 * **(Ny) Molekyl "Navigation bar"** (v1.0.0.XXXXXXXXX)
