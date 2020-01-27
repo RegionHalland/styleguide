@@ -340,12 +340,12 @@
         "composer/installers": "^1.4",
         "regionhalland/region-halland-composer-custom-installer": "1.0.0",
         "regionhalland/article": "1.0.0.20191121",
-        "regionhalland/article-block": "1.0.5",
+        "regionhalland/article-block": "1.0.6",
         "regionhalland/article-group": "1.0.1",
         "regionhalland/avatar": "1.0.0.20191121",
         "regionhalland/back-to-top": "1.1.3",
         "regionhalland/badge": "1.0.0.20191121",
-        "regionhalland/block": "1.3.1",
+        "regionhalland/block": "1.3.2",
         "regionhalland/block-group": "1.0.0.202001171642",
         "regionhalland/block-icon-link": "1.0.0.202001231353",
         "regionhalland/block-shortcuts": "1.0.1",
@@ -387,7 +387,7 @@
         "regionhalland/logo-sitename": "1.0.0.20200120",
         "regionhalland/main-nav": "1.0.0.20191123",
         "regionhalland/menu": "1.0.0.20200123",
-        "regionhalland/menu-mobile": "1.0.0.20200103",
+        "regionhalland/menu-mobile": "1.0.0.20200127",
         "regionhalland/message-cookies": "1.0.1",
         "regionhalland/messages": "1.0.0.20191122",
         "regionhalland/navigation-bar": "1.0.0.20200127",
@@ -417,7 +417,7 @@
         "regionhalland/visual-element": "1.0.0.20200117",
         "regionhalland/general": "1.0.0.20200108",
         "regionhalland/styleguide-core": "1.3.1",
-        "regionhalland/styleguide-core-settings": "2.3.0"
+        "regionhalland/styleguide-core-settings": "2.3.1"
     },
     "extra": {
         "custom-installer": {
