@@ -1,4 +1,9 @@
 # Versioner av stilguiden och deras ändringar
+
+## Nästa version 
+* **Core** 
+    * Bytt till globala variabler för spacing i _position.scss
+
 ## 14.0.0
 
 
