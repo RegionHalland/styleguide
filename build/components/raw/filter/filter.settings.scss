@@ -1,0 +1,41 @@
+/* Atom - Filter */
+// --- Base settings ---
+$FILTER__MAIN--COLOR: $base3;
+$FILTER__MAIN--BACKGROUND-COLOR: $base3-light;
+// --- End of base settings ---
+
+$FILTER--BORDER: $border-thin--standard $grey-light;
+$FILTER--BORDER-RADIUS: $border-radius--standard;
+$FILTER--BACKGROUND-COLOR: $white;
+$FILTER--TEXT-COLOR: $grey-dark;
+$FILTER--SMALL-FONT-SIZE: $p-small;
+$FILTER--MEDIUM-FONT-SIZE: $p-medium;
+$FILTER--LARGE-FONT-SIZE: $p-large;
+
+$FILTER--HOVER-BORDER: $border-thin--standard $grey-dark;
+
+$FILTER--DISABLED-BACKGROUND-COLOR: $grey-lightest;
+$FILTER--DISABLED-BORDER: $border-thin--standard $grey-light;
+$FILTER--DISABLED-TEXT-COLOR: $grey-base;
+
+$FILTER__ICON--COLOR: false; // false - Ex: $black
+$FILTER__ICON--FONT-FAMILY: $icon--font-family;
+$FILTER__ICON--SMALL-FONT-SIZE: $h4-small;
+$FILTER__ICON--MEDIUM-FONT-SIZE: $h4-medium;
+$FILTER__ICON--LARGE-FONT-SIZE: $h4-large;
+
+$FILTER__MENU--BORDER-RADIUS: $border-radius--standard;
+$FILTER__MENU--BOX-SHADOW: $box-shadow--standard $color-shadow;
+$FILTER__MENU--BORDER: $border-thin--standard $FILTER__MAIN--COLOR;
+$FILTER__MENU--BACKGROUND-COLOR: $white;
+
+$FILTER__MENU-BORDER-BOTTOM: 15px solid $FILTER__MAIN--COLOR;
+
+$FILTER__MENU-ITEM--SMALL-FONT-SIZE: $p-small;
+$FILTER__MENU-ITEM--MEDIUM-FONT-SIZE: $p-medium;
+$FILTER__MENU-ITEM--LARGE-FONT-SIZE: $p-large;
+
+$FILTER-SELECTED--TEXT-COLOR: false; // false - Ex: $black
+
+$FILTER-ACTIVE--BACKGROUND-COLOR: $FILTER__MAIN--BACKGROUND-COLOR;
+$FILTER-ACTIVE--BORDER: $border-thin--standard $FILTER__MAIN--COLOR;

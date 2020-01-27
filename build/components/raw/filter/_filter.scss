@@ -6,19 +6,19 @@
     display: flex;
     width: 90%;
     outline: none;
-    padding-left: em(15);
-    padding-top: em(10);
-    padding-right: em(15);
-    padding-bottom: em(10);
+    padding-left: 0.9375em; //em(15);
+    padding-top: 0.625em; //em(10);
+    padding-right: 0.9375em; //em(15);
+    padding-bottom: 0.625em; //em(10);
 
     /* Visuellt */
-    border: 1px solid $grey-light;
-    border-radius: 4px;
-    background-color: $white;
+    border: $FILTER--BORDER;
+    border-radius: $FILTER--BORDER-RADIUS;
+    background-color: $FILTER--BACKGROUND-COLOR;
 
     /* Typografi */
-    font-size: $p-small;
-    color: $grey-dark;
+    font-size: $FILTER--SMALL-FONT-SIZE;
+    color: $FILTER--TEXT-COLOR;
 
     /* Blandat/övrigt */
     cursor: pointer;
@@ -28,7 +28,9 @@
         margin-left: auto;
 
         /* Typografi */
-        color: $black;
+        @if $FILTER__ICON--COLOR {
+            color: $FILTER__ICON--COLOR;
+        }
 
         &:after {
             /* Box-modell/beteende */
@@ -37,8 +39,8 @@
 
 
             /* Typografi */
-            font-size: $h4-small;
-            font-family: "feather";
+            font-size: $FILTER__ICON--SMALL-FONT-SIZE;
+            font-family: $FILTER__ICON--FONT-FAMILY;
 
             /* Blandat/övrigt */
             content: "\e842";
@@ -46,27 +48,27 @@
 
         @include medium {
             /* Typografi */
-            font-size: $h4-medium;
+            font-size: $FILTER__ICON--MEDIUM-FONT-SIZE;
         }
 
         @include large {
             /* Typografi */
-            font-size: $h4-large;
+            font-size: $FILTER__ICON--LARGE-FONT-SIZE;
         }
     }
 
     &:hover {
         /* Visuellt */
-        border: 1px solid $grey-dark;
+        border: $FILTER--HOVER-BORDER;
     }
 
     &:disabled {
         /* Visuellt */
-        background-color: $grey-lightest;
-        border: 1px solid $grey-light;
+        background-color: $FILTER--DISABLED-BACKGROUND-COLOR;
+        border: $FILTER--DISABLED-BORDER;
 
         /* Typografi */
-        color: $grey-base;
+        color: $FILTER--DISABLED-TEXT-COLOR;
 
         /* Blandat/övrigt */
         cursor: unset;
@@ -74,12 +76,12 @@
 
     @include medium {
         /* Typografi */
-        font-size: $p-medium;
+        font-size: $FILTER--MEDIUM-FONT-SIZE;
     }
 
     @include large {
         /* Typografi */
-        font-size: $p-large;
+        font-size: $FILTER--LARGE-FONT-SIZE;
     }
 }
 
@@ -91,20 +93,22 @@
     /* Box-modell/beteende */
     display: none;
     width: 100%;
-    margin-top: em(5);
+    margin-top: 0.3125em; //em(5);
 
     /* Visuellt */
-    -webkit-border-radius: em(5);
-    -webkit-box-shadow: 1px 2px 6px $color-shadow;
-    border: 1px solid $complementary2;
-    background-color: $white;
+    border-radius: $FILTER__MENU--BORDER-RADIUS;
+    -webkit-border-radius: $FILTER__MENU--BORDER-RADIUS; //em(5); // Safari 3-4, iOS 1-3.2, Android 1.6-
+    box-shadow: $FILTER__MENU--BOX-SHADOW;
+    -webkit-box-shadow: $FILTER__MENU--BOX-SHADOW; // Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+
+    border: $FILTER__MENU--BORDER;
+    background-color: $FILTER__MENU--BACKGROUND-COLOR;
 
     &-triangle {
         /* Positionering */
         z-index: 3;
         position: absolute;
-        top: em(-28);
-        left: em(15);
+        top: -1.75em; //em(-28);
+        left: 0.9375em; //em(15);
 
         /* Visuellt */
         border-top: 15px solid transparent;
@@ -117,34 +121,34 @@
         /* Positionering */
         z-index: 2;
         position: absolute;
-        top: em(-29);
-        left: em(15);
+        top: -1.8125em; //em(-29);
+        left: 0.9375em; //em(15);
 
         /* Box-modell/beteende */
-        margin-top: em(-1);
+        margin-top: -0.0625em; //em(-1);
 
         /* Visuellt */
         border-top: 15px solid transparent;
-        border-bottom: 15px solid $complementary2;
+        border-bottom: $FILTER__MENU-BORDER-BOTTOM;
         border-right: 15px solid transparent;
         border-left: 15px solid transparent;
     }
 
     &-content {
         /* Box-modell/beteende */
-        padding-top: em(4);
-        padding-bottom: em(4);
+        padding-top: 0.25em; //em(4);
+        padding-bottom: 0.25em; //em(4);
     }
 
     &-item {
         /* Box-modell/beteende */
-        padding-left: em(16);
-        padding-top: em(9);
-        padding-right: em(16);
-        padding-bottom: em(9);
+        padding-left: 1em; //em(16);
+        padding-top: 0.5625em; //em(9);
+        padding-right: 1em; //em(16);
+        padding-bottom: 0.5625em; //em(9);
 
         /* Typografi */
-        font-size: $p-small;
+        font-size: $FILTER__MENU-ITEM--SMALL-FONT-SIZE;
 
         &:hover {
             /* Typografi */
@@ -156,30 +160,36 @@
 
         @include medium {
             /* Typografi */
-            font-size: $p-medium;
+            font-size: $FILTER__MENU-ITEM--MEDIUM-FONT-SIZE;
         }
 
         @include large {
             /* Typografi */
-            font-size: $p-large;
+            font-size: $FILTER__MENU-ITEM--LARGE-FONT-SIZE;
         }
     }
 }
 
 .rh-filter-show {
     /* Box-modell/beteende */
-    display: block !important;
+    //display: block !important;
+    display: block;
 }
 
 .rh-filter-selected {
     /* Typografi */
-    color: black !important;
+    //color: black !important;
+    @if $FILTER-SELECTED--TEXT-COLOR {
+        color: $FILTER-SELECTED--TEXT-COLOR;
+    }
 }
 
 .rh-filter-active {
     /* Visuellt */
-    background-color: $yellow-background !important;
-    border: 1px solid $complementary2 !important;
+    //background-color: $yellow-background !important;
+    //border: 1px solid $complementary2 !important;
+    background-color: $FILTER-ACTIVE--BACKGROUND-COLOR;
+    border: $FILTER-ACTIVE--BORDER;
 
     .rh-filter-icon:after {
         /* Blandat/övrigt */
