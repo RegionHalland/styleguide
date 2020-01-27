@@ -1,22 +1,36 @@
 # Versioner av stilguiden och deras ändringar
-## Nästa version
-* **Atomen "Link"**
-    * Brytande ändringar i settings - kopiera över nya i ditt lokala projekt.
+## 14.0.0
 
-* **Atomen "Circle button"**
+
+* **Atomen "Button"** (1.0.0.20200123)
+    * Användning av globala variabler.
+
+
+* **Atomen "Caption hero"** (2.0.0)
+    * Brytande ändringar i markup - utilityklasser i nya core/_position.scss krävs.
+    * Variants "secondary" och "rounded" visas. 
+
+
+* **Atomen "Circle button"** (2.0.1)
     * Brytande ändringar i settings - kopiera över nya i ditt lokala projekt.
     * Nytt namn "Button circle" - uppdatera dina sökvägar.
 
 
-* **Atomen "Labels"**
+* **Atomen "Labels"** (1.0.0.20200121)
     * Bytt namn till "Label" - uppdatera dina sökvägar.
 
-* **Atomen "Button"**
-    * Användning av globala variabler.
 
-* **Mappen 'scss' flyttad till repona RhStyleguideCore och RhStyleguideCoreSettings**
-    * Ny fil "marked for deletion" i RhStyleguideCore förtecknar kod på väg ut.
-    * Koden genomgången
+* **Atomen "Link"** (1.0.0.20200120)
+    * Brytande ändringar i settings - kopiera över nya i ditt lokala projekt.
+
+
+* **Molekylen "Block Icon Link"** (1.0.0.202001231353)
+    * CSS-klassen --primary har bytts namn till `--secondary` för att det får konsekvensen via återanvändning av komponenten Atoms/**button-circle**.
+    * Variablers namn i filen `.settings.scss` har bytts för användning av globala variabler.
+
+
+* **Molekylen "Video"** (v1.0.0.20200110)
+    * Ny status "rework" och planerad utveckling är listad.
 
 
 * **Pipelines tillagda för packagist**
@@ -24,16 +38,20 @@
     * "Core" och "Settings" publiceras på packagist via en pipline i Azure och läses sedan in från Packagist.
 
 
-* **(Ny) Molekyl "Navigation bar"** (v1.0.0.XXXXXXXXX)
+* **(Ny) Molekyl "Navigation bar"** (v1.0.0.20200127)
 
 
-* **Molekylen "Video"** (v1.0.0.20200110)
-    * Ny status "rework" och planerad utveckling är listad.
-    * Linting
+* **Mappen 'scss' flyttad till repona RhStyleguideCore och RhStyleguideCoreSettings**
+    * Ny fil "marked for deletion" i RhStyleguideCore förtecknar kod på väg ut.
+    * Koden genomgången
 
-* **Molekylen "Block Icon Link"**
-    * CSS-klassen --primary har bytts namn till `--secondary` för att det får konsekvensen via återanvändning av komponenten Atoms/**button-circle**.
-    * Variablers namn i filen `.settings.scss` har bytts för användning av globala variabler.
+
+* **Core** (v1.3.0)
+    * Ny fil _position.scss med utilityklasser för absolut positionering. Används av caption hero. 
+
+
+* **Potentiellt brytande ändringar:** Atomernas settingsfiler genomgånga
+
 
 ## 13.0.0 (2020-01-09)
 * **Molekylen "Tabs"** (v1.0.0.20200109)

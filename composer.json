@@ -357,7 +357,7 @@
         "regionhalland/buttongroup-elements": "1.0.0.20200123",
         "regionhalland/calendar": "1.0.0.20191123",
         "regionhalland/calendar-element": "1.0.0.20191121",
-        "regionhalland/caption-hero": "1.0.2",
+        "regionhalland/caption-hero": "2.0.0",
         "regionhalland/card": "1.0.0.20200123",
         "regionhalland/contact-info": "1.0.2",
         "regionhalland/event-card-calendar": "1.0.0.20200123",
@@ -416,8 +416,8 @@
         "regionhalland/video": "1.0.0.20200110",
         "regionhalland/visual-element": "1.0.0.20200117",
         "regionhalland/general": "1.0.0.20200108",
-        "regionhalland/styleguide-core": "1.2.2",
-        "regionhalland/styleguide-core-settings": "2.1.8"
+        "regionhalland/styleguide-core": "1.3.0",
+        "regionhalland/styleguide-core-settings": "2.2.0"
     },
     "extra": {
         "custom-installer": {
