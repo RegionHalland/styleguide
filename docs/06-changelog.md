@@ -4,6 +4,8 @@
 * **Core** 
     * Bytt till globala variabler för spacing i _position.scss
 
+* **Molekylen "Image hero" bytt namn till "Hero"** (v1.0.3)
+
 ## 14.0.0
 
 
