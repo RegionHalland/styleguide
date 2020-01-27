@@ -364,7 +364,7 @@
         "regionhalland/feedback": "1.0.0.20191227",
         "regionhalland/feedback-form": "1.0.0.20191121",
         "regionhalland/feedback-last-updated": "1.0.0.20191129",
-        "regionhalland/filter": "1.0.0.20200117",
+        "regionhalland/filter": "1.0.0.20200126",
         "regionhalland/filter-alphabet": "1.0.1",
         "regionhalland/footer": "1.0.0.20191123",
         "regionhalland/footer-group": "1.0.0.202001171645",
@@ -417,7 +417,7 @@
         "regionhalland/visual-element": "1.0.0.20200117",
         "regionhalland/general": "1.0.0.20200108",
         "regionhalland/styleguide-core": "1.2.2",
-        "regionhalland/styleguide-core-settings": "2.1.8"
+        "regionhalland/styleguide-core-settings": "2.1.9"
     },
     "extra": {
         "custom-installer": {
