@@ -3,11 +3,11 @@
 $search-external--padding: 1em 1em 1.5em 1em; //16px - 16px - 24px - 16px
 
 // Modifier --default
-$search-external-default--border: 0.0625em solid $base3; //1px
+$search-external-default--border: $border-thin--standard $base3; //1px
 $search-external-default--background-color: $grey-lightest;
 
 // Modifier --secondary
-$search-external-warning--border: 0.0625em solid $warning-dark; //1px
+$search-external-warning--border: $border-thin--standard $warning-dark; //1px
 $search-external-warning--background-color: $warning-light;
 // ------ End of base settings ------
 

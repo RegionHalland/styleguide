@@ -1,4 +1,31 @@
 /* Atoms - Form control text */
-$form-control--font-size: .875em;
-$form-text--muted--font-size: .875em;
-$form-text--required: $warning;
+$FORM__CONTROL--FONT-SIZE: $font-size--small;
+$FORM__CONTROL--LINE-HEIGHT: $line-height--xl;
+$FORM__CONTROL--BACKGROUND-COLOR: false; // false - Ex: $white
+$FORM__CONTROL--BORDER: $border-thin--standard $grey-light;
+$FORM__CONTROL--BORDER-RADIUS: $border-radius--standard;
+$FORM__CONTROL-TEXT--COLOR: false; // false - Ex: $black
+
+// Highlight
+$FORM__CONTROL--FOCUS-BORDER: $border-thin--standard $complementary2;
+$FORM__CONTROL-TEXT--FOCUS-COLOR: $grey-dark;
+
+// Other states - disabled - success - error - muted - required
+$FORM__CONTROL--DISABLED-BORDER: $border-thin--standard $grey-light;
+$FORM__CONTROL--DISABLED-BACKGROUND-COLOR: $grey-lightest;
+
+$FORM__CONTROL--SUCCESS-BORDER: $border-thin--standard $base3;
+$FORM__CONTROL--ERROR-BORDER: $border-thin--standard $warning;
+
+$FORM__TEXT--MUTED-FONT-SIZE: $font-size--small;
+$FORM__TEXT--REQUIRED-COLOR: $warning;
+
+// Icon is within input text control
+$FORM__ICON--FONT-FAMILY: $icon--font-family;
+$FORM__ICON--LINE-HEIGHT: $line-height--small;
+$FORM__ICON--SUCCESS-COLOR: $base3;
+$FORM__ICON--ERROR-COLOR: $warning;
+
+$FORM__ICON-PLACEHOLDER--Z-INDEX: 2;
+$FORM__ICON-PLACEHOLDER--LINE-HEIGHT: 2.125em;
+$FORM__ICON-PLACEHOLDER--TEXT-ALIGN: center;

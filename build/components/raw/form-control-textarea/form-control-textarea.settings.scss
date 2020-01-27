@@ -1,2 +1,5 @@
 /* Atoms - Form control textarea */
-$form-control-textarea--font-size: 1em;
+$FORM__TEXTAREA--FONT-SIZE: $font-size--standard;
+$FORM__TEXTAREA--BORDER: $border-thin--standard $grey-light;
+$FORM__TEXTAREA--BORDER-RADIUS: $border-radius--standard;
+$FORM__TEXTAREA--LINE-HEIGHT: $line-height--xl;

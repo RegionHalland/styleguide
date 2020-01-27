@@ -3,13 +3,13 @@
 /* --------------- */
 
 $button--background-color: $white;
-$button--border: 0.0625em solid $grey-base;
-$button--border-radius: 0.25em;
-$button--box-shadow: 0.0625em 0.125em 0.375em $color-shadow;
+$button--border: $border-thin--standard $grey-base;
+$button--border-radius: $border-radius--standard;
+$button--box-shadow: $box-shadow--standard $color-shadow;
 $button-text--color: $black;
 $button-text--text-align: center;
-$button-text--font-size: $font-size-small; //false
-$button-text--line-height: 1em;
+$button-text--font-size: $font-size--small; //false
+$button-text--line-height: $line-height-1;
 $button--text-decoration: none;
 
 $button--padding: 0.625em; //true or false or em/px
@@ -41,7 +41,7 @@ $button--hover-text-decoration: underline; //false
 
 // Active
 $button--active-background-color: $grey-lightest;
-$button--active-border: 0.0625em solid $grey-base;
+$button--active-border: $border-thin--standard $grey-base;
 $button--active-color: $black;
 $button--active-text-decoration: none; //false
 
@@ -57,7 +57,7 @@ $button--primary-color: $white; //false
 
 $button--primary-effect: true;
 $button--primary-effect-background-color: $white; //false
-$button--primary-effect-border: 0.0625em solid $color-primary; //false
+$button--primary-effect-border: $border-thin--standard $color-primary; //false
 $button--primary-effect-color: $color-primary; //false
 $button--primary-effect-text-decoration: underline; //false
 
@@ -85,7 +85,7 @@ $button--secondary-background-color: $color-secondary;
 $button--secondary-color: $white; //false
 $button--secondary-hover-text-decoration: underline; //false
 $button--secondary-active-background-color: $white;
-$button--secondary-active-border: 0.0625em solid $color-secondary;
+$button--secondary-active-border: $border-thin--standard $color-secondary;
 $button--secondary-active-color: $color-secondary; //false
 $button--secondary-active-text-decoration: none; //false
 

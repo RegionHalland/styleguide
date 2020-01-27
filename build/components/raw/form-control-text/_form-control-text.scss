@@ -16,43 +16,47 @@
         height: 2.125em;
         width: 100%;
         padding: 0.375em 0.75em;
-    
+
         /* Typografi */
-        font-size: $form-control--font-size;
-        line-height: 1.42857143;
-    
+        font-size: $FORM__CONTROL--FONT-SIZE;
+        line-height: $FORM__CONTROL--LINE-HEIGHT;
+
         /* Visuellt */
-        background-color: $white;
-        border: 0.0625em solid $grey-light;
-        border-radius: 0.25em;
+        @if $FORM__CONTROL--BACKGROUND-COLOR {
+            background-color: $FORM__CONTROL--BACKGROUND-COLOR;
+        }
+        border: $FORM__CONTROL--BORDER;
+        border-radius: $FORM__CONTROL--BORDER-RADIUS;
         /* Typografi */
-        color: $black;
-    
+        @if $FORM__CONTROL-TEXT--COLOR {
+            color: $FORM__CONTROL-TEXT--COLOR;
+        }
+
         &:focus {
             /* Visuellt */
-            border: 0.0625em solid $complementary2;
-    
+            border: $FORM__CONTROL--FOCUS-BORDER;
+
             /* Typografi */
-            color: $grey-dark;
+            color: $FORM__CONTROL-TEXT--FOCUS-COLOR;
         }
-    
+
         &:disabled {
             /* Visuellt */
-            border: 0.0625em solid $grey-light;
-            background: $grey-lightest;
-    
+            border: $FORM__CONTROL--DISABLED-BORDER;
+            background-color: $FORM__CONTROL--DISABLED-BACKGROUND-COLOR;
+
             /* Blandat/övrigt */
             cursor: not-allowed;
         }
-    
+
         &--success {
             /* Visuellt */
-            border: 0.0625em solid $base3;
+            border: $FORM__CONTROL--SUCCESS-BORDER;
         }
-    
+
         &--error {
             /* Visuellt */
-            border: 0.0625em solid $warning;
+            border: $FORM__CONTROL--ERROR-BORDER;
         }
     }
 
@@ -62,17 +66,17 @@
         margin-bottom: 0.3125em;
 
         &-text--required {
-            color: $form-text--required;
+            color: $FORM__TEXT--REQUIRED-COLOR;
         }
     }
 
     &__text {
         &--muted {
-            font-size: $form-text--muted--font-size;
+            font-size: $FORM__TEXT--MUTED-FONT-SIZE;
         }
 
         &--required {
-            color: $form-text--required;
+            color: $FORM__TEXT--REQUIRED-COLOR;
         }
     }
 }
@@ -87,17 +91,17 @@
     display: inline-block;
 
     /* Typografi */
-    font-family: "feather";
+    font-family: $FORM__ICON--FONT-FAMILY;
     font-style: normal;
     font-weight: normal;
-    line-height: 1;
+    line-height: $FORM__ICON--LINE-HEIGHT;
 
     &__placeholder {
         /* Positionering */
         position: absolute;
         top: 1.25em;
         right: 0;
-        z-index: 2;
+        z-index: $FORM__ICON-PLACEHOLDER--Z-INDEX;
 
         /* Box-modell/beteende */
         display: block;
@@ -105,13 +109,13 @@
         width: 2.125em;
 
         /* Typografi */
-        line-height: 2.125em;
-        text-align: center;
+        line-height: $FORM__ICON-PLACEHOLDER--LINE-HEIGHT;
+        text-align: $FORM__ICON-PLACEHOLDER--TEXT-ALIGN;
     }
 
     &--success:before {
         /* Typografi */
-        color: $base3;
+        color: $FORM__ICON--SUCCESS-COLOR;
 
         /* Blandat/övrigt */
         content: "\e83f";
@@ -119,7 +123,7 @@
 
     &--error:before {
         /* Typografi */
-        color: $warning;
+        color: $FORM__ICON--ERROR-COLOR;
 
         /* Blandat/övrigt */
         content: "\e81e";

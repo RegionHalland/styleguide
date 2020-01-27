@@ -124,18 +124,81 @@
     
     
     <h1 id="versioner-av-stilguiden-och-deras-ändringar">Versioner av stilguiden och deras ändringar</h1>
-<h2 id="1310-2020-01-14">13.1.0 (2020-01-14)</h2>
+<h2 id="1400">14.0.0</h2>
 <ul>
-<li><strong>Molekylen “Video”</strong> (v1.0.0.20200110)<ul>
-<li>Ny status “rework” och planerad utveckling är listad. </li>
-<li>Linting</li>
+<li><strong>Atomen “Button”</strong> (1.0.0.20200123)<ul>
+<li>Användning av globala variabler.</li>
 </ul>
 </li>
 </ul>
+<ul>
+<li><strong>Atomen “Caption hero”</strong> (2.0.0)<ul>
+<li>Brytande ändringar i markup - utilityklasser i nya core/_position.scss krävs.</li>
+<li>Variants “secondary” och “rounded” visas. </li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Atomen “Circle button”</strong> (2.0.1)<ul>
+<li>Brytande ändringar i settings - kopiera över nya i ditt lokala projekt.</li>
+<li>Nytt namn “Button circle” - uppdatera dina sökvägar.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Atomen “Labels”</strong> (1.0.0.20200121)<ul>
+<li>Bytt namn till “Label” - uppdatera dina sökvägar.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Atomen “Link”</strong> (1.0.0.20200120)<ul>
+<li>Brytande ändringar i settings - kopiera över nya i ditt lokala projekt.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Molekylen “Block Icon Link”</strong> (1.0.0.202001231353)<ul>
+<li>CSS-klassen –primary har bytts namn till <code>--secondary</code> för att det får konsekvensen via återanvändning av komponenten Atoms/<strong>button-circle</strong>.</li>
+<li>Variablers namn i filen <code>.settings.scss</code> har bytts för användning av globala variabler.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Molekylen “Video”</strong> (v1.0.0.20200110)<ul>
+<li>Ny status “rework” och planerad utveckling är listad.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Pipelines tillagda för packagist</strong><ul>
+<li>Stilguiden publiceras på packagist via en pipeline i Azure</li>
+<li>“Core” och “Settings” publiceras på packagist via en pipline i Azure och läses sedan in från Packagist.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>(Ny) Molekyl “Navigation bar”</strong> (v1.0.0.20200127)</li>
+</ul>
+<ul>
+<li><strong>Mappen ‘scss’ flyttad till repona RhStyleguideCore och RhStyleguideCoreSettings</strong><ul>
+<li>Ny fil “marked for deletion” i RhStyleguideCore förtecknar kod på väg ut.</li>
+<li>Koden genomgången</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Core</strong> (v1.3.0)<ul>
+<li>Ny fil _position.scss med utilityklasser för absolut positionering. Används av caption hero. </li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Potentiellt brytande ändringar:</strong> Atomernas settingsfiler genomgånga</li>
+</ul>
 <h2 id="1300-2020-01-09">13.0.0 (2020-01-09)</h2>
 <ul>
-<li><p><strong>Molekylen “Tabs”</strong> (v1.0.0.20200109)</p>
-<ul>
+<li><strong>Molekylen “Tabs”</strong> (v1.0.0.20200109)<ul>
 <li>ny markup</li>
 <li>klassnamn enligt BEM</li>
 <li>tweakad css</li>
@@ -145,13 +208,15 @@
 <li>settingsfil skapad</li>
 </ul>
 </li>
-<li><p><strong>Template “General”</strong> (v1.0.0.20200108)</p>
+</ul>
 <ul>
+<li><strong>Template “General”</strong> (v1.0.0.20200108)<ul>
 <li>Organismen “Header” ersätter lösa komponenter i huvudet.</li>
 </ul>
 </li>
-<li><p><strong>Molekylen “Pagination”</strong> (v1.0.0.20200108)</p>
+</ul>
 <ul>
+<li><strong>Molekylen “Pagination”</strong> (v1.0.0.20200108)<ul>
 <li>Settingsfil introducerad</li>
 </ul>
 </li>
@@ -1104,10 +1169,229 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-button-circle">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Button Circle</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/caption-hero.html" data-pjax>
+            <a class="Tree-entityLink" href="../components/detail/button-circle--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/button-circle--small.html" data-pjax>
+                <span>Small</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/button-circle--medium.html" data-pjax>
+                <span>Medium</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/button-circle--large.html" data-pjax>
+                <span>Large</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/button-circle--xlarge.html" data-pjax>
+                <span>Xlarge</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/button-circle--has-border.html" data-pjax>
+                <span>Has Border</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/button-circle--secondary.html" data-pjax>
+                <span>Secondary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/button-circle--warning.html" data-pjax>
+                <span>Warning</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-caption-hero">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
                 <span>Caption Hero</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/caption-hero--default.html" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1124,6 +1408,59 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/caption-hero--rounded.html" data-pjax>
+                <span>Rounded</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/caption-hero--secondary.html" data-pjax>
+                <span>Secondary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
@@ -1148,214 +1485,6 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 
 
             </a>
-        </li>
-        
-    
-        
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-circle-button">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Circle Button</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
-            
-            
-            
-            
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/circle-button--default.html" data-pjax>
-                <span>Default</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/circle-button--small.html" data-pjax>
-                <span>Small</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/circle-button--medium.html" data-pjax>
-                <span>Medium</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/circle-button--large.html" data-pjax>
-                <span>Large</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/circle-button--xlarge.html" data-pjax>
-                <span>Xlarge</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/circle-button--has-border.html" data-pjax>
-                <span>Has Border</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/circle-button--secondary.html" data-pjax>
-                <span>Secondary</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/circle-button--warning.html" data-pjax>
-                <span>Warning</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-
-            </ul>
         </li>
         
     
@@ -1744,10 +1873,21 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-label">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Label</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/labels.html" data-pjax>
-                <span>Labels</span>
+            <a class="Tree-entityLink" href="../components/detail/label--default.html" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1764,6 +1904,35 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/label--medium.html" data-pjax>
+                <span>Medium</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
@@ -1790,55 +1959,7 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Ändringar planerade"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/link--new-window.html" data-pjax>
-                <span>New Window</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: orange;" title="Ändringar planerade"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/link--containing-document.html" data-pjax>
-                <span>Containing Document</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: orange;" title="Ändringar planerade"></span>
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
 
 
 </div>
@@ -1862,7 +1983,7 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Ändringar planerade"></span>
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
 
 
 </div>
@@ -2493,8 +2614,8 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../components/detail/block-icon-link--primary.html" data-pjax>
-                <span>Primary</span>
+            <a class="Tree-entityLink" href="../components/detail/block-icon-link--secondary.html" data-pjax>
+                <span>Secondary</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3164,6 +3285,30 @@ OBS! Organisms är nu i pluralform. Se över sökvägar i projekten.</p>
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../components/detail/messages.html" data-pjax>
                 <span>Messages</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/navigation-bar.html" data-pjax>
+                <span>Navigation Bar</span>
                 
 
 <div class="Status Status--unlabelled">

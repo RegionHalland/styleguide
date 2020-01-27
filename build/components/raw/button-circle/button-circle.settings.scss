@@ -1,0 +1,40 @@
+/* Atom - Button circle */
+// --------- Base settings ----------
+$BUTTON-CIRCLE--SMALL-SIZE: 1.875em; //30px
+$BUTTON-CIRCLE--MEDIUM-SIZE: 2.1875em; //35px
+
+$BUTTON-CIRCLE--LARGE-SIZE: 2.5em; //40px
+$BUTTON-CIRCLE__ICON--LARGE-SIZE: 1.2em;
+
+$BUTTON-CIRCLE--XLARGE-SIZE: 3.125em; //50px
+$BUTTON-CIRCLE__ICON--XLARGE-SIZE: 1.6em;
+// ------ End of base settings ------
+
+// --------- Common ----------
+$BUTTON-CIRCLE__ICON--FONT-FAMILY: $icon--font-family;
+$BUTTON-CIRCLE--BORDER: $border-thin--standard $base3-dark;
+$BUTTON-CIRCLE__CURSOR: false; //Ex: pointer
+// ------ End of common ------
+
+// --------- Variants ----------
+// Default style - HIGHLIGHT === :hover, :active, :focus
+$BUTTON-CIRCLE--DEFAULT-BACKGROUND-COLOR: $base3; //false
+$BUTTON-CIRCLE__ICON--DEFAULT-COLOR: $white; //false
+
+$BUTTON-CIRCLE--DEFAULT-HIGHLIGHT-BACKGROUND-COLOR: $base3-light; //false
+$BUTTON-CIRCLE__ICON--DEFAULT-HIGHLIGHT-COLOR: $base3-dark; //false
+
+// Secondary style
+$BUTTON-CIRCLE--SECONDARY-BACKGROUND-COLOR: $base3-light;
+$BUTTON-CIRCLE__ICON--SECONDARY-COLOR: $black; //false
+
+$BUTTON-CIRCLE--SECONDARY-HIGHLIGHT-BACKGROUND-COLOR: $base3; //false
+$BUTTON-CIRCLE__ICON--SECONDARY-HIGHLIGHT-COLOR: $white; //false
+
+// Warning style
+$BUTTON-CIRCLE--WARNING-BACKGROUND-COLOR: $warning-dark;
+$BUTTON-CIRCLE__ICON--WARNING-COLOR: $white;
+
+$BUTTON-CIRCLE--WARNING-HIGHLIGHT-BACKGROUND-COLOR: $warning;
+$BUTTON-CIRCLE__ICON--WARNING-HIGHLIGHT-COLOR: $white;
+// ------ End of variants ------

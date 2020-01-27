@@ -1,0 +1,24 @@
+/* ****************************** */
+/*   Molekylen "Navigation bar"   */
+/* ****************************** */
+
+// Grund-settings
+$NAVIGATION-BAR--BACKGROUND: $base2-dark;
+$NAVIGATION-BAR--PADDING-LEFT: $space-3;
+$NAVIGATION-BAR--PADDING-RIGHT: $space-3;
+$NAVIGATION-BAR--FONT-WEIGHT: bold;
+
+// UL-elementen
+$NAVIGATION-BAR__ITEM--PADDING-LEFT: $space-2;
+$NAVIGATION-BAR__ITEM--PADDING-RIGHT: $space-2;
+
+// Länkarna
+$NAVIGATION-BAR__LINK--BORDER-BOTTOM: 4px solid $base2-dark;
+$NAVIGATION-BAR__LINK--BORDER-TOP: 4px solid $base2-dark;
+$NAVIGATION-BAR__LINK--PADDING-BOTTOM: $space-2;
+$NAVIGATION-BAR__LINK--PADDING-TOP: $space-2;
+$NAVIGATION-BAR__LINK--COLOR: $white;
+
+// Active, hover och focus-states för länkarna
+$NAVIGATION-BAR__LINK--HIGHLIGHT--BORDER-BOTTOM: 4px solid $complementary2;
+$NAVIGATION-BAR__LINK--HIGHLIGHT--OUTLINE: 0;

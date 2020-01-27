@@ -1,26 +1,28 @@
 
 .rh-sitename{
 	/* Box-modell/beteende */
-	margin-left: em(21);
+	margin-left: 1.3125em;//em(21);
 
 	/* Typografi */
-	font-weight: normal;
-	color: $black;
-	font-size: em(14);
+    font-weight: normal;
+    @if $SITENAME--COLOR {
+        color: $SITENAME--COLOR;
+    }
+	font-size: $SITENAME--SMALL-FONT-SIZE; //em(14);
 
 	@include medium {
 		/* Box-modell/beteende */
-		margin-right: em(21);
+		margin-right: 1.3125em; //em(21);
 
 		/* Typografi */
-		font-size: em(14);
+		font-size: $SITENAME--MEDIUM-FONT-SIZE;//em(14);
 	}
 
 	@include large {
 		/* Box-modell/beteende */
-		margin-left: em(29);
+		margin-left: 1.8125em; //em(29);
 
 		/* Typografi */
-		font-size: em(20);
+		font-size: $SITENAME--LARGE-FONT-SIZE; //em(20);
 	}
 }

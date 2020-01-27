@@ -1,9 +1,9 @@
 .rh-pagination-link {
     /* Box-modell/beteende */
-    padding-top: em(10);
-    padding-bottom: em(10);
-    padding-left: em(15);
-    padding-right: em(15);
+    padding-top: 0.625em;//em(10);
+    padding-bottom: 0.625em;//em(10);
+    padding-left: 0.9375em;//em(15);
+    padding-right: 0.9375em;//em(15);
 
     /* Visuellt */
     border: $pagination-link--border;

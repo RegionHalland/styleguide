@@ -30,17 +30,17 @@
             @include create-icon-button-effect(
                 $blockIconLinkClassname, //Container's name for block-icon-link
                 $blockIconLinkIconClassname, //icon's classname
-                $blockIconLink-default-effect--background-color, //icon's background
-                $blockIconLink-default-effect--icon-color //icon's color
+                $BLOCKICONLINK__ICON--DEFAULT-HIGHLIGHT-BACKGROUND-COLOR, //icon's background
+                $BLOCKICONLINK__ICON--DEFAULT-HIGHLIGHT-COLOR //icon's color
             )
         }
     }
 
-    &--primary {
+    &--secondary {
         // Base settings are using for making new classes during generation
-        $blockIconLinkClassname: "rh-block-icon-link--primary";
-        $blockIconLinkIconClassname: "rh-block-icon-link__icon--primary";
-        $blockIconLinkLinkClassname: "rh-block-icon-link__link--primary";
+        $blockIconLinkClassname: "rh-block-icon-link--secondary";
+        $blockIconLinkIconClassname: "rh-block-icon-link__icon--secondary";
+        $blockIconLinkLinkClassname: "rh-block-icon-link__link--secondary";
 
         // Generation
         @include create-clickable-element-effect(
@@ -64,8 +64,8 @@
             @include create-icon-button-effect(
                 $blockIconLinkClassname, //Container's name for block-icon-link
                 $blockIconLinkIconClassname, //icon's classname
-                $blockIconLink-primary-effect--background-color, //icon's background
-                $blockIconLink-primary-effect--icon-color //icon's color
+                $BLOCKICONLINK__ICON--SECONDARY-HIGHLIGHT-BACKGROUND-COLOR, //icon's background
+                $BLOCKICONLINK__ICON--SECONDARY-HIGHLIGHT-COLOR //icon's color
             )
         }
     }
@@ -98,8 +98,8 @@
             @include create-icon-button-effect(
                 $blockIconLinkClassname, //Container's name for block-icon-link
                 $blockIconLinkIconClassname, //icon's classname
-                $blockIconLink-warning-effect--background-color, //icon's background
-                $blockIconLink-warning-effect--icon-color //icon's color
+                $BLOCKICONLINK__ICON--WARNING-HIGHLIGHT-BACKGROUND-COLOR, //icon's background
+                $BLOCKICONLINK__ICON--WARNING-HIGHLIGHT-COLOR //icon's color
             )
         }
     }

@@ -1,4 +1,6 @@
 /* Atoms - Link */
-$link--color: $black; // Can using "false"
-$link--text-decoration: none; // Can using "false"
-$link--active-hover-text-decoration: underline; // Can using "false"
+$LINK--COLOR: $black; //false
+$LINK--TEXT-DECORATION: none; //false
+
+// HIGHLIGHT === :hover, :active, :focus
+$LINK--HIGHLIGHT-TEXT-DECORATION: underline; //false

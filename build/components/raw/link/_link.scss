@@ -1,20 +1,20 @@
 .rh-link {
-  &--navigation {
-    /* Visuellt */
-    @if $link--color {
-        color: $link--color;
-    }
+	&--navigation {
+		/* Visuellt */
+		@if $LINK--COLOR {
+			color: $LINK--COLOR;
+		}
 
-    /* Typografi */
-    @if $link--text-decoration {
-        text-decoration: $link--text-decoration;
-    }
-  }
+		/* Typografi */
+		@if $LINK--TEXT-DECORATION {
+			text-decoration: $LINK--TEXT-DECORATION;
+		}
 
-  &--navigation:active, &--navigation:hover, &--navigation:focus {
-    /* Typografi */
-    @if $link--active-hover-text-decoration {
-        text-decoration: $link--active-hover-text-decoration;
-    }
-  }
+		&:hover, &:active, &:focus {
+			@if $LINK--HIGHLIGHT-TEXT-DECORATION {
+				text-decoration: $LINK--HIGHLIGHT-TEXT-DECORATION;
+			}
+		}
+	}
 }
+

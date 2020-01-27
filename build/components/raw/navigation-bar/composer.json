@@ -1,0 +1,13 @@
+{
+    "name": "regionhalland/navigation-bar",
+    "description": "A horizontal navigation bar",
+    "type": "styleguide-molecule",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Viktor Sarge",
+            "email": "viktor.sarge@regionhalland.se"
+        }
+    ],
+    "require": {}
+}

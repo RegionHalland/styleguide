@@ -1,0 +1,50 @@
+.rh-navigation-bar {
+    /* Box-modell/beteende */
+    display: none;
+
+    /* Visuellt */
+    background: $NAVIGATION-BAR--BACKGROUND;
+    padding-left: $NAVIGATION-BAR--PADDING-LEFT;
+    padding-right: $NAVIGATION-BAR--PADDING-RIGHT;
+
+    /* Typografi */
+    font-weight: $NAVIGATION-BAR--FONT-WEIGHT;
+
+    &__item {
+        /* Box-modell/beteende */
+        display: inline;
+
+        /* Visuellt */
+        padding-left: $NAVIGATION-BAR__ITEM--PADDING-LEFT;
+        padding-right: $NAVIGATION-BAR__ITEM--PADDING-RIGHT;
+    }
+
+    &__link {
+        /* Box-modell/beteende */
+        display: inline-block;
+
+        /* Visuellt */
+        background: $NAVIGATION-BAR--BACKGROUND;
+        border-bottom: $NAVIGATION-BAR__LINK--BORDER-BOTTOM;
+        border-top: $NAVIGATION-BAR__LINK--BORDER-TOP;
+        padding-bottom: $NAVIGATION-BAR__LINK--PADDING-BOTTOM;
+        padding-top: $NAVIGATION-BAR__LINK--PADDING-TOP;
+
+        /* Typografi */
+        color: $NAVIGATION-BAR__LINK--COLOR;
+        text-decoration: none;
+
+        &:active,
+        &:focus,
+        &:hover,
+        &--active {
+            /* Visuellt */
+            border-bottom: $NAVIGATION-BAR__LINK--HIGHLIGHT--BORDER-BOTTOM;
+            outline: $NAVIGATION-BAR__LINK--HIGHLIGHT--OUTLINE;
+        }
+    }
+
+    @include small {
+        display: block;
+    }
+}

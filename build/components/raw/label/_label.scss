@@ -1,0 +1,34 @@
+.rh-label {
+    /* Box-modell/beteende */
+    border-radius: $LABEL--BORDER-RADIUS;
+    display: inline-block;
+    min-width: $LABEL--MIN-WIDTH;
+    vertical-align: baseline;
+
+    /* Visuellt */
+    background-color: $LABEL--BACKGROUND-COLOR;
+
+    /* Typografi */
+    @if $LABEL--TEXT-COLOR {
+        color: $LABEL--TEXT-COLOR;
+    }
+    @if $LABEL--FONT-SIZE {
+        font-size: $LABEL--FONT-SIZE;
+    }
+    line-height: $LABEL--LINE-HEIGHT;
+    text-align: $LABEL--TEXT-ALIGN;
+    white-space: $LABEL--WHITE-SPACE;
+
+    @include large {
+        /* Box-modell/beteende */
+        min-width: $LABEL--LARGE--MIN-WIDTH;
+    }
+
+    &--small {
+        padding: $LABEL--PADDING;
+    }
+
+    &--medium {
+        padding: $LABEL--MEDIUM-PADDING;
+    }
+}

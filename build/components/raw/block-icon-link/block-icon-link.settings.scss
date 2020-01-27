@@ -1,11 +1,9 @@
-/// Molecule - Block icon link
-// --------- Base settings ----------
-$blockIconLink-default-effect--icon-color: #000000;
-$blockIconLink-default-effect--background-color: $base3-light;
+/// Molecule - Block - Icon Link
+$BLOCKICONLINK__ICON--DEFAULT-HIGHLIGHT-BACKGROUND-COLOR: $base3-light; // false
+$BLOCKICONLINK__ICON--DEFAULT-HIGHLIGHT-COLOR: $black; //false
 
-$blockIconLink-primary-effect--icon-color: false;
-$blockIconLink-primary-effect--background-color: $base3-dark;
+$BLOCKICONLINK__ICON--SECONDARY-HIGHLIGHT-BACKGROUND-COLOR: $base3; // false
+$BLOCKICONLINK__ICON--SECONDARY-HIGHLIGHT-COLOR: $white; //false
 
-$blockIconLink-warning-effect--icon-color: false;
-$blockIconLink-warning-effect--background-color: $warning;
-// ------ End of base settings ------
+$BLOCKICONLINK__ICON--WARNING-HIGHLIGHT-BACKGROUND-COLOR: $warning; // false
+$BLOCKICONLINK__ICON--WARNING-HIGHLIGHT-COLOR: false; //false

@@ -227,10 +227,7 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-article-block__description"</span>&gt;</span>
             I motsats till vad många tror, är inte Lorem Ipsum slumpvisa ord. Det har sina rötter i ett stycke klassiskt litteratur på latin från 45 år före år 0, och är alltså över 2000 år gammalt.
         <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-labels"</span>&gt;</span>Exempel<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-labels"</span>&gt;</span>Exempel<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-labels"</span>&gt;</span>Exempel<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-label rh-label--small"</span>&gt;</span>Löksås<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-label rh-label--small"</span>&gt;</span>Bäckasiner<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-label rh-label--small"</span>&gt;</span>Vemod<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -255,9 +252,9 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-article-block__description"</span>&gt;</span>
             </span><span class="hljs-template-variable">{{description}}</span><span class="xml">
         <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        </span><span class="hljs-template-variable">{{render '<a href="labels.html">@labels</a>'}}</span><span class="xml">
-        </span><span class="hljs-template-variable">{{render '<a href="labels.html">@labels</a>'}}</span><span class="xml">
-        </span><span class="hljs-template-variable">{{render '<a href="labels.html">@labels</a>'}}</span><span class="xml">
+        </span><span class="hljs-template-variable">{{&gt; <a href="label.html">@label</a> className = "rh-label rh-label--small" labelContent = "Löksås"}}</span><span class="xml">
+        </span><span class="hljs-template-variable">{{&gt; <a href="label.html">@label</a> className = "rh-label rh-label--small" labelContent = "Bäckasiner"}}</span><span class="xml">
+        </span><span class="hljs-template-variable">{{&gt; <a href="label.html">@label</a> className = "rh-label rh-label--small" labelContent = "Vemod"}}</span><span class="xml">
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
@@ -537,7 +534,7 @@
             <strong class="Meta-key">References <em class="Meta-count">(1)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
-                <a href="labels.html">@<span>labels</span></a>
+                <a href="label.html">@<span>label</span></a>
             
             </span>
         </li class="Meta-item">
@@ -561,14 +558,30 @@
         
         <h1 id="article-block">Article block</h1>
 <h2 id="versionhistorik">Versionhistorik</h2>
+<h3 id="105-2020-01-23">1.0.5 (2020-01-23)</h3>
+<ul>
+<li>Sökväg till label justerad efter namnbyte.</li>
+</ul>
+<h3 id="104-2020-01-17">1.0.4 (2020-01-17)</h3>
+<ul>
+<li>Status “stable”</li>
+</ul>
 <h3 id="103-2019-12-17">1.0.3 (2019-12-17)</h3>
-<p>Använda inte längre @mixin för en bättre kontroll.</p>
+<ul>
+<li>Använda inte längre @mixin för en bättre kontroll.</li>
+</ul>
 <h3 id="102">1.0.2</h3>
-<p>Tweakat .hbs-filen för att rendera labels istället för att hårdkoda.</p>
+<ul>
+<li>Tweakat .hbs-filen för att rendera labels istället för att hårdkoda.</li>
+</ul>
 <h3 id="101">1.0.1</h3>
-<p>Labels från skiss och tidigare implementation återställda.</p>
+<ul>
+<li>Labels från skiss och tidigare implementation återställda.</li>
+</ul>
 <h3 id="100">1.0.0</h3>
-<p>Första versionen lanserad.</p>
+<ul>
+<li>Första versionen lanserad.</li>
+</ul>
 
         
     </div>
@@ -850,10 +863,229 @@
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-button-circle">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Button Circle</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="caption-hero.html" data-pjax>
+            <a class="Tree-entityLink" href="button-circle--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-circle--small.html" data-pjax>
+                <span>Small</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-circle--medium.html" data-pjax>
+                <span>Medium</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-circle--large.html" data-pjax>
+                <span>Large</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-circle--xlarge.html" data-pjax>
+                <span>Xlarge</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-circle--has-border.html" data-pjax>
+                <span>Has Border</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-circle--secondary.html" data-pjax>
+                <span>Secondary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-circle--warning.html" data-pjax>
+                <span>Warning</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-caption-hero">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
                 <span>Caption Hero</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="caption-hero--default.html" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -870,6 +1102,59 @@
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="caption-hero--rounded.html" data-pjax>
+                <span>Rounded</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="caption-hero--secondary.html" data-pjax>
+                <span>Secondary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
@@ -894,214 +1179,6 @@
 
 
             </a>
-        </li>
-        
-    
-        
-        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-circle-button">
-            <h4 class="Tree-collectionLabel" data-role="toggle">
-                <span>Circle Button</span>
-            </h4>
-            <ul class="Tree-collectionItems" data-role="items">
-            
-            
-            
-            
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="circle-button--default.html" data-pjax>
-                <span>Default</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="circle-button--small.html" data-pjax>
-                <span>Small</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="circle-button--medium.html" data-pjax>
-                <span>Medium</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="circle-button--large.html" data-pjax>
-                <span>Large</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="circle-button--xlarge.html" data-pjax>
-                <span>Xlarge</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="circle-button--has-border.html" data-pjax>
-                <span>Has Border</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="circle-button--secondary.html" data-pjax>
-                <span>Secondary</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="circle-button--warning.html" data-pjax>
-                <span>Warning</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-
-            </ul>
         </li>
         
     
@@ -1490,10 +1567,21 @@
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-label">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Label</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="labels.html" data-pjax>
-                <span>Labels</span>
+            <a class="Tree-entityLink" href="label--default.html" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1510,6 +1598,35 @@
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="label--medium.html" data-pjax>
+                <span>Medium</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     
@@ -1536,55 +1653,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Ändringar planerade"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="link--new-window.html" data-pjax>
-                <span>New Window</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: orange;" title="Ändringar planerade"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="link--containing-document.html" data-pjax>
-                <span>Containing Document</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: orange;" title="Ändringar planerade"></span>
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
 
 
 </div>
@@ -1608,7 +1677,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: orange;" title="Ändringar planerade"></span>
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
 
 
 </div>
@@ -2239,8 +2308,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="block-icon-link--primary.html" data-pjax>
-                <span>Primary</span>
+            <a class="Tree-entityLink" href="block-icon-link--secondary.html" data-pjax>
+                <span>Secondary</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2910,6 +2979,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="messages.html" data-pjax>
                 <span>Messages</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="navigation-bar.html" data-pjax>
+                <span>Navigation Bar</span>
                 
 
 <div class="Status Status--unlabelled">

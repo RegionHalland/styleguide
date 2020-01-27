@@ -1,0 +1,31 @@
+/* --------------- */
+/* Atomen "Label" */
+/* --------------- */
+
+// ------ Base settings ------
+$LABEL--BORDER-RADIUS: 0.9375em; // 15px
+$LABEL--BACKGROUND-COLOR: $base3-light;
+// ------ End of base settings ------
+
+// ------ Common ------
+// Box-modell/beteende
+$LABEL--MIN-WIDTH: 0.6875em; // 11 px
+
+// Typografi
+$LABEL--FONT-SIZE: false; // false
+$LABEL--LINE-HEIGHT: 1;
+$LABEL--TEXT-COLOR: false; // false
+$LABEL--TEXT-ALIGN: center;
+$LABEL--WHITE-SPACE: nowrap;
+
+// large-modifiern
+$LABEL--LARGE--MIN-WIDTH: 0.75em; // 12px
+// ------ End of common ------
+
+// ------ Variants ------
+// Small
+$LABEL--PADDING: 0.3125em 0.5625em; // 5px 9px
+
+// Medium
+$LABEL--MEDIUM-PADDING: 0.5em 0.75em; // 8px 12px
+// ------ End of variants ------

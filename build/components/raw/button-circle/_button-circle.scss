@@ -1,0 +1,145 @@
+@mixin make-button-circle-size($button-size) {
+	height: $button-size;
+	min-height: $button-size; //Fix IE11
+	max-height: $button-size; //Fix IE11
+
+	width: $button-size;
+	min-width: $button-size; //Fix IE11
+	max-width: $button-size; //Fix IE11
+
+	@content;
+}
+
+$classname-button-circle: "rh-button-circle";
+.#{$classname-button-circle} {
+	/* Box-modell/beteende */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/* Visuellt */
+	border-radius: 50%;
+
+	/* Typografi */
+	font-family: $BUTTON-CIRCLE__ICON--FONT-FAMILY;
+	text-decoration: none;
+
+	@if $BUTTON-CIRCLE__CURSOR {
+		cursor: $BUTTON-CIRCLE__CURSOR;
+	}
+
+	// Highlight
+	@if $BUTTON-CIRCLE--BORDER {
+		&--border {
+			border: $BUTTON-CIRCLE--BORDER;
+		}
+	}
+
+	// The empty class is needed when using large and xlarge sizes
+	&__icon {
+	}
+
+    // Types
+	&--default {
+		/* Visuellt */
+		@if $BUTTON-CIRCLE--DEFAULT-BACKGROUND-COLOR {
+			background-color: $BUTTON-CIRCLE--DEFAULT-BACKGROUND-COLOR;
+		}
+
+		/* Typografi */
+		@if $BUTTON-CIRCLE__ICON--DEFAULT-COLOR {
+			color: $BUTTON-CIRCLE__ICON--DEFAULT-COLOR;
+		}
+
+		&:hover,
+		&:active,
+		&:focus {
+			/* Visuellt */
+			@if $BUTTON-CIRCLE--DEFAULT-HIGHLIGHT-BACKGROUND-COLOR {
+				background-color: $BUTTON-CIRCLE--DEFAULT-HIGHLIGHT-BACKGROUND-COLOR;
+			}
+
+			/* Typografi */
+			@if $BUTTON-CIRCLE__ICON--DEFAULT-HIGHLIGHT-COLOR {
+				color: $BUTTON-CIRCLE__ICON--DEFAULT-HIGHLIGHT-COLOR;
+			}
+		}
+	}
+
+	&--secondary {
+		/* Visuellt */
+		@if $BUTTON-CIRCLE--SECONDARY-BACKGROUND-COLOR {
+			background-color: $BUTTON-CIRCLE--SECONDARY-BACKGROUND-COLOR;
+		}
+
+		/* Typografi */
+		@if $BUTTON-CIRCLE__ICON--SECONDARY-COLOR {
+			color: $BUTTON-CIRCLE__ICON--SECONDARY-COLOR;
+		}
+
+		&:hover,
+		&:active,
+		&:focus {
+			/* Visuellt */
+			@if $BUTTON-CIRCLE--SECONDARY-HIGHLIGHT-BACKGROUND-COLOR {
+				background-color: $BUTTON-CIRCLE--SECONDARY-HIGHLIGHT-BACKGROUND-COLOR;
+			}
+
+			/* Typografi */
+			@if $BUTTON-CIRCLE__ICON--SECONDARY-HIGHLIGHT-COLOR {
+				color: $BUTTON-CIRCLE__ICON--SECONDARY-HIGHLIGHT-COLOR;
+			}
+		}
+	}
+
+	&--warning {
+		/* Visuellt */
+		@if $BUTTON-CIRCLE--WARNING-BACKGROUND-COLOR {
+			background-color: $BUTTON-CIRCLE--WARNING-BACKGROUND-COLOR;
+		}
+
+		/* Typografi */
+		@if $BUTTON-CIRCLE__ICON--WARNING-COLOR {
+			color: $BUTTON-CIRCLE__ICON--WARNING-COLOR; //false
+		}
+
+		&:hover,
+		&:active,
+		&:focus {
+			/* Visuellt */
+			@if $BUTTON-CIRCLE--WARNING-HIGHLIGHT-BACKGROUND-COLOR {
+				background-color: $BUTTON-CIRCLE--WARNING-HIGHLIGHT-BACKGROUND-COLOR;
+			}
+
+			/* Typografi */
+			@if $BUTTON-CIRCLE__ICON--WARNING-HIGHLIGHT-COLOR {
+				color: $BUTTON-CIRCLE__ICON--WARNING-HIGHLIGHT-COLOR;
+			}
+		}
+	}
+
+	// Sizes
+	&--small {
+		@include make-button-circle-size($BUTTON-CIRCLE--SMALL-SIZE);
+	}
+
+	&--medium {
+		@include make-button-circle-size($BUTTON-CIRCLE--MEDIUM-SIZE);
+	}
+
+	&--large {
+		@include make-button-circle-size($BUTTON-CIRCLE--LARGE-SIZE) {
+			.#{$classname-button-circle}__icon {
+				font-size: $BUTTON-CIRCLE__ICON--LARGE-SIZE;
+			}
+		}
+    }
+
+    &--xlarge {
+		@include make-button-circle-size($BUTTON-CIRCLE--XLARGE-SIZE) {
+			.#{$classname-button-circle}__icon {
+				font-size: $BUTTON-CIRCLE__ICON--XLARGE-SIZE;
+			}
+		}
+	}
+}
