@@ -181,27 +181,6 @@ $(document).ready(function () {
 });
 "use strict";
 
-$(document).ready(function () {
-  // This code fixs :focus-within behavior on IE11 and older browsers
-  var $blockBoxItems = $(".rh-block-box");
-  $blockBoxItems.focusin(function (e) {
-    e.stopPropagation();
-    $(this).addClass("rh-block--focus");
-  });
-  $blockBoxItems.focusout(function (e) {
-    e.stopPropagation();
-    $(this).removeClass("rh-block--focus");
-  });
-});
-"use strict";
-
-$(".rh-linkgroup__titlebar").click(function () {
-  $(this).parent().next().toggle();
-  $(this).toggleClass("rh-linkgroup__titlebar--active");
-  $(this).attr('aria-expanded', $(this).attr('aria-expanded') === 'true' ? 'false' : 'true');
-});
-"use strict";
-
 /* Slide menu (from right) */
 
 /* Needed helpers in /public/library.js
@@ -366,6 +345,7 @@ $(document).ready(function () {
     throttle()
     calculateScrollbarWidth()
     isMobileDevice()
+    Needed library: bodyScrollLock-2.6.3.min.js
 */
 $(document).ready(function () {
   // Global variables
@@ -597,6 +577,13 @@ $(".rh-navigation-bar__link").keydown(function () {
 
       break;
   }
+});
+"use strict";
+
+$(".rh-linkgroup__titlebar").click(function () {
+  $(this).parent().next().toggle();
+  $(this).toggleClass("rh-linkgroup__titlebar--active");
+  $(this).attr('aria-expanded', $(this).attr('aria-expanded') === 'true' ? 'false' : 'true');
 });
 "use strict";
 
