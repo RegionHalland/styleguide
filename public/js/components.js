@@ -181,6 +181,13 @@ $(document).ready(function () {
 });
 "use strict";
 
+$(".rh-linkgroup__titlebar").click(function () {
+  $(this).parent().next().toggle();
+  $(this).toggleClass("rh-linkgroup__titlebar--active");
+  $(this).attr('aria-expanded', $(this).attr('aria-expanded') === 'true' ? 'false' : 'true');
+});
+"use strict";
+
 /* Slide menu (from right) */
 
 /* Needed helpers in /public/library.js
@@ -577,13 +584,6 @@ $(".rh-navigation-bar__link").keydown(function () {
 
       break;
   }
-});
-"use strict";
-
-$(".rh-linkgroup__titlebar").click(function () {
-  $(this).parent().next().toggle();
-  $(this).toggleClass("rh-linkgroup__titlebar--active");
-  $(this).attr('aria-expanded', $(this).attr('aria-expanded') === 'true' ? 'false' : 'true');
 });
 "use strict";
 
