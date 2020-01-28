@@ -1,10 +1,10 @@
 {
     "name": "stilguide",
-    "version": "13.0.0",
+    "version": "14.0.1",
     "license": "GPL-3.0",
     "author": {
         "name": "Region Halland",
-        "email": "regionen@regionhalland.se"
+        "email": "webbplatser@regionhalland.se"
     },
     "homepage": "https://stilguide.regionhalland.se/",
     "repository": {
@@ -24,7 +24,7 @@
         "gulp-command-handling": "^1.0.0",
         "gulp-zip": "^5.0.1",
         "highlight.js": "^9.18.0",
-        "select2": "^4.0.12"
+        "select2": "^4.0.13"
     },
     "devDependencies": {
         "@babel/core": "^7.8.3",
