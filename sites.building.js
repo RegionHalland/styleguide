@@ -36,33 +36,6 @@ gulpCommand
     .subOption('releases', '--all', '-o', '--overwrite', 'Overwrite if file exists');
 
 /* ----------------------------------- HELPERS ------------------------------- */
-/**
- * @param {string} option is like as -option
- * @param {string} alias is like as --alias
- */
-function getOptionsHelper(option, alias) {
-    try {
-        const argList = process.argv.slice(3);
-        let argIndex = -1; // Not found anything is default
-
-        const optionIndex = argList.indexOf(option),
-            aliasIndex = argList.indexOf(alias);
-
-        if (optionIndex > -1) {
-            argIndex = optionIndex; // Option is found
-        } else if (optionIndex < 0 && aliasIndex > -1) {
-            argIndex = aliasIndex; // Alias is found
-        }
-
-        if (argIndex < 0) {
-            return null;
-        } else {
-            const nextArg = argList[argIndex + 1];
-            return (!nextArg || nextArg[0] === "-") ? true : nextArg;
-        }
-    } catch (error) { return error; }
-}
-
 function findFirstByProperty(objectArray, sPropertyName, sSeekingValue) {
     try {
         if (Array.isArray(objectArray)) {
@@ -573,6 +546,5 @@ function helpInformation(cb) {
 module.exports = {
     buildSites,
     releaseSites,
-    getOptionsHelper,
     helpInformation
 };
