@@ -359,7 +359,7 @@
         "regionhalland/calendar-element": "1.0.0.20191121",
         "regionhalland/caption-hero": "3.0.1",
         "regionhalland/card": "1.0.0.20200123",
-        "regionhalland/contact-info": "1.0.2",
+        "regionhalland/contact-info": "1.0.3",
         "regionhalland/event-card-calendar": "1.0.0.20200123",
         "regionhalland/feedback": "1.0.0.20191227",
         "regionhalland/feedback-form": "1.0.0.20191121",
@@ -386,12 +386,12 @@
         "regionhalland/logo": "1.0.3",
         "regionhalland/logo-sitename": "1.0.0.20200120",
         "regionhalland/main-nav": "1.0.0.20191123",
-        "regionhalland/menu": "1.0.0.20200123",
+        "regionhalland/menu": "1.0.0.20200128",
         "regionhalland/menu-mobile": "1.0.0.20200127",
         "regionhalland/message-cookies": "1.0.1",
         "regionhalland/messages": "1.0.0.20191122",
         "regionhalland/navigation-bar": "1.0.0.20200129",
-        "regionhalland/navigation-block": "1.0.0.20200123",
+        "regionhalland/navigation-block": "1.0.0.20200128",
         "regionhalland/navigation-block-group": "1.0.0.20200117",
         "regionhalland/navigation-card": "1.0.0.20191122",
         "regionhalland/navigation-left": "1.1.1",
@@ -403,7 +403,7 @@
         "regionhalland/round-button": "1.0.0.20191217",
         "regionhalland/search": "1.0.0.20191123",
         "regionhalland/search-elements": "1.0.0.20200123",
-        "regionhalland/search-external-link": "1.0.0.20200123",
+        "regionhalland/search-external-link": "1.0.0.20200129",
         "regionhalland/search-external-link-1177": "1.0.0.20191122",
         "regionhalland/search-field": "1.0.0.20200124",
         "regionhalland/secondary-nav": "1.0.0.20191122",
@@ -416,8 +416,8 @@
         "regionhalland/video": "1.0.0.20200110",
         "regionhalland/visual-element": "1.0.0.20200117",
         "regionhalland/general": "1.0.0.20200108",
-        "regionhalland/styleguide-core": "2.2.0",
-        "regionhalland/styleguide-core-settings": "2.4.0"
+        "regionhalland/styleguide-core": "2.2.1",
+        "regionhalland/styleguide-core-settings": "2.4.1"
     },
     "extra": {
         "custom-installer": {
