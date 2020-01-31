@@ -1,0 +1,31 @@
+.rh-heroic {
+    &__caption {
+        color: $white;
+        background: $black;
+        padding: $space-6;
+        line-height: $line-height--standard;
+        font-size: $font-size--2xl;
+
+        &--desktop {
+            display: none;
+            @include medium {
+                display: inline;
+            }
+        }
+
+        &--secondary {
+            color: $black;
+            background: $white;
+        }
+
+        &--rounded {
+            border-radius: $border-radius--medium;
+        }
+    }
+
+    &__inner-container {
+        display:flex;
+        max-width: 1440px;
+        margin: auto;
+    }
+}

@@ -307,75 +307,76 @@
                                 <pre><span class="hljs-comment">// View mixin at /components/scss/_mixin-components.scss</span>
 
 <span class="hljs-selector-class">.rh-article-block</span> {
-    &amp;__publish-date {
-        <span class="hljs-attribute">display</span>: flex;
+	&amp;__publish-date {
+		<span class="hljs-attribute">display</span>: flex;
 
-        &amp;-info {
-            <span class="hljs-attribute">margin</span>: <span class="hljs-variable">$article-block__publish-date-info--margin</span>;
-            <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$article-block__publish-date-info--font-size</span>;
+		&amp;-info {
+			<span class="hljs-attribute">margin</span>: <span class="hljs-variable">$ARTICLE-BLOCK__PUBLISH-DATE-INFO--MARGIN</span>;
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$ARTICLE-BLOCK__PUBLISH-DATE-INFO--FONT-SIZE</span>;
 
-            <span class="hljs-keyword">@include</span> large {
-                <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$article-block__publish-date-info--font-size-large</span>;
-            }
-        }
+			<span class="hljs-keyword">@include</span> large {
+				<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$ARTICLE-BLOCK__PUBLISH-DATE-INFO--LARGE-FONT-SIZE</span>;
+			}
+		}
 
-        &amp;-<span class="hljs-attribute">icon</span> {
-            <span class="hljs-attribute">font-family</span>: <span class="hljs-string">"feather"</span>;
-            <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$article-block__publish-date-icon--font-size</span>;
-            <span class="hljs-attribute">margin</span>: <span class="hljs-variable">$article-block__publish-date-icon--margin</span>;
+		&amp;-<span class="hljs-attribute">icon</span> {
+			<span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$ARTICLE-BLOCK__PUBLISH-DATE-ICON--FONT-FAMILY</span>;
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$ARTICLE-BLOCK__PUBLISH-DATE-ICON--FONT-SIZE</span>;
+			<span class="hljs-attribute">margin</span>: <span class="hljs-variable">$ARTICLE-BLOCK__PUBLISH-DATE-ICON--MARGIN</span>;
 
-            <span class="hljs-keyword">@include</span> large {
-                <span class="hljs-attribute">margin</span>: <span class="hljs-variable">$article-block__publish-date-icon--margin-large</span>;
-            }
-        }
-    }
+			<span class="hljs-keyword">@include</span> large {
+				<span class="hljs-attribute">margin</span>: <span class="hljs-variable">$ARTICLE-BLOCK__PUBLISH-DATE-ICON--LARGE-MARGIN</span>;
+			}
+		}
+	}
 
-    &amp;__title {
-        <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.3125em</span>;
-        <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0.1em</span>;
+	&amp;__title {
+		<span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$ARTICLE-BLOCK__TITLE--LINE-HEIGHT</span>;
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0.1em</span>;
 
-        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1em</span>;
-        <span class="hljs-attribute">font-weight</span>: bold;
+		<span class="hljs-keyword">@if</span> <span class="hljs-variable">$ARTICLE-BLOCK__TITLE--FONT-SIZE</span> {
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$ARTICLE-BLOCK__TITLE--FONT-SIZE</span>;
+		}
+		<span class="hljs-attribute">font-weight</span>: bold;
 
-        <span class="hljs-keyword">@include</span> medium {
-            <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.375em</span>;
-        }
+		<span class="hljs-keyword">@include</span> medium {
+			<span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$ARTICLE-BLOCK__TITLE--MEDIUM-LINE-HEIGHT</span>;
+		}
 
-        <span class="hljs-keyword">@include</span> large {
-            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.25em</span>; <span class="hljs-comment">//20px</span>
-        }
+		<span class="hljs-keyword">@include</span> large {
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$ARTICLE-BLOCK__TITLE--LARGE-FONT-SIZE</span>; <span class="hljs-comment">//20px</span>
+		}
 
-        &amp;-<span class="hljs-selector-tag">link</span> {
-            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$article-block__title-link--text-color</span>;
-        }
-    }
+		&amp;-<span class="hljs-selector-tag">link</span> {
+			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--TEXT-COLOR</span>;
 
-    &amp;__description {
-        <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0.5em</span>;
-        <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0.5em</span>;
+			&amp;<span class="hljs-selector-pseudo">:focus</span> {
+				<span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--TEXT-DECORATION</span>;
+				<span class="hljs-attribute">color</span>: <span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--COLOR</span>;
+				<span class="hljs-attribute">outline</span>: <span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--OUTLINE</span>;
+				<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--BACKGROUND-COLOR</span>;
+				<span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--PADDING-TOP</span>;
+				<span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--PADDING-BOTTOM</span>;
+				<span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--PADDING-LEFT</span>;
+				<span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--PADDING-RIGHT</span>;
+				<span class="hljs-attribute">border-radius</span>: <span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--BORDER-RADIUS</span>;
+				<span class="hljs-attribute">border-top</span>: <span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--BORDER-TOP</span>;
+				<span class="hljs-attribute">border-bottom</span>: <span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--BORDER-BOTTOM</span>;
+			}
+		}
+	}
 
-        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.9375em</span>; <span class="hljs-comment">//15px</span>
+	&amp;__description {
+		<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0.5em</span>;
+		<span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0.5em</span>;
 
-        <span class="hljs-keyword">@include</span> large {
-            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1em</span>; <span class="hljs-comment">//16px</span>
-        }
-    }
+		<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$ARTICLE-BLOCK__DESCRIPTION--FONT-SIZE</span>; <span class="hljs-comment">//15px</span>
 
-    &amp;__title-<span class="hljs-selector-tag">link</span><span class="hljs-selector-pseudo">:focus</span> {
-        <span class="hljs-attribute">text-decoration</span>: <span class="hljs-variable">$article-block__title-link--focus--text-decoration</span>;
-        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$article-block__title-link--focus--color</span>;
-        <span class="hljs-attribute">outline</span>: <span class="hljs-variable">$article-block__title-link--focus--outline</span>;
-        <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$article-block__title-link--focus--background-color</span>;
-        <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$article-block__title-link--focus--padding-top</span>;
-        <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$article-block__title-link--focus--padding-bottom</span>;
-        <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$article-block__title-link--focus--padding-left</span>;
-        <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$article-block__title-link--focus--padding-right</span>;
-        <span class="hljs-attribute">border-radius</span>: <span class="hljs-variable">$article-block__title-link--focus--border-radius</span>;
-        <span class="hljs-attribute">border-top</span>: <span class="hljs-variable">$article-block__title-link--focus--border-top</span>;
-        <span class="hljs-attribute">border-bottom</span>: <span class="hljs-variable">$article-block__title-link--focus--border-bottom</span>;
-    }
+		<span class="hljs-keyword">@include</span> large {
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$ARTICLE-BLOCK__DESCRIPTION--LARGE-FONT-SIZE</span>; <span class="hljs-comment">//16px</span>
+		}
+	}
 }
-
 </pre>
                             </code>
                             
@@ -392,7 +393,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.1 KB</span>
+                    <span class="Meta-value">2 KB</span>
                 </li>
             </ul>
         </div>
@@ -406,30 +407,37 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
                                 <pre><span class="hljs-comment">/* Molecules - Article block */</span>
-<span class="hljs-variable">$article-block__publish-date-info--margin</span>: <span class="hljs-number">0</span>;
-<span class="hljs-variable">$article-block__publish-date-info--font-size</span>: <span class="hljs-number">0.8125em</span>; <span class="hljs-comment">//13px</span>
-<span class="hljs-variable">$article-block__publish-date-info--font-size-large</span>: <span class="hljs-number">0.875em</span>; <span class="hljs-comment">//14px</span>
+<span class="hljs-variable">$ARTICLE-BLOCK__PUBLISH-DATE-INFO--MARGIN</span>: <span class="hljs-number">0</span>;
+<span class="hljs-variable">$ARTICLE-BLOCK__PUBLISH-DATE-INFO--FONT-SIZE</span>: <span class="hljs-variable">$font-size--xs</span>; <span class="hljs-comment">//13px - Using for medium screen and down</span>
+<span class="hljs-variable">$ARTICLE-BLOCK__PUBLISH-DATE-INFO--LARGE-FONT-SIZE</span>: <span class="hljs-variable">$font-size-small</span>; <span class="hljs-comment">//14px</span>
 
-<span class="hljs-variable">$article-block__publish-date-icon--font-size</span>: <span class="hljs-number">0.8125em</span>; <span class="hljs-comment">//13px;</span>
-<span class="hljs-variable">$article-block__publish-date-icon--margin</span>: .<span class="hljs-number">118em</span> .<span class="hljs-number">3em</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
-<span class="hljs-variable">$article-block__publish-date-icon--margin-large</span>: .<span class="hljs-number">195em</span> .<span class="hljs-number">3em</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
+<span class="hljs-variable">$ARTICLE-BLOCK__PUBLISH-DATE-ICON--FONT-FAMILY</span>: <span class="hljs-variable">$icon--font-family</span>;
+<span class="hljs-variable">$ARTICLE-BLOCK__PUBLISH-DATE-ICON--FONT-SIZE</span>: <span class="hljs-variable">$font-size--xs</span>; <span class="hljs-comment">//13px;</span>
+<span class="hljs-variable">$ARTICLE-BLOCK__PUBLISH-DATE-ICON--MARGIN</span>: .<span class="hljs-number">118em</span> .<span class="hljs-number">3em</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
+<span class="hljs-variable">$ARTICLE-BLOCK__PUBLISH-DATE-ICON--LARGE-MARGIN</span>: .<span class="hljs-number">195em</span> .<span class="hljs-number">3em</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
 
-<span class="hljs-variable">$article-block__title-link--text-color</span>: <span class="hljs-variable">$color-primary</span>;
+<span class="hljs-variable">$ARTICLE-BLOCK__TITLE--LINE-HEIGHT</span>: <span class="hljs-variable">$line-height--large</span>; <span class="hljs-comment">// Using for small screen and down</span>
+<span class="hljs-variable">$ARTICLE-BLOCK__TITLE--MEDIUM-LINE-HEIGHT</span>: <span class="hljs-variable">$line-height--xl</span>;
+<span class="hljs-variable">$ARTICLE-BLOCK__TITLE--FONT-SIZE</span>: <span class="hljs-variable">$font-size--standard</span>; <span class="hljs-comment">// false - Using for medium screen and down</span>
+<span class="hljs-variable">$ARTICLE-BLOCK__TITLE--LARGE-FONT-SIZE</span>: <span class="hljs-variable">$font-size--xl</span>;
+
+<span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--TEXT-COLOR</span>: <span class="hljs-variable">$color-primary</span>;
 
 <span class="hljs-comment">// Focus state settings</span>
-<span class="hljs-variable">$article-block__title-link--focus--text-decoration</span>: none;
-<span class="hljs-variable">$article-block__title-link--focus--color</span>: <span class="hljs-variable">$color-primary</span>;
-<span class="hljs-variable">$article-block__title-link--focus--outline</span>: none;
-<span class="hljs-variable">$article-block__title-link--focus--background-color</span>: <span class="hljs-variable">$grey-lightest</span>;
-<span class="hljs-variable">$article-block__title-link--focus--padding-top</span>: .<span class="hljs-number">3ex</span>;
-<span class="hljs-variable">$article-block__title-link--focus--padding-bottom</span>: .<span class="hljs-number">4ex</span>;
-<span class="hljs-variable">$article-block__title-link--focus--padding-left</span>: .<span class="hljs-number">2ex</span>;
-<span class="hljs-variable">$article-block__title-link--focus--padding-right</span>: .<span class="hljs-number">4ex</span>;
-<span class="hljs-variable">$article-block__title-link--focus--border-radius</span>: <span class="hljs-number">3px</span>;
-<span class="hljs-variable">$article-block__title-link--focus--border-top</span>: none;
-<span class="hljs-variable">$article-block__title-link--focus--border-bottom</span>: <span class="hljs-number">2px</span> solid <span class="hljs-variable">$color-primary</span>;
+<span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--TEXT-DECORATION</span>: none;
+<span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--COLOR</span>: <span class="hljs-variable">$color-primary</span>;
+<span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--OUTLINE</span>: none;
+<span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--BACKGROUND-COLOR</span>: <span class="hljs-variable">$grey-lightest</span>;
+<span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--PADDING-TOP</span>: .<span class="hljs-number">3ex</span>;
+<span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--PADDING-BOTTOM</span>: .<span class="hljs-number">4ex</span>;
+<span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--PADDING-LEFT</span>: .<span class="hljs-number">2ex</span>;
+<span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--PADDING-RIGHT</span>: .<span class="hljs-number">4ex</span>;
+<span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--BORDER-RADIUS</span>: <span class="hljs-variable">$border-radius--standard</span>;
+<span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--BORDER-TOP</span>: none;
+<span class="hljs-variable">$ARTICLE-BLOCK__TITLE-LINK--FOCUS--BORDER-BOTTOM</span>: <span class="hljs-number">2px</span> solid <span class="hljs-variable">$color-primary</span>;
 
-</pre>
+<span class="hljs-variable">$ARTICLE-BLOCK__DESCRIPTION--FONT-SIZE</span>: <span class="hljs-variable">$font-size--medium</span>; <span class="hljs-comment">// Using for medium screen and down</span>
+<span class="hljs-variable">$ARTICLE-BLOCK__DESCRIPTION--LARGE-FONT-SIZE</span>: <span class="hljs-variable">$font-size--standard</span>;</pre>
                             </code>
                             
                         </div>
@@ -445,7 +453,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.1 KB</span>
+                    <span class="Meta-value">1.7 KB</span>
                 </li>
             </ul>
         </div>
@@ -465,8 +473,8 @@
     <span class="hljs-attr">"license"</span>: <span class="hljs-string">"GPL-3.0"</span>,
     <span class="hljs-attr">"authors"</span>: [
         {
-            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Roland Hydén"</span>,
-            <span class="hljs-attr">"email"</span>: <span class="hljs-string">"Roland.Hyden@Regionhalland.se"</span>
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Region Halland"</span>,
+            <span class="hljs-attr">"email"</span>: <span class="hljs-string">"webbplatser@regionhalland.se"</span>
         }
     ],
     <span class="hljs-attr">"require"</span>: {}
@@ -558,13 +566,19 @@
         
         <h1 id="article-block">Article block</h1>
 <h2 id="versionhistorik">Versionhistorik</h2>
+<h3 id="106-2020-01-27">1.0.6 (2020-01-27)</h3>
+<ul>
+<li>Variabler namn har bytt.</li>
+<li>Globala variabler används.</li>
+<li>Förbättring av SCSS-kod <em>(:focus)</em></li>
+</ul>
 <h3 id="105-2020-01-23">1.0.5 (2020-01-23)</h3>
 <ul>
-<li>Sökväg till label justerad efter namnbyte.</li>
+<li>Sökväg till Atoms/<strong>button-circle</strong> justerad efter namnbyte.</li>
 </ul>
 <h3 id="104-2020-01-17">1.0.4 (2020-01-17)</h3>
 <ul>
-<li>Status “stable”</li>
+<li>Status “stable”.</li>
 </ul>
 <h3 id="103-2019-12-17">1.0.3 (2019-12-17)</h3>
 <ul>
@@ -1134,6 +1148,54 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="caption-hero--secondary.html" data-pjax>
                 <span>Secondary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="caption-hero--right.html" data-pjax>
+                <span>Right</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="caption-hero--centered.html" data-pjax>
+                <span>Centered</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2679,10 +2741,21 @@
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-hero">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Hero</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="hero.html" data-pjax>
-                <span>Hero</span>
+            <a class="Tree-entityLink" href="hero--default.html" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2690,7 +2763,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
 
 
 </div>
@@ -2699,6 +2772,387 @@
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--default-left-cover.html" data-pjax>
+                <span>Default Left Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--default-left-contain.html" data-pjax>
+                <span>Default Left Contain</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--default-left-auto.html" data-pjax>
+                <span>Default Left Auto</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--fullscreen-centered-cover.html" data-pjax>
+                <span>Fullscreen Centered Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--fullscreen-left-auto.html" data-pjax>
+                <span>Fullscreen Left Auto</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--fullscreen-left-contain.html" data-pjax>
+                <span>Fullscreen Left Contain</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--fullscreen-right-cover.html" data-pjax>
+                <span>Fullscreen Right Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-heroic">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Heroic</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--default-left-cover.html" data-pjax>
+                <span>Default Left Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--default-left-contain.html" data-pjax>
+                <span>Default Left Contain</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--default-left-auto.html" data-pjax>
+                <span>Default Left Auto</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--fullscreen-centered-cover.html" data-pjax>
+                <span>Fullscreen Centered Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--fullscreen-left-auto.html" data-pjax>
+                <span>Fullscreen Left Auto</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--fullscreen-left-contain.html" data-pjax>
+                <span>Fullscreen Left Contain</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--fullscreen-right-cover.html" data-pjax>
+                <span>Fullscreen Right Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     

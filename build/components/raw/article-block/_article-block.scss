@@ -1,72 +1,73 @@
 // View mixin at /components/scss/_mixin-components.scss
 
 .rh-article-block {
-    &__publish-date {
-        display: flex;
+	&__publish-date {
+		display: flex;
 
-        &-info {
-            margin: $article-block__publish-date-info--margin;
-            font-size: $article-block__publish-date-info--font-size;
+		&-info {
+			margin: $ARTICLE-BLOCK__PUBLISH-DATE-INFO--MARGIN;
+			font-size: $ARTICLE-BLOCK__PUBLISH-DATE-INFO--FONT-SIZE;
 
-            @include large {
-                font-size: $article-block__publish-date-info--font-size-large;
-            }
-        }
+			@include large {
+				font-size: $ARTICLE-BLOCK__PUBLISH-DATE-INFO--LARGE-FONT-SIZE;
+			}
+		}
 
-        &-icon {
-            font-family: "feather";
-            font-size: $article-block__publish-date-icon--font-size;
-            margin: $article-block__publish-date-icon--margin;
+		&-icon {
+			font-family: $ARTICLE-BLOCK__PUBLISH-DATE-ICON--FONT-FAMILY;
+			font-size: $ARTICLE-BLOCK__PUBLISH-DATE-ICON--FONT-SIZE;
+			margin: $ARTICLE-BLOCK__PUBLISH-DATE-ICON--MARGIN;
 
-            @include large {
-                margin: $article-block__publish-date-icon--margin-large;
-            }
-        }
-    }
+			@include large {
+				margin: $ARTICLE-BLOCK__PUBLISH-DATE-ICON--LARGE-MARGIN;
+			}
+		}
+	}
 
-    &__title {
-        line-height: 1.3125em;
-        margin-bottom: 0.1em;
+	&__title {
+		line-height: $ARTICLE-BLOCK__TITLE--LINE-HEIGHT;
+		margin-bottom: 0.1em;
 
-        font-size: 1em;
-        font-weight: bold;
+		@if $ARTICLE-BLOCK__TITLE--FONT-SIZE {
+			font-size: $ARTICLE-BLOCK__TITLE--FONT-SIZE;
+		}
+		font-weight: bold;
 
-        @include medium {
-            line-height: 1.375em;
-        }
+		@include medium {
+			line-height: $ARTICLE-BLOCK__TITLE--MEDIUM-LINE-HEIGHT;
+		}
 
-        @include large {
-            font-size: 1.25em; //20px
-        }
+		@include large {
+			font-size: $ARTICLE-BLOCK__TITLE--LARGE-FONT-SIZE; //20px
+		}
 
-        &-link {
-            color: $article-block__title-link--text-color;
-        }
-    }
+		&-link {
+			color: $ARTICLE-BLOCK__TITLE-LINK--TEXT-COLOR;
 
-    &__description {
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
+			&:focus {
+				text-decoration: $ARTICLE-BLOCK__TITLE-LINK--FOCUS--TEXT-DECORATION;
+				color: $ARTICLE-BLOCK__TITLE-LINK--FOCUS--COLOR;
+				outline: $ARTICLE-BLOCK__TITLE-LINK--FOCUS--OUTLINE;
+				background-color: $ARTICLE-BLOCK__TITLE-LINK--FOCUS--BACKGROUND-COLOR;
+				padding-top: $ARTICLE-BLOCK__TITLE-LINK--FOCUS--PADDING-TOP;
+				padding-bottom: $ARTICLE-BLOCK__TITLE-LINK--FOCUS--PADDING-BOTTOM;
+				padding-left: $ARTICLE-BLOCK__TITLE-LINK--FOCUS--PADDING-LEFT;
+				padding-right: $ARTICLE-BLOCK__TITLE-LINK--FOCUS--PADDING-RIGHT;
+				border-radius: $ARTICLE-BLOCK__TITLE-LINK--FOCUS--BORDER-RADIUS;
+				border-top: $ARTICLE-BLOCK__TITLE-LINK--FOCUS--BORDER-TOP;
+				border-bottom: $ARTICLE-BLOCK__TITLE-LINK--FOCUS--BORDER-BOTTOM;
+			}
+		}
+	}
 
-        font-size: 0.9375em; //15px
+	&__description {
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
 
-        @include large {
-            font-size: 1em; //16px
-        }
-    }
+		font-size: $ARTICLE-BLOCK__DESCRIPTION--FONT-SIZE; //15px
 
-    &__title-link:focus {
-        text-decoration: $article-block__title-link--focus--text-decoration;
-        color: $article-block__title-link--focus--color;
-        outline: $article-block__title-link--focus--outline;
-        background-color: $article-block__title-link--focus--background-color;
-        padding-top: $article-block__title-link--focus--padding-top;
-        padding-bottom: $article-block__title-link--focus--padding-bottom;
-        padding-left: $article-block__title-link--focus--padding-left;
-        padding-right: $article-block__title-link--focus--padding-right;
-        border-radius: $article-block__title-link--focus--border-radius;
-        border-top: $article-block__title-link--focus--border-top;
-        border-bottom: $article-block__title-link--focus--border-bottom;
-    }
+		@include large {
+			font-size: $ARTICLE-BLOCK__DESCRIPTION--LARGE-FONT-SIZE; //16px
+		}
+	}
 }
-

@@ -69,20 +69,6 @@ $(document).ready(function () {
 });
 "use strict";
 
-$(document).ready(function () {
-  // This code fixs :focus-within behavior on IE11 and older browsers
-  var $blockBoxItems = $(".rh-block-box");
-  $blockBoxItems.focusin(function (e) {
-    e.stopPropagation();
-    $(this).addClass("rh-block--focus");
-  });
-  $blockBoxItems.focusout(function (e) {
-    e.stopPropagation();
-    $(this).removeClass("rh-block--focus");
-  });
-});
-"use strict";
-
 $(".rh-linkgroup__titlebar").click(function () {
   $(this).parent().next().toggle();
   $(this).toggleClass("rh-linkgroup__titlebar--active");
@@ -96,6 +82,8 @@ $(".rh-linkgroup__titlebar").click(function () {
     throttle()
     calculateScrollbarWidth()
     isMobileDevice()
+
+    Needed library: bodyScrollLock-2.6.3.min.js
 */
 $(document).ready(function () {
   var scrollbarWidth = calculateScrollbarWidth(),
@@ -254,6 +242,7 @@ $(document).ready(function () {
     throttle()
     calculateScrollbarWidth()
     isMobileDevice()
+    Needed library: bodyScrollLock-2.6.3.min.js
 */
 $(document).ready(function () {
   // Global variables
@@ -540,6 +529,23 @@ var videoPlayButton,
 videoMethods.renderVideoPlayButton();
 "use strict";
 
+var acc = document.getElementsByClassName("rh-search-accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("rh-search-active");
+    var panel = this.nextElementSibling;
+
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 100 + "px";
+    }
+  });
+}
+"use strict";
+
 window.onload = function () {
   var table, rows, i, x, y;
   table = document.getElementById("rh-table");
@@ -632,21 +638,4 @@ function setShadow() {
       cols[0].classList.add("rh-table-cell--shadow");
     }
   }
-}
-"use strict";
-
-var acc = document.getElementsByClassName("rh-search-accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("rh-search-active");
-    var panel = this.nextElementSibling;
-
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + 100 + "px";
-    }
-  });
 }

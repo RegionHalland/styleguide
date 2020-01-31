@@ -1,70 +1,70 @@
-/* Molecules - Menu */
-// Base settings
+/* Molecule - Menu */
+// --- Base settings ---
 $menu-color-main: $base3-dark;
 $menu-color__item-line: $base3;
-$menu-color__sub-style-1--background-color: #f2fff0;
-$menu-color__sub-style-2--background-color: #F7FAFD;
-$menu-color__sub-style-3--background-color: #F4F4F4;
+$menu-color__sub-style-1--background-color: $base3-light;
+$menu-color__sub-style-2--background-color: $grey-lighter;
+$menu-color__sub-style-3--background-color: $grey-lightest;
 
 $menu-top-bar__height: 70px;
 $menu-overlay--z-index: 50;
 
 $menu-item--min-height: 3.75em; //60px
-$menu-item--border-bottom: 0.0625em solid $menu-color__item-line;
+$menu-item--border-bottom: $border-thin--standard $menu-color__item-line;
 
 $menu-body--min-width: 320px;
 $menu-body--max-width: 643px;
 $menu-body__offset-bottom: 90px;
 $menu-body--z-index: 60; //-> Important
+// --- End of base settings ---
 
 // Other settings
-$menu-button-close--background-color: #ffffff; //false
+$menu-button-close--background-color: $white; //false
 $menu-button-close--color: $menu-color-main; //false
-$menu-button-close--border: 0.0625em solid $menu-color-main; //false
+$menu-button-close--border: $border-thin--standard $menu-color-main; //false
 
 $menu-button-close--hover-active: true; //-> Important
-$menu-button-close--background-color-hover-active: #ffffff; //false
+$menu-button-close--background-color-hover-active: $white; //false
 $menu-button-close--color-hover-active: $menu-color-main; //false
-$menu-button-close--border-hover-active: 0.0625em solid $menu-color-main; //false
+$menu-button-close--border-hover-active: $border-thin--standard $menu-color-main; //false
 
-$menu-top-bar--background-color: #ffffff;
-$menu-top-bar--box-shadow: 0 0.0625em 0.25em rgba(0, 0, 0, 0.3);
+$menu-top-bar--background-color: $white;
+$menu-top-bar--box-shadow: $box-shadow--standard $color-shadow;
 
 $menu-overlay--background-color: rgba(0, 0, 0, 0.3);
 
-$menu-item-link--color: #000000;
-$menu-item-link--line-height: 1.4em;
+$menu-item-link--color: $black;
+$menu-item-link--line-height: $line-height--xl;
 $menu-item-link--font-weight-active: bold;
 
-$menu-item-link__level-1--font-size: 1.125em; //18px
+$menu-item-link__level-1--font-size: $font-size--large; //18px
 $menu-item-link__level-1--font-weight: bold;
-$menu-item-link__level-1--color: #ffffff;
+$menu-item-link__level-1--color: $white;
 
-$menu-item-button-parent--background-color: #ffffff;
+$menu-item-button-parent--background-color: $white;
 $menu-item-button-parent--color: $menu-color-main;
 
 $menu-item-button-parent-hover-active: true; //false
-$menu-item-button-parent--background-color-hover-active: #ffffff; //false
+$menu-item-button-parent--background-color-hover-active: $white; //false
 $menu-item-button-parent--color-hover-active: $menu-color-main; //false
 
 $menu-item__level-1--background-color: $menu-color-main;
-$menu-item__level-1--color: #ffffff;
+$menu-item__level-1--color: $white;
 
-$menu-sub-item-button--background-color: #ffffff;
+$menu-sub-item-button--background-color: $white;
 $menu-sub-item-button--color: $menu-color-main;
-$menu-sub-item-button--border: 0.0625em solid $menu-color-main;
+$menu-sub-item-button--border: $border-thin--standard $menu-color-main;
 
 $menu-sub-item-button-hover-active: true; //false
-$menu-sub-item-button--background-color-hover-active: #ffffff; //false
+$menu-sub-item-button--background-color-hover-active: $white; //false
 $menu-sub-item-button--color-hover-active: $menu-color-main; //false
-$menu-sub-item-button--border-hover-active: 0.0625em solid $menu-color-main; //false
+$menu-sub-item-button--border-hover-active: $border-thin--standard $menu-color-main; //false
 
 $menu-sub-item-button-active--background-color: $menu-color-main;
-$menu-sub-item-button-active--color: #ffffff;
-$menu-sub-item-button-active--border: 0.0625em solid $menu-color-main;
+$menu-sub-item-button-active--color: $white;
+$menu-sub-item-button-active--border: $border-thin--standard $menu-color-main;
 
 $menu-sub-item-button-active-hover-active: true; //false
 $menu-sub-item-button-active--background-color-hover-active: $menu-color-main; //false
-$menu-sub-item-button-active--color-hover-active: #ffffff; //false
-$menu-sub-item-button-active--border-hover-active: 0.0625em solid $menu-color-main; //false
-
+$menu-sub-item-button-active--color-hover-active: $white; //false
+$menu-sub-item-button-active--border-hover-active: $border-thin--standard $menu-color-main; //false

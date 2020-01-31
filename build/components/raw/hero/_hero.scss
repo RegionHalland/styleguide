@@ -1,37 +1,31 @@
-.rh-hero {
-    /* Positionering */
-    position: relative;
+.rh-heroic {
+    &__caption {
+        color: $white;
+        background: $black;
+        padding: $space-6;
+        line-height: $line-height--standard;
+        font-size: $font-size--2xl;
 
-    /* Box-modell/beteende */
-    display: block;
-    width: $hero--width;
-    @if $hero--max-width {
+        &--desktop {
+            display: none;
+            @include medium {
+                display: inline;
+            }
+        }
+
+        &--secondary {
+            color: $black;
+            background: $white;
+        }
+
+        &--rounded {
+            border-radius: $border-radius--medium;
+        }
+    }
+
+    &__inner-container {
+        display:flex;
         max-width: $hero--max-width;
-    }
-    @if $hero--min-width {
-        min-width: $hero--min-width;
-    }
-    overflow: hidden;
-
-    @include medium {
-        /* Box-modell/beteende */
-        max-height: $hero--medium--max-height;
-    }
-
-    @include large {
-        /* Box-modell/beteende */
-        max-height: $hero--large--max-height;
-    }
-
-    &__image-container {
-        max-height: $hero__image-container--max-height;
-        width: $hero__image-container--width;
-    }
-
-    &__image {
-        /* Box-modell/beteende */
-        //height: 100%;
-        display: block;
-        width: $hero__image--width;
+        margin: auto;
     }
 }

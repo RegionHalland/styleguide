@@ -2,6 +2,7 @@
     throttle()
     calculateScrollbarWidth()
     isMobileDevice()
+    Needed library: bodyScrollLock-2.6.3.min.js
 */
 
 $(document).ready(function () {

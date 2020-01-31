@@ -5,14 +5,14 @@
 
     &__header {
         &-title {
-            line-height: 1.375em; //25px
-            margin-bottom: 0.1em;
+            line-height: $contact-info__header-title--line-height; //25px
+            margin-bottom: $contact-info__header-title--margin-bottom;
 
-            font-size: 1.125em; //18px
+            font-size: $contact-info__header-title--font-size; //18px
             font-weight: bold;
 
             @include large {
-                font-size: 1.5em; //24px
+                font-size: $contact-info__header-title--large-font-size; //24px
             }
         }
     }

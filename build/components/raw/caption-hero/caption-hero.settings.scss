@@ -1,11 +1,11 @@
-$caption-hero--padding: .9375em;
-$caption-hero--background-color: $black;
+$caption-hero--padding: $space-5;
+$caption-hero--background-color: $black !default;
 $caption-hero--color: $white;
 $caption-hero--font-size: $h2-medium; //false
 
 // Rounded
 $caption-hero--rounded--border-radius--default: 0;
-$caption-hero--rounded--border-radius--medium: 0.4ex;
+$caption-hero--rounded--border-radius--medium: $space-2;
 
 // Secondary
 $caption-hero--secondary-background-color: $white;

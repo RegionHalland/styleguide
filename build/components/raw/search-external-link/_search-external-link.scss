@@ -11,26 +11,26 @@
 
         &-title {
             margin-top: .5em;
-            font-size: $search-external__header-title--font-size;
+            font-size: $font-size--medium;
             font-weight: bold;
 
-            @include medium {font-size: $search-external__header-title-medium--font-size;}
-            @include large {font-size: $search-external__header-title-large--font-size;}
+            @include medium {font-size: $font-size--large;}
+            @include large {font-size: $font-size--xl;}
         }
 
         &-icon-link {
             margin-top: .5em;
 
             >a {
-                font-size: $search-external__header-link--font-size;
-                @include medium {font-size: $search-external__header-link-medium--font-size;}//15px
+                font-size: $font-size--small;
+                @include medium {font-size: $font-size--medium;}//15px
             }
         }
     }
 
     &__description {
-        font-size: $search-external__description--font-size;
-        @include medium {font-size: $search-external__description-medium--font-size;}
+        font-size: $font-size--medium;
+        @include medium {font-size: $font-size--standard;}
     }
 
     &--default {
@@ -38,7 +38,7 @@
         background-color: $search-external-default--background-color;
 
         @if $search-external-default__icon {
-            // Reuse the component Atoms/circle-button - Change styling for icon
+            // Reuse the component Atoms/button-circle - Change styling for icon
             .rh-circle-button {
                 @if $search-external-default__icon--color {
                     color: $search-external-default__icon--color;
@@ -48,11 +48,11 @@
                 }
 
                 &:hover, &:active, &:focus {
-                    @if $search-external-default-effect__icon--color {
-                        color: $search-external-default-effect__icon--color;
+                    @if $search-external-default__icon--highlight-color {
+                        color: $search-external-default__icon--highlight-color;
                     }
-                    @if $search-external-default-effect__icon--background-color {
-                        background-color: $search-external-default-effect__icon--background-color;
+                    @if $search-external-default__icon--highlight-background-color {
+                        background-color: $search-external-default__icon--highlight-background-color;
                     }
                 }
             }
@@ -64,7 +64,7 @@
         background-color: $search-external-warning--background-color;
 
         @if $search-external-warning__icon {
-            // Reuse the component Atoms/circle-button - Change styling for icon
+            // Reuse the component Atoms/button-circle - Change styling for icon
             .rh-circle-button {
                 @if $search-external-warning__icon--color {
                     color: $search-external-warning__icon--color;
@@ -74,11 +74,11 @@
                 }
 
                 &:hover, &:active, &:focus {
-                    @if $search-external-warning-effect__icon--color {
-                        color: $search-external-warning-effect__icon--color;
+                    @if $search-external-warning__icon--highlight-color {
+                        color: $search-external-warning__icon--highlight-color;
                     }
-                    @if $search-external-warning-effect__icon--background-color {
-                        background-color: $search-external-warning-effect__icon--background-color;
+                    @if $search-external-warning__icon--highlight-background-color {
+                        background-color: $search-external-warning__icon--highlight-background-color;
                     }
                 }
             }

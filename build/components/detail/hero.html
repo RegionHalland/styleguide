@@ -125,7 +125,7 @@
 
 <div class="Status Status--tag">
 
-<label class="Status-label" style="background-color: green; border-color: green;">Stabil</label>
+<label class="Status-label" style="background-color: red; border-color: red;">Under utveckling</label>
 
 </div>
 
@@ -211,16 +211,16 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-4adb1d37ef5cdbe34d1912cdbd22fdc3-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-hero"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-hero__image-container"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-hero__image"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/images/components/Molecules/image-hero/hero-g-samtal.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-heroic"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"background: pink;"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-heroic__inner-container pb8 pt64"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"img"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"En beskrivning om bilden inte är ren dekoration"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"
+        background: url(/images/components/Molecules/image-hero/hero-g-samtal.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        "</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-heroic__caption rh-heroic__caption--rounded rh-heroic__caption--desktop"</span>&gt;</span>Björnbär sista händer ta sjö vemod själv, samtidigt räv nu plats.<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-caption-hero rh-dp-sm"</span>&gt;</span>
-        Ta steget mot ett nytt yrke
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-caption-hero rh-dp-from-md rh-bottom-3 rh-left-3"</span>&gt;</span>
-        Ta steget mot ett nytt yrke
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-dp-sm rh-heroic__caption"</span>&gt;</span>Björnbär sista händer ta sjö vemod själv, samtidigt räv nu plats.<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -229,11 +229,26 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-4adb1d37ef5cdbe34d1912cdbd22fdc3-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-hero"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-hero__image-container"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-hero__image"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{imageUrl}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
+        <pre><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">unless</span></span> fullscreen}}</span><span class="xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-heroic"</span> </span></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> backgroundColor}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-attr">style</span>=<span class="hljs-string">"background: </span></span></span><span class="hljs-template-variable">{{backgroundColor}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">;"</span></span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"><span class="hljs-tag">&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-heroic__inner-container </span></span></span><span class="hljs-template-variable">{{paddingBottom}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{paddingTop}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"img"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"En beskrivning om bilden inte är ren dekoration"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"
+        background: url(/images/components/Molecules/image-hero/hero-g-samtal.jpg);
+        background-size: </span></span></span><span class="hljs-template-variable">{{backgroundSize}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">;
+        background-repeat: </span></span></span><span class="hljs-template-variable">{{backgroundRepeat}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">;
+        background-position: center;
+        </span></span></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> right}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">justify-content: flex-end;</span></span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+</span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">unless</span></span>}}</span><span class="xml">
+</span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> fullscreen}}</span><span class="xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-heroic"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"img"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"En beskrivning om bilden inte är ren dekoration"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"
+        background: url(/images/components/Molecules/image-hero/hero-g-samtal.jpg);
+        background-size: </span></span></span><span class="hljs-template-variable">{{backgroundSize}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">;
+        background-repeat:</span></span></span><span class="hljs-template-variable">{{backgroundRepeat}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">;
+        background-position: center;"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-heroic__inner-container </span></span></span><span class="hljs-template-variable">{{paddingBottom}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> </span></span></span><span class="hljs-template-variable">{{paddingTop}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> right}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">justify-content: flex-end;</span></span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+</span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-heroic__caption rh-heroic__caption--rounded rh-heroic__caption--desktop"</span> </span></span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> centered}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-attr">style</span>=<span class="hljs-string">"margin: auto;"</span></span></span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml"><span class="hljs-tag">&gt;</span></span><span class="hljs-template-variable">{{captionText}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    </span><span class="hljs-template-variable">{{render '<a href="caption-hero.html">@caption-hero</a>' captionData merge=true}}</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-dp-sm rh-heroic__caption"</span>&gt;</span></span><span class="hljs-template-variable">{{captionText}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
@@ -244,10 +259,14 @@
         
             
             <pre>{
-  <span class="hljs-attr">"imageUrl"</span>: <span class="hljs-string">"/images/components/Molecules/image-hero/hero-g-samtal.jpg"</span>,
-  <span class="hljs-attr">"captionData"</span>: {
-    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Ta steget mot ett nytt yrke"</span>
-  }
+  <span class="hljs-attr">"fullscreen"</span>: <span class="hljs-string">""</span>,
+  <span class="hljs-attr">"backgroundColor"</span>: <span class="hljs-string">"pink"</span>,
+  <span class="hljs-attr">"backgroundSize"</span>: <span class="hljs-string">"cover"</span>,
+  <span class="hljs-attr">"paddingTop"</span>: <span class="hljs-string">"pt64"</span>,
+  <span class="hljs-attr">"paddingBottom"</span>: <span class="hljs-string">"pb8"</span>,
+  <span class="hljs-attr">"backgroundRepeat"</span>: <span class="hljs-string">"no-repeat"</span>,
+  <span class="hljs-attr">"centered"</span>: <span class="hljs-string">""</span>,
+  <span class="hljs-attr">"captionText"</span>: <span class="hljs-string">"Björnbär sista händer ta sjö vemod själv, samtidigt räv nu plats."</span>
 }</pre>
             
         
@@ -283,41 +302,35 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre><span class="hljs-selector-class">.rh-hero</span> {
-    <span class="hljs-comment">/* Positionering */</span>
-    <span class="hljs-attribute">position</span>: relative;
+                                <pre><span class="hljs-selector-class">.rh-heroic</span> {
+    &amp;__caption {
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+        <span class="hljs-attribute">background</span>: <span class="hljs-variable">$black</span>;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$space-6</span>;
+        <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$line-height--standard</span>;
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size--2xl</span>;
 
-    <span class="hljs-comment">/* Box-modell/beteende */</span>
-    <span class="hljs-attribute">display</span>: block;
-    <span class="hljs-attribute">width</span>: <span class="hljs-variable">$hero--width</span>;
-    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$hero--max-width</span> {
+        &amp;--desktop {
+            <span class="hljs-attribute">display</span>: none;
+            <span class="hljs-keyword">@include</span> medium {
+                <span class="hljs-attribute">display</span>: inline;
+            }
+        }
+
+        &amp;--secondary {
+            <span class="hljs-attribute">color</span>: <span class="hljs-variable">$black</span>;
+            <span class="hljs-attribute">background</span>: <span class="hljs-variable">$white</span>;
+        }
+
+        &amp;--rounded {
+            <span class="hljs-attribute">border-radius</span>: <span class="hljs-variable">$border-radius--medium</span>;
+        }
+    }
+
+    &amp;__inner-container {
+        <span class="hljs-attribute">display</span>:flex;
         <span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$hero--max-width</span>;
-    }
-    <span class="hljs-keyword">@if</span> <span class="hljs-variable">$hero--min-width</span> {
-        <span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$hero--min-width</span>;
-    }
-    <span class="hljs-attribute">overflow</span>: hidden;
-
-    <span class="hljs-keyword">@include</span> medium {
-        <span class="hljs-comment">/* Box-modell/beteende */</span>
-        <span class="hljs-attribute">max-height</span>: <span class="hljs-variable">$hero--medium--max-height</span>;
-    }
-
-    <span class="hljs-keyword">@include</span> large {
-        <span class="hljs-comment">/* Box-modell/beteende */</span>
-        <span class="hljs-attribute">max-height</span>: <span class="hljs-variable">$hero--large--max-height</span>;
-    }
-
-    &amp;__image-container {
-        <span class="hljs-attribute">max-height</span>: <span class="hljs-variable">$hero__image-container--max-height</span>;
-        <span class="hljs-attribute">width</span>: <span class="hljs-variable">$hero__image-container--width</span>;
-    }
-
-    &amp;__image {
-        <span class="hljs-comment">/* Box-modell/beteende */</span>
-        <span class="hljs-comment">//height: 100%;</span>
-        <span class="hljs-attribute">display</span>: block;
-        <span class="hljs-attribute">width</span>: <span class="hljs-variable">$hero__image--width</span>;
+        <span class="hljs-attribute">margin</span>: auto;
     }
 }
 </pre>
@@ -336,7 +349,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">791 Bytes</span>
+                    <span class="Meta-value">622 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -391,22 +404,8 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
                                 <pre><span class="hljs-comment">/* Box-modell/beteende */</span>
-<span class="hljs-variable">$hero--width</span>: <span class="hljs-number">100%</span>;
 <span class="hljs-variable">$hero--max-width</span>: <span class="hljs-number">90.0625em</span>; <span class="hljs-comment">//false - 1441px;</span>
-<span class="hljs-variable">$hero--min-width</span>: <span class="hljs-number">18em</span>; <span class="hljs-comment">//false - 288px - iPhone 5S (320px - 20em)</span>
-
-<span class="hljs-comment">// Medium</span>
-<span class="hljs-variable">$hero--medium--max-height</span>: <span class="hljs-number">18.75em</span>; <span class="hljs-comment">//300px;</span>
-
-<span class="hljs-comment">// Large</span>
-<span class="hljs-variable">$hero--large--max-height</span>: <span class="hljs-number">26.25em</span>; <span class="hljs-comment">//420px;</span>
-
-<span class="hljs-comment">// hero__image-container</span>
-<span class="hljs-variable">$hero__image-container--max-height</span>: <span class="hljs-number">25em</span>; <span class="hljs-comment">//400px</span>
-<span class="hljs-variable">$hero__image-container--width</span>: <span class="hljs-number">100%</span>;
-
-<span class="hljs-comment">// hero__image</span>
-<span class="hljs-variable">$hero__image--width</span>: <span class="hljs-number">100%</span>;</pre>
+</pre>
                             </code>
                             
                         </div>
@@ -422,7 +421,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">425 Bytes</span>
+                    <span class="Meta-value">73 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -443,6 +442,45 @@
         
         
         
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Variants <em class="Meta-count">(8)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="hero--default.html">
+                    <span>Default</span>
+                </a>, 
+            
+                <a href="hero--default-left-cover.html">
+                    <span>Default Left Cover</span>
+                </a>, 
+            
+                <a href="hero--default-left-contain.html">
+                    <span>Default Left Contain</span>
+                </a>, 
+            
+                <a href="hero--default-left-auto.html">
+                    <span>Default Left Auto</span>
+                </a>, 
+            
+                <a href="hero--fullscreen-centered-cover.html">
+                    <span>Fullscreen Centered Cover</span>
+                </a>, 
+            
+                <a href="hero--fullscreen-left-auto.html">
+                    <span>Fullscreen Left Auto</span>
+                </a>, 
+            
+                <a href="hero--fullscreen-left-contain.html">
+                    <span>Fullscreen Left Contain</span>
+                </a>, 
+            
+                <a href="hero--fullscreen-right-cover.html">
+                    <span>Fullscreen Right Cover</span>
+                </a>
+            
+            </span>
+        </li>
         
         <li class="Meta-item">
             <strong class="Meta-key">Preview:</strong>
@@ -466,15 +504,6 @@
             <span class="Meta-value">components/Molecules/hero/hero.hbs</span>
         </li>
         
-        <li class="Meta-item">
-            <strong class="Meta-key">References <em class="Meta-count">(1)</em>:</strong>
-            <span class="Meta-value Meta-value--linkList">
-            
-                <a href="caption-hero.html">@<span>caption-hero</span></a>
-            
-            </span>
-        </li class="Meta-item">
-        
         
     </ul>
 </div>
@@ -485,6 +514,10 @@
         
         <h1 id="herobild">Herobild</h1>
 <h2 id="versionhistorik">Versionhistorik:</h2>
+<h2 id="200-brytande-ändringar---totalt-omskriven">2.0.0 Brytande ändringar - totalt omskriven</h2>
+<ul>
+<li>Modifiers “–rounded” och “–secondary” finns kvar och beter sig som innan.</li>
+</ul>
 <h2 id="103">1.0.3</h2>
 <ul>
 <li>Bytt namn från “Image hero” till “Hero”</li>
@@ -1058,6 +1091,54 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="caption-hero--secondary.html" data-pjax>
                 <span>Secondary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="caption-hero--right.html" data-pjax>
+                <span>Right</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="caption-hero--centered.html" data-pjax>
+                <span>Centered</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2603,10 +2684,21 @@
         
     
         
-        
-        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a class="Tree-entityLink" href="" data-pjax>
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-hero">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
                 <span>Hero</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--default.html" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2614,7 +2706,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
 
 
 </div>
@@ -2623,6 +2715,387 @@
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--default-left-cover.html" data-pjax>
+                <span>Default Left Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--default-left-contain.html" data-pjax>
+                <span>Default Left Contain</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--default-left-auto.html" data-pjax>
+                <span>Default Left Auto</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--fullscreen-centered-cover.html" data-pjax>
+                <span>Fullscreen Centered Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--fullscreen-left-auto.html" data-pjax>
+                <span>Fullscreen Left Auto</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--fullscreen-left-contain.html" data-pjax>
+                <span>Fullscreen Left Contain</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--fullscreen-right-cover.html" data-pjax>
+                <span>Fullscreen Right Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-heroic">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Heroic</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--default-left-cover.html" data-pjax>
+                <span>Default Left Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--default-left-contain.html" data-pjax>
+                <span>Default Left Contain</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--default-left-auto.html" data-pjax>
+                <span>Default Left Auto</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--fullscreen-centered-cover.html" data-pjax>
+                <span>Fullscreen Centered Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--fullscreen-left-auto.html" data-pjax>
+                <span>Fullscreen Left Auto</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--fullscreen-left-contain.html" data-pjax>
+                <span>Fullscreen Left Contain</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--fullscreen-right-cover.html" data-pjax>
+                <span>Fullscreen Right Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     

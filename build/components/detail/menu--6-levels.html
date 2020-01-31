@@ -223,6 +223,7 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"rh-menu-main-button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-button-circle rh-button-circle--default rh-button-circle--large"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"0"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-menu rh-button-circle__icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"rh-menu-main-button"</span>&gt;</span>
+
 <span class="hljs-comment">&lt;!-- 6 levels version --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-menu__overlay rh-dp--none"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"rh-menu-body"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-menu__body rh-pos--fixed"</span>&gt;</span>
@@ -439,6 +440,7 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"rh-menu-main-button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-button-circle rh-button-circle--default rh-button-circle--large"</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"0"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-menu rh-button-circle__icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"rh-menu-main-button"</span>&gt;</span>
+
 </span><span class="hljs-comment">{{!-- Menu body group--}}</span><span class="xml">
 </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> isDefault}}</span><span class="xml">
 <span class="hljs-comment">&lt;!-- Standard version (3 levels) --&gt;</span>
@@ -1094,8 +1096,8 @@ body { overflow-x: hidden; } */</span>
     <span class="hljs-attr">"license"</span>: <span class="hljs-string">"GPL-3.0"</span>,
     <span class="hljs-attr">"authors"</span>: [
         {
-            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Roland Hydén"</span>,
-            <span class="hljs-attr">"email"</span>: <span class="hljs-string">"Roland.Hyden@Regionhalland.se"</span>
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Region Halland"</span>,
+            <span class="hljs-attr">"email"</span>: <span class="hljs-string">"webbplatser@regionhalland.se"</span>
         }
     ],
     <span class="hljs-attr">"require"</span>: {}
@@ -1133,6 +1135,8 @@ body { overflow-x: hidden; } */</span>
     throttle()
     calculateScrollbarWidth()
     isMobileDevice()
+
+    Needed library: bodyScrollLock-2.6.3.min.js
 */</span>
 
 $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
@@ -1325,76 +1329,76 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre><span class="hljs-comment">/* Molecules - Menu */</span>
-<span class="hljs-comment">// Base settings</span>
+                                <pre><span class="hljs-comment">/* Molecule - Menu */</span>
+<span class="hljs-comment">// --- Base settings ---</span>
 <span class="hljs-variable">$menu-color-main</span>: <span class="hljs-variable">$base3-dark</span>;
 <span class="hljs-variable">$menu-color__item-line</span>: <span class="hljs-variable">$base3</span>;
-<span class="hljs-variable">$menu-color__sub-style-1--background-color</span>: <span class="hljs-number">#f2fff0</span>;
-<span class="hljs-variable">$menu-color__sub-style-2--background-color</span>: <span class="hljs-number">#F7FAFD</span>;
-<span class="hljs-variable">$menu-color__sub-style-3--background-color</span>: <span class="hljs-number">#F4F4F4</span>;
+<span class="hljs-variable">$menu-color__sub-style-1--background-color</span>: <span class="hljs-variable">$base3-light</span>;
+<span class="hljs-variable">$menu-color__sub-style-2--background-color</span>: <span class="hljs-variable">$grey-lighter</span>;
+<span class="hljs-variable">$menu-color__sub-style-3--background-color</span>: <span class="hljs-variable">$grey-lightest</span>;
 
 <span class="hljs-variable">$menu-top-bar__height</span>: <span class="hljs-number">70px</span>;
 <span class="hljs-variable">$menu-overlay--z-index</span>: <span class="hljs-number">50</span>;
 
 <span class="hljs-variable">$menu-item--min-height</span>: <span class="hljs-number">3.75em</span>; <span class="hljs-comment">//60px</span>
-<span class="hljs-variable">$menu-item--border-bottom</span>: <span class="hljs-number">0.0625em</span> solid <span class="hljs-variable">$menu-color__item-line</span>;
+<span class="hljs-variable">$menu-item--border-bottom</span>: <span class="hljs-variable">$border-thin--standard</span> <span class="hljs-variable">$menu-color__item-line</span>;
 
 <span class="hljs-variable">$menu-body--min-width</span>: <span class="hljs-number">320px</span>;
 <span class="hljs-variable">$menu-body--max-width</span>: <span class="hljs-number">643px</span>;
 <span class="hljs-variable">$menu-body__offset-bottom</span>: <span class="hljs-number">90px</span>;
 <span class="hljs-variable">$menu-body--z-index</span>: <span class="hljs-number">60</span>; <span class="hljs-comment">//-&gt; Important</span>
+<span class="hljs-comment">// --- End of base settings ---</span>
 
 <span class="hljs-comment">// Other settings</span>
-<span class="hljs-variable">$menu-button-close--background-color</span>: <span class="hljs-number">#ffffff</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$menu-button-close--background-color</span>: <span class="hljs-variable">$white</span>; <span class="hljs-comment">//false</span>
 <span class="hljs-variable">$menu-button-close--color</span>: <span class="hljs-variable">$menu-color-main</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$menu-button-close--border</span>: <span class="hljs-number">0.0625em</span> solid <span class="hljs-variable">$menu-color-main</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$menu-button-close--border</span>: <span class="hljs-variable">$border-thin--standard</span> <span class="hljs-variable">$menu-color-main</span>; <span class="hljs-comment">//false</span>
 
 <span class="hljs-variable">$menu-button-close--hover-active</span>: true; <span class="hljs-comment">//-&gt; Important</span>
-<span class="hljs-variable">$menu-button-close--background-color-hover-active</span>: <span class="hljs-number">#ffffff</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$menu-button-close--background-color-hover-active</span>: <span class="hljs-variable">$white</span>; <span class="hljs-comment">//false</span>
 <span class="hljs-variable">$menu-button-close--color-hover-active</span>: <span class="hljs-variable">$menu-color-main</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$menu-button-close--border-hover-active</span>: <span class="hljs-number">0.0625em</span> solid <span class="hljs-variable">$menu-color-main</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$menu-button-close--border-hover-active</span>: <span class="hljs-variable">$border-thin--standard</span> <span class="hljs-variable">$menu-color-main</span>; <span class="hljs-comment">//false</span>
 
-<span class="hljs-variable">$menu-top-bar--background-color</span>: <span class="hljs-number">#ffffff</span>;
-<span class="hljs-variable">$menu-top-bar--box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">0.0625em</span> <span class="hljs-number">0.25em</span> rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.3</span>);
+<span class="hljs-variable">$menu-top-bar--background-color</span>: <span class="hljs-variable">$white</span>;
+<span class="hljs-variable">$menu-top-bar--box-shadow</span>: <span class="hljs-variable">$box-shadow--standard</span> <span class="hljs-variable">$color-shadow</span>;
 
 <span class="hljs-variable">$menu-overlay--background-color</span>: rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.3</span>);
 
-<span class="hljs-variable">$menu-item-link--color</span>: <span class="hljs-number">#000000</span>;
-<span class="hljs-variable">$menu-item-link--line-height</span>: <span class="hljs-number">1.4em</span>;
+<span class="hljs-variable">$menu-item-link--color</span>: <span class="hljs-variable">$black</span>;
+<span class="hljs-variable">$menu-item-link--line-height</span>: <span class="hljs-variable">$line-height--xl</span>;
 <span class="hljs-variable">$menu-item-link--font-weight-active</span>: bold;
 
-<span class="hljs-variable">$menu-item-link__level-1--font-size</span>: <span class="hljs-number">1.125em</span>; <span class="hljs-comment">//18px</span>
+<span class="hljs-variable">$menu-item-link__level-1--font-size</span>: <span class="hljs-variable">$font-size--large</span>; <span class="hljs-comment">//18px</span>
 <span class="hljs-variable">$menu-item-link__level-1--font-weight</span>: bold;
-<span class="hljs-variable">$menu-item-link__level-1--color</span>: <span class="hljs-number">#ffffff</span>;
+<span class="hljs-variable">$menu-item-link__level-1--color</span>: <span class="hljs-variable">$white</span>;
 
-<span class="hljs-variable">$menu-item-button-parent--background-color</span>: <span class="hljs-number">#ffffff</span>;
+<span class="hljs-variable">$menu-item-button-parent--background-color</span>: <span class="hljs-variable">$white</span>;
 <span class="hljs-variable">$menu-item-button-parent--color</span>: <span class="hljs-variable">$menu-color-main</span>;
 
 <span class="hljs-variable">$menu-item-button-parent-hover-active</span>: true; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$menu-item-button-parent--background-color-hover-active</span>: <span class="hljs-number">#ffffff</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$menu-item-button-parent--background-color-hover-active</span>: <span class="hljs-variable">$white</span>; <span class="hljs-comment">//false</span>
 <span class="hljs-variable">$menu-item-button-parent--color-hover-active</span>: <span class="hljs-variable">$menu-color-main</span>; <span class="hljs-comment">//false</span>
 
 <span class="hljs-variable">$menu-item__level-1--background-color</span>: <span class="hljs-variable">$menu-color-main</span>;
-<span class="hljs-variable">$menu-item__level-1--color</span>: <span class="hljs-number">#ffffff</span>;
+<span class="hljs-variable">$menu-item__level-1--color</span>: <span class="hljs-variable">$white</span>;
 
-<span class="hljs-variable">$menu-sub-item-button--background-color</span>: <span class="hljs-number">#ffffff</span>;
+<span class="hljs-variable">$menu-sub-item-button--background-color</span>: <span class="hljs-variable">$white</span>;
 <span class="hljs-variable">$menu-sub-item-button--color</span>: <span class="hljs-variable">$menu-color-main</span>;
-<span class="hljs-variable">$menu-sub-item-button--border</span>: <span class="hljs-number">0.0625em</span> solid <span class="hljs-variable">$menu-color-main</span>;
+<span class="hljs-variable">$menu-sub-item-button--border</span>: <span class="hljs-variable">$border-thin--standard</span> <span class="hljs-variable">$menu-color-main</span>;
 
 <span class="hljs-variable">$menu-sub-item-button-hover-active</span>: true; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$menu-sub-item-button--background-color-hover-active</span>: <span class="hljs-number">#ffffff</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$menu-sub-item-button--background-color-hover-active</span>: <span class="hljs-variable">$white</span>; <span class="hljs-comment">//false</span>
 <span class="hljs-variable">$menu-sub-item-button--color-hover-active</span>: <span class="hljs-variable">$menu-color-main</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$menu-sub-item-button--border-hover-active</span>: <span class="hljs-number">0.0625em</span> solid <span class="hljs-variable">$menu-color-main</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$menu-sub-item-button--border-hover-active</span>: <span class="hljs-variable">$border-thin--standard</span> <span class="hljs-variable">$menu-color-main</span>; <span class="hljs-comment">//false</span>
 
 <span class="hljs-variable">$menu-sub-item-button-active--background-color</span>: <span class="hljs-variable">$menu-color-main</span>;
-<span class="hljs-variable">$menu-sub-item-button-active--color</span>: <span class="hljs-number">#ffffff</span>;
-<span class="hljs-variable">$menu-sub-item-button-active--border</span>: <span class="hljs-number">0.0625em</span> solid <span class="hljs-variable">$menu-color-main</span>;
+<span class="hljs-variable">$menu-sub-item-button-active--color</span>: <span class="hljs-variable">$white</span>;
+<span class="hljs-variable">$menu-sub-item-button-active--border</span>: <span class="hljs-variable">$border-thin--standard</span> <span class="hljs-variable">$menu-color-main</span>;
 
 <span class="hljs-variable">$menu-sub-item-button-active-hover-active</span>: true; <span class="hljs-comment">//false</span>
 <span class="hljs-variable">$menu-sub-item-button-active--background-color-hover-active</span>: <span class="hljs-variable">$menu-color-main</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$menu-sub-item-button-active--color-hover-active</span>: <span class="hljs-number">#ffffff</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$menu-sub-item-button-active--border-hover-active</span>: <span class="hljs-number">0.0625em</span> solid <span class="hljs-variable">$menu-color-main</span>; <span class="hljs-comment">//false</span>
-
+<span class="hljs-variable">$menu-sub-item-button-active--color-hover-active</span>: <span class="hljs-variable">$white</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$menu-sub-item-button-active--border-hover-active</span>: <span class="hljs-variable">$border-thin--standard</span> <span class="hljs-variable">$menu-color-main</span>; <span class="hljs-comment">//false</span>
 </pre>
                             </code>
                             
@@ -1411,7 +1415,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.8 KB</span>
+                    <span class="Meta-value">2.9 KB</span>
                 </li>
             </ul>
         </div>
@@ -1490,6 +1494,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 </ul>
 <h2 id="versionshistorik">Versionshistorik</h2>
 <ul>
+<li>1.0.0.20200128 Globala variabler används</li>
 <li>1.0.0.20200123 Uppdaterat till ny syntax för “button circle”</li>
 <li>1.0.0.20200103 Uppdaterat readme</li>
 <li>1.0.0.20191122 Flyttat till gitrepo</li>
@@ -1532,9 +1537,9 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <li>o.s.v.</li>
 </ul>
 <h4 id="23-huvudstruktur">2.3. Huvudstruktur</h4>
-<pre><code>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-menu__overlay"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-menu__overlay"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"rh-menu-body"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-menu__body"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"rh-menu-body"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-menu__body"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-menu__top-bar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
     <span class="hljs-comment">&lt;!-- Item list --&gt;</span>
@@ -1556,7 +1561,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"offset-bottom"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 </code></pre><p><strong>OBS!</strong> Klasserna som har använts är bara huvudklasser och menyn behöver också många andra klasser för att fungera som det ska.</p>
 <h2 id="3-versionhistorik">3. Versionhistorik</h2>
 <h3 id="100-201911181340-2019-11-18">1.0.0-201911181340 (2019-11-18)</h3>
@@ -2116,6 +2121,54 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="caption-hero--secondary.html" data-pjax>
                 <span>Secondary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="caption-hero--right.html" data-pjax>
+                <span>Right</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="caption-hero--centered.html" data-pjax>
+                <span>Centered</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3661,10 +3714,21 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-hero">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Hero</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="hero.html" data-pjax>
-                <span>Hero</span>
+            <a class="Tree-entityLink" href="hero--default.html" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3672,7 +3736,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
 
 
 </div>
@@ -3681,6 +3745,387 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--default-left-cover.html" data-pjax>
+                <span>Default Left Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--default-left-contain.html" data-pjax>
+                <span>Default Left Contain</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--default-left-auto.html" data-pjax>
+                <span>Default Left Auto</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--fullscreen-centered-cover.html" data-pjax>
+                <span>Fullscreen Centered Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--fullscreen-left-auto.html" data-pjax>
+                <span>Fullscreen Left Auto</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--fullscreen-left-contain.html" data-pjax>
+                <span>Fullscreen Left Contain</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--fullscreen-right-cover.html" data-pjax>
+                <span>Fullscreen Right Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-heroic">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Heroic</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--default-left-cover.html" data-pjax>
+                <span>Default Left Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--default-left-contain.html" data-pjax>
+                <span>Default Left Contain</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--default-left-auto.html" data-pjax>
+                <span>Default Left Auto</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--fullscreen-centered-cover.html" data-pjax>
+                <span>Fullscreen Centered Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--fullscreen-left-auto.html" data-pjax>
+                <span>Fullscreen Left Auto</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--fullscreen-left-contain.html" data-pjax>
+                <span>Fullscreen Left Contain</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--fullscreen-right-cover.html" data-pjax>
+                <span>Fullscreen Right Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     

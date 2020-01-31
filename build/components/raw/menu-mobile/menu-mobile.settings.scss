@@ -31,7 +31,7 @@ $menu-dropdown__text--active--font-weight: bold;
 $menu-dropdown__button-main-menu--padding: 0 .55em;
 $menu-dropdown__button-main-menu--height: 2.1875em;
 $menu-dropdown__button-main-menu--width: 2.1875em;
-$menu-dropdown__button-main-menu--border: 0.0625em solid $menu-dropdown__color-main;
+$menu-dropdown__button-main-menu--border: $border-thin--standard $menu-dropdown__color-main;
 
 $menu-dropdown__icon-menu--margin: 0.565em 0 0 0;
 $menu-dropdown__icon-item--margin: 0.09375em 1.875em 0 0.03125em;
@@ -40,7 +40,7 @@ $menu-dropdown__header--height: 5em;
 $menu-dropdown__header--padding: 0 0.75em 0 0.4em;
 $menu-dropdown__header-effect: height .3s ease-in-out;
 $menu-dropdown__header-effect-webkit: height .3s; /* Older Safari */
-$menu-dropdown__header-effect--box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+$menu-dropdown__header-effect--box-shadow: $box-shadow--standard $color-shadow;
 
 $menu-dropdown__header-logo--width: 100%;
 $menu-dropdown__header-logo-container--width: 85%;
@@ -59,10 +59,10 @@ $menu-dropdown__item--border-style: solid;
 $menu-dropdown__item--border-color: #d3d3d2;
 $menu-dropdown__item--border-width: 0 0 0.0625em 0;
 
-$menu-dropdown__item-button--border: 1px solid $menu-dropdown__color-main;
+$menu-dropdown__item-button--border: $border-thin--standard $menu-dropdown__color-main;
 $menu-dropdown__item-button--margin: 0 1em 0 0;
 $menu-dropdown__item-button--height: 1.667em;
 $menu-dropdown__item-button--width: 1.667em;
-$menu-dropdown__item-button--open--border: 0.0625em solid $menu-dropdown__color-main;
+$menu-dropdown__item-button--open--border: $border-thin--standard $menu-dropdown__color-main;
 
 $menu-dropdown__footer--min-height: 5.625em;

@@ -1,4 +1,8 @@
 /* Molecules - Block */
+// --- Base settings ---
+$BLOCK--MAIN-COLOR: $base3;
+// --- End of base settings ---
+
 $block--width: 100%; // Can using "false" - 100% is useful when using grid system
 $block--background: $white;
 
@@ -8,11 +12,11 @@ $block__text-title--color: false;//false
 $block__text-title--font-weight: bold;
 
 $block__box--max-width: false; //26em; //416px
-$block__box--border-top: 0.0625em solid $grey-lighter;
-$block__box--border-right: 0.0625em solid $grey-lighter;
-$block__box--border-bottom: 0.25em solid $base3;
-$block__box--border-left: 0.0625em solid $grey-lighter;
-$block__box--border-radius: 0.375em;
+$block__box--border-top: $border-thin--standard $grey-lighter;
+$block__box--border-right: $border-thin--standard $grey-lighter;
+$block__box--border-bottom: 0.25em solid $BLOCK--MAIN-COLOR;
+$block__box--border-left: $border-thin--standard $grey-lighter;
+$block__box--border-radius: 0.375em; // 6px
 
 $block__img--width: 100%;
 $block__img--margin-bottom: -0.625em; //-10px
@@ -41,10 +45,10 @@ $block__box-clickable__description--text-color-hover: $block__box-clickable__des
 $block__box-clickable__description--text-decoration-hover: $block__box-clickable__description--text-decoration; //false
 
 // Box - :hover and :active
-$block__box--hover-border-top: 0.0625em solid $base3;
-$block__box--hover-border-right: 0.0625em solid $base3;
-$block__box--hover-border-left: 0.0625em solid $base3;
-$block__box--hover-box-shadow: 0 0.125em 0.5em rgba(0, 0, 0, 0.3);
+$block__box--hover-border-top: $border-thin--standard $BLOCK--MAIN-COLOR;
+$block__box--hover-border-right: $border-thin--standard $BLOCK--MAIN-COLOR;
+$block__box--hover-border-left: $border-thin--standard $BLOCK--MAIN-COLOR;
+$block__box--hover-box-shadow: $box-shadow--standard $color-shadow;
 
 // Box - :focus-within
-$block__box-tabbing--focus-box-shadow: 0 0.125em 0.5em rgba(0, 0, 0, 0.3);
+$block__box-tabbing--focus-box-shadow: $box-shadow--standard $color-shadow;

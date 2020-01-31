@@ -7,9 +7,8 @@
     /* Typografi */
     text-align: $block--text-align;
 
-    /* Visuellt */ 
+    /* Visuellt */
     background: $block--background;
-
 
     &-image {
         overflow: hidden;
@@ -46,7 +45,6 @@
 
             font-weight: $block__text-title--font-weight;
         }
-
 
         &__description {} // The empty class is using for clickable effect
     }
@@ -93,12 +91,5 @@
             $block__box-clickable__description--text-color-hover, //Description text color
             $block__box-clickable__description--text-decoration-hover //Description text decoration
         );
-    }
-
-    &--focus {
-        border-top: $block__box--hover-border-top;
-        border-right: $block__box--hover-border-right;
-        border-left: $block__box--hover-border-left;
-        box-shadow: $block__box-tabbing--focus-box-shadow;
     }
 }

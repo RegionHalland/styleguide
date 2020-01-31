@@ -721,24 +721,24 @@
 <h2 id="3-ikon">3. Ikon</h2>
 <p>Klassen <code>rh-button-circle__icon</code> används för att man kan kontrollera ikons stil <em>(storlek, färg o.s.v.)</em>. Klassen behövs också när man använder storlekarna <code>--large</code> och <code>--xlarge</code>.</p>
 <p>Exempel:</p>
-<pre><code>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-button-circle rh-button-circle--primary rh-button-circle--large"</span>&gt;
-    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-arrow-right rh-button-circle__icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>
-<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre><p><strong>TIPS</strong>! Man kan också justera ikons position genom att skapa egen CSS-klass och påverka <code>padding*</code> property. Se nedan för exempel:</p>
+<pre><code>&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"rh-button-circle rh-button-circle--primary rh-button-circle--large"</span>&gt;
+    &lt;span <span class="hljs-built_in">class</span>=<span class="hljs-string">"icon-arrow-right rh-button-circle__icon"</span>&gt;&lt;/span&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre><p><strong>TIPS</strong>! Man kan också justera ikons position genom att skapa egen CSS-klass och påverka <code>padding*</code> property. Se nedan för exempel:</p>
 <pre><code>.align-icon {
     padding-top: <span class="hljs-number">0.1</span>em;
 }
 
-&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-button-circle rh-button-circle--medium align-icon"</span>&gt;
-    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>
-<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre><h2 id="4-användning">4. Användning</h2>
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"rh-button-circle rh-button-circle--medium align-icon"</span>&gt;
+    &lt;span <span class="hljs-built_in">class</span>=<span class="hljs-string">"icon-arrow-right"</span>&gt;&lt;/span&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre><h2 id="4-användning">4. Användning</h2>
 <p><code>rh-button-circle &lt;variant-typ&gt; &lt;variant-storlek&gt;</code></p>
 <h3 id="41-standard">4.1. Standard</h3>
-<pre><code>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-button-circle rh-button-circle--primary rh-button-circle--small"</span>&gt;
-    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-plus"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>
-<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre><h3 id="42-border">4.2. Border</h3>
-<pre><code>&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"rh-button-circle rh-button-circle--secondary rh-button-circle--large rh-button-circle--border"</span>&gt;
-    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-arrow-right rh-button-circle__icon"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>
-<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre><h3 id="43-länkbar">4.3. Länkbar</h3>
+<pre><code>&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"rh-button-circle rh-button-circle--primary rh-button-circle--small"</span>&gt;
+    &lt;span <span class="hljs-built_in">class</span>=<span class="hljs-string">"icon-plus"</span>&gt;&lt;/span&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre><h3 id="42-border">4.2. Border</h3>
+<pre><code>&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"rh-button-circle rh-button-circle--secondary rh-button-circle--large rh-button-circle--border"</span>&gt;
+    &lt;span <span class="hljs-built_in">class</span>=<span class="hljs-string">"icon-arrow-right rh-button-circle__icon"</span>&gt;&lt;/span&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;</code></pre><h3 id="43-länkbar">4.3. Länkbar</h3>
 <p>Man kan också använda <code>&lt;a&gt;</code> tag runt om komponenten för att det blir länkbar.</p>
 <pre><code><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-button-circle rh-button-circle--warning rh-button-circle--small"</span>&gt;</span>
@@ -1331,6 +1331,54 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="caption-hero--secondary.html" data-pjax>
                 <span>Secondary</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="caption-hero--right.html" data-pjax>
+                <span>Right</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="caption-hero--centered.html" data-pjax>
+                <span>Centered</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2876,10 +2924,21 @@
         
     
         
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-hero">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Hero</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="hero.html" data-pjax>
-                <span>Hero</span>
+            <a class="Tree-entityLink" href="hero--default.html" data-pjax>
+                <span>Default</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2887,7 +2946,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: green;" title="Stabil"></span>
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
 
 
 </div>
@@ -2896,6 +2955,387 @@
 
 
             </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--default-left-cover.html" data-pjax>
+                <span>Default Left Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--default-left-contain.html" data-pjax>
+                <span>Default Left Contain</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--default-left-auto.html" data-pjax>
+                <span>Default Left Auto</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--fullscreen-centered-cover.html" data-pjax>
+                <span>Fullscreen Centered Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--fullscreen-left-auto.html" data-pjax>
+                <span>Fullscreen Left Auto</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--fullscreen-left-contain.html" data-pjax>
+                <span>Fullscreen Left Contain</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero--fullscreen-right-cover.html" data-pjax>
+                <span>Fullscreen Right Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-heroic">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Heroic</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--default-left-cover.html" data-pjax>
+                <span>Default Left Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--default-left-contain.html" data-pjax>
+                <span>Default Left Contain</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--default-left-auto.html" data-pjax>
+                <span>Default Left Auto</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--fullscreen-centered-cover.html" data-pjax>
+                <span>Fullscreen Centered Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--fullscreen-left-auto.html" data-pjax>
+                <span>Fullscreen Left Auto</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--fullscreen-left-contain.html" data-pjax>
+                <span>Fullscreen Left Contain</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="heroic--fullscreen-right-cover.html" data-pjax>
+                <span>Fullscreen Right Cover</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: red;" title="Under utveckling"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
         </li>
         
     

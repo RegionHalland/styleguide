@@ -9,7 +9,7 @@ $button--box-shadow: $box-shadow--standard $color-shadow;
 $button-text--color: $black;
 $button-text--text-align: center;
 $button-text--font-size: $font-size--small; //false
-$button-text--line-height: $line-height-1;
+$button-text--line-height: $line-height--small;
 $button--text-decoration: none;
 
 $button--padding: 0.625em; //true or false or em/px
@@ -25,7 +25,7 @@ $button--padding-right-medium: $button--padding-medium;
 $button--padding-bottom-medium: $button--padding-medium;
 $button--padding-left-medium: $button--padding-medium;
 $button-text--font-size-medium: $font-size-medium; //false
-$button-text--line-height-medium: 1.3125em;
+$button-text--line-height-medium: $line-height--medium;
 
 // Large breakpoint
 $button--padding-large: 0.625em; //true or false or em/px
@@ -34,7 +34,7 @@ $button--padding-right-large: $button--padding-large;
 $button--padding-bottom-large: $button--padding-large;
 $button--padding-left-large: $button--padding-large;
 $button-text--font-size-large: $font-size-large; //false
-$button-text--line-height-large: 1.5em;
+$button-text--line-height-large: $line-height--2xl;
 
 // Hover
 $button--hover-text-decoration: underline; //false

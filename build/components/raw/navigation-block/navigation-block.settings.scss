@@ -1,22 +1,28 @@
 /// Molecule - Navigation block
+// --- Base settings ---
+$NAVIGATION-BLOCK--MAIN-COLOR: $base3;
+$NAVIGATION-BLOCK--HIGHLIGHT-COLOR: $base3-light;
+$NAVIGATION-BLOCK__ICON--HIGHLIGHT-COLOR: $base3-dark;
+// --- End of base settings ---
+
 $navigation-block--min-height: 3.75em; //60px
 $navigation-block--width: 100%; // false - 100% is useful when using in grid system
 $navigation-block--min-width: false; //false
 $navigation-block--max-width: false; //false
 
-$navigation-block--border: 0.0625em solid $base3;
-$navigation-block--border-radius: 0.375em; //6px
+$navigation-block--border: $border-thin--standard $NAVIGATION-BLOCK--MAIN-COLOR;
+$navigation-block--border-radius: $border-radius--medium; //6px
 $navigation-block--padding: 0.875em; //14px
 $navigation-block--background-color: $grey-lightest;
 
 $navigation-block__header-round-button--border: false;//false
-$navigation-block__header-round-button--background-color: $base3;//false
-$navigation-block__header-round-button--icon-color: #ffffff;//false
+$navigation-block__header-round-button--background-color: $NAVIGATION-BLOCK--MAIN-COLOR;//false
+$navigation-block__header-round-button--icon-color: $white;//false
 
 $navigation-block__header-round-button--hover-active: true; //false
 $navigation-block__header-round-button--border-hover-active: false;//false
-$navigation-block__header-round-button--background-color-hover-active: $base3-light;//false
-$navigation-block__header-round-button--icon-color-hover-active: $base3-dark;//false
+$navigation-block__header-round-button--background-color-hover-active: $NAVIGATION-BLOCK--HIGHLIGHT-COLOR;//false
+$navigation-block__header-round-button--icon-color-hover-active: $NAVIGATION-BLOCK__ICON--HIGHLIGHT-COLOR;//false
 
 $navigation-block__header-round-button--cursor: false; //false
 
@@ -24,10 +30,10 @@ $navigation-block__header-title--margin: 0.18em 0 0 0.5em;
 $navigation-block__header-title--margin-large: 0.05em 0 0 0.5em;
 
 $navigation-block__header-title-link--color: false;
-$navigation-block__header-title-link--font-size: 1.125em; //18px
-$navigation-block__header-title-link--font-size-large: 1.25em;
+$navigation-block__header-title-link--font-size: $font-size--large; //18px
+$navigation-block__header-title-link--font-size-large: $font-size--xl; // 20px
 $navigation-block__header-title-link--font-weight: bold;
-$navigation-block__header-title-link--line-height: 1.4em;
+$navigation-block__header-title-link--line-height: $line-height--xl;
 $navigation-block__header-title-link--word-break: break-word;
 
 $navigation-block__description--margin: .5em 0 0 0; //false
@@ -36,9 +42,9 @@ $navigation-block__description-text--color: false;
 // Effects :hover - :active - :focus - :focus-within
 $navigation-block-effect__box-outside: true; //Activating outside effect - ONLY true or false
 $navigation-block-effect__content-inside: true; //Activating inside effect - ONLY true or false
-$navigation-block-effect--border: 0.0625em solid $base3;
-$navigation-block-effect--box-shadow: 0 0.125em 0.5em rgba(0, 0, 0, 0.3); //Using for :hover and :active
-$navigation-block-effect-focus--box-shadow: 0 0.125em 0.5em rgba(0, 0, 0, 0.3); //Using for :focus and :focus-within
+$navigation-block-effect--border: $border-thin--standard $NAVIGATION-BLOCK--MAIN-COLOR;
+$navigation-block-effect--box-shadow: $box-shadow--standard $color-shadow; //Using for :hover and :active
+$navigation-block-effect-focus--box-shadow: $box-shadow--standard $color-shadow; //Using for :focus and :focus-within
 $navigation-block-effect--title-text-color: false;
 $navigation-block-effect--title-text-decoration: underline; //Only underline or none
 $navigation-block-effect--description-text-color: false;

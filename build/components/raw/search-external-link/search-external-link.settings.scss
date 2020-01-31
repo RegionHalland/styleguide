@@ -15,21 +15,11 @@ $search-external-warning--background-color: $warning-light;
 $search-external-default__icon: true; // Activating styling for icon - Using only true or false
 $search-external-default__icon--color: false; //false
 $search-external-default__icon--background-color: false; //false
-$search-external-default-effect__icon--color: false; //false
-$search-external-default-effect__icon--background-color: false; //false
+$search-external-default__icon--highlight-color: false; //false
+$search-external-default__icon--highlight-background-color: false; //false
 
 $search-external-warning__icon: true; // Activating styling for icon - Using only true or false
-$search-external-warning__icon--color: #ffffff; //false
+$search-external-warning__icon--color: $white; //false
 $search-external-warning__icon--background-color: $warning-dark; //false
-$search-external-warning-effect__icon--color: #ffffff; //false
-$search-external-warning-effect__icon--background-color: $warning; //false
-
-$search-external__header-title--font-size: $FONT-SIZE--MEDIUM; //15px
-$search-external__header-title-medium--font-size: $FONT-SIZE--LARGE; //18px
-$search-external__header-title-large--font-size: $FONT-SIZE--XLARGE; //20px
-
-$search-external__header-link--font-size: $FONT-SIZE--SMALL; //14px
-$search-external__header-link-medium--font-size: $FONT-SIZE--MEDIUM; //15px
-
-$search-external__description--font-size: $FONT-SIZE--MEDIUM; //15px
-$search-external__description-medium--font-size: $FONT-SIZE--STANDARD; //16px
+$search-external-warning__icon--highlight-color: $white; //false
+$search-external-warning__icon--highlight-background-color: $warning; //false
