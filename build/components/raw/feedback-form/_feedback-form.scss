@@ -31,13 +31,13 @@
         &__label {
             /* Typografi */
             font-size: $feedback-form__body__label--font-size; // 15px
-            
+
             &-message {
                 /* Box-modell/beteende */
                 margin: 1em 0 0.3125em 0;
 
                 /* Typografi */
-                line-height: 1.4em;
+                line-height: $line-height--xl;
             }
 
             &-email {

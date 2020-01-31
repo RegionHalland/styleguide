@@ -1,9 +1,9 @@
 // Title
-$rh-shortcuts__title--color: black;
+$rh-shortcuts__title--color: $black;
 
 // Hr
 $rh-shortcuts-hr--width: 100%;
-$rh-shortcuts-hr--margin-bottom: em(22);
+$rh-shortcuts-hr--margin-bottom: 1.375em; //em(22);
 $rh-shortcuts-hr--border-top: 0.5px solid $complementary2;
 $rh-shortcuts-hr--border-left: 0;
 $rh-shortcuts-hr--border-bottom: 0;
@@ -13,16 +13,16 @@ $rh-shortcuts-hr--border-right: 0;
 $rh-shortcuts-hr--medium--border: 2px solid $complementary2;
 
 // Listgroup
-$rh-shortcuts__listgroup--padding: em(15);
+$rh-shortcuts__listgroup--padding: 0.9375em; //em(15);
 $rh-shortcuts__listgroup--background-color: $complementary2-light;
 $rh-shortcuts__listgroup--border-left: 5px solid $complementary2;
-$rh-shortcuts__listgroup--border-radius: 4px;
+$rh-shortcuts__listgroup--border-radius: $border-radius--standard;
 
 // Shortcuts item
-$rh-shortcuts__item--margin-bottom: em(35);
+$rh-shortcuts__item--margin-bottom: 2.1875em; //em(35);
 $rh-shortcuts__item--color: $black;
 $rh-shortcuts__item--font-size: $p-medium;
-$rh-shortcuts__item--last-child--margin-bottom: em(0);
+$rh-shortcuts__item--last-child--margin-bottom: 0;
 
 // Shortcuts item - medium
 $rh-shortcuts__item--medium--font-size: $p-medium;
@@ -45,4 +45,4 @@ $rh-shortcuts__item-link--focus--background-color: $complementary2;
 $rh-shortcuts__item-link--focus--color: $black;
 $rh-shortcuts__item-link--focus--outline: none;
 $rh-shortcuts__item-link--focus--padding: .3ex;
-$rh-shortcuts__item-link--focus--border-radius: 5px;
+$rh-shortcuts__item-link--focus--border-radius: $border-radius--standard;

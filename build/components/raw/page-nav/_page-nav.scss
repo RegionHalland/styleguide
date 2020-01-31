@@ -9,24 +9,24 @@
 
     .rh-page-nav-title {
         /* Box-modell/beteende */
-        margin-bottom: em(5);
+        margin-bottom: $space-1;//em(5);
 
         /* Typografi */
-        font-size: em(24);
+        font-size: $font-size--3xl; //em(24);
     }
 
     .rh-page-nav {
         /* Box-modell/beteende */
-        padding-bottom: em(10);
-        padding-left: em(10);
+        padding-bottom: $space-3;//em(10);
+        padding-left: $space-3;//em(10);
         border-left: 2px solid $grey-lighter;
 
         &-item {
             /* Box-modell/beteende */
-            margin-top: em(20);
-            margin-left: em(-12);
-            padding-left: em(10);
-            padding-bottom: em(5);
+            margin-top: $space-5;//em(20);
+            margin-left: -$space-3; //em(-12);
+            padding-left: $space-3; //em(10);
+            padding-bottom: $space-1; //em(5);
 
             /* Visuellt */
             border-left: 2px solid transparent;

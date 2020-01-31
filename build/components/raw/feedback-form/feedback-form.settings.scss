@@ -7,14 +7,14 @@ $feedback-form--min-width: 18em; // 20em - 320px - iPhone 5/SE
 $feedback-form--max-width: 40em; // 640px - Design
 
 // Font-size
-$feedback-form__header__title--font-size: 1.25em;
-$feedback-form__body__label--font-size: .9375em;
+$feedback-form__header__title--font-size: $font-size--xl;
+$feedback-form__body__label--font-size: $font-size--medium;
 
 // Other
 $feedback-form__body--margin: 0.4em 0 0 0;
 $feedback-form__body--padding: 1.5625em 0.875em 1.875em 0.875em;
-$feedback-form__body--border-radius: 0.25em; // 4px
-$feedback-form__body--background-color: #f4f4f4;
+$feedback-form__body--border-radius: $border-radius--standard; // 4px
+$feedback-form__body--background-color: $grey-lightest;
 
 $feedback-form__body__description--margin: 0 0 2.2em 0;
 

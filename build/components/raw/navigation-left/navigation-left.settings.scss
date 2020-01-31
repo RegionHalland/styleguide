@@ -1,24 +1,27 @@
-/* Molecules - Navigation left */
-$navigation-left__header--padding: 0.6875em 0.8125em;
-$navigation-left__header--background-color: $base3-dark; //#005069
-$navigation-left__header--border-radius: 0.25em 0.25em 0 0;
+/* Molecule - Navigation left */
+// --- Base settings ---
+$navigation-left__header--background-color: $base3-dark;
+$navigation-left__item--hover-background-color: $base3-light;
+// --- End of base settings ---
 
-$navigation-left__header-text--color: #ffffff;
-$navigation-left__header-text--font-size: 1.25em;
+$navigation-left__header--padding: 0.6875em 0.8125em;
+$navigation-left__header--border-radius: $border-radius--standard $border-radius--standard 0 0;
+
+$navigation-left__header-text--color: $white;
+$navigation-left__header-text--font-size: $font-size--xl;
 $navigation-left__header-text--font-weight: bold;
 $navigation-left__header-text--word-break: break-word;
-$navigation-left__header-text--line-height: 1.4375em;
+$navigation-left__header-text--line-height: $line-height--2xl;
 
-$navigation-left__item--min-height: 3.75em;
+$navigation-left__item--min-height: $line-height--2xl; //3.75em;
 $navigation-left__item--border-style: solid;
 $navigation-left__item--border-width: 0 0.0625em 0.0625em 0.0625em;
-$navigation-left__item--border-color: #d1d1d1;
-$navigation-left__item--hover-background-color: $base3-light;//#D9E4EA;
+$navigation-left__item--border-color: $grey-light;
 
 $navigation-left__item-box--display: flex;
 $navigation-left__item-box--padding: 1.157em 0.8125em;
-$navigation-left__item-text--line-height: 1.4375em;
-$navigation-left__item-link--color: #000000;
+$navigation-left__item-text--line-height: $line-height--2xl;
+$navigation-left__item-link--color: $black;
 
 // Focus state
 $navigation-left__item-link--focus--text-decoration: underline;
