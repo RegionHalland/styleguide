@@ -3,8 +3,20 @@
 ## Nästa version 
 * **Core** 
     * Bytt till globala variabler för spacing i _position.scss
+    * Paddingklasserna utökade för att matcha den nya spacing-skalan
+    * Position-klasser har utökats för att matcha den nya spacing-skalan
 
 * **Molekylen "Image hero" bytt namn till "Hero"** (v1.0.3)
+
+* **Molekylen "Navigation bar"** 
+    * Brytade ändringar i markup/klassnamn. Navigationen fyller nu 1440px och containern 100%.
+
+* **Förbättringar av molekyler och organismer**
+    * Settings genomgångna.
+
+* **Hero - helt ny version**
+    * Brytande ändringar i markup pga helt ny komponent
+    * Modifiers --secondary och --rounded finns kvar. 
 
 ## 14.0.0
 
