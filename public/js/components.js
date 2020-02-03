@@ -1,5 +1,6 @@
 "use strict";
 "use strict";
+"use strict";
 
 function toggleMenu() {
   document.getElementById("myDropdown").classList.toggle("rh-filter-show");
@@ -40,24 +41,6 @@ window.onclick = function (event) {
     }
   }
 };
-"use strict";
-"use strict";
-
-var acc = document.getElementsByClassName("rh-search-accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("rh-search-active");
-    var panel = this.nextElementSibling;
-
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + 100 + "px";
-    }
-  });
-}
 "use strict";
 
 window.onload = function () {
@@ -152,6 +135,23 @@ function setShadow() {
       cols[0].classList.add("rh-table-cell--shadow");
     }
   }
+}
+"use strict";
+
+var acc = document.getElementsByClassName("rh-search-accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("rh-search-active");
+    var panel = this.nextElementSibling;
+
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 100 + "px";
+    }
+  });
 }
 "use strict";
 
@@ -346,29 +346,6 @@ $(document).ready(function () {
     }
 
     typeof fnCallback === 'function' && fnCallback();
-  }
-});
-"use strict";
-
-$(".rh-navigation-bar__link").keydown(function () {
-  switch (event.which) {
-    case 39:
-      if ($(this).parent().next().length === 0) {
-        $(this).parent().siblings().first().children().first().focus();
-      } else {
-        $(this).parent().next().children().first().focus();
-      }
-
-      break;
-
-    case 37:
-      if ($(this).parent().prev().length === 0) {
-        $(this).parent().siblings().last().children().first().focus();
-      } else {
-        $(this).parent().prev().children().first().focus();
-      }
-
-      break;
   }
 });
 "use strict";
@@ -589,9 +566,31 @@ $(document).ready(function () {
 });
 "use strict";
 
-$(".rh-tabs__item").keydown(function () {
-  console.log(event.which);
+$(".rh-navigation-bar__link").keydown(function () {
+  switch (event.which) {
+    case 39:
+      if ($(this).parent().next().length === 0) {
+        $(this).parent().siblings().first().children().first().focus();
+      } else {
+        $(this).parent().next().children().first().focus();
+      }
 
+      break;
+
+    case 37:
+      if ($(this).parent().prev().length === 0) {
+        $(this).parent().siblings().last().children().first().focus();
+      } else {
+        $(this).parent().prev().children().first().focus();
+      }
+
+      break;
+  }
+});
+"use strict";
+
+$(".rh-tabs__item").keydown(function () {
+  //console.log(event.which);
   switch (event.which) {
     case 39:
       if ($(this).next().length == 0) {
