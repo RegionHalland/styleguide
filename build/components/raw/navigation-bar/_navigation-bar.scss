@@ -4,11 +4,15 @@
 
     /* Visuellt */
     background: $NAVIGATION-BAR--BACKGROUND;
-    padding-left: $NAVIGATION-BAR--PADDING-LEFT;
-    padding-right: $NAVIGATION-BAR--PADDING-RIGHT;
 
     /* Typografi */
     font-weight: $NAVIGATION-BAR--FONT-WEIGHT;
+
+    &__container {
+        padding-right: $NAVIGATION-BAR--PADDING-RIGHT;
+        margin: auto;
+        max-width: $page__container--max-width;
+    }
 
     &__item {
         /* Box-modell/beteende */
@@ -17,6 +21,10 @@
         /* Visuellt */
         padding-left: $NAVIGATION-BAR__ITEM--PADDING-LEFT;
         padding-right: $NAVIGATION-BAR__ITEM--PADDING-RIGHT;
+
+        &:first-child {
+            padding-left: 0;
+        }
     }
 
     &__link {

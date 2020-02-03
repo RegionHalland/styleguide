@@ -350,6 +350,29 @@ $(document).ready(function () {
 });
 "use strict";
 
+$(".rh-navigation-bar__link").keydown(function () {
+  switch (event.which) {
+    case 39:
+      if ($(this).parent().next().length === 0) {
+        $(this).parent().siblings().first().children().first().focus();
+      } else {
+        $(this).parent().next().children().first().focus();
+      }
+
+      break;
+
+    case 37:
+      if ($(this).parent().prev().length === 0) {
+        $(this).parent().siblings().last().children().first().focus();
+      } else {
+        $(this).parent().prev().children().first().focus();
+      }
+
+      break;
+  }
+});
+"use strict";
+
 /* Needed helpers in /public/library.js
     throttle()
     calculateScrollbarWidth()
@@ -563,29 +586,6 @@ $(document).ready(function () {
       return !!navigator.platform && /iPad|iPhone|iPod/g.test(navigator.platform);
   } */
 
-});
-"use strict";
-
-$(".rh-navigation-bar__link").keydown(function () {
-  switch (event.which) {
-    case 39:
-      if ($(this).parent().next().length === 0) {
-        $(this).parent().siblings().first().children().first().focus();
-      } else {
-        $(this).parent().next().children().first().focus();
-      }
-
-      break;
-
-    case 37:
-      if ($(this).parent().prev().length === 0) {
-        $(this).parent().siblings().last().children().first().focus();
-      } else {
-        $(this).parent().prev().children().first().focus();
-      }
-
-      break;
-  }
 });
 "use strict";
 

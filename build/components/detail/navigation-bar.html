@@ -211,8 +211,8 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-18c6c43da19c6c5c6e365db0fc3775a9-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Huvudmeny"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-navigation-bar"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"navbar"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"menubar"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Huvudmeny"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-navigation-bar"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Huvudmeny"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-navigation-bar__container"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"navbar"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"menubar"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Huvudmeny"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-navigation-bar__item"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"none"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-navigation-bar__link"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"menuitem"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Räksmörgås<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
@@ -240,8 +240,8 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-18c6c43da19c6c5c6e365db0fc3775a9-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Huvudmeny"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-navigation-bar"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"navbar"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"menubar"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Huvudmeny"</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-navigation-bar"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Huvudmeny"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-navigation-bar__container"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"navbar"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"menubar"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Huvudmeny"</span>&gt;</span>
         </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> menuitems}}</span><span class="xml">
         <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-navigation-bar__item"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"none"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"rh-navigation-bar__link"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"menuitem"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span></span><span class="hljs-template-variable">{{this}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -311,11 +311,15 @@
 
     <span class="hljs-comment">/* Visuellt */</span>
     <span class="hljs-attribute">background</span>: <span class="hljs-variable">$NAVIGATION-BAR--BACKGROUND</span>;
-    <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$NAVIGATION-BAR--PADDING-LEFT</span>;
-    <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$NAVIGATION-BAR--PADDING-RIGHT</span>;
 
     <span class="hljs-comment">/* Typografi */</span>
     <span class="hljs-attribute">font-weight</span>: <span class="hljs-variable">$NAVIGATION-BAR--FONT-WEIGHT</span>;
+
+    &amp;__container {
+        <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$NAVIGATION-BAR--PADDING-RIGHT</span>;
+        <span class="hljs-attribute">margin</span>: auto;
+        <span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$page__container--max-width</span>;
+    }
 
     &amp;__item {
         <span class="hljs-comment">/* Box-modell/beteende */</span>
@@ -324,6 +328,10 @@
         <span class="hljs-comment">/* Visuellt */</span>
         <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$NAVIGATION-BAR__ITEM--PADDING-LEFT</span>;
         <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$NAVIGATION-BAR__ITEM--PADDING-RIGHT</span>;
+
+        &amp;<span class="hljs-selector-pseudo">:first-child</span> {
+            <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">0</span>;
+        }
     }
 
     &amp;__link {
@@ -371,7 +379,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.3 KB</span>
+                    <span class="Meta-value">1.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -569,6 +577,7 @@ $(<span class="hljs-string">".rh-navigation-bar__link"</span>).keydown(<span cla
 <p>En horisontell huvudmeny </p>
 <h2 id="versionshistorik">Versionshistorik</h2>
 <ul>
+<li>v1.0.0.20200203 Brytande ändringar - klassnamn. Menyn fyller nu 1440px och container 100%.</li>
 <li>v1.0.0.20200129 Settings uppdaterade efter central ändring av spacing-variabler</li>
 <li>v1.0.0.20200127 Första versionen publicerades</li>
 </ul>
