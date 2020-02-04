@@ -13,9 +13,6 @@ const browserSync = require("browser-sync").create();
 const { Command } = require("gulp-command-handling");
 const mandelbrot = require("@frctl/mandelbrot");
 const fractal = require("@frctl/fractal").create();
-const fs = require("fs");
-const exec = require("child_process").exec;
-
 const logger = fractal.cli.console; // keep a reference to the fractal CLI console utility
 
 const { buildSites, releaseSites, helpInformation } = require("./sites.building");
@@ -299,35 +296,11 @@ function scssCompilation(cb) {
 
     cb();
 }
-
-function cleanBuildDirectory(cb) {
-    const buildPath = "./build";
-
-    if (fs.existsSync(buildPath)) {
-        exec(`rm -r ${buildPath}`, (error, stdout, stderr) => {
-            if (error) {
-                return console.log(error);
-            }
-
-            console.log(`\n\x1b[32mDone!\x1b[0m The directory \x1b[33m${buildPath}\x1b[0m is cleaned \n${stdout}`);
-
-            if (stderr) {
-                console.log(`\x1b[35mInformation\x1b[0m: \n${stderr}`);
-            }
-        });
-    } else {
-        console.error(`\nThe directory \x1b[33m${buildPath}\x1b[0m is not found. Nothing is cleaned.\n`);
-    }
-
-    return cb();
-}
 // End of DevServe
 
 // Main
 exports.version = series(build, release);
-//exports.build = series(start, build);
-exports.build = build;
-exports.clean = cleanBuildDirectory;
+exports.build = series(start, build);
 exports.default = start;
 
 // Tmp
