@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="../../theme/css/theme.css?cachebust=1.2.1" type="text/css">
 
 
-<title>Träfflistekort Kalender: Default | Stilguide - Region Halland</title>
+<title>Event card calender: Default | Stilguide - Region Halland</title>
 
 </head>
 <body>
@@ -113,7 +113,7 @@
     <div class="Pen-panel Pen-header">
     <h1 class="Pen-title">
         <a class="Pen-previewLink" href="../preview/event-card-calendar--default.html" title="Component preview">
-            Träfflistekort Kalender: Default
+            Event card calender: Default
             <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
@@ -516,8 +516,8 @@
     <span class="hljs-attr">"license"</span>: <span class="hljs-string">"GPL-3.0"</span>,
     <span class="hljs-attr">"authors"</span>: [
         {
-            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Roland Hydén"</span>,
-            <span class="hljs-attr">"email"</span>: <span class="hljs-string">"Roland.Hyden@Regionhalland.se"</span>
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Region Halland"</span>,
+            <span class="hljs-attr">"email"</span>: <span class="hljs-string">"webbplatser@regionhalland.se"</span>
         }
     ],
     <span class="hljs-attr">"require"</span>: {}
@@ -551,16 +551,16 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
                                 <pre><span class="hljs-comment">/* ---------------------------------------------- */</span>
-<span class="hljs-comment">/*    Molekylen "Event card calendar              */</span>
+<span class="hljs-comment">/*    Molekylen "Event card calendar"             */</span>
 <span class="hljs-comment">/* ---------------------------------------------- */</span>
 
 <span class="hljs-comment">// event-card-calendar - grundläggande inställningar</span>
-<span class="hljs-variable">$EVENT-CARD-CALENDAR--ALIGN-ITEMS</span>: flex-start; 
+<span class="hljs-variable">$EVENT-CARD-CALENDAR--ALIGN-ITEMS</span>: flex-start;
 <span class="hljs-variable">$EVENT-CARD-CALENDAR--DISPLAY</span>: flex;
 
 <span class="hljs-comment">// event-card-calendar - Small-modifier</span>
 <span class="hljs-variable">$EVENT-CARD-CALENDAR--SMALL--ALIGN-ITEMS</span>: center;
-<span class="hljs-variable">$EVENT-CARD-CALENDAR--SMALL--MARGIN-TOP</span>: em(<span class="hljs-number">2</span>);
+<span class="hljs-variable">$EVENT-CARD-CALENDAR--SMALL--MARGIN-TOP</span>: <span class="hljs-variable">$space-5</span>;
 
 <span class="hljs-comment">// date - grundläggande inställningar</span>
 <span class="hljs-variable">$EVENT-CARD-CALENDAR__DATE--ALIGN-CONTENT</span>: center;
@@ -576,26 +576,26 @@
 <span class="hljs-variable">$EVENT-CARD-CALENDAR__DATE--MEDIUM--WIDTH</span>: <span class="hljs-number">80px</span>;
 
 <span class="hljs-comment">// day - grundläggande inställningar</span>
-<span class="hljs-variable">$EVENT-CARD-CALENDAR__DAY--MARGIN-TOP</span>: em(<span class="hljs-number">8</span>);
+<span class="hljs-variable">$EVENT-CARD-CALENDAR__DAY--MARGIN-TOP</span>: <span class="hljs-variable">$space-2</span>;
 <span class="hljs-variable">$EVENT-CARD-CALENDAR__DAY--COLOR</span>: <span class="hljs-variable">$white</span>;
-<span class="hljs-variable">$EVENT-CARD-CALENDAR__DAY--LINE-HEIGHT</span>: <span class="hljs-number">1.25em</span>;
+<span class="hljs-variable">$EVENT-CARD-CALENDAR__DAY--LINE-HEIGHT</span>: <span class="hljs-variable">$line-height--medium</span>;
 
 <span class="hljs-comment">// day - medium</span>
-<span class="hljs-variable">$EVENT-CARD-CALENDAR__DAY--MEDIUM--MARGIN-TOP</span>: em(<span class="hljs-number">12</span>);
+<span class="hljs-variable">$EVENT-CARD-CALENDAR__DAY--MEDIUM--MARGIN-TOP</span>: <span class="hljs-variable">$space-3</span>;
 
 <span class="hljs-comment">// day - large</span>
-<span class="hljs-variable">$EVENT-CARD-CALENDAR__DAY--LARGE--MARGIN-TOP</span>: em(<span class="hljs-number">10</span>);
+<span class="hljs-variable">$EVENT-CARD-CALENDAR__DAY--LARGE--MARGIN-TOP</span>: <span class="hljs-variable">$space-2</span>; <span class="hljs-comment">//em(10);</span>
 
 <span class="hljs-comment">// month - grundläggande</span>
 <span class="hljs-variable">$EVENT-CARD-CALENDAR__MONTH--COLOR</span>: <span class="hljs-variable">$white</span>;
-<span class="hljs-variable">$EVENT-CARD-CALENDAR__MONTH--LINE-HEIGTH</span>: <span class="hljs-number">1em</span>;
+<span class="hljs-variable">$EVENT-CARD-CALENDAR__MONTH--LINE-HEIGTH</span>: <span class="hljs-variable">$line-height--small</span>; <span class="hljs-comment">//1em;</span>
 <span class="hljs-variable">$EVENT-CARD-CALENDAR__MONTH--FONT-WEIGHT</span>: normal;
 
 <span class="hljs-comment">// description - grundläggande</span>
-<span class="hljs-variable">$EVENT-CARD-CALENDAR__DESCRIPTION--MARGIN-LEFT</span>: em(<span class="hljs-number">20</span>);
+<span class="hljs-variable">$EVENT-CARD-CALENDAR__DESCRIPTION--MARGIN-LEFT</span>: <span class="hljs-variable">$space-5</span>;
 
 <span class="hljs-comment">// title - grundläggande</span>
-<span class="hljs-variable">$EVENT-CARD-CALENDAR__TITLE--LINE-HEIGHT</span>: <span class="hljs-number">1.25em</span>;
+<span class="hljs-variable">$EVENT-CARD-CALENDAR__TITLE--LINE-HEIGHT</span>: <span class="hljs-variable">$line-height--large</span>;
 
 <span class="hljs-comment">// text- grundläggande</span>
 <span class="hljs-variable">$EVENT-CARD-CALENDAR--TEXT--PADDING-TOP</span>: <span class="hljs-number">1ex</span>;
@@ -614,22 +614,22 @@
 
 <span class="hljs-comment">// time - grundinställningar</span>
 <span class="hljs-variable">$EVENT-CARD-CALENDAR__TIME--COLOR</span>: <span class="hljs-variable">$grey-darkest</span>;
-<span class="hljs-variable">$EVENT-CARD-CALENDAR__TIME--BEFORE--FONT-FAMILY</span>: <span class="hljs-string">"feather"</span>;
+<span class="hljs-variable">$EVENT-CARD-CALENDAR__TIME--BEFORE--FONT-FAMILY</span>: <span class="hljs-variable">$icon--font-family</span>;
 <span class="hljs-variable">$EVENT-CARD-CALENDAR__TIME--BEFORE--CONTENT</span>: <span class="hljs-string">"\e84d"</span>;
 
-<span class="hljs-comment">// time - small </span>
+<span class="hljs-comment">// time - small</span>
 <span class="hljs-variable">$EVENT-CARD-CALENDAR__TIME--SMALL--MARGIN-BOTTOM</span>: <span class="hljs-number">0</span>;
-<span class="hljs-variable">$EVENT-CARD-CALENDAR__TIME--SMALL--LINE-HEIGHT</span>: em(<span class="hljs-number">10</span>);
+<span class="hljs-variable">$EVENT-CARD-CALENDAR__TIME--SMALL--LINE-HEIGHT</span>: <span class="hljs-number">0.625em</span>; <span class="hljs-comment">//em(10);</span>
 
 <span class="hljs-comment">// venue</span>
 <span class="hljs-variable">$EVENT-CARD-CALENDAR__VENUE--COLOR</span>: <span class="hljs-variable">$grey-darkest</span>;
-<span class="hljs-variable">$EVENT-CARD-CALENDAR__VENUE--BEFORE--FONT-FAMILY</span>: <span class="hljs-string">"feather"</span>;
+<span class="hljs-variable">$EVENT-CARD-CALENDAR__VENUE--BEFORE--FONT-FAMILY</span>: <span class="hljs-variable">$icon--font-family</span>;
 <span class="hljs-variable">$EVENT-CARD-CALENDAR__VENUE--BEFORE--COLOR</span>: <span class="hljs-variable">$color-secondary</span>;
 <span class="hljs-variable">$EVENT-CARD-CALENDAR__VENUE--BEFORE--CONTENT</span>: <span class="hljs-string">"\e83f"</span>;
 
 <span class="hljs-comment">// venue - small</span>
 <span class="hljs-variable">$EVENT-CARD-CALENDAR__VENUE--SMALL--MARGIN-BOTTOM</span>: <span class="hljs-number">0</span>;
-<span class="hljs-variable">$EVENT-CARD-CALENDAR__VENUE--SMALL--LINE-HEIGHT</span>: em(<span class="hljs-number">10</span>);
+<span class="hljs-variable">$EVENT-CARD-CALENDAR__VENUE--SMALL--LINE-HEIGHT</span>: <span class="hljs-number">0.625em</span>; <span class="hljs-comment">//em(10);</span>
 
 <span class="hljs-comment">// venue - sold out</span>
 <span class="hljs-variable">$EVENT-CARD-CALENDAR__VENUE--BEFORE--SOLD-OUT--COLOR</span>: <span class="hljs-variable">$warning</span>;
@@ -649,7 +649,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.9 KB</span>
+                    <span class="Meta-value">3 KB</span>
                 </li>
             </ul>
         </div>
@@ -728,9 +728,10 @@
         <h1 id="molekyeln-event-card-calendar">Molekyeln “Event card calendar”</h1>
 <h2 id="versionshistorik">Versionshistorik</h2>
 <ul>
+<li>1.0.0.20200203 Globala variabler används</li>
 <li>1.0.0.20200123 Justerat sökväg till label efter att atomen döpts om.</li>
 <li>1.0.0.20200117 Status “wip”</li>
-<li>1.0.0.20191210 Brytande ändringar - omimplementerad med ny namngivning och settingsfil. </li>
+<li>1.0.0.20191210 Brytande ändringar - omimplementerad med ny namngivning och settingsfil.</li>
 <li>1.0.0.20191121 Flyttat till gitrepo</li>
 </ul>
 <h2 id="notes">Notes</h2>

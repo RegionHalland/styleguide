@@ -1,6 +1,6 @@
 .rh-search{
-	padding: em(15);
-	border-left: 4px solid $color-primary;
+	padding: $space-4; //em(15);
+	border-left: $border-thin--xl $color-primary;
 
 	&-letter{
 		font-weight: bold;
@@ -8,7 +8,7 @@
 	}
 
 	&-title{
-		margin-top: em(20);
+		margin-top: $space-5; //em(20);
 
 		&:first-child{
 			margin-top: 0;
@@ -27,26 +27,26 @@
 	}
 
 	&-descpription{
-		margin-right: em(20);
+		margin-right: $space-5; //em(20);
 	}
 
 	&-icon {
         margin-left: auto;
-        margin-top: em(8);
+        margin-top: $space-2; //em(8);
 		&:after {
-        	padding: em(8);
+        	padding: $space-2; //em(8);
 			border-radius: 50%;
-			background-color: $color-primary;	
-			font-family: "feather"; 
+			background-color: $color-primary;
+			font-family: $icon--font-family;
 			content: "\e8b1";
 			color: $white;
-			font-size: em(14);
+			font-size: $space-3; //em(14);
 		}
-	
+
 	}
 	&-active {
 		.rh-search-icon:after {
-			font-family: "feather"; 
+			font-family: $icon--font-family;
 			content: "\e897";
 		}
 	}
@@ -55,6 +55,6 @@
 .rh-search-card {
 	overflow: hidden;
   	max-height: 0;
-  	margin-top: em(10);
+  	margin-top: $space-3; //em(10);
 	transition: max-height 0.2s ease-out;
 }

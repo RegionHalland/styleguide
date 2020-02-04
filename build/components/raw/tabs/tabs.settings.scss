@@ -8,30 +8,30 @@ $RH-TABS--DISPLAY: flex;
 $TABS__ITEM--DISPLAY: flex;
 $TABS__ITEM--ALIGN-CONTENT: flex-start;
 $TABS__ITEM--WIDTH: 100%;
-$TABS__ITEM--PADDING: em(15);
+$TABS__ITEM--PADDING: $space-4; //em(15);
 $TABS__ITEM--BACKGROUND-COLOR: $grey-lightest;
-$TABS__ITEM--BORDER-TOP: 4px solid $grey-light;
-$TABS__ITEM--BORDER-LEFT: 1px solid $grey-lighter;
+$TABS__ITEM--BORDER-TOP: $border-thin--xl $grey-light;
+$TABS__ITEM--BORDER-LEFT: $border-thin--standard $grey-lighter;
 $TABS__ITEM--BORDER-BOTTOM: 0;
 $TABS__ITEM--BORDER-RIGHT: 0;
 $TABS__ITEM--CURSOR: pointer;
 $TABS__ITEM--FONT-SIZE: 100%;
 $TABS__ITEM--TEXT-DECORATION: none;
-$TABS__ITEM--LAST-CHILD--BORDER-RIGHT: 1px solid $grey-lighter;
+$TABS__ITEM--LAST-CHILD--BORDER-RIGHT: $border-thin--standard $grey-lighter;
 
 // Hover, active och focus
 $TABS__ITEM--HOVER-ACTIVE-FOCUS--BACKGROUND-COLOR: $white;
-$TABS__ITEM--HOVER-ACTIVE-FOCUS--BORDER-TOP: 4px solid $complementary2;
+$TABS__ITEM--HOVER-ACTIVE-FOCUS--BORDER-TOP: $border-thin--xl $complementary2;
 $TABS__ITEM--HOVER-ACTIVE-FOCUS--OUTLINE: 0;
 $TABS__ITEM--HOVER-ACTIVE-FOCUS--AFTER--BACKGROUND: $complementary2-light;
-$TABS__ITEM--HOVER-ACTIVE-FOCUS--AFTER--FONT-FAMILY: "feather";
+$TABS__ITEM--HOVER-ACTIVE-FOCUS--AFTER--FONT-FAMILY: $icon--font-family;
 $TABS__ITEM--HOVER-ACTIVE-FOCUS--AFTER--CONTENT: "\e8f6";
 
 // Active state
 $TABS__ITEM--ACTIVE--BACKGROUND-COLOR: $white;
-$TABS__ITEM--ACTIVE--BORDER-TOP: 4px solid $complementary2;
+$TABS__ITEM--ACTIVE--BORDER-TOP: $border-thin--xl $complementary2;
 $TABS__ITEM--ACTIVE--ITEM-ICON--AFTER--BACKGROUND: $complementary2-light;
-$TABS__ITEM--ACTIVE--ITEM-ICON--AFTER--FONT-FAMILY: "feather";
+$TABS__ITEM--ACTIVE--ITEM-ICON--AFTER--FONT-FAMILY: $icon--font-family;
 $TABS__ITEM--ACTIVE--ITEM-ICON--AFTER--CONTENT: "\e8f6";
 
 $TABS__ITEM-TEXT--MARGIN-BOTTOM: 0;
@@ -39,18 +39,17 @@ $TABS__ITEM-TEXT--COLOR: $black;
 $TABS__ITEM-TEXT--FONT-SIZE: $p-small;
 
 $TABS__ITEM-TEXT--MEDIUM--FONT-SIZE: $p-medium; // Medium
-$TABS__ITEM-TEXT--MEDIUM--MARGIN-RIGHT: em(20); // Medium
+$TABS__ITEM-TEXT--MEDIUM--MARGIN-RIGHT: $space-5; //em(20); // Medium
 $TABS__ITEM-TEXT--LARGE--FONT-SIZE: $p-large;   // Large
 $TABS__ITEM-TEXT--RH-LABELS--DISPLAY: none;             // inbäddade labels
 $TABS__ITEM-TEXT--RH-LABELS--MEDIUM--DISPLAY: inline;   // inbäddade labels
 
 $TABS__ITEM-ICON--MARGIN-LEFT: auto;
-$TABS__ITEM-ICON--AFTER--PADDING: em(8);
+$TABS__ITEM-ICON--AFTER--PADDING: $space-2; //em(8);
 $TABS__ITEM-ICON--AFTER--BACKGROUND: $base2-light;
 $TABS__ITEM-ICON--AFTER--BORDER-RADIUS: 50%;
-$TABS__ITEM-ICON--AFTER--FONT-FAMILY: "feather";
+$TABS__ITEM-ICON--AFTER--FONT-FAMILY: $icon--font-family;
 $TABS__ITEM-ICON--AFTER--CONTENT: "\e89b";
-$TABS__ITEM-ICON--AFTER--FONT-SIZE: em(10);
-$TABS__ITEM-ICON--AFTER--MEDIUEM--FONT-SIZE: em(12);
-$TABS__ITEM-ICON--AFTER--LARGE--FONT-SIZE: em(13);
-
+$TABS__ITEM-ICON--AFTER--FONT-SIZE: $font-size--4xs; //em(10);
+$TABS__ITEM-ICON--AFTER--MEDIUM--FONT-SIZE: $font-size--2xs; //em(12);
+$TABS__ITEM-ICON--AFTER--LARGE--FONT-SIZE: $font-size--xs; //em(13);

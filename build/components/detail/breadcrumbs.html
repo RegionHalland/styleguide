@@ -318,11 +318,11 @@
     }
 
     <span class="hljs-keyword">@if</span> <span class="hljs-variable">$breadcrums--border-top</span> {
-        <span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$breadcrums--border-top</span>;
+        <span class="hljs-attribute">border-top</span>: <span class="hljs-variable">$border-thin--standard</span> <span class="hljs-variable">$breadcrums--border-top</span>;
     }
     <span class="hljs-attribute">list-style</span>: none;
-    <span class="hljs-attribute">padding-bottom</span>: em(<span class="hljs-number">15</span>);
-    <span class="hljs-attribute">padding-top</span>: em(<span class="hljs-number">15</span>);
+    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$space-4</span>; <span class="hljs-comment">//em(15);</span>
+    <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$space-4</span>; <span class="hljs-comment">//em(15);</span>
 }
 
 <span class="hljs-selector-class">.rh-breadcrumbs__item</span> {
@@ -344,7 +344,7 @@
         <span class="hljs-comment">/* Typografi */</span>
         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$grey-base</span>;
         <span class="hljs-attribute">font-weight</span>: normal;
-        <span class="hljs-attribute">font-family</span>: <span class="hljs-string">"feather"</span>;
+        <span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$icon--font-family</span>; <span class="hljs-comment">//"feather";</span>
 
         <span class="hljs-comment">/* Visuellt */</span>
         <span class="hljs-attribute">content</span>: <span class="hljs-string">"\e844"</span>;
@@ -371,15 +371,15 @@
         <span class="hljs-attribute">margin-right</span>: <span class="hljs-variable">$breadcrumbs__item-link--margin-right</span>;
     }
 
-    <span class="hljs-attribute">padding-top</span>: em(<span class="hljs-number">15</span>);
-    <span class="hljs-attribute">padding-bottom</span>: em(<span class="hljs-number">16</span>);
+    <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$space-4</span>; <span class="hljs-comment">//em(15);</span>
+    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$space-4</span>; <span class="hljs-comment">//em(16);</span>
 
     <span class="hljs-keyword">@include</span> medium {
-        <span class="hljs-attribute">padding-bottom</span>: em(<span class="hljs-number">14</span>);
+        <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$space-3</span>; <span class="hljs-comment">//em(14);</span>
     }
 
     <span class="hljs-keyword">@include</span> large {
-        <span class="hljs-attribute">padding-bottom</span>: em(<span class="hljs-number">14</span>);
+        <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$space-3</span>; <span class="hljs-comment">//em(14);</span>
     }
 
     <span class="hljs-comment">/* Typografi */</span>
@@ -402,16 +402,6 @@
         <span class="hljs-comment">/* Visuellt */</span>
         <span class="hljs-attribute">border-bottom</span>: <span class="hljs-variable">$breadcrumbs__item--border-bottom</span>;
     }
-
-    <span class="hljs-comment">// &amp;--vuxhalland {</span>
-
-    <span class="hljs-comment">//     &amp;:hover,</span>
-    <span class="hljs-comment">//     &amp;:active,</span>
-    <span class="hljs-comment">//     &amp;:focus {</span>
-    <span class="hljs-comment">//         /* Visuellt */</span>
-    <span class="hljs-comment">//         border-bottom: 3px solid $vuxhalland2;</span>
-    <span class="hljs-comment">//     }</span>
-    <span class="hljs-comment">// }</span>
 }</pre>
                             </code>
                             
@@ -428,7 +418,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2 KB</span>
+                    <span class="Meta-value">1.9 KB</span>
                 </li>
             </ul>
         </div>
@@ -442,15 +432,15 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
                                 <pre><span class="hljs-comment">/* Organism - Breadcrums */</span>
-<span class="hljs-variable">$breadcrums--border-top</span>: <span class="hljs-number">0.0625em</span> solid <span class="hljs-variable">$grey-lighter</span>;<span class="hljs-comment">//false</span>
-<span class="hljs-variable">$breadcrums--border-bottom</span>: <span class="hljs-number">0.0625em</span> solid <span class="hljs-variable">$grey-lighter</span>;<span class="hljs-comment">//false</span>
+<span class="hljs-variable">$breadcrums--border-top</span>: <span class="hljs-variable">$border-thin--standard</span> <span class="hljs-variable">$grey-lighter</span>;<span class="hljs-comment">//false</span>
+<span class="hljs-variable">$breadcrums--border-bottom</span>: <span class="hljs-variable">$border-thin--standard</span> <span class="hljs-variable">$grey-lighter</span>;<span class="hljs-comment">//false</span>
 
 <span class="hljs-variable">$breadcrumbs__item-link--margin-left</span>: false; <span class="hljs-comment">//0.75em is default - false</span>
 <span class="hljs-variable">$breadcrumbs__item-link--margin-right</span>: false; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$breadcrumbs__item--border-bottom</span>: <span class="hljs-number">0.1875em</span> solid <span class="hljs-variable">$base3-dark</span> ;
+<span class="hljs-variable">$breadcrumbs__item--border-bottom</span>: <span class="hljs-variable">$border-thin--large</span> <span class="hljs-variable">$base3-dark</span> ;
 
-<span class="hljs-variable">$breadcrumbs__icon--margin-left</span>: <span class="hljs-number">0.75em</span>; <span class="hljs-comment">//false</span>
-<span class="hljs-variable">$breadcrumbs__icon--margin-right</span>: <span class="hljs-number">0.75em</span>; <span class="hljs-comment">//false</span></pre>
+<span class="hljs-variable">$breadcrumbs__icon--margin-left</span>: <span class="hljs-variable">$space-3</span>; <span class="hljs-comment">//false</span>
+<span class="hljs-variable">$breadcrumbs__icon--margin-right</span>: <span class="hljs-variable">$space-3</span>; <span class="hljs-comment">//false</span></pre>
                             </code>
                             
                         </div>
@@ -466,7 +456,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">446 Bytes</span>
+                    <span class="Meta-value">471 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -486,8 +476,8 @@
     <span class="hljs-attr">"license"</span>: <span class="hljs-string">"GPL-3.0"</span>,
     <span class="hljs-attr">"authors"</span>: [
         {
-            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Roland Hydén"</span>,
-            <span class="hljs-attr">"email"</span>: <span class="hljs-string">"Roland.Hyden@Regionhalland.se"</span>
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Region Halland"</span>,
+            <span class="hljs-attr">"email"</span>: <span class="hljs-string">"webbplatser@regionhalland.se"</span>
         }
     ],
     <span class="hljs-attr">"require"</span>: {}
@@ -568,6 +558,10 @@
 <li>Hbs-filen bör gås igenom - om den är en organism skall den inkludera en molekyl.</li>
 </ul>
 <h2 id="versionshistorik">Versionshistorik</h2>
+<h3 id="10020200203">1.0.0.20200203</h3>
+<ul>
+<li>Globala variabler används.</li>
+</ul>
 <h3 id="10020191127">1.0.0.20191127</h3>
 <ul>
 <li>Specificerat planerad utveckling och satt status till “rework”.</li>

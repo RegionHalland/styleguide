@@ -1,10 +1,10 @@
 .rh-lists{
     /* Box-modell/beteende */
-    padding: em(20);
-    
+    padding: $space-5; //em(20);
+
     /* Visuellt */
     background-color: $grey-lightest;
-    
+
     /* Typografi */
 	text-align: center;
 
@@ -21,7 +21,7 @@
 		align-items: center;
 		margin-right: auto;
 		margin-left: auto;
-		margin-bottom: em(10);
+		margin-bottom: $space-3; //em(10);
 
         /* Box-modell/beteende */
 		@include medium{max-width: 80%;}
@@ -31,7 +31,7 @@
             /* Box-modell/beteende */
 			margin-bottom: 0;
             margin-right: auto;
-            
+
             /* Typografi */
 			font-weight: bold;
 		}
@@ -40,13 +40,13 @@
 			margin-bottom: 0;
 			margin-left: auto;
 		}
-		
+
 		&-hr{
             /* Box-modell/beteende */
             flex-basis: 100%;
 			height: 1px;
-			margin-top: em(15);
-            
+			margin-top: $space-8; //em(15);
+
             /* Typografi */
 			color: $grey-light;
 		}

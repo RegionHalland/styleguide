@@ -18,13 +18,13 @@
         /* Box-modell/beteende */
         display: inline;
 
-        /* Visuellt */
+        /* Visuellt */ 
         padding-left: $NAVIGATION-BAR__ITEM--PADDING-LEFT;
         padding-right: $NAVIGATION-BAR__ITEM--PADDING-RIGHT;
 
         &:first-child {
-            padding-left: 0;
-        }
+            padding-lefT: 0;
+        } 
     }
 
     &__link {
@@ -36,16 +36,28 @@
         border-bottom: $NAVIGATION-BAR__LINK--BORDER-BOTTOM;
         border-top: $NAVIGATION-BAR__LINK--BORDER-TOP;
         padding-bottom: $NAVIGATION-BAR__LINK--PADDING-BOTTOM;
+        padding-left: $NAVIGATION-BAR__LINK--PADDING-LEFT;
+        padding-right: $NAVIGATION-BAR__LINK--PADDING-RIGHT;
         padding-top: $NAVIGATION-BAR__LINK--PADDING-TOP;
 
         /* Typografi */
         color: $NAVIGATION-BAR__LINK--COLOR;
         text-decoration: none;
 
+        &--active  {
+            background: $NAVIGATION-BAR__LINK--ACTIVE--BACKGROUND;
+            border-top: $NAVIGATION-BAR__LINK--ACTIVE--BORDER-TOP;
+            border-bottom: $NAVIGATION-BAR__LINK--HIGHLIGHT--BORDER-BOTTOM;
+            outline: $NAVIGATION-BAR__LINK--HIGHLIGHT--OUTLINE;
+
+            &:first-child {
+                padding-left: $NAVIGATION-BAR__LINK--PADDING-LEFT;
+            }
+        }
+
         &:active,
         &:focus,
-        &:hover,
-        &--active {
+        &:hover {
             /* Visuellt */
             border-bottom: $NAVIGATION-BAR__LINK--HIGHLIGHT--BORDER-BOTTOM;
             outline: $NAVIGATION-BAR__LINK--HIGHLIGHT--OUTLINE;

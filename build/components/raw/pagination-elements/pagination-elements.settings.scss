@@ -1,5 +1,5 @@
 /* Atoms - Pagination elements */
-$pagination-link--border: 0.046875em solid $grey-dark;
+$pagination-link--border: $border-thin--standard $grey-dark; //0.046875em solid $grey-dark;
 $pagination-link--hover-background-color: $base3;
 $pagination-link--hover-text-color: $white;
 

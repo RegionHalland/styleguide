@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="../../theme/css/theme.css?cachebust=1.2.1" type="text/css">
 
 
-<title>Länklista | Stilguide - Region Halland</title>
+<title>Linkgroup | Stilguide - Region Halland</title>
 
 </head>
 <body>
@@ -113,7 +113,7 @@
     <div class="Pen-panel Pen-header">
     <h1 class="Pen-title">
         <a class="Pen-previewLink" href="../preview/linkgroup.html" title="Component preview">
-            Länklista
+            Linkgroup
             <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
@@ -485,8 +485,8 @@
     <span class="hljs-attr">"license"</span>: <span class="hljs-string">"GPL-3.0"</span>,
     <span class="hljs-attr">"authors"</span>: [
         {
-            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Roland Hydén"</span>,
-            <span class="hljs-attr">"email"</span>: <span class="hljs-string">"Roland.Hyden@Regionhalland.se"</span>
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Region Halland"</span>,
+            <span class="hljs-attr">"email"</span>: <span class="hljs-string">"webbplatser@regionhalland.se"</span>
         }
     ],
     <span class="hljs-attr">"require"</span>: {}
@@ -559,7 +559,7 @@
 <span class="hljs-comment">// Linkgroup__titlebar</span>
 <span class="hljs-variable">$LINKGROUP__TITLEBAR--ALIGN-ITEMS</span>: center;
 <span class="hljs-variable">$LINKGROUP__TITLEBAR--BACKGROUND-COLOR</span>: <span class="hljs-variable">$grey-lightest</span>;
-<span class="hljs-variable">$LINKGROUP__TITLEBAR--BORDER-LEFT</span>: <span class="hljs-number">4px</span> solid <span class="hljs-variable">$color-primary</span>;
+<span class="hljs-variable">$LINKGROUP__TITLEBAR--BORDER-LEFT</span>: <span class="hljs-variable">$border-thin--xl</span> <span class="hljs-variable">$color-primary</span>;
 <span class="hljs-variable">$LINKGROUP__TITLEBAR--BORDER-TOP</span>: <span class="hljs-number">0</span>;
 <span class="hljs-variable">$LINKGROUP__TITLEBAR--BORDER-RIGHT</span>: <span class="hljs-number">0</span>;
 <span class="hljs-variable">$LINKGROUP__TITLEBAR--BORDER-BOTTOM</span>: <span class="hljs-number">0</span>;
@@ -568,21 +568,21 @@
 <span class="hljs-variable">$LINKGROUP__TITLEBAR--CURSOR</span>: pointer;
 <span class="hljs-variable">$LINKGROUP__TITLEBAR--FONT-WEIGHT</span>: bold;
 <span class="hljs-variable">$LINKGROUP__TITLEBAR--FONT-SIZE</span>: <span class="hljs-number">100%</span>;
-<span class="hljs-variable">$LINKGROUP__TITLEBAR--PADDING-TOP</span>: em(<span class="hljs-number">11</span>);
-<span class="hljs-variable">$LINKGROUP__TITLEBAR--PADDING-BOTTOM</span>: em(<span class="hljs-number">11</span>);
-<span class="hljs-variable">$LINKGROUP__TITLEBAR--PADDING-LEFT</span>: em(<span class="hljs-number">11</span>);
-<span class="hljs-variable">$LINKGROUP__TITLEBAR--PADDING-RIGHT</span>: em(<span class="hljs-number">5</span>);
+<span class="hljs-variable">$LINKGROUP__TITLEBAR--PADDING-TOP</span>: <span class="hljs-variable">$space-3</span>; <span class="hljs-comment">//em(11);</span>
+<span class="hljs-variable">$LINKGROUP__TITLEBAR--PADDING-BOTTOM</span>: <span class="hljs-variable">$space-3</span>; <span class="hljs-comment">//em(11);</span>
+<span class="hljs-variable">$LINKGROUP__TITLEBAR--PADDING-LEFT</span>: <span class="hljs-variable">$space-3</span>; <span class="hljs-comment">//em(11);</span>
+<span class="hljs-variable">$LINKGROUP__TITLEBAR--PADDING-RIGHT</span>: <span class="hljs-variable">$space-1</span>; <span class="hljs-comment">//em(5);</span>
 <span class="hljs-variable">$LINKGROUP__TITLEBAR--WIDTH</span>: <span class="hljs-number">100%</span>;
 
 <span class="hljs-variable">$LINKGROUP__TITLEBAR--FOCUS--BACKGROUND</span>: <span class="hljs-variable">$complementary2-light</span>; <span class="hljs-comment">// focus</span>
-<span class="hljs-variable">$LINKGROUP__TITLEBAR--FOCUS--COLOR</span>: black;                    <span class="hljs-comment">// focus</span>
+<span class="hljs-variable">$LINKGROUP__TITLEBAR--FOCUS--COLOR</span>: <span class="hljs-variable">$black</span>;                    <span class="hljs-comment">// focus</span>
 <span class="hljs-variable">$LINKGROUP__TITLEBAR--FOCUS--OUTLINE</span>: none;                     <span class="hljs-comment">// focus</span>
 <span class="hljs-variable">$LINKGROUP__TITLEBAR--ACTIVE--BACKGROUND-COLOR</span>: <span class="hljs-variable">$color-primary</span>; <span class="hljs-comment">// active</span>
 <span class="hljs-variable">$LINKGROUP__TITLEBAR--ACTIVE--COLOR</span>: <span class="hljs-variable">$white</span>;                    <span class="hljs-comment">// active</span>
 
 <span class="hljs-comment">// Linkgroup__icon:after</span>
 <span class="hljs-variable">$LINKGROUP__TITLEBAR--ACTIVE--LINKGROUP__ICON--BACKGROUND-COLOR</span>: <span class="hljs-variable">$white</span>;
-<span class="hljs-variable">$LINKGROUP__TITLEBAR--ACTIVE--LINKGROUP__ICON--FONT-FAMILY</span>: <span class="hljs-string">"feather"</span>;
+<span class="hljs-variable">$LINKGROUP__TITLEBAR--ACTIVE--LINKGROUP__ICON--FONT-FAMILY</span>: <span class="hljs-variable">$icon--font-family</span>;
 <span class="hljs-variable">$LINKGROUP__TITLEBAR--ACTIVE--LINKGROUP__ICON--COLOR</span>: <span class="hljs-variable">$color-primary</span>;
 <span class="hljs-variable">$LINKGROUP__TITLEBAR--ACTIVE--LINKGROUP__ICON--CONTENT</span>: <span class="hljs-string">"\e897"</span>;
 
@@ -597,10 +597,10 @@
 <span class="hljs-variable">$LINKGROUP__ICON--AFTER--BORDER-RADIUS</span>: <span class="hljs-number">50%</span>;
 <span class="hljs-variable">$LINKGROUP__ICON--AFTER--COLOR</span>: <span class="hljs-variable">$white</span>;
 <span class="hljs-variable">$LINKGROUP__ICON--AFTER--CONTENT</span>: <span class="hljs-string">"\e8b1"</span>;
-<span class="hljs-variable">$LINKGROUP__ICON--AFTER--FONT-FAMILY</span>: <span class="hljs-string">"feather"</span>;
-<span class="hljs-variable">$LINKGROUP__ICON--AFTER--FONT-SIZE</span>: em(<span class="hljs-number">14</span>);
-<span class="hljs-variable">$LINKGROUP__ICON--AFTER--MARGIN-RIGHT</span>: em(<span class="hljs-number">10</span>);
-<span class="hljs-variable">$LINKGROUP__ICON--AFTER--PADDING</span>: em(<span class="hljs-number">8</span>);
+<span class="hljs-variable">$LINKGROUP__ICON--AFTER--FONT-FAMILY</span>: <span class="hljs-variable">$icon--font-family</span>;
+<span class="hljs-variable">$LINKGROUP__ICON--AFTER--FONT-SIZE</span>: <span class="hljs-variable">$font-size--small</span>; <span class="hljs-comment">//em(14);</span>
+<span class="hljs-variable">$LINKGROUP__ICON--AFTER--MARGIN-RIGHT</span>: <span class="hljs-variable">$space-2</span>;
+<span class="hljs-variable">$LINKGROUP__ICON--AFTER--PADDING</span>: <span class="hljs-variable">$space-2</span>;
 
 <span class="hljs-comment">// Linkgroup__card</span>
 <span class="hljs-variable">$LINKGROUP__CARD--BACKGROUND-COLOR</span>: <span class="hljs-variable">$grey-lightest</span>;
@@ -610,14 +610,14 @@
 <span class="hljs-variable">$LINKGROUP__CARD--WEBKIT-TRANSITION</span>: max-height <span class="hljs-number">0.2s</span>;
 
 <span class="hljs-comment">// Linkgroup__list</span>
-<span class="hljs-variable">$LINKGROUP__LIST--MARGIN-LEFT</span>: em(<span class="hljs-number">10</span>);
-<span class="hljs-variable">$LINKGROUP__LIST--MARGIN-RIGHT</span>: em(<span class="hljs-number">10</span>);
-<span class="hljs-variable">$LINKGROUP__LIST--PADDING-TOP</span>: em(<span class="hljs-number">30</span>);
+<span class="hljs-variable">$LINKGROUP__LIST--MARGIN-LEFT</span>: <span class="hljs-variable">$space-3</span>; <span class="hljs-comment">//em(10);</span>
+<span class="hljs-variable">$LINKGROUP__LIST--MARGIN-RIGHT</span>: <span class="hljs-variable">$space-3</span>; <span class="hljs-comment">//em(10);</span>
+<span class="hljs-variable">$LINKGROUP__LIST--PADDING-TOP</span>: <span class="hljs-variable">$space-8</span>; <span class="hljs-comment">//em(30);</span>
 
 <span class="hljs-comment">// Linkgroup__list-item</span>
 <span class="hljs-variable">$LINKGROUP__LIST-ITEM--FONT-SIZE</span>: <span class="hljs-variable">$p-medium</span>;
-<span class="hljs-variable">$LINKGROUP__LIST-ITEM--MARGIN-BOTTOM</span>: em(<span class="hljs-number">35</span>);
-<span class="hljs-variable">$LINKGROUP__LIST-ITEM--MEDIUM--FONT-SIZE</span>: <span class="hljs-variable">$p-medium</span>; <span class="hljs-comment">// medium </span>
+<span class="hljs-variable">$LINKGROUP__LIST-ITEM--MARGIN-BOTTOM</span>: <span class="hljs-variable">$space-8</span>; <span class="hljs-comment">//em(35);</span>
+<span class="hljs-variable">$LINKGROUP__LIST-ITEM--MEDIUM--FONT-SIZE</span>: <span class="hljs-variable">$p-medium</span>; <span class="hljs-comment">// medium</span>
 <span class="hljs-variable">$LINKGROUP__LIST-ITEM--LARGE--FONT-SIZE</span>: <span class="hljs-variable">$p-large</span>; <span class="hljs-comment">// large</span></pre>
                             </code>
                             
@@ -634,7 +634,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.6 KB</span>
+                    <span class="Meta-value">2.7 KB</span>
                 </li>
             </ul>
         </div>
@@ -695,8 +695,10 @@
 </ul>
 <h2 id="versioner">Versioner</h2>
 <ul>
+<li>1.0.2 Globala variabler används</li>
+<li>1.0.1 “Stabil” status</li>
 <li>1.0.0 Settingsfil skapad</li>
-<li>1.0.0.20191230 Stor refaktorering: ny markup, nya klassnamn, ny js. </li>
+<li>1.0.0.20191230 Stor refaktorering: ny markup, nya klassnamn, ny js.</li>
 <li>1.0.0.20191121 Flyttat till gitrepo</li>
 <li>1.0.0.20191114 Status ändrad till “Inväntar ombyggnad” och skapat README-filen</li>
 </ul>

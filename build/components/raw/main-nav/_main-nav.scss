@@ -4,49 +4,49 @@
 }
 
 .rh-navbar-nav {
-	margin-left: em(100);
+	margin-left: $space-24; //em(100);
 
 	.rh-nav-item{
-		
+
 		display: block;
 		float: left;
-		padding-top: em(15);
-		padding-bottom: em(15);
-		margin-right: em(50);
-		border-bottom: 5px solid transparent;
+		padding-top: $space-4; //em(15);
+		padding-bottom: $space-4; //em(15);
+		margin-right: $space-12; //em(50);
+		border-bottom: $border-thin--xl transparent;
 
 		&:hover, &:active{
-			border-bottom: 5px solid $complementary2;
+			border-bottom: $border-thin--xl $complementary2; //5px solid $complementary2;
 		}
 	}
 	.rh-nav-link{
-		font-size: em(18);
+		font-size: $space-5; //em(18);
  		color: $white;
 		text-decoration: none;
 	}
 }
 
 
-@mixin rh-nav-item($padding, $margin-left, $background-color: $grey-lightest, $link-font-size: 18){
-	
+@mixin rh-nav-item($padding, $margin-left, $background-color: $grey-lightest, $link-font-size: $font-size--large){
+
 	   	display: flex;
    		align-items: center;
 		width: 100%;
-		padding: em($padding);
-		background-color: $background-color;	
-		border-bottom: 1px solid $grey-light;
+		padding: $padding;
+		background-color: $background-color;
+		border-bottom: $border-thin--standard $grey-light;
 
 		&:first-child{
-			border-top: 1px solid $grey-light;
+			border-top: $border-thin--standard $grey-light;
 		}
 
 		&:last-child{
-			border-bottom:1px solid $grey-light;
+			border-bottom:$border-thin--standard $grey-light;
 		}
 
 		.rh-nav-link-small{
-			margin-left: em($margin-left);
-			font-size: em($link-font-size);
+			margin-left: $margin-left;
+			font-size: $link-font-size;
 	 		color: $black;
 			text-decoration: none;
 		}
@@ -56,7 +56,7 @@
 .rh-navbar-nav-small {
 
 	.rh-nav-item-small{
-	   	@include rh-nav-item(20, 0);
+	   	@include rh-nav-item($space-5, 0);
 
 	   	&:active, &:hover{
 			background-color: $base2-light;
@@ -64,37 +64,28 @@
 	}
 
 	.rh-nav-item-small-button{
-	   	@include rh-nav-item(0, 20);
+	   	@include rh-nav-item(0, $space-5);
 
 	   	&:active, &:hover{
 			background-color: $base2-light;
 		}
 		.rh-nav-button-small{
 			margin-left: auto;
-			padding: em(20);
-			border-left: 1px solid $grey-light;
-		}		
+			padding: $space-5; //em(20);
+			border-left: $icon--font-family $grey-light;
+		}
 	}
 	.rh-nav-item-small-previous{
-	   	@include rh-nav-item(20, 0, $white, 16);
+	   	@include rh-nav-item($space-5, 0, $white, $space-4);
 
 		.rh-nav-link-small:before{
-			margin-right: em(8);
-			padding: em(10);
+			margin-right: $space-2; //em(8);
+			padding: $space-3; //em(10);
 			background: $base2-light;
 			border-radius: 50%;
-        	font-family: "feather"; 
-        	font-size: em(16);
+        	font-family: $icon--font-family;
+        	font-size: $font-size--standard; //em(16);
         	content: "\e828";
-		}	
+		}
 	}
-
 }
-
-
-
-
-
-
-
-

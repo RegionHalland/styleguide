@@ -1,10 +1,10 @@
 /* Organism - Breadcrums */
-$breadcrums--border-top: 0.0625em solid $grey-lighter;//false
-$breadcrums--border-bottom: 0.0625em solid $grey-lighter;//false
+$breadcrums--border-top: $border-thin--standard $grey-lighter;//false
+$breadcrums--border-bottom: $border-thin--standard $grey-lighter;//false
 
 $breadcrumbs__item-link--margin-left: false; //0.75em is default - false
 $breadcrumbs__item-link--margin-right: false; //false
-$breadcrumbs__item--border-bottom: 0.1875em solid $base3-dark ;
+$breadcrumbs__item--border-bottom: $border-thin--large $base3-dark ;
 
-$breadcrumbs__icon--margin-left: 0.75em; //false
-$breadcrumbs__icon--margin-right: 0.75em; //false
+$breadcrumbs__icon--margin-left: $space-3; //false
+$breadcrumbs__icon--margin-right: $space-3; //false

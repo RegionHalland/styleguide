@@ -1,14 +1,14 @@
 /* ---------------------------------------------- */
-/*    Molekylen "Event card calendar              */
+/*    Molekylen "Event card calendar"             */
 /* ---------------------------------------------- */
 
 // event-card-calendar - grundläggande inställningar
-$EVENT-CARD-CALENDAR--ALIGN-ITEMS: flex-start; 
+$EVENT-CARD-CALENDAR--ALIGN-ITEMS: flex-start;
 $EVENT-CARD-CALENDAR--DISPLAY: flex;
 
 // event-card-calendar - Small-modifier
 $EVENT-CARD-CALENDAR--SMALL--ALIGN-ITEMS: center;
-$EVENT-CARD-CALENDAR--SMALL--MARGIN-TOP: em(2);
+$EVENT-CARD-CALENDAR--SMALL--MARGIN-TOP: $space-5;
 
 // date - grundläggande inställningar
 $EVENT-CARD-CALENDAR__DATE--ALIGN-CONTENT: center;
@@ -24,26 +24,26 @@ $EVENT-CARD-CALENDAR__DATE--MEDIUM--HEIGHT: 80px;
 $EVENT-CARD-CALENDAR__DATE--MEDIUM--WIDTH: 80px;
 
 // day - grundläggande inställningar
-$EVENT-CARD-CALENDAR__DAY--MARGIN-TOP: em(8);
+$EVENT-CARD-CALENDAR__DAY--MARGIN-TOP: $space-2;
 $EVENT-CARD-CALENDAR__DAY--COLOR: $white;
-$EVENT-CARD-CALENDAR__DAY--LINE-HEIGHT: 1.25em;
+$EVENT-CARD-CALENDAR__DAY--LINE-HEIGHT: $line-height--medium;
 
 // day - medium
-$EVENT-CARD-CALENDAR__DAY--MEDIUM--MARGIN-TOP: em(12);
+$EVENT-CARD-CALENDAR__DAY--MEDIUM--MARGIN-TOP: $space-3;
 
 // day - large
-$EVENT-CARD-CALENDAR__DAY--LARGE--MARGIN-TOP: em(10);
+$EVENT-CARD-CALENDAR__DAY--LARGE--MARGIN-TOP: $space-2; //em(10);
 
 // month - grundläggande
 $EVENT-CARD-CALENDAR__MONTH--COLOR: $white;
-$EVENT-CARD-CALENDAR__MONTH--LINE-HEIGTH: 1em;
+$EVENT-CARD-CALENDAR__MONTH--LINE-HEIGTH: $line-height--small; //1em;
 $EVENT-CARD-CALENDAR__MONTH--FONT-WEIGHT: normal;
 
 // description - grundläggande
-$EVENT-CARD-CALENDAR__DESCRIPTION--MARGIN-LEFT: em(20);
+$EVENT-CARD-CALENDAR__DESCRIPTION--MARGIN-LEFT: $space-5;
 
 // title - grundläggande
-$EVENT-CARD-CALENDAR__TITLE--LINE-HEIGHT: 1.25em;
+$EVENT-CARD-CALENDAR__TITLE--LINE-HEIGHT: $line-height--large;
 
 // text- grundläggande
 $EVENT-CARD-CALENDAR--TEXT--PADDING-TOP: 1ex;
@@ -62,22 +62,22 @@ $EVENT-CARD-CALENDAR__LINK--VISITED--COLOR: $link-visited;
 
 // time - grundinställningar
 $EVENT-CARD-CALENDAR__TIME--COLOR: $grey-darkest;
-$EVENT-CARD-CALENDAR__TIME--BEFORE--FONT-FAMILY: "feather";
+$EVENT-CARD-CALENDAR__TIME--BEFORE--FONT-FAMILY: $icon--font-family;
 $EVENT-CARD-CALENDAR__TIME--BEFORE--CONTENT: "\e84d";
 
-// time - small 
+// time - small
 $EVENT-CARD-CALENDAR__TIME--SMALL--MARGIN-BOTTOM: 0;
-$EVENT-CARD-CALENDAR__TIME--SMALL--LINE-HEIGHT: em(10);
+$EVENT-CARD-CALENDAR__TIME--SMALL--LINE-HEIGHT: 0.625em; //em(10);
 
 // venue
 $EVENT-CARD-CALENDAR__VENUE--COLOR: $grey-darkest;
-$EVENT-CARD-CALENDAR__VENUE--BEFORE--FONT-FAMILY: "feather";
+$EVENT-CARD-CALENDAR__VENUE--BEFORE--FONT-FAMILY: $icon--font-family;
 $EVENT-CARD-CALENDAR__VENUE--BEFORE--COLOR: $color-secondary;
 $EVENT-CARD-CALENDAR__VENUE--BEFORE--CONTENT: "\e83f";
 
 // venue - small
 $EVENT-CARD-CALENDAR__VENUE--SMALL--MARGIN-BOTTOM: 0;
-$EVENT-CARD-CALENDAR__VENUE--SMALL--LINE-HEIGHT: em(10);
+$EVENT-CARD-CALENDAR__VENUE--SMALL--LINE-HEIGHT: 0.625em; //em(10);
 
 // venue - sold out
 $EVENT-CARD-CALENDAR__VENUE--BEFORE--SOLD-OUT--COLOR: $warning;

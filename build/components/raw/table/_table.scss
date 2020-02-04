@@ -1,18 +1,22 @@
-$base2-lighter    : #F5F8FB;
+//$base2-lighter    : #F5F8FB;
 
 .rh-table-container {
-  max-width: em(1000);
-  padding-left: em(168);
+  max-width: 64em; //em(1000);
+  padding-left: 167px; //em(168);
   position: relative;
 
   &-scroller {
-    margin-left: em(19);
+    margin-left: 19px; //em(19);
     overflow-x: scroll;
     overflow-y: visible;
-    border: 1px solid $grey-light;
+    border: $border-thin--standard $grey-light;
 
-    @include medium { margin-left: em(46); }
-    @include large { margin-left: em(61); }
+    @include medium {
+        margin-left: 46px; //em(46);
+    }
+    @include large {
+        margin-left: 61px; //em(61);
+    }
   }
 }
 
@@ -23,40 +27,40 @@ $base2-lighter    : #F5F8FB;
   overflow: auto;
 
   &-header {
-    max-width: em(225);
+    max-width: 225px; //em(225);
     background: $base1;
-    padding-top: em(14);
-    padding-bottom: em(14);
-    border-left: 1px solid $grey-light;
+    padding-top: $space-3; //em(14);
+    padding-bottom: $space-3; //em(14);
+    border-left: $border-thin--standard $grey-light;
     white-space: nowrap;
 
     &-icon {
       float: right;
-      margin-top: em(6);
-      padding-right: em(10);
+      margin-top: 6px; //em(6);
+      padding-right: 10px; //em(10);
       cursor: pointer;
 
       &:after {
-        margin-left: em(10);
-        padding: em(4);
+        margin-left: 10px; //em(10);
+        padding: 4px; //em(4);
         background: $white;
         border-radius: 50%;
-        font-family: "feather";
+        font-family: $icon--font-family;
         content: "\e842";
       }
 
       @include medium {
-        margin-top: em(8);
+        margin-top: 8px; //em(8);
 
         &:after {
-          padding: em(6);
+          padding: 6px; //em(6);
         }
       }
       @include large {
-        margin-top: em(10);
+        margin-top: 10px; //em(10);
 
         &:after {
-          padding: em(8);
+          padding: 8px; //em(8);
         }
       }
     }
@@ -65,23 +69,23 @@ $base2-lighter    : #F5F8FB;
       position:absolute;
       left: 0;
       top: 0;
-      min-width: em(189);
-      max-width: em(225);
-      border: 1px solid $grey-light;
+      min-width: 189px; //em(189);
+      max-width: 225px;//em(225);
+      border: $border-thin--standard $grey-light;
 
       @include medium {
-        min-width: em(216);
-        max-width: em(245);
+        min-width: 216px; //em(216);
+        max-width: 245px; //em(245);
       }
       @include large {
-        min-width: em(231);
-        max-width: em(270);
+        min-width: 231px; //em(231);
+        max-width: 270px; //em(270);
       }
     }
 
     &-link {
       float: left;
-      padding: em(10);
+      padding: $space-2; //em(10);
       white-space: nowrap;
       color: $white;
       font-weight: bold;
@@ -93,18 +97,18 @@ $base2-lighter    : #F5F8FB;
     }
 
     &-shadow {
-      box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+      box-shadow: $box-shadow--standard $color-shadow; //1px 2px 5px rgba(0, 0, 0, 0.5);
 
       &-icon {
         float: right;
-        padding-right: em(10);
+        padding-right: 10px; //em(10);
 
         &:after {
-          margin-left: em(10);
-          padding: em(8);
+          margin-left: 10px; //em(10);
+          padding: 8px; //em(8);
           background: $white;
           border-radius: 50%;
-          font-family: "feather";
+          font-family: $icon--font-family;
           content: "\e842";
           font-size: $p-small;
 
@@ -114,38 +118,43 @@ $base2-lighter    : #F5F8FB;
       }
     }
 
-    @include medium { max-width: em(225); }
-    @include large { max-width: em(270); }
+    @include medium {
+        max-width: 225px; //em(225);
+    }
+    @include large {
+        max-width: 270px; //em(270);
+    }
   }
 
   &-cell {
-    vertical-align: middle!important;
-    max-width: em(175);
-    padding-top: em(6);
-    padding-bottom: em(6);
-    border-left: 1px solid $grey-light;
-    border-top: 1px solid $grey-light;
+    //vertical-align: middle!important;
+    vertical-align: middle;
+    max-width: $space-48; //em(175);
+    padding-top: 6px; //em(6);
+    padding-bottom: 6px; //em(6);
+    border-left: $border-thin--standard $grey-light;
+    border-top: $border-thin--standard $grey-light;
     white-space: nowrap;
 
     &-icon {
       float: right;
-      padding-right: em(10);
-      margin-top: em(10);
+      padding-right: 10px; //em(10);
+      margin-top: 10px; //em(10);
       display: none;
 
       &:after {
-        margin-left: em(10);
-        padding: em(8);
+        margin-left: 10px; //em(10);
+        padding: 8px; //em(8);
         background: $base2-light;
         border-radius: 50%;
-        font-family: "feather";
+        font-family: $icon--font-family;
         content: "\e89b";
       }
     }
 
     &-link {
       float: left;
-      padding: em(10);
+      padding: 10px; //em(10);
       font-size: $p-small;
       color: $black;
       text-decoration: none;
@@ -159,40 +168,40 @@ $base2-lighter    : #F5F8FB;
       position: absolute;
       left: 0;
       top: auto;
-      min-width: em(189);
-      max-width: em(225);
-      padding-top: em(6);
-      padding-bottom: em(6);
-      border: 1px solid $grey-light;
+      min-width: 189px; //em(189);
+      max-width: 225px; //em(225);
+      padding-top: 6px; //em(6);
+      padding-bottom: 6px; //em(6);
+      border: $border-thin--standard $grey-light;
       font-weight: bold;
       background: inherit;
 
       @include medium {
-        min-width: em(216);
-        max-width: em(245);
+        min-width: 216px; //em(216);
+        max-width: 245px; //em(245);
       }
       @include large {
-        min-width: em(231);
-        max-width: em(270);
+        min-width: 231px; //em(231);
+        max-width: 270px; //em(270);
       }
     }
 
     &-shadow {
-      box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+      box-shadow: $box-shadow--standard $color-shadow; //1px 2px 5px rgba(0, 0, 0, 0.5);
 
       &-icon {
         float: right;
-        padding-right: em(10);
+        padding-right: 10px; //em(10);
 
         &:after {
-          margin-left: em(10);
+          margin-left: 10px; //em(10);
           border-radius: 50%;
-          padding-top: em(8);
-          padding-right: em(8);
-          padding-bottom: em(8);
-          padding-left: em(8);
+          padding-top: 8px; //em(8);
+          padding-right: 8px; //em(8);
+          padding-bottom: 8px; //em(8);
+          padding-left: 8px; //em(8);
           background: $white;
-          font-family: "feather";
+          font-family: $icon--font-family;
           content: "\e8f9";
           font-size: $p-small;
 
@@ -202,8 +211,12 @@ $base2-lighter    : #F5F8FB;
       }
     }
 
-    @include medium { max-width: em(245); }
-    @include large { max-width: em(270); }
+    @include medium {
+        max-width: 245px; //em(245);
+    }
+    @include large {
+        max-width: 270px; //em(270);
+    }
   }
 
   &-row:nth-child(odd) {
@@ -213,7 +226,7 @@ $base2-lighter    : #F5F8FB;
     background: $white;
   }
   &-row:last-child td {
-    border-bottom: 1px solid $grey-light;
+    border-bottom: $border-thin--standard $grey-light;
   }
 }
 
@@ -222,32 +235,36 @@ $base2-lighter    : #F5F8FB;
     &-link {
       overflow: hidden;
       text-overflow: ellipsis;
-      max-width: 70%!important;
+      //max-width: 70%!important;
+      max-width: 70%;
 
-      @include medium { max-width: 75%!important; }
-      @include large { max-width: 80%!important; }
+      /* @include medium { max-width: 75%!important; }
+      @include large { max-width: 80%!important; } */
+      @include medium { max-width: 75%; }
+      @include large { max-width: 80%; }
     }
 
     &-icon {
-      display: block!important;
-      margin-top: em(6);
+      //display: block!important;
+      display: block;
+      margin-top: 6px; //em(6);
 
       &:after {
-        padding: em(4);
+        padding: 4px; //em(4);
       }
 
       @include medium {
-        margin-top: em(10);
+        margin-top: 10px; //em(10);
 
         &:after {
-          padding: em(6);
+          padding: 6px; //em(6);
         }
       }
       @include large {
-        margin-top: em(10);
+        margin-top: 10px; //em(10);
 
         &:after {
-          padding: em(8);
+          padding: 8px; //em(8);
         }
       }
     }
@@ -255,15 +272,18 @@ $base2-lighter    : #F5F8FB;
 }
 
 .selected {
-  max-width: none!important;
+  //max-width: none!important;
+  max-width: none;
 
   .rh-table-cell {
     &-link {
-      max-width: none!important;
+      //max-width: none!important;
+      max-width: none;
     }
 
     &-icon {
-      display: none!important;
+      //display: none!important;
+      display: none;
     }
   }
 }
