@@ -1,8 +1,17 @@
-# 15.1.0
+## 15.1.1
+* **Globala variabler i följande:**
+    * Breadcrumbs
+    * Footer-logo-group
+    * Header
+    * Main-nav
+    * Table
+    * Toplinks
+
+## 15.1.0
 * **Molekylen "Navigation bar"**
     * Nytt active state
 
-* Globala variabler i följande:
+* **Globala variabler i följande:**
     * Lists
     * Message cookies
     * Messages
@@ -11,9 +20,7 @@
     * Tabs
     * Video
 
-# 15.0.0
-
-## Nästa version 
+## 15.0.0
 * **Core** 
     * Bytt till globala variabler för spacing i _position.scss
     * Paddingklasserna utökade för att matcha den nya spacing-skalan

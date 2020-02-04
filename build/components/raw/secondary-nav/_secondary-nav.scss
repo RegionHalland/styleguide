@@ -1,17 +1,17 @@
 
 @mixin rh-secondary-nav-item($background-color: $white, $linkcolor: $black, $link-font-size: 18, $border-color: $grey-light){
-	
+
    	display: flex;
 	align-items: center;
 	width: 100%;
-	padding: em(20);
-	background-color: $background-color;	
-	border-bottom: 1px solid $border-color;
-	border-left: 1px solid $border-color;
-	border-right: 1px solid $border-color;
+	padding: $space-5; //em(20);
+	background-color: $background-color;
+	border-bottom: $border-thin--standard $border-color;
+	border-left: $border-thin--standard $border-color;
+	border-right: $border-thin--standard $border-color;
 
 	&:first-child{
-		border-top: 1px solid $border-color;
+		border-top: $border-thin--standard $border-color;
 	}
 
 	.rh-secondary-nav-link{
@@ -20,7 +20,6 @@
 		text-decoration: none;
 	}
 }
-
 
 .rh-secondary-nav {
 
@@ -42,12 +41,12 @@
 		.rh-secondary-nav-item-icon {
 	        margin-left: auto;
 			&:after {
-				margin-left: em(10);
-				padding: em(8);
+				margin-left: $space-3; //em(10);
+				padding: $space-2; //em(8);
 				background: $grey-lightest;
 				border-radius: 50%;
 				font-weight: normal;
-		    	font-family: "feather"; 
+		    	font-family: $icon--font-family;
 		    	content: "\e8b1";
 				font-size: $p-small;
 				@include medium { font-size: $p-medium;}
@@ -60,12 +59,12 @@
 			.rh-secondary-nav-item-icon {
 		        margin-left: auto;
 				&:after {
-					margin-left: em(10);
-					padding: em(8);
+					margin-left: $space-3; //em(10);
+					padding: $space-2; //em(8);
 					background: $white;
 					border-radius: 50%;
 					font-weight: normal;
-			    	font-family: "feather"; 
+			    	font-family: $icon--font-family;
 			    	content: "\e897";
 					font-size: $p-small;
 					@include medium { font-size: $p-medium;}
@@ -77,9 +76,7 @@
 
 	.rh-secondary-nav-item-sublevel{
 	   	@include rh-secondary-nav-item($grey-lightest);
-		border-left: 4px solid $color-primary;
-	   	&:active, &:hover{
-		}
+		border-left: $border-thin--xl $color-primary;
+	   	&:active, &:hover{}
 	}
 }
-

@@ -1,3 +1,3 @@
-$feedback-hr--margin-top: em(22);
-$feedback-hr--margin-bottom: em(22);
-$feedback-hr--border: em(1) solid $grey-light;
+$feedback-hr--margin-top: $space-5; //em(22);
+$feedback-hr--margin-bottom: $space-5; //em(22);
+$feedback-hr--border: $border-thin--standard $grey-light;

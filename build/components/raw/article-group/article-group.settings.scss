@@ -1,4 +1,4 @@
 /* Organism - Article group */
-$article-group-items--margin: 1.5625em 0 0 0;
-$article-group--border-bottom: 0.125em solid $base3;
-$article-group__footer--margin-top: 2em;
+$article-group-items--margin: $space-6 0 0 0;
+$article-group--border-bottom: $border-thin--medium $base3;
+$article-group__footer--margin-top: $space-8;

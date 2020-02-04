@@ -280,33 +280,36 @@
 
     <span class="hljs-selector-class">.video-button</span> {
         <span class="hljs-attribute">position</span>: absolute;
-        <span class="hljs-attribute">top</span>: <span class="hljs-number">35%</span> <span class="hljs-meta">!important</span>;
-        <span class="hljs-attribute">left</span>: <span class="hljs-number">45%</span> <span class="hljs-meta">!important</span>;
-        <span class="hljs-attribute">width</span>: em(<span class="hljs-number">40</span>);
-        <span class="hljs-attribute">height</span>: em(<span class="hljs-number">40</span>);
+        <span class="hljs-comment">/* top: 35% !important;
+        left: 45% !important; */</span>
+        <span class="hljs-attribute">top</span>: <span class="hljs-number">35%</span>;
+        <span class="hljs-attribute">left</span>: <span class="hljs-number">45%</span>;
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">2.5em</span>; <span class="hljs-comment">//em(40);</span>
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">2.5em</span>; <span class="hljs-comment">//em(40);</span>
         <span class="hljs-attribute">box-sizing</span>: border-box;
         <span class="hljs-attribute">cursor</span>: pointer;
         <span class="hljs-attribute">background</span>: <span class="hljs-variable">$grey-base</span>;
         <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
 
         <span class="hljs-keyword">@include</span> medium {
-            <span class="hljs-attribute">width</span>: em(<span class="hljs-number">90</span>);
-            <span class="hljs-attribute">height</span>: em(<span class="hljs-number">90</span>);
+            <span class="hljs-attribute">width</span>: <span class="hljs-number">5.625em</span>; <span class="hljs-comment">//em(90);</span>
+            <span class="hljs-attribute">height</span>: <span class="hljs-number">5.625em</span>; <span class="hljs-comment">//em(90);</span>
         }
 
         <span class="hljs-selector-class">.video-button-content</span> {
 
             <span class="hljs-selector-class">.feather</span> {
-                <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+                <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
                 <span class="hljs-attribute">float</span>: left;
-                <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1</span>;
+                <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$line-height--small</span>; <span class="hljs-comment">//1;</span>
                 <span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">0.5em</span>;
                 <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">50%</span>;
                 <span class="hljs-attribute">text-align</span>: center;
                 <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-                <span class="hljs-attribute">font-family</span>:<span class="hljs-string">"feather"</span> <span class="hljs-meta">!important</span>;
-                <span class="hljs-attribute">font-size</span>: em(<span class="hljs-number">20</span>); 
-                <span class="hljs-keyword">@include</span> medium { <span class="hljs-attribute">font-size</span>: em(<span class="hljs-number">50</span>);}
+                <span class="hljs-comment">//font-family:"feather" !important;</span>
+                <span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$icon--font-family</span>;
+                <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size--xl</span>; <span class="hljs-comment">//em(20);</span>
+                <span class="hljs-keyword">@include</span> medium { <span class="hljs-attribute">font-size</span>: <span class="hljs-number">3.125em</span>;}
                 <span class="hljs-attribute">font-style</span>:normal;
                 -webkit-<span class="hljs-attribute">font</span>-smoothing: antialiased;
                 -moz-osx-<span class="hljs-attribute">font</span>-smoothing: grayscale;
@@ -332,7 +335,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.1 KB</span>
+                    <span class="Meta-value">1.3 KB</span>
                 </li>
             </ul>
         </div>
@@ -352,8 +355,8 @@
     <span class="hljs-attr">"license"</span>: <span class="hljs-string">"GPL-3.0"</span>,
     <span class="hljs-attr">"authors"</span>: [
         {
-            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Roland Hydén"</span>,
-            <span class="hljs-attr">"email"</span>: <span class="hljs-string">"Roland.Hyden@Regionhalland.se"</span>
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Region Halland"</span>,
+            <span class="hljs-attr">"email"</span>: <span class="hljs-string">"webbplatser@regionhalland.se"</span>
         }
     ],
     <span class="hljs-attr">"require"</span>: {}
@@ -494,6 +497,7 @@ videoMethods.renderVideoPlayButton();
 </ul>
 <h2 id="versionshistorik">Versionshistorik</h2>
 <ul>
+<li>1.0.0.20200203 Globala variabler används.</li>
 <li>1.0.0.20200110<ul>
 <li>Planerad utveckling listad</li>
 <li>Linting</li>

@@ -7,11 +7,11 @@
     }
 
     @if $breadcrums--border-top {
-        border-top: 1px solid $breadcrums--border-top;
+        border-top: $border-thin--standard $breadcrums--border-top;
     }
     list-style: none;
-    padding-bottom: em(15);
-    padding-top: em(15);
+    padding-bottom: $space-4; //em(15);
+    padding-top: $space-4; //em(15);
 }
 
 .rh-breadcrumbs__item {
@@ -33,7 +33,7 @@
         /* Typografi */
         color: $grey-base;
         font-weight: normal;
-        font-family: "feather";
+        font-family: $icon--font-family; //"feather";
 
         /* Visuellt */
         content: "\e844";
@@ -60,15 +60,15 @@
         margin-right: $breadcrumbs__item-link--margin-right;
     }
 
-    padding-top: em(15);
-    padding-bottom: em(16);
+    padding-top: $space-4; //em(15);
+    padding-bottom: $space-4; //em(16);
 
     @include medium {
-        padding-bottom: em(14);
+        padding-bottom: $space-3; //em(14);
     }
 
     @include large {
-        padding-bottom: em(14);
+        padding-bottom: $space-3; //em(14);
     }
 
     /* Typografi */
@@ -91,14 +91,4 @@
         /* Visuellt */
         border-bottom: $breadcrumbs__item--border-bottom;
     }
-
-    // &--vuxhalland {
-
-    //     &:hover,
-    //     &:active,
-    //     &:focus {
-    //         /* Visuellt */
-    //         border-bottom: 3px solid $vuxhalland2;
-    //     }
-    // }
 }

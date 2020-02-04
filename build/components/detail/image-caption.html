@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="../../theme/css/theme.css?cachebust=1.2.1" type="text/css">
 
 
-<title>Bild med caption | Stilguide - Region Halland</title>
+<title>Image caption | Stilguide - Region Halland</title>
 
 </head>
 <body>
@@ -113,7 +113,7 @@
     <div class="Pen-panel Pen-header">
     <h1 class="Pen-title">
         <a class="Pen-previewLink" href="../preview/image-caption.html" title="Component preview">
-            Bild med caption
+            Image caption
             <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
@@ -349,8 +349,8 @@
     <span class="hljs-attr">"license"</span>: <span class="hljs-string">"GPL-3.0"</span>,
     <span class="hljs-attr">"authors"</span>: [
         {
-            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Roland Hydén"</span>,
-            <span class="hljs-attr">"email"</span>: <span class="hljs-string">"Roland.Hyden@Regionhalland.se"</span>
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Region Halland"</span>,
+            <span class="hljs-attr">"email"</span>: <span class="hljs-string">"webbplatser@regionhalland.se"</span>
         }
     ],
     <span class="hljs-attr">"require"</span>: {}
@@ -391,24 +391,24 @@
 <span class="hljs-variable">$figure--position</span>: absolute;
 <span class="hljs-variable">$figure--width</span>: <span class="hljs-number">344px</span>;
 <span class="hljs-variable">$figure--text-align</span>: left;
-<span class="hljs-variable">$figure--font-size</span>: em(<span class="hljs-number">12</span>);
+<span class="hljs-variable">$figure--font-size</span>: <span class="hljs-variable">$font-size--2xs</span>; <span class="hljs-comment">//em(12);</span>
 <span class="hljs-variable">$figure--text-indent</span>: <span class="hljs-number">0</span>;
 <span class="hljs-variable">$figure--color</span>: <span class="hljs-variable">$grey-darkest</span>;
 
 <span class="hljs-comment">// Medium</span>
 <span class="hljs-variable">$figure--medium--width</span>: <span class="hljs-number">509px</span>;
-<span class="hljs-variable">$figure--medium--font-size</span>: em(<span class="hljs-number">14</span>);
+<span class="hljs-variable">$figure--medium--font-size</span>: <span class="hljs-variable">$font-size--small</span>; <span class="hljs-comment">//em(14);</span>
 
 <span class="hljs-comment">// Large</span>
 <span class="hljs-variable">$figure--medium--width</span>: <span class="hljs-number">640px</span>;
-<span class="hljs-variable">$figure--medium--font-size</span>: em(<span class="hljs-number">15</span>);
+<span class="hljs-variable">$figure--medium--font-size</span>: <span class="hljs-variable">$font-size--medium</span>; <span class="hljs-comment">//em(15);</span>
 
 <span class="hljs-comment">// figure__image</span>
 <span class="hljs-variable">$figure__image--width</span>: <span class="hljs-number">100%</span>;
 
 <span class="hljs-comment">// figure__caption</span>
-<span class="hljs-variable">$figure__caption--margin-top</span>: -<span class="hljs-number">2px</span>;
-<span class="hljs-variable">$figure__caption--padding</span>: <span class="hljs-number">10px</span>;
+<span class="hljs-variable">$figure__caption--margin-top</span>: -<span class="hljs-variable">$space-1</span>; <span class="hljs-comment">//-2px;</span>
+<span class="hljs-variable">$figure__caption--padding</span>: <span class="hljs-variable">$space-2</span>; <span class="hljs-comment">//10px;</span>
 <span class="hljs-variable">$figure__caption--background-color</span>: <span class="hljs-variable">$grey-lightest</span>;</pre>
                             </code>
                             
@@ -425,7 +425,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">619 Bytes</span>
+                    <span class="Meta-value">706 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -480,6 +480,8 @@
         <h1 id="image-caption">Image caption</h1>
 <h2 id="versioner">Versioner</h2>
 <ul>
+<li>2.0.2 Globala variabler används</li>
+<li>2.0.1 “Stabil” status</li>
 <li>2.0.0 Settingsfil och BEM introducerat</li>
 <li>1.0.0 första releasen</li>
 </ul>

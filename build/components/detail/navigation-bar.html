@@ -325,13 +325,13 @@
         <span class="hljs-comment">/* Box-modell/beteende */</span>
         <span class="hljs-attribute">display</span>: inline;
 
-        <span class="hljs-comment">/* Visuellt */</span>
+        <span class="hljs-comment">/* Visuellt */</span> 
         <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$NAVIGATION-BAR__ITEM--PADDING-LEFT</span>;
         <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$NAVIGATION-BAR__ITEM--PADDING-RIGHT</span>;
 
         &amp;<span class="hljs-selector-pseudo">:first-child</span> {
-            <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">0</span>;
-        }
+            <span class="hljs-attribute">padding-lefT</span>: <span class="hljs-number">0</span>;
+        } 
     }
 
     &amp;__link {
@@ -343,16 +343,28 @@
         <span class="hljs-attribute">border-bottom</span>: <span class="hljs-variable">$NAVIGATION-BAR__LINK--BORDER-BOTTOM</span>;
         <span class="hljs-attribute">border-top</span>: <span class="hljs-variable">$NAVIGATION-BAR__LINK--BORDER-TOP</span>;
         <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$NAVIGATION-BAR__LINK--PADDING-BOTTOM</span>;
+        <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$NAVIGATION-BAR__LINK--PADDING-LEFT</span>;
+        <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$NAVIGATION-BAR__LINK--PADDING-RIGHT</span>;
         <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$NAVIGATION-BAR__LINK--PADDING-TOP</span>;
 
         <span class="hljs-comment">/* Typografi */</span>
         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$NAVIGATION-BAR__LINK--COLOR</span>;
         <span class="hljs-attribute">text-decoration</span>: none;
 
+        &amp;--active  {
+            <span class="hljs-attribute">background</span>: <span class="hljs-variable">$NAVIGATION-BAR__LINK--ACTIVE--BACKGROUND</span>;
+            <span class="hljs-attribute">border-top</span>: <span class="hljs-variable">$NAVIGATION-BAR__LINK--ACTIVE--BORDER-TOP</span>;
+            <span class="hljs-attribute">border-bottom</span>: <span class="hljs-variable">$NAVIGATION-BAR__LINK--HIGHLIGHT--BORDER-BOTTOM</span>;
+            <span class="hljs-attribute">outline</span>: <span class="hljs-variable">$NAVIGATION-BAR__LINK--HIGHLIGHT--OUTLINE</span>;
+
+            &amp;<span class="hljs-selector-pseudo">:first-child</span> {
+                <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$NAVIGATION-BAR__LINK--PADDING-LEFT</span>;
+            }
+        }
+
         &amp;<span class="hljs-selector-pseudo">:active</span>,
         &amp;<span class="hljs-selector-pseudo">:focus</span>,
-        &amp;<span class="hljs-selector-pseudo">:hover</span>,
-        &amp;--active {
+        &amp;<span class="hljs-selector-pseudo">:hover</span> {
             <span class="hljs-comment">/* Visuellt */</span>
             <span class="hljs-attribute">border-bottom</span>: <span class="hljs-variable">$NAVIGATION-BAR__LINK--HIGHLIGHT--BORDER-BOTTOM</span>;
             <span class="hljs-attribute">outline</span>: <span class="hljs-variable">$NAVIGATION-BAR__LINK--HIGHLIGHT--OUTLINE</span>;
@@ -379,7 +391,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.4 KB</span>
+                    <span class="Meta-value">2 KB</span>
                 </li>
             </ul>
         </div>
@@ -492,8 +504,8 @@ $(<span class="hljs-string">".rh-navigation-bar__link"</span>).keydown(<span cla
 <span class="hljs-variable">$NAVIGATION-BAR--FONT-WEIGHT</span>: bold;
 
 <span class="hljs-comment">// UL-elementen</span>
-<span class="hljs-variable">$NAVIGATION-BAR__ITEM--PADDING-LEFT</span>: <span class="hljs-variable">$space-4</span>;
-<span class="hljs-variable">$NAVIGATION-BAR__ITEM--PADDING-RIGHT</span>: <span class="hljs-variable">$space-4</span>;
+<span class="hljs-variable">$NAVIGATION-BAR__ITEM--PADDING-LEFT</span>: <span class="hljs-variable">$space-1</span>;
+<span class="hljs-variable">$NAVIGATION-BAR__ITEM--PADDING-RIGHT</span>: <span class="hljs-variable">$space-1</span>;
 
 <span class="hljs-comment">// Länkarna</span>
 <span class="hljs-variable">$NAVIGATION-BAR__LINK--BORDER-BOTTOM</span>: <span class="hljs-number">4px</span> solid <span class="hljs-variable">$base2-dark</span>;
@@ -501,11 +513,14 @@ $(<span class="hljs-string">".rh-navigation-bar__link"</span>).keydown(<span cla
 <span class="hljs-variable">$NAVIGATION-BAR__LINK--PADDING-BOTTOM</span>: <span class="hljs-variable">$space-3</span>;
 <span class="hljs-variable">$NAVIGATION-BAR__LINK--PADDING-TOP</span>: <span class="hljs-variable">$space-3</span>;
 <span class="hljs-variable">$NAVIGATION-BAR__LINK--COLOR</span>: <span class="hljs-variable">$white</span>;
+<span class="hljs-variable">$NAVIGATION-BAR__LINK--PADDING-LEFT</span>: <span class="hljs-variable">$space-2</span>;
+<span class="hljs-variable">$NAVIGATION-BAR__LINK--PADDING-RIGHT</span>: <span class="hljs-variable">$space-2</span>;
 
 <span class="hljs-comment">// Active, hover och focus-states för länkarna</span>
 <span class="hljs-variable">$NAVIGATION-BAR__LINK--HIGHLIGHT--BORDER-BOTTOM</span>: <span class="hljs-number">4px</span> solid <span class="hljs-variable">$complementary2</span>;
 <span class="hljs-variable">$NAVIGATION-BAR__LINK--HIGHLIGHT--OUTLINE</span>: <span class="hljs-number">0</span>;
-</pre>
+<span class="hljs-variable">$NAVIGATION-BAR__LINK--ACTIVE--BORDER-TOP</span>: <span class="hljs-number">4px</span> solid <span class="hljs-variable">$base1-dark</span>;
+<span class="hljs-variable">$NAVIGATION-BAR__LINK--ACTIVE--BACKGROUND</span>: <span class="hljs-variable">$base1-dark</span>;</pre>
                             </code>
                             
                         </div>
@@ -521,7 +536,7 @@ $(<span class="hljs-string">".rh-navigation-bar__link"</span>).keydown(<span cla
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">841 Bytes</span>
+                    <span class="Meta-value">1.1 KB</span>
                 </li>
             </ul>
         </div>

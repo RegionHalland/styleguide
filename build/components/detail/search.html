@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="../../theme/css/theme.css?cachebust=1.2.1" type="text/css">
 
 
-<title>#184 Alfabetisk gruppering | Stilguide - Region Halland</title>
+<title>Search | Stilguide - Region Halland</title>
 
 </head>
 <body>
@@ -113,7 +113,7 @@
     <div class="Pen-panel Pen-header">
     <h1 class="Pen-title">
         <a class="Pen-previewLink" href="../preview/search.html" title="Component preview">
-            #184 Alfabetisk gruppering
+            Search
             <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
@@ -349,8 +349,8 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
                                 <pre><span class="hljs-selector-class">.rh-search</span>{
-	<span class="hljs-attribute">padding</span>: em(<span class="hljs-number">15</span>);
-	<span class="hljs-attribute">border-left</span>: <span class="hljs-number">4px</span> solid <span class="hljs-variable">$color-primary</span>;
+	<span class="hljs-attribute">padding</span>: <span class="hljs-variable">$space-4</span>; <span class="hljs-comment">//em(15);</span>
+	<span class="hljs-attribute">border-left</span>: <span class="hljs-variable">$border-thin--xl</span> <span class="hljs-variable">$color-primary</span>;
 
 	&amp;-letter{
 		<span class="hljs-attribute">font-weight</span>: bold;
@@ -358,7 +358,7 @@
 	}
 
 	&amp;-<span class="hljs-selector-tag">title</span>{
-		<span class="hljs-attribute">margin-top</span>: em(<span class="hljs-number">20</span>);
+		<span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$space-5</span>; <span class="hljs-comment">//em(20);</span>
 
 		&amp;<span class="hljs-selector-pseudo">:first-child</span>{
 			<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
@@ -377,26 +377,26 @@
 	}
 
 	&amp;-descpription{
-		<span class="hljs-attribute">margin-right</span>: em(<span class="hljs-number">20</span>);
+		<span class="hljs-attribute">margin-right</span>: <span class="hljs-variable">$space-5</span>; <span class="hljs-comment">//em(20);</span>
 	}
 
 	&amp;-<span class="hljs-attribute">icon</span> {
         <span class="hljs-attribute">margin-left</span>: auto;
-        <span class="hljs-attribute">margin-top</span>: em(<span class="hljs-number">8</span>);
+        <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$space-2</span>; <span class="hljs-comment">//em(8);</span>
 		&amp;<span class="hljs-selector-pseudo">:after</span> {
-        	<span class="hljs-attribute">padding</span>: em(<span class="hljs-number">8</span>);
+        	<span class="hljs-attribute">padding</span>: <span class="hljs-variable">$space-2</span>; <span class="hljs-comment">//em(8);</span>
 			<span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
-			<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$color-primary</span>;	
-			<span class="hljs-attribute">font-family</span>: <span class="hljs-string">"feather"</span>; 
+			<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$color-primary</span>;
+			<span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$icon--font-family</span>;
 			<span class="hljs-attribute">content</span>: <span class="hljs-string">"\e8b1"</span>;
 			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-			<span class="hljs-attribute">font-size</span>: em(<span class="hljs-number">14</span>);
+			<span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$space-3</span>; <span class="hljs-comment">//em(14);</span>
 		}
-	
+
 	}
 	&amp;-active {
 		<span class="hljs-selector-class">.rh-search-icon</span><span class="hljs-selector-pseudo">:after</span> {
-			<span class="hljs-attribute">font-family</span>: <span class="hljs-string">"feather"</span>; 
+			<span class="hljs-attribute">font-family</span>: <span class="hljs-variable">$icon--font-family</span>;
 			<span class="hljs-attribute">content</span>: <span class="hljs-string">"\e897"</span>;
 		}
 	}
@@ -405,7 +405,7 @@
 <span class="hljs-selector-class">.rh-search-card</span> {
 	<span class="hljs-attribute">overflow</span>: hidden;
   	<span class="hljs-attribute">max-height</span>: <span class="hljs-number">0</span>;
-  	<span class="hljs-attribute">margin-top</span>: em(<span class="hljs-number">10</span>);
+  	<span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$space-3</span>; <span class="hljs-comment">//em(10);</span>
 	<span class="hljs-attribute">transition</span>: max-height <span class="hljs-number">0.2s</span> ease-out;
 }</pre>
                             </code>
@@ -423,7 +423,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">882 Bytes</span>
+                    <span class="Meta-value">987 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -443,8 +443,8 @@
     <span class="hljs-attr">"license"</span>: <span class="hljs-string">"GPL-3.0"</span>,
     <span class="hljs-attr">"authors"</span>: [
         {
-            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Roland Hydén"</span>,
-            <span class="hljs-attr">"email"</span>: <span class="hljs-string">"Roland.Hyden@Regionhalland.se"</span>
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Region Halland"</span>,
+            <span class="hljs-attr">"email"</span>: <span class="hljs-string">"webbplatser@regionhalland.se"</span>
         }
     ],
     <span class="hljs-attr">"require"</span>: {}
@@ -562,6 +562,7 @@
         <h1 id="organismen-search">Organismen “Search”</h1>
 <h2 id="versionshistorik">Versionshistorik</h2>
 <ul>
+<li>1.0.0.20200204 Globala variabler används</li>
 <li>1.0.0.20191123 Flyttat till gitrepo</li>
 </ul>
 

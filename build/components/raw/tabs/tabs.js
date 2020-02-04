@@ -1,5 +1,5 @@
 $(".rh-tabs__item").keydown(function() {
-    console.log(event.which);
+    //console.log(event.which);
     switch (event.which) {
         case 39:
             if($(this).next().length == 0) {

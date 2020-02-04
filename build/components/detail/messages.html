@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="../../theme/css/theme.css?cachebust=1.2.1" type="text/css">
 
 
-<title>Viktigt meddelande | Stilguide - Region Halland</title>
+<title>Messages | Stilguide - Region Halland</title>
 
 </head>
 <body>
@@ -113,7 +113,7 @@
     <div class="Pen-panel Pen-header">
     <h1 class="Pen-title">
         <a class="Pen-previewLink" href="../preview/messages.html" title="Component preview">
-            Viktigt meddelande
+            Messages
             <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
@@ -410,8 +410,8 @@
     <span class="hljs-attr">"license"</span>: <span class="hljs-string">"GPL-3.0"</span>,
     <span class="hljs-attr">"authors"</span>: [
         {
-            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Roland Hydén"</span>,
-            <span class="hljs-attr">"email"</span>: <span class="hljs-string">"Roland.Hyden@Regionhalland.se"</span>
+            <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Region Halland"</span>,
+            <span class="hljs-attr">"email"</span>: <span class="hljs-string">"webbplatser@regionhalland.se"</span>
         }
     ],
     <span class="hljs-attr">"require"</span>: {}
@@ -445,24 +445,24 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
                                 <pre><span class="hljs-comment">/* Molecules - Message */</span>
-<span class="hljs-variable">$message--padding</span>: <span class="hljs-number">1.875em</span> <span class="hljs-number">0</span>; <span class="hljs-comment">//30px</span>
-<span class="hljs-variable">$message--padding-medium</span>: <span class="hljs-number">1.25em</span> <span class="hljs-number">0</span>; <span class="hljs-comment">//20px</span>
-<span class="hljs-variable">$message--background-color</span>: <span class="hljs-number">#E3B7BE</span>;
+<span class="hljs-variable">$message--padding</span>: <span class="hljs-variable">$space-8</span> <span class="hljs-variable">$space-0</span>; <span class="hljs-comment">//1.875em 0; //30px</span>
+<span class="hljs-variable">$message--padding-medium</span>: <span class="hljs-variable">$space-5</span> <span class="hljs-variable">$space-0</span>; <span class="hljs-comment">//1.25em 0; //20px</span>
+<span class="hljs-variable">$message--background-color</span>: <span class="hljs-variable">$complementary3-light</span>; <span class="hljs-comment">//#E3B7BE;</span>
 <span class="hljs-variable">$message--text-align</span>: center;
-<span class="hljs-variable">$message--line-height</span>: <span class="hljs-number">1em</span>;
+<span class="hljs-variable">$message--line-height</span>: <span class="hljs-variable">$line-height--small</span>; <span class="hljs-comment">//1em;</span>
 
 <span class="hljs-variable">$message__icon--content</span>: <span class="hljs-string">"\e81e"</span>;
-<span class="hljs-variable">$message__icon--margin-medium</span>: <span class="hljs-number">2.5em</span> <span class="hljs-number">2.5em</span> <span class="hljs-number">2.5em</span> <span class="hljs-number">0</span>;
-<span class="hljs-variable">$message__icon--padding</span>: <span class="hljs-number">0.5em</span>; <span class="hljs-comment">//8px</span>
-<span class="hljs-variable">$message__icon--color</span>: <span class="hljs-number">#700B1B</span>;
-<span class="hljs-variable">$message__icon--text-color</span>: <span class="hljs-number">#ffffff</span>;
+<span class="hljs-variable">$message__icon--margin-medium</span>: <span class="hljs-variable">$space-10</span> <span class="hljs-variable">$space-10</span> <span class="hljs-variable">$space-10</span> <span class="hljs-variable">$space-0</span>; <span class="hljs-comment">//2.5em 2.5em 2.5em 0;</span>
+<span class="hljs-variable">$message__icon--padding</span>: <span class="hljs-variable">$space-2</span>; <span class="hljs-comment">//0.5em; //8px</span>
+<span class="hljs-variable">$message__icon--color</span>: <span class="hljs-variable">$complementary3-dark</span>; <span class="hljs-comment">//#700B1B;</span>
+<span class="hljs-variable">$message__icon--text-color</span>: <span class="hljs-variable">$white</span>; <span class="hljs-comment">//ffffff;</span>
 <span class="hljs-variable">$message__icon--font-weight</span>: normal;
-<span class="hljs-variable">$message__icon--font-family</span>: <span class="hljs-string">"feather"</span>;
+<span class="hljs-variable">$message__icon--font-family</span>: <span class="hljs-variable">$icon--font-family</span>;
 <span class="hljs-variable">$message__icon--font-size</span>: <span class="hljs-variable">$p-small</span>;
 <span class="hljs-variable">$message__icon--font-size-medium</span>: <span class="hljs-variable">$h4-medium</span>;
 <span class="hljs-variable">$message__icon--font-size-large</span>: <span class="hljs-variable">$h2-large</span>;
 
-<span class="hljs-variable">$message__text-title--color</span>: <span class="hljs-number">#700B1B</span>;
+<span class="hljs-variable">$message__text-title--color</span>: <span class="hljs-variable">$complementary3-dark</span>; <span class="hljs-comment">//#700B1B;</span>
 <span class="hljs-variable">$message__link--color</span>: <span class="hljs-variable">$black</span>;
 <span class="hljs-variable">$message__link--color-hover</span>: <span class="hljs-variable">$black</span>;
 <span class="hljs-variable">$message__link--text-decoration</span>: underline;
@@ -483,7 +483,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">795 Bytes</span>
+                    <span class="Meta-value">1 KB</span>
                 </li>
             </ul>
         </div>
@@ -538,6 +538,7 @@
         <h1 id="molekyeln-messages">Molekyeln “Messages”</h1>
 <h2 id="versionshistorik">Versionshistorik</h2>
 <ul>
+<li>1.0.0.20200203 Globala variabler används</li>
 <li>1.0.0.20191122 Flyttat till gitrepo</li>
 </ul>
 

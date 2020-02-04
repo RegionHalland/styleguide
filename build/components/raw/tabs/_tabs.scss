@@ -45,7 +45,7 @@
                 font-family: $TABS__ITEM-ICON--AFTER--FONT-FAMILY;
                 content: $TABS__ITEM-ICON--AFTER--CONTENT;
                 font-size: $TABS__ITEM-ICON--AFTER--FONT-SIZE;
-                @include medium { font-size: $TABS__ITEM-ICON--AFTER--MEDIUEM--FONT-SIZE;}
+                @include medium { font-size: $TABS__ITEM-ICON--AFTER--MEDIUM--FONT-SIZE;}
                 @include large { font-size: $TABS__ITEM-ICON--AFTER--LARGE--FONT-SIZE;}
             }
         }
@@ -60,7 +60,7 @@
                     font-family: $TABS__ITEM--HOVER-ACTIVE-FOCUS--AFTER--FONT-FAMILY;
                     content: $TABS__ITEM--HOVER-ACTIVE-FOCUS--AFTER--CONTENT;
                 }
-            }	
+            }
         }
 
         &--active {

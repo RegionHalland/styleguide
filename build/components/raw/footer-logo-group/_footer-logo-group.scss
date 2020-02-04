@@ -8,7 +8,7 @@
         /* Box-modell/beteende */
         padding: 0;
         margin: -$footer-logo-group-gutters;
-        
+
         /* Visuellt */
         background-color: #ffffff;
 
@@ -34,7 +34,7 @@
 
         /* Blandat/övrigt */
         opacity: $footer-logo-group__item--opacity;
-        
+
         @include small {
             max-height: $footer-logo-group__item--max-height-small;
         }
@@ -84,7 +84,7 @@
         font-size: $footer-logo-group__link--font-size;
 
         &-icon {
-            font-family: "feather";
+            font-family: $icon--font-family;
         }
 
         &-item {
