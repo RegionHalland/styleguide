@@ -2,20 +2,20 @@
 
 .rh-table-container {
   max-width: 64em; //em(1000);
-  padding-left: 167px; //em(168);
+  padding-left: 10.4em; //em(168);
   position: relative;
 
   &-scroller {
-    margin-left: 19px; //em(19);
+    margin-left: $space-5; //em(19);
     overflow-x: scroll;
     overflow-y: visible;
     border: $border-thin--standard $grey-light;
 
     @include medium {
-        margin-left: 46px; //em(46);
+        margin-left: 2.9em; //em(46);
     }
     @include large {
-        margin-left: 61px; //em(61);
+        margin-left: 3.8em; //em(61);
     }
   }
 }
@@ -27,7 +27,7 @@
   overflow: auto;
 
   &-header {
-    max-width: 225px; //em(225);
+    max-width: $space-56; //em(225);
     background: $base1;
     padding-top: $space-3; //em(14);
     padding-bottom: $space-3; //em(14);
@@ -36,13 +36,13 @@
 
     &-icon {
       float: right;
-      margin-top: 6px; //em(6);
-      padding-right: 10px; //em(10);
+      margin-top: .4em; //em(6);
+      padding-right: $space-2; //em(10);
       cursor: pointer;
 
       &:after {
-        margin-left: 10px; //em(10);
-        padding: 4px; //em(4);
+        margin-left: $space-2; //em(10);
+        padding: $space-1; //em(4);
         background: $white;
         border-radius: 50%;
         font-family: $icon--font-family;
@@ -50,17 +50,17 @@
       }
 
       @include medium {
-        margin-top: 8px; //em(8);
+        margin-top: $space-2; //em(8);
 
         &:after {
-          padding: 6px; //em(6);
+          padding: .4em; //em(6);
         }
       }
       @include large {
-        margin-top: 10px; //em(10);
+        margin-top: $space-2; //em(10);
 
         &:after {
-          padding: 8px; //em(8);
+          padding: $space-2; //em(8);
         }
       }
     }
@@ -69,17 +69,17 @@
       position:absolute;
       left: 0;
       top: 0;
-      min-width: 189px; //em(189);
-      max-width: 225px;//em(225);
+      min-width: 11.8em; //em(189);
+      max-width: $space-56;//em(225);
       border: $border-thin--standard $grey-light;
 
       @include medium {
-        min-width: 216px; //em(216);
-        max-width: 245px; //em(245);
+        min-width: 13.5em; //em(216);
+        max-width: 15.3em; //em(245);
       }
       @include large {
-        min-width: 231px; //em(231);
-        max-width: 270px; //em(270);
+        min-width: 14.4em; //em(231);
+        max-width: 16.8em; //em(270);
       }
     }
 
@@ -101,11 +101,11 @@
 
       &-icon {
         float: right;
-        padding-right: 10px; //em(10);
+        padding-right: .6em; //em(10);
 
         &:after {
-          margin-left: 10px; //em(10);
-          padding: 8px; //em(8);
+          margin-left: .6em; //em(10);
+          padding: $space-2; //em(8);
           background: $white;
           border-radius: 50%;
           font-family: $icon--font-family;
@@ -119,10 +119,10 @@
     }
 
     @include medium {
-        max-width: 225px; //em(225);
+        max-width: $space-56; //em(225);
     }
     @include large {
-        max-width: 270px; //em(270);
+        max-width: $space-64; //em(270);
     }
   }
 
@@ -130,21 +130,21 @@
     //vertical-align: middle!important;
     vertical-align: middle;
     max-width: $space-48; //em(175);
-    padding-top: 6px; //em(6);
-    padding-bottom: 6px; //em(6);
+    padding-top: .375em; //em(6);
+    padding-bottom: .375em; //em(6);
     border-left: $border-thin--standard $grey-light;
     border-top: $border-thin--standard $grey-light;
     white-space: nowrap;
 
     &-icon {
       float: right;
-      padding-right: 10px; //em(10);
-      margin-top: 10px; //em(10);
+      padding-right: .6em; //em(10);
+      margin-top: .6em; //em(10);
       display: none;
 
       &:after {
-        margin-left: 10px; //em(10);
-        padding: 8px; //em(8);
+        margin-left: .6em; //em(10);
+        padding: $space-2; //em(8);
         background: $base2-light;
         border-radius: 50%;
         font-family: $icon--font-family;
@@ -154,7 +154,7 @@
 
     &-link {
       float: left;
-      padding: 10px; //em(10);
+      padding: .6em; //em(10);
       font-size: $p-small;
       color: $black;
       text-decoration: none;
@@ -168,21 +168,21 @@
       position: absolute;
       left: 0;
       top: auto;
-      min-width: 189px; //em(189);
-      max-width: 225px; //em(225);
-      padding-top: 6px; //em(6);
-      padding-bottom: 6px; //em(6);
+      min-width: 11.8em; //em(189);
+      max-width: $space-56; //em(225);
+      padding-top: .375em; //em(6);
+      padding-bottom: .375em; //em(6);
       border: $border-thin--standard $grey-light;
       font-weight: bold;
       background: inherit;
 
       @include medium {
-        min-width: 216px; //em(216);
-        max-width: 245px; //em(245);
+        min-width: 13.5em; //em(216);
+        max-width: 15em; //em(245);
       }
       @include large {
-        min-width: 231px; //em(231);
-        max-width: 270px; //em(270);
+        min-width: 14.4em; //em(231);
+        max-width: 16.875em; //em(270);
       }
     }
 
@@ -191,15 +191,16 @@
 
       &-icon {
         float: right;
-        padding-right: 10px; //em(10);
+        padding-right: .6em; //em(10);
 
         &:after {
-          margin-left: 10px; //em(10);
+          margin-left: .6em; //em(10);
           border-radius: 50%;
-          padding-top: 8px; //em(8);
+          /* padding-top: 8px; //em(8);
           padding-right: 8px; //em(8);
           padding-bottom: 8px; //em(8);
-          padding-left: 8px; //em(8);
+          padding-left: 8px; //em(8); */
+          padding: $space-2;
           background: $white;
           font-family: $icon--font-family;
           content: "\e8f9";
@@ -212,10 +213,10 @@
     }
 
     @include medium {
-        max-width: 245px; //em(245);
+        max-width: 15.3em; //em(245);
     }
     @include large {
-        max-width: 270px; //em(270);
+        max-width: 16.8em; //em(270);
     }
   }
 
@@ -247,24 +248,24 @@
     &-icon {
       //display: block!important;
       display: block;
-      margin-top: 6px; //em(6);
+      margin-top: .375em; //em(6);
 
       &:after {
-        padding: 4px; //em(4);
+        padding: $space-1; //em(4);
       }
 
       @include medium {
-        margin-top: 10px; //em(10);
+        margin-top: .6em; //em(10);
 
         &:after {
-          padding: 6px; //em(6);
+          padding: .375em; //em(6);
         }
       }
       @include large {
-        margin-top: 10px; //em(10);
+        margin-top: .6em; //em(10);
 
         &:after {
-          padding: 8px; //em(8);
+          padding: $space-2; //em(8);
         }
       }
     }
