@@ -1,3 +1,16 @@
+# 15.1.0
+* **Molekylen "Navigation bar"**
+    * Nytt active state
+
+* Globala variabler i följande:
+    * Lists
+    * Message cookies
+    * Messages
+    * Pagination
+    * Pagination elements
+    * Tabs
+    * Video
+
 # 15.0.0
 
 ## Nästa version 
