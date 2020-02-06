@@ -1,0 +1,13 @@
+{
+    "name": "regionhalland/key-value",
+    "description": "En key value-atom",
+    "type": "styleguide-atom",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Region Halland",
+            "email": ""
+        }
+    ],
+    "require": {}
+}

@@ -1,0 +1,13 @@
+{
+    "name": "regionhalland/listing-freetext",
+    "description": "Behållare för key-value atomer",
+    "type": "styleguide-molecule",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Region Halland",
+            "email": ""
+        }
+    ],
+    "require": {}
+}

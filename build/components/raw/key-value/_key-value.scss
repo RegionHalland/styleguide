@@ -1,0 +1,9 @@
+.rh-key-value {
+    &__key {
+        font-weight: bold;
+    }
+
+    &__key:after {
+        content: ":";
+    }
+}
