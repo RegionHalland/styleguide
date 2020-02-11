@@ -427,7 +427,7 @@
         "regionhalland/visual-element": "1.0.0.20200117",
         "regionhalland/general": "1.0.0.20200108",
         "regionhalland/styleguide-core": "2.3.0",
-        "regionhalland/styleguide-core-settings": "2.5.1"
+        "regionhalland/styleguide-core-settings": "2.5.2"
     },
     "extra": {
         "custom-installer": {

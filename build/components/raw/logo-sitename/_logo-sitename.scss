@@ -4,4 +4,8 @@
     display: $LOGO-SITENAME--DISPLAY;
     align-items: $LOGO-SITENAME--ALIGN-ITEMS;
     width: $LOGO-SITENAME--WIDTH;
+
+    .rh-sitename {
+        padding-top: $space-4;
+    }
 }
