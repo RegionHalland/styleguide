@@ -10,6 +10,7 @@
             display: none;
             @include medium {
                 display: inline;
+                max-width: 22em;
             }
         }
 
@@ -23,9 +24,31 @@
         }
     }
 
+    &__ingress {
+        font-size: $font-size--2xs;
+        line-height: $line-height--large;
+        padding-top: $space-2;
+    }
+
+    &__link {
+        font-size: $font-size--2xs;
+        line-height: $line-height--large;
+        text-align: right;
+    }
+
+    &__link a {
+        color: white;
+    }
+
     &__inner-container {
         display:flex;
         max-width: $hero--max-width;
         margin: auto;
+    }
+
+    &__rounded {
+        @include medium {
+            border-radius: $border-radius--medium;
+        }
     }
 }
