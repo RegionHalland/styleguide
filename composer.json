@@ -188,10 +188,6 @@
         },
         {
             "type": "git",
-            "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeListingFreetext"
-        },
-        {
-            "type": "git",
             "url": "https://regionhalland.visualstudio.com/public.RhWebStyleguide/_git/RhMoleculeLogoSitename"
         },
         {
@@ -385,14 +381,13 @@
         "regionhalland/heading-underlined": "1.0.1",
         "regionhalland/image-caption": "2.0.2",
         "regionhalland/hero": "2.0.4",
-        "regionhalland/key-value": "v1.0.0.202002061650",
+        "regionhalland/key-value": "v1.0.0.20200212",
         "regionhalland/label": "1.0.0.20200121",
         "regionhalland/label-previous": "1.0.0.20191121",
         "regionhalland/last-updated": "1.0.2",
         "regionhalland/link": "1.0.0.20200120",
         "regionhalland/linkgroup": "1.0.2",
         "regionhalland/lists": "1.0.0.20200203",
-        "regionhalland/listing-freetext": "v1.0.0.202002061650",
         "regionhalland/logo": "1.1.0",
         "regionhalland/logo-sitename": "1.0.0.20200210",
         "regionhalland/main-nav": "1.0.0.20200204",
@@ -427,7 +422,7 @@
         "regionhalland/visual-element": "1.0.0.20200117",
         "regionhalland/general": "1.0.0.20200108",
         "regionhalland/styleguide-core": "2.3.0",
-        "regionhalland/styleguide-core-settings": "2.5.2"
+        "regionhalland/styleguide-core-settings": "2.6.0"
     },
     "extra": {
         "custom-installer": {
