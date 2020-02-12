@@ -1,9 +1,50 @@
 .rh-key-value {
+    line-height: $line-height--xl;
+    background-color: $grey-lighter;
+    color: $black;
+    border-radius: $border-radius--large;
+    padding-left: $space-6;
+    padding-right: $space-6;
+    padding-top: $space-6;
+    padding-bottom: $space-2;
+    column-count: 3;
+    column-width: $space-40;
+    column-gap: $space-6;
+
+    &__pair {
+        padding-bottom: $space-4;
+    }
+
     &__key {
         font-weight: bold;
+        display: inline;
     }
 
     &__key:after {
         content: ":";
+    }
+
+    &__value {
+        display: inline;
+    }
+
+    @include medium {
+        padding-left: $space-6;
+        padding-right: $space-6;
+        padding-top: $space-6;
+        padding-bottom: $space-2;
+        column-gap: $space-6;
+    }
+
+    @include large {
+        padding-left: $space-20;
+        padding-right: $space-20;
+        padding-top: $space-12;
+        padding-bottom: $space-8;
+        column-gap: $space-20;
+    }
+
+    .rh-key-value {
+        padding-bottom: $space-8;
     }
 }
