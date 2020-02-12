@@ -7,7 +7,7 @@
     padding-right: $space-6;
     padding-top: $space-6;
     padding-bottom: $space-2;
-    column-count: 3;
+    column-count: 2;
     column-width: $space-40;
     column-gap: $space-6;
 
@@ -34,6 +34,7 @@
         padding-top: $space-6;
         padding-bottom: $space-2;
         column-gap: $space-6;
+        column-count: 2;
     }
 
     @include large {
@@ -42,6 +43,7 @@
         padding-top: $space-12;
         padding-bottom: $space-8;
         column-gap: $space-20;
+        column-count: 3;
     }
 
     .rh-key-value {
