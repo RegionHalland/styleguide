@@ -342,25 +342,34 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
                                 <pre><span class="hljs-selector-class">.rh-key-value</span> {
-    <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$line-height--xl</span>;
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$grey-lighter</span>;
-    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$black</span>;
-    <span class="hljs-attribute">border-radius</span>: <span class="hljs-variable">$border-radius--large</span>;
-    <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$space-6</span>;
-    <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$space-6</span>;
-    <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$space-6</span>;
-    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$space-2</span>;
-    <span class="hljs-attribute">column-count</span>: <span class="hljs-number">2</span>;
-    <span class="hljs-attribute">column-width</span>: <span class="hljs-variable">$space-40</span>;
-    <span class="hljs-attribute">column-gap</span>: <span class="hljs-variable">$space-6</span>;
+    <span class="hljs-comment">/* Visuellt */</span>
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$RH-KEY-VALUE--BACKGROUND-COLOR</span>;
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-variable">$RH-KEY-VALUE--BORDER-RADIUS</span>;
+    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$RH-KEY-VALUE--PADDING-BOTTOM</span>;
+    <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$RH-KEY-VALUE--PADDING-LEFT</span>;
+    <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$RH-KEY-VALUE--PADDING-RIGHT</span>;
+    <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$RH-KEY-VALUE--PADDING-TOP</span>;
+
+    <span class="hljs-comment">/* Typografi */</span>
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$RH-KEY-VALUE--LINE-HEIGHT</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$RH-KEY-VALUE--COLOR</span>;
+
+    <span class="hljs-comment">/* Övrigt */</span>
+    <span class="hljs-attribute">column-count</span>: <span class="hljs-variable">$RH-KEY-VALUE--COLUMN-COUNT</span>;
+    <span class="hljs-attribute">column-width</span>: <span class="hljs-variable">$RH-KEY-VALUE--COLUMN-WIDTH</span>;
+    <span class="hljs-attribute">column-gap</span>: <span class="hljs-variable">$RH-KEY-VALUE--COLUMN-GAP</span>;
 
     &amp;__pair {
-        <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$space-4</span>;
+        <span class="hljs-comment">/* Visuellt */</span>
+        <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$RH-KEY-VALUE__PAIR--PADDING-BOTTOM</span>;
     }
 
     &amp;__key {
-        <span class="hljs-attribute">font-weight</span>: bold;
+        <span class="hljs-comment">/* Box-modell/beteende */</span>
         <span class="hljs-attribute">display</span>: inline;
+
+        <span class="hljs-comment">/* Typografi */</span>
+        <span class="hljs-attribute">font-weight</span>: <span class="hljs-variable">$RH-KEY-VALUE__KEY--FONT-WEIGHT</span>;
     }
 
     &amp;__key<span class="hljs-selector-pseudo">:after</span> {
@@ -368,29 +377,23 @@
     }
 
     &amp;__value {
+        <span class="hljs-comment">/* Box-modell/beteende */</span>
         <span class="hljs-attribute">display</span>: inline;
     }
 
     <span class="hljs-keyword">@include</span> medium {
-        <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$space-6</span>;
-        <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$space-6</span>;
-        <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$space-6</span>;
-        <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$space-2</span>;
-        <span class="hljs-attribute">column-gap</span>: <span class="hljs-variable">$space-6</span>;
-        <span class="hljs-attribute">column-count</span>: <span class="hljs-number">2</span>;
+        <span class="hljs-comment">/* Visuellt */</span>
+        <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$RH-KEY-VALUE--MEDIUM--PADDING-LEFT</span>;
+        <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$RH-KEY-VALUE--MEDIUM--PADDING-RIGHT</span>;
+        <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$RH-KEY-VALUE--MEDIUM--PADDING-TOP</span>;
+        <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$RH-KEY-VALUE--MEDIUM--PADDING-BOTTOM</span>;
+        <span class="hljs-attribute">column-gap</span>: <span class="hljs-variable">$RH-KEY-VALUE--MEDIUM--COLUMN-GAP</span>;
+        <span class="hljs-attribute">column-count</span>: <span class="hljs-variable">$RH-KEY-VALUE--MEDIUM--COLUMN-COUNT</span>;
     }
 
     <span class="hljs-keyword">@include</span> large {
-        <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$space-20</span>;
-        <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$space-20</span>;
-        <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$space-12</span>;
-        <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$space-8</span>;
-        <span class="hljs-attribute">column-gap</span>: <span class="hljs-variable">$space-20</span>;
-        <span class="hljs-attribute">column-count</span>: <span class="hljs-number">3</span>;
-    }
-
-    <span class="hljs-selector-class">.rh-key-value</span> {
-        <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$space-8</span>;
+        <span class="hljs-comment">/* Övrigt */</span>
+        <span class="hljs-attribute">column-count</span>: <span class="hljs-variable">$RH-KEY-VALUE--LARGE--COLUMN-COUNT</span>;
     }
 }
 </pre>
@@ -409,7 +412,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.1 KB</span>
+                    <span class="Meta-value">1.5 KB</span>
                 </li>
             </ul>
         </div>
@@ -463,9 +466,39 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code">
-                                <pre><span class="hljs-comment">/* --------------- */</span>
+                                <pre><span class="hljs-comment">/* ------------------ */</span>
 <span class="hljs-comment">/* Atomen "Key/value" */</span>
-<span class="hljs-comment">/* --------------- */</span>
+<span class="hljs-comment">/* ------------------ */</span>
+
+<span class="hljs-comment">// Key/value grundinställningar (rh-key-value)</span>
+<span class="hljs-variable">$RH-KEY-VALUE--BACKGROUND-COLOR</span>: <span class="hljs-variable">$grey-lighter</span>;
+<span class="hljs-variable">$RH-KEY-VALUE--BORDER-RADIUS</span>: <span class="hljs-variable">$border-radius--large</span>;
+<span class="hljs-variable">$RH-KEY-VALUE--PADDING-BOTTOM</span>: <span class="hljs-variable">$space-6</span>;
+<span class="hljs-variable">$RH-KEY-VALUE--PADDING-LEFT</span>: <span class="hljs-variable">$space-6</span>;
+<span class="hljs-variable">$RH-KEY-VALUE--PADDING-RIGHT</span>: <span class="hljs-variable">$space-6</span>;
+<span class="hljs-variable">$RH-KEY-VALUE--PADDING-TOP</span>: <span class="hljs-variable">$space-6</span>;
+<span class="hljs-variable">$RH-KEY-VALUE--LINE-HEIGHT</span>: <span class="hljs-variable">$line-height--xl</span>;
+<span class="hljs-variable">$RH-KEY-VALUE--COLOR</span>: <span class="hljs-variable">$black</span>;
+<span class="hljs-variable">$RH-KEY-VALUE--COLUMN-COUNT</span>: <span class="hljs-number">2</span>;
+<span class="hljs-variable">$RH-KEY-VALUE--COLUMN-WIDTH</span>: <span class="hljs-variable">$space-40</span>;
+<span class="hljs-variable">$RH-KEY-VALUE--COLUMN-GAP</span>: <span class="hljs-variable">$space-6</span>;
+
+<span class="hljs-comment">// Medium-modifiern</span>
+<span class="hljs-variable">$RH-KEY-VALUE--MEDIUM--PADDING-LEFT</span>: <span class="hljs-variable">$space-6</span>;
+<span class="hljs-variable">$RH-KEY-VALUE--MEDIUM--PADDING-RIGHT</span>: <span class="hljs-variable">$space-6</span>;
+<span class="hljs-variable">$RH-KEY-VALUE--MEDIUM--PADDING-TOP</span>: <span class="hljs-variable">$space-6</span>;
+<span class="hljs-variable">$RH-KEY-VALUE--MEDIUM--PADDING-BOTTOM</span>: <span class="hljs-variable">$space-2</span>;
+<span class="hljs-variable">$RH-KEY-VALUE--MEDIUM--COLUMN-GAP</span>: <span class="hljs-variable">$space-6</span>;
+<span class="hljs-variable">$RH-KEY-VALUE--MEDIUM--COLUMN-COUNT</span>: <span class="hljs-number">2</span>;
+
+<span class="hljs-comment">// Large-modifiern</span>
+<span class="hljs-variable">$RH-KEY-VALUE--LARGE--COLUMN-COUNT</span>: <span class="hljs-number">3</span>;
+
+<span class="hljs-comment">// rh-key-value__pair</span>
+<span class="hljs-variable">$RH-KEY-VALUE__PAIR--PADDING-BOTTOM</span>: <span class="hljs-variable">$space-4</span>;
+
+<span class="hljs-comment">// rh-key-value__key</span>
+<span class="hljs-variable">$RH-KEY-VALUE__KEY--FONT-WEIGHT</span>: bold;
 </pre>
                             </code>
                             
@@ -482,7 +515,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">69 Bytes</span>
+                    <span class="Meta-value">1.1 KB</span>
                 </li>
             </ul>
         </div>

@@ -1,23 +1,32 @@
 .rh-key-value {
-    line-height: $line-height--xl;
-    background-color: $grey-lighter;
-    color: $black;
-    border-radius: $border-radius--large;
-    padding-left: $space-6;
-    padding-right: $space-6;
-    padding-top: $space-6;
-    padding-bottom: $space-2;
-    column-count: 2;
-    column-width: $space-40;
-    column-gap: $space-6;
+    /* Visuellt */
+    background-color: $RH-KEY-VALUE--BACKGROUND-COLOR;
+    border-radius: $RH-KEY-VALUE--BORDER-RADIUS;
+    padding-bottom: $RH-KEY-VALUE--PADDING-BOTTOM;
+    padding-left: $RH-KEY-VALUE--PADDING-LEFT;
+    padding-right: $RH-KEY-VALUE--PADDING-RIGHT;
+    padding-top: $RH-KEY-VALUE--PADDING-TOP;
+
+    /* Typografi */
+    line-height: $RH-KEY-VALUE--LINE-HEIGHT;
+    color: $RH-KEY-VALUE--COLOR;
+
+    /* Övrigt */
+    column-count: $RH-KEY-VALUE--COLUMN-COUNT;
+    column-width: $RH-KEY-VALUE--COLUMN-WIDTH;
+    column-gap: $RH-KEY-VALUE--COLUMN-GAP;
 
     &__pair {
-        padding-bottom: $space-4;
+        /* Visuellt */
+        padding-bottom: $RH-KEY-VALUE__PAIR--PADDING-BOTTOM;
     }
 
     &__key {
-        font-weight: bold;
+        /* Box-modell/beteende */
         display: inline;
+
+        /* Typografi */
+        font-weight: $RH-KEY-VALUE__KEY--FONT-WEIGHT;
     }
 
     &__key:after {
@@ -25,28 +34,22 @@
     }
 
     &__value {
+        /* Box-modell/beteende */
         display: inline;
     }
 
     @include medium {
-        padding-left: $space-6;
-        padding-right: $space-6;
-        padding-top: $space-6;
-        padding-bottom: $space-2;
-        column-gap: $space-6;
-        column-count: 2;
+        /* Visuellt */
+        padding-left: $RH-KEY-VALUE--MEDIUM--PADDING-LEFT;
+        padding-right: $RH-KEY-VALUE--MEDIUM--PADDING-RIGHT;
+        padding-top: $RH-KEY-VALUE--MEDIUM--PADDING-TOP;
+        padding-bottom: $RH-KEY-VALUE--MEDIUM--PADDING-BOTTOM;
+        column-gap: $RH-KEY-VALUE--MEDIUM--COLUMN-GAP;
+        column-count: $RH-KEY-VALUE--MEDIUM--COLUMN-COUNT;
     }
 
     @include large {
-        padding-left: $space-20;
-        padding-right: $space-20;
-        padding-top: $space-12;
-        padding-bottom: $space-8;
-        column-gap: $space-20;
-        column-count: 3;
-    }
-
-    .rh-key-value {
-        padding-bottom: $space-8;
+        /* Övrigt */
+        column-count: $RH-KEY-VALUE--LARGE--COLUMN-COUNT;
     }
 }

@@ -1,3 +1,33 @@
-/* --------------- */
+/* ------------------ */
 /* Atomen "Key/value" */
-/* --------------- */
+/* ------------------ */
+
+// Key/value grundinställningar (rh-key-value)
+$RH-KEY-VALUE--BACKGROUND-COLOR: $grey-lighter;
+$RH-KEY-VALUE--BORDER-RADIUS: $border-radius--large;
+$RH-KEY-VALUE--PADDING-BOTTOM: $space-6;
+$RH-KEY-VALUE--PADDING-LEFT: $space-6;
+$RH-KEY-VALUE--PADDING-RIGHT: $space-6;
+$RH-KEY-VALUE--PADDING-TOP: $space-6;
+$RH-KEY-VALUE--LINE-HEIGHT: $line-height--xl;
+$RH-KEY-VALUE--COLOR: $black;
+$RH-KEY-VALUE--COLUMN-COUNT: 2;
+$RH-KEY-VALUE--COLUMN-WIDTH: $space-40;
+$RH-KEY-VALUE--COLUMN-GAP: $space-6;
+
+// Medium-modifiern
+$RH-KEY-VALUE--MEDIUM--PADDING-LEFT: $space-6;
+$RH-KEY-VALUE--MEDIUM--PADDING-RIGHT: $space-6;
+$RH-KEY-VALUE--MEDIUM--PADDING-TOP: $space-6;
+$RH-KEY-VALUE--MEDIUM--PADDING-BOTTOM: $space-2;
+$RH-KEY-VALUE--MEDIUM--COLUMN-GAP: $space-6;
+$RH-KEY-VALUE--MEDIUM--COLUMN-COUNT: 2;
+
+// Large-modifiern
+$RH-KEY-VALUE--LARGE--COLUMN-COUNT: 3;
+
+// rh-key-value__pair
+$RH-KEY-VALUE__PAIR--PADDING-BOTTOM: $space-4;
+
+// rh-key-value__key
+$RH-KEY-VALUE__KEY--FONT-WEIGHT: bold;
