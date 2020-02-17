@@ -40,6 +40,28 @@
         color: white;
     }
 
+    &__middle-container {
+        padding-left: 0;
+        padding-right: 0;
+        margin: auto;
+        max-width: $page__container--max-width;
+
+        @include medium {
+            padding-left: $page__container--medium-padding-x;
+            padding-right: $page__container--medium-padding-x;
+        }
+
+        @include large {
+            padding-left: $page__container--large-padding-x;
+            padding-right: $page__container--large-padding-x;
+        }
+
+        @include xlarge {
+            padding-left: $page__container--xlarge-padding-x;
+            padding-right: $page__container--xlarge-padding-x;
+        }
+    }
+
     &__inner-container {
         display:flex;
         max-width: $hero--max-width;
