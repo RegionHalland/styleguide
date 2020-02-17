@@ -1,3 +1,19 @@
+## 15.2.0
+* **Molekylen "Hero"** (v2.3.0)
+    * Förändrad markup och CSS ger den samma paddings som övrigt innehåll på sidan.
+
+* **(Ny) Atomen "Key value"**
+    * Ny komponenent menad för osorterad data i key/value-par
+
+* **Atomen "Logo"** 
+    * Ny logotyp i SVG-format
+
+* **Molekylen "Logo sitename"**
+    * Inkluderar nu den nya SVG-logotypen
+    * Ny padding för att justera sitename till nya logotypen
+
+* **Förbättringar i gulp script**
+
 ## 15.1.1
 * **Globala variabler i följande:**
     * Breadcrumbs
