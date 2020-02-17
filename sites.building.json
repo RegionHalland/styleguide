@@ -114,7 +114,7 @@
         },
         {
             "name": "stilguide",
-            "version": "15.1.1",
+            "version": "15.2.1",
             "resources": {
                 "jsComponents": [
                     "components/Molecules/video/video.js",
